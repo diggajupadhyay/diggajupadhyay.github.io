@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="blog-content">
+    <h2>$ cat blog_posts.log</h2>
+    {{ range .Pages }}
+    <div class="blog-post">
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Summary }}</p>
+        <a href="{{ .Permalink }}">Read more</a>
+    </div>
+    {{ end }}
+</div>
+{{ end }}

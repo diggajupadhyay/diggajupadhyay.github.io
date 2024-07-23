@@ -1,0 +1,4 @@
+baseURL = "https://diggajupadhyay.github.io/"
+languageCode = "en-us"
+title = "Diggaj Upadhyay"
+theme = "digup-lightweight-portfolio"

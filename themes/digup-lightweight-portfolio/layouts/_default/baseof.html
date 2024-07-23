@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>&lt;Diggaj Upadhyay/&gt;</h1>
+            <p class="subtitle">Tech Enthusiast | Business Developer | Open Source Advocate</p>
+            <nav>
+                <a href="{{ "/" | relURL }}">Home</a>
+                <a href="{{ "/blog/" | relURL }}">Blog</a>
+            </nav>
+        </header>
+        {{ block "main" . }}{{ end }}
+    </div>
+</body>
+
+</html>
