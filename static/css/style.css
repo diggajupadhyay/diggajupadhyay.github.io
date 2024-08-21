@@ -61,12 +61,35 @@ h2 {
 ul {
     list-style-type: none;
     padding-left: 0;
+    color: var(--text-color);
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Handle nested code blocks inside list items */
+li pre, li code {
+    display: block;
+    margin-top: 10px;
+    margin-left: 20px; /* Indent nested code blocks */
+}
+
+/* Ensure that code blocks inside lists are indented and styled correctly */
+ul ul, ol ul, ul ol, ol ol {
+    margin-left: 20px; /* Increase margin for nested lists */
 }
 
 li::before {
     content: "▹";
     color: var(--highlight-color);
     margin-right: 10px;
+}
+
+li code {
+    background-color: var(--secondary-color);
+    padding: 2px 4px;
+    border-radius: 4px;
 }
 
 .work-experience,
@@ -143,7 +166,7 @@ a:hover::after {
     transform-origin: bottom left;
 }
 
-.social-links a {
+social-links a {
     margin: 0 15px;
     font-size: 1.1rem;
 }
@@ -154,7 +177,6 @@ a:hover::after {
 }
 
 @media (max-width: 768px) {
-
     .main-content,
     .project-grid {
         grid-template-columns: 1fr;
@@ -193,8 +215,32 @@ nav a:hover {
     margin-top: 0;
 }
 
-.blog-post p {
+blog-post p {
     color: var(--text-color);
+}
+
+/* Updated: Styling for code blocks */
+pre {
+    background-color: var(--secondary-color);
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+code {
+    font-family: 'Roboto Mono', monospace;
+    color: var(--highlight-color);
+}
+
+pre code {
+    color: var(--highlight-color);
+}
+
+pre a, code a {
+    color: inherit; /* Keep links inside code blocks subtle */
+    text-decoration: underline;
 }
 
 .blog-post a {
@@ -204,5 +250,10 @@ nav a:hover {
 }
 
 .blog-post a:hover {
+    color: var(--text-color);
+}
+
+p, ul, ol {
+    margin-bottom: 1.2em;
     color: var(--text-color);
 }
