@@ -1,10 +1,8 @@
 +++
-title = 'Installing ProtonVPN using WireGuard on ArchLinux'
+title = 'How to Set Up ProtonVPN Free with WireGuard on Arch Linux'
 date = 2024-08-21
 draft = false
 +++
-
-# How to Set Up ProtonVPN Free with WireGuard on Arch Linux
 
 In this guide, you'll learn how to set up ProtonVPN Free using WireGuard on Arch Linux. We'll also cover how to disable IPv6 to prevent potential IP leaks.
 
