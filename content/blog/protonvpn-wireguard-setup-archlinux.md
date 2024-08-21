@@ -1,3 +1,8 @@
++++
+title = 'Installing ProtonVPN using WireGuard on ArchLinux'
+date = 2024-08-21
+draft = false
++++
 
 # How to Set Up ProtonVPN Free with WireGuard on Arch Linux
 
