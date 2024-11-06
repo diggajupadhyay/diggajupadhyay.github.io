@@ -1,2 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ProtonVPN on Diggaj Upadhyay</title><link>https://diggajupadhyay.github.io/tags/protonvpn/</link><description>Recent content in ProtonVPN on Diggaj Upadhyay</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 21 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diggajupadhyay.github.io/tags/protonvpn/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Set Up ProtonVPN Free with WireGuard on Arch Linux</title><link>https://diggajupadhyay.github.io/blog/protonvpn-wireguard-setup-archlinux/</link><pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate><guid>https://diggajupadhyay.github.io/blog/protonvpn-wireguard-setup-archlinux/</guid><description>In this guide, you&amp;rsquo;ll learn how to set up ProtonVPN Free using WireGuard on Arch Linux. We&amp;rsquo;ll also cover how to disable IPv6 to prevent potential IP leaks.
-Step 1: Install Required Packages First, install the necessary packages for WireGuard: sudo pacman -S wireguard-tools resolvconf Step 2: Access ProtonVPN Dashboard Log in to your ProtonVPN account via the ProtonVPN dashboard. Step 3: Download WireGuard Configuration Files Navigate to the Downloads section in your ProtonVPN dashboard.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ProtonVPN on Diggaj Upadhyay</title><link>https://diggajupadhyay.github.io/tags/protonvpn/</link><description>Recent content in ProtonVPN on Diggaj Upadhyay</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 21 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://diggajupadhyay.github.io/tags/protonvpn/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Set Up ProtonVPN Free with WireGuard on Arch Linux</title><link>https://diggajupadhyay.github.io/blog/protonvpn-wireguard-setup-archlinux/</link><pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate><guid>https://diggajupadhyay.github.io/blog/protonvpn-wireguard-setup-archlinux/</guid><description>&lt;p>In this guide, you&amp;rsquo;ll learn how to set up ProtonVPN Free using WireGuard on Arch Linux. We&amp;rsquo;ll also cover how to disable IPv6 to prevent potential IP leaks.&lt;/p>
+&lt;h2 id="step-1-install-required-packages">Step 1: Install Required Packages&lt;/h2>
+&lt;ul>
+&lt;li>First, install the necessary packages for WireGuard:&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl"> sudo pacman -S wireguard-tools resolvconf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="step-2-access-protonvpn-dashboard">Step 2: Access ProtonVPN Dashboard&lt;/h2>
+&lt;ul>
+&lt;li>Log in to your ProtonVPN account via the &lt;a href="https://account.protonvpn.com">ProtonVPN dashboard&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="step-3-download-wireguard-configuration-files">Step 3: Download WireGuard Configuration Files&lt;/h2>
+&lt;ul>
+&lt;li>Navigate to the &lt;strong>Downloads&lt;/strong> section in your ProtonVPN dashboard.&lt;/li>
+&lt;li>Under &lt;strong>WireGuard configuration&lt;/strong>, select &lt;strong>Free&lt;/strong> and download the configuration files for the servers you want to connect to. The files will have a &lt;code>.conf&lt;/code> extension.&lt;/li>
+&lt;/ul>
+&lt;h2 id="step-4-set-up-the-wireguard-configuration">Step 4: Set Up the WireGuard Configuration&lt;/h2>
+&lt;ul>
+&lt;li>Move the downloaded configuration files to the &lt;em>/etc/wireguard/&lt;/em> directory:&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl"> sudo mv /path/to/downloaded/configs/*.conf /etc/wireguard/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>Ensure that only the root user can access these files:&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl"> sudo chmod &lt;span class="m">600&lt;/span> /etc/wireguard/*.conf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="step-5-connect-to-protonvpn-via-wireguard">Step 5: Connect to ProtonVPN via WireGuard&lt;/h2>
+&lt;ul>
+&lt;li>To start a connection, use the following command (replace &lt;code>server-name&lt;/code> with the actual name of the configuration file, excluding the &lt;code>.conf&lt;/code> extension):&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl"> sudo wg-quick up /etc/wireguard/server-name
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>For example, if the configuration file is named &lt;code>us-free-01.conf&lt;/code>, the command would be:&lt;/p></description></item></channel></rss>
