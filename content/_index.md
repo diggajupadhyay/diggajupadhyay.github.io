@@ -1,3 +1,0 @@
----
-title: "Home - Diggaj Upadhyay"
----

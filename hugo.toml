@@ -9,3 +9,7 @@ theme = "digup-lightweight-portfolio"
     style = "monokai"
     lineNos = false
     lineNumbersInTable = false
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
