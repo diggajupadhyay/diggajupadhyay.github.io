@@ -422,7 +422,7 @@ a.card:hover,
   font-size: 0.6875rem;
   font-weight: 700;
   background: var(--paper-3);
-  color: var(--ink-3);
+  color: var(--ink-2);
 }
 .months .m-best {
   background: var(--teal-700);

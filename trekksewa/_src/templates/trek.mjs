@@ -327,7 +327,7 @@ export function trekPage(ctx, t) {
 </article>`;
 
   return {
-    title: `${t.name} Trek: ${t.days}-Day Itinerary, Altitude & Permits`,
+    title: t.name.length > 26 ? `${t.name}: ${t.days}-Day Itinerary & Permits` : `${t.name} Trek: ${t.days}-Day Itinerary, Altitude & Permits`,
     description: t.summary,
     section: 'treks',
     scripts: ['trek'],
