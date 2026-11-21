@@ -48,6 +48,22 @@ export async function createMap(el, { bounds, center, zoom = 10, scrollZoom = fa
   });
   if (bounds) map.fitBounds(bounds, { padding: [28, 28], maxZoom: 14 });
   else map.setView(center || [28.2, 84.2], zoom);
+  // Tiles sit on whole pixels inside the map, so the map itself has to as well. Text above it
+  // rarely adds up to a whole number of pixels, and on a high-density screen that leaves a
+  // hairline between tile rows. Nudge the map down to the next whole pixel.
+  const snap = () => {
+    // an offset, not a margin: a margin this small collapses into the heading's above it
+    el.style.top = '';
+    el.style.left = '';
+    const r = el.getBoundingClientRect();
+    const up = (v) => (v % 1 > 0.01 ? `${(1 - (v % 1)).toFixed(3)}px` : '');
+    el.style.top = up(r.top + window.scrollY);
+    el.style.left = up(r.left + window.scrollX);
+  };
+  snap();
+  window.addEventListener('resize', snap);
+  document.fonts?.ready.then(snap);
+  map.on('movestart', snap);
   // let people scroll the page past the map; zoom with the wheel only after a click
   if (!scrollZoom) {
     map.on('click', () => map.scrollWheelZoom.enable());
