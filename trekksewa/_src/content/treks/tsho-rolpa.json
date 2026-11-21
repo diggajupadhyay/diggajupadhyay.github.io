@@ -1,0 +1,203 @@
+{
+  "slug": "tsho-rolpa",
+  "name": "Tsho Rolpa & Rolwaling Valley",
+  "aka": ["Rolwaling Valley Trek", "Tsho Rolpa Lake Trek", "Rolwaling Trek"],
+  "region": "gaurishankar",
+  "tagline": "A steep Sherpa valley under Gaurishankar, ending at a glacial lake at 4,580 m",
+  "summary": "A ten-day walk from the Tamakoshi road up the Rolwaling valley, through Simigaon and Beding to the summer village of Na and the glacial lake of Tsho Rolpa at 4,580 m.",
+  "intro": [
+    "Rolwaling runs east from the Tamakoshi river toward the back of Khumbu: a narrow valley walled in by Gaurishankar (7,134 m) and a line of peaks above 6,000 m. A small Sherpa community lives here, moving with the seasons between winter fields low down, the main village of Beding and the summer settlement of Na. The valley is held to be a beyul, one of the hidden valleys of Tibetan Buddhist tradition, and by local custom no animal is killed in it.",
+    "At the head of the valley, behind a wall of moraine, lies Tsho Rolpa, a lake about three and a half kilometres long that has grown as the Trakarding Glacier has shrunk. In 2000 engineers cut a channel through the moraine to lower the water by three metres, and the lake is still one of the most closely watched in the Himalaya because of the flood risk to villages downstream. For a trekker it is a stark place: grey-green water, ice at the far end and hardly anyone else there.",
+    "Next to Khumbu this is a simple trek. Every stage has lodges, but they are family houses with a few beds, the food is dal bhat, and beyond the road there is no clinic and very little phone signal. Rolwaling is a restricted area, so the permit has to be arranged through a registered agency and you walk with a licensed guide. Almost everyone goes in and out the same way: the only exit at the top is the Tashi Lapcha, a glacier pass for roped parties."
+  ],
+  "days": 10,
+  "daysRange": [8, 13],
+  "distanceKm": 75,
+  "maxAlt": { "m": 4580, "place": "tsho-rolpa" },
+  "difficulty": "challenging",
+  "difficultyNote": "Steep, rough trails, basic lodges, a jump of almost 900 m in sleeping height to Beding and no quick way out make it harder than its length suggests.",
+  "style": ["teahouse"],
+  "start": "chetchet",
+  "end": "chetchet",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "A long day by road from Kathmandu: the Araniko Highway to the Sun Koshi, over the hills to Charikot, down to the Tamakoshi and north on the hydropower road through Singati to Chetchet. The section beyond Singati is rough and can close after heavy rain.",
+    "options": [
+      { "mode": "jeep", "from": "kathmandu", "to": "chetchet", "time": "8–9 h", "note": "A hired jeep goes straight through and is the only way to arrive with daylight to spare." },
+      { "mode": "bus", "from": "kathmandu", "to": "charikot", "time": "5–6 h", "note": "Regular buses from the old bus park at Ratna Park. Sleep in Charikot or change at once for Singati." },
+      { "mode": "jeep", "from": "charikot", "to": "chetchet", "time": "4–5 h", "note": "Local bus to Singati, then a shared jeep up the valley. Departures thin out after midday." }
+    ]
+  },
+  "seasons": {
+    "best": [4, 5, 10, 11],
+    "good": [3, 9],
+    "hard": [1, 2, 6, 7, 8, 12],
+    "note": "April, May, October and November are the dependable months. March can still have snow above Beding, and September is wet, with leeches in the forest below Dongang. In the monsoon the road and the lower trail suffer landslides. From December the families leave Na and most of the upper lodges close until spring."
+  },
+  "permits": ["gaurishankar-ca", "rap-gaurishankar"],
+  "guide": {
+    "rule": "required",
+    "note": "Rolwaling is a restricted area: the permit is issued only through a registered trekking agency, and you must walk with a licensed guide. Since March 2026 the permit can be issued to a single trekker, so you no longer need a second person in order to apply. A guide who knows the valley matters in practice too: they phone ahead to find out which lodges in Dongang, Beding and Na are open, which decides whether the trip is possible at all outside the main seasons."
+  },
+  "highlights": [
+    "Tsho Rolpa, a glacial lake three and a half kilometres long at 4,580 m",
+    "Gaurishankar (7,134 m) above Simigaon and Beding",
+    "Beding and Na, the villages of the Rolwaling Sherpas",
+    "The forested gorge of the Rolwaling Khola",
+    "A valley with only a handful of trekkers, even in peak season"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive from Kathmandu to Chetchet",
+      "from": "kathmandu",
+      "to": "chetchet",
+      "sleep": 1377,
+      "hours": [8, 10],
+      "kind": "transfer",
+      "mode": "jeep",
+      "note": "Leave early. The road is mostly sealed as far as Singati and rough beyond it. Chetchet is a handful of houses beside a waterfall, with very simple rooms; some groups climb on to Simigaon the same evening."
+    },
+    {
+      "day": 2,
+      "title": "Chetchet to Simigaon",
+      "from": "chetchet",
+      "to": "simigaon",
+      "sleep": 2000,
+      "hours": [2, 3],
+      "kind": "trek",
+      "note": "Cross the Tamakoshi on the suspension bridge and climb about 600 m of stone steps with no break to the village. It is short but steep, and hot by mid-morning. Use the afternoon to recover from the drive and walk up to the monastery for the view of Gaurishankar."
+    },
+    {
+      "day": 3,
+      "title": "Simigaon to Dongang",
+      "from": "simigaon",
+      "to": "dongang",
+      "sleep": 2800,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "The trail climbs through the village to a shoulder, then stays in oak and rhododendron forest high above the Rolwaling gorge, with steep ups and downs and a tea shack or two on the way, before dropping to the river at Dongang. Leeches are common here in the wet months and into October."
+    },
+    {
+      "day": 4,
+      "title": "Dongang to Beding",
+      "from": "dongang",
+      "to": "beding",
+      "sleep": 3690,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "A long climb beside the river through forest that thins to juniper and open hillside, with Beding appearing late in the day. You gain close to 900 m of sleeping height, more than is wise, and there is little to stop at in between. Walk slowly and drink often."
+    },
+    {
+      "day": 5,
+      "title": "Acclimatization day in Beding",
+      "from": "beding",
+      "to": "beding",
+      "sleep": 3690,
+      "hours": [2, 3],
+      "kind": "acclimatization",
+      "note": "Stay put after yesterday's gain. Visit the monastery, then walk an hour or two up the hillside behind the village or along the valley toward Na, and come back for lunch. If you still have a headache tonight, do not go higher tomorrow."
+    },
+    {
+      "day": 6,
+      "title": "Beding to Na",
+      "from": "beding",
+      "to": "na-gaon",
+      "sleep": 4180,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "A gentle morning up the widening valley past mani walls and yak pastures. Na is a scatter of stone houses on a broad flat; its lodges open only when the families are up for the season, so make sure yours is expecting you."
+    },
+    {
+      "day": 7,
+      "title": "Day walk to Tsho Rolpa",
+      "from": "na-gaon",
+      "to": "na-gaon",
+      "via": ["tsho-rolpa"],
+      "sleep": 4180,
+      "high": 4580,
+      "hours": [4, 6],
+      "kind": "summit",
+      "note": "Follow the river flats for an hour, then climb the terminal moraine to the lake. Walk along the crest for the view down its length to the ice at the far end. Allow four to five hours for the round trip and keep off the loose inner slopes."
+    },
+    {
+      "day": 8,
+      "title": "Na to Dongang",
+      "from": "na-gaon",
+      "to": "dongang",
+      "via": ["beding"],
+      "sleep": 2800,
+      "hours": [6, 8],
+      "kind": "trek",
+      "note": "Downhill almost all day: two to three hours to Beding, then the long forest descent. You lose about 1,400 m, which is hard on the knees. Break the day at Beding if you have time in hand."
+    },
+    {
+      "day": 9,
+      "title": "Dongang to Simigaon",
+      "from": "dongang",
+      "to": "simigaon",
+      "sleep": 2000,
+      "hours": [4, 6],
+      "kind": "trek",
+      "note": "Back along the high forest trail above the gorge. It has nearly as much up as down, so do not expect a quick morning. Simigaon's lodges are the most comfortable of the trek and a good place for the last night."
+    },
+    {
+      "day": 10,
+      "title": "Simigaon to Chetchet, drive to Kathmandu",
+      "from": "simigaon",
+      "to": "kathmandu",
+      "via": ["chetchet"],
+      "sleep": 1400,
+      "hours": [9, 11],
+      "kind": "transfer",
+      "mode": "jeep",
+      "note": "About ninety minutes down the staircase to the bridge at Chetchet, where your jeep should be waiting, then the full day's drive back. If you are using public transport, plan on a night in Charikot."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Fast height gain to Beding",
+      "text": "Dongang to Beding raises your sleeping height by almost 900 m in a day, with no good place to split it. Take the rest day at Beding seriously. If anyone becomes unwell at Na, go back down to Beding; do not wait there."
+    },
+    {
+      "title": "Remoteness",
+      "text": "Beyond Chetchet there is no road, no staffed clinic and little phone coverage. Evacuation means a helicopter in clear weather or being carried for days. Carry a first-aid kit, leave your schedule with your agency and check that your insurance covers helicopter rescue."
+    },
+    {
+      "title": "Landslides on the road and lower trail",
+      "text": "The Tamakoshi road and the forest trail below Dongang are cut by landslides in the monsoon, and after heavy rain at other times of year. Ask in Charikot or Singati whether the road is open before you set out."
+    },
+    {
+      "title": "The moraine at Tsho Rolpa",
+      "text": "The lake is held back by loose moraine with ice inside it. Keep to the worn path on the crest, stay away from the outlet channel and the steep inner banks, and do not linger on the valley floor directly below the dam."
+    },
+    {
+      "title": "Closed lodges",
+      "text": "Outside the main spring and autumn months the lodges at Na, and sometimes at Dongang, are shut, and Beding empties in midwinter. Without a confirmed bed and meals you need a tent, a stove and food for the upper valley."
+    }
+  ],
+  "tips": [
+    "Bring all your cash from Kathmandu or Charikot. Nothing in the valley takes cards.",
+    "Carry a warm sleeping bag; lodge bedding is thin and sometimes shared.",
+    "Meals are vegetarian: by local custom no animal is killed in Rolwaling, so do not ask for meat.",
+    "Phone signal is patchy beyond Simigaon and often absent above Dongang. Agree check-in days with someone at home before you leave.",
+    "The restricted area permit is issued in Kathmandu against your passport and visa, so allow a working day there before you set off.",
+    "Lodge openings change from year to year, and heights quoted for Simigaon and Dongang differ by up to 100 m between maps. Have your guide confirm each night's stop by phone before you leave the road."
+  ],
+  "variants": [
+    {
+      "name": "Eight or nine days",
+      "text": "Climb to Simigaon on the evening of the drive, and walk from Na down to Beding on the afternoon after the lake. This suits fit parties who are already acclimatized; do not drop the rest day at Beding."
+    },
+    {
+      "name": "Toward Yalung Ri base camp",
+      "text": "With an extra night at Na, a day walk climbs south into the Yalung valley toward the base camp of Yalung Ri, at around 4,900 m, for a view back across the valley to Gaurishankar."
+    },
+    {
+      "name": "Over the Tashi Lapcha to Khumbu",
+      "text": "The 5,755 m pass beyond the lake leads to Thame in four to five days. It needs ropes, crampons, tents for nights on the glacier and a crew with climbing experience. It is a mountaineering expedition, not an extension of this trek."
+    }
+  ],
+  "related": ["jiri-to-everest-base-camp", "pikey-peak", "gokyo-lakes"],
+  "confidence": "medium"
+}

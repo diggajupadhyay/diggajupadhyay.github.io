@@ -1,0 +1,195 @@
+{
+  "slug": "langtang-valley",
+  "name": "Langtang Valley",
+  "aka": ["Langtang Trek", "Kyanjin Gompa Trek"],
+  "region": "langtang",
+  "tagline": "Up a glacial valley to Kyanjin Gompa, a day's drive north of Kathmandu",
+  "summary": "The Langtang Khola trail from Syabrubesi through forest and yak pasture to Kyanjin Gompa at 3,870 m, with a day hike to Kyanjin Ri or Tserko Ri before you walk back out.",
+  "intro": [
+    "Langtang is the nearest of Nepal's high valleys to Kathmandu, and you reach it entirely by road. The trail follows the Langtang Khola east from Syabrubesi: two days in a steep, forested gorge, then a wide glacial valley of yak pastures, mani walls and stone villages that ends at the lodges of Kyanjin Gompa, under Langtang Lirung.",
+    "The walking is straightforward and there is no pass to cross, but the valley climbs quickly. The usual plan puts you at 3,430 m on the second walking night and 3,870 m on the third, so expect to feel the height at Kyanjin Gompa. The second night there is not a luxury: it is what makes the climb to Kyanjin Ri at 4,773 m, or the much longer day on Tserko Ri at 4,984 m, a pleasure rather than a struggle. You return down the same valley.",
+    "The valley has been hit twice. The earthquake of 25 April 2015 sent an avalanche and landslide over Langtang village, killing more than 240 residents, trekkers and trekking staff; the village and most lodges on the trail have been rebuilt by the families who survived. Then on 26 August 2026 a devastating flood on the Bhote Koshi badly damaged Syabrubesi and cut the road to it. The valley trail was not in the flood's path and was reported open again that October by way of Dhunche and Thulo Syabru."
+  ],
+  "days": 8,
+  "daysRange": [7, 10],
+  "distanceKm": 70,
+  "maxAlt": { "m": 4773, "place": "kyanjin-ri" },
+  "difficulty": "moderate",
+  "difficultyNote": "A good trail with no pass, but it climbs about 2,400 m in three walking days and the day hike from Kyanjin Gompa tops out near 4,800 m.",
+  "style": ["teahouse"],
+  "start": "syabrubesi",
+  "end": "syabrubesi",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "Road only. Buses and jeeps leave Machhapokhari in Kathmandu early in the morning for Dhunche and Syabrubesi, seven to nine hours away on the Pasang Lhamu Highway. The Bhote Koshi flood of August 2026 cut the last section: as of November 2026 vehicles stop at Dhunche or Thulo Syabru and trekkers join the valley trail near Bamboo. Confirm the working roadhead before you book.",
+    "options": [
+      { "mode": "bus", "from": "kathmandu", "to": "syabrubesi", "time": "7–9 h", "note": "The classic approach, by local or express bus from Machhapokhari. Closed short of Syabrubesi since the August 2026 flood; check whether it has reopened." },
+      { "mode": "jeep", "from": "kathmandu", "to": "syabrubesi", "time": "6–7 h", "note": "Shared or private four-wheel drive. Faster and less cramped than the bus, with the same caveat about the road." },
+      { "mode": "jeep", "from": "kathmandu", "to": "dhunche", "time": "5–7 h", "note": "The working roadhead since the flood, reported open to jeeps and light vehicles. A rough track continues from Dhunche to Thulo Syabru when conditions allow." }
+    ]
+  },
+  "seasons": {
+    "best": [3, 4, 5, 10, 11],
+    "good": [1, 2, 9, 12],
+    "hard": [6, 7, 8],
+    "note": "October and November are the clearest months. March to May is warmer, with rhododendron in the forest below Ghodatabela and some afternoon cloud. December to February is cold and quiet, with snow possible above Langtang village. From June to early September expect rain, leeches in the gorge and landslides on the road."
+  },
+  "permits": ["langtang-np", "tims"],
+  "guide": {
+    "rule": "required",
+    "note": "The Nepal Tourism Board has required foreign trekkers to hire a licensed guide since April 2023, though checks on the trail are inconsistent. Here a guide earns the fee twice over: by knowing which roadhead, bridges and lodges are in use after the 2026 flood, and by judging the weather and your condition on the Kyanjin Ri or Tserko Ri day."
+  },
+  "highlights": [
+    "Two days from oak and bamboo gorge to open glacial valley",
+    "Kyanjin Gompa, ringed by Langtang Lirung, Kimshung and Naya Kanga",
+    "Sunrise from Kyanjin Ri, or a full day on Tserko Ri",
+    "Fresh yak cheese from the Kyanjin factory, started in the 1950s",
+    "Mani walls, prayer wheels and Tibetan-influenced village life"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive from Kathmandu to Syabrubesi",
+      "from": "kathmandu",
+      "to": "syabrubesi",
+      "sleep": 1460,
+      "hours": [7, 9],
+      "kind": "transfer",
+      "mode": "drive",
+      "note": "A long road day through Trishuli Bazaar and Dhunche, where park permits are checked. Since the August 2026 flood, vehicles have been stopping at Dhunche or Thulo Syabru instead; settle the roadhead with your agency before you book transport."
+    },
+    {
+      "day": 2,
+      "title": "Syabrubesi to Lama Hotel",
+      "from": "syabrubesi",
+      "to": "lama-hotel",
+      "via": ["bamboo-langtang", "rimche"],
+      "sleep": 2470,
+      "hours": [6, 7],
+      "km": 11,
+      "kind": "trek",
+      "note": "Cross the Bhote Koshi, then follow the Langtang Khola upstream through a damp gorge of oak, maple and bamboo. Lunch at Bamboo; the last two hours, up to Rimche and along to Lama Hotel, are the steepest. If you start from Thulo Syabru instead, you join this trail a little below Bamboo."
+    },
+    {
+      "day": 3,
+      "title": "Lama Hotel to Langtang Village",
+      "from": "lama-hotel",
+      "to": "langtang-village",
+      "via": ["ghodatabela", "thangshyap"],
+      "sleep": 3430,
+      "hours": [6, 7],
+      "km": 14,
+      "kind": "trek",
+      "note": "Forest for three hours to the checkpost at Ghodatabela, then the valley widens into yak pasture. You gain 960 m of sleeping height, the most of the trek; if a headache starts, stop at Thangshyap. The trail crosses the 2015 debris field just before the rebuilt village."
+    },
+    {
+      "day": 4,
+      "title": "Langtang Village to Kyanjin Gompa",
+      "from": "langtang-village",
+      "to": "kyanjin-gompa",
+      "via": ["mundu"],
+      "sleep": 3870,
+      "hours": [3, 4],
+      "km": 7,
+      "kind": "trek",
+      "note": "A short morning past Mundu and long mani walls, climbing gently over old moraine. Arrive for lunch, then spend the afternoon on your feet around the gompa and the cheese factory rather than lying down; it helps you adjust."
+    },
+    {
+      "day": 5,
+      "title": "Day hike to Kyanjin Ri or Tserko Ri",
+      "from": "kyanjin-gompa",
+      "to": "kyanjin-gompa",
+      "via": ["kyanjin-ri"],
+      "sleep": 3870,
+      "high": 4773,
+      "hours": [4, 5],
+      "kind": "summit",
+      "note": "Kyanjin Ri is the usual choice: a steep 900 m climb to 4,773 m and back by lunch. Tserko Ri, at 4,984 m, is higher and much longer, seven to eight hours return; take it on only if you slept well, and start by 6 am. Turn back if cloud closes in."
+    },
+    {
+      "day": 6,
+      "title": "Kyanjin Gompa to Lama Hotel",
+      "from": "kyanjin-gompa",
+      "to": "lama-hotel",
+      "via": ["langtang-village", "ghodatabela"],
+      "sleep": 2470,
+      "hours": [6, 7],
+      "km": 21,
+      "kind": "trek",
+      "note": "The whole upper valley in reverse, downhill almost all the way. It is easy on the lungs and hard on knees and toes, so use poles. Lunch at Thangshyap or Ghodatabela."
+    },
+    {
+      "day": 7,
+      "title": "Lama Hotel to Syabrubesi",
+      "from": "lama-hotel",
+      "to": "syabrubesi",
+      "via": ["bamboo-langtang"],
+      "sleep": 1460,
+      "hours": [4, 5],
+      "km": 11,
+      "kind": "trek",
+      "note": "Back down the gorge to the road. For a change of scene, take the high trail from Rimche through Sherpagaon and Khangjim, which stays in the sun and adds an hour or two. While the Syabrubesi road is closed, turn off below Bamboo for Thulo Syabru instead."
+    },
+    {
+      "day": 8,
+      "title": "Drive back to Kathmandu",
+      "from": "syabrubesi",
+      "to": "kathmandu",
+      "sleep": 1400,
+      "hours": [7, 9],
+      "kind": "transfer",
+      "mode": "drive",
+      "note": "The same road in reverse. Landslides and roadworks make the timing unpredictable, so do not book an international flight for the same evening."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Road and roadhead after the 2026 flood",
+      "text": "The Bhote Koshi flood of 26 August 2026 destroyed bridges and long stretches of road around Syabrubesi. The valley trail lies on a different river and reopened in late October 2026 by way of Dhunche and Thulo Syabru. Check which approach is open in the week you travel, and expect the first and last stages to differ from the classic plan."
+    },
+    {
+      "title": "Altitude",
+      "text": "The standard plan goes from 1,460 m to 3,870 m in three walking days, faster than the usual guideline. Mild headaches at Langtang village and Kyanjin Gompa are common. Do not go higher with symptoms, and do not try Kyanjin Ri or Tserko Ri if you felt unwell overnight."
+    },
+    {
+      "title": "Landslides and rockfall",
+      "text": "The gorge below Lama Hotel and the slopes between Ghodatabela and Langtang village shed rock, especially during and just after the monsoon. Do not linger in slide paths, and ask lodge owners about recent falls."
+    },
+    {
+      "title": "Weather on the high day",
+      "text": "Kyanjin Ri and Tserko Ri are exposed ridges. Wind and cloud build quickly after midday, and the paths near the tops are faint under snow. Start early, carry a warm layer and a head torch, and turn back if you lose the view."
+    }
+  ],
+  "tips": [
+    "Bring enough rupees from Kathmandu for the whole trek. Do not count on finding a working ATM after Trishuli Bazaar.",
+    "Spend two nights at Kyanjin Gompa. With only one you either skip the day hike or walk it tired.",
+    "Lodges at Lama Hotel fill by mid-afternoon in October and November; Rimche, twenty minutes lower, usually has room.",
+    "Treat all water. Lodges sell boiled or filtered water, which saves buying plastic bottles.",
+    "Walk the path across the old village site quietly. Many of those who died in 2015 were never recovered, and their families run the lodges you sleep in.",
+    "Mobile coverage is patchy in the gorge; lodges from Langtang village upward sell Wi-Fi by the day."
+  ],
+  "variants": [
+    {
+      "name": "Start from Dhunche and Thulo Syabru",
+      "text": "The approach in use since the 2026 flood. From Dhunche the old trail runs through Thulo Bharkhu and Brabal to Thulo Syabru, then drops to the Langtang Khola and joins the main route below Bamboo. On foot from Dhunche it adds a day each way; a jeep to Thulo Syabru, when the track is open, saves it."
+    },
+    {
+      "name": "Tserko Ri as an extra day",
+      "text": "A third night at Kyanjin Gompa lets you climb Kyanjin Ri first and Tserko Ri the next morning, which is kinder on your body than going straight for the higher top."
+    },
+    {
+      "name": "Langshisha Kharka",
+      "text": "A long, nearly level day east along the valley floor to the yak pastures at its head and back, eight to nine hours with no lodges on the way."
+    },
+    {
+      "name": "High trail through Sherpagaon",
+      "text": "Between Syabrubesi and Rimche a higher path through Khangjim and Sherpagaon stays in the sun and avoids the gorge. It is a little longer and a good way to vary the return."
+    },
+    {
+      "name": "Continue to Gosaikunda",
+      "text": "Instead of walking out to the road, climb from below Bamboo to Thulo Syabru and on to Chandanbari and the Gosaikunda lakes. Allow four more days to Dhunche. You arrive at the lakes already acclimatized."
+    }
+  ],
+  "related": ["gosaikunda", "langtang-gosaikunda-helambu", "tamang-heritage-trail", "helambu"],
+  "confidence": "medium"
+}

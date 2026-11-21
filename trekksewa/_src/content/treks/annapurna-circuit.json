@@ -1,0 +1,232 @@
+{
+  "slug": "annapurna-circuit",
+  "name": "Annapurna Circuit",
+  "aka": ["Thorong La trek", "Round Annapurna"],
+  "region": "annapurna",
+  "tagline": "Around the Annapurna range and over the 5,416 m Thorong La",
+  "summary": "The classic loop up the Marsyangdi valley to Manang, over the Thorong La at 5,416 m and down to Muktinath and Jomsom, planned around the roads that now flank it.",
+  "intro": [
+    "The Annapurna Circuit goes up one great valley and down another. It follows the Marsyangdi north and west from the rice country of Lamjung to the dry, Tibetan-influenced villages of Manang, crosses the Thorong La between Manang and Mustang, and descends to the pilgrim town of Muktinath and the Kali Gandaki. In a little over a week the country changes from pine forest to high desert, and the skyline from Manaslu and the Annapurnas to Dhaulagiri.",
+    "It is no longer the three-week walk of the old guidebooks. A road now runs up the Marsyangdi as far as Manang and another climbs the Kali Gandaki to Muktinath, so the first and last weeks of the original route are mostly driven. Most trekkers take a jeep from Besisahar to Dharapani or Chame and finish at Jomsom, which leaves eight or nine walking days. Where road and trail coincide, marked side paths known as NATT (New Annapurna Trekking Trail) routes, painted red and white or blue and white, keep you on footpaths, often on the opposite bank or higher up the hillside.",
+    "The pass decides everything else. At 5,416 m the Thorong La is higher than Everest Base Camp, and the jeep road makes it easy to arrive in Manang at 3,500 m with no acclimatization at all. The plan below starts walking at Dharapani, takes the high trail through Ghyaru and Ngawal, spends two nights in Manang and then climbs in two short stages to Thorong Phedi. Cutting any of that to save a day is the commonest reason people fail to cross, or need help."
+  ],
+  "days": 10,
+  "daysRange": [10, 18],
+  "distanceKm": 107,
+  "maxAlt": { "m": 5416, "place": "thorong-la" },
+  "difficulty": "challenging",
+  "difficultyNote": "The trail is straightforward, but the pass day climbs nearly 1,000 m to 5,416 m and descends 1,650 m, and everything depends on acclimatizing properly first.",
+  "style": ["teahouse"],
+  "start": "dharapani",
+  "end": "jomsom",
+  "gateway": "pokhara",
+  "access": {
+    "summary": "Besisahar is the road gateway, six to seven hours by bus from Kathmandu or four to five from Pokhara. Jeeps continue up the Marsyangdi on a rough road to Dharapani, Chame and Manang. The trek ends at Jomsom, which has morning flights and a long road to Pokhara.",
+    "options": [
+      { "mode": "bus", "from": "kathmandu", "to": "besisahar", "time": "6–7 hr", "note": "Direct buses and microbuses leave early in the morning. Many trekkers start from Kathmandu and only see Pokhara at the end." },
+      { "mode": "bus", "from": "pokhara", "to": "besisahar", "time": "4–5 hr", "note": "Several morning departures." },
+      { "mode": "jeep", "from": "besisahar", "to": "dharapani", "time": "3–4 hr", "note": "Shared jeeps leave when full. The road is rough and exposed in places and is often cut by landslides in the monsoon." },
+      { "mode": "jeep", "from": "besisahar", "to": "chame", "time": "5–6 hr", "note": "A common shortcut that saves a day on foot. Buses have also begun running this stretch, but schedules change." },
+      { "mode": "flight", "from": "jomsom", "to": "pokhara", "time": "20 min", "note": "Early-morning flights only, cancelled when wind or cloud builds. Book a day or two ahead in season." },
+      { "mode": "bus", "from": "jomsom", "to": "pokhara", "time": "8–10 hr", "note": "By bus or jeep down the Kali Gandaki through Tatopani and Beni; the road is rough above Beni." }
+    ]
+  },
+  "seasons": {
+    "best": [4, 5, 10, 11],
+    "good": [3, 9, 12],
+    "hard": [1, 2, 6, 7, 8],
+    "note": "October and November bring the most stable weather and the most people. April and May are warmer, with more afternoon cloud. In March and December the pass is usually crossable but can close for days after snowfall, and in January and February the lodges at Thorong Phedi and High Camp may shut. The monsoon is fairly dry in Manang, but landslides cut the road below Chame and cloud hides the peaks."
+  },
+  "permits": ["acap", "tims"],
+  "guide": {
+    "rule": "required",
+    "note": "Since April 2023 the Nepal Tourism Board has required foreign trekkers in conservation areas to walk with a licensed guide, though checks on the trail are inconsistent. On this route a guide earns the fee by holding you to the acclimatization schedule, finding the side trails that avoid the road, and making the call on whether to start for the pass when the weather is doubtful."
+  },
+  "highlights": [
+    "Crossing the Thorong La at 5,416 m",
+    "The high trail through Ghyaru and Ngawal beneath Annapurna II, III and IV",
+    "Manang and its side walks to glacier lakes and hermitages",
+    "The curved rock wall of Paungda Danda above Bhratang",
+    "Muktinath temple, with its 108 water spouts and natural flame",
+    "The change from pine forest to the high desert of Mustang"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive to Besisahar, jeep to Dharapani",
+      "from": "pokhara",
+      "to": "dharapani",
+      "via": ["besisahar"],
+      "sleep": 1860,
+      "hours": [7, 9],
+      "kind": "transfer",
+      "mode": "jeep",
+      "note": "Bus to Besisahar, four to five hours from Pokhara or six to seven from Kathmandu, then three to four hours by shared jeep up the Marsyangdi gorge. The road is rough and narrow. Permits are checked at Dharapani, where the Manaslu trail comes in."
+    },
+    {
+      "day": 2,
+      "title": "Dharapani to Chame",
+      "from": "dharapani",
+      "to": "chame",
+      "via": ["timang", "koto"],
+      "sleep": 2670,
+      "high": 2750,
+      "hours": [5, 6],
+      "km": 16,
+      "kind": "trek",
+      "note": "Follow the road and its footpath shortcuts through Bagarchhap to Danakyu, then take the steep forest trail up to Timang, which leaves the road behind and looks back at Manaslu. An easier stretch through Thanchok and Koto leads to Chame, with Annapurna II and Lamjung Himal ahead."
+    },
+    {
+      "day": 3,
+      "title": "Chame to Upper Pisang",
+      "from": "chame",
+      "to": "upper-pisang",
+      "via": ["bhratang", "dhikur-pokhari"],
+      "sleep": 3300,
+      "hours": [5, 6],
+      "km": 15,
+      "kind": "trek",
+      "note": "Pine forest and apple orchards to Bhratang, then the valley bends beneath the great curved slab of Paungda Danda. After Dhikur Pokhari leave the road, cross the river and climb to Upper Pisang. You are now above 3,000 m, so slow down and keep the afternoon easy."
+    },
+    {
+      "day": 4,
+      "title": "Upper Pisang to Manang by the high route",
+      "from": "upper-pisang",
+      "to": "manang",
+      "via": ["ghyaru", "ngawal", "braga"],
+      "sleep": 3519,
+      "high": 3670,
+      "hours": [6, 7],
+      "km": 19,
+      "kind": "trek",
+      "note": "The best day on the eastern side. A long set of switchbacks climbs about 400 m to Ghyaru, then a balcony trail runs to Ngawal with Annapurna II, III, IV and Gangapurna across the valley. Descend to the valley floor and walk on through Braga to Manang. Going high and sleeping lower helps you acclimatize."
+    },
+    {
+      "day": 5,
+      "title": "Acclimatization day in Manang",
+      "from": "manang",
+      "to": "manang",
+      "via": ["praken-gompa"],
+      "sleep": 3519,
+      "high": 3945,
+      "hours": [3, 4],
+      "km": 4,
+      "kind": "acclimatization",
+      "note": "Do not skip this, and take a second day if you arrived by jeep or still have a headache. Climb to Praken Gompa above the village, or to the Chongkor viewpoint over Gangapurna Lake, come down for lunch, and go to the aid post's afternoon talk on altitude if it is running."
+    },
+    {
+      "day": 6,
+      "title": "Manang to Yak Kharka",
+      "from": "manang",
+      "to": "yak-kharka-manang",
+      "via": ["gunsang"],
+      "sleep": 4018,
+      "hours": [3, 4],
+      "km": 10,
+      "kind": "trek",
+      "note": "A short stage on purpose. The trail climbs out of the Marsyangdi valley past Tanki Manang and Gunsang into the side valley that leads to the pass, through juniper scrub and yak pasture. Arrive by lunch, then walk a little higher in the afternoon and come back down."
+    },
+    {
+      "day": 7,
+      "title": "Yak Kharka to Thorong Phedi",
+      "from": "yak-kharka-manang",
+      "to": "thorong-phedi",
+      "via": ["ledar"],
+      "sleep": 4450,
+      "hours": [3, 4],
+      "km": 7,
+      "kind": "trek",
+      "note": "An hour to Ledar, then down to a bridge and up to a narrow path across loose slopes where stones fall; cross without stopping. You reach Phedi by lunch. Walk part of the way toward High Camp in the afternoon, eat early and pack for a pre-dawn start."
+    },
+    {
+      "day": 8,
+      "title": "Over the Thorong La to Muktinath",
+      "from": "thorong-phedi",
+      "to": "muktinath",
+      "via": ["thorong-high-camp", "thorong-la"],
+      "sleep": 3760,
+      "high": 5416,
+      "hours": [7, 10],
+      "km": 16,
+      "kind": "pass",
+      "note": "Leave between four and five. A steep hour of zigzags reaches High Camp, then the trail climbs more gently over moraine, past several false summits, to the prayer flags on the pass. The descent is 1,650 m of loose trail and hard on the knees; tea shops begin at Chabarbu, about an hour above Muktinath."
+    },
+    {
+      "day": 9,
+      "title": "Muktinath to Jomsom by Kagbeni",
+      "from": "muktinath",
+      "to": "jomsom",
+      "via": ["jharkot", "kagbeni"],
+      "sleep": 2720,
+      "hours": [5, 6],
+      "km": 20,
+      "kind": "trek",
+      "note": "Visit the temple early, then descend through Jharkot and Khinga to the mud-walled lanes of Kagbeni for lunch. The last three hours follow the Kali Gandaki riverbed and road into a strong afternoon headwind. Many people take a jeep from Muktinath or Kagbeni instead; the quieter footpath goes by Lubra."
+    },
+    {
+      "day": 10,
+      "title": "Fly or drive to Pokhara",
+      "from": "jomsom",
+      "to": "pokhara",
+      "sleep": 822,
+      "hours": [1, 1],
+      "kind": "transfer",
+      "mode": "flight",
+      "note": "Flights leave soon after dawn and stop once the valley wind rises, so cancellations are common. The alternative is eight to ten hours by bus or jeep down the Kali Gandaki through Tatopani and Beni. Keep a spare day before any onward travel."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Altitude on the Thorong La",
+      "text": "The pass is 5,416 m, and the jeep road lets people reach Manang far too quickly. Spend two nights in Manang, three if you drove up, and after that do not raise your sleeping height by more than about 500 m a night. If you have symptoms at Thorong Phedi, go down to Ledar or Yak Kharka. The aid post in Manang can assess you in season."
+    },
+    {
+      "title": "Storms and snow on the pass",
+      "text": "Weather on the Thorong La changes fast. In October 2014 an unseasonal storm killed at least 43 people on and around the pass. Do not start if it is snowing or the forecast is poor, and turn back if you lose the marker poles. Lodge owners at Phedi know the conditions."
+    },
+    {
+      "title": "Road traffic and dust",
+      "text": "Between Dharapani and Manang, and again below Muktinath, you share stretches with jeeps, buses and motorbikes. Take the marked side trails where they exist, and cover your nose and mouth on the Kali Gandaki road."
+    },
+    {
+      "title": "Landslides and rockfall",
+      "text": "The road below Chame is cut in most monsoons, and the slope between Ledar and Thorong Phedi sheds stones. Cross slide areas one person at a time, without stopping."
+    },
+    {
+      "title": "Wind in the Kali Gandaki",
+      "text": "From late morning a strong wind blows up the valley between Jomsom and Kagbeni, carrying sand and grit. Walk this section early in the day, or ride."
+    }
+  ],
+  "tips": [
+    "Carry cash for the whole trek. The machines in Chame and Jomsom cannot be relied on, and there is nothing dependable in between.",
+    "Look for the red-and-white and blue-and-white paint marks of the NATT trails wherever the route meets the road.",
+    "Take the upper trail from Upper Pisang even if you are tired. The lower route follows the road and misses the best views.",
+    "For the pass carry two litres of water in bottles that will not freeze, snacks, sunglasses and, after any snowfall, microspikes.",
+    "Leave Thorong Phedi no later than five. Wind on the pass strengthens from about ten.",
+    "If you are not sleeping well at Phedi's height, do not move up to High Camp for the night."
+  ],
+  "variants": [
+    {
+      "name": "Start from Chame",
+      "text": "A jeep to Chame saves a day and is now the commonest start. Add a night there, or a third night in Manang, to make up for arriving at 2,670 m by road."
+    },
+    {
+      "name": "The old trail from Bhulbhule",
+      "text": "Some walkers still start in the lower Marsyangdi and use the trails through Bahundanda, Ghermu and Tal that keep off the road. It adds three to four days and helps acclimatization."
+    },
+    {
+      "name": "Tilicho Lake",
+      "text": "A three-day detour from Manang through Khangsar to the lake at 4,919 m, rejoining the main trail at Yak Kharka. See the Tilicho Lake trek."
+    },
+    {
+      "name": "Walk on to Tatopani and Poon Hill",
+      "text": "From Jomsom the full circuit continues down the Kali Gandaki through Marpha, Tukuche and Kalopani to Tatopani, then climbs to Ghorepani and ends at Nayapul. Add five to seven days."
+    },
+    {
+      "name": "Sleep at High Camp",
+      "text": "Sleeping at Thorong High Camp takes an hour of steep climbing off the pass day, at the cost of a colder and higher night. It suits only those who are already sleeping well at altitude."
+    }
+  ],
+  "related": ["tilicho-lake", "nar-phu-valley", "jomsom-muktinath", "manaslu-circuit", "ghorepani-poon-hill", "upper-mustang"],
+  "confidence": "high"
+}

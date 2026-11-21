@@ -1,0 +1,135 @@
+{
+  "note": "Items carry optional conditions: alt (only when the trek goes at least this high), cold, wet, snow, camping, porter (only in that situation). rent marks things that are easy to rent in Kathmandu or Pokhara.",
+  "groups": [
+    {
+      "id": "docs",
+      "name": "Documents and money",
+      "items": [
+        { "t": "Passport, plus two passport photos for permits" },
+        { "t": "Permits and trekker registration card", "n": "Keep them where you can reach them at checkpoints." },
+        { "t": "Insurance policy number and 24-hour assistance phone, on paper" },
+        { "t": "Nepali rupees in cash for the whole trek", "n": "ATMs are rare and unreliable once you leave the city." },
+        { "t": "Photocopies or phone photos of passport and visa" },
+        { "t": "Emergency card filled in on this site" }
+      ]
+    },
+    {
+      "id": "pack",
+      "name": "Bags",
+      "items": [
+        { "t": "Day pack, 25–35 litres, with a rain cover" },
+        { "t": "Soft duffel for the porter, 60–80 litres", "porter": true, "rent": true, "n": "Keep it to 10–12 kg so the porter's load stays within limits." },
+        { "t": "Trekking pack, 45–60 litres, if you carry everything yourself", "noPorter": true },
+        { "t": "Dry bags or strong plastic bags to line the pack" },
+        { "t": "Small padlock for the duffel and lodge doors" }
+      ]
+    },
+    {
+      "id": "feet",
+      "name": "Footwear",
+      "items": [
+        { "t": "Trekking boots you have already broken in", "n": "Do not rent or buy these new for the trek." },
+        { "t": "Three or four pairs of trekking socks" },
+        { "t": "Thick warm socks for the evenings", "cold": true },
+        { "t": "Sandals or light shoes for lodges and river crossings" },
+        { "t": "Gaiters", "snow": true },
+        { "t": "Microspikes", "snow": true, "rent": true, "n": "For icy trails and passes." }
+      ]
+    },
+    {
+      "id": "clothes",
+      "name": "Clothing",
+      "items": [
+        { "t": "Two or three quick-drying base-layer tops" },
+        { "t": "Trekking trousers, and shorts for the low valleys" },
+        { "t": "Fleece or light insulated mid layer" },
+        { "t": "Waterproof jacket with a hood" },
+        { "t": "Waterproof overtrousers", "alt": 3000 },
+        { "t": "Thick down jacket", "alt": 3500, "rent": true },
+        { "t": "Light down or synthetic jacket", "maxAlt": 3499 },
+        { "t": "Thermal leggings and top to sleep in", "alt": 3000 },
+        { "t": "Warm hat that covers the ears", "alt": 2500 },
+        { "t": "Sun hat or cap" },
+        { "t": "Buff or scarf for dust, sun and cold air" },
+        { "t": "Light gloves", "alt": 3000 },
+        { "t": "Insulated gloves or mittens", "alt": 4500 },
+        { "t": "Underwear, including one spare set kept dry" },
+        { "t": "Poncho or pack-covering rain cape", "wet": true },
+        { "t": "Modest clothes for villages and monasteries", "n": "Shoulders and knees covered." }
+      ]
+    },
+    {
+      "id": "sleep",
+      "name": "Sleeping",
+      "items": [
+        { "t": "Sleeping bag rated to about −10 °C", "alt": 3000, "maxAlt": 4499, "rent": true },
+        { "t": "Sleeping bag rated to −20 °C", "alt": 4500, "rent": true },
+        { "t": "Light sleeping bag or liner", "maxAlt": 2999 },
+        { "t": "Sleeping bag liner", "alt": 3000, "n": "Adds warmth and keeps a rented bag away from your skin." },
+        { "t": "Earplugs", "n": "Lodge walls are thin." },
+        { "t": "Inflatable sleeping mat", "camping": true, "rent": true }
+      ]
+    },
+    {
+      "id": "kit",
+      "name": "On the trail",
+      "items": [
+        { "t": "Trekking poles", "rent": true },
+        { "t": "Headlamp with spare batteries" },
+        { "t": "Sunglasses with full UV protection", "n": "Glacier-rated above the snow line." },
+        { "t": "Two one-litre water bottles, or a bottle and a bladder" },
+        { "t": "Water treatment: tablets, filter or UV pen" },
+        { "t": "Sunscreen SPF 50 and lip balm with SPF" },
+        { "t": "Printed map of the region" },
+        { "t": "Whistle" },
+        { "t": "Snacks for the first days: nuts, bars, dried fruit" },
+        { "t": "Insulated flask for hot water", "alt": 4000 },
+        { "t": "Umbrella", "wet": true, "n": "Better than a jacket in warm monsoon rain." },
+        { "t": "Leech socks and salt", "wet": true }
+      ]
+    },
+    {
+      "id": "health",
+      "name": "Health and hygiene",
+      "items": [
+        { "t": "Personal first-aid kit: plasters, blister dressings, tape, antiseptic" },
+        { "t": "Painkillers: paracetamol and ibuprofen" },
+        { "t": "Oral rehydration salts and diarrhoea medicine" },
+        { "t": "Your own prescription medicines, with spares in a separate bag" },
+        { "t": "Altitude medicine, if a doctor has prescribed it for you", "alt": 3500 },
+        { "t": "Pulse oximeter", "alt": 4000, "n": "A trend to watch, not a diagnosis. Symptoms matter more." },
+        { "t": "Hand sanitiser and soap" },
+        { "t": "Toilet paper and a lighter or bags to carry it out" },
+        { "t": "Quick-drying towel" },
+        { "t": "Toothbrush, toothpaste and basic toiletries" },
+        { "t": "Wet wipes", "alt": 3500, "n": "Showers get cold, scarce and expensive higher up." },
+        { "t": "Menstrual products, and bags to carry used ones out" },
+        { "t": "Insect repellent", "maxAlt": 3499 }
+      ]
+    },
+    {
+      "id": "power",
+      "name": "Electronics",
+      "items": [
+        { "t": "Phone with offline maps and this site saved" },
+        { "t": "Power bank, 10,000 mAh or more" },
+        { "t": "Charging cables and a plug adapter", "n": "Nepal uses round two- and three-pin sockets." },
+        { "t": "Local SIM card", "n": "Carry both main networks on remote routes if you can." },
+        { "t": "Camera, spare battery and memory card" },
+        { "t": "Solar panel or second power bank", "camping": true },
+        { "t": "Satellite messenger with an active plan", "remote": true, "n": "For routes several days from a road or phone signal." }
+      ]
+    },
+    {
+      "id": "camp",
+      "name": "Camping extras",
+      "items": [
+        { "t": "Tent rated for the season", "camping": true, "rent": true, "n": "Usually supplied by the agency." },
+        { "t": "Stove, fuel and cooking pots", "camping": true, "n": "Usually supplied by the agency." },
+        { "t": "Mug, bowl and spoon", "camping": true },
+        { "t": "Repair kit: tape, cord, needle and thread", "camping": true },
+        { "t": "Crampons, ice axe and rope, if the route crosses a glacier", "glacier": true, "rent": true, "n": "And a guide who knows how to use them." }
+      ]
+    }
+  ]
+}

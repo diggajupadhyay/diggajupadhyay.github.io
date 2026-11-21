@@ -1,0 +1,237 @@
+{
+  "slug": "everest-base-camp",
+  "name": "Everest Base Camp",
+  "aka": ["EBC"],
+  "region": "everest",
+  "tagline": "Twelve days through Sherpa country to the foot of the Khumbu Icefall",
+  "summary": "The classic walk from Lukla through Namche, Tengboche and Dingboche to Everest Base Camp and the Kala Patthar viewpoint, with two built-in acclimatization days.",
+  "intro": [
+    "This is the trail most people picture when they think of trekking in Nepal. It follows the Dudh Koshi north from Lukla, climbs to the Sherpa market town of Namche Bazaar and then works its way up the Imja and Khumbu valleys to the lodges at Gorak Shep, a short walk from base camp.",
+    "The route is not technical and the paths are wide and well kept. What makes it hard is altitude. You sleep above 4,000 m for five nights and above 5,000 m for one, and the usual itinerary gains height about as fast as is sensible. The two rest days, at Namche and Dingboche, are part of the route rather than optional extras.",
+    "Lodges, bakeries and Wi-Fi reach all the way to Gorak Shep, so you carry little and eat well. In return, expect company: in April, May, October and November the trail and the lodges are busy, and beds above Dingboche are worth booking ahead through a guide or agency."
+  ],
+  "days": 12,
+  "daysRange": [12, 15],
+  "distanceKm": 130,
+  "maxAlt": { "m": 5545, "place": "kala-patthar" },
+  "difficulty": "challenging",
+  "difficultyNote": "Easy underfoot, but nine consecutive nights above 3,400 m make altitude the deciding factor.",
+  "style": ["teahouse"],
+  "start": "lukla",
+  "end": "lukla",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "Fly to Lukla from Kathmandu or, in the peak months, from Manthali in Ramechhap. Flights go early in the morning and stop when cloud or wind builds, so delays of a day are common.",
+    "options": [
+      { "mode": "flight", "from": "kathmandu", "to": "lukla", "time": "35 min", "note": "Mostly outside the peak months; in spring and autumn many flights move to Manthali." },
+      { "mode": "flight", "from": "manthali", "to": "lukla", "time": "20 min", "note": "Add a four to five hour night drive from Kathmandu to reach the airstrip." },
+      { "mode": "jeep", "from": "kathmandu", "to": "lukla", "time": "1–2 days + 2 days' walk", "note": "Jeeps reach Salleri and, when the road is passable, Thamdanda below Lukla. A workable fallback when flights are grounded." }
+    ]
+  },
+  "seasons": {
+    "best": [3, 4, 5, 10, 11],
+    "good": [2, 9, 12],
+    "hard": [1, 6, 7, 8],
+    "note": "Autumn has the clearest air; spring is warmer and base camp is busy with expeditions. Winter is dry and very cold above Dingboche. In the monsoon, cloud hides the peaks and Lukla flights are unreliable."
+  },
+  "permits": ["sagarmatha-np", "khumbu-rm"],
+  "guide": {
+    "rule": "strongly-recommended",
+    "note": "Khumbu has not enforced the national guide requirement, so independent trekking remains possible here. A licensed guide still earns their fee on this route: they book beds above Dingboche, watch for altitude symptoms and arrange help quickly if you need to descend."
+  },
+  "highlights": [
+    "Namche Bazaar and its Saturday market",
+    "Tengboche monastery with Ama Dablam behind it",
+    "Standing on the Khumbu Glacier at base camp",
+    "Sunset or sunrise over Everest and Nuptse from Kala Patthar",
+    "Suspension bridges high above the Dudh Koshi"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Fly to Lukla, walk to Phakding",
+      "from": "lukla",
+      "to": "phakding",
+      "sleep": 2610,
+      "hours": [3, 4],
+      "km": 8,
+      "kind": "trek",
+      "note": "After the morning flight, an easy and mostly downhill walk along the Dudh Koshi. Sleeping lower than Lukla is a gentle start for your body."
+    },
+    {
+      "day": 2,
+      "title": "Phakding to Namche Bazaar",
+      "from": "phakding",
+      "to": "namche-bazaar",
+      "via": ["monjo"],
+      "sleep": 3440,
+      "hours": [5, 6],
+      "km": 11,
+      "kind": "trek",
+      "note": "Permits are checked at the park gate in Monjo. After the high Hillary bridge the trail climbs about 600 m without a break; take it slowly and drink plenty."
+    },
+    {
+      "day": 3,
+      "title": "Acclimatization day in Namche",
+      "from": "namche-bazaar",
+      "to": "namche-bazaar",
+      "via": ["everest-view-hotel", "khumjung"],
+      "sleep": 3440,
+      "high": 3880,
+      "hours": [3, 4],
+      "km": 6,
+      "kind": "acclimatization",
+      "note": "Walk up to the ridge above town for a first look at Everest, loop through Khumjung if you feel good, then come back down to sleep at the same height."
+    },
+    {
+      "day": 4,
+      "title": "Namche to Tengboche",
+      "from": "namche-bazaar",
+      "to": "tengboche",
+      "sleep": 3860,
+      "hours": [5, 6],
+      "km": 10,
+      "kind": "trek",
+      "note": "A level balcony trail with Ama Dablam ahead, then a drop to the river at Phunki Tenga and a steady two-hour forest climb to the monastery."
+    },
+    {
+      "day": 5,
+      "title": "Tengboche to Dingboche",
+      "from": "tengboche",
+      "to": "dingboche",
+      "via": ["pangboche"],
+      "sleep": 4410,
+      "hours": [5, 6],
+      "km": 11,
+      "kind": "trek",
+      "note": "The trees thin out after Pangboche and the valley opens. This is the biggest sleeping gain of the trek so far, so arrive unhurried and keep the afternoon quiet."
+    },
+    {
+      "day": 6,
+      "title": "Acclimatization day in Dingboche",
+      "from": "dingboche",
+      "to": "dingboche",
+      "via": ["nangkartshang-peak"],
+      "sleep": 4410,
+      "high": 5083,
+      "hours": [3, 5],
+      "km": 5,
+      "kind": "acclimatization",
+      "note": "Climb the ridge behind the village as far as feels comfortable, then descend for lunch. Do not go higher tomorrow if you still have a headache this evening."
+    },
+    {
+      "day": 7,
+      "title": "Dingboche to Lobuche",
+      "from": "dingboche",
+      "to": "lobuche",
+      "via": ["thukla"],
+      "sleep": 4940,
+      "hours": [5, 6],
+      "km": 9,
+      "kind": "trek",
+      "note": "A gentle terrace walk to Thukla, a stiff climb up the terminal moraine past the climbers' memorials, then an easy stretch beside the glacier to Lobuche."
+    },
+    {
+      "day": 8,
+      "title": "Lobuche to Gorak Shep and Everest Base Camp",
+      "from": "lobuche",
+      "to": "gorak-shep",
+      "via": ["everest-base-camp"],
+      "sleep": 5164,
+      "high": 5364,
+      "hours": [7, 8],
+      "km": 13,
+      "kind": "summit",
+      "note": "Reach Gorak Shep by late morning, leave your bag and continue over rough moraine to base camp and back. A long day at altitude; turn round by early afternoon whatever point you have reached."
+    },
+    {
+      "day": 9,
+      "title": "Kala Patthar, then down to Pheriche",
+      "from": "gorak-shep",
+      "to": "pheriche",
+      "via": ["kala-patthar", "lobuche", "thukla"],
+      "sleep": 4240,
+      "high": 5545,
+      "hours": [7, 8],
+      "km": 15,
+      "kind": "summit",
+      "note": "A cold pre-dawn climb of about 400 m to the viewpoint, breakfast back at Gorak Shep, then a long descent. Dropping over 900 m of sleeping altitude makes the night noticeably easier."
+    },
+    {
+      "day": 10,
+      "title": "Pheriche to Namche Bazaar",
+      "from": "pheriche",
+      "to": "namche-bazaar",
+      "via": ["pangboche", "tengboche"],
+      "sleep": 3440,
+      "hours": [6, 7],
+      "km": 20,
+      "kind": "trek",
+      "note": "Mostly downhill, but with the climb back up to Tengboche and another from the river to the Namche trail. Long, and harder on the knees than the map suggests."
+    },
+    {
+      "day": 11,
+      "title": "Namche to Lukla",
+      "from": "namche-bazaar",
+      "to": "lukla",
+      "via": ["monjo", "phakding"],
+      "sleep": 2860,
+      "hours": [6, 7],
+      "km": 19,
+      "kind": "trek",
+      "note": "Steeply down to the river, then the rolling valley trail and a final uphill hour into Lukla. Reconfirm tomorrow's flight when you arrive."
+    },
+    {
+      "day": 12,
+      "title": "Fly out from Lukla",
+      "from": "lukla",
+      "to": "kathmandu",
+      "sleep": 1400,
+      "hours": [1, 1],
+      "kind": "transfer",
+      "mode": "flight",
+      "note": "Morning flight to Kathmandu or Manthali, weather permitting. If flights are cancelled you wait, walk out towards the road, or share a helicopter."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Altitude illness",
+      "text": "Most evacuations on this trail are for altitude sickness, typically between Dingboche and Gorak Shep. Do not climb with symptoms, and descend if they get worse. The aid post at Pheriche can assess you in season."
+    },
+    {
+      "title": "Lukla flights",
+      "text": "Flights are cancelled whenever cloud closes the approach, sometimes for several days. Build in at least one spare day before any international flight, and two in the monsoon shoulder months."
+    },
+    {
+      "title": "Yak and mule trains",
+      "text": "Step to the uphill side of the trail and wait when animals pass, especially on bridges and narrow cliff sections."
+    },
+    {
+      "title": "Cold above Lobuche",
+      "text": "Night temperatures at Gorak Shep fall to around minus 15 °C in spring and autumn, and lower in winter. Lodge bedrooms are unheated."
+    }
+  ],
+  "tips": [
+    "Carry enough cash from Kathmandu or Namche; there are no working ATMs above Namche.",
+    "Walk slower than feels necessary on the way up. Arriving fresh matters more than arriving first.",
+    "Drink three to four litres a day and treat all water with tablets, a filter or UV.",
+    "Hot showers, charging and Wi-Fi cost extra at every lodge and get pricier with height.",
+    "Use the Dingboche rest day to check how you feel with the altitude self-check before committing to Lobuche."
+  ],
+  "variants": [
+    {
+      "name": "Via Gokyo and the Cho La",
+      "text": "Add four to five days to cross from the Gokyo lakes over the 5,420 m Cho La and join the main trail near Lobuche. It makes a loop rather than an out-and-back."
+    },
+    {
+      "name": "Walk in from the road",
+      "text": "Starting from Salleri or Thamdanda adds two to four days through the Solu foothills, skips the flight and gives a gentler start."
+    },
+    {
+      "name": "Extra night at Lobuche or Dingboche",
+      "text": "If you have been to altitude before and know you adapt slowly, a third acclimatization night makes the last push safer."
+    }
+  ],
+  "related": ["gokyo-lakes", "everest-three-passes", "everest-base-camp-via-gokyo", "ama-dablam-base-camp", "everest-view-trek"],
+  "confidence": "high"
+}

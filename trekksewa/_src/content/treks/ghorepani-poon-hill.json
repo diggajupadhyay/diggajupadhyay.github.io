@@ -1,0 +1,156 @@
+{
+  "slug": "ghorepani-poon-hill",
+  "name": "Ghorepani Poon Hill",
+  "aka": ["Poon Hill", "Ghorepani Ghandruk loop", "Annapurna Panorama"],
+  "region": "annapurna",
+  "tagline": "A short loop through rhododendron forest to a famous sunrise ridge",
+  "summary": "Four or five days from Pokhara: up the Ulleri steps to Ghorepani, dawn on Poon Hill at 3,210 m, then along a forest ridge to Tadapani and the Gurung village of Ghandruk.",
+  "intro": [
+    "This is the best-known short trek in Nepal and, for many people, the first. It climbs from the Modi Khola through Magar villages to the lodge village of Ghorepani, goes up Poon Hill before dawn for the view of Dhaulagiri and the Annapurnas, and returns along a forested ridge to Tadapani and Ghandruk. The highest point is 3,210 m and you sleep no higher than 2,860 m, so altitude is rarely a problem.",
+    "What it asks for is leg strength. The second day climbs more than 1,300 m, starting with the stone staircase to Ulleri, and the day from Ghorepani to Tadapani goes up and down through forest for five or six hours. In March and April the rhododendron trees along the ridge are in flower. In October and November the air is clearest and the viewpoint is crowded: expect several hundred people on the hill at sunrise.",
+    "The road has crept in at both ends. A jeep track follows the Bhurungdi Khola to Hile and Tikhedhunga, in dry weather some jeeps carry on to Ulleri, and Ghandruk has a road to its lower edge. The plan below keeps the classic walking stages, and you can shorten it by riding the first and last sections. Between Ulleri and Ghandruk the trail is still a footpath, with lodges every hour or so."
+  ],
+  "days": 5,
+  "daysRange": [3, 6],
+  "distanceKm": 40,
+  "maxAlt": { "m": 3210, "place": "poon-hill" },
+  "difficulty": "easy",
+  "difficultyNote": "Low altitude, short stages and good lodges, though the 1,300 m climb to Ghorepani on day two is a real workout.",
+  "style": ["teahouse"],
+  "start": "nayapul",
+  "end": "ghandruk",
+  "gateway": "pokhara",
+  "access": {
+    "summary": "Drive from Pokhara to Nayapul in about an hour and a half; walking starts across the bridge at Birethanti. A jeep track continues up the valley to Hile and Tikhedhunga, and the trek ends at the road in Ghandruk, about three hours from Pokhara.",
+    "options": [
+      { "mode": "drive", "from": "pokhara", "to": "nayapul", "time": "1.5–2 hr", "note": "Taxi, private car or the local bus from the Baglung bus park." },
+      { "mode": "jeep", "from": "pokhara", "to": "tikhedhunga", "time": "2.5–3 hr", "note": "Saves the first three hours of walking, most of which are on the jeep track anyway. In dry weather some jeeps continue to Ulleri." },
+      { "mode": "jeep", "from": "ghandruk", "to": "pokhara", "time": "2.5–3 hr", "note": "From the stand below the village. Local buses leave from Kimche, an hour's walk down." }
+    ]
+  },
+  "seasons": {
+    "best": [3, 4, 10, 11],
+    "good": [1, 2, 5, 9, 12],
+    "hard": [6, 7, 8],
+    "note": "October and November are clearest. March and April are warmer and hazier, with the rhododendron forest in bloom. Winter is cold, with occasional snow and ice between Ghorepani and Tadapani, but the trails are quiet. In the monsoon expect daily rain, leeches and little chance of a view."
+  },
+  "permits": ["acap", "tims"],
+  "guide": {
+    "rule": "required",
+    "note": "Since April 2023 the Nepal Tourism Board has required foreign trekkers in conservation areas to walk with a licensed guide, though checks on the trail are inconsistent. The path here is easy to follow; a guide is most useful for securing rooms in Ghorepani and Tadapani in peak season and for the long forest stretch to Tadapani, which is lonely enough that walking it alone is not advised."
+  },
+  "highlights": [
+    "Sunrise over Dhaulagiri and the Annapurnas from Poon Hill",
+    "Rhododendron forest in bloom in March and April",
+    "The stone staircase of more than 3,000 steps to Ulleri",
+    "Ghandruk's slate-roofed houses and Gurung museum",
+    "Machhapuchhre and Annapurna South from the lodges at Tadapani"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive to Nayapul, walk to Tikhedhunga",
+      "from": "nayapul",
+      "to": "tikhedhunga",
+      "via": ["birethanti"],
+      "sleep": 1540,
+      "hours": [3, 4],
+      "km": 9,
+      "kind": "trek",
+      "note": "Permits are checked at Birethanti. From there the way follows a jeep track up the Bhurungdi Khola past Hile, with footpath shortcuts between the bends. It is hot and dusty in the afternoon, which is why many groups ride this section."
+    },
+    {
+      "day": 2,
+      "title": "Tikhedhunga to Ghorepani",
+      "from": "tikhedhunga",
+      "to": "ghorepani",
+      "via": ["ulleri", "banthanti"],
+      "sleep": 2860,
+      "hours": [5, 7],
+      "km": 10,
+      "kind": "trek",
+      "note": "The hardest day. A suspension bridge leads straight onto the Ulleri staircase, about 500 m of climbing on stone steps, then the gradient eases through oak and rhododendron forest past Banthanti and Nangethanti. You gain over 1,300 m, so start early and keep a steady pace."
+    },
+    {
+      "day": 3,
+      "title": "Poon Hill sunrise, then to Tadapani",
+      "from": "ghorepani",
+      "to": "tadapani",
+      "via": ["poon-hill"],
+      "sleep": 2630,
+      "high": 3210,
+      "hours": [6, 7],
+      "km": 13,
+      "kind": "summit",
+      "note": "Set out about an hour before sunrise for the 350 m climb to the viewpoint. After breakfast the trail climbs again to a ridge almost as high as Poon Hill, drops steeply through forest to a stream, then makes a last short climb to Tadapani."
+    },
+    {
+      "day": 4,
+      "title": "Tadapani to Ghandruk",
+      "from": "tadapani",
+      "to": "ghandruk",
+      "sleep": 1940,
+      "hours": [3, 4],
+      "km": 7,
+      "kind": "trek",
+      "note": "A steady descent of about 700 m through forest, steep and rooty in places, to the terraces above Ghandruk. You arrive by lunch, which leaves the afternoon for the old village, the museum and the view up the Modi Khola."
+    },
+    {
+      "day": 5,
+      "title": "Ghandruk to Pokhara",
+      "from": "ghandruk",
+      "to": "pokhara",
+      "via": ["kimche", "nayapul"],
+      "sleep": 822,
+      "hours": [3, 4],
+      "kind": "transfer",
+      "mode": "jeep",
+      "note": "Jeeps leave from the stand below the village and buses from Kimche, an hour down the steps. If you prefer to walk out, the old trail to Birethanti and Nayapul takes four to five hours and follows the road for much of the way."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Steep steps and long descents",
+      "text": "The Ulleri staircase and the drop from Tadapani are hard on the knees and slippery when wet or frosty. Poles help. In winter the shaded forest sections between Ghorepani and Tadapani hold ice well into the day."
+    },
+    {
+      "title": "Cold and crowds on Poon Hill",
+      "text": "The pre-dawn wait at 3,210 m is below freezing for much of the season, and the path is a line of head torches. Dress warmly, keep to the steps and do not rush the climb."
+    },
+    {
+      "title": "Vehicles on the lower trail",
+      "text": "Below Tikhedhunga and around Ghandruk you share the way with jeeps. Step well off the track when one passes, and expect dust in dry weather and mud after rain."
+    },
+    {
+      "title": "Rain and leeches in the monsoon",
+      "text": "From June to early September the forest is full of leeches and the trail runs with water. Cloud usually hides the mountains by mid-morning."
+    }
+  ],
+  "tips": [
+    "Book Ghorepani and Tadapani lodges ahead in October, November, March and April.",
+    "If dawn is cloudy, wait. The view from the upper lodges in Ghorepani an hour later is often as good as the hilltop.",
+    "Carry a head torch, gloves and a warm jacket for Poon Hill, even in spring.",
+    "There is no cash machine after Pokhara. Bring cash, including small notes for the Poon Hill entry ticket.",
+    "Sunset on Poon Hill is far quieter than sunrise, and you can see both if you reach Ghorepani by early afternoon."
+  ],
+  "variants": [
+    {
+      "name": "Three days by jeep",
+      "text": "Ride to Tikhedhunga or Ulleri, walk to Ghorepani the same day and reach the road at Ghandruk on day three. It works, but it leaves out much of what makes the loop a trek."
+    },
+    {
+      "name": "Out by Tatopani",
+      "text": "From Ghorepani descend west through Chitre and Shikha to the hot springs at Tatopani on the Kali Gandaki, a drop of about 1,700 m, and return to Pokhara by road through Beni."
+    },
+    {
+      "name": "On to Annapurna Base Camp",
+      "text": "From Tadapani a trail drops to the Kimrong Khola and climbs to Chhomrong, joining the Sanctuary route. Allow ten to eleven days in all."
+    },
+    {
+      "name": "Add Mohare Danda or Khopra Danda",
+      "text": "Quieter ridge trails link Ghorepani with the community lodges at Mohare Danda to the south-west and Khopra Danda to the north."
+    }
+  ],
+  "related": ["annapurna-base-camp", "khopra-ridge", "mohare-danda", "mardi-himal", "jomsom-muktinath"],
+  "confidence": "high"
+}

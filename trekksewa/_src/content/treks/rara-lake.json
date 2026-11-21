@@ -1,0 +1,208 @@
+{
+  "slug": "rara-lake",
+  "name": "Rara Lake",
+  "aka": ["Jumla to Rara Lake", "Rara National Park trek"],
+  "region": "western",
+  "tagline": "A loop from Jumla through Sinja to Nepal's largest lake",
+  "summary": "A ten-day circuit from the Jumla airstrip through the old Khasa capital of Sinja to Rara Lake at 2,990 m, returning over the Ghurchi Lagna and Danphe Lagna passes.",
+  "intro": [
+    "Rara is the largest lake in Nepal, nearly eleven square kilometres of clear water at 2,990 m, ringed by pine, spruce and juniper inside the country's smallest national park. It lies in Mugu, in the Karnali, one of the least developed corners of Nepal. The walk from Jumla is the classic way to reach it: out through the Sinja valley, where the Khasa kings ruled from the twelfth to the fourteenth century and the Nepali language took shape, and back over two forested passes.",
+    "Altitude is modest and the passes need no special skill outside winter. What makes the route demanding is the country itself. Villages are poor, lodges are few and basic, and food beyond rice, lentils and potatoes is whatever you or your crew carry. Many groups still camp, or mix tents with homestays and the simple lodges at the lake.",
+    "A road now reaches Jumla and continues, roughly, to Gamgadhi near the lake, and there is an airstrip at Talcha a few hours' walk from the shore, so Rara can also be visited in three or four days. The loop described here is for people who want the walk as much as the lake. Stage names and heights vary a good deal between sources; treat the figures as approximate."
+  ],
+  "days": 10,
+  "daysRange": [8, 13],
+  "distanceKm": 120,
+  "maxAlt": { "m": 3700, "place": "murma-top" },
+  "difficulty": "moderate",
+  "difficultyNote": "Nothing above about 3,700 m, but long days, three forested passes and very basic food and lodging.",
+  "style": ["teahouse", "camping"],
+  "start": "jumla",
+  "end": "jumla",
+  "gateway": "nepalgunj",
+  "access": {
+    "summary": "Fly from Kathmandu to Nepalgunj, spend the night, and take a morning flight to Jumla. Flights depend on the weather and are often delayed. Jumla is also on the Karnali Highway from Surkhet, a long and rough journey by bus or jeep that still runs when aircraft cannot.",
+    "options": [
+      { "mode": "flight", "from": "kathmandu", "to": "nepalgunj", "time": "about 1 hour", "note": "Several flights a day. Buses take ten to twelve hours." },
+      { "mode": "flight", "from": "nepalgunj", "to": "jumla", "time": "about 35 min", "note": "Small aircraft in the early morning; cancellations are common in cloud or wind." },
+      { "mode": "bus", "from": "nepalgunj", "to": "jumla", "time": "1–2 days", "note": "By the Karnali Highway through Surkhet and Kalikot: narrow, partly unpaved and tiring, usually with a night on the way." },
+      { "mode": "flight", "from": "nepalgunj", "to": "talcha", "time": "about 45 min", "note": "For a short visit: the airstrip is two to three hours' walk from the lake. Less reliable still than the Jumla flight." }
+    ]
+  },
+  "seasons": {
+    "best": [4, 5, 10],
+    "good": [3, 6, 9, 11],
+    "hard": [1, 2, 7, 8, 12],
+    "note": "April and May bring rhododendron and warm days; October has the clearest skies and autumn colour round the lake. November is fine but cold, and March can still have snow on the passes. From December to February snow closes the passes for days at a time and lodges at the lake may shut. July and August are wet, trails are muddy and flights are at their least dependable."
+  },
+  "permits": ["rara-np", "tims"],
+  "guide": {
+    "rule": "required",
+    "note": "The Nepal Tourism Board has required foreign trekkers to hire a licensed guide since April 2023, though checks on the trail are inconsistent. Here a guide is practical as well as official: trails braid between villages without signs, very few people speak English, and food and beds have to be arranged house by house."
+  },
+  "highlights": [
+    "Rara Lake, clear, cold and nearly empty of visitors",
+    "The view of the whole lake from Murma Top",
+    "Sinja, seat of the medieval Khasa kingdom",
+    "Pine, spruce and birch forest on the Ghurchi Lagna and Danphe Lagna",
+    "Jumla's high-altitude red rice and apple orchards",
+    "Village life in the Karnali, far from the main trekking circuits"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Fly to Jumla, walk to Chere Chaur",
+      "from": "jumla",
+      "to": "chere-chaur",
+      "sleep": 3055,
+      "hours": [4, 6],
+      "kind": "trek",
+      "note": "After the morning flight from Nepalgunj, leave the bazaar and climb steadily north through fields and pine to the wide meadows of Chere Chaur. You gain nearly 700 m on arrival day, so go slowly; if the flight is late, sleep in Jumla instead and add a day."
+    },
+    {
+      "day": 2,
+      "title": "Chere Chaur to Chalachaur over the Jaljala pass",
+      "from": "chere-chaur",
+      "to": "chalachaur",
+      "via": ["jaljala-pass"],
+      "sleep": 2980,
+      "high": 3580,
+      "hours": [5, 6],
+      "kind": "pass",
+      "note": "Climb through pine and birch to the open top of the Jaljala at about 3,580 m, cross the high pasture of Jaljala Chaur, where horses graze in summer, and descend to the village of Chalachaur."
+    },
+    {
+      "day": 3,
+      "title": "Chalachaur to Sinja",
+      "from": "chalachaur",
+      "to": "sinja",
+      "sleep": 2440,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "Downhill through forest and scattered farms to the Sinja Khola and the old capital of the Khasa kings. Spend the afternoon at the Kanakasundari temple and the remains of the old palace site nearby."
+    },
+    {
+      "day": 4,
+      "title": "Sinja to Ghorosingha",
+      "from": "sinja",
+      "to": "ghorosingha",
+      "sleep": 3050,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "North up a side valley past water mills and small villages, climbing gradually into forest. Ghorosingha is a clearing with room to camp and little else, so carry what you need from Sinja."
+    },
+    {
+      "day": 5,
+      "title": "Ghorosingha to Rara Lake",
+      "from": "ghorosingha",
+      "to": "rara-lake",
+      "sleep": 2990,
+      "hours": [5, 7],
+      "kind": "trek",
+      "note": "Climb to the wooded ridge south-west of the lake, where the water first comes into view, then descend to its outlet near Murma and follow the shore round to the park headquarters and the lodges on the northern side."
+    },
+    {
+      "day": 6,
+      "title": "Day at Rara Lake and Murma Top",
+      "from": "rara-lake",
+      "to": "rara-lake",
+      "via": ["murma-top"],
+      "sleep": 2990,
+      "high": 3700,
+      "hours": [5, 7],
+      "kind": "summit",
+      "note": "The climb to Murma Top takes about three hours from the western end of the lake and gives the only view of the whole of it, with the peaks of Mugu and Humla behind. If you would rather rest, walk a section of the shore path instead."
+    },
+    {
+      "day": 7,
+      "title": "Rara Lake to Pina",
+      "from": "rara-lake",
+      "to": "pina",
+      "sleep": 2440,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "Leave the lake over a low forested ridge, drop to Jhyari and continue through terraced villages to Pina on the main Jumla trail. The road to Gamgadhi runs close by, so expect some dust and the odd tractor."
+    },
+    {
+      "day": 8,
+      "title": "Pina to Bumra over the Ghurchi Lagna",
+      "from": "pina",
+      "to": "bumra",
+      "via": ["ghurchi-lagna"],
+      "sleep": 2850,
+      "high": 3450,
+      "hours": [6, 7],
+      "kind": "pass",
+      "note": "A climb of about 1,000 m through pine, spruce and rhododendron to the Ghurchi Lagna, then down past the national park post at Bhulbule and the houses of Chautha to Bumra. The motor road crosses the same ridge and the trail meets it in places."
+    },
+    {
+      "day": 9,
+      "title": "Bumra to Jumla over the Danphe Lagna",
+      "from": "bumra",
+      "to": "jumla",
+      "via": ["danphe-lagna", "chere-chaur"],
+      "sleep": 2370,
+      "high": 3691,
+      "hours": [7, 9],
+      "kind": "pass",
+      "note": "The longest day. Drop to the Sinja Khola, climb for three hours or more through forest to the Danphe Lagna, then descend through Chere Chaur to Jumla. Many groups split it with a night below the pass."
+    },
+    {
+      "day": 10,
+      "title": "Fly from Jumla to Nepalgunj",
+      "from": "jumla",
+      "to": "nepalgunj",
+      "sleep": 150,
+      "hours": [1, 1],
+      "kind": "transfer",
+      "mode": "flight",
+      "note": "Morning flight to the plains, with a connection to Kathmandu the same day if all goes to plan. If aircraft are grounded for long, the road to Surkhet is the way out."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Unreliable flights",
+      "text": "Jumla and Talcha flights are cancelled often, sometimes for days in a row. Keep at least two spare days in your schedule and enough cash to sit out a delay."
+    },
+    {
+      "title": "Snow on the passes",
+      "text": "The Danphe Lagna and Ghurchi Lagna hold snow from December to March and after spring storms, and a buried forest trail is hard to follow. In those months ask in Jumla which trail is open and go with someone local."
+    },
+    {
+      "title": "Food and stomach trouble",
+      "text": "This is a food-deficit region and kitchen standards are basic. Stomach upsets end more Rara treks than altitude does. Treat all water, wash your hands and carry rehydration salts and a few days of reserve food."
+    },
+    {
+      "title": "Limited medical help",
+      "text": "Jumla has a teaching hospital and Gamgadhi a district hospital; between them you rely on your own kit. Helicopter evacuation depends on the weather."
+    }
+  ],
+  "tips": [
+    "Draw cash in Kathmandu or Nepalgunj. Jumla has banks and the occasional working cash machine, but do not rely on them.",
+    "Bring snacks, tea, coffee and some staples from Nepalgunj or Jumla; village shops sell little beyond noodles and biscuits.",
+    "A tent gives you the freedom to stop where the day ends. If you rely on lodges and homestays, let your guide send word ahead.",
+    "Try Jumla's red marsi rice and, from September, the local apples.",
+    "Keep your park permit handy; park and army posts at the lake and on the trail ask to see it.",
+    "Dress modestly in the villages. This is a conservative area and trekkers are still a novelty."
+  ],
+  "variants": [
+    {
+      "name": "Fly to Talcha",
+      "text": "Flights from Nepalgunj land at the Talcha airstrip near Gamgadhi, two to three hours' walk from the lake, or less if you ride part of the way. With a night or two at the lake the whole visit takes three to five days from Nepalgunj, weather allowing."
+    },
+    {
+      "name": "The direct trail both ways",
+      "text": "Walking in and out by the Danphe Lagna, Bumra and Pina takes about three days each way and leaves out Sinja. It is the quicker option when time is short."
+    },
+    {
+      "name": "Reverse loop",
+      "text": "Going out by the Danphe Lagna and back through Sinja works just as well, and many itineraries run this way."
+    },
+    {
+      "name": "By road",
+      "text": "Buses and jeeps run from Surkhet to Jumla and on towards Gamgadhi in the dry season. Most Nepali visitors arrive this way; it is rough, slow and cheap."
+    }
+  ],
+  "related": ["phoksundo-lake", "khaptad"],
+  "confidence": "medium"
+}

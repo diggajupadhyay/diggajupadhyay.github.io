@@ -1,0 +1,249 @@
+{
+  "slug": "dhaulagiri-circuit",
+  "name": "Dhaulagiri Circuit",
+  "aka": ["Around Dhaulagiri", "Round Dhaulagiri"],
+  "region": "annapurna",
+  "tagline": "A camping expedition over French Pass and Dhampus Pass behind Dhaulagiri",
+  "summary": "A two-week camping route up the Myagdi Khola to Dhaulagiri Base Camp, then over French Pass and Dhampus Pass to Marpha, with glacier travel and three nights above 4,700 m. Not a teahouse trek.",
+  "intro": [
+    "The Dhaulagiri Circuit is the hardest of the standard treks in central Nepal. It climbs the Myagdi Khola from terraced Magar villages into uninhabited forest, follows the rubble-covered Chhonbardan Glacier beneath the west and north faces of Dhaulagiri I (8,167 m) to base camp, then crosses French Pass (5,360 m) into Hidden Valley and Dhampus Pass (5,240 m) before dropping to the Kali Gandaki at Marpha.",
+    "This is not a teahouse trek. Simple homestays exist as far as Boghara, but for the nine nights beyond that there is nothing to rely on, at most a seasonal tea shop in the forest: you need tents, fuel, food, a kitchen crew and porters equipped for snow. The route crosses moving glacier, avalanche and rockfall zones and two high passes, and the camp in Hidden Valley is above 5,000 m with no quick way down. Crews carry rope, ice axes and crampons, and you should already know how to walk in crampons.",
+    "Go only with an agency and a guide who have done the route recently, allow spare days for weather and be honest about your experience. Previous trekking above 5,000 m, good fitness and the patience to turn back are the real requirements. In return you get two weeks in big, empty country: until you reach the Jomsom road you may meet only a handful of other parties."
+  ],
+  "days": 14,
+  "daysRange": [13, 18],
+  "distanceKm": 110,
+  "maxAlt": { "m": 5360, "place": "french-pass" },
+  "difficulty": "strenuous",
+  "difficultyNote": "A fully supported camping route with glacier travel, rockfall and avalanche exposure, two passes above 5,200 m and a camp above 5,000 m with no easy retreat.",
+  "style": ["camping"],
+  "start": "darbang",
+  "end": "jomsom",
+  "gateway": "pokhara",
+  "access": {
+    "summary": "Drive from Pokhara to Beni and on up the Myagdi Khola to Darbang, five to six hours in all. A rough track continues towards Takam and Muri, and some crews start walking higher up when it is open. The trek ends at Marpha or Jomsom, with a morning flight or a day's drive back to Pokhara.",
+    "options": [
+      { "mode": "jeep", "from": "pokhara", "to": "darbang", "time": "5–6 h", "note": "Private jeep via Beni, the usual choice for a crew with camping loads." },
+      { "mode": "bus", "from": "pokhara", "to": "beni", "time": "3–4 h", "note": "Frequent buses. Change at Beni for a local jeep or bus to Darbang, another one and a half to two hours." },
+      { "mode": "flight", "from": "jomsom", "to": "pokhara", "time": "20–25 min", "note": "Morning only, and often cancelled by wind or cloud." },
+      { "mode": "jeep", "from": "jomsom", "to": "pokhara", "time": "7–9 h", "note": "The fallback when flights are grounded, down the Kali Gandaki road via Tatopani and Beni." }
+    ]
+  },
+  "seasons": {
+    "best": [4, 5, 10],
+    "good": [9, 11],
+    "hard": [1, 2, 3, 6, 7, 8, 12],
+    "note": "Late April to May and October are the usual windows. Spring has more snow lying on the passes and afternoon cloud; October is clearer and colder. Early November is possible, but nights in Hidden Valley fall below minus 20 °C. In winter and early spring the passes are snowbound, and in the monsoon the lower trail is slippery, full of leeches and prone to landslides."
+  },
+  "permits": ["acap", "tims"],
+  "guide": {
+    "rule": "required",
+    "note": "The Nepal Tourism Board has required foreign trekkers to hire a licensed guide since April 2023, though checks on the trail are inconsistent. On this route the rule is beside the point: without a full camping crew and a guide who knows the glacier, the timing of the rockfall above Italian Base Camp and the line across the Dhampus traverse in cloud, you should not be here."
+  },
+  "highlights": [
+    "Camping beneath the north face of Dhaulagiri I at base camp",
+    "Walking the Chhonbardan Glacier between Dhaulagiri and Tsaurabong Peak",
+    "Crossing French Pass into the empty expanse of Hidden Valley",
+    "The long high traverse from Dhampus Pass above the Kali Gandaki",
+    "Magar villages and wild forest in the Myagdi Khola valley",
+    "Finishing among the apple orchards of Marpha"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive to Darbang, walk to Dharapani",
+      "from": "darbang",
+      "to": "dharapani-myagdi",
+      "sleep": 1470,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "Leave Pokhara early for the five to six hour drive via Beni. From Darbang, cross the Myagdi Khola on a suspension bridge and climb about 350 m through terraces to the ridge-top village of Dharapani, where Dhaulagiri and Gurja Himal first appear. Hot and steep in the afternoon."
+    },
+    {
+      "day": 2,
+      "title": "Dharapani to Muri",
+      "from": "dharapani-myagdi",
+      "to": "muri",
+      "sleep": 1850,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "A traversing day high above the river through the villages of Takam and Sibang, on a mix of old stone trail and newer jeep track. Descend to cross a side stream, then climb to the big Magar village of Muri. The Dhaulagiri range and Gurja Himal are in view for much of the day."
+    },
+    {
+      "day": 3,
+      "title": "Muri to Boghara",
+      "from": "muri",
+      "to": "boghara",
+      "sleep": 2080,
+      "hours": [6, 7],
+      "kind": "trek",
+      "note": "Drop steeply to the river, climb over a ridge with a view up the valley, then follow the west bank of the Myagdi Khola through Naura. The last stretch crosses steep grass slopes and rock steps on a narrow path. In rain it is slippery; take it slowly and keep a hand free."
+    },
+    {
+      "day": 4,
+      "title": "Boghara to Dobang",
+      "from": "boghara",
+      "to": "dobang",
+      "sleep": 2520,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "The last houses are behind you. The trail climbs and falls through thick forest of bamboo, oak and rhododendron, crossing side streams on log bridges and passing a few herders' clearings, to the campsite at Dobang. Leeches are bad here in the wet months."
+    },
+    {
+      "day": 5,
+      "title": "Dobang to Sallaghari",
+      "from": "dobang",
+      "to": "sallaghari",
+      "sleep": 3110,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "Cross the Myagdi Khola and climb through forest that thins from bamboo to pine and birch, with Dhaulagiri's west wall beginning to fill the sky ahead. A half day on purpose: you gain almost 600 m and tomorrow you go higher again."
+    },
+    {
+      "day": 6,
+      "title": "Sallaghari to Italian Base Camp",
+      "from": "sallaghari",
+      "to": "italian-base-camp",
+      "sleep": 3660,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "Leave the trees behind and climb the lateral moraine to a grassy shelf beneath the west face of Dhaulagiri, which rises more than 4,000 m above camp. Arrive by lunch, rest, and listen for the avalanches that come off the face through the afternoon."
+    },
+    {
+      "day": 7,
+      "title": "Acclimatization day at Italian Base Camp",
+      "from": "italian-base-camp",
+      "to": "italian-base-camp",
+      "sleep": 3660,
+      "hours": [2, 3],
+      "kind": "acclimatization",
+      "note": "Walk a few hundred metres up the moraine or the hillside behind camp and come back down for lunch. The crew uses the day to check ropes, crampons and loads, and the guide looks at the state of the rockfall gully and the glacier you cross tomorrow."
+    },
+    {
+      "day": 8,
+      "title": "Italian Base Camp to Glacier Camp",
+      "from": "italian-base-camp",
+      "to": "dhaulagiri-glacier-camp",
+      "sleep": 4210,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "The most dangerous hours of the trek. Start at first light, descend a loose moraine wall, sometimes on a fixed rope, and cross the glacier snout below slopes that shed rocks once the sun hits them. Then follow the rubble-covered ice up a narrow gorge to a tent site levelled on the glacier."
+    },
+    {
+      "day": 9,
+      "title": "Glacier Camp to Dhaulagiri Base Camp",
+      "from": "dhaulagiri-glacier-camp",
+      "to": "dhaulagiri-base-camp",
+      "sleep": 4740,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "A slow morning on shifting moraine as the glacier bends east and the valley opens. Base camp sits on the ice below the north face, with Tukuche Peak and the icefall to the north-east col across the glacier. You are 530 m higher than last night, and headaches are common."
+    },
+    {
+      "day": 10,
+      "title": "Acclimatization day at Dhaulagiri Base Camp",
+      "from": "dhaulagiri-base-camp",
+      "to": "dhaulagiri-base-camp",
+      "sleep": 4740,
+      "hours": [2, 3],
+      "kind": "acclimatization",
+      "note": "A second night at the same height before the passes. Walk a little way up the moraine towards French Pass, drink plenty and rest. Anyone whose symptoms are not clearly improving should go back down to Italian Base Camp with a guide today, not tomorrow."
+    },
+    {
+      "day": 11,
+      "title": "Over French Pass to Hidden Valley",
+      "from": "dhaulagiri-base-camp",
+      "to": "hidden-valley",
+      "via": ["french-pass"],
+      "sleep": 5050,
+      "high": 5360,
+      "hours": [6, 8],
+      "kind": "pass",
+      "note": "Climb the lateral moraine beside the upper glacier, then steeper snow or scree to the cairns on French Pass, three to four hours from camp. Tukuche Peak, Sita Chuchura and Dhaulagiri's north face stand all round. An easy descent leads into Hidden Valley and the coldest camp of the trip."
+    },
+    {
+      "day": 12,
+      "title": "Over Dhampus Pass to Yak Kharka",
+      "from": "hidden-valley",
+      "to": "yak-kharka-dhaulagiri",
+      "via": ["dhampus-pass"],
+      "sleep": 3680,
+      "high": 5240,
+      "hours": [7, 9],
+      "kind": "pass",
+      "note": "A gentle two to three hour climb to Dhampus Pass, then a long, tiring traverse above 5,000 m across snow slopes and spurs before the trail finally drops towards the Kali Gandaki. In cloud the line is hard to find, and after fresh snow the slopes can avalanche. Camp is more than 1,500 m below the pass."
+    },
+    {
+      "day": 13,
+      "title": "Yak Kharka to Jomsom via Marpha",
+      "from": "yak-kharka-dhaulagiri",
+      "to": "jomsom",
+      "via": ["marpha"],
+      "sleep": 2720,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "A steep, knee-testing descent of 1,000 m on zigzags to the flagstone lanes and apple orchards of Marpha, then an hour and a half up the valley road to Jomsom with the afternoon wind at your back. Many crews end the walk at Marpha and drive the last stretch."
+    },
+    {
+      "day": 14,
+      "title": "Fly or drive from Jomsom to Pokhara",
+      "from": "jomsom",
+      "to": "pokhara",
+      "sleep": 822,
+      "hours": [1, 1],
+      "kind": "transfer",
+      "mode": "flight",
+      "note": "Morning flight to Pokhara when the weather allows. If flights are cancelled, jeeps and buses run down the Kali Gandaki road through Tatopani and Beni and take most of the day."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Altitude with no quick descent",
+      "text": "From Dhaulagiri Base Camp to the far side of Dhampus Pass you are above 4,700 m for three nights, and Hidden Valley can only be left over a pass. Helicopters cannot always reach it. Acclimatize properly lower down, make sure the crew carries altitude medication and turn back from base camp if anyone is unwell."
+    },
+    {
+      "title": "Rockfall and avalanche above Italian Base Camp",
+      "text": "The gorge between Italian Base Camp and Glacier Camp is swept by stones and by avalanches from both walls, more so in the afternoon and after snowfall. Cross early, keep gaps between people, do not stop in the gullies and wear a helmet if you have one."
+    },
+    {
+      "title": "Glacier travel",
+      "text": "Most of the Chhonbardan Glacier is covered in rubble, but there are crevasses and unstable ice near base camp and on the way to French Pass, hidden after fresh snow. Follow the guide's line exactly and rope up where the crew asks."
+    },
+    {
+      "title": "Weather on the passes",
+      "text": "Storms bring whiteout and deep snow to French Pass, Hidden Valley and the Dhampus traverse with little warning. Parties have been pinned down for days, and frostbite is a real risk for trekkers and porters alike. Carry spare food and fuel and keep buffer days."
+    },
+    {
+      "title": "Exposed trail in the lower valley",
+      "text": "Between Muri and Dobang the path crosses steep grass, landslide scars and rock steps high above the river, with log bridges over side streams. It is slippery when wet. Do not underestimate it because it is low."
+    }
+  ],
+  "tips": [
+    "Choose the agency for its record on this route: ask when their guide last crossed both passes and what rescue and communication equipment the crew carries.",
+    "Bring crampons or solid microspikes, a four-season sleeping bag rated to minus 20 °C and a down jacket, plus an ice axe if you know how to use one.",
+    "Check that your insurance covers helicopter evacuation up to 6,000 m, and that the porters are insured and equipped for snow.",
+    "Build in at least two spare days for weather. Tight schedules push groups over the passes in conditions they should wait out.",
+    "There is no phone signal for most of the route beyond Muri; a satellite phone or messenger is the only link.",
+    "Camp names and heights vary between operators, especially Sallaghari, Glacier Camp and Hidden Valley, and the road head keeps moving up the valley. Compare itineraries by the height gained each day, not by place name."
+  ],
+  "variants": [
+    {
+      "name": "Dhampus Peak",
+      "text": "From a high camp near Dhampus Pass, parties with a climbing permit and mountaineering experience can climb Dhampus (Thapa) Peak, 6,012 m, in a long day. Add one or two days."
+    },
+    {
+      "name": "Extra night in Hidden Valley",
+      "text": "A second night at about 5,000 m is used for Dhampus Peak or simply to wait for weather. It is too high to be restful, so do not add it as a comfort day."
+    },
+    {
+      "name": "Base camp and back",
+      "text": "If the passes are closed or the group is not ready for them, returning from Dhaulagiri Base Camp the way you came is a worthwhile trek in itself and takes about two weeks from Pokhara."
+    },
+    {
+      "name": "Start higher up the road",
+      "text": "When the jeep track beyond Darbang is open, some crews drive as far as Takam or Muri and save a day, at the cost of a faster start for your legs and lungs."
+    }
+  ],
+  "related": ["annapurna-circuit", "manaslu-circuit", "jomsom-muktinath", "makalu-base-camp", "kanchenjunga-base-camp"],
+  "confidence": "medium"
+}

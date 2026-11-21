@@ -1,0 +1,245 @@
+{
+  "slug": "upper-mustang",
+  "name": "Upper Mustang",
+  "aka": ["Lo Manthang Trek", "Kingdom of Lo"],
+  "region": "mustang",
+  "tagline": "Twelve days across the high desert to the walled town of Lo Manthang",
+  "summary": "A loop from Jomsom up the Kali Gandaki to Lo Manthang and back by Lo Gekar and Dhakmar, crossing a string of passes around 4,000 m in dry, wind-scoured country behind the Himalaya.",
+  "intro": [
+    "Upper Mustang is the old kingdom of Lo, a high, treeless valley north of the Annapurna and Dhaulagiri ranges that stayed closed to foreigners until 1992. The trek starts at Jomsom, passes the checkpoint at Kagbeni and then climbs out of the Kali Gandaki onto a plateau of ochre and grey ridges, crossing one 3,800 to 4,000 m pass after another to reach the walled town of Lo Manthang on the sixth day.",
+    "A jeep road now runs the whole way from Jomsom to Lo Manthang and on to the Tibet border, and it has changed the walk. On the standard stages you share stretches of it with jeeps, motorbikes and their dust, most of all between Jomsom and Chele. Between the villages, older foot trails still cut across the ridges away from the road, and the return by Lo Gekar and Dhakmar avoids it almost completely. A guide who knows these lines makes a real difference. The road also lets you shorten the trip by riding a section, which matters now that the permit is charged by the day.",
+    "The walking itself is moderate: paths are broad, the highest pass is about 4,280 m and you sleep between 2,800 and 3,850 m. What wears people down is the dryness, the sun and the wind that blows up the valley every afternoon. Lodges are simple family houses with good kitchens. Mustang lies in the rain shadow, so it is at its best from late spring to autumn, including the monsoon months when most of Nepal is under cloud."
+  ],
+  "days": 12,
+  "daysRange": [8, 16],
+  "distanceKm": 140,
+  "maxAlt": { "m": 4280, "place": "chogo-la" },
+  "difficulty": "moderate",
+  "difficultyNote": "No day is steep or very high, but the stages are long, dry and exposed to strong afternoon wind, and you stay above 3,500 m for a week.",
+  "style": ["teahouse"],
+  "start": "jomsom",
+  "end": "jomsom",
+  "gateway": "pokhara",
+  "access": {
+    "summary": "Fly from Pokhara to Jomsom in about 20 minutes, or take a jeep or bus up the Kali Gandaki road via Beni and Tatopani. Flights leave early and are cancelled when wind or cloud builds, so keep a spare day or be ready to switch to the road.",
+    "options": [
+      { "mode": "flight", "from": "pokhara", "to": "jomsom", "time": "20–25 min", "note": "Morning departures only. Cancellations are common in the monsoon and on windy days." },
+      { "mode": "jeep", "from": "pokhara", "to": "jomsom", "time": "7–9 h", "note": "Via Beni and Tatopani. The road is surfaced in parts and rough in others, and landslides can close it for hours in the monsoon." },
+      { "mode": "bus", "from": "pokhara", "to": "jomsom", "time": "9–11 h", "note": "Direct buses leave Pokhara early in the morning; cheaper and slower than a jeep." },
+      { "mode": "jeep", "from": "jomsom", "to": "lo-manthang", "time": "6–9 h", "note": "Shared and private jeeps run the full length of the valley on a rough road. Riding one way, usually the return, cuts three to four days from the trek." }
+    ]
+  },
+  "seasons": {
+    "best": [5, 6, 9, 10],
+    "good": [3, 4, 7, 8, 11],
+    "hard": [1, 2, 12],
+    "note": "Mustang sits in the rain shadow, so May to October is the main season. July and August are workable here when the rest of Nepal is wet, though the flight and the road to Jomsom are less reliable then. Spring is windy and dusty. From December to February it is bitterly cold and many families and lodges move south."
+  },
+  "permits": ["rap-upper-mustang", "acap"],
+  "guide": {
+    "rule": "required",
+    "note": "Upper Mustang is a restricted area. The permit is issued only through a registered agency and you must walk with a licensed guide; the checkpoint at Kagbeni records every group. Since 22 March 2026 the Department of Immigration issues the permit to a single trekker as well, so you no longer need a partner to apply. A local guide also finds the foot trails that avoid the road and the key-holders for locked temples and caves."
+  },
+  "highlights": [
+    "The walled town of Lo Manthang and its 15th-century temple murals",
+    "Red, ochre and grey cliffs honeycombed with ancient cave dwellings",
+    "The quiet western trail by Lo Gekar monastery and the red crags of Dhakmar",
+    "The long mani wall at Ghami and the dzong and monastery of Tsarang",
+    "Views south to Nilgiri and the Annapurnas from the high passes",
+    "The Tiji festival in Lo Manthang, usually in May"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Fly to Jomsom, walk to Kagbeni",
+      "from": "jomsom",
+      "to": "kagbeni",
+      "sleep": 2810,
+      "hours": [3, 4],
+      "km": 10,
+      "kind": "trek",
+      "note": "After the morning flight, follow the wide gravel bed of the Kali Gandaki or the jeep road on its east bank. The wind gets up from the south by late morning and is at your back; cover your nose and mouth when vehicles pass. Your permits are registered at Kagbeni."
+    },
+    {
+      "day": 2,
+      "title": "Kagbeni to Chele",
+      "from": "kagbeni",
+      "to": "chele",
+      "via": ["tangbe", "chhusang"],
+      "sleep": 3050,
+      "hours": [5, 6],
+      "km": 15,
+      "kind": "trek",
+      "note": "North of the checkpoint you are in the restricted area. Most of the day is on or beside the road along the east bank, with short trail sections through Tangbe and Chhusang. Cross the bridge where the river runs under a block of red rock and finish with a steep half-hour climb to Chele."
+    },
+    {
+      "day": 3,
+      "title": "Chele to Syangboche",
+      "from": "chele",
+      "to": "syangboche-mustang",
+      "via": ["samar", "yamda-la"],
+      "sleep": 3800,
+      "high": 3860,
+      "hours": [6, 7],
+      "kind": "trek",
+      "note": "A big day uphill. The trail climbs a canyon wall to the Taklam La and Dajori La, drops to the poplars of Samar for lunch, then crosses two more ridges, the Bhena La and Yamda La. If you have the energy, the lower foot trail by Chungsi cave avoids the road but adds about an hour."
+    },
+    {
+      "day": 4,
+      "title": "Syangboche to Ghami over the Nyi La",
+      "from": "syangboche-mustang",
+      "to": "ghami",
+      "via": ["ghiling", "nyi-la"],
+      "sleep": 3520,
+      "high": 4010,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "A short climb over the Syangboche La, then a long gentle descent into the valley of Ghiling. From there the trail climbs steadily to the Nyi La, the highest point of the walk in, and drops to Ghami across the smaller Ghami La. Expect strong wind on the passes from midday."
+    },
+    {
+      "day": 5,
+      "title": "Ghami to Tsarang",
+      "from": "ghami",
+      "to": "tsarang",
+      "via": ["tsarang-la"],
+      "sleep": 3560,
+      "high": 3870,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "Drop to the river below Ghami and pass the longest mani wall in Mustang, built of stone painted ochre, white and grey. A steady climb leads to the Tsarang La and a long, easy descent to Tsarang. Leave time in the afternoon for the dzong and the monastery."
+    },
+    {
+      "day": 6,
+      "title": "Tsarang to Lo Manthang",
+      "from": "tsarang",
+      "to": "lo-manthang",
+      "via": ["lo-la"],
+      "sleep": 3810,
+      "high": 3950,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "Cross the Tsarang Khola canyon and climb gradually north past a large solitary chorten. Foot trail and road run close together for much of the morning. From the Lo La the walled town appears below, and you reach the gate about half an hour later."
+    },
+    {
+      "day": 7,
+      "title": "Lo Manthang and the Chhoser caves",
+      "from": "lo-manthang",
+      "to": "lo-manthang",
+      "via": ["chhoser"],
+      "sleep": 3810,
+      "high": 3900,
+      "hours": [4, 6],
+      "kind": "rest",
+      "note": "Visit the Jampa, Thubchen and Chode temples inside the walls in the morning. In the afternoon most people go by jeep or horse to Chhoser for the Jhong cave and Nyphu monastery; on foot it is about two hours each way along a gently rising valley."
+    },
+    {
+      "day": 8,
+      "title": "Lo Manthang to Dhakmar via Lo Gekar",
+      "from": "lo-manthang",
+      "to": "dhakmar",
+      "via": ["chogo-la", "lo-gekar", "mui-la"],
+      "sleep": 3820,
+      "high": 4280,
+      "hours": [6, 8],
+      "kind": "pass",
+      "note": "The longest and highest day, and the best one for getting off the road. A dry three-hour climb leads to the Chogo La, then the trail drops to Lo Gekar monastery, crosses the Mui La and descends a steep gully through red cliffs to Dhakmar. Carry lunch and at least two litres of water."
+    },
+    {
+      "day": 9,
+      "title": "Dhakmar to Ghiling",
+      "from": "dhakmar",
+      "to": "ghiling",
+      "via": ["ghami", "nyi-la"],
+      "sleep": 3570,
+      "high": 4010,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "An easy hour down the valley to Ghami, where you rejoin the outward route. Climb back over the Ghami La and Nyi La before the wind gets up, then leave the main trail and drop into Ghiling, which most groups only see from above on the way north."
+    },
+    {
+      "day": 10,
+      "title": "Ghiling to Chhusang",
+      "from": "ghiling",
+      "to": "chhusang",
+      "via": ["syangboche-mustang", "yamda-la", "samar", "chele"],
+      "sleep": 2980,
+      "high": 3860,
+      "hours": [6, 7],
+      "kind": "trek",
+      "note": "Retrace the ridge route over the Syangboche La and Yamda La to Samar, then lose height quickly down the canyon to Chele and the river. Mostly downhill but long, and the last stretch along the valley floor is into the wind."
+    },
+    {
+      "day": 11,
+      "title": "Chhusang to Jomsom",
+      "from": "chhusang",
+      "to": "jomsom",
+      "via": ["tangbe", "kagbeni"],
+      "sleep": 2720,
+      "high": 3060,
+      "hours": [6, 7],
+      "kind": "trek",
+      "note": "A long road day back down the Kali Gandaki, checking out of the restricted area at Kagbeni. The wind is in your face from late morning, so start at first light. Many groups take a jeep for part or all of this stage, and you miss little by doing so."
+    },
+    {
+      "day": 12,
+      "title": "Fly out from Jomsom",
+      "from": "jomsom",
+      "to": "pokhara",
+      "sleep": 822,
+      "hours": [1, 1],
+      "kind": "transfer",
+      "mode": "flight",
+      "note": "Morning flight to Pokhara, weather permitting. If flights are cancelled, jeeps and buses leave Jomsom for Pokhara through the morning and take most of the day."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Wind and dust",
+      "text": "A strong southerly wind fills the Kali Gandaki valley from late morning until dusk, lifting grit from the riverbed and the road. Walk early, wear wrap-around glasses and a buff, and expect chapped lips and a dry cough if you do not."
+    },
+    {
+      "title": "Vehicles on the road",
+      "text": "Jeeps, motorbikes and tractors use the same road you walk on for part of most days. Step well off the track when you hear one, especially on blind corners and canyon sections, and take the foot trail wherever your guide offers one."
+    },
+    {
+      "title": "Altitude",
+      "text": "Sleeping heights are moderate, but you stay above 3,500 m for a week and cross 4,000 m several times. Headaches on the second and third nights are common. If you ride a jeep north, break the journey for a night on the way; driving from Jomsom to Lo Manthang in one go gains 1,100 m in a day."
+    },
+    {
+      "title": "Sun and dehydration",
+      "text": "The air is very dry and there is almost no shade between villages. Water sources are far apart on the passes; carry two litres from each village and treat what you refill."
+    },
+    {
+      "title": "Flash floods in the monsoon",
+      "text": "Side streams and the Kali Gandaki can rise fast after rain higher up, as the flood that hit Kagbeni in August 2023 showed. In July and August, stay off the riverbed route when it has been raining and ask about the state of the road before you set out."
+    }
+  ],
+  "tips": [
+    "The restricted-area permit is charged at USD 50 per person per day; the older flat ten-day fee no longer applies. Count the days with your agency before they apply: the clock runs from the Kagbeni checkpoint until you pass it again, ten days on this plan.",
+    "Bring all your cash from Pokhara or Jomsom. There are no dependable cash machines north of Jomsom.",
+    "Start walking by 7 am and aim to arrive by early afternoon, before the wind is at its worst.",
+    "Temples in Lo Manthang, Tsarang and Lo Gekar charge entry fees and do not allow photographs inside; carry small notes.",
+    "Pass names and heights differ between maps, and the points where the foot trail leaves the road change as the road is rebuilt, so treat the heights and walking times here as approximate.",
+    "For the Tiji festival, usually in May, book lodges in Lo Manthang months ahead. The dates follow the Tibetan calendar and change every year."
+  ],
+  "variants": [
+    {
+      "name": "Eastern return by Yara and Tangge",
+      "text": "From Lo Manthang, cross the Kali Gandaki at Dhi and return along the east side through Yara, Luri Gompa, Tangge and Tetang, finishing over the Gyu La to Muktinath. It adds two to three days, stays far from the road and has very long, waterless stages with basic lodging."
+    },
+    {
+      "name": "Jeep one way",
+      "text": "Riding between Jomsom or Chhusang and Lo Manthang in one direction cuts the trip to about eight days and saves three or four days of permit fees. If you drive up, sleep a night at Ghami or Tsarang on the way to let your body adjust."
+    },
+    {
+      "name": "Chungsi cave trail",
+      "text": "Between Samar and Syangboche a foot trail drops into a canyon to the Chungsi cave shrine and climbs out again. It is harder than the ridge route but has no vehicles."
+    },
+    {
+      "name": "Out via Muktinath",
+      "text": "From Chhusang, climb through Tetang and over the Gyu La (4,077 m) to Muktinath instead of walking the road to Jomsom. A long, dry day of seven to eight hours."
+    }
+  ],
+  "related": ["jomsom-muktinath", "annapurna-circuit", "nar-phu-valley", "upper-dolpo", "tsum-valley"],
+  "confidence": "medium"
+}

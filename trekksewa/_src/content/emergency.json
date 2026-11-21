@@ -1,0 +1,230 @@
+{
+  "reviewed": "2026-11",
+  "national": [
+    {
+      "name": "Nepal Police",
+      "number": "100",
+      "note": "Police control room. Outside the cities the operator may speak little English, so ask a guide or lodge owner to make the call if you can."
+    },
+    {
+      "name": "Tourist Police hotline",
+      "number": "1144",
+      "note": "Toll-free line answered by English-speaking officers. Use it for theft, harassment, a dispute with a company or to report a missing trekker."
+    },
+    {
+      "name": "Ambulance",
+      "number": "102",
+      "note": "There is no single national ambulance service; 102 reaches local dispatchers where they exist. In Kathmandu and Pokhara it is often quicker to ring the hospital you are heading for and ask for its ambulance."
+    },
+    {
+      "name": "Fire brigade",
+      "number": "101",
+      "note": "Fire and rescue in towns. Not a mountain-rescue service."
+    },
+    {
+      "name": "Traffic Police",
+      "number": "103",
+      "note": "Road accidents and blocked highways."
+    }
+  ],
+  "rescue": [
+    {
+      "name": "Himalayan Rescue Association (HRA), Kathmandu office",
+      "numbers": ["+977-1-4540292", "+977-1-4540293"],
+      "note": "Non-profit that runs the seasonal altitude clinics at Pheriche and Manang and advises on altitude illness. The office at Dhobichaur, Lazimpat is open Sunday to Thursday 10:00–17:00 and Friday 10:00–15:00. It does not dispatch helicopters, but its doctors on the trail can tell you whether you need one.",
+      "url": "https://www.himalayanrescue.org/contact-us"
+    },
+    {
+      "name": "Tourist Police head office, Kathmandu",
+      "numbers": ["+977-1-5347041", "+977-9851289445"],
+      "note": "Based in the Nepal Tourism Board compound at Bhrikutimandap. The landline changed from 4247041, which still appears on older pages. For anything urgent dial 1144 first.",
+      "url": "https://nepalpolice.gov.np/tourist-police"
+    }
+  ],
+  "hospitals": [
+    {
+      "name": "CIWEC Hospital and Travel Medicine Center",
+      "place": "Kathmandu",
+      "numbers": ["+977-1-4524111", "+977-1-4524242", "+977-1-4535232"],
+      "note": "Kapurdhara Marg, Lainchaur, near the British Embassy. Open 24 hours with its own ambulance. A travel-medicine hospital that several embassies list for their citizens."
+    },
+    {
+      "name": "Grande International Hospital",
+      "place": "Kathmandu",
+      "numbers": ["+977-1-5159266", "+977-1-5159077", "+977-9801202545"],
+      "note": "Dhapasi, in the north of the city. The first number is the general line; the other two are the ambulance hotline shown on the hospital's home page. Emergency department open 24 hours. The same site lists a helicopter rescue desk on +977-9801202552 and +977-9801202537."
+    },
+    {
+      "name": "Nepal Mediciti Hospital",
+      "place": "Lalitpur",
+      "numbers": ["+977-1-4217766", "1134"],
+      "note": "Nakhu, Bhaisepati, south of the ring road. 4217766 is reception; 1134 is the hospital's own emergency short code and only works from inside Nepal. Emergency and inpatient care run 24 hours."
+    },
+    {
+      "name": "HAMS Hospital",
+      "place": "Kathmandu",
+      "numbers": ["+977-1-4377404"],
+      "note": "Dhumbarahi, on Mandikhatar Road. Listed by the U.S. Embassy; the number is the one given in 2026 notices about the hospital rather than taken from its own website."
+    },
+    {
+      "name": "CIWEC Hospital Pokhara",
+      "place": "Pokhara",
+      "numbers": ["+977-61-453082", "+977-61-457053"],
+      "note": "Lakeside. Branch of the Kathmandu hospital with 24-hour cover; ring the hospital to send its ambulance."
+    }
+  ],
+  "aidPosts": [
+    {
+      "name": "HRA Pheriche aid post",
+      "place": "Pheriche",
+      "altitude": 4240,
+      "season": "Spring and autumn trekking seasons only, roughly March to May and late September or early October to the end of November. The autumn 2026 post opened in early October.",
+      "note": "Volunteer doctors give round-the-clock emergency care in season and a daily talk on altitude illness (at 3 pm in spring 2026). Foreign trekkers are normally charged for a consultation, so bring cash and your insurance details. The HRA's own material gives the height as about 4,250 m."
+    },
+    {
+      "name": "HRA Manang aid post",
+      "place": "Manang",
+      "altitude": 3550,
+      "season": "Spring and autumn trekking seasons only, on the same pattern as Pheriche. The autumn 2026 post opened in early October.",
+      "note": "The same service on the Annapurna Circuit, in the village where most trekkers take a rest day before the Thorong La. Go to the afternoon altitude talk even if you feel fine."
+    },
+    {
+      "name": "Everest ER (HRA base camp clinic)",
+      "place": "Everest Base Camp",
+      "altitude": 5364,
+      "season": "Spring climbing season only, about April and May.",
+      "note": "A tent clinic the HRA has run at base camp each spring since 2003, mainly for expedition teams and their staff. We found no announcement of an autumn clinic, so do not count on it outside the climbing season."
+    }
+  ],
+  "howRescueWorks": [
+    "Nepal has no public mountain-rescue service and no free air ambulance. Evacuations are flown by private helicopter companies, and a pilot will not normally take off until someone has guaranteed the bill: your insurer, your trekking agency, or you with a card or cash deposit.",
+    "The usual chain is short. You, your guide or a lodge owner calls your trekking agency. The agency, or you, calls the 24-hour assistance number on your insurance policy with your policy number, location and symptoms, and the insurer's medical team decides whether the flight is covered. If it is, the insurer sends the helicopter operator a guarantee of payment, or the agency fronts the cost and claims it back. Speak to the insurer before the helicopter is booked whenever you can: a flight they did not authorise may not be reimbursed.",
+    "Without insurance, or if the insurer says no, the operator still wants paying. Published estimates for 2025–26 run from about USD 3,000 to 6,000 from the upper Khumbu, USD 2,500 to 4,000 from Annapurna Base Camp to Pokhara and USD 2,500 to 5,500 from Langtang to Kathmandu. Some quotes for Gorak Shep and Everest Base Camp reach USD 8,000 to 12,000. The UK government puts the price at GBP 1,000 to 2,000 or more per flying hour. Hospital bills come on top.",
+    "Check your policy before you leave home. It has to name helicopter evacuation and cover trekking to the highest point on your route, which means cover to about 6,000 m for Everest Base Camp, Gokyo or the Thorong La. Many standard and credit-card policies stop at 3,000 m or lower. Keep the policy number and the assistance phone number on paper as well as on your phone, and give a copy to your guide or agency.",
+    "Helicopters fly in daylight and in flyable weather only, so a flight requested in the afternoon often arrives the next morning, and cloud or wind can hold it for a day or more. Do not wait at altitude for one if the patient is getting worse and can still be moved. Going down, on foot, on a horse or carried, is the treatment for altitude illness. In season the Himalayan Rescue Association doctors at Pheriche and Manang can assess you and say whether a flight is needed.",
+    "With no phone signal, send the fastest fit person, ideally your guide, to the nearest lodge with a working phone, Wi-Fi or satellite phone. Lodge owners make these calls every season, and police, army and national park posts usually have radios. Send a written note with the patient's name, nationality, passport number, insurer, policy number and assistance phone, plus the exact place, the symptoms and the time. On remote routes such as Manaslu, Kanchenjunga and Dolpo, carry a satellite messenger. Under the March 2026 permit rules, the agency that obtains a restricted-area permit for a solo trekker carries the responsibility for emergency rescue.",
+    "Be aware of rescue fraud. Police say unnecessary or inflated helicopter evacuations have been billed to foreign insurers for years. In January 2026 the Central Investigation Bureau arrested managers of rescue companies, and in March more than 30 people were charged over roughly USD 19.7 million in claims. Do not agree to fly out for mild symptoms that settle with rest or descent unless a doctor advises it, turn down any offer of a ride home on your insurance, and if you share a flight tell your insurer how many patients were on board. Since 2018 helicopter companies, hospitals and agencies have had to report each rescue to the Department of Tourism and the Tourist Police, and insurers check the paperwork."
+  ],
+  "unconfirmed": [
+    {
+      "name": "Tourist Police, Kathmandu (older landline)",
+      "place": "Kathmandu",
+      "numbers": ["+977-1-4247041"],
+      "note": "Pre-renumbering landline still printed on older Nepal Tourism Board and embassy pages. The Nepal Police page and the UK travel advice now give 5347041."
+    },
+    {
+      "name": "Nepal Tourism Board tourism crisis unit",
+      "place": "Kathmandu",
+      "numbers": ["+977-97510-44088"],
+      "note": "Listed on an older page of the board's trade site. Not seen on a current page."
+    },
+    {
+      "name": "HRA Pheriche aid post mobile",
+      "place": "Pheriche",
+      "numbers": ["+977-9848744149"],
+      "note": "From an HRA circular that is five or six years old. Seasonal staff change, so ring the Kathmandu office or ask at any lodge instead."
+    },
+    {
+      "name": "HRA Manang aid post mobile",
+      "place": "Manang",
+      "numbers": ["+977-9840096133"],
+      "note": "From the same old HRA circular. Not confirmed for 2026."
+    },
+    {
+      "name": "HRA Everest ER mobile",
+      "place": "Everest Base Camp",
+      "numbers": ["+977-9841201329"],
+      "note": "From the same old HRA circular, where it was described as a 24-hour emergency contact. Not confirmed for 2026."
+    },
+    {
+      "name": "HRA Thorong Phedi satellite clinic",
+      "place": "Thorong Phedi",
+      "numbers": [],
+      "note": "Named in the menu of the HRA website. We could not confirm whether it is staffed in 2026."
+    },
+    {
+      "name": "Grande International Hospital (older emergency mobile)",
+      "place": "Kathmandu",
+      "numbers": ["+977-9801202557"],
+      "note": "An older page of the hospital's site gives this emergency mobile; the current home page shows 9801202545 instead."
+    },
+    {
+      "name": "Nepal Mediciti helicopter ambulance desk",
+      "place": "Lalitpur",
+      "numbers": ["+977-9858777111", "+977-9801235698"],
+      "note": "The hospital's pages disagree: most show the first number, an older page the second."
+    },
+    {
+      "name": "HAMS Hospital ambulance and helicopter desk",
+      "place": "Kathmandu",
+      "numbers": ["+977-9801904640", "+977-9801904643"],
+      "note": "Ambulance and helicopter lines from a Norwegian government provider list and a 2025 news item. Not seen on the hospital's own site."
+    },
+    {
+      "name": "Norvic International Hospital",
+      "place": "Kathmandu",
+      "numbers": [],
+      "note": "Thapathali. Listed by the U.S. Embassy with 24-hour emergency and ambulance service, but we did not find a current phone number."
+    },
+    {
+      "name": "Nepal International Clinic",
+      "place": "Kathmandu",
+      "numbers": ["+977-1-4963614", "+977-1-4434642", "+977-1-4435357"],
+      "note": "Travel and mountain medicine clinic at Lal Durbar. Sources conflict: the first number is from the Australian Embassy's May 2026 hospital list, the other two are old-format numbers on an Israeli Embassy page."
+    },
+    {
+      "name": "Manipal Teaching Hospital",
+      "place": "Pokhara",
+      "numbers": ["+977-61-576416"],
+      "note": "Phulbari. The medical college's contact page lists 576416 to 576419, but other pages for the same hospital show different numbers and none names an emergency line."
+    },
+    {
+      "name": "Charak Memorial Hospital",
+      "place": "Pokhara",
+      "numbers": [],
+      "note": "Nagdhunga. Listed by the U.S. Embassy; we did not find a current phone number."
+    },
+    {
+      "name": "Metro City Hospital",
+      "place": "Pokhara",
+      "numbers": ["+977-61-537932"],
+      "note": "From a directory several years old. Not seen on a current page."
+    },
+    {
+      "name": "Western Regional Hospital (Pokhara Academy of Health Sciences)",
+      "place": "Pokhara",
+      "numbers": [],
+      "note": "The main government hospital in Pokhara, at Ramghat, with a 24-hour emergency department. We found no current public phone number."
+    },
+    {
+      "name": "Khumbu hospitals and health posts",
+      "place": "Lukla, Khunde and Machhermo",
+      "numbers": [],
+      "note": "The hospital at Lukla, Khunde Hospital above Namche and the seasonal porter rescue post at Machhermo are known from earlier seasons. We did not re-check their 2026 opening or contact details."
+    }
+  ],
+  "sources": [
+    { "title": "GOV.UK foreign travel advice, Nepal: Getting help (emergency numbers, tourist police)", "url": "https://www.gov.uk/foreign-travel-advice/nepal/getting-help" },
+    { "title": "GOV.UK foreign travel advice, Nepal (helicopter evacuation costs, insurance)", "url": "https://www.gov.uk/foreign-travel-advice/nepal" },
+    { "title": "Nepal Police: Tourist Police", "url": "https://nepalpolice.gov.np/tourist-police" },
+    { "title": "Nepal Tourism Board: Tourist Police", "url": "https://ntb.gov.np/en/plan-your-trip/before-you-come/tourist-police" },
+    { "title": "Nepali Times: 100, 101, 102 (emergency numbers and ambulance dispatch)", "url": "https://nepalitimes.com/100-101-102-hh5uvzf9" },
+    { "title": "Himalayan Rescue Association Nepal: Contact us", "url": "https://www.himalayanrescue.org/contact-us" },
+    { "title": "Himalayan Rescue Association Nepal: About us (aid posts)", "url": "https://www.himalayanrescue.org/about-us" },
+    { "title": "The Tourism Times: HRA opens Manang, Pheriche aid posts for autumn trekking season", "url": "https://thetourismtimes.com/news/climbing/hra-opens-manang-pheriche-aid-posts-for-autumn-trekking-season" },
+    { "title": "The Tourism Times: HRA opens aid posts for spring season 2026 in Everest, Annapurna regions", "url": "https://thetourismtimes.com/news/climbing/himalayan-rescue-association-nepal-opens-aid-posts-for-spring-season-2026-in-everest-annapurna-regions" },
+    { "title": "CIWEC Hospital and Travel Medicine Center (Kathmandu and Pokhara contacts)", "url": "https://www.ciwechospital.com/" },
+    { "title": "Grande International Hospital: Contact us", "url": "https://grandehospital.com/en/more/contact-us" },
+    { "title": "Nepal Mediciti: Contact", "url": "https://www.nepalmediciti.com/contact-mediciti-the-best-hospital-in-kathmandu-nepal" },
+    { "title": "U.S. Embassy in Nepal: Medical assistance (hospital list)", "url": "https://np.usembassy.gov/medical-assistance/" },
+    { "title": "Australian Embassy, Nepal: List of hospitals, 20 May 2026", "url": "https://nepal.embassy.gov.au/files/kmdu/List%20of%20Hospitals%2020052026.pdf" },
+    { "title": "World Nomads: Is helicopter evacuation covered during trekking in Nepal?", "url": "https://www.worldnomads.com/usa/help/insurance/buying-travel-insurance/trekking-in-nepal-and-helicopter-evacuation" },
+    { "title": "Nepal Database: Helicopter rescue in Nepal, how trekking insurance evacuations work", "url": "https://www.nepaldatabase.com/helicopter-rescue-in-nepal-how-trekking-insurance-evacuations-work" },
+    { "title": "Travel Himalaya Nepal: Helicopter rescue in Nepal 2026, costs and process", "url": "https://travelhimalayanepal.com/blog/helicopter-rescue-nepal-costs-2026" },
+    { "title": "Nepal Helicopters: Annapurna and Everest Base Camp helicopter rescue cost", "url": "https://www.nepalhelicopters.com/blog/annapurna-and-everest-base-camp-helicopter-rescue-cost-in-usd/" },
+    { "title": "The Kathmandu Post: Nepal charges 32 in fake rescue scam, 23 March 2026", "url": "https://kathmandupost.com/national/2026/03/23/nepal-charges-32-in-fake-rescue-scam" },
+    { "title": "The Himalayan Times: CIB arrests six mountain rescue operators in multi-million dollar fake rescue scam", "url": "https://thehimalayantimes.com/nepal/cib-arrests-six-mountain-rescue-operators-in-multi-million-dollar-fake-rescue-scam" },
+    { "title": "The Kathmandu Post: Centre eliminates dubious emergency operators (2018 rescue guidelines)", "url": "https://kathmandupost.com/money/2018/09/01/centre-eliminates-dubious-emergency-operators" },
+    { "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026", "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas" }
+  ]
+}

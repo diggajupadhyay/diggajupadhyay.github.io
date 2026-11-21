@@ -1,0 +1,30 @@
+{
+  "intro": "Almost everything for a trek can be rented or bought in Kathmandu and Pokhara, usually for much less than at home. The skill is knowing what to bring, what to rent and what to check before you pay.",
+  "categories": [
+    { "id": "sleep", "name": "Sleeping bags", "icon": "bed", "mode": "rent", "text": "A four-season down bag is the classic thing to rent. Check the zip, the loft and the smell before you take it, and bring your own liner." },
+    { "id": "down", "name": "Down jackets", "icon": "shirt", "mode": "rent", "text": "Rent a thick expedition-style jacket for the evenings above 3,500 m. Lodge dining rooms are warm; bedrooms are not." },
+    { "id": "boots", "name": "Boots and footwear", "icon": "footprints", "mode": "bring", "text": "Bring boots you have already walked in. New or rented boots are the commonest cause of ruined treks. Camp shoes and socks are easy to buy locally." },
+    { "id": "poles", "name": "Trekking poles", "icon": "move-vertical", "mode": "rent", "text": "Cheap to rent or buy and worth it for the long descents. Check that the locks hold your full weight." },
+    { "id": "packs", "name": "Backpacks and duffels", "icon": "backpack", "mode": "either", "text": "A porter carries a soft duffel, not a framed pack. Many agencies lend one. Bring your own well-fitted day pack." },
+    { "id": "layers", "name": "Clothing layers", "icon": "layers", "mode": "buy", "text": "Base layers, fleece, gloves, hats and waterproofs are sold everywhere in Thamel. Quality varies from genuine brands to copies; pay for the things that keep you dry." },
+    { "id": "traction", "name": "Microspikes and crampons", "icon": "snowflake", "mode": "rent", "text": "Microspikes are useful on icy passes from November to March. Rent them if your route crosses a high pass in the cold months." },
+    { "id": "water", "name": "Water treatment", "icon": "droplets", "mode": "buy", "text": "Purification tablets are cheap and sold everywhere. Filters and UV pens are better bought before you travel so you know they work." },
+    { "id": "light", "name": "Headlamps and power", "icon": "flashlight", "mode": "buy", "text": "A headlamp is essential for pre-dawn starts and unlit lodges. Charging costs more with altitude, so carry a power bank." },
+    { "id": "safety", "name": "Safety and navigation", "icon": "life-buoy", "mode": "bring", "text": "A pulse oximeter, a first-aid kit and, on remote routes, a satellite messenger. Bring a messenger from home with an active subscription." },
+    { "id": "maps", "name": "Maps and books", "icon": "map", "mode": "buy", "text": "Printed trekking maps for every region are sold in Thamel and Lakeside for a few hundred rupees. Carry one even if you navigate by phone." },
+    { "id": "camp", "name": "Camping equipment", "icon": "tent", "mode": "rent", "text": "Tents, stoves and kitchen kit for camping routes are normally supplied by the agency that organises the trip." }
+  ],
+  "checks": [
+    "Open every zip and buckle in the shop, not on the trail.",
+    "Ask what the deposit is and how it is returned. A photocopy of your passport is normal; leaving the passport itself is not.",
+    "Count the days carefully. Rental is charged for every day the item is out, including rest and travel days.",
+    "Get a written slip with the items, the daily rate and the deposit.",
+    "Wash or air a rented sleeping bag and use a liner."
+  ],
+  "samples": [
+    { "title": "Down sleeping bag, rated to −20 °C", "category": "sleep", "mode": "rent", "price": "NPR 200", "unit": "per day", "place": "Thamel, Kathmandu", "seller": "Example Trek Gear" },
+    { "title": "Expedition down jacket", "category": "down", "mode": "rent", "price": "NPR 150", "unit": "per day", "place": "Lakeside, Pokhara", "seller": "Example Outdoor Shop" },
+    { "title": "Microspikes, sizes M and L", "category": "traction", "mode": "rent", "price": "NPR 150", "unit": "per day", "place": "Thamel, Kathmandu", "seller": "Example Trek Gear" },
+    { "title": "Aluminium trekking poles, pair", "category": "poles", "mode": "buy", "price": "NPR 2,500", "unit": "", "place": "Namche Bazaar", "seller": "Example Mountain Store" }
+  ]
+}

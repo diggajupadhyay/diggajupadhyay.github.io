@@ -1,0 +1,288 @@
+{
+  "slug": "makalu-base-camp",
+  "name": "Makalu Base Camp",
+  "aka": ["Makalu Barun trek"],
+  "region": "eastern",
+  "tagline": "From the hot Arun valley to the south face of the fifth highest mountain",
+  "summary": "An out-and-back trek from Num across the Arun river, over the Shipton La and up the Barun valley to the foot of Makalu, with simple lodges and very few other trekkers.",
+  "intro": [
+    "Makalu Base Camp covers one of the widest height ranges of any trek in Nepal. You start on the ridge at Num, drop to the Arun river at roughly 700 m, where it is hot enough for rice and bananas, and little more than a week later stand on gravel flats at 4,870 m beneath the 8,485 m pyramid of Makalu. In between come the farming villages of Seduwa and Tashigaon, a forested ridge that gains 1,400 m in a day, a pair of passes above 4,100 m and the cliff-walled Barun valley.",
+    "The walking is harder than on the Everest trail. Paths are steep, stony and often wet, stages are fixed by where the few lodges stand, and beyond Tashigaon there are no villages at all. The awkward part is the shape of the route: the passes lie between the upper valley and the way home, so anyone who falls ill at base camp has to climb back over 4,200 m to get out on foot.",
+    "Basic lodges now operate at every stop in the main seasons, which is why most parties no longer carry tents, but they are small, plain and sometimes shut. A guide or agency who can send word ahead is worth having. Come with previous experience of altitude, a flexible schedule and a sleeping bag good for well below freezing."
+  ],
+  "days": 18,
+  "daysRange": [16, 22],
+  "distanceKm": 125,
+  "maxAlt": { "m": 4870, "place": "makalu-base-camp" },
+  "difficulty": "strenuous",
+  "difficultyNote": "Steep, rough trail with a 1,400 m climb in one day, two passes to cross in both directions and no quick way down from the upper valley.",
+  "style": ["teahouse", "camping"],
+  "start": "num",
+  "end": "num",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "Fly from Kathmandu to Tumlingtar in the Arun valley, then take a jeep up the ridge through Khandbari and Chichila to Num, where the trail starts. Allow most of a day for the flight and the drive together. Road building in the valley is changing the first stages, so ask in Num how far vehicles currently go.",
+    "options": [
+      { "mode": "flight", "from": "kathmandu", "to": "tumlingtar", "time": "about 45 min", "note": "Daily in season. Cloud over the middle hills causes delays and the occasional cancellation." },
+      { "mode": "jeep", "from": "tumlingtar", "to": "num", "time": "4–6 hours", "note": "Tarmac as far as Khandbari, rough beyond it, and slower after rain." },
+      { "mode": "bus", "from": "kathmandu", "to": "tumlingtar", "time": "a long day or overnight", "note": "Buses and jeeps run to Khandbari and Tumlingtar by road. Tiring, but the fallback when flights are full or grounded." }
+    ]
+  },
+  "seasons": {
+    "best": [4, 5, 10, 11],
+    "good": [3],
+    "hard": [1, 2, 6, 7, 8, 9, 12],
+    "note": "October and November have the clearest skies. April and May are warmer, with rhododendron in flower on the Khongma ridge, but the Shipton La often holds deep snow into April, and in March a crossing may be blocked or need local help to break trail. The upper lodges close for winter. In the monsoon the lower trail is leech country and the airstrip is unreliable."
+  },
+  "permits": ["makalu-barun-np", "tims"],
+  "guide": {
+    "rule": "required",
+    "note": "The Nepal Tourism Board has required foreign trekkers to hire a licensed guide since April 2023, although checks on the trail are inconsistent. On this route a guide earns their fee by finding the way over the passes in snow, arranging beds at the few lodges and organising help in a valley with no road, clinic or dependable phone signal."
+  },
+  "highlights": [
+    "Makalu's south face from Shershong and base camp",
+    "The climb from rice terraces by the Arun to moraine at 4,870 m",
+    "The Shipton La and Keke La, with a small lake between them",
+    "Cliffs and waterfalls lining the Barun valley around Yangle Kharka",
+    "The farming villages of Seduwa and Tashigaon",
+    "A side-on view of Everest and Lhotse from the ridge above base camp"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Fly to Tumlingtar, drive to Num",
+      "from": "kathmandu",
+      "to": "num",
+      "via": ["tumlingtar"],
+      "sleep": 1560,
+      "hours": [5, 7],
+      "kind": "transfer",
+      "mode": "flight",
+      "note": "A short flight east, then four to six hours by jeep along the ridge above the Arun, on tarmac as far as Khandbari and dirt after it. Num sits on a spur with Seduwa in plain sight across the gorge."
+    },
+    {
+      "day": 2,
+      "title": "Num to Seduwa",
+      "from": "num",
+      "to": "seduwa",
+      "sleep": 1500,
+      "hours": [5, 7],
+      "kind": "trek",
+      "note": "A knee-testing descent of about 800 m through forest and terraces to the bridge over the Arun, then the same height straight back up in the heat. Start early and carry plenty of water. The national park office in Seduwa registers your permit."
+    },
+    {
+      "day": 3,
+      "title": "Seduwa to Tashigaon",
+      "from": "seduwa",
+      "to": "tashigaon",
+      "sleep": 2100,
+      "hours": [4, 6],
+      "kind": "trek",
+      "note": "A gentler day, contouring and climbing through terraced fields and small Rai and Sherpa settlements. Tashigaon is the last village on the route, so buy anything you have forgotten."
+    },
+    {
+      "day": 4,
+      "title": "Tashigaon to Khongma Danda",
+      "from": "tashigaon",
+      "to": "khongma-danda",
+      "sleep": 3500,
+      "hours": [6, 8],
+      "kind": "trek",
+      "note": "The steepest day: about 1,400 m of climbing on stone steps and tree roots through rhododendron forest, with few flat places to rest. Go slowly, because you are also sleeping above 3,000 m for the first time. Water is scarce at Khongma."
+    },
+    {
+      "day": 5,
+      "title": "Acclimatization day at Khongma Danda",
+      "from": "khongma-danda",
+      "to": "khongma-danda",
+      "sleep": 3500,
+      "hours": [2, 3],
+      "kind": "acclimatization",
+      "note": "After yesterday's gain this rest is not optional. Walk up the ridge towards the first prayer flags for the first wide mountain views of the trek if the morning is clear, then come down, eat and drink."
+    },
+    {
+      "day": 6,
+      "title": "Over the Shipton La and Keke La to Dobate",
+      "from": "khongma-danda",
+      "to": "dobate",
+      "via": ["shipton-la", "keke-la"],
+      "sleep": 3650,
+      "high": 4216,
+      "hours": [6, 8],
+      "kind": "pass",
+      "note": "Up the ridge past the cairns of the Khongma La to the Shipton La, down to the lake of Kalo Pokhari, over the Keke La and down again to the lodges at Dobate. Snow lingers here well into spring and cloud can hide the route."
+    },
+    {
+      "day": 7,
+      "title": "Dobate to Yangle Kharka",
+      "from": "dobate",
+      "to": "yangle-kharka",
+      "sleep": 3557,
+      "hours": [5, 7],
+      "kind": "trek",
+      "note": "A steep drop through fir and rhododendron to the Barun river, then upstream across a long landslide zone where stones fall from the cliffs; keep moving and watch above you. The valley opens at the meadow of Yangle Kharka."
+    },
+    {
+      "day": 8,
+      "title": "Yangle Kharka to Langmale Kharka",
+      "from": "yangle-kharka",
+      "to": "langmale-kharka",
+      "sleep": 4410,
+      "hours": [5, 7],
+      "kind": "trek",
+      "note": "A steady climb past yak pastures beneath huge rock walls and waterfalls. You gain about 850 m of sleeping height, so walk slowly, and take a second night here or at Yangle Kharka if anyone has a headache."
+    },
+    {
+      "day": 9,
+      "title": "Langmale Kharka to Makalu Base Camp",
+      "from": "langmale-kharka",
+      "to": "makalu-base-camp",
+      "via": ["shershong"],
+      "sleep": 4870,
+      "hours": [4, 6],
+      "kind": "trek",
+      "note": "Across moraine and a stony plain to Shershong, where the valley turns and Makalu's south face appears in full. Base camp is a group of stone lodges on gravel beside the river, cold and windy by afternoon."
+    },
+    {
+      "day": 10,
+      "title": "Day at Makalu Base Camp",
+      "from": "makalu-base-camp",
+      "to": "makalu-base-camp",
+      "sleep": 4870,
+      "hours": [2, 5],
+      "kind": "rest",
+      "note": "Walk up the moraine towards the Barun Glacier, or, if you are well acclimatized, climb part of the ridge above camp for a view of Everest and Lhotse; people go to about 5,200 m. It is steep and pathless higher up, so turn back by late morning."
+    },
+    {
+      "day": 11,
+      "title": "Base camp down to Yangle Kharka",
+      "from": "makalu-base-camp",
+      "to": "yangle-kharka",
+      "via": ["shershong", "langmale-kharka"],
+      "sleep": 3557,
+      "hours": [6, 7],
+      "kind": "trek",
+      "note": "Two upward days reversed in one long descent of more than 1,300 m. The air thickens quickly and most people sleep well tonight."
+    },
+    {
+      "day": 12,
+      "title": "Yangle Kharka to Dobate",
+      "from": "yangle-kharka",
+      "to": "dobate",
+      "sleep": 3650,
+      "hours": [5, 7],
+      "kind": "trek",
+      "note": "Back through the landslide zone, best crossed in the cool of the morning before the cliffs warm up, then the steep forest climb you came down a few days ago."
+    },
+    {
+      "day": 13,
+      "title": "Back over the passes to Khongma Danda",
+      "from": "dobate",
+      "to": "khongma-danda",
+      "via": ["keke-la", "shipton-la"],
+      "sleep": 3500,
+      "high": 4216,
+      "hours": [6, 7],
+      "kind": "pass",
+      "note": "The passes again, in reverse. If the weather has been poor, wait for a clear morning rather than cross in fresh snow and cloud; this is what the spare day in your plan is for."
+    },
+    {
+      "day": 14,
+      "title": "Khongma Danda to Tashigaon",
+      "from": "khongma-danda",
+      "to": "tashigaon",
+      "sleep": 2100,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "A 1,400 m descent on steps and roots that punishes knees more than lungs. Poles help. The lodges in Tashigaon feel comfortable after the upper valley."
+    },
+    {
+      "day": 15,
+      "title": "Tashigaon to Seduwa",
+      "from": "tashigaon",
+      "to": "seduwa",
+      "sleep": 1500,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "An easy morning back through the fields, with time to dry kit and rest before the last hard day."
+    },
+    {
+      "day": 16,
+      "title": "Seduwa to Num",
+      "from": "seduwa",
+      "to": "num",
+      "sleep": 1560,
+      "hours": [5, 7],
+      "kind": "trek",
+      "note": "Down to the Arun and up the far side once more. It is hot at the bridge, so leave at dawn and get as much of the climb to Num done as you can before the sun reaches the slope."
+    },
+    {
+      "day": 17,
+      "title": "Drive from Num to Tumlingtar",
+      "from": "num",
+      "to": "tumlingtar",
+      "sleep": 460,
+      "hours": [4, 6],
+      "kind": "transfer",
+      "mode": "jeep",
+      "note": "Back along the ridge road to the airstrip town. Reconfirm the next morning's flight as soon as you arrive."
+    },
+    {
+      "day": 18,
+      "title": "Fly to Kathmandu",
+      "from": "tumlingtar",
+      "to": "kathmandu",
+      "sleep": 1400,
+      "hours": [1, 1],
+      "kind": "transfer",
+      "mode": "flight",
+      "note": "Flights usually leave in the morning or around midday. If cloud grounds them, the fallback is a very long day by road."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Fast height gain and a blocked retreat",
+      "text": "Tashigaon to Khongma gains 1,400 m in a day, and once you are in the Barun valley the only way out on foot is back over the 4,200 m passes. Take the rest day, climb only when free of symptoms and turn round early rather than late."
+    },
+    {
+      "title": "Snow on the passes",
+      "text": "The Shipton La and Keke La can be buried from winter into April and after any storm. The trail disappears and the slopes are steep enough to slide on. Ask at Khongma about conditions before committing, and be ready to wait."
+    },
+    {
+      "title": "Rockfall beside the Barun",
+      "text": "The landslide zone between Dobate and Yangle Kharka drops stones without warning, more so in rain and on warm afternoons. Cross in the morning, spread out, and do not stop for photographs."
+    },
+    {
+      "title": "Evacuation",
+      "text": "There is no road, clinic or dependable phone coverage beyond Tashigaon. Helicopter rescue depends on weather and on getting a message out. Carry evacuation insurance and know how your guide would call for help."
+    },
+    {
+      "title": "Heat and leeches low down",
+      "text": "The Arun crossing is below 800 m. Expect heat and humidity on the first and last stages and, from May to September, leeches as far up as the Khongma ridge."
+    }
+  ],
+  "tips": [
+    "Bring enough rupees from Kathmandu or Khandbari for the whole trek; nothing beyond the road takes cards.",
+    "Trekking poles are close to essential for the Arun gorge and the Khongma steps.",
+    "Carry at least two litres of water per person on the Khongma ridge, where springs dry up.",
+    "Lodges above Tashigaon are few, simple and priced accordingly, and menus shrink to dal bhat, noodles and potatoes. Bring snacks you like.",
+    "Build two spare days into the plan: one for snow or cloud on the passes, one for the Tumlingtar flight.",
+    "Agencies disagree about a local municipality fee and a restricted-area permit for this valley. Ask yours in writing which permits your price includes."
+  ],
+  "variants": [
+    {
+      "name": "Extra acclimatization night",
+      "text": "Adding a night at Yangle Kharka or Langmale Kharka is the most useful change you can make to the standard plan."
+    },
+    {
+      "name": "Camping",
+      "text": "Some agencies still run the trek with tents and a kitchen crew. It costs more but removes the worry about closed or full lodges early and late in the season."
+    },
+    {
+      "name": "Sherpani Col to Khumbu",
+      "text": "Beyond base camp a mountaineering route crosses Sherpani Col, West Col and the Amphu Labtsa into the Everest region. It needs ropes, crampons, a climbing guide and an expedition-style crew; it is not a trekking variant."
+    }
+  ],
+  "related": ["kanchenjunga-base-camp", "everest-base-camp", "manaslu-circuit"],
+  "confidence": "medium"
+}

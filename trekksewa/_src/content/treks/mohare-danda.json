@@ -1,0 +1,153 @@
+{
+  "slug": "mohare-danda",
+  "name": "Mohare Danda",
+  "aka": ["Mohare Hill", "Annapurna Dhaulagiri Community Trail"],
+  "region": "annapurna",
+  "tagline": "Village-run lodges on a quiet trail to a 3,300 m viewpoint",
+  "summary": "Five or six days through Magar farming villages west of Ghorepani, staying in community lodges and homestays, to a hilltop at 3,300 m with a view from Dhaulagiri to Machhapuchhre.",
+  "intro": [
+    "The Mohare Danda trail was laid out by villagers in Myagdi and Parbat districts, led by the Nangi teacher Mahabir Pun, to bring trekking income to places the main routes had bypassed. It climbs from the Kali Gandaki through terraced Magar villages to a forested summit at about 3,300 m, a little higher than Poon Hill and only a few kilometres from it in a straight line. The view is much the same, from Dhaulagiri round to Machhapuchhre, and on most mornings you share it with a handful of people.",
+    "The places you stay are the point of the trek as much as the scenery. Each night is spent in a community lodge or a family homestay managed by a village committee, with fixed prices, and the surplus pays for schools, health posts and the trail itself. Rooms are simple and often shared. Meals are whatever the kitchen is cooking, usually dal bhat with vegetables from the garden, and evenings are spent with the families who run the place. Do not expect menus, bakeries or hot showers on demand.",
+    "The walking is steady rather than hard: about 2,400 m of ascent spread over three days, on village paths and forest trails with few signs. Stages are flexible because the lodges are close together, and the route can end at the road in Tiplyang or continue along the ridge to Ghorepani and Poon Hill. Details change from year to year as roads advance and lodges open or close, so confirm the current stops with a guide or the lodge network before setting out."
+  ],
+  "days": 6,
+  "daysRange": [5, 8],
+  "distanceKm": 45,
+  "maxAlt": { "m": 3300, "place": "mohare-danda" },
+  "difficulty": "moderate",
+  "difficultyNote": "Low altitude and modest daily distances, but three consecutive uphill days on rough village and forest paths.",
+  "style": ["homestay", "teahouse"],
+  "start": "galeshwor",
+  "end": "tiplyang",
+  "gateway": "pokhara",
+  "access": {
+    "summary": "Buses and jeeps run from Pokhara to Beni in about three hours, and Galeshwor is fifteen minutes further up the Jomsom road. The trail ends on the same road at Tiplyang, where you can flag down a bus or have a jeep meet you for the drive back.",
+    "options": [
+      { "mode": "bus", "from": "pokhara", "to": "beni", "time": "3–4 hr", "note": "Frequent buses from the Baglung bus park. Change in Beni for a local jeep or taxi to Galeshwor." },
+      { "mode": "jeep", "from": "pokhara", "to": "galeshwor", "time": "3–3.5 hr", "note": "Private jeep to the bridge where the trail starts." },
+      { "mode": "bus", "from": "tiplyang", "to": "pokhara", "time": "4–5 hr", "note": "Buses from Jomsom and Tatopani pass through. Seats are easier to find in the morning." }
+    ]
+  },
+  "seasons": {
+    "best": [3, 4, 10, 11],
+    "good": [1, 2, 5, 9, 12],
+    "hard": [6, 7, 8],
+    "note": "October to December has the clearest skies, and March and April bring rhododendron bloom on the ridge. The low altitude keeps the trail open in winter, though snow sometimes lies on the summit in January and February. The monsoon months are wet, with leeches in the forest and cloud on the top."
+  },
+  "permits": ["acap", "tims"],
+  "guide": {
+    "rule": "required",
+    "note": "The upper part of the trail lies in the Annapurna Conservation Area, where the Nepal Tourism Board has required foreign trekkers to walk with a licensed guide since April 2023; checks on the trail are inconsistent. A guide is worth having here in any case: the paths are barely signposted, and someone needs to phone each village so the lodge knows you are coming."
+  },
+  "highlights": [
+    "Sunrise from Mohare Danda, from Dhaulagiri round to Machhapuchhre",
+    "Nights in village-run lodges and Magar homestays",
+    "Nangi village and the school at its centre",
+    "Rhododendron forest on the ridge in spring",
+    "Trails with very few other trekkers"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive to Galeshwor, walk to Banskharka",
+      "from": "galeshwor",
+      "to": "banskharka",
+      "sleep": 1526,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "Three to four hours by road from Pokhara through Beni. Cross the suspension bridge over the Kali Gandaki at Galeshwor and climb about 650 m on village paths, through terraces and orange groves, to the community lodge at Banskharka. It is hot work in the afternoon."
+    },
+    {
+      "day": 2,
+      "title": "Banskharka to Nangi",
+      "from": "banskharka",
+      "to": "nangi",
+      "sleep": 2300,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "A day of steady climbing along the hillside through the hamlet of Dandakateri, on a mixture of farm tracks, stone steps and forest path, with Dhaulagiri in view to the north for much of it. Nangi's community lodge stands near the school; ask to be shown round."
+    },
+    {
+      "day": 3,
+      "title": "Nangi to Mohare Danda",
+      "from": "nangi",
+      "to": "mohare-danda",
+      "sleep": 3300,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "The trail leaves the fields and climbs 1,000 m through oak, rhododendron and bamboo forest. There is no village on the way, so carry lunch and water. It is a big jump in sleeping height; go slowly and drink plenty. The lodge sits just below the top, which is at its best at sunset and dawn."
+    },
+    {
+      "day": 4,
+      "title": "Sunrise on Mohare Danda, down to Danda Kharka",
+      "from": "mohare-danda",
+      "to": "danda-kharka",
+      "sleep": 2800,
+      "hours": [2, 3],
+      "kind": "trek",
+      "note": "Watch the sun come up on Dhaulagiri and the Annapurnas from the clearing above the lodge, then take a short, easy descent through rhododendron forest to the community lodge on the pasture at Danda Kharka. A restful afternoon after three days of climbing."
+    },
+    {
+      "day": 5,
+      "title": "Danda Kharka to Tikot",
+      "from": "danda-kharka",
+      "to": "tikot",
+      "sleep": 2250,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "A forest descent, steep in places, that comes out above the stone houses of Tikot on a spur facing Dhaulagiri. Stay in the community homestay and spend the afternoon in the village."
+    },
+    {
+      "day": 6,
+      "title": "Tikot to Tiplyang, drive to Pokhara",
+      "from": "tikot",
+      "to": "tiplyang",
+      "sleep": 1040,
+      "hours": [2, 3],
+      "kind": "trek",
+      "note": "A sharp 1,200 m drop on stone steps and terrace paths to the Kali Gandaki road at Tiplyang. Buses from Tatopani and Jomsom pass through on their way to Beni and Pokhara, four to five hours away; a pre-booked jeep is quicker."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Poorly marked trails",
+      "text": "Signposting is sparse and village paths branch constantly. Without a guide or a GPS track it is easy to lose an hour, and in the forest above Nangi a wrong turn can take you well off route."
+    },
+    {
+      "title": "Rain, leeches and slippery paths",
+      "text": "In the monsoon, and after any heavy rain, the clay paths and stone steps are slick, and leeches are active below about 2,500 m."
+    },
+    {
+      "title": "Cold on the summit",
+      "text": "Mohare Danda is exposed and the lodge is basic. Nights fall below freezing from November to March, and snow can lie on the top in mid-winter."
+    },
+    {
+      "title": "Few services",
+      "text": "There are no cash machines, pharmacies or gear shops after Beni, which also has the nearest hospital. Carry your own first-aid kit and a way to treat water."
+    }
+  ],
+  "tips": [
+    "Book through the community lodge network or an agency so that each village knows you are coming; kitchens buy food for the number of guests expected.",
+    "Carry cash in small notes. Prices are fixed and posted, and nobody can change large notes.",
+    "Pack a sleeping bag liner and a warm jacket. Blankets are provided, but the rooms are unheated.",
+    "Ask before photographing people, and dress modestly in the villages.",
+    "Bring a refillable bottle and water treatment; most lodges do not sell bottled water.",
+    "Carry your ACAP permit and TIMS card. The lower trail is outside the conservation area but the ridge and any onward route to Ghorepani are inside it, and advice on what is checked varies."
+  ],
+  "variants": [
+    {
+      "name": "On to Ghorepani and Poon Hill",
+      "text": "From Mohare Danda a forested ridge trail leads north-east to Ghorepani in five to six hours. Visit Poon Hill the next morning and walk out by Ulleri to Tikhedhunga, or carry on to Tadapani and Ghandruk."
+    },
+    {
+      "name": "Shorter approach by jeep",
+      "text": "Jeep tracks have reached several of the lower villages. Some groups ride as far as Nangi and do the trek in three or four days, missing the walk up from the river."
+    },
+    {
+      "name": "Link to Khopra Danda",
+      "text": "The community trail continues from Ghorepani to Swanta and Khopra Danda. Allow nine to ten days for the whole route from Galeshwor."
+    }
+  ],
+  "related": ["khopra-ridge", "ghorepani-poon-hill", "mardi-himal", "jomsom-muktinath"],
+  "confidence": "medium"
+}

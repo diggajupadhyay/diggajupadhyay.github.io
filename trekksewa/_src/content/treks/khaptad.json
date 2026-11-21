@@ -1,0 +1,156 @@
+{
+  "slug": "khaptad",
+  "name": "Khaptad National Park",
+  "aka": ["Khaptad trek", "Khaptad Baba Ashram trek"],
+  "region": "western",
+  "tagline": "High meadows, oak forest and a hermit's ashram in the far-western hills",
+  "summary": "A short trek from Silgadhi in Doti up to the rolling 3,000 m grasslands of Khaptad National Park, with wide views of Api and Saipal and almost no other foreign visitors.",
+  "intro": [
+    "Khaptad is a plateau of grassland and forest at about 3,000 m where four far-western districts, Doti, Achham, Bajhang and Bajura, meet. Twenty-two open meadows, called patans, are set among oak, fir, hemlock and rhododendron, and in clear weather the snow peaks of Api and Saipal line the northern horizon. The park takes its name from Khaptad Baba, a hermit who lived and taught here for about fifty years and whose ashram is still a place of pilgrimage.",
+    "The usual approach is from Silgadhi, the old hill bazaar above Dipayal. A day's walk, or a short jeep ride, brings you to the park gate at Jhigrana, and a second day's climb through forest reaches the park headquarters on the plateau. Most visitors give a full day to the meadows, the Tribeni temple and the small lake of Khaptad Daha before going back the same way.",
+    "Getting here is the hard part: a flight to Dhangadhi and a full day on hill roads. On the plateau, accommodation is a handful of basic lodges and park buildings near the headquarters, with few supplies, so some groups still carry tents and food. In return you get gentle walking, big skies and a trek that Nepalis know far better than foreigners do."
+  ],
+  "days": 6,
+  "daysRange": [5, 9],
+  "distanceKm": 50,
+  "maxAlt": { "m": 3020, "place": "khaptad" },
+  "difficulty": "moderate",
+  "difficultyNote": "Two steady uphill days on good forest trails to about 3,000 m; the long road journey is more tiring than the walking.",
+  "style": ["teahouse", "camping"],
+  "start": "silgadhi",
+  "end": "jhigrana",
+  "gateway": "dhangadhi",
+  "access": {
+    "summary": "Fly from Kathmandu to Dhangadhi in the far-western Terai, then drive seven to nine hours into the hills to Silgadhi in Doti. Buses and shared jeeps cover the same road. A jeep track continues from Silgadhi to the park gate at Jhigrana.",
+    "options": [
+      { "mode": "flight", "from": "kathmandu", "to": "dhangadhi", "time": "about 1 hr 15 min", "note": "Several flights a day. The road from Kathmandu takes fourteen hours or more." },
+      { "mode": "drive", "from": "dhangadhi", "to": "silgadhi", "time": "7–9 hours", "note": "A paved hill road by way of Budar and Dipayal. Landslides can close it in the monsoon." },
+      { "mode": "jeep", "from": "silgadhi", "to": "jhigrana", "time": "1.5–2 hours", "note": "A rough track that saves the first walking day." }
+    ]
+  },
+  "seasons": {
+    "best": [3, 4, 5, 10, 11],
+    "good": [6, 9],
+    "hard": [1, 2, 7, 8, 12],
+    "note": "Spring brings rhododendron in the forest and flowers across the meadows; October and November have the clearest mountain views. The plateau is under snow for much of December to February and the lodges may be closed. In July and August the meadows are at their greenest, but cloud, rain and leeches make for hard going. The Ganga Dashahara fair at Tribeni, around late May or June, fills every bed."
+  },
+  "permits": ["khaptad-np"],
+  "guide": {
+    "rule": "required",
+    "note": "The Nepal Tourism Board has required foreign trekkers in protected areas to hire a licensed guide since April 2023, though checks on the trail are inconsistent and rare this far west. A guide is still worth having here: there are few signs on the plateau, mist comes down quickly over the meadows, and beds and meals need arranging in advance."
+  },
+  "highlights": [
+    "Rolling patans, open meadows grazed in summer and full of flowers",
+    "The Api and Saipal ranges on the northern skyline",
+    "Khaptad Baba's ashram and the Tribeni temple",
+    "Oak, fir and rhododendron forest rich in birds",
+    "The hill bazaar of Silgadhi and its Shaileshwari temple"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive from Dhangadhi to Silgadhi",
+      "from": "dhangadhi",
+      "to": "silgadhi",
+      "sleep": 1340,
+      "hours": [7, 9],
+      "kind": "transfer",
+      "mode": "drive",
+      "note": "North across the Terai and up into the hills on the Dadeldhura road, then east down to the Seti river at Dipayal and up to the ridge-top bazaar of Silgadhi. Visit the Shaileshwari temple in the evening if you arrive in time."
+    },
+    {
+      "day": 2,
+      "title": "Silgadhi to Jhigrana",
+      "from": "silgadhi",
+      "to": "jhigrana",
+      "sleep": 2250,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "A steady climb along a ridge of farms and oak forest, now followed for much of the way by a jeep track; many people ride it and start walking at the park gate instead. Park staff at Jhigrana issue the entry permit."
+    },
+    {
+      "day": 3,
+      "title": "Jhigrana to Khaptad by way of Bichpani",
+      "from": "jhigrana",
+      "to": "khaptad",
+      "via": ["bichpani"],
+      "sleep": 3020,
+      "hours": [6, 8],
+      "kind": "trek",
+      "note": "A sustained climb through oak, rhododendron and bamboo to the rest stop at Bichpani, then easier walking as the forest gives way to the first meadows. Published times for this day vary a lot, and slower groups break it with a night at Bichpani."
+    },
+    {
+      "day": 4,
+      "title": "Day on the Khaptad plateau",
+      "from": "khaptad",
+      "to": "khaptad",
+      "sleep": 3020,
+      "hours": [4, 6],
+      "kind": "rest",
+      "note": "Walk a loop of the meadows: the Tribeni temple at the meeting of three streams, Khaptad Baba's ashram and the small lake of Khaptad Daha. Sahashra Linga, the highest ground in the park at about 3,200 m, is a longer outing; ask park staff for the way."
+    },
+    {
+      "day": 5,
+      "title": "Khaptad to Jhigrana",
+      "from": "khaptad",
+      "to": "jhigrana",
+      "via": ["bichpani"],
+      "sleep": 2250,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "Back the way you came, quicker downhill. With an early start you can meet a jeep at the gate and reach Silgadhi the same evening, which shortens tomorrow's drive."
+    },
+    {
+      "day": 6,
+      "title": "Drive from Jhigrana to Dhangadhi",
+      "from": "jhigrana",
+      "to": "dhangadhi",
+      "sleep": 180,
+      "hours": [9, 11],
+      "kind": "transfer",
+      "mode": "drive",
+      "note": "A long day back down to the plains by way of Silgadhi and Dipayal. Flights to Kathmandu leave Dhangadhi through the day, but book for the following morning in case the road is slow."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Mist and navigation",
+      "text": "Cloud can cover the plateau within minutes, and the meadows look alike in every direction. Stay on the main paths, keep the group together and do not wander far from headquarters alone."
+    },
+    {
+      "title": "Winter snow",
+      "text": "From December to February snow lies deep on the plateau and on the trail above Bichpani. Lodges may be shut and the route unbroken; go only with local advice."
+    },
+    {
+      "title": "Road travel",
+      "text": "The drive from Dhangadhi is long, on narrow hill roads with heavy bus traffic and monsoon landslides. Travel by day and leave slack in your return plans."
+    },
+    {
+      "title": "Few supplies, distant care",
+      "text": "There is no real shop above Jhigrana, and the nearest hospitals are down in Silgadhi and Dipayal. Carry a first-aid kit, water treatment and spare food."
+    }
+  ],
+  "tips": [
+    "Buy supplies in Dhangadhi or Silgadhi and carry snacks and some staples up with you.",
+    "Bring a warm sleeping bag. Nights at 3,000 m are cold even in May, and lodge bedding is thin.",
+    "Alcohol, tobacco and the killing of animals are not allowed in the zone around the ashram. Follow the rule, and ask before you bring meat up.",
+    "Carry small notes; nobody on the plateau can change large bills.",
+    "The park fee is disputed between sources, and some agencies also issue a TIMS card for Khaptad. Carry extra cash for the gate and let your agency decide on the card."
+  ],
+  "variants": [
+    {
+      "name": "Drive to the gate",
+      "text": "Taking a jeep between Silgadhi and Jhigrana in both directions cuts the trip to four or five days from Dhangadhi."
+    },
+    {
+      "name": "Out through Bajhang",
+      "text": "Instead of returning to Jhigrana, a trail descends north from the plateau towards the road in Bajhang, a day or two away, making a traverse. It is little used by foreigners and needs a local guide."
+    },
+    {
+      "name": "From Achham or Bajura",
+      "text": "Other trails climb to the plateau from Sanfebagar in Achham and from Bajura. They are longer and used mainly by pilgrims."
+    }
+  ],
+  "related": ["rara-lake", "phoksundo-lake"],
+  "confidence": "medium"
+}

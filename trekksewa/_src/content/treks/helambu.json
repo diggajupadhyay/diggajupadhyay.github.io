@@ -1,0 +1,168 @@
+{
+  "slug": "helambu",
+  "name": "Helambu Circuit",
+  "aka": ["Helambu Trek"],
+  "region": "langtang",
+  "tagline": "A ridge and village loop through Hyolmo country, starting at the city's edge",
+  "summary": "A six-day loop from Sundarijal along a forested ridge to Tharepati at 3,690 m, then down through the Hyolmo villages of Melamchi Gaun, Tarkeghyang and Sermathang.",
+  "intro": [
+    "Helambu is the hill country north-east of Kathmandu, between the Shivapuri ridge and the peaks of Jugal and Langtang. Its upper villages are the home of the Hyolmo, a Buddhist people with their own language, monasteries and apple orchards. The circuit is the classic short trek from the capital: you start walking an hour's drive from Thamel and never go far above the tree line.",
+    "The first three days follow one long ridge north, through Tamang villages and then unbroken oak, rhododendron and fir forest, to the lodges at Tharepati. From there the route drops east into the Melamchi valley and comes back south through Melamchi Gaun, Tarkeghyang and Sermathang. The days are longer and steeper than the modest altitude suggests, with a lot of descent on stone steps.",
+    "Helambu has changed more than most trekking areas. Sindhupalchok was among the districts worst hit by the 2015 earthquake, and most houses and monasteries here are rebuilds. Dirt roads now touch the route along the lower ridge and at Tarkeghyang and Sermathang, and debris floods in June 2021 tore out much of the road and bazaar along the Melamchi river. What remains is a quiet trail with good lodges, where the last day or two can be walked or driven as you prefer."
+  ],
+  "days": 6,
+  "daysRange": [5, 8],
+  "distanceKm": 70,
+  "maxAlt": { "m": 3690, "place": "tharepati" },
+  "difficulty": "moderate",
+  "difficultyNote": "Low by Himalayan standards, but the ridge days are long and steep, and Tharepati is reached with a jump of about 1,200 m in sleeping height.",
+  "style": ["teahouse"],
+  "start": "sundarijal",
+  "end": "melamchi-pul-bazaar",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "The walking starts inside the Kathmandu Valley. Sundarijal is about 15 km from Thamel, under an hour by taxi or a little longer by local bus. At the far end, buses return from Melamchi Pul Bazaar in three to four hours, and jeeps can be arranged from Sermathang or Tarkeghyang when the dirt roads are dry.",
+    "options": [
+      { "mode": "bus", "from": "kathmandu", "to": "sundarijal", "time": "1–1.5 h", "note": "Local buses from the Ratna Park side of town; a taxi from Thamel takes about 45 minutes." },
+      { "mode": "bus", "from": "melamchi-pul-bazaar", "to": "kathmandu", "time": "3–4 h", "note": "Buses run through the day but thin out in the afternoon, so aim to be down by early afternoon." },
+      { "mode": "jeep", "from": "sermathang", "to": "kathmandu", "time": "5–6 h", "note": "Saves the final descent on foot. The upper road is rough and can close after heavy rain." }
+    ]
+  },
+  "seasons": {
+    "best": [3, 4, 10, 11],
+    "good": [1, 2, 5, 9, 12],
+    "hard": [6, 7, 8],
+    "note": "October to December gives the clearest views, and March and April the rhododendron bloom on the ridge. In January and February snow can lie between Magin Goth and Tharepati and the upper lodges sometimes close, while the villages stay open. The monsoon brings leeches in the forest, cloud, and landslides on the Melamchi road."
+  },
+  "permits": ["shivapuri-np", "langtang-np", "tims"],
+  "guide": {
+    "rule": "required",
+    "note": "The Nepal Tourism Board has required foreign trekkers to hire a licensed guide since April 2023, though checks on the trail are inconsistent. On this route a guide is most useful for finding the footpath where new jeep tracks have cut the old trail, and for arranging transport out from Sermathang or Melamchi."
+  },
+  "highlights": [
+    "Starting a Himalayan trek from the edge of Kathmandu",
+    "Three days of ridge-top forest, with rhododendron in bloom in spring",
+    "Dawn at Tharepati, looking east to Dorje Lakpa and the Jugal peaks",
+    "Hyolmo villages and monasteries at Melamchi Gaun, Tarkeghyang and Sermathang",
+    "Helambu apples in autumn"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive to Sundarijal, walk to Chisapani",
+      "from": "sundarijal",
+      "to": "chisapani",
+      "via": ["mulkharka", "borlang-bhanjyang"],
+      "sleep": 2165,
+      "high": 2420,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "Under an hour by road from Thamel, then stone steps beside the water pipeline, the Tamang village of Mulkharka and a long forest climb inside Shivapuri Nagarjun National Park to the Borlang Bhanjyang saddle. Chisapani is a short descent beyond it."
+    },
+    {
+      "day": 2,
+      "title": "Chisapani to Kutumsang",
+      "from": "chisapani",
+      "to": "kutumsang",
+      "via": ["pati-bhanjyang", "chipling", "golphu-bhanjyang"],
+      "sleep": 2470,
+      "hours": [6, 7],
+      "kind": "trek",
+      "note": "A day of ups and downs along the ridge: down 400 m to Pati Bhanjyang, up stone steps to Chipling, over a forested shoulder and down to Golphu Bhanjyang, then a last climb to Kutumsang, where permits are checked. You climb about 1,000 m in all to finish 300 m higher than you started."
+    },
+    {
+      "day": 3,
+      "title": "Kutumsang to Tharepati",
+      "from": "kutumsang",
+      "to": "tharepati",
+      "via": ["magin-goth"],
+      "sleep": 3690,
+      "hours": [5, 6],
+      "km": 11,
+      "kind": "trek",
+      "note": "A steady forest climb of about 1,200 m with no villages, only the lodges at Magin Goth after three hours or so. Rhododendron gives way to juniper and open pasture near the top. It is a big jump in sleeping height: if you are prone to headaches, stop at Magin Goth and finish in the morning."
+    },
+    {
+      "day": 4,
+      "title": "Tharepati to Tarkeghyang",
+      "from": "tharepati",
+      "to": "tarkeghyang",
+      "via": ["melamchi-gaun"],
+      "sleep": 2600,
+      "hours": [6, 7],
+      "kind": "trek",
+      "note": "Leave the Gosaikunda trail and drop more than 1,100 m through forest to Melamchi Gaun for lunch. Then descend again to the bridge over the Melamchi Khola at about 1,900 m and climb 700 m up the far side to Tarkeghyang. Sound knees matter more than lungs today."
+    },
+    {
+      "day": 5,
+      "title": "Tarkeghyang to Sermathang",
+      "from": "tarkeghyang",
+      "to": "sermathang",
+      "sleep": 2590,
+      "hours": [3, 4],
+      "km": 10,
+      "kind": "trek",
+      "note": "The easiest day: a near-level contour through forest and past the small village of Gangyul, sharing parts of the way with a jeep track. You are in by lunch, with the afternoon free for Sermathang's monasteries and the view north to the Jugal peaks."
+    },
+    {
+      "day": 6,
+      "title": "Sermathang to Melamchi Pul Bazaar, drive to Kathmandu",
+      "from": "sermathang",
+      "to": "melamchi-pul-bazaar",
+      "sleep": 870,
+      "hours": [4, 6],
+      "kind": "trek",
+      "note": "A descent of 1,700 m down the ridge through Kakani and Dubhachaur into rice terraces and real heat, much of it on or beside a jeep road. Buses then take three to four hours to Kathmandu. Many groups now skip the walk and ride down from Sermathang."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Altitude at Tharepati",
+      "text": "Going from Kutumsang to Tharepati in a day raises your sleeping height by about 1,200 m, to 3,690 m. Headaches there are common and usually clear on the descent next morning. If you feel worse during the night, go down to Magin Goth or Melamchi Gaun at first light rather than waiting it out."
+    },
+    {
+      "title": "Jeep tracks and junctions",
+      "text": "Road building has cut the old trail in many places below Kutumsang and between Tarkeghyang and Melamchi. Signs are few, and the track and the footpath often part company. Ask at each village, and do not rely on an old map."
+    },
+    {
+      "title": "Floods and landslides in the Melamchi valley",
+      "text": "The valley was devastated by debris floods in June 2021, and its road and bridges still wash out in heavy rain. From June to September check the state of the road before you commit to leaving through Timbu or Melamchi Pul Bazaar."
+    },
+    {
+      "title": "Winter snow on the ridge",
+      "text": "Between December and February snow can cover the trail above Magin Goth and hide the path in the forest. Lodges at Tharepati may be shut; confirm in Kutumsang before you climb."
+    }
+  ],
+  "tips": [
+    "Leave Kathmandu by 8 am on the first day. The climb to Chisapani is hotter and longer than it looks on the map.",
+    "Keep the Shivapuri ticket and the Langtang permit separate and to hand; they are checked by different posts, at Sundarijal and at Kutumsang.",
+    "Carry cash for the whole trek; do not count on an ATM anywhere on the route.",
+    "Trekking poles earn their place on days four and six, which are mostly steep descent.",
+    "Wear long socks and carry salt in the monsoon; the forest between Chisapani and Tharepati is thick with leeches.",
+    "If the lodges at Tharepati are full or closed, the next beds are at Magin Goth on one side and Melamchi Gaun on the other."
+  ],
+  "variants": [
+    {
+      "name": "Shorter loop through Timbu",
+      "text": "From Tarkeghyang, drop straight to the road at Timbu in two to three hours and take a bus or jeep to Kathmandu. This cuts the trek to five days and skips Sermathang."
+    },
+    {
+      "name": "Different overnight stops",
+      "text": "The stage ends are flexible. Chipling or Golphu Bhanjyang can stand in for Chisapani and Kutumsang, Magin Goth for Tharepati, and Melamchi Gaun for Tarkeghyang, which is how most six and seven day versions differ from this one."
+    },
+    {
+      "name": "End at Sermathang",
+      "text": "Arrange a jeep from Sermathang on the morning of day six and you are in Kathmandu by afternoon, without the long, hot descent to Melamchi Pul Bazaar."
+    },
+    {
+      "name": "Add Ama Yangri",
+      "text": "Spend a second night at Tarkeghyang and climb the 3,771 m summit above the village. It is a steep 1,200 m up and down, five to seven hours, and the best viewpoint in Helambu."
+    },
+    {
+      "name": "Continue to Gosaikunda",
+      "text": "From Tharepati a rough trail runs north-west through Ghopte and Phedi and over the 4,610 m Laurebina La to the Gosaikunda lakes, two days away, with an exit to Dhunche. It is a much more serious undertaking than the circuit, especially in snow."
+    }
+  ],
+  "related": ["ama-yangri", "gosaikunda", "langtang-gosaikunda-helambu", "chisapani-nagarkot"],
+  "confidence": "medium"
+}

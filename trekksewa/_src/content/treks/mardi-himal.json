@@ -1,0 +1,153 @@
+{
+  "slug": "mardi-himal",
+  "name": "Mardi Himal",
+  "aka": ["Mardi Himal Base Camp"],
+  "region": "annapurna",
+  "tagline": "A narrow ridge walk to the foot of Machhapuchhre in five days",
+  "summary": "A short ridge trek from Kande through forest to High Camp, with a dawn climb to the 4,200 m viewpoint or the 4,500 m base camp below Mardi Himal and Machhapuchhre.",
+  "intro": [
+    "Mardi Himal is the pointed 5,587 m peak at the end of Machhapuchhre's south-west ridge. The trek climbs the forested spur below it, between the Modi Khola and the Mardi Khola, and comes out above the trees on a narrow grass ridge that leads almost to the foot of the two mountains. It opened as a lodge route in 2012 and has become the favourite short trek for people who want to get high and close in under a week.",
+    "The first two days are almost entirely in forest, with no villages after Pitam Deurali and only clusters of lodges named for what they are: Forest Camp, Low Camp, High Camp. Above Low Camp the trees give way and the ridge narrows, with Annapurna South and Hiunchuli across the valley to the left and Machhapuchhre straight ahead. The final morning follows the crest from High Camp to the Upper Viewpoint, where most people turn round, or on for another hour or more to the marker called base camp.",
+    "It is a short trek but not a soft one. The plan below gains over 1,400 m of sleeping height in two days and reaches 4,500 m on the fourth morning, which is fast. The upper ridge is exposed to wind, sudden cloud and, from December to March, snow. Lodges are simple and few at each stop, and water is scarce at High Camp. The steep descent to Siding and a jeep down the Mardi Khola turn it into a loop."
+  ],
+  "days": 5,
+  "daysRange": [4, 7],
+  "distanceKm": 42,
+  "maxAlt": { "m": 4500, "place": "mardi-himal-base-camp" },
+  "difficulty": "moderate",
+  "difficultyNote": "Short and well marked, but it gains height fast, reaches 4,500 m and finishes along a narrow, exposed ridge.",
+  "style": ["teahouse"],
+  "start": "kande",
+  "end": "siding",
+  "gateway": "pokhara",
+  "access": {
+    "summary": "Kande is an hour by road from Pokhara on the Baglung highway. The trek ends at Siding in the Mardi Khola valley, where jeeps take about two hours to return to Pokhara on a rough track.",
+    "options": [
+      { "mode": "drive", "from": "pokhara", "to": "kande", "time": "1 hr", "note": "Taxi, or any Baglung-bound bus from the Baglung bus park." },
+      { "mode": "jeep", "from": "pokhara", "to": "dhampus", "time": "1–1.5 hr", "note": "An alternative start that joins the main trail at Pothana after about an hour and a half on foot." },
+      { "mode": "jeep", "from": "siding", "to": "pokhara", "time": "2–2.5 hr", "note": "Shared jeeps leave when full, usually around midday. Ask your lodge at Low Camp to phone ahead." }
+    ]
+  },
+  "seasons": {
+    "best": [3, 4, 10, 11],
+    "good": [5, 9, 12],
+    "hard": [1, 2, 6, 7, 8],
+    "note": "October and November are the clearest months, and April brings rhododendron bloom in the forest. Cloud usually covers the ridge by late morning in any season, which is why the summit day starts in the dark. From late December to February snow often blocks the ridge above High Camp. The monsoon forest is wet, full of leeches and without views."
+  },
+  "permits": ["acap", "tims"],
+  "guide": {
+    "rule": "required",
+    "note": "Since April 2023 the Nepal Tourism Board has required foreign trekkers in conservation areas to walk with a licensed guide, though checks on the trail are inconsistent. On this route a guide matters most on the ridge above High Camp, where cloud can close in within minutes and the path is hard to follow under snow."
+  },
+  "highlights": [
+    "Machhapuchhre from a few kilometres away on the upper ridge",
+    "Sunrise on Annapurna South and Hiunchuli from High Camp",
+    "Two days of quiet oak and rhododendron forest",
+    "Open ridge walking between Low Camp and High Camp",
+    "A loop that starts an hour's drive from Pokhara"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive to Kande, walk to Pitam Deurali",
+      "from": "kande",
+      "to": "pitam-deurali",
+      "via": ["australian-camp", "pothana"],
+      "sleep": 2100,
+      "hours": [3, 4],
+      "km": 7,
+      "kind": "trek",
+      "note": "An hour of stone steps leads to the lawns of Australian Camp and the first full view of the range. The trail then follows the ridge through Pothana, where permits are checked, and climbs gently in forest to the lodges at Pitam Deurali."
+    },
+    {
+      "day": 2,
+      "title": "Pitam Deurali to Low Camp",
+      "from": "pitam-deurali",
+      "to": "low-camp",
+      "via": ["forest-camp"],
+      "sleep": 2990,
+      "hours": [6, 7],
+      "kind": "trek",
+      "note": "The Mardi trail leaves the main path and climbs the ridge through dense, mossy forest, with no village and little water between the lodge clusters. Lunch is at Forest Camp. The afternoon climbs more steeply to Low Camp, where Machhapuchhre appears at the head of the valley."
+    },
+    {
+      "day": 3,
+      "title": "Low Camp to High Camp",
+      "from": "low-camp",
+      "to": "mardi-himal-high-camp",
+      "via": ["badal-danda"],
+      "sleep": 3550,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "Within an hour the forest thins to scrub and the trail comes out on the open ridge at Badal Danda. From there it follows the crest, with steep drops on both sides in places, to High Camp. Arrive by lunch, drink plenty and rest for the early start."
+    },
+    {
+      "day": 4,
+      "title": "Viewpoint and base camp, down to Low Camp",
+      "from": "mardi-himal-high-camp",
+      "to": "low-camp",
+      "via": ["mardi-himal-viewpoint", "mardi-himal-base-camp", "mardi-himal-high-camp"],
+      "sleep": 2990,
+      "high": 4500,
+      "hours": [8, 10],
+      "kind": "summit",
+      "note": "Start around four with a head torch. The path climbs the narrow crest for two to three hours to the Upper Viewpoint at 4,200 m, and base camp is another hour or more along the ridge. Turn round by nine at the latest, collect your bag at High Camp and carry on down to Low Camp."
+    },
+    {
+      "day": 5,
+      "title": "Low Camp to Siding, drive to Pokhara",
+      "from": "low-camp",
+      "to": "siding",
+      "sleep": 1860,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "A steep forest descent of more than 1,100 m on a rough path, hard on the knees and slippery after rain. Have lunch in Siding, then take a jeep down the Mardi Khola valley to Pokhara, about two hours on a rough track."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Fast ascent",
+      "text": "From Low Camp to base camp is a gain of 1,500 m in under two days. Headache and nausea at High Camp are common. Do not go above High Camp with symptoms, and if they worsen in the night, go down to Low Camp."
+    },
+    {
+      "title": "Exposed ridge and sudden cloud",
+      "text": "Above High Camp the path follows a narrow crest with steep grass and rock on both sides. Cloud often arrives by nine or ten and visibility can fall to a few metres. Under snow or ice the ridge is dangerous without proper footwear, so turn back rather than push on."
+    },
+    {
+      "title": "Winter snow",
+      "text": "From late December into March the ridge above Badal Danda is often snowbound and the High Camp lodges may close. Ask in Pokhara or at Low Camp before committing."
+    },
+    {
+      "title": "Little water, few beds",
+      "text": "High Camp has little water and not many rooms, and in peak season people sleep in the dining halls. Carry enough water for the summit morning, because there is none on the ridge."
+    }
+  ],
+  "tips": [
+    "Carry at least two litres of water on the forest days and the summit morning; sources between the camps are unreliable.",
+    "Take microspikes and warm gloves from November to March.",
+    "The Upper Viewpoint gives nearly the same view as base camp. Go on only if the sky is clear and you feel strong.",
+    "Lodges are basic above Forest Camp. Bring a sleeping bag and a power bank.",
+    "Carry cash from Pokhara; there is nowhere to get money on the ridge.",
+    "Heights quoted for the camps differ by up to 100 m between maps and lodge signboards, so treat them as approximate."
+  ],
+  "variants": [
+    {
+      "name": "Four days",
+      "text": "Fit, acclimatized walkers go from Kande to Forest Camp on day one and to High Camp on day two, then descend to Siding and Pokhara on day four. It leaves no margin for altitude or weather."
+    },
+    {
+      "name": "Start from Dhampus",
+      "text": "A slightly longer first day from Dhampus through Pothana, on a village trail with wide views."
+    },
+    {
+      "name": "Descend to Landruk",
+      "text": "From Forest Camp a steep trail drops west to Landruk, which links to Jhinu Danda and the Annapurna Base Camp route or across the valley to Ghandruk."
+    },
+    {
+      "name": "Extra night on the ridge",
+      "text": "Splitting the climb with a night at Badal Danda, or spending a second night at High Camp, makes the summit morning easier and gives a spare day for weather."
+    }
+  ],
+  "related": ["annapurna-base-camp", "ghorepani-poon-hill", "khopra-ridge", "mohare-danda"],
+  "confidence": "high"
+}

@@ -1,0 +1,311 @@
+{
+  "slug": "kanchenjunga-base-camp",
+  "name": "Kanchenjunga Base Camp",
+  "aka": ["Kanchenjunga Circuit", "Kanchenjunga North and South Base Camp"],
+  "region": "eastern",
+  "tagline": "Both base camps of the third highest mountain, linked by a line of passes",
+  "summary": "A three-week route in Nepal's far east: up the Ghunsa valley to Pangpema below Kanchenjunga's north face, across the Sele La and Mirgin La, then to Oktang on the south side.",
+  "intro": [
+    "Kanchenjunga, 8,586 m, stands on the border with Sikkim at the eastern end of Nepal. This route visits both sides of it. You walk up the Ghunsa Khola through Sherpa and Tibetan villages to Pangpema, the north base camp at 5,143 m, come back down to Ghunsa, cross a line of passes between about 4,300 and 4,650 m to the Simbuwa Khola, and climb again to the Oktang viewpoint above the Yalung Glacier.",
+    "Nothing here is technical, but it is a long trek in a place where help is far away. Count on about fourteen walking days, most of them six hours or more, with steep, rough trail in the lower gorges and loose moraine higher up. Lodges now cover every stage, yet above Ghunsa and on the passes they are plain stone or timber huts with a few beds, a stove and a short menu, and they shut when their owners go down for the winter or the monsoon.",
+    "The whole area is a restricted zone inside the Kanchenjunga Conservation Area, so the permit has to be arranged through a registered agency and you must walk with a licensed guide. Jeep tracks have shortened both ends of the trek in recent years, and how far vehicles get changes with every monsoon. Treat the first and last days of any plan as provisional and keep a spare day or two in hand."
+  ],
+  "days": 19,
+  "daysRange": [18, 25],
+  "distanceKm": 160,
+  "maxAlt": { "m": 5143, "place": "pangpema" },
+  "difficulty": "strenuous",
+  "difficultyNote": "Two weeks of long days on rough trail, two nights near 4,800 m, a day to 5,143 m and a full day of passes, all far from a road or a hospital.",
+  "style": ["teahouse"],
+  "start": "sekathum",
+  "end": "yamphudin",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "Fly from Kathmandu to Bhadrapur in the south-eastern Terai, then drive north through the tea country of Ilam to Taplejung, usually over two days. From Taplejung a rough jeep track follows the Tamor river to Sekathum. Coming out, jeeps meet groups at Yamphudin when the track is open.",
+    "options": [
+      { "mode": "flight", "from": "kathmandu", "to": "bhadrapur", "time": "45 min", "note": "Several flights a day; the usual way to start." },
+      { "mode": "drive", "from": "bhadrapur", "to": "taplejung", "time": "9–10 hours", "note": "A paved but slow hill road. Most groups break the journey in Ilam." },
+      { "mode": "jeep", "from": "taplejung", "to": "sekathum", "time": "4–6 hours", "note": "A rough track that landslides often cut in the wet months. If it is closed you start walking lower down, which can add two or three days." },
+      { "mode": "bus", "from": "kathmandu", "to": "taplejung", "time": "20 hours or more", "note": "Long-distance night buses run by way of Birtamod and Ilam. A hard start to a long trek; most people fly the first leg." }
+    ]
+  },
+  "seasons": {
+    "best": [4, 5, 10, 11],
+    "good": [3],
+    "hard": [1, 2, 6, 7, 8, 9, 12],
+    "note": "The monsoon reaches the east first and leaves last, so the autumn window opens later here than further west: aim for mid-October to late November. April and May are warmer, with rhododendron in flower below Ghunsa, but cloud builds most afternoons. March works if the high lodges have opened. In winter they close and snow can shut the passes; from June to September expect leeches, landslides and little to see."
+  },
+  "permits": ["rap-kanchenjunga", "kanchenjunga-ca"],
+  "guide": {
+    "rule": "required",
+    "note": "This is a restricted area: the permit is issued only through a registered trekking agency and you must be accompanied by a licensed guide, whether you come alone or in a group. A guide who knows the route also matters on the long pass day between the Sele La and Cheram, where the trail is faint in snow or cloud and there is no shelter."
+  },
+  "highlights": [
+    "Pangpema and the north face of Kanchenjunga",
+    "Jannu's north wall from the meadows at Kambachen",
+    "Ghunsa, a Sherpa village of timber houses and prayer flags",
+    "The high traverse over Sinion La, Mirgin La and Sinelapche La",
+    "Oktang and the Yalung Glacier on the south side",
+    "Far fewer trekkers than on any route in Khumbu or Annapurna"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Fly to Bhadrapur, drive to Ilam",
+      "from": "kathmandu",
+      "to": "ilam",
+      "via": ["bhadrapur"],
+      "sleep": 1200,
+      "hours": [4, 5],
+      "kind": "transfer",
+      "mode": "flight",
+      "note": "A 45-minute flight to the Terai, then three to four hours by road up through tea estates to Ilam. Some groups push on towards Taplejung the same day, which makes for a very long drive."
+    },
+    {
+      "day": 2,
+      "title": "Drive from Ilam to Taplejung",
+      "from": "ilam",
+      "to": "taplejung",
+      "sleep": 1820,
+      "hours": [6, 7],
+      "kind": "transfer",
+      "mode": "drive",
+      "note": "A slow, winding hill road by way of Phidim. Taplejung is the last town with banks, cash machines and a proper bazaar, so finish your shopping and withdraw what you need here."
+    },
+    {
+      "day": 3,
+      "title": "Jeep from Taplejung to Sekathum",
+      "from": "taplejung",
+      "to": "sekathum",
+      "sleep": 1650,
+      "hours": [4, 6],
+      "kind": "transfer",
+      "mode": "jeep",
+      "note": "A rough track along the Tamor river through Mitlung, Chiruwa and Tapethok, with permit checks on the way. If landslides have blocked it, expect to walk part of the distance and lose a day."
+    },
+    {
+      "day": 4,
+      "title": "Sekathum to Amjilosa",
+      "from": "sekathum",
+      "to": "amjilosa",
+      "sleep": 2400,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "Up the narrow Ghunsa Khola gorge on a trail that crosses the river several times, then climbs steeply to a few houses on a shelf far above it. Hot, humid and harder than the map suggests."
+    },
+    {
+      "day": 5,
+      "title": "Amjilosa to Gyabla",
+      "from": "amjilosa",
+      "to": "gyabla",
+      "sleep": 2730,
+      "hours": [4, 6],
+      "kind": "trek",
+      "note": "A day in dense forest of bamboo, oak and rhododendron, with waterfalls across the valley and a steep final pull to Gyabla. The path is narrow and slippery after rain."
+    },
+    {
+      "day": 6,
+      "title": "Gyabla to Ghunsa",
+      "from": "gyabla",
+      "to": "ghunsa",
+      "via": ["phale"],
+      "sleep": 3475,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "The valley widens and the air turns cooler. You pass the Tibetan settlement of Phale with its small monastery, then walk through larch and juniper to Ghunsa, where the police post checks permits again."
+    },
+    {
+      "day": 7,
+      "title": "Acclimatization day in Ghunsa",
+      "from": "ghunsa",
+      "to": "ghunsa",
+      "sleep": 3475,
+      "hours": [2, 4],
+      "kind": "acclimatization",
+      "note": "Climb a few hundred metres up the hillside above the village in the morning and come back down for lunch. This is also the last good place to wash, charge batteries and buy snacks."
+    },
+    {
+      "day": 8,
+      "title": "Ghunsa to Kambachen",
+      "from": "ghunsa",
+      "to": "kambachen",
+      "sleep": 4100,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "North along the river through forest, then across an exposed landslide slope where you move one at a time and do not stop. Jannu's north face comes into view shortly before the stone houses of Kambachen."
+    },
+    {
+      "day": 9,
+      "title": "Acclimatization day at Kambachen",
+      "from": "kambachen",
+      "to": "kambachen",
+      "sleep": 4100,
+      "hours": [3, 4],
+      "kind": "acclimatization",
+      "note": "Walk up the side valley towards the Jannu Glacier for a closer look at the north face, going only as high as feels comfortable, then return to sleep at the same height."
+    },
+    {
+      "day": 10,
+      "title": "Kambachen to Lhonak",
+      "from": "kambachen",
+      "to": "lhonak",
+      "sleep": 4780,
+      "hours": [4, 6],
+      "kind": "trek",
+      "note": "A gradual climb over boulder fields and old moraine beside the Kanchenjunga Glacier, with stretches beneath loose slopes where stones come down. Lhonak is a windy, sandy flat with a few basic huts, and the night is cold."
+    },
+    {
+      "day": 11,
+      "title": "Pangpema, the north base camp, and back to Lhonak",
+      "from": "lhonak",
+      "to": "lhonak",
+      "via": ["pangpema"],
+      "sleep": 4780,
+      "high": 5143,
+      "hours": [6, 8],
+      "kind": "summit",
+      "note": "Leave early and follow the edge of the moraine, which has slumped in places, to the hut at Pangpema. The north face fills the head of the valley. Most people return to Lhonak for a better night's sleep."
+    },
+    {
+      "day": 12,
+      "title": "Lhonak down to Ghunsa",
+      "from": "lhonak",
+      "to": "ghunsa",
+      "via": ["kambachen"],
+      "sleep": 3475,
+      "hours": [7, 8],
+      "kind": "trek",
+      "note": "A long descent that retraces two upward days in one. Going down is quick, but give the landslide slope below Kambachen the same care as on the way up."
+    },
+    {
+      "day": 13,
+      "title": "Ghunsa to the Sele La huts",
+      "from": "ghunsa",
+      "to": "sele-la",
+      "sleep": 4290,
+      "hours": [5, 7],
+      "kind": "trek",
+      "note": "A steep climb out of the valley through rhododendron and juniper to open ridges, then a traverse to the huts near the Sele La. There is little water on the way, so fill your bottles before you leave."
+    },
+    {
+      "day": 14,
+      "title": "Over Sinion La, Mirgin La and Sinelapche La to Cheram",
+      "from": "sele-la",
+      "to": "cheram",
+      "via": ["sinion-la", "mirgin-la", "sinelapche-la"],
+      "sleep": 3870,
+      "high": 4646,
+      "hours": [7, 9],
+      "kind": "pass",
+      "note": "The hardest day: three passes in a row over rough, exposed ground with no lodge between them, then a steep drop of nearly 800 m to Cheram. Start at first light. Published heights for these passes differ by up to 200 m."
+    },
+    {
+      "day": 15,
+      "title": "Cheram to Ramche and the Oktang viewpoint",
+      "from": "cheram",
+      "to": "ramche",
+      "via": ["oktang"],
+      "sleep": 4580,
+      "high": 4730,
+      "hours": [5, 7],
+      "kind": "summit",
+      "note": "Follow the valley beside the Yalung Glacier to the meadow at Ramche, leave your bag and continue to the chorten at Oktang for the south side of the mountain. If cloud has already come in, go at first light tomorrow instead."
+    },
+    {
+      "day": 16,
+      "title": "Ramche to Tortong",
+      "from": "ramche",
+      "to": "tortong",
+      "via": ["cheram"],
+      "sleep": 2995,
+      "hours": [6, 7],
+      "kind": "trek",
+      "note": "Back past Cheram and on down the Simbuwa Khola into tall forest of fir and rhododendron. A big loss of height and an easy day for the lungs, though the trail is rooty and wet in places."
+    },
+    {
+      "day": 17,
+      "title": "Tortong to Yamphudin over Lasiya Bhanjyang",
+      "from": "tortong",
+      "to": "yamphudin",
+      "via": ["lasiya-bhanjyang"],
+      "sleep": 2080,
+      "high": 3415,
+      "hours": [7, 8],
+      "kind": "pass",
+      "note": "A stiff forest climb to the ridge, skirting a very large landslide that has eaten into the old path; cross the affected stretch quickly. Then a long descent to the fields of Yamphudin, the first real village since Ghunsa."
+    },
+    {
+      "day": 18,
+      "title": "Jeep from Yamphudin to Ilam",
+      "from": "yamphudin",
+      "to": "ilam",
+      "sleep": 1200,
+      "hours": [8, 10],
+      "kind": "transfer",
+      "mode": "jeep",
+      "note": "A rough track leads out to the main road south. When it is cut you walk on for five or six hours to Khebang, or further, to meet the vehicle, which is one reason to keep a spare day in hand."
+    },
+    {
+      "day": 19,
+      "title": "Drive to Bhadrapur, fly to Kathmandu",
+      "from": "ilam",
+      "to": "kathmandu",
+      "via": ["bhadrapur"],
+      "sleep": 1400,
+      "hours": [4, 5],
+      "kind": "transfer",
+      "mode": "flight",
+      "note": "Three to four hours down to the plains for an afternoon flight. Bhadrapur is far more dependable than the mountain airstrips, but the road can be slow, so do not book the earliest departure."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Altitude",
+      "text": "You sleep at about 4,780 m at Lhonak and walk to 5,143 m the next day. Keep both acclimatization days, and if symptoms appear at Kambachen or Lhonak go down to Ghunsa, which has the only health post in the upper valley, and a basic one."
+    },
+    {
+      "title": "Remoteness and evacuation",
+      "text": "A helicopter is the only fast way out, and it needs clear weather and a way to call it. Carry insurance that covers evacuation from above 5,000 m and agree with your guide how a call for help would be made from each stage."
+    },
+    {
+      "title": "Landslides and rockfall",
+      "text": "The slope between Ghunsa and Kambachen, the moraine edge above Lhonak and the slide near Lasiya Bhanjyang all shed rock, especially after rain and in the afternoon thaw. Cross early, spaced out and without stopping."
+    },
+    {
+      "title": "The pass day",
+      "text": "The Sele La to Cheram is seven hours or more over exposed ground with no shelter and little water. Fresh snow or cloud hides the trail. Do not set out late, alone or in bad weather."
+    },
+    {
+      "title": "Road travel",
+      "text": "The drives to and from the trailheads are long, on narrow hill roads and rough tracks that slide in the monsoon. Travel by day and expect delays."
+    }
+  ],
+  "tips": [
+    "Bring all the cash you need in rupees from Kathmandu, Birtamod or Taplejung; there is nowhere to withdraw money after that.",
+    "A warm sleeping bag is essential. Lodges above Ghunsa give you a bed and, at best, a blanket.",
+    "Carry water treatment and a spare way to charge a phone and headlamp. Solar charging at the high lodges is limited and costs extra.",
+    "Before leaving Ghunsa and Cheram, have your guide confirm which huts at Lhonak, the Sele La and Ramche are open, particularly early and late in the season.",
+    "Count the days on your restricted-area permit carefully. It is charged by the week, and a weather delay can push you into the next one.",
+    "Outside the dry months, pack for leeches in the lower forest: long socks and salt or repellent."
+  ],
+  "variants": [
+    {
+      "name": "North base camp only",
+      "text": "Walk in and out by the Ghunsa valley to Pangpema, about 14 to 16 days from Kathmandu. It skips the passes and the south side."
+    },
+    {
+      "name": "South base camp only",
+      "text": "Yamphudin, Tortong, Cheram and Oktang and back the same way takes 11 to 14 days. A good choice when the passes are under snow."
+    },
+    {
+      "name": "South to north",
+      "text": "The circuit works in either direction. Starting from Yamphudin gains height much faster on the way to Ramche, so most people go north first."
+    },
+    {
+      "name": "Walking the whole way",
+      "text": "Before the jeep tracks, the trek began and ended at Taplejung or the Suketar airstrip above it. Doing so adds four to six days through farmland and cardamom plantations at each end of the loop."
+    }
+  ],
+  "related": ["makalu-base-camp", "manaslu-circuit", "upper-dolpo"],
+  "confidence": "medium"
+}

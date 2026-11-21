@@ -1,0 +1,228 @@
+{
+  "slug": "tsum-valley",
+  "name": "Tsum Valley",
+  "aka": ["Tsum Valley to Mu Gompa"],
+  "region": "manaslu",
+  "tagline": "A Buddhist side valley of Manaslu, walked to the monastery at its head",
+  "summary": "An out-and-back trek from the Budhi Gandaki into Tsum, a high valley of monasteries, mani walls and Tibetan-speaking villages, ending at Mu Gompa (3,700 m) near the Tibet border.",
+  "intro": [
+    "Tsum is a side valley of the Budhi Gandaki that runs north-east to the Tibet border between Ganesh Himal and Shringi Himal. It was opened to trekkers only in 2008. The people, the Tsumba, speak a Tibetan dialect, and the upper valley is a flat, farmed plain lined with chortens and long mani walls, with monasteries and nunneries along it. By local custom no animals have been killed here for about a century, a vow the valley has formally renewed in recent years.",
+    "The trek shares its first two days with the Manaslu Circuit, then turns off above Philim and climbs through pine forest and a rough gorge to Chumling in lower Tsum. A steep 650 m climb leads into the upper valley at Chhokang Paro, and from there two short days on almost level ground take you past Milarepa's cave and Rachen Gompa to Nile and Mu Gompa. You return the same way.",
+    "There is no pass and the highest night is at 3,700 m, so altitude is rarely a serious problem. The effort is in the long, hot days in the lower gorge and the rough trail between Lokpa and Chumling. Lodges and homestays are simple, with plain rooms and a short menu, and the monastery guest rooms at Mu Gompa are more basic still. Tsum is a restricted area, so a guide and an agency-arranged permit are compulsory."
+  ],
+  "days": 12,
+  "daysRange": [10, 16],
+  "distanceKm": 145,
+  "maxAlt": { "m": 3700, "place": "mu-gompa" },
+  "difficulty": "moderate",
+  "difficultyNote": "No pass and a modest high point, but several six to eight hour days on rough gorge trails and very simple lodging.",
+  "style": ["teahouse", "homestay"],
+  "start": "machha-khola",
+  "end": "machha-khola",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "Drive from Kathmandu to Machha Khola in a long day by local bus or private jeep via Dhading Besi and Arughat, and return the same way. After heavy rain the road may be open only as far as Soti Khola or Arughat.",
+    "options": [
+      { "mode": "bus", "from": "kathmandu", "to": "machha-khola", "time": "8–10 h", "note": "Daily local buses via Arughat and Soti Khola; slow, crowded and rough beyond Arughat." },
+      { "mode": "jeep", "from": "kathmandu", "to": "machha-khola", "time": "7–9 h", "note": "A private jeep is the usual choice for groups and can be booked for the return on a fixed day." }
+    ]
+  },
+  "seasons": {
+    "best": [4, 5, 10, 11],
+    "good": [3, 9, 12],
+    "hard": [1, 2, 6, 7, 8],
+    "note": "Spring and autumn are best. Autumn brings clear skies and the harvest; spring is warmer, with rhododendrons in the lower forest. With no high pass, Tsum stays walkable into December, but the upper valley is very cold and some lodges close from January. The gorge below Chumling is dangerous in the monsoon."
+  },
+  "permits": ["rap-tsum", "mcap"],
+  "guide": {
+    "rule": "required",
+    "note": "Tsum is a restricted area: the permit is issued only through a registered agency and you must walk with a licensed guide. Since 22 March 2026 the Department of Immigration issues it to a single trekker as well, so you no longer need a partner to apply. A guide who knows the valley also opens doors at monasteries and homestays where little English is spoken."
+  },
+  "highlights": [
+    "Mu Gompa, the monastery at the head of the valley",
+    "Rachen Gompa nunnery and Milarepa's meditation cave at Piren Phu",
+    "The flat, farmed plain of upper Tsum with its mani walls and chortens",
+    "Views of Ganesh Himal, Shringi Himal and Himalchuli",
+    "A living Tibetan Buddhist culture with a century-old vow against killing animals"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive from Kathmandu to Machha Khola",
+      "from": "kathmandu",
+      "to": "machha-khola",
+      "via": ["arughat", "soti-khola"],
+      "sleep": 870,
+      "hours": [8, 10],
+      "kind": "transfer",
+      "mode": "drive",
+      "note": "Highway as far as the Dhading turn-off, then a slow, rough road through Arughat and Soti Khola and a narrow dirt track above the Budhi Gandaki. Leave Kathmandu by 7 am; if rain has damaged the road you may have to walk the last part."
+    },
+    {
+      "day": 2,
+      "title": "Machha Khola to Jagat",
+      "from": "machha-khola",
+      "to": "jagat-manaslu",
+      "via": ["khorlabesi", "tatopani-manaslu", "dobhan-manaslu"],
+      "sleep": 1340,
+      "hours": [6, 7],
+      "km": 22,
+      "kind": "trek",
+      "note": "The trail stays close to the river all day, climbing over spurs and crossing gravel flats and suspension bridges, with a hot spring at Tatopani. It is hot and humid, so start early. This stretch was badly damaged by the October 2026 flood; expect diversions and rough temporary trail."
+    },
+    {
+      "day": 3,
+      "title": "Jagat to Lokpa",
+      "from": "jagat-manaslu",
+      "to": "lokpa",
+      "via": ["philim"],
+      "sleep": 2240,
+      "hours": [6, 7],
+      "kind": "trek",
+      "note": "Pass the checkposts at Jagat and Philim and continue up the gorge to the confluence where the Siyar Khola comes in from the right. Leave the Manaslu trail there and climb steadily through pine and rhododendron forest to the lodges at Lokpa. About 900 m of ascent in all."
+    },
+    {
+      "day": 4,
+      "title": "Lokpa to Chumling",
+      "from": "lokpa",
+      "to": "chumling",
+      "sleep": 2386,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "Short on the map and the roughest day of the trek: down through forest to a side stream, up over a spur, then along a narrow path cut into the wall of the Siyar Khola gorge before the last climb to Chumling. The October 2026 flood destroyed a cliff walkway on this stretch; check that the repair is open."
+    },
+    {
+      "day": 5,
+      "title": "Chumling to Chhokang Paro",
+      "from": "chumling",
+      "to": "chhokang-paro",
+      "sleep": 3031,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "Follow the Siyar Khola upstream through small hamlets, passing the turning for Gumba Lungdang at Dumje. Beyond the last hamlets on the valley floor, a steady climb of about two hours brings you out onto the flat upper valley at Chhokang Paro. You sleep almost 650 m higher tonight, so take the climb slowly."
+    },
+    {
+      "day": 6,
+      "title": "Chhokang Paro to Nile",
+      "from": "chhokang-paro",
+      "to": "nile",
+      "sleep": 3361,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "An easy day up the wide valley floor through Lamagaun, past fields, chortens and long mani walls. A short detour climbs to Piren Phu, the cave where Milarepa is said to have meditated. Continue through Phurbe and Pangdun to Chhule and cross the river to Nile."
+    },
+    {
+      "day": 7,
+      "title": "Nile to Mu Gompa",
+      "from": "nile",
+      "to": "mu-gompa",
+      "sleep": 3700,
+      "hours": [2, 3],
+      "kind": "trek",
+      "note": "A short climb on a broad yak trail as the valley narrows and the border ridges close in. Reach Mu Gompa by late morning and visit the prayer hall. In the afternoon, walk up to the old Dhephu Doma nunnery or the hillside above for the view down the whole of Tsum."
+    },
+    {
+      "day": 8,
+      "title": "Mu Gompa to Chhokang Paro",
+      "from": "mu-gompa",
+      "to": "chhokang-paro",
+      "via": ["nile", "rachen-gompa"],
+      "sleep": 3031,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "Back down the valley past Chhule and Phurbe, leaving time for Rachen Gompa, the large walled nunnery on the valley floor. Ask before entering the prayer hall and leave a small donation. From there it is about an hour and a half on level ground to Chhokang Paro."
+    },
+    {
+      "day": 9,
+      "title": "Chhokang Paro to Lokpa",
+      "from": "chhokang-paro",
+      "to": "lokpa",
+      "via": ["chumling"],
+      "sleep": 2240,
+      "hours": [7, 8],
+      "kind": "trek",
+      "note": "A long day back through lower Tsum: steeply down to the river, along it to Chumling for lunch, then the rough gorge section and the climb through forest to Lokpa. If the group is tired or the trail is wet, stop at Chumling and add a day."
+    },
+    {
+      "day": 10,
+      "title": "Lokpa to Jagat",
+      "from": "lokpa",
+      "to": "jagat-manaslu",
+      "via": ["philim"],
+      "sleep": 1340,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "Drop to the confluence and rejoin the Manaslu trail, which is busier with trekkers and mule trains. Pass Philim and its checkpost and continue down stone steps and across bridges to Jagat. Mostly downhill, and noticeably hotter."
+    },
+    {
+      "day": 11,
+      "title": "Jagat to Machha Khola",
+      "from": "jagat-manaslu",
+      "to": "machha-khola",
+      "via": ["dobhan-manaslu", "tatopani-manaslu", "khorlabesi"],
+      "sleep": 870,
+      "hours": [6, 7],
+      "km": 22,
+      "kind": "trek",
+      "note": "The gorge trail of day 2 in reverse, with the river loud beside you all the way. Start early to be across the open gravel sections before the heat, and soak your feet at Tatopani. Confirm tomorrow's vehicle by phone when you get a signal."
+    },
+    {
+      "day": 12,
+      "title": "Drive from Machha Khola to Kathmandu",
+      "from": "machha-khola",
+      "to": "kathmandu",
+      "via": ["soti-khola", "arughat"],
+      "sleep": 1400,
+      "hours": [8, 10],
+      "kind": "transfer",
+      "mode": "drive",
+      "note": "The same road out: dirt track to Soti Khola and Arughat, then the slow climb to Dhading Besi and the highway. Expect to reach Kathmandu in the evening, later if rain has cut up the road."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Flood damage from autumn 2026",
+      "text": "The flood of 11 October 2026 is thought to have begun with a landslide dam in lower Tsum. It destroyed a cliff walkway between Lokpa and Chumling and bridges and trail between Machha Khola and Philim, and Tsum was still closed when the main Manaslu route reopened in late October. Repairs are temporary in places. Get a current report from your agency or the Manaslu Conservation Area office before you commit."
+    },
+    {
+      "title": "Landslides and exposed trail",
+      "text": "Between Lokpa and Chumling, and in the Budhi Gandaki gorge below Jagat, the path crosses loose slopes and narrow ledges above the river. Keep moving through slide zones, stand on the uphill side when mules pass and stay off these sections in heavy rain."
+    },
+    {
+      "title": "Remoteness",
+      "text": "There is no road into Tsum, phone signal is patchy and health posts are basic. Helicopter evacuation depends on the weather and on someone reaching a signal. Carry a first-aid kit and check that your insurance covers helicopter rescue."
+    },
+    {
+      "title": "Altitude",
+      "text": "Most people feel fine at these heights, but Chhokang Paro, Nile and Mu Gompa are all above 3,000 m and the climb into the upper valley is abrupt. A mild headache on the first night is common; rest and drink, and go down if symptoms get worse."
+    }
+  ],
+  "tips": [
+    "Bring all your cash from Kathmandu; there are no cash machines anywhere on the route.",
+    "Walk to the left of mani walls and chortens, ask before photographing people or prayer halls, and do not ask for meat in upper Tsum.",
+    "Carry a sleeping bag. Lodges lend blankets, but nights at Nile and Mu Gompa fall below freezing in spring and autumn.",
+    "Menus are short above Chumling: dal bhat, noodles, potatoes and tsampa. Bring snacks from Kathmandu, and a filter or tablets for water.",
+    "For Tsum alone the usual permit set is the Tsum restricted-area permit and the Manaslu Conservation Area permit. Some agencies also quote the Manaslu restricted-area permit for the shared trail below Lokpa, so have yours confirm with the Department of Immigration.",
+    "Stage plans and village heights for Tsum differ from one map and agency to the next, and parts of the trail are being rebuilt after the 2026 flood, so treat the times here as estimates."
+  ],
+  "variants": [
+    {
+      "name": "Gumba Lungdang and Ganesh Himal Base Camp",
+      "text": "On the way down, turn off at Dumje and climb about three hours to the nunnery at Gumba Lungdang. A long day walk from there reaches Ganesh Himal Base Camp at around 4,200 m. Adds two to three days."
+    },
+    {
+      "name": "Combine with the Manaslu Circuit",
+      "text": "Instead of walking out, rejoin the main valley at the confluence and continue up to Deng, Sama Gaun and the Larkya La. This needs the Manaslu permit as well and takes about three weeks in all."
+    },
+    {
+      "name": "Day visit to Mu Gompa",
+      "text": "If you prefer a lodge to the monastery guest rooms, leave your bags in Nile, walk up to Mu Gompa and back in four to five hours and sleep a second night in Nile."
+    },
+    {
+      "name": "Via Ripchet",
+      "text": "Between Lokpa and Chumling a higher trail passes through the village of Ripchet on the south side of the valley. It is longer and steeper, with wide views, and is often used on the way down."
+    }
+  ],
+  "related": ["manaslu-circuit", "nar-phu-valley", "upper-mustang", "langtang-valley"],
+  "confidence": "medium"
+}

@@ -1,0 +1,379 @@
+/* Planning tools, journal, status pages, notices */
+
+/* ---------- notices ---------- */
+.notices {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.notice p {
+  margin: 0 0 0.4rem;
+}
+.notice .notice-meta {
+  margin: 0.5rem 0 0;
+}
+.notice-old {
+  opacity: 0.8;
+}
+.notice-old [data-notice-age] {
+  font-weight: 700;
+  color: var(--ink);
+}
+.current-notices {
+  margin-bottom: 2rem;
+}
+.current-notices h2 {
+  font-size: var(--fs-5);
+}
+
+/* ---------- forms: keep rows aligned when labels wrap ---------- */
+.form-grid {
+  align-items: start;
+}
+.field {
+  align-content: start;
+}
+.field > label .ne-label {
+  display: block;
+  margin-left: 0;
+  line-height: 1.5;
+}
+.select-inline {
+  display: inline-block;
+  width: auto;
+  min-height: 2.25rem;
+  padding: 0.2rem 0.6rem;
+  margin-left: 0.3rem;
+}
+
+/* ---------- GPX viewer ---------- */
+.gpx {
+  display: grid;
+  gap: 1.25rem;
+}
+.gpx-load {
+  display: grid;
+  gap: 0.75rem;
+}
+.gpx-load p {
+  margin: 0;
+}
+.dropzone {
+  display: grid;
+  justify-items: center;
+  gap: 0.35rem;
+  padding: 2rem 1rem;
+  border: 2px dashed var(--line-strong);
+  border-radius: var(--r-3);
+  background: var(--paper-2);
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.15s, background-color 0.15s;
+}
+.dropzone:hover,
+.dropzone.is-over,
+.dropzone:has(input:focus-visible) {
+  border-color: var(--teal-600);
+  background: var(--teal-50);
+}
+.dropzone .icon {
+  color: var(--teal-600);
+}
+.dropzone strong {
+  font-size: 1.1rem;
+}
+.gpx-view {
+  display: grid;
+  gap: 1rem;
+}
+.gpx-view h2 {
+  font-size: var(--fs-5);
+  margin: 0;
+}
+.gpx-live h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+.gpx-live section {
+  display: grid;
+  gap: 0.75rem;
+  align-content: start;
+}
+.gpx-live p {
+  margin: 0;
+}
+.follow-readout {
+  padding: 0.7rem 0.9rem;
+  border-radius: var(--r-2);
+  background: var(--paper-2);
+  font-weight: 650;
+}
+.follow-readout.is-on {
+  background: var(--green-100);
+  color: var(--green-700);
+}
+.follow-readout.is-off {
+  background: var(--red-100);
+  color: var(--red-700);
+}
+
+/* ---------- planner ---------- */
+.planner {
+  display: grid;
+  gap: 1.5rem;
+}
+.planner-out h2 {
+  font-size: var(--fs-5);
+  margin: 0;
+}
+.plan-table {
+  min-width: 36rem;
+}
+.plan-table .is-buffer td {
+  color: var(--ink-3);
+  font-style: italic;
+}
+.planner-links {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.planner-links p {
+  margin: 0;
+}
+.plan-warn {
+  padding: 0.6rem 0.8rem;
+  border-radius: var(--r-2);
+  background: var(--amber-100);
+  color: var(--amber-700);
+  font-weight: 650;
+}
+.saved-plans h2 {
+  font-size: var(--fs-4);
+}
+.plan-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+.plan-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  margin: 0;
+  padding: 0.8rem 0.25rem;
+  border-bottom: 1px solid var(--line);
+}
+.plan-list li > div:first-child {
+  display: grid;
+}
+
+/* ---------- packing ---------- */
+.packing {
+  display: grid;
+  gap: 1.25rem;
+}
+.packing-bar {
+  position: sticky;
+  top: calc(var(--header-h) + 0.5rem);
+  z-index: 20;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  padding: 0.8rem 1rem;
+  border-radius: var(--r-3);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-1);
+}
+.packing-bar > div:first-child {
+  flex: 1 1 14rem;
+  display: grid;
+  gap: 0.4rem;
+}
+.packing-count {
+  margin: 0;
+  font-weight: 700;
+}
+.packing-bar .chip {
+  min-height: 2.1rem;
+  padding: 0.2rem 0.75rem;
+}
+.packing-groups {
+  columns: 22rem 2;
+  column-gap: 1.25rem;
+}
+.packing-group {
+  break-inside: avoid;
+  margin-bottom: 1.25rem;
+}
+.packing-group h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+.packing-group h2 .muted {
+  font-family: var(--font-body);
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.packing-group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.packing-group li {
+  margin: 0;
+  padding: 0.5rem 0;
+  border-top: 1px solid var(--line);
+}
+.packing-group li small {
+  display: block;
+  color: var(--ink-3);
+  font-size: var(--fs-0);
+  line-height: 1.4;
+}
+.packing-group .badge {
+  margin-left: 0.4rem;
+  vertical-align: 0.1em;
+}
+.is-packed .pk-text {
+  color: var(--ink-3);
+  text-decoration: line-through;
+}
+.hide-packed .is-packed {
+  display: none;
+}
+
+/* ---------- budget ---------- */
+.budget {
+  display: grid;
+  gap: 1.25rem;
+}
+.budget-layout {
+  display: grid;
+  gap: 1.25rem;
+}
+@media (min-width: 1020px) {
+  .budget-layout {
+    grid-template-columns: minmax(0, 1fr) 22rem;
+    align-items: start;
+  }
+  .budget-result {
+    position: sticky;
+    top: calc(var(--header-h) + 1rem);
+  }
+}
+.budget-form {
+  display: grid;
+  gap: 1rem;
+}
+.budget-form h2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0 0;
+}
+.budget-form h2:not(:first-child) {
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--line);
+}
+.budget-form h2 .badge {
+  font-family: var(--font-body);
+  letter-spacing: 0;
+}
+.budget-result {
+  display: grid;
+  gap: 0.6rem;
+  background: var(--teal-50);
+  border-color: color-mix(in srgb, var(--teal-600) 35%, var(--line));
+}
+.budget-result p {
+  margin: 0;
+}
+.budget-total {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.budget-lines {
+  margin: 0.5rem 0;
+}
+.budget-lines td {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--teal-600) 18%, var(--line));
+}
+.budget-lines small {
+  display: block;
+  color: var(--ink-3);
+  font-size: 0.6875rem;
+}
+.budget-sum td {
+  font-weight: 750;
+  border-bottom: 0;
+}
+
+/* ---------- journal ---------- */
+.article-card {
+  display: grid;
+  gap: 0.4rem;
+  align-content: start;
+}
+.article-card h2,
+.article-card h3 {
+  margin: 0;
+}
+.article-card p {
+  margin: 0;
+  color: var(--ink-2);
+}
+.article-card .eyebrow {
+  margin-bottom: 0.2rem;
+}
+.article-body {
+  max-width: none;
+}
+.article-body h2 {
+  font-size: var(--fs-5);
+}
+.faq-group {
+  margin-bottom: 2.5rem;
+  scroll-margin-top: calc(var(--header-h) + 1rem);
+}
+.faq-group h2 {
+  font-size: var(--fs-5);
+}
+
+/* ---------- status pages ---------- */
+.status-page {
+  display: grid;
+  justify-items: center;
+}
+.status-page h1 {
+  font-size: var(--fs-6);
+}
+.status-icon {
+  display: grid;
+  place-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-bottom: 1.25rem;
+  border-radius: 50%;
+  background: var(--teal-50);
+  color: var(--teal-700);
+}
+.status-page .card strong {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.status-page .card p {
+  margin: 0.25rem 0 0;
+}

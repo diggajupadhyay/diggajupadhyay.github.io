@@ -1,0 +1,256 @@
+{
+  "slug": "tilicho-lake",
+  "name": "Tilicho Lake",
+  "aka": ["Tilicho Lake and Thorong La", "Annapurna Circuit with Tilicho Lake"],
+  "region": "annapurna",
+  "tagline": "A glacial lake at 4,919 m, then on over the Thorong La",
+  "summary": "The Annapurna Circuit with a three-day detour from Manang through Khangsar and across the landslide slopes to Tilicho Lake at 4,919 m, before crossing the Thorong La.",
+  "intro": [
+    "Tilicho Lake lies in a basin of ice and scree under the north face of Tilicho Peak, west of Manang, at a height usually given as 4,919 m. It is about four kilometres long, turquoise once the ice has gone and white from December until late spring. A side valley leads to it from Manang in two days, and the usual plan adds the lake to the Annapurna Circuit: up the Marsyangdi, out to the lake and back, then over the Thorong La to Muktinath.",
+    "The detour is harder than the main circuit. Beyond Khangsar the trail crosses a long stretch of unstable slopes on a path one boot wide, scratched across steep gravel with rockfall from above. The lake day itself climbs 770 m from base camp and returns the same way, eight hours or more at altitude in a wind that strengthens through the morning. Lodges at Shree Kharka and Tilicho Base Camp are simple and often full.",
+    "In return the side trip does much of your acclimatization for you. After three nights between 4,000 and 4,200 m and a day to 4,900 m, most people find the Thorong La noticeably easier than those who come straight up from Manang. A direct trail links Shree Kharka with Yak Kharka, so there is no need to go back through Manang."
+  ],
+  "days": 13,
+  "daysRange": [12, 16],
+  "distanceKm": 136,
+  "maxAlt": { "m": 5416, "place": "thorong-la" },
+  "difficulty": "challenging",
+  "difficultyNote": "Adds a long day to nearly 5,000 m and an exposed traverse of unstable slopes to a circuit that already crosses a 5,416 m pass.",
+  "style": ["teahouse"],
+  "start": "dharapani",
+  "end": "jomsom",
+  "gateway": "pokhara",
+  "access": {
+    "summary": "Reach Besisahar by bus from Kathmandu in six to seven hours or from Pokhara in four to five, then take a shared jeep up the Marsyangdi road to Dharapani or Chame. The trek finishes at Jomsom, with early flights or a day-long road journey to Pokhara.",
+    "options": [
+      { "mode": "bus", "from": "kathmandu", "to": "besisahar", "time": "6–7 hr", "note": "Direct buses and microbuses leave early in the morning." },
+      { "mode": "bus", "from": "pokhara", "to": "besisahar", "time": "4–5 hr", "note": "Several morning departures." },
+      { "mode": "jeep", "from": "besisahar", "to": "dharapani", "time": "3–4 hr", "note": "Shared jeeps leave when full. Expect delays in the monsoon, when landslides cut the road." },
+      { "mode": "jeep", "from": "besisahar", "to": "manang", "time": "8–10 hr", "note": "Possible, but arriving at 3,500 m by road means at least three nights in Manang before going any higher." },
+      { "mode": "flight", "from": "jomsom", "to": "pokhara", "time": "20 min", "note": "Early-morning flights only, often cancelled for wind or cloud." },
+      { "mode": "bus", "from": "jomsom", "to": "pokhara", "time": "8–10 hr", "note": "Bus or jeep down the Kali Gandaki through Tatopani and Beni." }
+    ]
+  },
+  "seasons": {
+    "best": [5, 10, 11],
+    "good": [4, 9, 12],
+    "hard": [1, 2, 3, 6, 7, 8],
+    "note": "The lake is free of ice and at its bluest from about late May to November, and October and early November are the most reliable weeks. In April the trail is usually open, but the lake is still frozen and snow lingers above base camp. From mid-December to March heavy snow and avalanche danger often close the route and the base camp lodges shut. Manang is dry in the monsoon, but the road in is unreliable."
+  },
+  "permits": ["acap", "tims"],
+  "guide": {
+    "rule": "required",
+    "note": "Since April 2023 the Nepal Tourism Board has required foreign trekkers in conservation areas to walk with a licensed guide, though checks on the trail are inconsistent. A guide matters more on this detour than on the main circuit: the line through the landslide area changes every season, the base camp lodges need booking ahead, and someone has to judge the weather for both the lake and the pass."
+  },
+  "highlights": [
+    "Tilicho Lake beneath the ice wall of Tilicho Peak",
+    "The exposed trail across the landslide slopes above the Khangsar Khola",
+    "The high route through Ghyaru and Ngawal to Manang",
+    "Crossing the Thorong La at 5,416 m, well acclimatized",
+    "Khangsar, the last village before the lake",
+    "Muktinath and the descent into Mustang"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive to Besisahar, jeep to Dharapani",
+      "from": "pokhara",
+      "to": "dharapani",
+      "via": ["besisahar"],
+      "sleep": 1860,
+      "hours": [7, 9],
+      "kind": "transfer",
+      "mode": "jeep",
+      "note": "A long road day: bus to Besisahar from Pokhara or Kathmandu, then a shared jeep up the Marsyangdi on a rough track cut into the gorge wall. Sleeping at Dharapani rather than riding on to Chame gives you an extra day of gradual ascent on foot."
+    },
+    {
+      "day": 2,
+      "title": "Dharapani to Chame",
+      "from": "dharapani",
+      "to": "chame",
+      "via": ["timang", "koto"],
+      "sleep": 2670,
+      "high": 2750,
+      "hours": [5, 6],
+      "km": 16,
+      "kind": "trek",
+      "note": "Mostly gentle climbing beside the river and the road, with one steep forest section between Danakyu and Timang where the footpath cuts off the road's bends. Manaslu is behind you at Timang, and Annapurna II comes into view before Chame. The hot springs across the river ease tired legs."
+    },
+    {
+      "day": 3,
+      "title": "Chame to Upper Pisang",
+      "from": "chame",
+      "to": "upper-pisang",
+      "via": ["bhratang", "dhikur-pokhari"],
+      "sleep": 3300,
+      "hours": [5, 6],
+      "km": 15,
+      "kind": "trek",
+      "note": "Through pine forest to the apple farm at Bhratang, round the foot of the Paungda Danda rock wall and up to Dhikur Pokhari for lunch. Cross the river to Upper Pisang rather than staying on the road: the view is better and it sets you up for tomorrow's high route."
+    },
+    {
+      "day": 4,
+      "title": "Upper Pisang to Manang through Ghyaru and Ngawal",
+      "from": "upper-pisang",
+      "to": "manang",
+      "via": ["ghyaru", "ngawal", "braga"],
+      "sleep": 3519,
+      "high": 3670,
+      "hours": [6, 7],
+      "km": 19,
+      "kind": "trek",
+      "note": "Climb the switchbacks to Ghyaru and follow the high trail through Ngawal before dropping to the valley floor and walking on through Braga to Manang. It is a long day, but being above 3,600 m at midday and sleeping lower is exactly what your body needs before the lake."
+    },
+    {
+      "day": 5,
+      "title": "Acclimatization day in Manang",
+      "from": "manang",
+      "to": "manang",
+      "via": ["gangapurna-lake"],
+      "sleep": 3519,
+      "hours": [2, 3],
+      "kind": "acclimatization",
+      "note": "Two nights here are the minimum. Walk to Gangapurna Lake and up the moraine to the Chongkor viewpoint, then rest. Buy snacks for the days ahead, where lodges are basic, and ask lodge owners about the state of the landslide trail and whether the base camp lodges are open."
+    },
+    {
+      "day": 6,
+      "title": "Manang to Shree Kharka",
+      "from": "manang",
+      "to": "shree-kharka",
+      "via": ["khangsar"],
+      "sleep": 4060,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "Leave the main circuit at the western end of Manang, drop to the river and climb to Khangsar, the last real village, for an early lunch. A steady hour and a half more, past a small monastery, brings you to the lodges at Shree Kharka. The sleeping gain is about 540 m, so walk slowly."
+    },
+    {
+      "day": 7,
+      "title": "Shree Kharka to Tilicho Base Camp",
+      "from": "shree-kharka",
+      "to": "tilicho-base-camp",
+      "sleep": 4150,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "The crux of the approach. After about an hour the path enters the landslide area: a narrow track across steep, loose gravel with rock pinnacles above and the river far below. Go early, before sun and wind start stones moving, keep gaps between people and do not stop. Base camp is on the valley floor beyond."
+    },
+    {
+      "day": 8,
+      "title": "Tilicho Lake, then back to Shree Kharka",
+      "from": "tilicho-base-camp",
+      "to": "shree-kharka",
+      "via": ["tilicho-lake", "tilicho-base-camp"],
+      "sleep": 4060,
+      "high": 4919,
+      "hours": [8, 10],
+      "kind": "summit",
+      "note": "Start by five. The trail zigzags up the moraine for three to four hours to a crest a little higher than the lake, then eases down to the viewpoint above the shore. Leave by ten, when the wind rises, return to base camp for lunch and recross the landslide slopes to Shree Kharka."
+    },
+    {
+      "day": 9,
+      "title": "Shree Kharka to Yak Kharka",
+      "from": "shree-kharka",
+      "to": "yak-kharka-manang",
+      "sleep": 4018,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "A high traverse saves going back to Manang. The trail climbs past the ruins of old Khangsar to a shoulder with a long view down the Marsyangdi, drops steeply to a footbridge over the river and climbs to join the main circuit below Yak Kharka. There are no lodges on the way, so carry lunch."
+    },
+    {
+      "day": 10,
+      "title": "Yak Kharka to Thorong Phedi",
+      "from": "yak-kharka-manang",
+      "to": "thorong-phedi",
+      "via": ["ledar"],
+      "sleep": 4450,
+      "hours": [3, 4],
+      "km": 7,
+      "kind": "trek",
+      "note": "Back on the main circuit: an hour to Ledar, a drop to the river, and a climb to a traverse where stones come down from the slope above. After the lake this height should feel comfortable. If it does not, wait a day here or lower before trying the pass."
+    },
+    {
+      "day": 11,
+      "title": "Over the Thorong La to Muktinath",
+      "from": "thorong-phedi",
+      "to": "muktinath",
+      "via": ["thorong-high-camp", "thorong-la"],
+      "sleep": 3760,
+      "high": 5416,
+      "hours": [7, 10],
+      "km": 16,
+      "kind": "pass",
+      "note": "Start between four and five. Zigzags lead to High Camp, then a long climb over moraine and past false summits reaches the pass at 5,416 m, usually four to five hours from Phedi. The 1,650 m descent to Muktinath is steep and loose at first; go slowly and use poles."
+    },
+    {
+      "day": 12,
+      "title": "Muktinath to Jomsom by Lubra",
+      "from": "muktinath",
+      "to": "jomsom",
+      "via": ["lubra"],
+      "sleep": 2720,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "Take the footpath that avoids the road: over a ridge south of Muktinath, steeply down to the Panda Khola and the Bon village of Lubra, then along the gravel riverbed to the Kali Gandaki and Jomsom. After heavy rain the riverbed can be impassable, and the road by Kagbeni is the fallback."
+    },
+    {
+      "day": 13,
+      "title": "Fly or drive to Pokhara",
+      "from": "jomsom",
+      "to": "pokhara",
+      "sleep": 822,
+      "hours": [1, 1],
+      "kind": "transfer",
+      "mode": "flight",
+      "note": "Morning flight to Pokhara if wind and cloud allow, or eight to ten hours by road down the Kali Gandaki through Tatopani and Beni. Flights are often cancelled, so do not book an international departure for the next day."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "The landslide area",
+      "text": "Between Shree Kharka and Tilicho Base Camp the trail crosses steep, unstable gravel for well over an hour, and stones fall without warning, more so in wind, rain or thaw. Cross early in the day, keep moving, leave space between walkers and do not attempt it in rain or fresh snow. The path is rebuilt every season and its line changes."
+    },
+    {
+      "title": "Altitude and wind at the lake",
+      "text": "The lake day goes to nearly 5,000 m and takes eight hours or more. Wind picks up sharply from mid-morning and the air temperature can be well below freezing. Turn round if anyone in the party has a worsening headache, and be off the upper slopes by eleven."
+    },
+    {
+      "title": "Snow and avalanches in winter and spring",
+      "text": "From December to April the slopes above base camp hold snow, the trail can be buried and avalanches cross the route. The base camp lodges close in mid-winter. Ask in Manang and Khangsar before setting out."
+    },
+    {
+      "title": "The Thorong La",
+      "text": "Everything that applies to the pass on the main circuit applies here. Start early, do not go in bad weather, and go down if symptoms worsen at Thorong Phedi."
+    },
+    {
+      "title": "Too few beds",
+      "text": "Shree Kharka and Tilicho Base Camp have only a few lodges between them. In October people are turned away or sleep in dining rooms, so have your guide book ahead."
+    }
+  ],
+  "tips": [
+    "Pack light for the detour. You carry everything across the landslide slopes twice.",
+    "Use trekking poles and boots with a firm edge on the gravel traverse.",
+    "Take sunglasses, sunscreen and a windproof layer to the lake; the glare off ice and water is fierce.",
+    "Bring all the cash you need from Kathmandu or Pokhara. There is nowhere to get money beyond Chame.",
+    "If the weather turns at base camp, wait a day rather than rushing to the lake in cloud.",
+    "The lake's quoted height, the line of the landslide trail and which lodges are open all vary by source and season; confirm in Manang."
+  ],
+  "variants": [
+    {
+      "name": "The lake as a return trip from Manang",
+      "text": "If you are not crossing the Thorong La, walk to the lake and back to Manang in three or four days and take a jeep down the valley."
+    },
+    {
+      "name": "Straight to base camp",
+      "text": "Strong, acclimatized walkers go from Manang to Tilicho Base Camp in one day of six to seven hours. It means crossing the landslide slopes in the afternoon, when rockfall is worse."
+    },
+    {
+      "name": "Mesokanto La to Jomsom",
+      "text": "A camping route continues round the lake and over the Mesokanto La, above 5,000 m, to Jomsom. It is remote and often snowbound, and needs tents, food for two or three days and a guide who knows it."
+    },
+    {
+      "name": "Start from Chame",
+      "text": "Taking a jeep to Chame saves a day. Make up for it with a third night in Manang or a night in Khangsar."
+    }
+  ],
+  "related": ["annapurna-circuit", "nar-phu-valley", "jomsom-muktinath", "upper-mustang", "manaslu-circuit"],
+  "confidence": "medium"
+}

@@ -1,0 +1,311 @@
+{
+  "slug": "everest-three-passes",
+  "name": "Everest Three Passes",
+  "aka": ["Three High Passes", "Everest High Passes", "Khumbu Three Passes"],
+  "region": "everest",
+  "tagline": "The full circuit of Khumbu over the Kongma La, Cho La and Renjo La",
+  "summary": "An 18-day loop from Lukla across three passes above 5,300 m, taking in Chhukung, Everest Base Camp, Kala Patthar, the Gokyo lakes and the Thame valley.",
+  "intro": [
+    "The Three Passes route is the complete circuit of Khumbu. It links the three high valleys above Namche, the Imja, the Khumbu and the Gokyo, by crossing the Kongma La (5,535 m), the Cho La (5,420 m) and the Renjo La (5,360 m), and it collects Everest Base Camp, Kala Patthar and Gokyo Ri on the way. Very little ground is repeated: you go up the busy main trail and come home down the quiet valley from Thame.",
+    "This guide describes it anticlockwise, Kongma La first. That way the first week follows the well-tested base camp acclimatization schedule, with the Pheriche aid post and plenty of lodges close by if altitude does not suit you, and you climb the Cho La and the Renjo La from their high sides: about 600 m of ascent on each instead of 720 m and nearly 1,000 m. The price is that the highest and roughest pass comes first, and that you descend, rather than climb, the loose slopes on the west of the Kongma La and the Cho La.",
+    "None of the passes needs a rope in normal conditions, but each is a long day that goes above 5,300 m with no lodge between start and finish, and the Cho La crosses a glacier. Snow can close any of them for a day or two. Come with spare days, microspikes and previous experience of trekking above 4,500 m, and be ready to walk round a pass by the valley trail if conditions say so. Walking times on the pass days, and even the heights printed for the passes, differ between maps and operators, so treat the figures here as a guide."
+  ],
+  "days": 18,
+  "daysRange": [17, 21],
+  "distanceKm": 160,
+  "maxAlt": { "m": 5545, "place": "kala-patthar" },
+  "difficulty": "strenuous",
+  "difficultyNote": "Three pass days of six to nine hours, each crossing above 5,300 m, a glacier on the Cho La and ten nights above 4,400 m.",
+  "style": ["teahouse"],
+  "start": "lukla",
+  "end": "lukla",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "Fly in and out of Lukla. Flights leave early from Kathmandu or, during the spring and autumn peaks, from Manthali in Ramechhap, and they stop as soon as cloud or wind builds. On a trek this long, lose a day to the weather at the start rather than hurry the acclimatization to make it up.",
+    "options": [
+      { "mode": "flight", "from": "kathmandu", "to": "lukla", "time": "35 min", "note": "Mostly in the quieter months; in peak season the majority of flights use Manthali." },
+      { "mode": "flight", "from": "manthali", "to": "lukla", "time": "20 min", "note": "Four to five hours by road from Kathmandu, usually driven in the small hours for a dawn departure." },
+      { "mode": "jeep", "from": "kathmandu", "to": "lukla", "time": "1–2 days + 2 days' walk", "note": "Jeep to Salleri and, when the track allows, Thamdanda, then walk in through Paiya and Surke. Useful when Lukla is closed, and the extra days low down do no harm." }
+    ]
+  },
+  "seasons": {
+    "best": [4, 5, 10, 11],
+    "good": [3, 9, 12],
+    "hard": [1, 2, 6, 7, 8],
+    "note": "Late October and November are the most reliable for all three passes. April and May are warmer, with afternoon cloud and softer snow. In March the passes often still hold deep winter snow, and from December the lodges at Dzongla, Thagnak and Lungden may close. A single storm can shut a pass for several days in any month."
+  },
+  "permits": ["sagarmatha-np", "khumbu-rm"],
+  "guide": {
+    "rule": "strongly-recommended",
+    "note": "Khumbu has not enforced the national guide requirement, and experienced trekkers do walk this circuit independently. The passes are where a licensed guide matters most: the Kongma La and the Cho La cross moraine and glacier with no fixed trail, the line shifts every season, and in cloud or fresh snow people lose it within minutes. Do not cross any of the three alone."
+  },
+  "highlights": [
+    "Three crossings above 5,300 m, each into a different valley",
+    "Chhukung Ri and the south wall of Lhotse",
+    "Everest Base Camp and the view from Kala Patthar",
+    "The Gokyo lakes and the Ngozumpa Glacier",
+    "Everest, Lhotse and Makalu lined up from the top of the Renjo La",
+    "The quiet walk out through Thame"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Fly to Lukla, walk to Phakding",
+      "from": "lukla",
+      "to": "phakding",
+      "sleep": 2610,
+      "hours": [3, 4],
+      "km": 8,
+      "kind": "trek",
+      "note": "Land at Lukla, meet your crew and walk down the valley to the river. The first day is short on purpose; tomorrow is the hill to Namche."
+    },
+    {
+      "day": 2,
+      "title": "Phakding to Namche Bazaar",
+      "from": "phakding",
+      "to": "namche-bazaar",
+      "via": ["monjo"],
+      "sleep": 3440,
+      "hours": [5, 6],
+      "km": 11,
+      "kind": "trek",
+      "note": "Permits are checked at Monjo. From the high bridge over the gorge it is a 600 m climb with no flat ground at all. Take two hours over it, not one."
+    },
+    {
+      "day": 3,
+      "title": "Acclimatization day in Namche",
+      "from": "namche-bazaar",
+      "to": "namche-bazaar",
+      "via": ["everest-view-hotel", "khumjung"],
+      "sleep": 3440,
+      "high": 3880,
+      "hours": [3, 4],
+      "km": 6,
+      "kind": "acclimatization",
+      "note": "Go up to the Everest View Hotel ridge and back, looping through Khumjung if your legs are good. The point is to climb high and sleep low; a day spent in the lodge does not do the same job."
+    },
+    {
+      "day": 4,
+      "title": "Namche to Tengboche",
+      "from": "namche-bazaar",
+      "to": "tengboche",
+      "via": ["kyangjuma", "phunki-tenga"],
+      "sleep": 3860,
+      "hours": [5, 6],
+      "km": 10,
+      "kind": "trek",
+      "note": "A level trail high above the river, then down to Phunki Tenga at 3,250 m and 600 m back up through forest to the monastery. The afternoon prayers are usually open to visitors."
+    },
+    {
+      "day": 5,
+      "title": "Tengboche to Dingboche",
+      "from": "tengboche",
+      "to": "dingboche",
+      "via": ["pangboche"],
+      "sleep": 4410,
+      "hours": [5, 6],
+      "km": 11,
+      "kind": "trek",
+      "note": "Down through Deboche, across the Imja Khola and up to Pangboche, the last permanent village. Above it the trees end and the trail forks right into the Imja valley for Dingboche. Keep the evening quiet; you have gained 550 m."
+    },
+    {
+      "day": 6,
+      "title": "Dingboche to Chhukung",
+      "from": "dingboche",
+      "to": "chhukung",
+      "sleep": 4730,
+      "hours": [2, 3],
+      "kind": "trek",
+      "note": "A gradual, stony trail up the Imja valley with the south wall of Lhotse filling the view ahead. Arrive for lunch and do very little afterwards: you are sleeping 320 m higher than last night."
+    },
+    {
+      "day": 7,
+      "title": "Acclimatization climb of Chhukung Ri",
+      "from": "chhukung",
+      "to": "chhukung",
+      "via": ["chhukung-ri"],
+      "sleep": 4730,
+      "high": 5546,
+      "hours": [4, 6],
+      "kind": "acclimatization",
+      "note": "Climb the ridge north of the lodges: steep grass, then rock. Most people stop at the lower top near 5,400 m, which is enough for acclimatization. Be down by early afternoon, pack for the pass and ask who crossed today and what they found."
+    },
+    {
+      "day": 8,
+      "title": "Kongma La to Lobuche",
+      "from": "chhukung",
+      "to": "lobuche",
+      "via": ["kongma-la"],
+      "sleep": 4940,
+      "high": 5535,
+      "hours": [7, 9],
+      "kind": "pass",
+      "note": "The longest day. Four to five hours of steady climbing past small lakes to the pass, a steep loose descent to the Khumbu Glacier and an hour across its rubble to Lobuche. There is no lodge and no dependable water in between. In bad weather walk round through Dingboche and Thukla."
+    },
+    {
+      "day": 9,
+      "title": "Lobuche to Gorak Shep and Everest Base Camp",
+      "from": "lobuche",
+      "to": "gorak-shep",
+      "via": ["everest-base-camp"],
+      "sleep": 5164,
+      "high": 5364,
+      "hours": [7, 8],
+      "km": 13,
+      "kind": "summit",
+      "note": "Follow the moraine to Gorak Shep by late morning, leave your pack and continue over glacier rubble to base camp and back. Agree a turnaround time before you set out and keep to it, wherever you have reached."
+    },
+    {
+      "day": 10,
+      "title": "Kala Patthar, then down and across to Dzongla",
+      "from": "gorak-shep",
+      "to": "dzongla",
+      "via": ["kala-patthar", "lobuche"],
+      "sleep": 4830,
+      "high": 5545,
+      "hours": [7, 8],
+      "kind": "summit",
+      "note": "Climb Kala Patthar in the cold before sunrise, eat at Gorak Shep and walk down past Lobuche. The Dzongla trail leaves the main valley before the drop to Thukla and contours above the lake of Chola Tsho. A long day, but you sleep 330 m lower."
+    },
+    {
+      "day": 11,
+      "title": "Cho La to Thagnak",
+      "from": "dzongla",
+      "to": "thagnak",
+      "via": ["cho-la"],
+      "sleep": 4700,
+      "high": 5420,
+      "hours": [6, 8],
+      "kind": "pass",
+      "note": "Start at first light. A stream valley and then steep rock slabs lead to the edge of the glacier; follow the trodden line over the snow to the pass, three to four hours from Dzongla. The far side is a steep, loose descent, a climb over a spur and a long valley down to Thagnak."
+    },
+    {
+      "day": 12,
+      "title": "Across the Ngozumpa Glacier to Gokyo",
+      "from": "thagnak",
+      "to": "gokyo",
+      "sleep": 4790,
+      "hours": [2, 3],
+      "kind": "trek",
+      "note": "The path crosses the glacier over rubble and around melt ponds. Its line moves every season, so follow the newest cairns and other people's tracks, not an old map. You reach the lake with the afternoon free."
+    },
+    {
+      "day": 13,
+      "title": "Gokyo Ri and a rest by the lake",
+      "from": "gokyo",
+      "to": "gokyo",
+      "via": ["gokyo-ri"],
+      "sleep": 4790,
+      "high": 5357,
+      "hours": [3, 5],
+      "kind": "summit",
+      "note": "Climb Gokyo Ri at dawn or for the evening light: 570 m and two to three hours up. Spend the remaining hours resting. This is the only slack day in the second half of the trek, and tomorrow is long."
+    },
+    {
+      "day": 14,
+      "title": "Renjo La to Lungden",
+      "from": "gokyo",
+      "to": "lungden",
+      "via": ["renjo-la"],
+      "sleep": 4380,
+      "high": 5360,
+      "hours": [6, 8],
+      "kind": "pass",
+      "note": "Round the north shore of the lake, then a climb that steepens to the pass in three to four hours. Turn round often: Everest is behind you the whole way. A stone staircase leads down the west side past two lakes into a long, empty valley to Lungden."
+    },
+    {
+      "day": 15,
+      "title": "Lungden to Thame",
+      "from": "lungden",
+      "to": "thame",
+      "sleep": 3800,
+      "hours": [3, 5],
+      "kind": "trek",
+      "note": "Easy walking down the Bhote Koshi through Marlung and Taranga, on the old trade route from Tibet. Thame sits to one side of the valley below its monastery. Part of the village was destroyed by a flood in August 2024 and has been rebuilding since."
+    },
+    {
+      "day": 16,
+      "title": "Thame to Namche Bazaar",
+      "from": "thame",
+      "to": "namche-bazaar",
+      "via": ["thamo"],
+      "sleep": 3440,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "Cross the Bhote Koshi gorge on the bridge below Thame, then walk through Thamo and juniper woods to Namche. A half day, which leaves time for a hot shower and the first thick air in two weeks."
+    },
+    {
+      "day": 17,
+      "title": "Namche to Lukla",
+      "from": "namche-bazaar",
+      "to": "lukla",
+      "via": ["monjo", "phakding"],
+      "sleep": 2860,
+      "hours": [6, 7],
+      "km": 19,
+      "kind": "trek",
+      "note": "Steeply down to the river, along the valley and up the last rise into Lukla. Call at the airline office as soon as you arrive to reconfirm your seat for the morning."
+    },
+    {
+      "day": 18,
+      "title": "Fly out from Lukla",
+      "from": "lukla",
+      "to": "kathmandu",
+      "sleep": 1400,
+      "hours": [1, 1],
+      "kind": "transfer",
+      "mode": "flight",
+      "note": "Flights to Kathmandu or Manthali go from first light when the weather allows. If Lukla is closed you wait for the next clear morning, share a helicopter or start walking toward the road."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Altitude illness",
+      "text": "You spend ten nights above 4,400 m and go above 5,300 m on seven separate days. Problems usually show up between Dingboche and Lobuche, around the first pass. Do not cross a pass with symptoms: the far side may be lower, but it is a long way from help."
+    },
+    {
+      "title": "Snow, ice and cloud on the passes",
+      "text": "Fresh snow hides the trail, loads the steep slopes and turns the rock on the Cho La and Kongma La to ice. After a storm wait a day for other parties and the sun to open the route. If cloud comes down while you are high, stop and wait for a gap; do not guess the line."
+    },
+    {
+      "title": "Glacier and moraine crossings",
+      "text": "The Cho La glacier has crevasses near its edges, and the steep slopes on both sides of the pass shed stones once the sun reaches them. The Khumbu and Ngozumpa crossings are on rubble over ice that shifts every season. Stay on the trodden line and cross early in the day."
+    },
+    {
+      "title": "Long days with no shelter",
+      "text": "Each pass day is six to nine hours with no lodge, no certain water and no easy exit. Start by six, carry two litres, food, a headlamp and a warm layer, and set a time by which you turn back if you are not on top."
+    },
+    {
+      "title": "Lukla flights",
+      "text": "Flights are cancelled whenever cloud closes the approach, sometimes for several days. Keep spare days at the end as well as on the passes, and do not book an international flight for the day after you plan to fly out."
+    }
+  ],
+  "tips": [
+    "Build in two spare days. One usually goes on waiting for a pass to clear and the other on Lukla.",
+    "Carry microspikes and trekking poles for the Cho La. They weigh little and decide whether an icy morning is safe.",
+    "The evening before each pass, ask your lodge owner who came over that day and what the conditions were. It is the best forecast you will get.",
+    "Bring cash for the whole trek from Kathmandu or Namche. Prices rise with height, and the small lodges at Dzongla, Thagnak and Lungden take nothing else.",
+    "Keep water bottles inside your jacket on pass mornings; hoses and open bottles freeze within the first hour.",
+    "If you are short of time, drop the Kongma La, not the rest days."
+  ],
+  "variants": [
+    {
+      "name": "Clockwise, Renjo La first",
+      "text": "Walk up the Thame valley, cross the Renjo La to Gokyo, then the Cho La and Kongma La. The passes come in order of difficulty and Everest appears suddenly at the top of the first. The cost is a 1,000 m climb from Lungden and a first week with fewer lodges and less help close by."
+    },
+    {
+      "name": "Walking round a pass",
+      "text": "Each pass has a valley alternative. Chhukung to Lobuche goes through Dingboche and Thukla in about six hours. Dzongla to Gokyo goes down to Pangboche or Phortse and up the Gokyo valley in three days. Gokyo to Namche goes down through Dole in two."
+    },
+    {
+      "name": "A slower first week",
+      "text": "Add a second night at Dingboche with a walk up Nangkartshang before moving to Chhukung. It is worth the day if you have not been above 4,500 m before."
+    },
+    {
+      "name": "Fifth lake day",
+      "text": "With a spare day at Gokyo, walk north along the glacier to the fifth lake for the view of Cho Oyu and Everest. Five to seven hours return."
+    }
+  ],
+  "related": ["everest-base-camp-via-gokyo", "gokyo-lakes", "everest-base-camp", "ama-dablam-base-camp"],
+  "confidence": "medium"
+}

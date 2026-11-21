@@ -1,0 +1,187 @@
+{
+  "slug": "khopra-ridge",
+  "name": "Khopra Ridge",
+  "aka": ["Khopra Danda", "Kopra Ridge", "Khayer Lake trek"],
+  "region": "annapurna",
+  "tagline": "Community lodges on a quiet ridge face to face with Dhaulagiri",
+  "summary": "A week on forest ridges above Ghandruk and Ghorepani to the community lodge on Khopra Danda at 3,660 m, with an optional long day to Khayer Lake.",
+  "intro": [
+    "Khopra Danda is a grassy spur at 3,660 m that juts out from the south-west flank of Annapurna South, high above the Kali Gandaki gorge. From the lodge on its crest Dhaulagiri fills the western horizon, Annapurna South and Bharha Shikhar rise directly behind, and Tatopani lies more than 2,400 m below. The trek reaches it by linking the forest ridges between Ghandruk, Tadapani and Ghorepani, on trails that see a small share of the traffic on the Poon Hill loop next door.",
+    "Several of the lodges on the way are community lodges, built and run by village committees, with the income going to local schools and health posts. They are plain: thin-walled rooms, a stove in the dining room, dal bhat and simple noodle dishes. Private lodges fill the gaps at Tadapani, Dobato and Swanta. There are few beds at each stop, so in October, November and April a guide who can phone ahead is close to essential.",
+    "The walking is moderate, mostly on forest paths and open ridge, with a sunrise viewpoint near each end: Muldai above Dobato and Poon Hill above Ghorepani. The exception is the optional day to Khayer Lake, a sacred tarn under Annapurna South. It takes nine or ten hours there and back, with a thousand metres of climbing and no shelter. Treat it as a bonus for a clear day and good legs, not as part of the basic trek."
+  ],
+  "days": 8,
+  "daysRange": [6, 10],
+  "distanceKm": 72,
+  "maxAlt": { "m": 4660, "place": "khayer-lake" },
+  "difficulty": "moderate",
+  "difficultyNote": "Moderate as far as the ridge at 3,660 m; the optional Khayer Lake day adds 1,000 m of climbing and nine hours or more of walking.",
+  "style": ["teahouse"],
+  "start": "ghandruk",
+  "end": "tikhedhunga",
+  "gateway": "pokhara",
+  "access": {
+    "summary": "Take a jeep from Pokhara to Ghandruk, about three hours, and start walking the same day. The trek comes out at Tikhedhunga on the Ghorepani trail, where jeeps return to Pokhara through Nayapul in two and a half to three hours.",
+    "options": [
+      { "mode": "jeep", "from": "pokhara", "to": "ghandruk", "time": "2.5–3 hr", "note": "Or take the local bus to Kimche, an hour's climb below the village." },
+      { "mode": "jeep", "from": "tikhedhunga", "to": "pokhara", "time": "2.5–3 hr", "note": "Jeeps wait at Tikhedhunga and Hile. Otherwise walk on to Birethanti and Nayapul in about three hours." },
+      { "mode": "bus", "from": "tatopani", "to": "pokhara", "time": "5–6 hr", "note": "For the alternative exit down the west side of the ridge through Paudwar." }
+    ]
+  },
+  "seasons": {
+    "best": [3, 4, 10, 11],
+    "good": [5, 9, 12],
+    "hard": [1, 2, 6, 7, 8],
+    "note": "October and November give the clearest views of Dhaulagiri. March and April add rhododendron bloom and more afternoon cloud, and the Khayer Lake path is often still under snow until late April. The community lodges on the ridge usually close in the monsoon and in deep winter, when snow lies above 3,000 m."
+  },
+  "permits": ["acap", "tims"],
+  "guide": {
+    "rule": "required",
+    "note": "Since April 2023 the Nepal Tourism Board has required foreign trekkers in conservation areas to walk with a licensed guide, though checks on the trail are inconsistent. Here a guide does two specific jobs: reserving beds in the small community lodges, and finding the way on the poorly marked forest and ridge sections between Dobato, Bayeli and Chistibang, where paths fork and cloud is common."
+  },
+  "highlights": [
+    "Dhaulagiri across the Kali Gandaki gorge from the Khopra lodge",
+    "Sunrise from Muldai viewpoint, higher and quieter than Poon Hill",
+    "Community lodges whose income supports village schools",
+    "The optional high day to the sacred Khayer Lake",
+    "Poon Hill at dawn on the way out"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive to Ghandruk, walk to Tadapani",
+      "from": "ghandruk",
+      "to": "tadapani",
+      "sleep": 2630,
+      "hours": [3, 4],
+      "km": 7,
+      "kind": "trek",
+      "note": "About three hours by jeep from Pokhara, then lunch in Ghandruk and a steady climb of 700 m through oak and rhododendron forest to the clearing at Tadapani. If you set off late, sleep in Ghandruk and add a day."
+    },
+    {
+      "day": 2,
+      "title": "Tadapani to Dobato",
+      "from": "tadapani",
+      "to": "dobato",
+      "sleep": 3420,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "The trail leaves the Ghorepani path and climbs north-west along a forested ridge through the clearings of Meshar and Isharu. It is an 800 m gain to a sleeping height above 3,400 m, so go slowly. Lodges at Dobato are few and simple."
+    },
+    {
+      "day": 3,
+      "title": "Muldai sunrise, Dobato to Chistibang",
+      "from": "dobato",
+      "to": "chistibang",
+      "via": ["muldai-viewpoint", "bayeli"],
+      "sleep": 3000,
+      "high": 3637,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "Climb half an hour to Muldai for sunrise on Dhaulagiri and the Annapurnas, then follow the ridge to the community lodge at Bayeli. From there the path drops through forest and traverses steep hillside to Chistibang. Sleeping 400 m lower tonight helps your body catch up."
+    },
+    {
+      "day": 4,
+      "title": "Chistibang to Khopra Danda",
+      "from": "chistibang",
+      "to": "khopra-danda",
+      "sleep": 3660,
+      "hours": [2, 3],
+      "kind": "trek",
+      "note": "A short, steep climb of about 650 m through the last trees onto open grass. You are on the ridge by lunch, with the whole afternoon for Dhaulagiri and the gorge below. Yaks graze around the lodge and danphe pheasants are sometimes seen."
+    },
+    {
+      "day": 5,
+      "title": "Optional day: Khayer Lake and back",
+      "from": "khopra-danda",
+      "to": "khopra-danda",
+      "via": ["khayer-lake"],
+      "sleep": 3660,
+      "high": 4660,
+      "hours": [8, 10],
+      "kind": "summit",
+      "note": "Leave by five with a packed lunch and plenty of water. The path traverses and climbs the grassy flank of Annapurna South to the lake and its small shrine, about 1,000 m above the lodge, with no shelter on the way. Skip it in cloud or snow and take a rest day on the ridge instead."
+    },
+    {
+      "day": 6,
+      "title": "Khopra Danda to Swanta",
+      "from": "khopra-danda",
+      "to": "swanta",
+      "via": ["chistibang"],
+      "sleep": 2200,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "Back down to Chistibang, then on through forest and across a stream to the terraced fields of Swanta, a descent of more than 1,400 m. The village sees few trekkers and its lodges cook with vegetables from the fields around them."
+    },
+    {
+      "day": 7,
+      "title": "Swanta to Ghorepani",
+      "from": "swanta",
+      "to": "ghorepani",
+      "via": ["chitre"],
+      "sleep": 2860,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "Drop to the Ghar Khola, climb to Chitre on the main Tatopani trail and follow it up through rhododendron forest to Ghorepani. After a week of quiet lodges the size of the village comes as a surprise. Walk up Poon Hill for sunset if the sky is clear."
+    },
+    {
+      "day": 8,
+      "title": "Poon Hill, down to Tikhedhunga, drive to Pokhara",
+      "from": "ghorepani",
+      "to": "tikhedhunga",
+      "via": ["poon-hill", "ghorepani", "ulleri"],
+      "sleep": 1540,
+      "high": 3210,
+      "hours": [6, 7],
+      "km": 13,
+      "kind": "trek",
+      "note": "Go up Poon Hill before dawn and come back for breakfast, then descend 1,300 m through Banthanti and down the Ulleri staircase to the road at Tikhedhunga. Jeeps from there reach Pokhara in under three hours."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "The Khayer Lake day",
+      "text": "It is nine or ten hours there and back to about 4,660 m, with no lodge, tea shop or reliable water. Cloud builds from late morning and the path is indistinct in places. Go only with a guide, start before dawn and turn round by noon wherever you are."
+    },
+    {
+      "title": "Altitude at Dobato and Khopra",
+      "text": "You sleep at 3,420 m on the second night and 3,660 m on the fourth, having started from Pokhara at about 800 m. Mild headaches are common at Dobato. If symptoms persist, drop back to Tadapani rather than continuing up."
+    },
+    {
+      "title": "Cloud and forks in the trail",
+      "text": "Between Dobato, Bayeli and Chistibang the route crosses pasture and forest with few signs and many herders' paths. In cloud it is easy to follow the wrong ridge."
+    },
+    {
+      "title": "Snow on the ridges",
+      "text": "From December to March snow can cover the trail above 3,000 m and the community lodges may be shut. Check which lodges are open before leaving Pokhara."
+    }
+  ],
+  "tips": [
+    "Have your guide or agency reserve the community lodges at Chistibang and Khopra Danda; there is only one at each.",
+    "Carry a sleeping bag. Blankets are provided, but nights on the ridge are below freezing in spring and autumn.",
+    "Bring cash for the whole trek. The last cash machines are in Pokhara.",
+    "Carry snacks and a packed lunch on the Bayeli section, where kitchens are slow and choices few.",
+    "Mobile signal is patchy north of Tadapani, so do not count on it for bookings or navigation.",
+    "Heights and walking times for the stages north of Tadapani differ between maps and operators; treat the figures here as approximate."
+  ],
+  "variants": [
+    {
+      "name": "Reverse direction",
+      "text": "Starting at Tikhedhunga and going by Ghorepani and Swanta to Khopra gives gentler height gains. You then return by Bayeli, Dobato, Tadapani and Ghandruk."
+    },
+    {
+      "name": "Down to Tatopani",
+      "text": "From Khopra a very steep trail drops about 2,400 m through Paudwar and Narchyang to the hot springs at Tatopani, with buses to Pokhara through Beni. It is hard on the knees but a good way to finish."
+    },
+    {
+      "name": "Six days without the lake",
+      "text": "Leave out the Khayer Lake day and walk from Khopra Danda to Ghorepani in one long day of seven to eight hours."
+    },
+    {
+      "name": "Link with Mohare Danda",
+      "text": "From Ghorepani a ridge trail leads south-west to the community lodge on Mohare Danda, extending the trek by two or three days."
+    }
+  ],
+  "related": ["mohare-danda", "ghorepani-poon-hill", "annapurna-base-camp", "mardi-himal", "jomsom-muktinath"],
+  "confidence": "medium"
+}

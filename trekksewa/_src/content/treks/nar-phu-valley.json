@@ -1,0 +1,203 @@
+{
+  "slug": "nar-phu-valley",
+  "name": "Nar Phu Valley",
+  "aka": ["Nar Phu", "Nar Phu and Kang La"],
+  "region": "annapurna",
+  "tagline": "Two stone villages of Tibetan origin and a 5,320 m pass north of Annapurna",
+  "summary": "A restricted-area loop from Koto up a narrow gorge to the stone villages of Phu and Nar, then over the Kang La at 5,320 m to rejoin the Annapurna Circuit at Ngawal.",
+  "intro": [
+    "Nar and Phu are two villages in a pair of high valleys north of the Annapurna Circuit, reached through a gorge that leaves the main trail at Koto. The valleys were closed to foreigners until 2002 and still need a restricted-area permit, which keeps numbers low: on most days you meet more yak herders than trekkers. The people are of Tibetan origin, and the villages, Phu on its fortified hill and Nar among barley terraces, have changed far less than Manang on the other side of the ridge.",
+    "The usual plan walks in for two long days to Phu, rests there, comes back down to the monastery guesthouse at Nar Phedi, climbs to Nar and then crosses the Kang La to Ngawal in the Manang valley. From there you can drive out, or carry on round the Annapurna Circuit and over the Thorong La, already well acclimatized. Lodges now exist at every stop, so camping is no longer necessary, but they are few and basic and may be shut outside the main seasons.",
+    "This is a serious trek. The first walking day climbs almost 1,000 m to sleep at 3,560 m. The pass day takes eight to ten hours, with a 1,200 m climb and a longer, steeper descent. Between Koto and Ngawal there is no road, no clinic and little phone signal. Go with an agency and guide who know the valley, and allow a spare day for weather on the pass."
+  ],
+  "days": 9,
+  "daysRange": [9, 14],
+  "distanceKm": 75,
+  "maxAlt": { "m": 5320, "place": "kang-la" },
+  "difficulty": "strenuous",
+  "difficultyNote": "Long days, basic lodges, no road or rescue post in the valley and a ten-hour crossing of a 5,320 m pass.",
+  "style": ["teahouse"],
+  "start": "koto",
+  "end": "ngawal",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "Most groups drive from Kathmandu to Besisahar and continue by jeep up the Marsyangdi road to Koto in one long day. The walk ends at Ngawal in the Manang valley, where a jeep can be arranged back down to Besisahar.",
+    "options": [
+      { "mode": "bus", "from": "kathmandu", "to": "besisahar", "time": "6–7 hr", "note": "Buses and private vehicles. Agencies usually send a jeep straight through to Koto." },
+      { "mode": "bus", "from": "pokhara", "to": "besisahar", "time": "4–5 hr", "note": "For those starting from Pokhara." },
+      { "mode": "jeep", "from": "besisahar", "to": "koto", "time": "5–6 hr", "note": "A rough road, slow after rain. Koto is the last village before Chame." },
+      { "mode": "jeep", "from": "ngawal", "to": "besisahar", "time": "7–9 hr", "note": "Arranged by your agency. Shared jeeps also leave from Humde and Manang." }
+    ]
+  },
+  "seasons": {
+    "best": [5, 10, 11],
+    "good": [4, 9],
+    "hard": [1, 2, 3, 6, 7, 8, 12],
+    "note": "Late April to May and late September to mid-November are the reliable windows. The valleys lie in the rain shadow and stay fairly dry in the monsoon, but the road to Koto is often cut by landslides and cloud hides the peaks. From December to March many villagers move down the valley, lodges close and the Kang La is snowbound."
+  },
+  "permits": ["rap-nar-phu", "acap"],
+  "guide": {
+    "rule": "required",
+    "note": "Nar Phu is a restricted area. The permit is issued only through a registered trekking agency, and a licensed guide must accompany you throughout. Since March 2026 it can be issued to a single trekker, so you no longer need a second person in order to apply. Permits are checked at the police post in Koto. In practice the guide also arranges the few lodges, which often cannot be reached by phone, and makes the decision on the pass."
+  },
+  "highlights": [
+    "Phu, a fortified hill village at the head of its valley",
+    "Tashi Lhakhang monastery on the hill across from Phu",
+    "A night in the monastery guesthouse at Nar Phedi",
+    "Nar village beneath Pisang Peak and Kang Guru",
+    "The Kang La, with the Annapurna range lined up ahead",
+    "Days with almost no other trekkers"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive to Koto by Besisahar",
+      "from": "kathmandu",
+      "to": "koto",
+      "via": ["besisahar"],
+      "sleep": 2600,
+      "hours": [10, 12],
+      "kind": "transfer",
+      "mode": "jeep",
+      "note": "A very long road day: six to seven hours to Besisahar, then five to six by jeep up the rough Marsyangdi road. The restricted-area permit is checked and registered at the police post in Koto. If you would rather not arrive at 2,600 m in one go, break the journey at Besisahar or Dharapani."
+    },
+    {
+      "day": 2,
+      "title": "Koto to Meta",
+      "from": "koto",
+      "to": "meta",
+      "sleep": 3560,
+      "hours": [7, 8],
+      "km": 15,
+      "kind": "trek",
+      "note": "Cross the Marsyangdi and enter the Nar Khola gorge: pine forest, paths cut into the cliff, a stretch behind a waterfall, and lunch at the Dharmasala shelter. The last hour and a half climbs steeply onto the open shelf at Meta. The gain is almost 1,000 m, more than the usual rule allows, so go slowly."
+    },
+    {
+      "day": 3,
+      "title": "Meta to Phu",
+      "from": "meta",
+      "to": "phu",
+      "via": ["kyang"],
+      "sleep": 4080,
+      "hours": [7, 8],
+      "kind": "trek",
+      "note": "A long, rolling day past the winter settlements of Chyakhu and Kyang, with Annapurna II and Lamjung Himal behind you. Beyond Kyang the trail is cut into the cliff above the Phu Khola, then climbs past a tall rock pillar and through the old gateway to Phu. You are now sleeping above 4,000 m."
+    },
+    {
+      "day": 4,
+      "title": "Acclimatization day in Phu",
+      "from": "phu",
+      "to": "phu",
+      "sleep": 4080,
+      "hours": [2, 4],
+      "kind": "acclimatization",
+      "note": "Stay two nights. Cross the river to Tashi Lhakhang monastery, walk the lanes of the village and, if you feel well, go an hour or two up the valley toward Himlung Base Camp before turning back. Going all the way to the base camp is a hard day of seven hours or more."
+    },
+    {
+      "day": 5,
+      "title": "Phu to Nar Phedi",
+      "from": "phu",
+      "to": "nar-phedi",
+      "via": ["kyang"],
+      "sleep": 3490,
+      "hours": [6, 7],
+      "kind": "trek",
+      "note": "Retrace the trail down the Phu Khola past Kyang and Chyakhu, then turn off before Meta and drop to the Mahendra Pul, a bridge high above a narrow gorge. The monastery guesthouse is a little beyond it. Sleeping 600 m lower tonight gives your body a rest before Nar."
+    },
+    {
+      "day": 6,
+      "title": "Nar Phedi to Nar",
+      "from": "nar-phedi",
+      "to": "nar",
+      "sleep": 4110,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "A short, steep morning. The trail zigzags up out of the gorge and passes rows of chortens before the fields below Nar. Arrive for lunch and spend the afternoon in the village. Tomorrow is the hardest day, so eat well, sort your gear and sleep early."
+    },
+    {
+      "day": 7,
+      "title": "Over the Kang La to Ngawal",
+      "from": "nar",
+      "to": "ngawal",
+      "via": ["kang-la-phedi", "kang-la"],
+      "sleep": 3660,
+      "high": 5320,
+      "hours": [8, 10],
+      "kind": "pass",
+      "note": "Leave by four. The path follows the valley west to the pastures at Kang La Phedi, then steepens over moraine and, often, snow to the pass, about 1,200 m above Nar. The far side drops very steeply on loose scree before easing onto grass. The descent to Ngawal is 1,660 m, so keep some strength for it."
+    },
+    {
+      "day": 8,
+      "title": "Ngawal to Besisahar by jeep",
+      "from": "ngawal",
+      "to": "besisahar",
+      "via": ["chame"],
+      "sleep": 760,
+      "hours": [7, 9],
+      "kind": "transfer",
+      "mode": "jeep",
+      "note": "Walk down to the road at Humde, under an hour, or have the jeep come up to Ngawal, then ride down the Marsyangdi through Pisang and Chame. With more time, walk on to Manang instead and continue round the Annapurna Circuit: you are already acclimatized for the Thorong La."
+    },
+    {
+      "day": 9,
+      "title": "Besisahar to Kathmandu",
+      "from": "besisahar",
+      "to": "kathmandu",
+      "sleep": 1400,
+      "hours": [6, 7],
+      "kind": "transfer",
+      "mode": "bus",
+      "note": "Six to seven hours by bus or private vehicle along the Marsyangdi and the Prithvi Highway. Traffic and roadworks on the highway can add an hour or two, so do not plan anything for the evening you arrive."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Altitude far from help",
+      "text": "The first walking day gains almost 1,000 m of sleeping height, and the route then stays above 3,400 m for five nights with no road nearby. Take the rest day in Phu, and descend toward Meta or Koto if symptoms get worse. Helicopter evacuation depends on the weather and on getting a message out."
+    },
+    {
+      "title": "The Kang La",
+      "text": "The pass day is eight to ten hours with no shelter above Kang La Phedi. Snow and ice are common on both sides from November to May, and the western side is steep, loose scree. Do not cross in fresh snow or poor visibility; wait a day in Nar."
+    },
+    {
+      "title": "Gorge trail and rockfall",
+      "text": "Between Koto and Meta the path is cut into cliffs above the river, with landslide scars and stones falling after rain. Keep to the inside of the trail and move quickly past the slide areas."
+    },
+    {
+      "title": "Remoteness",
+      "text": "There is no health post, no shop of any size and no reliable phone signal between Koto and Ngawal, and lodges may be closed without notice. Carry a full first-aid kit, water treatment, spare food and enough cash for the whole route."
+    }
+  ],
+  "tips": [
+    "Bring a four-season sleeping bag. Lodge rooms in Phu and Nar are unheated and nights are well below freezing.",
+    "Carry microspikes and gaiters for the Kang La except in the driest weeks of October.",
+    "Take all the cash you will need from Kathmandu. There is no bank after Besisahar.",
+    "Ask before photographing people or the inside of monasteries, and leave a donation at Tashi Lhakhang and Nar Phedi.",
+    "Your agency needs your passport and visa a working day or two before departure to obtain the permit in Kathmandu.",
+    "The restricted-area permit is priced by the week, then by the day. Agree the dates with your agency so that a spare weather day is covered."
+  ],
+  "variants": [
+    {
+      "name": "Night at Kang La Phedi",
+      "text": "Sleeping at the pastures two to three hours above Nar shortens the pass day. The tea house there is basic and not always open, so check in Nar or carry a tent."
+    },
+    {
+      "name": "Split the first day at Dharmasala",
+      "text": "A simple shelter and tea house in the gorge at about 3,200 m lets you break the climb from Koto to Meta, which is wise if you drove up from Kathmandu the day before."
+    },
+    {
+      "name": "Continue over the Thorong La",
+      "text": "From Ngawal walk to Manang and follow the Annapurna Circuit over the Thorong La to Muktinath and Jomsom. Add five days."
+    },
+    {
+      "name": "In and out without the pass",
+      "text": "When the Kang La is snowbound, return from Nar down the gorge to Koto in two days."
+    },
+    {
+      "name": "Himlung Base Camp",
+      "text": "Add a day in Phu for the long walk up the glacier valley to the base camp of Himlung Himal."
+    }
+  ],
+  "related": ["annapurna-circuit", "tilicho-lake", "manaslu-circuit", "tsum-valley", "upper-mustang"],
+  "confidence": "medium"
+}

@@ -1,0 +1,336 @@
+{
+  "slug": "upper-dolpo",
+  "name": "Upper Dolpo",
+  "aka": ["Upper Dolpo Circuit", "Shey Gompa trek", "Inner Dolpo"],
+  "region": "western",
+  "tagline": "Past Phoksundo and over the Kang La to Shey Gompa and the villages beyond",
+  "summary": "A three-week camping journey from Juphal past Phoksundo Lake, over the 5,350 m Kang La to Shey Gompa and Saldang, returning by the Jeng La and the Tarap valley.",
+  "intro": [
+    "Upper Dolpo is the high, dry country north of the Dhaulagiri and Kanjiroba ranges, Tibetan in culture and cut off by snow for half the year. This route is the usual way in: up the Suligad gorge to Phoksundo Lake, along the cliff path above its western shore, and over the Kang La, about 5,350 m, to the red-walled monastery of Shey below the Crystal Mountain. It then loops east through Namgung and Saldang, crosses the Jeng La to the wide Tarap valley and follows a long gorge back down to Dunai.",
+    "It is a serious undertaking. You cross three passes above 5,000 m, camp for most of three weeks and spend ten days beyond Ringmo with no road, clinic or dependable phone. A full crew with tents, a cook and pack animals is the normal way to travel; the few homestays and tea shops at Shey, Saldang and Dho Tarap cannot be counted on. The restricted-area permit costs USD 500 for the first ten days, which shapes how agencies plan the route.",
+    "The stage plan below is the one most crews follow, but camps are chosen by water, grazing and how the animals are going, and published altitudes for several of them disagree by hundreds of metres. We could not cross-check every figure beyond Saldang. Use the numbers for planning, not navigation, and expect your guide to adjust."
+  ],
+  "days": 22,
+  "daysRange": [20, 27],
+  "distanceKm": 240,
+  "maxAlt": { "m": 5350, "place": "kang-la-dolpo" },
+  "difficulty": "strenuous",
+  "difficultyNote": "Three passes over 5,000 m, three weeks of camping and long stretches where the only way out is to keep walking.",
+  "style": ["camping"],
+  "start": "juphal",
+  "end": "juphal",
+  "gateway": "nepalgunj",
+  "access": {
+    "summary": "Fly from Kathmandu to Nepalgunj, spend the night, and take the early flight to Juphal in Dolpa next morning. Juphal flights run only in calm, clear weather and are least reliable in the monsoon, which is also the best season for the trek, so allow spare days at both ends. Crews and pack animals are usually arranged to meet you in Juphal or Dunai.",
+    "options": [
+      { "mode": "flight", "from": "kathmandu", "to": "nepalgunj", "time": "about 1 hour", "note": "Several flights a day. Buses take ten to twelve hours." },
+      { "mode": "flight", "from": "nepalgunj", "to": "juphal", "time": "about 40 min", "note": "Small aircraft, early morning only, and frequently delayed or cancelled by wind and cloud." },
+      { "mode": "jeep", "from": "nepalgunj", "to": "dunai", "time": "about 2 days", "note": "The Bheri valley road through Jajarkot is rough, mostly a dry-season route and often cut in the monsoon, when this trek is at its best." }
+    ]
+  },
+  "seasons": {
+    "best": [6, 7, 8, 9],
+    "good": [5, 10],
+    "hard": [1, 2, 3, 4, 11, 12],
+    "note": "Upper Dolpo lies in the rain shadow, so the summer months that soak the rest of Nepal are the main season here, with barley green in the villages and the passes mostly clear of snow. May and October are colder, and the Kang La may be snowbound at either end of the season. The catch is the approach: monsoon cloud disrupts Juphal flights and the Suligad gorge is wet until you reach the lake."
+  },
+  "permits": ["rap-upper-dolpo", "rap-lower-dolpo", "shey-phoksundo-np"],
+  "guide": {
+    "rule": "required",
+    "note": "Upper and Lower Dolpo are restricted areas: the permits are issued only through a registered trekking agency and you must walk with a licensed guide. In practice you need a crew as well. Trails beyond the lake are unmarked, villages are a day or more apart, and river levels, snow on the passes and the condition of the pack animals decide each day's plan."
+  },
+  "highlights": [
+    "Phoksundo Lake and the cliff trail above its western shore",
+    "Crossing the Kang La into the Shey valley",
+    "Shey Gompa and the pilgrim circuit of the Crystal Mountain",
+    "Saldang and Namgung, farming villages on the edge of the Tibetan plateau",
+    "The broad Tarap valley with its Bon and Buddhist monasteries",
+    "Blue sheep on the slopes and, with luck, the tracks of a snow leopard"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Fly to Juphal, walk to Dunai",
+      "from": "juphal",
+      "to": "dunai",
+      "sleep": 2140,
+      "hours": [2, 3],
+      "kind": "trek",
+      "note": "The dawn flight from Nepalgunj, then an easy walk down to the Thuli Bheri and up the valley road to the district town. Permits are registered here and the crew makes its last purchases of fuel and fresh food."
+    },
+    {
+      "day": 2,
+      "title": "Dunai to Chhepka",
+      "from": "dunai",
+      "to": "chhepka",
+      "via": ["suligad"],
+      "sleep": 2680,
+      "hours": [5, 7],
+      "kind": "trek",
+      "note": "Cross the river, follow it down to the national park gate at Suligad and turn north into the gorge. The trail rises and falls beside the water through walnut and pine. Permits are checked at the gate."
+    },
+    {
+      "day": 3,
+      "title": "Chhepka to Chunuwar",
+      "from": "chhepka",
+      "to": "chunuwar",
+      "via": ["rechi"],
+      "sleep": 3110,
+      "hours": [5, 7],
+      "kind": "trek",
+      "note": "Many short climbs and descents along the river, crossing it on log and suspension bridges. Past Rechi the valley divides at Sumduwa; camp or lodge a little further on near the clinic at Chunuwar."
+    },
+    {
+      "day": 4,
+      "title": "Chunuwar to Ringmo and Phoksundo Lake",
+      "from": "chunuwar",
+      "to": "ringmo",
+      "via": ["phoksundo-waterfall-viewpoint"],
+      "sleep": 3641,
+      "high": 3800,
+      "hours": [3, 5],
+      "kind": "trek",
+      "note": "A steady climb through Palam to the ridge where the waterfall and then the lake come into view, followed by an easy descent through birch to Ringmo on the southern shore."
+    },
+    {
+      "day": 5,
+      "title": "Acclimatization day at Ringmo",
+      "from": "ringmo",
+      "to": "ringmo",
+      "via": ["tshowa-gompa"],
+      "sleep": 3641,
+      "hours": [2, 3],
+      "kind": "acclimatization",
+      "note": "The crew reorganises loads for the high country while you walk the shore to the Bon monastery at Tshowa. A second night at this height makes the days before the Kang La noticeably safer."
+    },
+    {
+      "day": 6,
+      "title": "Along the lake to Phoksundo Khola camp",
+      "from": "ringmo",
+      "to": "phoksundo-khola-camp",
+      "via": ["phoksundo-lake-viewpoint"],
+      "sleep": 3630,
+      "high": 4040,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "The cliff path: a narrow ledge above the western shore, in places built out on timber, that climbs to a crest at about 4,040 m before dropping to the flood plain at the head of the lake. Laden animals find it awkward, so let them go ahead."
+    },
+    {
+      "day": 7,
+      "title": "Phoksundo Khola to Kang La base camp",
+      "from": "phoksundo-khola-camp",
+      "to": "kang-la-base-camp",
+      "sleep": 4400,
+      "hours": [6, 7],
+      "kind": "trek",
+      "note": "Up the wide valley floor, then north-east into a tight side gorge where you wade the stream several times and clamber over boulders before it opens into high pasture. Camp below the pass. Sandals for the crossings save your boots."
+    },
+    {
+      "day": 8,
+      "title": "Over the Kang La to Shey Gompa",
+      "from": "kang-la-base-camp",
+      "to": "shey-gompa",
+      "via": ["kang-la-dolpo"],
+      "sleep": 4343,
+      "high": 5350,
+      "hours": [6, 7],
+      "kind": "pass",
+      "note": "A steep, loose climb of three hours or more on slate scree, often with snow near the top, then a long descent beside the river to the red chortens of Shey. Start early and stay together; this is no place to be caught in afternoon cloud."
+    },
+    {
+      "day": 9,
+      "title": "Rest day at Shey Gompa",
+      "from": "shey-gompa",
+      "to": "shey-gompa",
+      "sleep": 4343,
+      "hours": [2, 4],
+      "kind": "rest",
+      "note": "Visit the monastery if the caretaker is there and walk to Tsakang, the hermitage built into a cliff about an hour away. The full pilgrim circuit of the Crystal Mountain is a long day that climbs above 5,000 m; try it only if everyone is going well."
+    },
+    {
+      "day": 10,
+      "title": "Shey Gompa to Namgung over the Saldang La",
+      "from": "shey-gompa",
+      "to": "namgung",
+      "via": ["saldang-la"],
+      "sleep": 4400,
+      "high": 5100,
+      "hours": [6, 7],
+      "kind": "pass",
+      "note": "Follow a stony side canyon and zigzag up bare, eroded slopes to the pass, steep only near the top, then descend dry hills to Namgung, where a small red monastery stands against the wall of a gorge. Water is scarce on the climb."
+    },
+    {
+      "day": 11,
+      "title": "Namgung to Saldang",
+      "from": "namgung",
+      "to": "saldang",
+      "sleep": 3770,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "A high, dusty traverse with the brown hills of Tibet to the north, then a steep drop to Saldang, the largest village of the Nangkhong valley, strung along terraces above the river."
+    },
+    {
+      "day": 12,
+      "title": "Saldang to Sibu",
+      "from": "saldang",
+      "to": "sibu",
+      "sleep": 4100,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "South up the Nagon Khola through Namdo, past chortens, mani walls and fields of barley, to camp near the stone houses of Sibu. A gentle day; yak caravans share the trail in summer. Itineraries disagree about Sibu's height by several hundred metres."
+    },
+    {
+      "day": 13,
+      "title": "Sibu to Jeng La Phedi",
+      "from": "sibu",
+      "to": "jeng-la-phedi",
+      "sleep": 4600,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "Follow the river for a couple of hours, then turn up a steep side valley to pasture below the pass. Crews pitch at different heights here, which is why published altitudes for this camp run from about 4,400 to 4,900 m."
+    },
+    {
+      "day": 14,
+      "title": "Over the Jeng La to Tokyu",
+      "from": "jeng-la-phedi",
+      "to": "tokyu",
+      "via": ["jeng-la"],
+      "sleep": 4209,
+      "high": 5090,
+      "hours": [5, 6],
+      "kind": "pass",
+      "note": "About two hours of climbing to the pass, with the north side of the Dhaulagiri range on the southern skyline in clear weather, then a rough descent into the head of the Tarap valley and an easy walk down to Tokyu."
+    },
+    {
+      "day": 15,
+      "title": "Tokyu to Dho Tarap",
+      "from": "tokyu",
+      "to": "dho-tarap",
+      "sleep": 4040,
+      "hours": [2, 3],
+      "kind": "trek",
+      "note": "A short walk down a broad, flat valley of barley fields, passing monasteries of both the Bon and Buddhist traditions. Dho has a school, a few shops and simple places to stay, the first since Ringmo."
+    },
+    {
+      "day": 16,
+      "title": "Rest day at Dho Tarap",
+      "from": "dho-tarap",
+      "to": "dho-tarap",
+      "sleep": 4040,
+      "hours": [2, 3],
+      "kind": "rest",
+      "note": "Wash, rest the animals and walk up to the Ribo Bumpa monastery above the village or across to the Bon monastery at Shipchok. People here are used to trekkers and may well ask you in for butter tea."
+    },
+    {
+      "day": 17,
+      "title": "Dho Tarap to the Tarap Khola camp",
+      "from": "dho-tarap",
+      "to": "tarap-khola-camp",
+      "sleep": 3800,
+      "hours": [6, 7],
+      "kind": "trek",
+      "note": "Down the valley until it narrows into a gorge of juniper and wild rose, where blue sheep graze the slopes. Camp on a meadow beside the river at Kamakharka."
+    },
+    {
+      "day": 18,
+      "title": "Tarap Khola camp to Laini Odar",
+      "from": "tarap-khola-camp",
+      "to": "laini-odar",
+      "sleep": 3200,
+      "hours": [4, 6],
+      "kind": "trek",
+      "note": "The gorge at its narrowest: a path cut into cliffs, slab bridges and stretches rebuilt after each summer's floods. Camps in this section move with the state of the trail, and agencies give them different names and heights."
+    },
+    {
+      "day": 19,
+      "title": "Laini Odar to Tarakot",
+      "from": "laini-odar",
+      "to": "tarakot",
+      "sleep": 2537,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "Out of the gorge to the junction with the Barbung Khola, then along the main valley to the old fortress village of Tarakot on its hill. The air is warm and thick again after two weeks up high."
+    },
+    {
+      "day": 20,
+      "title": "Tarakot to Dunai",
+      "from": "tarakot",
+      "to": "dunai",
+      "sleep": 2140,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "An easy walk west beside the Thuli Bheri on a broad track, back to the bazaar, hot water and phone signal of the district town."
+    },
+    {
+      "day": 21,
+      "title": "Dunai to Juphal",
+      "from": "dunai",
+      "to": "juphal",
+      "sleep": 2475,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "Down the valley and up the last climb of about 400 m to the airstrip. Many groups ride this stretch in a jeep and spend the afternoon paying off the crew."
+    },
+    {
+      "day": 22,
+      "title": "Fly from Juphal to Nepalgunj",
+      "from": "juphal",
+      "to": "nepalgunj",
+      "sleep": 150,
+      "hours": [1, 1],
+      "kind": "transfer",
+      "mode": "flight",
+      "note": "Flights leave soon after sunrise when the weather allows. In the monsoon a wait of a day or two is common, so do not book an international flight close behind this one."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Altitude with no easy way down",
+      "text": "You sleep above 4,000 m for about nine nights and cross 5,350 m on the eighth day. Once over the Kang La, going down means crossing another pass. Carry a full altitude kit that your guide knows how to use, and do not cross any pass with symptoms."
+    },
+    {
+      "title": "Snow on the Kang La",
+      "text": "The pass can hold snow into June and close again from late October. Pack animals cannot cross deep snow, so a blocked pass may mean waiting or turning back. Build spare days into the plan."
+    },
+    {
+      "title": "River crossings",
+      "text": "The stream in the gorge below the Kang La, and side streams elsewhere, are waded. They rise sharply on warm afternoons and after rain. Cross early in the day, unclip your pack and use poles."
+    },
+    {
+      "title": "Isolation",
+      "text": "Between Ringmo and Dho Tarap there is no dependable communication or medical help. A satellite phone or messenger with the group, and insurance that covers helicopter evacuation, are basic requirements."
+    },
+    {
+      "title": "Cliff trails",
+      "text": "The path above Phoksundo Lake and parts of the Tarap gorge are narrow with long drops. Stand on the uphill side when animals pass and take your time on loose sections."
+    }
+  ],
+  "tips": [
+    "Plan the days against the permit: the USD 500 fee covers the first ten days in Upper Dolpo and each further day costs USD 50. Your agency sets the entry and exit dates.",
+    "Bring a sleeping bag rated to about minus 15 °C and a proper down jacket, even in July. Clear nights at 4,500 m freeze.",
+    "Sun and wind are fierce on the plateau. Pack a wide hat, good sunglasses, lip balm and more sunscreen than you think you need.",
+    "Carry river sandals and a small dry bag for the wading days.",
+    "Walk clockwise round Buddhist chortens and mani walls but anticlockwise round Bon ones; your guide will know which is which.",
+    "Agree before you leave how many spare days the crew is paid for, because Juphal flights are often delayed on the way out."
+  ],
+  "variants": [
+    {
+      "name": "Out and back to Shey",
+      "text": "Return from Shey over the Kang La to Ringmo and Juphal in about 16 days. It needs fewer days on the expensive permit but repeats the hardest pass."
+    },
+    {
+      "name": "Yangze Gompa",
+      "text": "From Saldang, a day's walk north along the river leads to the old monastery at Yangze. Crews often add it and return through Saldang to Sibu."
+    },
+    {
+      "name": "By the Numa La and Baga La",
+      "text": "Instead of the Tarap gorge, some groups return from Dho Tarap over the Numa La and Baga La, both above 5,000 m, to Ringmo, closing a loop through the lake country."
+    },
+    {
+      "name": "East to Jomsom",
+      "text": "A longer traverse continues east from Upper Dolpo through Chharka Bhot and over more 5,000 m passes to the Kali Gandaki at Jomsom, taking close to four weeks in all."
+    }
+  ],
+  "related": ["phoksundo-lake", "upper-mustang", "kanchenjunga-base-camp"],
+  "confidence": "low"
+}

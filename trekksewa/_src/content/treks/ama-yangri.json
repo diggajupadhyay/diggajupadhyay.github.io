@@ -1,0 +1,122 @@
+{
+  "slug": "ama-yangri",
+  "name": "Ama Yangri",
+  "aka": ["Aama Yangri", "Ama Yangri Peak"],
+  "region": "langtang",
+  "tagline": "Three days to a sacred 3,771 m summit above Helambu's largest village",
+  "summary": "A short trek from the Melamchi valley to the Hyolmo village of Tarkeghyang, then up through rhododendron forest to the 3,771 m summit of Ama Yangri.",
+  "intro": [
+    "Ama Yangri is the forested mountain that stands over Tarkeghyang, in upper Helambu. The Hyolmo people regard it as a protecting mother, and a stupa and ranks of prayer flags mark its 3,771 m summit. On a clear morning the top gives one of the widest views within easy reach of Kathmandu: the Langtang and Jugal peaks close at hand, and a long line of snow fading away to east and west.",
+    "It has become the weekend mountain for hikers from Kathmandu, who often drive to Tarkeghyang, climb before dawn and are home the next night. The three-day version here is kinder: you walk up from Timbu on the first day, which gives your legs and lungs a night at 2,600 m before the summit. Do not underrate the summit day. It is nearly 1,200 m straight up through forest and the same back down, to a height where a visitor fresh from the city can easily get a headache.",
+    "Tarkeghyang has comfortable lodges, but there is nothing on the mountain itself, so you carry water and lunch. In January and February the upper trail holds snow, which draws crowds on Saturdays. March and April bring rhododendron bloom for most of the climb, and October to December the clearest skies."
+  ],
+  "days": 3,
+  "daysRange": [2, 4],
+  "distanceKm": 18,
+  "maxAlt": { "m": 3771, "place": "ama-yangri" },
+  "difficulty": "moderate",
+  "difficultyNote": "Only three days, but the summit day climbs and descends almost 1,200 m on steep forest path, with little time to adjust to the height.",
+  "style": ["teahouse"],
+  "start": "timbu",
+  "end": "timbu",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "Buses and jeeps run from Kathmandu to Timbu, at the head of the Melamchi valley road, in five to six hours. The route passes Melamchi Pul Bazaar and follows the river that flooded in 2021, so it is slow and rough in places. A hired jeep can continue up the dirt road to Tarkeghyang when it is dry.",
+    "options": [
+      { "mode": "bus", "from": "kathmandu", "to": "timbu", "time": "5–6 h", "note": "Morning departures. Ask your lodge or agency for the current departure point, which has changed over the years." },
+      { "mode": "jeep", "from": "kathmandu", "to": "tarkeghyang", "time": "5–6 h", "note": "Skips the walk up from Timbu and turns the trip into a two-day outing. The final climb is on a rough track that can close after rain or snow." }
+    ]
+  },
+  "seasons": {
+    "best": [3, 4, 10, 11, 12],
+    "good": [1, 2, 5, 9],
+    "hard": [6, 7, 8],
+    "note": "October to December has the clearest mornings. March and April are the rhododendron months. January and February bring snow on the upper mountain, which is popular with local hikers but makes the steep sections slippery. In the monsoon the forest is wet and full of leeches, the summit is usually in cloud and the valley road is prone to washouts."
+  },
+  "permits": ["langtang-np", "tims"],
+  "guide": {
+    "rule": "required",
+    "note": "The Nepal Tourism Board has required foreign trekkers to hire a licensed guide since April 2023, though checks are inconsistent and on this short route, which most Nepali hikers walk unguided, they are rare. A guide is still worth having for the summit day: the forest trail has unmarked forks, there is no water or shelter above the village, and cloud can cover the top within minutes."
+  },
+  "highlights": [
+    "Sunrise from the summit stupa, with Langtang and Jugal close at hand",
+    "Rhododendron forest in bloom in March and April",
+    "Tarkeghyang, the largest Hyolmo village, and its monastery",
+    "A real mountain summit within a long weekend of Kathmandu"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive to Timbu, walk up to Tarkeghyang",
+      "from": "timbu",
+      "to": "tarkeghyang",
+      "sleep": 2600,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "Leave Kathmandu early for the five to six hour drive through Melamchi Pul Bazaar and up the Melamchi valley. From Timbu a steep trail climbs roughly 1,000 m through terraces and forest to Tarkeghyang, crossing the jeep track several times. Published heights for Timbu differ, so treat that figure as approximate."
+    },
+    {
+      "day": 2,
+      "title": "Ama Yangri summit and back to Tarkeghyang",
+      "from": "tarkeghyang",
+      "to": "tarkeghyang",
+      "via": ["ama-yangri"],
+      "sleep": 2600,
+      "high": 3771,
+      "hours": [5, 7],
+      "kind": "summit",
+      "note": "Start before dawn with a head torch. The trail climbs steadily through oak and rhododendron, steepens on stone steps and comes out on open pasture below the stupa. Allow three to four hours up and two to three down, and carry all your water. Turn round if a headache builds on the upper slopes."
+    },
+    {
+      "day": 3,
+      "title": "Walk down to Timbu, drive to Kathmandu",
+      "from": "tarkeghyang",
+      "to": "timbu",
+      "sleep": 1600,
+      "hours": [2, 3],
+      "kind": "trek",
+      "note": "An easy morning back down to the road at Timbu, then the bus or jeep to Kathmandu. Leave Tarkeghyang by 8 am if you are relying on public transport, as buses down the valley tend to thin out after midday."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "A fast climb to 3,771 m",
+      "text": "Most people on the summit were in Kathmandu the day before. Headache, nausea and unusual tiredness on the upper slopes are altitude, not just effort. Turn back if they build; they ease quickly as you descend."
+    },
+    {
+      "title": "Snow and ice in winter",
+      "text": "From late December to February the stone steps and the open slopes near the top are often under packed snow. The climb is still done, but a slip on the descent is the usual way people get hurt. Carry microspikes and poles, or wait for a thaw."
+    },
+    {
+      "title": "Cloud and wind on top",
+      "text": "The summit is exposed, and more than one path leaves it. In cloud it is easy to start down the wrong one. Keep the group together, note the way you came up, and do not linger if the weather is closing in."
+    },
+    {
+      "title": "The Melamchi valley road",
+      "text": "The road to Timbu was badly damaged by the floods of June 2021 and still suffers washouts and landslides in heavy rain. Check its state before travelling in the monsoon, and allow extra time."
+    }
+  ],
+  "tips": [
+    "Carry at least two litres of water and something to eat for the summit day; there is no tea shop on the mountain.",
+    "Take a warm jacket, hat and gloves even in spring. You stand still on a windy top at dawn.",
+    "Saturdays and public holidays bring large groups from Kathmandu. Go midweek for a quiet summit and an easier choice of rooms.",
+    "The summit is a shrine. Walk round the stupa clockwise and take your rubbish back down with you.",
+    "Bring cash from Kathmandu; do not count on an ATM once you leave the city."
+  ],
+  "variants": [
+    {
+      "name": "Two-day version",
+      "text": "Take a jeep all the way to Tarkeghyang on the first day, climb at dawn on the second and drive home that afternoon. It is the usual plan for hikers from Kathmandu, and the one most likely to leave you with an altitude headache."
+    },
+    {
+      "name": "Out through Sermathang",
+      "text": "On the third day, walk the near-level trail from Tarkeghyang to Sermathang in three to four hours instead of dropping to Timbu, and leave by jeep from there next morning."
+    },
+    {
+      "name": "As part of the Helambu circuit",
+      "text": "On the Helambu circuit, add a second night at Tarkeghyang and climb Ama Yangri as a day trip. You will be better acclimatized after the night at Tharepati."
+    }
+  ],
+  "related": ["helambu", "chisapani-nagarkot", "gosaikunda", "langtang-gosaikunda-helambu"],
+  "confidence": "medium"
+}

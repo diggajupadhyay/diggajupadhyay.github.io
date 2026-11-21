@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found</title>
+<meta name="robots" content="noindex">
+<script>
+  // GitHub Pages serves this one file for every missing URL on the site.
+  // Anything under /trekksewa/ gets TrekkSewa's own not-found page.
+  if (location.pathname.indexOf('/trekksewa/') === 0) location.replace('/trekksewa/404/');
+</script>
+<style>
+  body { font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; margin: 15vh auto; max-width: 32rem; padding: 0 1.5rem; color: #16232b; background: #fbf8f1; }
+  a { color: #0b5d5e; }
+  @media (prefers-color-scheme: dark) { body { color: #edf2f1; background: #0f1a20; } a { color: #62cbc5; } }
+</style>
+</head>
+<body>
+<h1>Page not found</h1>
+<p>There is nothing at this address.</p>
+<p><a href="/trekksewa/">Go to TrekkSewa</a></p>
+</body>
+</html>

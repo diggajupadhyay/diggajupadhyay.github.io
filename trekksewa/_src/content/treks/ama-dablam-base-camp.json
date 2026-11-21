@@ -1,0 +1,193 @@
+{
+  "slug": "ama-dablam-base-camp",
+  "name": "Ama Dablam Base Camp",
+  "aka": ["Ama Dablam Base Camp Trek"],
+  "region": "everest",
+  "tagline": "Under the west face of Ama Dablam, with every night below 4,000 m",
+  "summary": "A nine-day trek up the Everest trail to Pangboche, with a day walk to the expedition base camp below Ama Dablam at 4,570 m and no night above 4,000 m.",
+  "intro": [
+    "Ama Dablam (6,812 m) is the peak you look at most on the Everest trail: a steep pyramid with two long ridges like arms and a hanging glacier high on its face. Sherpas liken that glacier to the dablam, the charm box a mother wears round her neck, and the mountain takes its name from it. The trek follows the main trail for four days, then leaves it at Pangboche, crosses the Imja Khola and climbs to the meadow where climbing expeditions set up their base camp.",
+    "Because you sleep in Pangboche at 3,985 m and visit 4,570 m only for a few hours, the altitude load is much lighter than on the Everest Base Camp trek, yet you end up directly under a big Himalayan face. In October and November, the main climbing season on Ama Dablam, the meadow is a working camp with kitchen tents and prayer flags and climbers coming and going. In spring and winter you may have it to yourself.",
+    "The base camp day follows a herders' path with no signs and no lodges, a change after the busy main trail. It is also the only strenuous day: you drop to the river first and then climb more than 600 m. The same walk fits into the Everest Base Camp trek as a side trip from Pangboche, either for extra acclimatization on the way up or as a last outing on the way down."
+  ],
+  "days": 9,
+  "daysRange": [8, 11],
+  "distanceKm": 85,
+  "maxAlt": { "m": 4570, "place": "ama-dablam-base-camp" },
+  "difficulty": "moderate",
+  "difficultyNote": "One strenuous day to 4,570 m; otherwise the well-graded Everest trail, with every night below 4,000 m.",
+  "style": ["teahouse"],
+  "start": "lukla",
+  "end": "lukla",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "The trek begins and ends with the flight to Lukla, which leaves in the early morning from Kathmandu or, in peak season, from Manthali in Ramechhap. Flights wait on the weather at Lukla, and a day's delay at either end is normal enough to plan for.",
+    "options": [
+      { "mode": "flight", "from": "kathmandu", "to": "lukla", "time": "35 min", "note": "Direct flights run mostly outside the busiest weeks of spring and autumn." },
+      { "mode": "flight", "from": "manthali", "to": "lukla", "time": "20 min", "note": "The peak-season departure point, four to five hours' drive from Kathmandu; most people travel there overnight." },
+      { "mode": "jeep", "from": "kathmandu", "to": "lukla", "time": "1–2 days + 2 days' walk", "note": "Jeep to Salleri and on to Thamdanda when the track is open, then walk through Paiya and Surke. A fallback for long flight shutdowns." }
+    ]
+  },
+  "seasons": {
+    "best": [3, 4, 5, 10, 11],
+    "good": [1, 2, 9, 12],
+    "hard": [6, 7, 8],
+    "note": "October and November combine the clearest weather with a busy base camp. Spring is warmer and hazier, and the meadow is usually empty. Winter is workable with warm gear, though snow can lie on the base camp path and fewer lodges are open in Pangboche. In the monsoon the mountain is hidden most days."
+  },
+  "permits": ["sagarmatha-np", "khumbu-rm"],
+  "guide": {
+    "rule": "strongly-recommended",
+    "note": "Khumbu has not enforced the national guide requirement, and on the main trail you will not lose your way. The path from Pangboche to base camp is different: it is unsigned and splits into yak tracks on the upper pasture, and in cloud it is easy to drift into the wrong valley. A licensed guide who has been up before is worth having for that day alone."
+  },
+  "highlights": [
+    "Standing under the west face of Ama Dablam at 4,570 m",
+    "A working expedition base camp in October and November",
+    "Tengboche monastery and the old gompa in upper Pangboche",
+    "Everest and Lhotse from the ridge above Namche",
+    "No night above 4,000 m"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Fly to Lukla, walk to Phakding",
+      "from": "lukla",
+      "to": "phakding",
+      "sleep": 2610,
+      "hours": [3, 4],
+      "km": 8,
+      "kind": "trek",
+      "note": "Once the flight is in, walk down through Chheplung to the Dudh Koshi and follow it upstream to Phakding. It is a gentle afternoon, and sleeping lower than Lukla helps on the first night."
+    },
+    {
+      "day": 2,
+      "title": "Phakding to Namche Bazaar",
+      "from": "phakding",
+      "to": "namche-bazaar",
+      "via": ["monjo"],
+      "sleep": 3440,
+      "hours": [5, 6],
+      "km": 11,
+      "kind": "trek",
+      "note": "Riverside walking to the park gate at Monjo, then the steady 600 m climb from the high bridge to Namche. Ama Dablam stays hidden all day; it first appears from the ridge above Namche tomorrow."
+    },
+    {
+      "day": 3,
+      "title": "Acclimatization day in Namche",
+      "from": "namche-bazaar",
+      "to": "namche-bazaar",
+      "via": ["everest-view-hotel", "khumjung"],
+      "sleep": 3440,
+      "high": 3880,
+      "hours": [3, 4],
+      "km": 6,
+      "kind": "acclimatization",
+      "note": "Walk up to the Everest View Hotel for the first full view of Ama Dablam with Everest and Lhotse behind it, return through Khumjung and sleep again in Namche. Do not skip the walk; it is what makes the next days comfortable."
+    },
+    {
+      "day": 4,
+      "title": "Namche to Tengboche",
+      "from": "namche-bazaar",
+      "to": "tengboche",
+      "via": ["kyangjuma", "phunki-tenga"],
+      "sleep": 3860,
+      "hours": [5, 6],
+      "km": 10,
+      "kind": "trek",
+      "note": "Ama Dablam is ahead of you along the whole balcony trail. Drop to the river at Phunki Tenga for lunch, then climb two hours through forest to the monastery, where the mountain fills the eastern skyline."
+    },
+    {
+      "day": 5,
+      "title": "Tengboche to Pangboche",
+      "from": "tengboche",
+      "to": "pangboche",
+      "via": ["deboche"],
+      "sleep": 3985,
+      "hours": [2, 3],
+      "kind": "trek",
+      "note": "A short stage on purpose. Walk down through the forest at Deboche, cross the Imja Khola and climb gently to Pangboche. Spend the afternoon at the monastery in the upper village and pick out tomorrow's path on the far side of the river."
+    },
+    {
+      "day": 6,
+      "title": "Day walk to Ama Dablam Base Camp",
+      "from": "pangboche",
+      "to": "pangboche",
+      "via": ["ama-dablam-base-camp"],
+      "sleep": 3985,
+      "high": 4570,
+      "hours": [5, 7],
+      "kind": "summit",
+      "note": "Drop to the bridge over the Imja Khola below the village, climb steeply onto the ridge opposite and follow it up through juniper and yak pasture to the base camp flat. Allow three to four hours up and two down. Carry food and water for the day and start back by one."
+    },
+    {
+      "day": 7,
+      "title": "Pangboche to Namche Bazaar",
+      "from": "pangboche",
+      "to": "namche-bazaar",
+      "via": ["tengboche", "phunki-tenga"],
+      "sleep": 3440,
+      "hours": [5, 7],
+      "kind": "trek",
+      "note": "Back through Deboche and up the short climb to Tengboche, down to Phunki Tenga and up the long hill to the balcony trail. A full day in which most of the effort goes into the two climbs."
+    },
+    {
+      "day": 8,
+      "title": "Namche to Lukla",
+      "from": "namche-bazaar",
+      "to": "lukla",
+      "via": ["monjo", "phakding"],
+      "sleep": 2860,
+      "hours": [6, 7],
+      "km": 19,
+      "kind": "trek",
+      "note": "Down to the river and out along the valley, with the last climb into Lukla at the end of a long day. Reconfirm your seat with the airline before you sit down to dinner."
+    },
+    {
+      "day": 9,
+      "title": "Fly out from Lukla",
+      "from": "lukla",
+      "to": "kathmandu",
+      "sleep": 1400,
+      "hours": [1, 1],
+      "kind": "transfer",
+      "mode": "flight",
+      "note": "Flights to Kathmandu or Manthali leave in the first hours of daylight if the weather holds. If it does not, you wait a day, share a helicopter or walk toward the road."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Altitude on the base camp day",
+      "text": "Going from a bed at 3,985 m to 4,570 m and back in a day is within normal limits, but you will feel it. A headache or nausea at base camp is a signal to start down, not to sit and wait for it to pass."
+    },
+    {
+      "title": "An unmarked path",
+      "text": "There are no signs, lodges or passing trekkers on the far side of the river. Cloud often rolls up the valley after midday and the yak tracks look alike. Leave Pangboche early, note the landmarks on the way up and do not go alone."
+    },
+    {
+      "title": "Lukla flights",
+      "text": "Flights are cancelled whenever cloud closes the approach to Lukla, sometimes for days. Keep at least one spare day before your international flight."
+    }
+  ],
+  "tips": [
+    "Order a packed lunch in Pangboche the night before; there is nothing dependable to eat on the way to base camp.",
+    "Expedition camps are workplaces. Ask before you walk between the tents or take photographs, and do not expect to be fed.",
+    "Upper Pangboche is a short climb above the lodges on the main trail and has the oldest monastery in Khumbu.",
+    "Bring the cash you need from Kathmandu or Namche; there is none to be had higher up.",
+    "If cloud hides the mountain in the morning and you have a spare day, wait for the next one. The walk is about what you see at the end."
+  ],
+  "variants": [
+    {
+      "name": "As a side trip from the Everest Base Camp trek",
+      "text": "Add one day at Pangboche on the way up, which also helps acclimatization, or on the way down from Pheriche. The walk and the timings are the same."
+    },
+    {
+      "name": "Return through Phortse",
+      "text": "From upper Pangboche a high trail contours to Phortse in two to three hours, with a fair chance of seeing Himalayan tahr. Continue over Mong La to Namche the same day or sleep in Phortse and add a day."
+    },
+    {
+      "name": "Eight days",
+      "text": "Walk from Namche to Pangboche in one stage of six to seven hours and save the night at Tengboche. Do this only if you felt well at Namche."
+    }
+  ],
+  "related": ["everest-view-trek", "everest-base-camp", "gokyo-lakes", "everest-three-passes"],
+  "confidence": "high"
+}

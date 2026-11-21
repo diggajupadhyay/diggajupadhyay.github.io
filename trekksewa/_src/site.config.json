@@ -1,0 +1,36 @@
+{
+  "name": "TrekkSewa",
+  "nameNe": "ट्रेकसेवा",
+  "strapline": "Trek Nepal, well looked after",
+  "description": "Route guides, altitude tools and trail conditions for trekking in Nepal — and a growing network of licensed guides, fairly paid porters, registered agencies and gear shops.",
+  "siteUrl": "https://diggajupadhyay.github.io/trekksewa",
+  "lang": "en",
+  "themeColor": {
+    "light": "#0b5d5e",
+    "dark": "#0f1a20"
+  },
+  "contentReviewed": "2026-11",
+  "contact": {
+    "email": "",
+    "whatsapp": ""
+  },
+  "backend": {
+    "provider": "none",
+    "supabaseUrl": "",
+    "supabaseAnonKey": ""
+  },
+  "featuredTreks": [
+    "everest-base-camp",
+    "annapurna-base-camp",
+    "annapurna-circuit",
+    "manaslu-circuit",
+    "langtang-valley",
+    "ghorepani-poon-hill",
+    "mardi-himal",
+    "gokyo-lakes",
+    "upper-mustang",
+    "gosaikunda",
+    "everest-three-passes",
+    "tilicho-lake"
+  ]
+}

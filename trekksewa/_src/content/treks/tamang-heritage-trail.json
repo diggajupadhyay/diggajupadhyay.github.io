@@ -1,0 +1,174 @@
+{
+  "slug": "tamang-heritage-trail",
+  "name": "Tamang Heritage Trail",
+  "aka": ["Tamang Heritage Trek"],
+  "region": "langtang",
+  "tagline": "A village loop below the Tibetan border, with nights in Tamang homes",
+  "summary": "A week's loop from Syabrubesi through the Tamang villages of Gatlang, Tatopani, Thuman and Briddim, with homestay nights and a 3,165 m viewpoint at Nagthali.",
+  "intro": [
+    "The Tamang Heritage Trail is a loop through the villages west and north of Syabrubesi, between the Langtang valley and the Tibetan border. It was laid out in the mid-2000s as a community tourism project, to bring trekkers' money to Tamang and Tibetan-descended villages that the Langtang trail passes by. The point is the villages themselves: stone houses with carved windows, monasteries, mani walls, and evenings in a family kitchen rather than a lodge dining room.",
+    "It is a low trek by Nepali standards. You sleep between 1,460 m and 2,600 m and cross one 3,165 m ridge, so altitude is not a concern. The effort is in the gradients: most days include a descent of 500 m or more to a river and a climb of the same size up the other side, on stone steps or dusty track. Rooms are simple, in community lodges and homestays, and the food is what the household eats.",
+    "Be clear about its present state. The 2015 earthquake damaged every village on the loop and stopped the hot springs at Tatopani. The Bhote Koshi flood of 26 August 2026 then struck the valley the trail circles: Syabrubesi was badly damaged, Timure and the Rasuwagadhi border post were reported largely destroyed, and bridges and road along the river were lost. The trail was reported open again that autumn, but treat the stages below as the classic plan and confirm each river crossing before you go."
+  ],
+  "days": 7,
+  "daysRange": [6, 9],
+  "distanceKm": 50,
+  "maxAlt": { "m": 3165, "place": "nagthali" },
+  "difficulty": "moderate",
+  "difficultyNote": "No altitude to speak of, but nearly every day has a steep descent and a long climb, and the lodging is basic.",
+  "style": ["homestay", "teahouse"],
+  "start": "syabrubesi",
+  "end": "syabrubesi",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "By road to Syabrubesi, the same seven to nine hour journey from Machhapokhari in Kathmandu as for the Langtang valley. The Bhote Koshi flood of 26 August 2026 cut the road short of the town and took out the bridges over the river. The loop was reported open again later that autumn, once a temporary footbridge had been built at Syabrubesi, but the road was still reported closed in mid-November 2026. Ask your agency how groups are reaching the start.",
+    "options": [
+      { "mode": "bus", "from": "kathmandu", "to": "syabrubesi", "time": "7–9 h", "note": "The classic approach, by local or express bus. Reported closed short of Syabrubesi since the August 2026 flood; check whether it has reopened." },
+      { "mode": "jeep", "from": "kathmandu", "to": "dhunche", "time": "5–7 h", "note": "The roadhead in use since the flood. Syabrubesi is a further 15 km down a damaged road; ask what is passable on wheels and what has to be walked." }
+    ]
+  },
+  "seasons": {
+    "best": [3, 4, 10, 11],
+    "good": [1, 2, 5, 9, 12],
+    "hard": [6, 7, 8],
+    "note": "October and November are the clearest months, and March and April bring rhododendron on the Nagthali ridge. Winter is cold but walkable, with occasional snow on the ridge. May is hot on the lower climbs. In the monsoon the trails are slippery, leeches are out, and the valley road is at its most fragile."
+  },
+  "permits": ["langtang-np", "tims", "rap-rasuwa"],
+  "guide": {
+    "rule": "required",
+    "note": "Thuman and Timure are on the Department of Immigration's restricted-area list, so this loop is treated here as a restricted-area trek: the permit is issued only through a registered trekking agency and you must walk with a licensed guide. Since 22 March 2026 the permit can be issued to a single trekker. Checks on the ground have been rare and some agencies run the loop on the park permit and TIMS alone, so ask yours what it arranges. After the 2026 flood a guide in touch with the villages is also the only reliable source on which bridges and homestays are open."
+  },
+  "highlights": [
+    "Homestay nights in Briddim, eating with the family",
+    "Gatlang, a large and well-kept traditional Tamang village",
+    "The Nagthali ridge, with views into Tibet and across to Langtang and Ganesh Himal",
+    "Monasteries, mani walls and chortens between the villages",
+    "Far fewer trekkers than the Langtang valley next door"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive from Kathmandu to Syabrubesi",
+      "from": "kathmandu",
+      "to": "syabrubesi",
+      "sleep": 1460,
+      "hours": [7, 9],
+      "kind": "transfer",
+      "mode": "drive",
+      "note": "A long road day through Trishuli Bazaar and Dhunche, where park permits are checked. Since the August 2026 flood the road has been cut short of Syabrubesi, so the last stretch may be on foot; settle the plan with your agency before you leave Kathmandu."
+    },
+    {
+      "day": 2,
+      "title": "Syabrubesi to Gatlang",
+      "from": "syabrubesi",
+      "to": "gatlang",
+      "via": ["rongga-bhanjyang", "goljung"],
+      "sleep": 2238,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "Climb steeply west out of the valley for two hours to the Rongga Bhanjyang saddle and its view of Ganesh Himal, then contour through Goljung to Gatlang. Much of the old trail now shares a dirt road; a guide knows the footpath shortcuts. If you arrive early, walk up to Parvati Kunda above the village."
+    },
+    {
+      "day": 3,
+      "title": "Gatlang to Tatopani",
+      "from": "gatlang",
+      "to": "tatopani-langtang",
+      "via": ["chilime"],
+      "sleep": 2607,
+      "hours": [6, 7],
+      "km": 12,
+      "kind": "trek",
+      "note": "Descend through terraced fields to Thambuchet and Chilime on the Chilime Khola, cross the suspension bridge, and climb about 850 m through Gonggang to Tatopani. The climb is on an open, south-facing slope, so carry more water than you think you need. Ask on arrival whether the hot-spring pools have water."
+    },
+    {
+      "day": 4,
+      "title": "Tatopani to Thuman over Nagthali",
+      "from": "tatopani-langtang",
+      "to": "thuman",
+      "via": ["brimdang", "nagthali"],
+      "sleep": 2338,
+      "high": 3165,
+      "hours": [5, 6],
+      "km": 10,
+      "kind": "trek",
+      "note": "Up through forest to the hamlet of Brimdang and on to the meadows of Nagthali for the widest view of the trek, then a steep 800 m descent through rhododendron forest to Thuman. Some groups sleep at Nagthali for the sunrise instead."
+    },
+    {
+      "day": 5,
+      "title": "Thuman to Briddim",
+      "from": "thuman",
+      "to": "briddim",
+      "via": ["lingling"],
+      "sleep": 2229,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "Classically a 600 m descent to the Bhote Koshi, a crossing to the valley road near Lingling and a hot 500 m climb to Briddim. The August 2026 flood ran straight through this section and took bridges and road with it; which line you walk depends on what has been rebuilt, so settle it with your guide in Thuman."
+    },
+    {
+      "day": 6,
+      "title": "Briddim to Syabrubesi",
+      "from": "briddim",
+      "to": "syabrubesi",
+      "sleep": 1460,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "A short morning downhill through terraces and forest to the valley floor and the river crossing into Syabrubesi. If you are going on into the Langtang valley, take the high trail from Briddim through Khangjim and Sherpagaon to Rimche instead."
+    },
+    {
+      "day": 7,
+      "title": "Drive back to Kathmandu",
+      "from": "syabrubesi",
+      "to": "kathmandu",
+      "sleep": 1400,
+      "hours": [7, 9],
+      "kind": "transfer",
+      "mode": "drive",
+      "note": "Back up to the highway and down through Dhunche and Trishuli Bazaar. Timings on this road are unpredictable, so keep the evening and the following morning clear of fixed commitments."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Flood damage along the Bhote Koshi",
+      "text": "The flood of 26 August 2026 destroyed bridges, long stretches of road and riverside buildings between the border and Syabrubesi. The villages on the loop sit high above the river, but the start, the finish and the Thuman to Briddim day all depend on river crossings. Do not set out without current information from someone on the ground."
+    },
+    {
+      "title": "Steep descents",
+      "text": "The drops from Gatlang to Chilime, from Nagthali to Thuman and from Thuman to the river are each 500 to 800 m on stone steps and loose track. They are slippery after rain. Use poles and do not hurry the afternoons."
+    },
+    {
+      "title": "Restricted border area",
+      "text": "The loop runs within a few kilometres of the Tibetan border. Stay on the trekking route, carry your passport and permits, and do not photograph army or police posts."
+    },
+    {
+      "title": "Slow evacuation",
+      "text": "There is no hospital on the loop; the nearest is in Dhunche. With the valley road damaged, an evacuation is likely to mean a helicopter, so carry a proper first-aid kit and insurance that covers air rescue."
+    }
+  ],
+  "tips": [
+    "In a homestay you eat what the family cooks, at the family's hours. Agree the price for bed and meals when you arrive.",
+    "Carry all the cash you need, in small notes. There is no ATM on the loop and nobody can change large bills.",
+    "Ask in Gatlang whether the Tatopani pools have water before you count on a soak.",
+    "Dress modestly in the villages, and ask before photographing people, houses or the inside of a monastery.",
+    "Bring a light sleeping bag or liner. Homestay bedding is clean but thin, and nights at Tatopani and Nagthali are cold."
+  ],
+  "variants": [
+    {
+      "name": "Sleep at Nagthali",
+      "text": "Split day four by stopping at the lodges on the Nagthali ridge for sunset and sunrise, then walk down to Thuman next morning. It adds a day and a cold night at 3,165 m."
+    },
+    {
+      "name": "Combine with the Langtang valley",
+      "text": "From Briddim a high trail runs through Khangjim and Sherpagaon to join the Langtang trail at Rimche. Adding Kyanjin Gompa this way makes a trek of 12 to 14 days."
+    },
+    {
+      "name": "Ride to Gatlang",
+      "text": "A dirt road links Syabrubesi with Goljung and Gatlang. When it is open, a jeep saves the first walking day and shortens the loop to six days."
+    },
+    {
+      "name": "Timure and Rasuwagadhi",
+      "text": "Before 2026 some itineraries dropped from Thuman to Timure for a night and a walk to the border fort at Rasuwagadhi. Reports after the flood describe Timure as largely destroyed and the border as closed. Do not plan on this section without current local confirmation."
+    }
+  ],
+  "related": ["langtang-valley", "gosaikunda", "langtang-gosaikunda-helambu"],
+  "confidence": "low"
+}

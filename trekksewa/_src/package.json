@@ -1,0 +1,25 @@
+{
+  "name": "trekksewa-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Source for the TrekkSewa static site. `npm run build` regenerates the published files in the parent directory.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node scripts/dev-server.mjs",
+    "validate": "node scripts/validate-content.mjs",
+    "test": "node --test scripts/test/*.test.mjs",
+    "check": "node scripts/validate-content.mjs && node --test scripts/test/*.test.mjs && node build.mjs && node scripts/check-links.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@fontsource-variable/figtree": "^5.3.0",
+    "@fontsource-variable/fraunces": "^5.3.0",
+    "esbuild": "^0.25.12",
+    "leaflet": "^1.9.4",
+    "lucide-static": "^0.469.0",
+    "marked": "^15.0.12"
+  }
+}

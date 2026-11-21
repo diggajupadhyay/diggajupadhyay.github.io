@@ -1,0 +1,341 @@
+{
+  "slug": "jiri-to-everest-base-camp",
+  "name": "Jiri to Everest Base Camp",
+  "aka": ["Classic Everest Base Camp Trek", "Everest Base Camp via Jiri", "Jiri Everest Trek"],
+  "region": "everest",
+  "tagline": "The old walk-in through Solu: three weeks on foot from the road to base camp",
+  "summary": "The old approach to Everest on foot: from Jiri over the Lamjura La and through Junbesi and Kharikhola to join the main trail near Lukla, then on to base camp and Kala Patthar.",
+  "intro": [
+    "Before the airstrip at Lukla took over, everyone bound for Everest walked in through the middle hills. The 1953 expedition set out on foot from the edge of the Kathmandu Valley; after the Swiss-built road reached Jiri in the 1980s, the walk began there. This route follows that trail east across the grain of the country, through the Sherpa villages of Solu, joins the main trail just north of Lukla and continues to base camp.",
+    "The trailhead has kept moving ever since. Buses still stop in Jiri, but the road now runs on to Shivalaya, a rough track continues to Bhandar and Kinja, and jeeps from the Salleri side reach Junbesi, Nunthala and Kharikhola. Most people today start walking at Shivalaya, and some take a jeep as far as Bhandar. The itinerary below begins in Jiri so that the whole classic route is covered: skip day 2 if you ride to Shivalaya, and days 2 and 3 if you ride to Bhandar.",
+    "What the extra week buys you is strong legs, a slow change from terraced farms to high country, and villages that see a handful of trekkers a day instead of hundreds. What it costs is effort. The trail crosses three ridges and the deep valleys between them, with more than 7,000 m of climbing before Namche, and where the road has taken over the old path you walk on or beside a dusty track. From Namche on, it is the standard base camp trek with the standard altitude."
+  ],
+  "days": 20,
+  "daysRange": [17, 23],
+  "distanceKm": 225,
+  "maxAlt": { "m": 5545, "place": "kala-patthar" },
+  "difficulty": "challenging",
+  "difficultyNote": "The same altitude as the base camp trek, reached after nine days of steep hill walking with more than 7,000 m of climbing before Namche.",
+  "style": ["teahouse"],
+  "start": "jiri",
+  "end": "lukla",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "Buses for Jiri leave the old bus park at Ratna Park in Kathmandu early each morning and take seven to eight hours by way of Charikot. Several carry on to Shivalaya, and in the dry months jeeps go as far as Bhandar. You finish with the flight out of Lukla, which depends on the weather, so keep a spare day at the end.",
+    "options": [
+      { "mode": "bus", "from": "kathmandu", "to": "jiri", "time": "7–8 h", "note": "About 190 km on a winding, mostly sealed road through Charikot. Morning departures only." },
+      { "mode": "bus", "from": "kathmandu", "to": "shivalaya", "time": "9–10 h", "note": "The same road, an hour or two further. This is where most trekkers now get off and start walking." },
+      { "mode": "jeep", "from": "kathmandu", "to": "bhandar", "time": "9–11 h", "note": "On a rough track beyond Shivalaya, in the dry season only. It saves two walking days." },
+      { "mode": "flight", "from": "lukla", "to": "kathmandu", "time": "35 min", "note": "The usual way home. In peak season most flights land at Manthali, four to five hours by road from Kathmandu." }
+    ]
+  },
+  "seasons": {
+    "best": [3, 4, 10, 11],
+    "good": [2, 5, 9, 12],
+    "hard": [1, 6, 7, 8],
+    "note": "October and November are the clearest from start to finish. March and April bring rhododendron bloom on the Lamjura La, with haze and heat in the low valleys. In May and late September the lower trail is hot, wet in places and has leeches. From December to February the Solu hills are pleasant by day, but the Lamjura La can be icy and upper Khumbu is very cold."
+  },
+  "permits": ["gaurishankar-ca", "sagarmatha-np", "khumbu-rm"],
+  "guide": {
+    "rule": "required",
+    "note": "The Nepal Tourism Board has required foreign trekkers to hire a licensed guide since April 2023, and that covers the Gaurishankar and Solu part of this route. Checks on the trail are inconsistent, and Khumbu itself has not enforced the rule. On the walk-in a guide helps most where new jeep tracks have cut the old trail: the foot short-cuts are unsigned, and the right one is often not the obvious one."
+  },
+  "highlights": [
+    "Walking the pre-airstrip route to Everest from end to end",
+    "Rhododendron and fir forest on the Lamjura La",
+    "Junbesi and the Sherpa villages of Solu",
+    "A first distant sight of Everest from Phurteng, long before you reach it",
+    "Everest Base Camp and Kala Patthar",
+    "Quiet lodges and very few trekkers until Chheplung"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Bus from Kathmandu to Jiri",
+      "from": "kathmandu",
+      "to": "jiri",
+      "sleep": 1905,
+      "hours": [7, 9],
+      "kind": "transfer",
+      "mode": "bus",
+      "note": "The road leaves the Araniko Highway at the Sun Koshi, climbs over a ridge above 2,500 m, passes Charikot and drops to the Tamakoshi before the last climb to Jiri. Sleep here, or stay on the bus for another hour or two to Shivalaya and start from there."
+    },
+    {
+      "day": 2,
+      "title": "Jiri to Shivalaya",
+      "from": "jiri",
+      "to": "shivalaya",
+      "sleep": 1770,
+      "high": 2400,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "The classic first stage. Climb about 500 m over a forested ridge and drop past the hamlet of Mali to the Khimti Khola at Shivalaya. Buses now cover this stretch by road, and many trekkers ride it and begin walking tomorrow."
+    },
+    {
+      "day": 3,
+      "title": "Shivalaya to Bhandar over Deurali",
+      "from": "shivalaya",
+      "to": "bhandar",
+      "via": ["deurali-bhandar"],
+      "sleep": 2190,
+      "high": 2705,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "Show or buy your Gaurishankar permit at the checkpost, then climb 900 m with little respite to the mani walls at Deurali. Bhandar lies 500 m below on the far side, down through fields. It is the first hard day; start early and climb in the shade."
+    },
+    {
+      "day": 4,
+      "title": "Bhandar to Sete",
+      "from": "bhandar",
+      "to": "sete",
+      "via": ["kinja"],
+      "sleep": 2575,
+      "hours": [6, 7],
+      "kind": "trek",
+      "note": "Lose 600 m through terraces and forest to the Likhu Khola, cross the suspension bridge and follow the river up to Kinja for lunch. The afternoon is a steep, hot climb of 950 m up the ridge to Sete. A jeep track runs through the first half; the footpath cuts across it."
+    },
+    {
+      "day": 5,
+      "title": "Sete to Junbesi over the Lamjura La",
+      "from": "sete",
+      "to": "junbesi",
+      "via": ["lamjura-la"],
+      "sleep": 2700,
+      "high": 3530,
+      "hours": [6, 7],
+      "kind": "pass",
+      "note": "Climb another 950 m through Dagchu and Goyam, in rhododendron and moss forest, to the Lamjura La, the highest point before Namche. Descend through fir forest to Taktor and round the hillside into Junbesi. Carry a warm layer; the pass is often in cloud by noon."
+    },
+    {
+      "day": 6,
+      "title": "Junbesi to Nunthala over the Taksindu La",
+      "from": "junbesi",
+      "to": "nunthala",
+      "via": ["taksindu-la"],
+      "sleep": 2200,
+      "high": 3071,
+      "hours": [6, 7],
+      "kind": "trek",
+      "note": "Climb round the ridge to Phurteng, where Everest shows for the first time on a clear morning, drop to the Ringmo Khola and climb through the apple orchards of Ringmo to the stupa on the Taksindu La. A long, stony descent past the monastery ends at Nunthala."
+    },
+    {
+      "day": 7,
+      "title": "Nunthala to Bupsa",
+      "from": "nunthala",
+      "to": "bupsa",
+      "via": ["jubing", "kharikhola"],
+      "sleep": 2360,
+      "hours": [6, 7],
+      "kind": "trek",
+      "note": "Down for two hours to the bridge over the Dudh Koshi at about 1,500 m, the lowest point of the walk-in, then up through the Rai village of Jubing and over a spur to Kharikhola. A last steep climb of 400 m from the stream below leads to Bupsa. It is hot at midday; start early."
+    },
+    {
+      "day": 8,
+      "title": "Bupsa to Surke",
+      "from": "bupsa",
+      "to": "surke",
+      "via": ["paiya", "chutok-la"],
+      "sleep": 2290,
+      "high": 2945,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "Climb through forest to the Kari La shoulder, which maps put anywhere between 2,850 and 3,100 m, contour round a deep side valley to Paiya and cross the Chutok La before a steep drop to Surke. Mule trains supplying Khumbu use this stretch, so the trail is churned and muddy after rain."
+    },
+    {
+      "day": 9,
+      "title": "Surke to Phakding",
+      "from": "surke",
+      "to": "phakding",
+      "via": ["chheplung"],
+      "sleep": 2610,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "Lukla's airstrip is directly above, but the walking route stays below it: climb through Chaurikharka to Chheplung, where you meet the main trail and, all at once, a great many other trekkers. An easy stretch beside the river leads on to Phakding."
+    },
+    {
+      "day": 10,
+      "title": "Phakding to Namche Bazaar",
+      "from": "phakding",
+      "to": "namche-bazaar",
+      "via": ["monjo"],
+      "sleep": 3440,
+      "hours": [5, 6],
+      "km": 11,
+      "kind": "trek",
+      "note": "Buy the national park and Khumbu municipality permits at Monjo, cross the high bridge and climb 600 m to Namche. After nine days on the trail the hill is easier for you than for people who flew in yesterday, but the altitude is new for everyone."
+    },
+    {
+      "day": 11,
+      "title": "Acclimatization day in Namche",
+      "from": "namche-bazaar",
+      "to": "namche-bazaar",
+      "via": ["everest-view-hotel", "khumjung"],
+      "sleep": 3440,
+      "high": 3880,
+      "hours": [3, 4],
+      "km": 6,
+      "kind": "acclimatization",
+      "note": "You are fit by now, but fitness is not acclimatization: nothing so far has been above 3,530 m. Walk up to the Everest View Hotel ridge, loop through Khumjung and sleep a second night in Namche like everyone else."
+    },
+    {
+      "day": 12,
+      "title": "Namche to Tengboche",
+      "from": "namche-bazaar",
+      "to": "tengboche",
+      "via": ["kyangjuma", "phunki-tenga"],
+      "sleep": 3860,
+      "hours": [5, 6],
+      "km": 10,
+      "kind": "trek",
+      "note": "The balcony trail to Kyangjuma, the drop to the river at Phunki Tenga and the 600 m climb to the monastery. After Solu the path feels like a highway and the lodges like hotels."
+    },
+    {
+      "day": 13,
+      "title": "Tengboche to Dingboche",
+      "from": "tengboche",
+      "to": "dingboche",
+      "via": ["pangboche"],
+      "sleep": 4410,
+      "hours": [5, 6],
+      "km": 11,
+      "kind": "trek",
+      "note": "Through Deboche and across the Imja Khola to Pangboche, then above the last trees into the wide upper valley. You sleep at 4,410 m, almost 900 m higher than any point on the walk-in, so arrive slowly and rest."
+    },
+    {
+      "day": 14,
+      "title": "Acclimatization day in Dingboche",
+      "from": "dingboche",
+      "to": "dingboche",
+      "via": ["nangkartshang-peak"],
+      "sleep": 4410,
+      "high": 5083,
+      "hours": [3, 5],
+      "km": 5,
+      "kind": "acclimatization",
+      "note": "Climb the ridge behind the village toward Nangkartshang for as long as it feels comfortable, then come down for lunch. This rest day matters as much for you as for anyone who flew in."
+    },
+    {
+      "day": 15,
+      "title": "Dingboche to Lobuche",
+      "from": "dingboche",
+      "to": "lobuche",
+      "via": ["thukla"],
+      "sleep": 4940,
+      "hours": [5, 6],
+      "km": 9,
+      "kind": "trek",
+      "note": "A broad terrace to Thukla, the steep moraine above it with its rows of memorials to climbers, then a level stretch beside the glacier to Lobuche. Expect a poor night's sleep at 4,940 m; almost everyone has one."
+    },
+    {
+      "day": 16,
+      "title": "Lobuche to Gorak Shep and Everest Base Camp",
+      "from": "lobuche",
+      "to": "gorak-shep",
+      "via": ["everest-base-camp"],
+      "sleep": 5164,
+      "high": 5364,
+      "hours": [7, 8],
+      "km": 13,
+      "kind": "summit",
+      "note": "Reach Gorak Shep by late morning, leave your pack and go on across the rubble of the Khumbu Glacier to base camp, the end of the trail you began in Jiri. Turn back by early afternoon whatever point you have reached."
+    },
+    {
+      "day": 17,
+      "title": "Kala Patthar, then down to Pheriche",
+      "from": "gorak-shep",
+      "to": "pheriche",
+      "via": ["kala-patthar", "lobuche", "thukla"],
+      "sleep": 4240,
+      "high": 5545,
+      "hours": [7, 8],
+      "km": 15,
+      "kind": "summit",
+      "note": "A cold climb to Kala Patthar before sunrise for the view of Everest that base camp does not give, breakfast at Gorak Shep, then a long descent past Lobuche and Thukla to Pheriche."
+    },
+    {
+      "day": 18,
+      "title": "Pheriche to Namche Bazaar",
+      "from": "pheriche",
+      "to": "namche-bazaar",
+      "via": ["pangboche", "tengboche"],
+      "sleep": 3440,
+      "hours": [6, 7],
+      "km": 20,
+      "kind": "trek",
+      "note": "Down through Pangboche and Tengboche to Namche, with the climbs to the monastery and from the river still to do. A long day, though by now your legs are well up to it."
+    },
+    {
+      "day": 19,
+      "title": "Namche to Lukla",
+      "from": "namche-bazaar",
+      "to": "lukla",
+      "via": ["monjo", "phakding"],
+      "sleep": 2860,
+      "hours": [6, 7],
+      "km": 19,
+      "kind": "trek",
+      "note": "Down the Namche hill and along the valley to Chheplung, where the trail you came in on branches off below. Carry on up to Lukla and reconfirm your flight at the airline office."
+    },
+    {
+      "day": 20,
+      "title": "Fly out from Lukla",
+      "from": "lukla",
+      "to": "kathmandu",
+      "sleep": 1400,
+      "hours": [1, 1],
+      "kind": "transfer",
+      "mode": "flight",
+      "note": "Most people fly out, to Kathmandu or to Manthali. If flights are grounded you already know the alternative: two days' walk back down to the road at Thamdanda or Kharikhola and a jeep from there."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Altitude above Namche",
+      "text": "Walking in makes you fit, not acclimatized: the highest point before Namche is 3,530 m and you do not sleep there. Above Namche you face the same risks as people who flew to Lukla. Keep both rest days, and go down if symptoms get worse."
+    },
+    {
+      "title": "Jeep tracks and road building",
+      "text": "Roads now cut the old trail between Jiri and Kinja and again from Ringmo to beyond Kharikhola. Expect dust, vehicles and, in places, diggers and landslide debris. Where the footpath and the track part, the footpath is usually the shorter and steeper line."
+    },
+    {
+      "title": "Mule trains south of Lukla",
+      "text": "Between Kharikhola and Chheplung the trail is the supply line for Khumbu. Long mule trains pass on narrow ledges and churn the path to mud after rain. Stand on the uphill side and wait for the whole train to go by."
+    },
+    {
+      "title": "Heat low down, ice high up",
+      "text": "The valley floors at Kinja and the Dudh Koshi bridge are hot from April to September, while the Lamjura La holds snow and ice from December to March. Carry enough water for the long climbs and light traction spikes in winter."
+    },
+    {
+      "title": "The flight out of Lukla",
+      "text": "Cloud at Lukla cancels flights for a day or more at a time. Leave spare days before your international flight, or plan to walk back out to the road."
+    }
+  ],
+  "tips": [
+    "Bring all your cash from Kathmandu. Jiri has banks, but there is no dependable cash machine between there and Namche.",
+    "Lodges in Solu are family homes with a few rooms, cheaper and quieter than in Khumbu. Out of season some close, so ask each morning what is open ahead.",
+    "Between the Taksindu La and the Dudh Koshi you lose almost 1,600 m. Use two poles and take the descent slowly.",
+    "The Gaurishankar permit can be bought in Kathmandu or at the Shivalaya checkpost. The national park and Khumbu municipality permits are both issued at Monjo.",
+    "Start walking by seven. Mornings are clear and cool; by early afternoon the low valleys are hot and the passes are in cloud.",
+    "Heights quoted for the Solu villages vary by 100 m or more between maps, and the road-head moves every year. Ask in Kathmandu how far buses and jeeps are running before you fix your first day."
+  ],
+  "variants": [
+    {
+      "name": "Start at Shivalaya or Bhandar",
+      "text": "Stay on the bus to Shivalaya and begin with day 3, or take a jeep to Bhandar in the dry season and begin with day 4. This is what most people now do, and it saves one or two days."
+    },
+    {
+      "name": "Join from Phaplu or Kharikhola",
+      "text": "Jeeps from Kathmandu reach Salleri and Phaplu in a day and continue to Kharikhola or Thamdanda when the track is open. Starting there cuts the walk-in to between two and five days but misses the Lamjura La."
+    },
+    {
+      "name": "Add Pikey Peak",
+      "text": "From Junbesi, take two days to climb to Jase Bhanjyang and the 4,065 m summit of Pikey Peak for a wide view of the Everest range, then return to Junbesi and carry on."
+    },
+    {
+      "name": "Walk out as well",
+      "text": "Skip the Lukla flight and walk back down through Surke and Paiya to the road at Thamdanda or Kharikhola in two days, then take a jeep to Kathmandu by way of Salleri."
+    }
+  ],
+  "related": ["everest-base-camp", "pikey-peak", "gokyo-lakes", "everest-three-passes", "tsho-rolpa"],
+  "confidence": "medium"
+}

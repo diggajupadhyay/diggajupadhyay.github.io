@@ -1,0 +1,176 @@
+{
+  "slug": "pikey-peak",
+  "name": "Pikey Peak",
+  "aka": ["Pike Peak", "Pikey Danda", "Pikey Peak Trek"],
+  "region": "everest",
+  "tagline": "A week in lower Solu, climbing to a 4,065 m sunrise over the Everest range",
+  "summary": "A road-access teahouse trek along the ridges of lower Solu to the 4,065 m summit of Pikey Peak, then down to the Sherpa village of Junbesi and out from Phaplu.",
+  "intro": [
+    "Pikey Peak is the highest hill in lower Solu, the farmed Sherpa country south of the Everest national park. Its grassy summit stands clear of everything around it, so the sunrise view covers a long arc of the Himalaya: Gaurishankar and the Numbur range close at hand, the Everest group to the north-east and, when the air is clean, Makalu and Kanchenjunga beyond. The peak is named for a Sherpa clan deity, and prayer flags and cairns cover both of its tops.",
+    "The usual route starts from the road at Dhap, follows the ridge north for two days through pine and rhododendron forest, sleeps below the summit and comes down to Junbesi, one of the best-kept villages in Solu, before finishing at Phaplu. There is no flight to depend on and no national park fee, and you will meet far fewer trekkers than in Khumbu. In March and April the rhododendrons flower along most of the ridge.",
+    "It is a moderate trek, but not a stroll. A jeep lifts you from 1,400 m to about 2,850 m on the first day and you sleep at 3,640 m on the third, so mild altitude symptoms are common at the base camp. Lodges are family-run and simple, the ridge can hold snow from December to March, and the first two days share a dusty jeep track for long stretches."
+  ],
+  "days": 7,
+  "daysRange": [5, 9],
+  "distanceKm": 60,
+  "maxAlt": { "m": 4065, "place": "pikey-peak" },
+  "difficulty": "moderate",
+  "difficultyNote": "Ridge trails and jeep track at moderate distances, with one 800 m gain to sleep at 3,640 m and a pre-dawn climb to 4,065 m.",
+  "style": ["teahouse"],
+  "start": "dhap",
+  "end": "phaplu",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "Dhap lies on the road from Okhaldhunga to Salleri, a full day's drive from Kathmandu. Shared jeeps bound for Salleri leave the capital before dawn and will drop you there. The trek ends at Phaplu, where jeeps leave for Kathmandu early each morning and a flight operates on some days.",
+    "options": [
+      { "mode": "jeep", "from": "kathmandu", "to": "dhap", "time": "8–9 h", "note": "Shared jeeps, and a slower bus, follow the BP Highway to Khurkot, the Sun Koshi to Ghurmi and the hill road through Okhaldhunga. Book a seat the day before." },
+      { "mode": "jeep", "from": "phaplu", "to": "kathmandu", "time": "9–10 h", "note": "The way home, on the same road. Jeeps leave Phaplu and Salleri at about five in the morning." },
+      { "mode": "flight", "from": "phaplu", "to": "kathmandu", "time": "30 min", "note": "Flights are few and often cancelled. Check what is operating before you count on one." }
+    ]
+  },
+  "seasons": {
+    "best": [3, 4, 10, 11, 12],
+    "good": [1, 2, 5, 9],
+    "hard": [6, 7, 8],
+    "note": "October to December gives the clearest mornings; March and April add rhododendron bloom, with more haze. January and February are cold, and in some years snow covers the ridge above about 3,300 m, but the trek stays open when higher routes close. From June to August rain, leeches and cloud remove the reason for coming."
+  },
+  "permits": ["tims"],
+  "guide": {
+    "rule": "strongly-recommended",
+    "note": "Pikey lies outside the national parks and conservation areas, and nobody checks for a guide on this ridge. On paper the TIMS card for the route is tied to the Nepal Tourism Board rule of April 2023 that foreign trekkers walk with a licensed guide; in practice many people go independently. A guide earns the fee where the footpath keeps leaving and rejoining the jeep track above Jhapre, in the fog that settles on the ridge most afternoons, and by phoning ahead to lodges that open only when someone is expected."
+  },
+  "highlights": [
+    "Sunrise from 4,065 m over Everest, Makalu, Numbur and Gaurishankar",
+    "Rhododendron and fir forest along the ridge, in flower in March and April",
+    "Mani walls, chortens and small monasteries on the approach",
+    "Junbesi village and the monastery at Thupten Chholing",
+    "No flight needed and very few other trekkers"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive from Kathmandu to Dhap",
+      "from": "kathmandu",
+      "to": "dhap",
+      "sleep": 2850,
+      "hours": [8, 10],
+      "kind": "transfer",
+      "mode": "jeep",
+      "note": "Leave before dawn. The road follows the BP Highway to Khurkot and the Sun Koshi to Ghurmi, then climbs through Okhaldhunga to the ridge at Dhap. You step out about 1,450 m higher than you started, so keep the evening quiet."
+    },
+    {
+      "day": 2,
+      "title": "Dhap to Jhapre",
+      "from": "dhap",
+      "to": "jhapre",
+      "sleep": 2820,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "The route keeps to the ridge north of Dhap through the hamlet of Sigane, mostly on the jeep track with footpath short-cuts across its bends. Farmland and pine give way to forest, and Everest and Numbur are on the skyline by the time you reach Jhapre."
+    },
+    {
+      "day": 3,
+      "title": "Jhapre to Pikey Base Camp",
+      "from": "jhapre",
+      "to": "pikey-base-camp",
+      "sleep": 3640,
+      "hours": [5, 6],
+      "km": 14,
+      "kind": "trek",
+      "note": "Follow the track to Bhulbhule, then leave it for a forest trail along the ridge, past mani walls and out onto yak pasture that leads round the hillside to the lodges. You gain 800 m of sleeping height, so expect a mild headache and drink plenty."
+    },
+    {
+      "day": 4,
+      "title": "Pikey Peak at sunrise, then down to Junbesi",
+      "from": "pikey-base-camp",
+      "to": "junbesi",
+      "via": ["pikey-peak", "jase-bhanjyang"],
+      "sleep": 2700,
+      "high": 4065,
+      "hours": [6, 8],
+      "km": 16,
+      "kind": "summit",
+      "note": "Start by headlamp for the 425 m climb to the summit, about ninety minutes, and be there for sunrise. Afterwards follow the trail round to the saddle at Jase Bhanjyang and descend through forest to meet the old Jiri trail above Junbesi. A long day, nearly all of it downhill."
+    },
+    {
+      "day": 5,
+      "title": "Junbesi and Thupten Chholing monastery",
+      "from": "junbesi",
+      "to": "junbesi",
+      "via": ["thupten-chholing"],
+      "sleep": 2700,
+      "high": 2920,
+      "hours": [3, 4],
+      "kind": "rest",
+      "note": "A rest day with a purpose. Walk an hour and a half up the valley to Thupten Chholing, a large monastery with several hundred monks and nuns, and come back for lunch. Junbesi's own monastery and lanes fill the afternoon."
+    },
+    {
+      "day": 6,
+      "title": "Junbesi to Phaplu",
+      "from": "junbesi",
+      "to": "phaplu",
+      "sleep": 2413,
+      "hours": [4, 5],
+      "km": 13,
+      "kind": "trek",
+      "note": "Down the Junbesi Khola through farms and pine forest, partly on the jeep road, to the airstrip town of Phaplu. Book tomorrow's jeep seat as soon as you arrive; they leave very early."
+    },
+    {
+      "day": 7,
+      "title": "Drive from Phaplu to Kathmandu",
+      "from": "phaplu",
+      "to": "kathmandu",
+      "sleep": 1400,
+      "hours": [9, 11],
+      "kind": "transfer",
+      "mode": "jeep",
+      "note": "Jeeps leave around five in the morning and reach Kathmandu by late afternoon, traffic and road works allowing. If a flight is operating and the sky is clear, the journey takes half an hour instead."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Altitude at the base camp",
+      "text": "You go from Kathmandu to a bed at 3,640 m in three days, the first of them by jeep. Headache, poor sleep and loss of appetite are common at the base camp. If the symptoms are more than mild, leave out the summit and go down to Jhapre or on to Junbesi."
+    },
+    {
+      "title": "Cold, wind and snow on the ridge",
+      "text": "The summit ridge is exposed. Before dawn in autumn it is well below freezing with a strong wind, and from December to March snow can cover the trail above 3,300 m. Carry a warm jacket, hat and gloves whatever the season."
+    },
+    {
+      "title": "Fog and unmarked junctions",
+      "text": "Cloud rises onto the ridge most afternoons, and the trail crosses jeep tracks and herders' paths with few signs. Do your walking in the morning, keep the group together and ask at each lodge about the junctions ahead."
+    },
+    {
+      "title": "The road journey",
+      "text": "The drive is eight to ten hours each way on mountain roads with long rough sections. Use a reputable jeep operator, avoid travelling after dark and expect delays from landslides in the monsoon months."
+    }
+  ],
+  "tips": [
+    "Carry cash for the whole trek. The only cash machines are in Salleri, close to the end.",
+    "Take a filter or purification tablets and carry two litres on the ridge days. In the dry months there are few springs between Jhapre and the base camp.",
+    "Lodges at the base camp are small. In October, November and April have someone phone ahead from Jhapre.",
+    "Pikey is outside the national park, so there is no park fee. The TIMS card is the only paperwork and nothing on the route checks it; an agency arranges it if you go with a guide.",
+    "Bring a headlamp and a proper down jacket for the summit morning, even if the days feel warm.",
+    "Stage plans for Pikey run from five to nine days, and the heights quoted for Dhap, Jhapre and Jase Bhanjyang differ by up to 100 m between maps. Use the figures here as a guide."
+  ],
+  "variants": [
+    {
+      "name": "Six days",
+      "text": "Leave out the rest day in Junbesi and walk straight on to Phaplu."
+    },
+    {
+      "name": "A night at Jase Bhanjyang or Loding",
+      "text": "Stop at the saddle after the summit, or continue down to the hamlet of Loding, to break the long descent to Junbesi into two easier days."
+    },
+    {
+      "name": "In reverse from Phaplu",
+      "text": "Walking from Phaplu through Junbesi to Jase Bhanjyang raises your sleeping height more gently: 2,413 m, 2,700 m, then 3,520 m. You climb the peak from the north and finish with the ridge walk to Dhap."
+    },
+    {
+      "name": "Out over the Taksindu La",
+      "text": "From Junbesi follow the old Jiri trail east to the Taksindu La and Nunthala and take a jeep from there. It adds a day and a first look at the route into Khumbu."
+    }
+  ],
+  "related": ["jiri-to-everest-base-camp", "everest-view-trek", "tsho-rolpa", "everest-base-camp"],
+  "confidence": "medium"
+}

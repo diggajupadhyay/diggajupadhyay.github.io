@@ -1,0 +1,255 @@
+{
+  "slug": "manaslu-circuit",
+  "name": "Manaslu Circuit",
+  "aka": ["Around Manaslu", "Larkya La Trek"],
+  "region": "manaslu",
+  "tagline": "Around the world's eighth highest mountain by the 5,106 m Larkya La",
+  "summary": "A two-week circuit up the Budhi Gandaki gorge to the Tibetan-influenced villages of Nubri and over the Larkya La to the Annapurna side, with rest days at Sama Gaun and Samdo.",
+  "intro": [
+    "The Manaslu Circuit follows one river, the Budhi Gandaki, from hot, terraced mid-hills at under 900 m to its source glaciers below the Tibet border. The first days thread a deep gorge on a trail cut into cliffs and strung with suspension bridges. Above Deng the valley opens into Nubri, a line of stone villages with mani walls, monasteries and wide views of Manaslu, Himalchuli and Ngadi Chuli.",
+    "The crux is the Larkya La, a long, cold crossing at 5,106 m that starts before dawn from the huts at Dharamsala and ends eight to ten hours later in Bhimtang. The pass is not technical in normal conditions, but it is high, exposed and far from help, and snow can close it for days. The standard plan builds in two acclimatization days, at Sama Gaun and Samdo, and both are worth keeping.",
+    "This is a restricted area, so you trek with a licensed guide on a permit arranged by an agency. Lodges now cover every stage, though rooms and menus are simpler than on the Annapurna Circuit and beds at Dharamsala are limited. Roads are advancing at both ends: vehicles reach Machha Khola on the way in and Dharapani, often Tilije, on the way out, which has cut two or three days from the trek described in older guidebooks."
+  ],
+  "days": 13,
+  "daysRange": [12, 18],
+  "distanceKm": 150,
+  "maxAlt": { "m": 5106, "place": "larkya-la" },
+  "difficulty": "challenging",
+  "difficultyNote": "Long days in a rough gorge, then six nights above 3,500 m and a 5,106 m pass crossed in one eight to ten hour push with no lodge on the way.",
+  "style": ["teahouse"],
+  "start": "machha-khola",
+  "end": "dharapani",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "Drive from Kathmandu to Machha Khola in a long day, by local bus or private jeep through Dhading Besi and Arughat. The trek ends on the Annapurna Circuit road at Dharapani, where jeeps run down to Besisahar for a bus or car back to Kathmandu or Pokhara.",
+    "options": [
+      { "mode": "bus", "from": "kathmandu", "to": "machha-khola", "time": "8–10 h", "note": "Daily local buses via Arughat and Soti Khola; slow, crowded and rough beyond Arughat." },
+      { "mode": "jeep", "from": "kathmandu", "to": "machha-khola", "time": "7–9 h", "note": "A private jeep is the usual choice for groups. After heavy rain the road can stop short at Soti Khola or Arughat." },
+      { "mode": "jeep", "from": "dharapani", "to": "besisahar", "time": "3–4 h", "note": "Shared jeeps leave when full and follow a rough road down the Marsyangdi gorge." },
+      { "mode": "bus", "from": "besisahar", "to": "kathmandu", "time": "6–7 h", "note": "Regular buses and microbuses. Pokhara is four to five hours from Besisahar." }
+    ]
+  },
+  "seasons": {
+    "best": [4, 5, 10, 11],
+    "good": [3, 9, 12],
+    "hard": [1, 2, 6, 7, 8],
+    "note": "October and November have the most settled weather and the busiest lodges. April and May are warmer and hazier, with rhododendrons in the forest. March and December are possible if the pass is open; from late December to February snow usually closes the Larkya La and the high lodges shut. In the monsoon the gorge is prone to landslides and floods."
+  },
+  "permits": ["rap-manaslu", "mcap", "acap"],
+  "guide": {
+    "rule": "required",
+    "note": "Manaslu is a restricted area: the permit comes only through a registered agency and a licensed guide must walk with you. Since 22 March 2026 the Department of Immigration issues it to a single trekker as well, so you no longer need a partner to apply. On this route the guide earns the fee on the pass day, setting the pace in the dark, judging snow and weather and knowing when to turn back."
+  },
+  "highlights": [
+    "Crossing the Larkya La with Himlung, Cheo Himal and Annapurna II ahead",
+    "Manaslu's twin summits at sunrise from Lho and Shyala",
+    "The Nubri villages of Sama Gaun and Samdo and their monasteries",
+    "Day walks to Birendra Tal, Pungyen Gompa or Manaslu Base Camp",
+    "The Budhi Gandaki gorge, from subtropical forest to glacier in a week",
+    "Far fewer trekkers than on the Annapurna or Everest trails"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive from Kathmandu to Machha Khola",
+      "from": "kathmandu",
+      "to": "machha-khola",
+      "via": ["arughat", "soti-khola"],
+      "sleep": 870,
+      "hours": [8, 10],
+      "kind": "transfer",
+      "mode": "drive",
+      "note": "A full day on the road: highway to the Dhading turn-off, then slower and rougher through Arughat and Soti Khola, with the last hours on a narrow dirt track above the river. After heavy rain vehicles may stop short and you walk the rest."
+    },
+    {
+      "day": 2,
+      "title": "Machha Khola to Jagat",
+      "from": "machha-khola",
+      "to": "jagat-manaslu",
+      "via": ["khorlabesi", "tatopani-manaslu", "dobhan-manaslu"],
+      "sleep": 1340,
+      "hours": [6, 7],
+      "km": 22,
+      "kind": "trek",
+      "note": "A long day in the gorge, up and down over spurs, across gravel bars and along walkways fixed to the cliff. The hot spring at Tatopani is a good place to cool your feet. This stretch was badly damaged by the October 2026 flood; expect signed diversions and rough temporary trail."
+    },
+    {
+      "day": 3,
+      "title": "Jagat to Deng",
+      "from": "jagat-manaslu",
+      "to": "deng",
+      "via": ["philim"],
+      "sleep": 1860,
+      "hours": [6, 7],
+      "km": 20,
+      "kind": "trek",
+      "note": "Permits are checked as you leave Jagat. Climb to the large Gurung village of Philim, pass the turning for Tsum where the Siyar Khola joins from the right, then enter a narrow gorge of bamboo and pine, crossing the river several times before the short climb to Deng."
+    },
+    {
+      "day": 4,
+      "title": "Deng to Namrung",
+      "from": "deng",
+      "to": "namrung",
+      "via": ["ghap"],
+      "sleep": 2630,
+      "hours": [6, 7],
+      "km": 19.5,
+      "kind": "trek",
+      "note": "The valley turns west and the villages become Tibetan in character, with carved mani walls at Bihi and Ghap. After Ghap the trail climbs for about two hours through tall forest of fir, oak and rhododendron, loud with the river, to the checkpost and lodges at Namrung."
+    },
+    {
+      "day": 5,
+      "title": "Namrung to Lho",
+      "from": "namrung",
+      "to": "lho",
+      "sleep": 3180,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "A short day on purpose now that you are passing 3,000 m. The trail climbs through the barley terraces of Lihi and Sho to Lho, with Himalchuli and then Manaslu coming into view. Walk up to Ribung Gompa in the afternoon for the view."
+    },
+    {
+      "day": 6,
+      "title": "Lho to Sama Gaun",
+      "from": "lho",
+      "to": "sama-gaun",
+      "via": ["shyala"],
+      "sleep": 3530,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "An easy morning through pine and rhododendron forest to the open terrace of Shyala, ringed by peaks, then across the stream from the Pungyen glacier to the fields and long main street of Sama Gaun. Arrive by lunch and rest."
+    },
+    {
+      "day": 7,
+      "title": "Acclimatization day in Sama Gaun",
+      "from": "sama-gaun",
+      "to": "sama-gaun",
+      "via": ["pungyen-gompa"],
+      "sleep": 3530,
+      "high": 4050,
+      "hours": [5, 6],
+      "kind": "acclimatization",
+      "note": "Walk up to Pungyen Gompa, on a yak pasture under Manaslu's east face, and come back down for the night. The short alternative is Birendra Tal, under an hour from the village. The long one is Manaslu Base Camp, a hard seven to eight hours that suits only people already going strongly."
+    },
+    {
+      "day": 8,
+      "title": "Sama Gaun to Samdo",
+      "from": "sama-gaun",
+      "to": "samdo",
+      "sleep": 3875,
+      "hours": [3, 4],
+      "km": 8,
+      "kind": "trek",
+      "note": "A gentle walk up the wide valley past long mani walls, with juniper and birch giving way to open yak pasture. A wooden bridge and a short climb bring you to Samdo by midday. Keep the pace slow; the afternoon is for rest."
+    },
+    {
+      "day": 9,
+      "title": "Acclimatization day in Samdo",
+      "from": "samdo",
+      "to": "samdo",
+      "sleep": 3875,
+      "high": 4500,
+      "hours": [3, 5],
+      "kind": "acclimatization",
+      "note": "Climb the hillside behind the village as far as feels comfortable; most people turn round somewhere between 4,300 and 4,600 m, with a view back to Manaslu. The full-day walk towards the Tibet border is an option only if you are going well."
+    },
+    {
+      "day": 10,
+      "title": "Samdo to Dharamsala",
+      "from": "samdo",
+      "to": "dharamsala",
+      "sleep": 4460,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "Cross the Budhi Gandaki, here little more than a stream, and climb steadily above the moraine of the Larkya glacier to the huts and tents of Dharamsala. It is a short day on purpose. Eat early, lay out your warm layers and headtorch, and try to sleep."
+    },
+    {
+      "day": 11,
+      "title": "Over the Larkya La to Bhimtang",
+      "from": "dharamsala",
+      "to": "bhimtang",
+      "via": ["larkya-la"],
+      "sleep": 3720,
+      "high": 5106,
+      "hours": [8, 10],
+      "kind": "pass",
+      "note": "Leave between 3 and 4 am. Four to five hours of gradual climbing over moraine and past frozen ponds lead to the prayer flags at the top. The descent is steep, loose and often icy for the first hour, then eases along the moraine to Bhimtang. There is almost no shelter and no reliable water on the way."
+    },
+    {
+      "day": 12,
+      "title": "Bhimtang to Dharapani",
+      "from": "bhimtang",
+      "to": "dharapani",
+      "via": ["gho", "tilije"],
+      "sleep": 1860,
+      "hours": [7, 8],
+      "kind": "trek",
+      "note": "Cross the moraine and the stream below Bhimtang, then descend through tall forest of rhododendron, pine and oak to Gho and the stone village of Tilije. A jeep track covers the last hour and a half to the Annapurna checkpoint at Dharapani. It is 1,860 m of descent in a day; if your knees complain, stop at Tilije."
+    },
+    {
+      "day": 13,
+      "title": "Jeep to Besisahar and drive to Kathmandu",
+      "from": "dharapani",
+      "to": "kathmandu",
+      "via": ["besisahar"],
+      "sleep": 1400,
+      "hours": [9, 11],
+      "kind": "transfer",
+      "mode": "drive",
+      "note": "Shared jeeps take three to four rough hours down the Marsyangdi gorge to Besisahar, where you change to a bus, microbus or car for the six to seven hours to Kathmandu. It is a long day, and traffic on the highway makes the time unpredictable; many people break it with a night in Besisahar."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Altitude on the Larkya La",
+      "text": "The pass day starts at 4,460 m and climbs to 5,106 m, with no road within a day's walk on either side and helicopters dependent on the weather. Do not leave Samdo with a headache that has not cleared, and turn back to Samdo if someone is struggling on the climb; do not push them over the top."
+    },
+    {
+      "title": "Snow and weather on the pass",
+      "text": "Fresh snow hides the trail and the marker poles, and the wind on top is severe from late morning. Trekkers have had to be rescued here after sudden snowfall. Carry microspikes outside the warmest weeks, wait a day at Samdo if the forecast is bad and never cross alone."
+    },
+    {
+      "title": "Landslides and rockfall in the gorge",
+      "text": "Between Machha Khola and Deng the trail crosses active landslide zones and passes under loose cliffs. Cross them one at a time without stopping, and stand on the uphill side when mule trains pass. Avoid this section during and just after heavy rain."
+    },
+    {
+      "title": "Flood damage from autumn 2026",
+      "text": "A flood on 11 October 2026 destroyed bridges and long stretches of trail between Machha Khola and Philim, and a flash flood in September took out a bridge near Namrung. The circuit was reopened with caution later in October, on temporary crossings and signed diversions. Ask your agency or the Manaslu Conservation Area office how the repairs stand before you fix dates."
+    },
+    {
+      "title": "Cold and crowding at Dharamsala",
+      "text": "The huts at 4,460 m have thin walls and shared rooms, with tents for the overflow, and in October there can be more trekkers than beds. Bring a sleeping bag rated to minus 15 °C and get there early."
+    }
+  ],
+  "tips": [
+    "Bring all your cash from Kathmandu; there are no cash machines on the route until Besisahar.",
+    "Keep both rest days. If you are short of time, save it on the road days at either end, not at Sama Gaun or Samdo.",
+    "Carry microspikes and a headtorch with spare batteries for the pass, and gaiters if there is snow.",
+    "Charging, Wi-Fi and hot water cost extra and get scarce above Samdo; carry a power bank.",
+    "Treat all water. Above Sama Gaun, fill bottles the night before, because taps and streams freeze by morning.",
+    "Village heights differ between maps by up to 100 m, and the lower trail is being rebuilt after the 2026 floods, so allow for longer days there than the times given here."
+  ],
+  "variants": [
+    {
+      "name": "With Tsum Valley",
+      "text": "Turn east after Philim and spend six to eight days in Tsum before rejoining the circuit below Deng. It needs the separate Tsum permit and makes a trek of about three weeks."
+    },
+    {
+      "name": "Start from Soti Khola or Arughat",
+      "text": "Walking the road section adds one or two hot days and little else, but it is the fallback when the road beyond Soti Khola is closed."
+    },
+    {
+      "name": "Namrung to Shyala in one day",
+      "text": "Some groups walk past Lho to Shyala and take a shorter morning to Sama Gaun. It is a bigger gain in sleeping height, so only do it if you slept well at Namrung."
+    },
+    {
+      "name": "Break the descent at Tilije",
+      "text": "Stop at Tilije, five to six hours below Bhimtang, and walk the last hour and a half to Dharapani next morning, or hire a jeep from the village when the track is open. It adds a day and spares your knees after the pass."
+    },
+    {
+      "name": "Continue on the Annapurna Circuit",
+      "text": "At Dharapani you can turn up the Marsyangdi towards Manang and the Thorong La instead of driving out. You are already acclimatized, but ask your agency which extra paperwork the Annapurna section needs."
+    }
+  ],
+  "related": ["tsum-valley", "annapurna-circuit", "nar-phu-valley", "dhaulagiri-circuit"],
+  "confidence": "medium"
+}

@@ -1,0 +1,242 @@
+{
+  "slug": "gokyo-lakes",
+  "name": "Gokyo Lakes & Gokyo Ri",
+  "aka": ["Gokyo Valley", "Gokyo Ri Trek"],
+  "region": "everest",
+  "tagline": "A quieter valley than base camp, ending at glacial lakes and Gokyo Ri",
+  "summary": "From Lukla and Namche up the Dudh Koshi to the lakes at Gokyo, with a climb of Gokyo Ri (5,357 m), a day walk to the fifth lake and a return through Phortse.",
+  "intro": [
+    "The Gokyo trail leaves the Everest Base Camp route an hour and a half above Namche and follows the Dudh Koshi to its source, the Ngozumpa Glacier, the longest in Nepal. A chain of lakes lies along the glacier's western edge, and the lodges of Gokyo stand on the shore of the third at 4,790 m. From Gokyo Ri, the hill behind them, you can see four of the six highest mountains on earth: Everest, Lhotse, Makalu and Cho Oyu.",
+    "It is a shorter trek than base camp and has fewer people on it, but it is not easier on the body. The usual stages climb from Namche to 4,790 m in three walking days, faster than the main trail, and this valley has a long record of trekkers and porters falling ill for exactly that reason. The plan below adds a second night at Machhermo. Take it, or break the climb in some other way; do not drop it to save a day.",
+    "Lodges are fewer and plainer than on the base camp side, but every stage has them, and Gokyo itself has bakeries, Wi-Fi and stove-heated dining rooms. The route described here comes back down the east side of the valley through Phortse, a farming village off the main trail. With more days in hand, the Renjo La or the Cho La turns the trek into a loop."
+  ],
+  "days": 13,
+  "daysRange": [11, 15],
+  "distanceKm": 110,
+  "maxAlt": { "m": 5357, "place": "gokyo-ri" },
+  "difficulty": "challenging",
+  "difficultyNote": "Good trails and short stages, but a fast climb to three nights at 4,790 m and a 570 m ascent of Gokyo Ri.",
+  "style": ["teahouse"],
+  "start": "lukla",
+  "end": "lukla",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "The trek starts and ends at the Lukla airstrip. Morning flights go from Kathmandu or, in the busiest weeks of spring and autumn, from Manthali in Ramechhap. Cloud or wind cancels them often enough that a spare day belongs in every plan.",
+    "options": [
+      { "mode": "flight", "from": "kathmandu", "to": "lukla", "time": "35 min", "note": "Runs mainly outside the peak weeks, when the airlines shift most Lukla flights to Manthali." },
+      { "mode": "flight", "from": "manthali", "to": "lukla", "time": "20 min", "note": "Reach the airstrip by a four to five hour drive from Kathmandu, either overnight or the day before." },
+      { "mode": "jeep", "from": "kathmandu", "to": "lukla", "time": "1–2 days + 2 days' walk", "note": "By road to Salleri and on to Thamdanda when the track is open, then on foot through Paiya and Surke. The fallback when flights are not moving." }
+    ]
+  },
+  "seasons": {
+    "best": [3, 4, 5, 10, 11],
+    "good": [2, 9, 12],
+    "hard": [1, 6, 7, 8],
+    "note": "October and November have the clearest skies. The lakes are open water from about May to November and frozen from midwinter into April. Spring is warmer, with cloud building most afternoons. In January a few lodges at Gokyo stay open, but the trail is icy and nights are far below freezing."
+  },
+  "permits": ["sagarmatha-np", "khumbu-rm"],
+  "guide": {
+    "rule": "strongly-recommended",
+    "note": "Khumbu has not enforced the national guide requirement, so you can walk to Gokyo independently. A licensed guide is still worth the fee in this valley: the trail gains height faster than the base camp route, beds between Dole and Gokyo are limited, and someone who knows the early signs of altitude illness can turn you round before it becomes an evacuation."
+  },
+  "highlights": [
+    "Everest, Lhotse, Makalu and Cho Oyu from the top of Gokyo Ri",
+    "The third lake at Gokyo, blue-green in autumn and frozen white in early spring",
+    "Walking beside the Ngozumpa Glacier to the fifth lake",
+    "Forest between Phortse Tenga and Dole, where musk deer and pheasants are often seen",
+    "A night in Phortse, a working Sherpa village off the main trail"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Fly to Lukla, walk to Phakding",
+      "from": "lukla",
+      "to": "phakding",
+      "sleep": 2610,
+      "hours": [3, 4],
+      "km": 8,
+      "kind": "trek",
+      "note": "The flight is over by mid-morning. The trail drops through Chheplung to the Dudh Koshi and follows it to Phakding, so you finish the first afternoon 250 m lower than you started."
+    },
+    {
+      "day": 2,
+      "title": "Phakding to Namche Bazaar",
+      "from": "phakding",
+      "to": "namche-bazaar",
+      "via": ["monjo"],
+      "sleep": 3440,
+      "hours": [5, 6],
+      "km": 11,
+      "kind": "trek",
+      "note": "Several bridge crossings, a permit check at Monjo, then the 600 m hill from the last high bridge to Namche. Climb it at the pace of a loaded porter and you will arrive in better shape than those who hurried."
+    },
+    {
+      "day": 3,
+      "title": "Acclimatization day in Namche",
+      "from": "namche-bazaar",
+      "to": "namche-bazaar",
+      "via": ["everest-view-hotel"],
+      "sleep": 3440,
+      "high": 3880,
+      "hours": [3, 4],
+      "kind": "acclimatization",
+      "note": "Walk up to the ridge at 3,880 m for a first sight of Everest and come back down to sleep. Tomorrow's stage gains 600 m in one go, so do the walk even if you feel fine."
+    },
+    {
+      "day": 4,
+      "title": "Namche to Dole",
+      "from": "namche-bazaar",
+      "to": "dole",
+      "via": ["kyangjuma", "mong-la", "phortse-tenga"],
+      "sleep": 4038,
+      "hours": [5, 7],
+      "kind": "trek",
+      "note": "Leave the base camp trail at Sanasa and climb to the chorten at Mong La, lose 300 m through forest to Phortse Tenga, then climb for two hours past waterfalls, frozen in the colder months, to Dole. The last hour is where the height starts to tell."
+    },
+    {
+      "day": 5,
+      "title": "Dole to Machhermo",
+      "from": "dole",
+      "to": "machhermo",
+      "sleep": 4470,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "A short morning along open hillside through the yak pastures of Lhafarma and Luza, with Cho Oyu coming into view at the head of the valley. Walk slowly and be in Machhermo for lunch."
+    },
+    {
+      "day": 6,
+      "title": "Acclimatization day in Machhermo",
+      "from": "machhermo",
+      "to": "machhermo",
+      "sleep": 4470,
+      "hours": [2, 3],
+      "kind": "acclimatization",
+      "note": "Stay a second night. In the morning climb the ridge north of the lodges for an hour or so, for a view up the valley to Cho Oyu and the end of the Ngozumpa Glacier, then rest. If the rescue post is staffed, go to its afternoon altitude talk."
+    },
+    {
+      "day": 7,
+      "title": "Machhermo to Gokyo",
+      "from": "machhermo",
+      "to": "gokyo",
+      "sleep": 4790,
+      "hours": [3, 5],
+      "kind": "trek",
+      "note": "Beyond Pangka the trail climbs a stone staircase beside the stream that drains the glacier, then levels out past the first and second lakes to Gokyo on the third. Not far, but at this height it takes longer than the distance suggests."
+    },
+    {
+      "day": 8,
+      "title": "Gokyo Ri",
+      "from": "gokyo",
+      "to": "gokyo",
+      "via": ["gokyo-ri"],
+      "sleep": 4790,
+      "high": 5357,
+      "hours": [3, 5],
+      "kind": "summit",
+      "note": "The path crosses the stream at the north end of the lake and zigzags 570 m up the hillside. Allow two to three hours up and one down. Go before dawn for clear air, or after lunch on a settled day for evening light on Everest."
+    },
+    {
+      "day": 9,
+      "title": "Fourth and fifth lakes",
+      "from": "gokyo",
+      "to": "gokyo",
+      "via": ["gokyo-fourth-lake", "gokyo-fifth-lake"],
+      "sleep": 4790,
+      "high": 4990,
+      "hours": [5, 7],
+      "kind": "trek",
+      "note": "An easy hour up the trough between moraine and hillside to the fourth lake, then a rougher stretch to the fifth. Climb the moraine crest beside it for the view of Cho Oyu and Everest. Take lunch and water, and turn back by midday if cloud is building."
+    },
+    {
+      "day": 10,
+      "title": "Gokyo to Phortse by the east bank",
+      "from": "gokyo",
+      "to": "phortse",
+      "sleep": 3810,
+      "hours": [6, 8],
+      "kind": "trek",
+      "note": "Go back down past the lakes, cross the river below the glacier snout to Na and follow the east side of the valley through Thare, Thore and Konar. A long day of contouring with only a few basic tea houses. In snow or ice, descend through Machhermo and Dole instead."
+    },
+    {
+      "day": 11,
+      "title": "Phortse to Namche Bazaar",
+      "from": "phortse",
+      "to": "namche-bazaar",
+      "via": ["phortse-tenga", "mong-la", "kyangjuma"],
+      "sleep": 3440,
+      "high": 3973,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "Drop to the bridge at Phortse Tenga, climb 300 m back up to Mong La and follow the balcony trail to Namche. It is short enough to leave the afternoon free for a hot shower and the bakeries."
+    },
+    {
+      "day": 12,
+      "title": "Namche to Lukla",
+      "from": "namche-bazaar",
+      "to": "lukla",
+      "via": ["monjo", "phakding"],
+      "sleep": 2860,
+      "hours": [6, 7],
+      "km": 19,
+      "kind": "trek",
+      "note": "Down the Namche hill, along the rolling valley trail and up the final rise into Lukla. Go to the airline office when you arrive and reconfirm tomorrow's seat."
+    },
+    {
+      "day": 13,
+      "title": "Fly out from Lukla",
+      "from": "lukla",
+      "to": "kathmandu",
+      "sleep": 1400,
+      "hours": [1, 1],
+      "kind": "transfer",
+      "mode": "flight",
+      "note": "Flights to Kathmandu or Manthali start at first light when the weather allows. If Lukla is closed you wait for the next clear morning, share a helicopter or begin walking toward the road."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Altitude illness",
+      "text": "The Gokyo valley gains height faster than the base camp trail, and trekkers and porters are evacuated from Machhermo and Gokyo every season. Do not go up with a headache that has not cleared, and descend toward Dole or Phortse Tenga if symptoms get worse overnight."
+    },
+    {
+      "title": "Snow and avalanche-prone slopes",
+      "text": "After heavy snowfall the trail between Machhermo and the first lake runs beneath loaded slopes; an avalanche at Pangka in November 1995 killed more than twenty people. If a storm dumps snow while you are in the valley, stay where you are for a day and ask lodge owners before moving."
+    },
+    {
+      "title": "Lukla flights",
+      "text": "Flights stop whenever cloud closes the approach, sometimes for days at a time. Keep at least one spare day before any international connection, and two close to the monsoon."
+    },
+    {
+      "title": "Cold and wind at Gokyo",
+      "text": "Night temperatures at Gokyo fall to around minus 10 to minus 15 °C in spring and autumn, and the top of Gokyo Ri is windy even on clear days. Lodge bedrooms are unheated."
+    }
+  ],
+  "tips": [
+    "Carry all the cash you need from Kathmandu or Namche; nothing above Namche dispenses money.",
+    "Dole and Machhermo have far fewer beds than villages on the base camp trail. In October and April arrive by early afternoon or have a guide phone ahead.",
+    "At Gokyo, ask your lodge about the state of the east-bank trail before you commit to the descent through Phortse.",
+    "Sunlight off the lakes and old snow is fierce. Wear proper sunglasses and sunscreen even on cold days.",
+    "Treat all drinking water and aim for three to four litres a day; the dry air takes more out of you than you notice.",
+    "Maps disagree by up to 100 m on the heights of Dole, Machhermo and the upper lakes, and times on the east-bank trail to Phortse depend on its condition. Treat those figures as approximate."
+  ],
+  "variants": [
+    {
+      "name": "Return the same way",
+      "text": "Go down from Gokyo through Machhermo to Dole in four to five hours and on to Namche the next day. It takes the same number of days, has more lodges and is the better choice in snow."
+    },
+    {
+      "name": "Without the fifth lake day",
+      "text": "Drop day 9 for a twelve-day trip. You can still walk to the fourth lake and back in under three hours on the afternoon after Gokyo Ri."
+    },
+    {
+      "name": "Out over the Renjo La",
+      "text": "Cross the 5,360 m pass west of Gokyo to Lungden, then walk out through Thame to Namche in one long day or two short ones. It needs a settled forecast and an early start."
+    },
+    {
+      "name": "On to Everest Base Camp",
+      "text": "Cross the Ngozumpa Glacier to Thagnak and the Cho La to join the base camp trail near Lobuche. Allow four more days."
+    }
+  ],
+  "related": ["everest-base-camp-via-gokyo", "everest-three-passes", "everest-base-camp", "everest-view-trek"],
+  "confidence": "medium"
+}

@@ -1,0 +1,195 @@
+{
+  "slug": "annapurna-base-camp",
+  "name": "Annapurna Base Camp",
+  "aka": ["ABC", "Annapurna Sanctuary"],
+  "region": "annapurna",
+  "tagline": "Up the Modi Khola gorge into a ring of 7,000 and 8,000 m peaks",
+  "summary": "A week from Pokhara through Gurung villages and the Modi Khola gorge to the lodges at 4,130 m inside the Annapurna Sanctuary, returning by the Jhinu hot springs.",
+  "intro": [
+    "The Annapurna Sanctuary is a high glacial basin walled in by Annapurna I, Annapurna South, Hiunchuli, Gangapurna and Machhapuchhre, with a single way in: the gorge of the Modi Khola. The trek follows that river from the Gurung villages of Ghandruk and Chhomrong, through bamboo and rhododendron forest, to the lodges on the moraine at base camp. You go up and back by the same valley, so the days going down retrace the days going up.",
+    "Nothing on the route is technical, but it is not a gentle walk. The trail between Ghandruk and Bamboo is built largely of stone steps, and it loses height at every side stream before climbing again, so the daily ascent is much greater than the altitude figures suggest. Above Deurali the path crosses the run-out of avalanche gullies, and the last two days gain height quickly enough for many people to feel the altitude at base camp.",
+    "Roads have shortened the approach. Jeeps now reach Ghandruk and a point just across the bridge from Jhinu Danda, which is why most plans take seven or eight days from Pokhara rather than the ten or eleven of the old walk from Nayapul or Dhampus. Lodges are frequent and comfortable as far as Chhomrong and simpler in the gorge, where each stop has only a few houses and beds are worth reserving in October, November, March and April."
+  ],
+  "days": 8,
+  "daysRange": [6, 11],
+  "distanceKm": 62,
+  "maxAlt": { "m": 4130, "place": "annapurna-base-camp" },
+  "difficulty": "moderate",
+  "difficultyNote": "No technical ground and a top height of 4,130 m, but long flights of stone steps and repeated descents make the days harder than the distances suggest.",
+  "style": ["teahouse"],
+  "start": "ghandruk",
+  "end": "jhinu-danda",
+  "gateway": "pokhara",
+  "access": {
+    "summary": "Pokhara is the base. Most trekkers take a jeep or the local bus to Ghandruk by way of Nayapul and Kimche, and finish at the jeep track across the suspension bridge from Jhinu Danda. Both drives take about three hours and are rough beyond Nayapul.",
+    "options": [
+      { "mode": "jeep", "from": "pokhara", "to": "ghandruk", "time": "2.5–3 hr", "note": "Private or shared jeep to the stand below the village; the last 20 minutes are on foot." },
+      { "mode": "bus", "from": "pokhara", "to": "kimche", "time": "3.5–4 hr", "note": "Local buses from the Baglung bus park stop at Kimche, an hour's climb below Ghandruk." },
+      { "mode": "drive", "from": "pokhara", "to": "nayapul", "time": "1.5–2 hr", "note": "The old trailhead. Walking from here adds four to five hours, mostly beside the road, to Ghandruk." },
+      { "mode": "jeep", "from": "jhinu-danda", "to": "pokhara", "time": "3–3.5 hr", "note": "Jeeps wait at the roadhead across the long bridge. In the monsoon the track can be cut and you walk further down the valley." }
+    ]
+  },
+  "seasons": {
+    "best": [4, 10, 11],
+    "good": [3, 5, 9, 12],
+    "hard": [1, 2, 6, 7, 8],
+    "note": "October and November have the most settled weather. March and April bring rhododendron bloom lower down, but after a snowy winter they are also the main avalanche period above Deurali. December is cold and clear. In January and February snow often closes the trail above Deurali, and the monsoon means leeches, cloud and slippery steps."
+  },
+  "permits": ["acap", "tims"],
+  "guide": {
+    "rule": "required",
+    "note": "Since April 2023 the Nepal Tourism Board has required foreign trekkers in conservation areas to walk with a licensed guide, though checks on the trail are inconsistent. On this route a guide earns the fee above Deurali, by judging whether the avalanche section is safe to cross that morning and by holding beds in the small gorge lodges."
+  },
+  "highlights": [
+    "Sunrise on the south face of Annapurna I from base camp",
+    "The old Gurung quarter of Ghandruk",
+    "Machhapuchhre seen from directly below at its base camp",
+    "Bamboo and rhododendron forest in the Modi Khola gorge",
+    "Hot spring pools beside the river at Jhinu Danda"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive to Ghandruk",
+      "from": "pokhara",
+      "to": "ghandruk",
+      "via": ["nayapul", "kimche"],
+      "sleep": 1940,
+      "hours": [3, 4],
+      "kind": "transfer",
+      "mode": "jeep",
+      "note": "About three hours by jeep through Nayapul and Kimche to the stand below the village, then a 20-minute climb on stone steps. Spend the afternoon in the old upper village and the Gurung museum."
+    },
+    {
+      "day": 2,
+      "title": "Ghandruk to Chhomrong",
+      "from": "ghandruk",
+      "to": "chhomrong",
+      "via": ["komrong"],
+      "sleep": 2170,
+      "high": 2250,
+      "hours": [5, 6],
+      "km": 9,
+      "kind": "trek",
+      "note": "Up for an hour to Komrong Danda, steeply down about 450 m to the Kimrong Khola, then a long traverse and climb to Chhomrong. A short day on the map that feels like a full one. Permits are checked on arrival."
+    },
+    {
+      "day": 3,
+      "title": "Chhomrong to Dovan",
+      "from": "chhomrong",
+      "to": "dovan-annapurna",
+      "via": ["sinuwa", "bamboo-annapurna"],
+      "sleep": 2600,
+      "hours": [5, 6],
+      "km": 11,
+      "kind": "trek",
+      "note": "Down several hundred stone steps to the Chhomrong Khola bridge and up again to Sinuwa, then rolling forest trail to Bamboo and another hour to Dovan. Remember those steps: on the way back you climb them at the end of a long day."
+    },
+    {
+      "day": 4,
+      "title": "Dovan to Deurali",
+      "from": "dovan-annapurna",
+      "to": "deurali-annapurna",
+      "via": ["himalaya-hotel"],
+      "sleep": 3230,
+      "hours": [3, 4],
+      "km": 6,
+      "kind": "trek",
+      "note": "A short day on purpose. The trail climbs through the last of the forest past Himalaya and the overhanging rock of Hinku Cave to Deurali. Stopping here keeps the height gain modest and puts you at the start of the avalanche section first thing tomorrow."
+    },
+    {
+      "day": 5,
+      "title": "Deurali to Annapurna Base Camp",
+      "from": "deurali-annapurna",
+      "to": "annapurna-base-camp",
+      "via": ["machhapuchhre-base-camp"],
+      "sleep": 4130,
+      "hours": [4, 5],
+      "km": 7.5,
+      "kind": "summit",
+      "note": "Leave at first light to pass the avalanche gullies before the sun loosens the slopes above. At Machhapuchhre Base Camp the valley turns west and opens, and a steady two-hour climb leads to base camp. This is a 900 m gain in sleeping height, so stop at MBC if you feel unwell."
+    },
+    {
+      "day": 6,
+      "title": "Base camp to Bamboo",
+      "from": "annapurna-base-camp",
+      "to": "bamboo-annapurna",
+      "via": ["machhapuchhre-base-camp", "deurali-annapurna", "dovan-annapurna"],
+      "sleep": 2310,
+      "hours": [6, 7],
+      "km": 16,
+      "kind": "trek",
+      "note": "Stay out for sunrise on the south face, then start down after breakfast and cross the avalanche section before mid-morning. It is a descent of more than 1,800 m, and the wet stone steps in the forest are slippery."
+    },
+    {
+      "day": 7,
+      "title": "Bamboo to Jhinu Danda",
+      "from": "bamboo-annapurna",
+      "to": "jhinu-danda",
+      "via": ["sinuwa", "chhomrong"],
+      "sleep": 1780,
+      "hours": [5, 6],
+      "km": 11,
+      "kind": "trek",
+      "note": "Back through the forest to Sinuwa, down to the Chhomrong Khola and up the long staircase into Chhomrong, then a steep drop to Jhinu. The hot springs are by the river, twenty minutes below the lodges."
+    },
+    {
+      "day": 8,
+      "title": "Jhinu Danda to Pokhara",
+      "from": "jhinu-danda",
+      "to": "pokhara",
+      "via": ["nayapul"],
+      "sleep": 822,
+      "hours": [3, 4],
+      "kind": "transfer",
+      "mode": "jeep",
+      "note": "Cross the long suspension bridge to the jeep stand, about half an hour on foot, then drive down the Modi Khola to Nayapul and Pokhara. In the monsoon the track is sometimes blocked and you walk on to the next roadhead."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Avalanches above Deurali",
+      "text": "Between Hinku Cave, Deurali and Machhapuchhre Base Camp the trail runs beneath gullies that funnel avalanches off Hiunchuli. The danger is greatest after heavy snowfall and from late winter into spring; in January 2020 a slide here killed seven people. Cross early, do not stop in the gullies, and take the marked detour on the opposite bank whenever lodge owners say the main trail is unsafe."
+    },
+    {
+      "title": "Fast height gain to base camp",
+      "text": "The usual plan goes from 3,230 m at Deurali to 4,130 m in one day, more than the recommended rate. Headache and poor sleep at base camp are common. If symptoms appear, sleep at Machhapuchhre Base Camp or go down; do not wait at the top for them to pass."
+    },
+    {
+      "title": "Stone steps and wet trail",
+      "text": "Thousands of stone steps and a damp, shaded gorge make slips the commonest cause of injury here. Use poles on the descent and take extra care after rain or frost."
+    },
+    {
+      "title": "Snow and cold in winter",
+      "text": "From late December to February snow can lie from Deurali upward and nights at base camp fall to minus 10 °C or lower. The upper lodges sometimes close after heavy snowfall, so ask at Chhomrong before going on."
+    }
+  ],
+  "tips": [
+    "Carry all the cash you need from Pokhara; there is no cash machine on the route.",
+    "Reserve lodges from Bamboo upward in peak season. Each stop has only a handful of buildings.",
+    "No meat is served above Sinuwa. Expect dal bhat, noodles, eggs and potatoes.",
+    "Plastic water bottles are banned above Chhomrong. Carry a bottle and refill it at the safe-water stations or treat stream water.",
+    "Bring microspikes from December to March, when the trail above Himalaya can be icy.",
+    "Pack shorts or a swimsuit for the Jhinu hot springs on the way down."
+  ],
+  "variants": [
+    {
+      "name": "Start from Jhinu Danda",
+      "text": "Riding a jeep to the bridge below Jhinu and walking straight up to Chhomrong cuts the trek to six days. You miss Ghandruk and reach altitude a day sooner."
+    },
+    {
+      "name": "Via Ghorepani and Poon Hill",
+      "text": "Begin with the two-day walk from Nayapul to Ghorepani, cross to Tadapani and join the main route at Chhomrong. It adds three days and the Poon Hill sunrise."
+    },
+    {
+      "name": "Sleep at Machhapuchhre Base Camp",
+      "text": "Stopping at 3,700 m and walking to base camp before dawn spreads the height gain and suits anyone who adapts slowly."
+    },
+    {
+      "name": "Walk out by Landruk and Dhampus",
+      "text": "From Jhinu cross the Modi Khola and follow the old trail through Landruk, Tolka and Pothana to Dhampus or Kande. It adds a day, mostly away from the road."
+    }
+  ],
+  "related": ["ghorepani-poon-hill", "mardi-himal", "khopra-ridge", "annapurna-circuit"],
+  "confidence": "high"
+}

@@ -1,0 +1,155 @@
+[
+  {
+    "slug": "everest",
+    "name": "Everest",
+    "long": "Everest & Solukhumbu",
+    "ne": "सगरमाथा",
+    "tagline": "Sherpa villages, big glaciers and the highest trails in Nepal",
+    "hue": "glacier",
+    "gateways": ["kathmandu", "lukla"],
+    "center": [27.82, 86.73],
+    "zoom": 10,
+    "overview": [
+      "The Everest region is the Khumbu and Solu country of north-eastern Nepal: a staircase of Sherpa villages climbing from terraced farms to the moraines below Everest, Lhotse, Cho Oyu and Ama Dablam. Trails are wide, well marked and lined with lodges, which makes the logistics easy even though the altitude is not.",
+      "Almost every route here sleeps above 4,000 m for several nights. The walking days are short on purpose. Plan the rest days, keep your sleeping altitude gains modest above Namche, and treat the Lukla flight as a weather-dependent leg that may need a spare day at either end."
+    ],
+    "seasonNote": "March to May and late September to November give the steadiest weather. December to February is cold and clear with quiet trails; the monsoon months bring cloud, leeches low down and frequent flight delays.",
+    "access": "Most trekkers fly to Lukla from Kathmandu or, in the busy months, from Manthali in Ramechhap. The alternative is the road to Salleri, Phaplu or Thamdanda and two to four extra walking days."
+  },
+  {
+    "slug": "annapurna",
+    "name": "Annapurna",
+    "long": "Annapurna",
+    "ne": "अन्नपूर्ण",
+    "tagline": "From rice terraces to a 5,416 m pass, with a road never far away",
+    "hue": "forest",
+    "gateways": ["pokhara", "besisahar"],
+    "center": [28.48, 84.0],
+    "zoom": 9,
+    "overview": [
+      "The Annapurna massif sits just north of Pokhara, and its trails cover the widest range of landscapes of any Nepali region: subtropical villages, rhododendron forest, alpine sanctuaries and, on the northern side, the dry valleys of Manang and the Kali Gandaki.",
+      "Short trailhead drives and plenty of lodges make this the most flexible place to trek in Nepal. You can be on a viewpoint ridge within two days of leaving Pokhara, or spend a fortnight walking around the whole range."
+    ],
+    "seasonNote": "October and November are the clearest months; March and April add rhododendron bloom. Manang and the upper Kali Gandaki lie in a rain shadow and stay walkable in the monsoon, while the southern approaches get heavy rain.",
+    "access": "Pokhara is the hub. Jeeps and buses run to Nayapul, Kande, Ghandruk and Besisahar; Jomsom has a short morning flight and a long road."
+  },
+  {
+    "slug": "mustang",
+    "name": "Mustang",
+    "long": "Mustang",
+    "ne": "मुस्ताङ",
+    "tagline": "High desert, wind-carved cliffs and walled towns behind the Himalaya",
+    "hue": "ochre",
+    "gateways": ["pokhara", "jomsom"],
+    "center": [28.95, 83.85],
+    "zoom": 9,
+    "overview": [
+      "Mustang follows the Kali Gandaki north from Jomsom to the Tibetan border. Lower Mustang, around Kagbeni, Marpha and Muktinath, is open to anyone with an Annapurna permit. Upper Mustang, the former kingdom of Lo, is a restricted area that needs a special permit and a registered agency.",
+      "The land is dry, treeless and exposed. Afternoon wind in the valley is strong enough to plan your day around, and the walking is on jeep tracks as often as on trails."
+    ],
+    "seasonNote": "Mustang is in the rain shadow, so May to October is the main season and the monsoon months are good here when the rest of Nepal is wet. Winter is very cold and many families move south.",
+    "access": "Fly Pokhara to Jomsom in about 20 minutes when the wind allows, or take the road up the Kali Gandaki via Beni and Tatopani."
+  },
+  {
+    "slug": "langtang",
+    "name": "Langtang",
+    "long": "Langtang & Helambu",
+    "ne": "लाङटाङ",
+    "tagline": "The closest high mountains to Kathmandu, reached by road",
+    "hue": "rhodo",
+    "gateways": ["kathmandu", "syabrubesi"],
+    "center": [28.1, 85.45],
+    "zoom": 10,
+    "overview": [
+      "Langtang National Park starts a day's drive north of Kathmandu. The main valley climbs through forest to Kyanjin Gompa beneath Langtang Lirung, with Tamang and Tibetan-influenced villages along the way. To the south the sacred lakes of Gosaikunda and the ridges of Helambu link back toward the Kathmandu Valley on foot.",
+      "No flights are involved, treks are a week or less, and altitude is moderate by Nepali standards. The valley was badly hit by the 2015 earthquake and has been rebuilt; lodges are now plentiful again."
+    ],
+    "seasonNote": "March to May and October to early December are best. Winter brings snow on the Laurebina pass above Gosaikunda. In the monsoon the road in is prone to landslides.",
+    "access": "Buses and jeeps run from Kathmandu to Syabrubesi and Dhunche in seven to nine hours. Helambu starts from Sundarijal on the edge of the city."
+  },
+  {
+    "slug": "manaslu",
+    "name": "Manaslu",
+    "long": "Manaslu & Tsum",
+    "ne": "मनास्लु",
+    "tagline": "A full Himalayan circuit with far fewer people",
+    "hue": "indigo",
+    "gateways": ["kathmandu", "machha-khola"],
+    "center": [28.45, 84.75],
+    "zoom": 9,
+    "overview": [
+      "The Manaslu circuit follows the Budhi Gandaki gorge from the mid-hills to the Tibetan-influenced villages of Nubri, crosses the Larkya La at 5,106 m and drops to the Annapurna side. The side valley of Tsum, opened to trekkers in 2008, keeps a strong Buddhist culture.",
+      "Both are restricted areas: you need a special permit and a licensed guide, arranged through a registered agency. Since March 2026 the permit can be issued to a single trekker. Lodges now cover every stage, but they are simpler than in Everest or Annapurna."
+    ],
+    "seasonNote": "March to May and mid-September to November. The gorge section is landslide-prone in the monsoon, and the Larkya La is usually snowbound from late December to February.",
+    "access": "A long day by bus or jeep from Kathmandu to Soti Khola or Machha Khola. The trek ends on the Annapurna Circuit road at Dharapani."
+  },
+  {
+    "slug": "eastern",
+    "name": "Eastern Nepal",
+    "long": "Kanchenjunga & Makalu",
+    "ne": "पूर्वी नेपाल",
+    "tagline": "Long, quiet approaches to the third and fifth highest mountains",
+    "hue": "plum",
+    "gateways": ["kathmandu", "bhadrapur", "tumlingtar"],
+    "center": [27.55, 87.55],
+    "zoom": 8,
+    "overview": [
+      "East of Everest the trails become long and lightly travelled. Kanchenjunga, on the border with Sikkim, takes three weeks to visit both base camps. Makalu Base Camp climbs from the hot Arun valley, among the lowest in Nepal, to the foot of an 8,485 m peak.",
+      "These are committing routes: lodges are basic or absent in places, evacuation is slow, and walking days are long. They suit trekkers who have already been to altitude and want the mountains without the crowds."
+    ],
+    "seasonNote": "April to May and October to November. The east gets the monsoon first and longest, so the season windows are shorter than further west.",
+    "access": "Fly Kathmandu to Bhadrapur for Kanchenjunga or to Tumlingtar for Makalu, then continue by jeep on rough roads to the trailheads."
+  },
+  {
+    "slug": "western",
+    "name": "Western Nepal",
+    "long": "Dolpo, Rara & the Far West",
+    "ne": "पश्चिम नेपाल",
+    "tagline": "Turquoise lakes, remote passes and the least-visited trails in the country",
+    "hue": "teal",
+    "gateways": ["nepalgunj", "juphal", "jumla"],
+    "center": [29.2, 82.5],
+    "zoom": 8,
+    "overview": [
+      "The Karnali and far-western hills hold Nepal's largest lake, Rara, and its deepest, Phoksundo. Beyond Phoksundo lies Upper Dolpo, a high, dry plateau of Tibetan culture that needs an expensive restricted-area permit and a camping crew.",
+      "Getting here takes two flights or days of driving, services are sparse and the weather closes airstrips without notice. In return the trails are almost empty."
+    ],
+    "seasonNote": "April to early June and September to early November. Upper Dolpo is in the rain shadow and is at its best from June to September, though flights in and out are less reliable then.",
+    "access": "Fly Kathmandu to Nepalgunj, then on to Juphal for Dolpo or Talcha for Rara. Jumla and Khaptad can also be reached by long road journeys."
+  },
+  {
+    "slug": "gaurishankar",
+    "name": "Rolwaling",
+    "long": "Rolwaling & Gaurishankar",
+    "ne": "रोल्वालिङ",
+    "tagline": "A narrow Sherpa valley and a glacial lake below Gaurishankar",
+    "hue": "slate",
+    "gateways": ["kathmandu", "charikot"],
+    "center": [27.82, 86.3],
+    "zoom": 10,
+    "overview": [
+      "Rolwaling is a steep, sparsely populated valley in Dolakha district, between Langtang and Everest. The trail climbs to the summer village of Na and the moraine-dammed lake of Tsho Rolpa under the twin summits of Gaurishankar.",
+      "Lodges are few and simple, and the only way onward to Khumbu is the glaciated Tashi Lapcha pass, which is a mountaineering route. Most trekkers walk in and out the same way."
+    ],
+    "seasonNote": "April to May and October to November. The valley gets heavy monsoon rain and the upper lodges close in winter.",
+    "access": "Drive from Kathmandu to Charikot and on to Chetchet or Gongar Khola in a long day."
+  },
+  {
+    "slug": "kathmandu",
+    "name": "Kathmandu Valley",
+    "long": "Kathmandu Valley Rim",
+    "ne": "काठमाडौं उपत्यका",
+    "tagline": "Forest ridges and Himalayan sunrises a bus ride from the city",
+    "hue": "marigold",
+    "gateways": ["kathmandu"],
+    "center": [27.76, 85.45],
+    "zoom": 11,
+    "overview": [
+      "The hills that ring the Kathmandu Valley rise to about 2,700 m and carry a network of forest trails, village paths and viewpoints. On a clear morning the skyline runs from Annapurna to Everest.",
+      "These are low-altitude walks of one to three days with lodges or hotels each night. They work as a warm-up before a bigger trek, as a first hike with children, or when you only have a weekend."
+    ],
+    "seasonNote": "October to April for mountain views. It is walkable all year, but expect haze in late spring and leeches and cloud in the monsoon.",
+    "access": "Local buses and taxis reach Sundarijal, Nagarkot, Dhulikhel and the other trailheads in an hour or two."
+  }
+]

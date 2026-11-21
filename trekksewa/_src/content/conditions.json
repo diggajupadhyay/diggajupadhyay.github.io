@@ -1,0 +1,121 @@
+{
+  "watch": [
+    { "place": "lukla", "why": "Flights stop whenever cloud or wind closes the approach." },
+    { "place": "namche-bazaar", "why": "The first real altitude on the Everest trail and a good read on Khumbu weather." },
+    { "place": "gorak-shep", "why": "The highest lodges on the Everest trail: cold, wind and new snow matter most here." },
+    { "place": "gokyo", "why": "Snow here decides whether the Cho La and Renjo La are sensible." },
+    { "place": "manang", "why": "The rest stop before the Thorong La. Snow in Manang means more on the pass." },
+    { "place": "thorong-la", "why": "Wind and fresh snow on the pass itself. Cross early in the day." },
+    { "place": "annapurna-base-camp", "why": "Heavy snowfall raises the avalanche risk on the approach below Machhapuchhre Base Camp." },
+    { "place": "ghorepani", "why": "Cloud on the ridge decides whether the Poon Hill sunrise is worth the 4 am start." },
+    { "place": "jomsom", "why": "Strong valley wind builds by mid-morning and grounds flights." },
+    { "place": "lo-manthang", "why": "Rain-shadow country: dry when the south is wet, but bitterly cold out of season." },
+    { "place": "syabrubesi", "why": "Heavy rain here means landslides on the only road into Langtang." },
+    { "place": "kyanjin-gompa", "why": "The top of the Langtang valley and the base for Kyanjin Ri and Tserko Ri." },
+    { "place": "gosaikunda", "why": "The lakes freeze in winter and snow hides the trail over the Laurebina La." },
+    { "place": "machha-khola", "why": "Rain in the Budhi Gandaki gorge brings rockfall and washed-out trail." },
+    { "place": "sama-gaun", "why": "The acclimatization stop before the Larkya La." },
+    { "place": "larkya-la", "why": "A long, exposed crossing where afternoon wind and new snow are the danger." },
+    { "place": "juphal", "why": "The Dolpo airstrip: flights are cancelled at the first sign of cloud." },
+    { "place": "rara-lake", "why": "Snow lies late on the approach passes and the airstrip at Talcha closes easily." }
+  ],
+  "passes": [
+    { "place": "thorong-la", "open": [3, 4, 5, 9, 10, 11, 12], "note": "Deep snow from late December to February. Sudden storms happen even in peak season: one in October 2014 killed more than 40 people around the pass. Leave before dawn to be over before the wind." },
+    { "place": "cho-la", "open": [3, 4, 5, 10, 11], "note": "A short glacier crossing on the east side that turns to hard ice early and late in the season. Do not attempt it after fresh snow, when the route and the crevasses are hidden." },
+    { "place": "renjo-la", "open": [3, 4, 5, 10, 11], "note": "Stone steps on the Gokyo side hold ice, and there is no lodge between Gokyo and Lungden. A long day with no shelter if the weather turns." },
+    { "place": "kongma-la", "open": [4, 5, 10, 11], "note": "The highest and longest of the three Everest passes, with no lodge or water on the way and a rough moraine crossing to Lobuche at the end of the day." },
+    { "place": "larkya-la", "open": [3, 4, 5, 9, 10, 11], "note": "Usually snowbound from late December to early March. A very long day from Dharamsala with a steep, loose descent. Wind rises sharply after mid-morning." },
+    { "place": "laurebina-la", "open": [3, 4, 5, 10, 11, 12], "note": "Snow from January to March hides the trail between Gosaikunda and Phedi, and trekkers have been lost here in cloud. Do not cross alone in poor visibility." },
+    { "place": "kang-la", "open": [4, 5, 9, 10, 11], "note": "Snow lingers on the Nar side and the descent to Ngawal is steep and loose. A pre-dawn start from Nar is normal." },
+    { "place": "french-pass", "open": [4, 5, 10, 11], "note": "Glacier travel with camping only. Between here and the Dhampus Pass there is no quick way down, so a storm in Hidden Valley is serious." },
+    { "place": "dhampus-pass", "open": [4, 5, 10, 11], "note": "A long icy traverse high above the Kali Gandaki after the pass. Wind and whiteout are the usual problems." },
+    { "place": "shipton-la", "open": [4, 5, 10, 11], "note": "Snow lies late on the ridge between Khongma and Dobate, and in a heavy year these passes stay blocked into May." },
+    { "place": "sinelapche-la", "open": [4, 5, 10, 11], "note": "The last of the linked passes between Ghunsa and Tseram on the Kanchenjunga circuit. A long day with no shelter and a route that is hard to follow in cloud or new snow." },
+    { "place": "ganja-la", "open": [4, 5, 10, 11], "note": "Steep and exposed near the top and technical under snow. No lodges for several days: camping, a rope and a guide who knows the route." },
+    { "place": "tashi-lapcha", "open": [4, 5, 10, 11], "note": "A glaciated mountaineering pass between Rolwaling and Khumbu with rockfall and crevasses. Rope, crampons and a climbing guide are needed. It is not a trekking route." },
+    { "place": "kang-la-dolpo", "open": [5, 6, 7, 8, 9, 10], "note": "A remote camping pass on the way to Shey Gompa. The rain shadow keeps it open through the summer, but early snow can arrive from late October." },
+    { "place": "jeng-la", "open": [5, 6, 7, 8, 9, 10], "note": "The way out of Upper Dolpo towards Tokyu and Dho Tarap. Days from the nearest road, so turn back early if the weather is building." }
+  ],
+  "access": [
+    {
+      "kind": "flight",
+      "name": "Lukla flights",
+      "serves": "Everest region",
+      "text": "Small aircraft fly by sight into a short mountain runway, so cloud or wind at either end stops everything. Cancellations happen in every month and can last several days. In the busy spring and autumn weeks most flights leave from Manthali in Ramechhap, four to five hours' drive from Kathmandu.",
+      "worst": [6, 7, 8, 9],
+      "buffer": "One spare day in season, two or more in the monsoon and its shoulders. Never book an international flight for the day after you fly out."
+    },
+    {
+      "kind": "road",
+      "name": "Road to Salleri and Thamdanda",
+      "serves": "Everest region by road",
+      "text": "The way in when you would rather not fly, or cannot. It is a long day to Salleri and rougher beyond, where the track towards Thamdanda is passable only by four-wheel drive and often not at all after rain.",
+      "worst": [6, 7, 8, 9],
+      "buffer": "Allow two full days to reach the trail and two to four extra walking days to Lukla."
+    },
+    {
+      "kind": "road",
+      "name": "Kathmandu to Syabrubesi",
+      "serves": "Langtang, Gosaikunda, Tamang Heritage Trail",
+      "text": "The only road into Langtang climbs out of the Trishuli valley on a slope that slides in most monsoons. Expect seven to nine hours when it is clear, and sections where passengers walk across a slip to a vehicle waiting on the other side.",
+      "worst": [6, 7, 8, 9],
+      "buffer": "Half a day in the dry months, a full day when it has been raining."
+    },
+    {
+      "kind": "road",
+      "name": "Besisahar to Chame and Manang",
+      "serves": "Annapurna Circuit, Nar Phu, Tilicho",
+      "text": "A rough jeep track cut into the Marsyangdi gorge. It shortens the circuit by days but closes with landslides in the monsoon and with snow and ice above Chame in winter. The ride is slow, dusty and hard on the back.",
+      "worst": [6, 7, 8, 9],
+      "buffer": "Treat any jeep time you are quoted as a minimum."
+    },
+    {
+      "kind": "road",
+      "name": "Beni to Jomsom",
+      "serves": "Lower and Upper Mustang, the end of the Annapurna Circuit",
+      "text": "The Kali Gandaki road is open most of the year but is cut by rockfall and washouts in the wet months, mainly between Tatopani and Ghasa. Buses and jeeps take a long day from Pokhara.",
+      "worst": [6, 7, 8, 9],
+      "buffer": "A spare day if you are travelling by road in the monsoon."
+    },
+    {
+      "kind": "flight",
+      "name": "Pokhara to Jomsom flights",
+      "serves": "Mustang",
+      "text": "A twenty-minute flight through the deepest valley in the range. The wind that makes the Kali Gandaki famous rises by mid-morning, so flights go only in the first hours of the day and are cancelled readily.",
+      "worst": [6, 7, 8, 1, 2],
+      "buffer": "Have the road as a fallback and a spare day before any onward connection."
+    },
+    {
+      "kind": "road",
+      "name": "Kathmandu to Soti Khola and Machha Khola",
+      "serves": "Manaslu Circuit, Tsum Valley",
+      "text": "A full day by bus or jeep through Dhading and Arughat. The last section up the Budhi Gandaki is a narrow track below unstable slopes and is regularly blocked in the rains; the trail beyond it suffers the same.",
+      "worst": [6, 7, 8, 9],
+      "buffer": "A spare day in the wet months, and ask about the gorge trail before you set off."
+    },
+    {
+      "kind": "flight",
+      "name": "Flights to Juphal, Jumla and Talcha",
+      "serves": "Dolpo, Rara",
+      "text": "Short-runway mountain airstrips reached from Nepalgunj. Flights go early, in clear weather only, and a missed day pushes everyone back because there are few seats. Afternoon heat and cloud end flying well before noon.",
+      "worst": [6, 7, 8, 9],
+      "buffer": "Two spare days at the end of any trek that relies on these flights."
+    },
+    {
+      "kind": "road",
+      "name": "Roads to Taplejung and Num",
+      "serves": "Kanchenjunga, Makalu",
+      "text": "After the flight to Bhadrapur or Tumlingtar the approach continues for many hours on hill roads that are rough at the best of times. The east gets the monsoon first and keeps it longest.",
+      "worst": [6, 7, 8, 9],
+      "buffer": "A spare day at each end of the trek."
+    }
+  ],
+  "sources": [
+    { "name": "Meteorological Forecasting Division", "url": "https://www.mfd.gov.np/", "what": "The national weather service: daily forecasts, mountain forecasts and severe-weather warnings." },
+    { "name": "Flood forecasting, Department of Hydrology and Meteorology", "url": "https://www.hydrology.gov.np/", "what": "Rainfall and river levels in real time, with flood warnings by river basin." },
+    { "name": "BIPAD disaster information portal", "url": "https://bipadportal.gov.np/", "what": "The government's record of landslides, floods and other incidents as they are reported." },
+    { "name": "Department of Roads", "url": "https://www.dor.gov.np/", "what": "Highway closures and reopening notices." },
+    { "name": "Nepal Tourism Board", "url": "https://ntb.gov.np/", "what": "Trekking notices and changes to permit rules." },
+    { "name": "Himalayan Rescue Association", "url": "https://www.himalayanrescue.org/", "what": "Opening dates for the altitude clinics at Pheriche and Manang." }
+  ]
+}

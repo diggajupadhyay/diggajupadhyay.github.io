@@ -1,0 +1,190 @@
+{
+  "slug": "jomsom-muktinath",
+  "name": "Jomsom & Muktinath",
+  "aka": ["Lower Mustang", "Jomsom Muktinath trek", "Kali Gandaki valley"],
+  "region": "mustang",
+  "tagline": "Pilgrim shrine, apple villages and the Kali Gandaki between two 8,000 m peaks",
+  "summary": "A week in Lower Mustang: fly to Jomsom, walk to Kagbeni and the shrine of Muktinath at 3,760 m, then follow the Kali Gandaki down through Marpha and Kalopani to Tatopani.",
+  "intro": [
+    "Lower Mustang is the dry, windy upper valley of the Kali Gandaki, behind the main Himalayan chain. A twenty-minute flight from Pokhara puts you down at Jomsom among bare brown hills, flat-roofed Thakali houses and apple orchards. From there the route climbs to the mud-walled village of Kagbeni and on to Muktinath, a temple sacred to both Hindus and Buddhists, then turns south and follows the river down between Dhaulagiri and the Annapurnas until pine forest and, finally, rice terraces return.",
+    "This was the second half of the old Annapurna Circuit and for decades one of Nepal's most popular lodge treks. A road now runs the whole way from Pokhara to Muktinath and carries pilgrims' jeeps, buses and motorbikes, so walking along it is dusty and far from peaceful. The answer is to stay off it. Trails on the opposite bank and over side ridges, by Lubra, Thini, Dhumba Lake and the east side of the river below Marpha, link the villages with little road walking. Many are marked with red and white paint, and a good guide knows which are open.",
+    "The walking is easy and mostly downhill, lodges in the Thakali villages are among the best in the country, and you never go above 3,800 m. Two things need planning. Muktinath is high enough to cause altitude sickness if you fly in and walk straight up, and the valley wind blows hard from late morning every day, so the walking is best done early."
+  ],
+  "days": 7,
+  "daysRange": [5, 10],
+  "distanceKm": 90,
+  "maxAlt": { "m": 3760, "place": "muktinath" },
+  "difficulty": "easy",
+  "difficultyNote": "Easy, mostly downhill walking on good paths, with one 950 m climb to Muktinath that can bring on altitude symptoms.",
+  "style": ["teahouse"],
+  "start": "jomsom",
+  "end": "tatopani",
+  "gateway": "pokhara",
+  "access": {
+    "summary": "Fly from Pokhara to Jomsom in twenty minutes, on early-morning flights that are cancelled when wind or cloud builds, or take a bus or jeep up the Kali Gandaki road in eight to ten hours. The trek ends at Tatopani, five to six hours by bus from Pokhara through Beni.",
+    "options": [
+      { "mode": "flight", "from": "pokhara", "to": "jomsom", "time": "20 min", "note": "Flights leave in the first hours after dawn. Book ahead in October and November and keep a spare day." },
+      { "mode": "bus", "from": "pokhara", "to": "jomsom", "time": "8–10 hr", "note": "Buses and shared jeeps run daily through Beni and Tatopani. The road is rough above Beni and slow after rain." },
+      { "mode": "jeep", "from": "jomsom", "to": "muktinath", "time": "1.5 hr", "note": "Shared jeeps for pilgrims run all day. Useful for a day visit to the temple, but do not ride up to sleep there on the day you fly in." },
+      { "mode": "bus", "from": "tatopani", "to": "pokhara", "time": "5–6 hr", "note": "Direct buses in the morning, or change at Beni." }
+    ]
+  },
+  "seasons": {
+    "best": [3, 4, 5, 10, 11],
+    "good": [2, 6, 9, 12],
+    "hard": [1, 7, 8],
+    "note": "March to May and October to November are best, with apple blossom in April and the harvest in September and October. Above Kalopani the valley lies in the rain shadow and stays fairly dry in the monsoon, but flights are unreliable then and the road and trail below Ghasa suffer landslides. Winter is cold and windy, with occasional snow at Muktinath."
+  },
+  "permits": ["acap", "tims"],
+  "guide": {
+    "rule": "required",
+    "note": "Since April 2023 the Nepal Tourism Board has required foreign trekkers in conservation areas to walk with a licensed guide, though checks on the trail are inconsistent. The way is never hard to find here. What a guide adds is knowledge of the footpaths that avoid the road, which change as bridges wash out and new tracks are cut, and an eye on altitude symptoms at Muktinath."
+  },
+  "highlights": [
+    "Muktinath temple, with its 108 water spouts and natural gas flame",
+    "The mud-walled lanes and red monastery of Kagbeni",
+    "Marpha's whitewashed alleys, apple orchards and brandy",
+    "Dhaulagiri and the Nilgiris from Larjung and Kalopani",
+    "The Bon village of Lubra on the back trail to Jomsom",
+    "Hot springs beside the river at Tatopani"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Fly to Jomsom, walk to Kagbeni",
+      "from": "jomsom",
+      "to": "kagbeni",
+      "via": ["eklebhatti"],
+      "sleep": 2810,
+      "hours": [3, 4],
+      "km": 10,
+      "kind": "trek",
+      "note": "After the short morning flight, register at the checkpoint in Jomsom and set off up the wide gravel bed of the Kali Gandaki before the wind rises. The way is flat, partly on the road and partly on the riverbed, to Eklebhatti and on to Kagbeni. Spend the afternoon in the old village and its monastery."
+    },
+    {
+      "day": 2,
+      "title": "Kagbeni to Muktinath",
+      "from": "kagbeni",
+      "to": "muktinath",
+      "via": ["jharkot"],
+      "sleep": 3760,
+      "hours": [4, 5],
+      "km": 10,
+      "kind": "trek",
+      "note": "A steady climb of 950 m up a bare hillside, crossing the road several times, to Khinga and the fortified village of Jharkot. Ranipauwa, where the lodges are, is another hour, with the temple twenty minutes above it. This is a big jump in sleeping height after flying in, so go slowly and drink plenty."
+    },
+    {
+      "day": 3,
+      "title": "Muktinath to Jomsom by Lubra",
+      "from": "muktinath",
+      "to": "jomsom",
+      "via": ["lubra"],
+      "sleep": 2720,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "Visit the temple at dawn, then leave the road for the trail over the ridge to the south, with Dhaulagiri ahead. It drops steeply to the Panda Khola and the Bon village of Lubra, a good lunch stop, then follows the gravel riverbed out to the Kali Gandaki and the road into Jomsom. Expect a headwind for the last hour."
+    },
+    {
+      "day": 4,
+      "title": "Jomsom to Marpha by Thini and Dhumba Lake",
+      "from": "jomsom",
+      "to": "marpha",
+      "via": ["thini", "dhumba-lake"],
+      "sleep": 2670,
+      "high": 2850,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "A short day on the quiet east bank. Cross the river to Thini, walk on to Dhumba Lake and the monastery on the ridge above it, then descend and follow the east-bank trail to the Tibetan settlement at Chhairo, where a bridge crosses to Marpha. Spend the afternoon among its lanes, monastery and orchards."
+    },
+    {
+      "day": 5,
+      "title": "Marpha to Kalopani",
+      "from": "marpha",
+      "to": "kalopani",
+      "via": ["tukuche", "larjung"],
+      "sleep": 2530,
+      "hours": [5, 6],
+      "km": 20,
+      "kind": "trek",
+      "note": "Start early to beat the wind. Use the east-bank trail where you can and cross back for Tukuche and its old merchant houses. Beyond Larjung the valley floor is a very wide spread of gravel under the east face of Dhaulagiri, and the path then enters pine forest and climbs gently to Kalopani."
+    },
+    {
+      "day": 6,
+      "title": "Kalopani to Tatopani",
+      "from": "kalopani",
+      "to": "tatopani",
+      "via": ["ghasa", "dana"],
+      "sleep": 1190,
+      "hours": [6, 7],
+      "km": 22,
+      "kind": "trek",
+      "note": "A descent of more than 1,300 m as the valley closes into a gorge between Dhaulagiri and the Annapurnas. Below Lete, footpaths on the east bank avoid much of the road to Ghasa, where permits are checked. Then come the Rupse waterfall, the orange trees of Dana and the hot springs. Split the day at Ghasa if it is hot."
+    },
+    {
+      "day": 7,
+      "title": "Tatopani to Pokhara",
+      "from": "tatopani",
+      "to": "pokhara",
+      "via": ["beni"],
+      "sleep": 822,
+      "hours": [5, 6],
+      "kind": "transfer",
+      "mode": "bus",
+      "note": "Soak once more in the riverside pools, then take a bus or jeep down the Kali Gandaki to Beni and along the highway through Kusma and Nayapul to Pokhara. Buses leave in the morning. In the monsoon the road below Tatopani is prone to landslides."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Altitude at Muktinath",
+      "text": "Flying from Pokhara at about 800 m and sleeping at 3,760 m two nights later is faster than recommended, and headaches at Ranipauwa are common. If you feel unwell, sleep at Jharkot, 200 m lower, or go back down to Kagbeni."
+    },
+    {
+      "title": "Wind and dust",
+      "text": "From about eleven each morning a strong wind blows up the valley between Kalopani and Kagbeni, lifting sand and dust. Walk early, and carry sunglasses and something to cover your nose and mouth."
+    },
+    {
+      "title": "Traffic on the road",
+      "text": "Jeeps, buses and motorbikes use the road all day in the pilgrimage seasons. Take the footpaths on the far bank where they exist, and stand well clear when vehicles pass on narrow sections."
+    },
+    {
+      "title": "River crossings and landslides",
+      "text": "Seasonal footbridges on the side trails are removed or washed away in the monsoon, and the gorge road below Ghasa is often blocked by slides between June and September. Ask each morning which bank is passable."
+    },
+    {
+      "title": "Flight cancellations",
+      "text": "Jomsom flights stop when cloud covers the approach or the wind rises, sometimes for days at a time. Keep a spare day in hand, or be ready to go by road."
+    }
+  ],
+  "tips": [
+    "Walk between six and eleven and keep the afternoons for the villages. The wind makes afternoon walking unpleasant.",
+    "Kagbeni is as far north as the Annapurna permit takes you. Beyond the checkpoint you need the Upper Mustang restricted-area permit.",
+    "Eat the Thakali dal bhat in Marpha and Tukuche, and try the local apple juice, cider and brandy.",
+    "At Muktinath take off your shoes at the temple, ask before photographing pilgrims and walk clockwise round the shrines.",
+    "Jomsom has cash machines, but they often fail with foreign cards. Carry cash from Pokhara.",
+    "On the flight to Jomsom the Annapurnas are on the right and Dhaulagiri is on the left."
+  ],
+  "variants": [
+    {
+      "name": "Fly out from Jomsom",
+      "text": "Finish after day three and fly back to Pokhara the next morning. This makes a four- or five-day trip that takes in Kagbeni, Muktinath and Lubra."
+    },
+    {
+      "name": "Sleep at Jharkot",
+      "text": "Stopping at Jharkot instead of Ranipauwa keeps the height gain from Kagbeni to about 740 m. Visit the temple late that afternoon or early the next morning."
+    },
+    {
+      "name": "On to Ghorepani and Poon Hill",
+      "text": "From Tatopani climb 1,700 m in a day to Ghorepani, watch sunrise from Poon Hill and walk out to Nayapul. Add two to three days."
+    },
+    {
+      "name": "Dhaulagiri Icefall from Larjung",
+      "text": "A full-day side trip climbs from Larjung to yak pastures high above the valley, below the icefall on Dhaulagiri's east face. Take a local guide and stay the night in Larjung or Kobang."
+    },
+    {
+      "name": "One way by road",
+      "text": "With little time, take a jeep in one direction between Pokhara and Jomsom and walk only the upper valley. The drive takes eight to ten hours."
+    }
+  ],
+  "related": ["annapurna-circuit", "upper-mustang", "ghorepani-poon-hill", "tilicho-lake", "dhaulagiri-circuit", "khopra-ridge"],
+  "confidence": "high"
+}

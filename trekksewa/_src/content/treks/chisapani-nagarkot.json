@@ -1,0 +1,126 @@
+{
+  "slug": "chisapani-nagarkot",
+  "name": "Chisapani to Nagarkot",
+  "aka": ["Chisapani Nagarkot Trek", "Kathmandu Valley Rim Trek"],
+  "region": "kathmandu",
+  "tagline": "Three days along the valley rim, from Shivapuri forest to a sunrise ridge",
+  "summary": "A three-day walk from Sundarijal through Shivapuri forest to Chisapani, along the valley rim to Nagarkot, and down to the temple village of Changu Narayan.",
+  "intro": [
+    "This is the standard short trek from Kathmandu, and a good answer to two common questions: what to do with three spare days, and how to test your legs before something bigger. It follows the northern and eastern rim of the valley from Sundarijal to Nagarkot, with a night at each of the two best-known viewpoints, and never goes above 2,420 m.",
+    "Do not expect wilderness. The first day is a proper forest climb inside Shivapuri Nagarjun National Park, but from Chisapani on you walk dirt roads, village paths and pine-forest tracks through Tamang farmland, with the city sometimes in view below. What you come for is the dawn. On a clear morning Chisapani looks out on Ganesh Himal, Langtang Lirung and Dorje Lakpa, and Nagarkot adds a longer skyline that reaches Everest on the best days.",
+    "The middle day is long, seven to eight hours, and the views depend entirely on the season: sharp from October to March, hazy from April, and mostly cloud in the monsoon. Both overnight stops have hotels from basic to comfortable, so you can walk with a day pack. With a fourth day, continue from Nagarkot to Dhulikhel instead of dropping to Changu Narayan."
+  ],
+  "days": 3,
+  "daysRange": [2, 5],
+  "distanceKm": 45,
+  "maxAlt": { "m": 2420, "place": "borlang-bhanjyang" },
+  "difficulty": "easy",
+  "difficultyNote": "Low altitude and a hotel bed each night; the only real demands are the first day's climb of nearly 1,000 m and the length of the second day.",
+  "style": ["teahouse"],
+  "start": "sundarijal",
+  "end": "changu-narayan",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "Both ends are inside the Kathmandu Valley. Sundarijal is under an hour by taxi from Thamel, or a little longer by local bus. From Changu Narayan, buses and taxis run to Bhaktapur and on to Kathmandu in about an hour and a half. Nagarkot and Dhulikhel also have buses if you finish there.",
+    "options": [
+      { "mode": "bus", "from": "kathmandu", "to": "sundarijal", "time": "1–1.5 h", "note": "Local buses from the Ratna Park side of town; a taxi from Thamel takes about 45 minutes." },
+      { "mode": "bus", "from": "changu-narayan", "to": "kathmandu", "time": "1.5–2 h", "note": "Local bus to Bhaktapur, then a frequent bus to Kathmandu. A taxi does it in about an hour." },
+      { "mode": "bus", "from": "nagarkot", "to": "kathmandu", "time": "1.5–2 h", "note": "For those who skip the last day's walk. Most buses run by way of Bhaktapur." },
+      { "mode": "bus", "from": "dhulikhel", "to": "kathmandu", "time": "1.5 h", "note": "Frequent buses along the Araniko Highway, if you take the Dhulikhel extension." }
+    ]
+  },
+  "seasons": {
+    "best": [1, 2, 3, 10, 11, 12],
+    "good": [4, 5, 9],
+    "hard": [6, 7, 8],
+    "note": "Views are clearest from October to March; December and January mornings are cold but usually the sharpest of the year. April and May are warm, with rhododendron in the Shivapuri forest but haze over the mountains. From June to September expect leeches, mud and cloud, with only occasional glimpses of the peaks."
+  },
+  "permits": ["shivapuri-np"],
+  "guide": {
+    "rule": "required",
+    "note": "The Nepal Tourism Board has required foreign trekkers to hire a licensed guide since April 2023, and checks are inconsistent; on a low route like this one the rule is rarely applied on the trail. The place it matters is the Sundarijal gate, where park staff have at times refused entry to foreigners walking alone. A guide also saves time on the second day, which follows a web of unsigned dirt roads and village paths."
+  },
+  "highlights": [
+    "Sunrise over the Himalaya from Chisapani, and again from Nagarkot",
+    "Oak and rhododendron forest in Shivapuri Nagarjun National Park",
+    "Tamang villages and terraced farmland along the rim",
+    "The Changu Narayan temple, a World Heritage monument",
+    "A trek you can start by taxi after breakfast"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive to Sundarijal, walk to Chisapani",
+      "from": "sundarijal",
+      "to": "chisapani",
+      "via": ["mulkharka", "borlang-bhanjyang"],
+      "sleep": 2165,
+      "high": 2420,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "A taxi or bus to the park gate, then close to 1,000 m of ascent: stone steps past the reservoir, terraces around Mulkharka and a long pull through oak and rhododendron forest to the Borlang Bhanjyang saddle. From there it is downhill to the hotels at Chisapani, in time for sunset."
+    },
+    {
+      "day": 2,
+      "title": "Chisapani to Nagarkot",
+      "from": "chisapani",
+      "to": "nagarkot",
+      "via": ["jhule", "jarsingpauwa", "kattike"],
+      "sleep": 2175,
+      "hours": [7, 8],
+      "kind": "trek",
+      "note": "The long day. A forest track leaves the national park near Jhule, then dirt roads and village paths follow the ridge to Jarsingpauwa, dip to Kattike and climb through pines to Nagarkot. Published distances range from 15 to 26 km; plan on seven to eight hours of walking whichever line you take."
+    },
+    {
+      "day": 3,
+      "title": "Nagarkot to Changu Narayan, drive to Kathmandu",
+      "from": "nagarkot",
+      "to": "changu-narayan",
+      "sleep": 1541,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "Up early for the sunrise, then an easy walk west down the ridge through Telkot and pine forest to the temple at Changu Narayan. Give the courtyard an hour before taking a bus or taxi to Bhaktapur and on to Kathmandu."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Losing the route on day two",
+      "text": "Between Chisapani and Nagarkot the route follows jeep tracks that fork often and are rarely signed. A wrong turn can add hours to an already long day. Keep the ridge line in mind, ask at every tea shop and carry an offline map."
+    },
+    {
+      "title": "Walking alone",
+      "text": "There have been attacks on lone hikers in the forests around the valley in the past, which is one reason park staff discourage walking alone. Incidents are rare. Go with a companion or a guide, and do not set out from Sundarijal late in the day."
+    },
+    {
+      "title": "Monsoon conditions",
+      "text": "From June to September the stone steps above Sundarijal are slippery, the forest is full of leeches and the dirt roads turn to mud. Wear shoes with real grip, carry salt or repellent, and expect cloud instead of mountains."
+    },
+    {
+      "title": "Cold mornings",
+      "text": "In December and January both viewpoints are near freezing at dawn and hotel rooms are unheated. Bring a warm jacket, hat and gloves, even though the days are mild."
+    }
+  ],
+  "tips": [
+    "Leave Thamel by 8 am on the first day, so that you reach Chisapani with daylight to spare for the sunset.",
+    "Carry lunch or snacks on the second day. Tea shops are spread out and may be shut on quiet weekdays.",
+    "Book Nagarkot ahead for Friday and Saturday nights, when families from Kathmandu fill the hotels.",
+    "Keep the national park ticket until you are out of the forest beyond Chisapani; it may be checked at the far boundary too.",
+    "Bring a head torch for the two dawn viewpoints, and small notes for tea shops and buses."
+  ],
+  "variants": [
+    {
+      "name": "On to Dhulikhel",
+      "text": "From Nagarkot, follow the ridge south past the view tower and down through Rohini Bhanjyang and Tanchok to Dhulikhel in five to six hours, then take a bus back to Kathmandu or stay the night."
+    },
+    {
+      "name": "Namobuddha and Panauti",
+      "text": "From Dhulikhel a further day's walk leads to the stupa and monastery at Namobuddha and down to the old Newar town of Panauti, where buses leave for Kathmandu. With this the trek becomes five days."
+    },
+    {
+      "name": "Two-day version",
+      "text": "Skip the night at Nagarkot: walk from Chisapani to Nagarkot and take a late-afternoon bus or taxi back to Kathmandu. It works if you start at dawn, but you lose the Nagarkot sunrise."
+    }
+  ],
+  "related": ["helambu", "ama-yangri", "langtang-gosaikunda-helambu"],
+  "confidence": "medium"
+}

@@ -1,0 +1,248 @@
+{
+  "slug": "langtang-gosaikunda-helambu",
+  "name": "Langtang, Gosaikunda and Helambu",
+  "aka": ["Langtang Gosaikunda Helambu Trek", "Langtang Helambu Traverse"],
+  "region": "langtang",
+  "tagline": "From the Langtang glaciers over a 4,610 m pass and back to Kathmandu on foot",
+  "summary": "A 13-day traverse: up the Langtang valley to Kyanjin Gompa, across to the Gosaikunda lakes, over the Laurebina La and down the Helambu ridge to Sundarijal.",
+  "intro": [
+    "This is the full tour of the mountains north of Kathmandu, and it ends by walking into the capital's own valley. It strings three shorter treks together: the Langtang valley to Kyanjin Gompa, the climb from Thulo Syabru to the Gosaikunda lakes, and the Helambu ridge south to Sundarijal. Each has a different character, and the links between them, which few people on the shorter treks see, are some of the best walking.",
+    "The order matters. By going to Kyanjin Gompa first you spend two nights at 3,870 m and climb to nearly 4,800 m before you see Gosaikunda, so the fast ascent that makes the lakes risky from Dhunche is far less of a problem. What stays hard is the day over the Laurebina La: a 4,610 m pass, then hours of rough descent and traverse to Ghopte, with only the lodges at Phedi on the way. In snow or cloud it is a serious day.",
+    "Lodges cover every stage, though those between the lake and Tharepati are few and basic. Plan on 12 to 16 days. As of November 2026 the first stage is affected by the Bhote Koshi flood of that August, which cut the road to Syabrubesi; groups have been starting from Dhunche or Thulo Syabru and joining the valley trail near Bamboo. The Gosaikunda and Helambu sections were not in the flood's path."
+  ],
+  "days": 13,
+  "daysRange": [12, 16],
+  "distanceKm": 140,
+  "maxAlt": { "m": 4773, "place": "kyanjin-ri" },
+  "difficulty": "challenging",
+  "difficultyNote": "No single day is extreme, but it is nearly two weeks with three big climbs, a 4,610 m pass that holds snow and a long descent beyond it with little shelter.",
+  "style": ["teahouse"],
+  "start": "syabrubesi",
+  "end": "sundarijal",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "By road to the start, and a short drive home from the finish. The classic start is Syabrubesi, seven to nine hours by bus or jeep from Machhapokhari in Kathmandu. Since the Bhote Koshi flood of August 2026 cut that road, groups have been starting from Dhunche or Thulo Syabru and joining the valley trail near Bamboo. The trek ends at Sundarijal, under an hour from Thamel.",
+    "options": [
+      { "mode": "bus", "from": "kathmandu", "to": "syabrubesi", "time": "7–9 h", "note": "The classic approach. Closed short of Syabrubesi since the August 2026 flood; check whether it has reopened." },
+      { "mode": "jeep", "from": "kathmandu", "to": "dhunche", "time": "5–7 h", "note": "The working roadhead since the flood, reported open to jeeps and light vehicles. A rough track continues to Thulo Syabru when conditions allow." },
+      { "mode": "bus", "from": "sundarijal", "to": "kathmandu", "time": "1–1.5 h", "note": "Local buses to the Ratna Park side of town, or a taxi to Thamel in about 45 minutes." }
+    ]
+  },
+  "seasons": {
+    "best": [4, 5, 10, 11],
+    "good": [3, 9, 12],
+    "hard": [1, 2, 6, 7, 8],
+    "note": "October and November are the most reliable months for the pass. April and May are warmer, with rhododendron on the Gosaikunda and Helambu ridges and more afternoon cloud. In March and December the Laurebina La may be under snow; in January and February it usually is, and lodges between the lake and Tharepati can be shut. The monsoon brings rain, leeches and landslides on the access road."
+  },
+  "permits": ["langtang-np", "tims", "shivapuri-np"],
+  "guide": {
+    "rule": "required",
+    "note": "The Nepal Tourism Board has required foreign trekkers to hire a licensed guide since April 2023, though checks on the trail are inconsistent. On this route the guide matters most between Gosaikunda and Tharepati, where the path is easy to lose in snow or cloud and there are few lodges and fewer people. They will also know which roadhead is in use since the 2026 flood."
+  },
+  "highlights": [
+    "Three treks in one: glacial valley, sacred lakes and forested ridge",
+    "Kyanjin Gompa and the climb to Kyanjin Ri at 4,773 m",
+    "Reaching the Gosaikunda lakes already acclimatized",
+    "Crossing the Laurebina La into Helambu",
+    "Finishing on foot at the edge of the Kathmandu Valley"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive from Kathmandu to Syabrubesi",
+      "from": "kathmandu",
+      "to": "syabrubesi",
+      "sleep": 1460,
+      "hours": [7, 9],
+      "kind": "transfer",
+      "mode": "drive",
+      "note": "The Pasang Lhamu Highway through Trishuli Bazaar and Dhunche, where park permits are checked. With the road cut short of Syabrubesi since the August 2026 flood, expect to start from Dhunche or Thulo Syabru instead and adjust the next day to suit."
+    },
+    {
+      "day": 2,
+      "title": "Syabrubesi to Lama Hotel",
+      "from": "syabrubesi",
+      "to": "lama-hotel",
+      "via": ["bamboo-langtang", "rimche"],
+      "sleep": 2470,
+      "hours": [6, 7],
+      "km": 11,
+      "kind": "trek",
+      "note": "Into the gorge of the Langtang Khola: shady forest, a rising trail and the river loud beside you all day. Bamboo is the natural lunch stop. Keep something in reserve for the last steep pull to Rimche and Lama Hotel. Starting from Thulo Syabru, you join the trail just below Bamboo."
+    },
+    {
+      "day": 3,
+      "title": "Lama Hotel to Langtang Village",
+      "from": "lama-hotel",
+      "to": "langtang-village",
+      "via": ["ghodatabela", "thangshyap"],
+      "sleep": 3430,
+      "hours": [6, 7],
+      "km": 14,
+      "kind": "trek",
+      "note": "The forest thins at Ghodatabela, where permits are checked, and the valley opens into pasture with Langtang Lirung ahead. The sleeping height rises by 960 m, so drink plenty and keep the pace gentle; Thangshyap is the fallback if you feel it. The rebuilt village lies just past the 2015 debris."
+    },
+    {
+      "day": 4,
+      "title": "Langtang Village to Kyanjin Gompa",
+      "from": "langtang-village",
+      "to": "kyanjin-gompa",
+      "via": ["mundu"],
+      "sleep": 3870,
+      "hours": [3, 4],
+      "km": 7,
+      "kind": "trek",
+      "note": "A half day through Mundu and across old moraine to the last settlement in the valley. Use the afternoon for a slow walk around the gompa and the cheese factory, and an early night."
+    },
+    {
+      "day": 5,
+      "title": "Kyanjin Ri and a second night at Kyanjin Gompa",
+      "from": "kyanjin-gompa",
+      "to": "kyanjin-gompa",
+      "via": ["kyanjin-ri"],
+      "sleep": 3870,
+      "high": 4773,
+      "hours": [4, 5],
+      "kind": "summit",
+      "note": "Climb the ridge behind the lodges to 4,773 m for the view over the Lirung glacier, and be down for lunch. This is the acclimatization that the Gosaikunda section depends on, so do not skip it to save a day. Strong walkers can take the longer day on Tserko Ri instead."
+    },
+    {
+      "day": 6,
+      "title": "Kyanjin Gompa to Lama Hotel",
+      "from": "kyanjin-gompa",
+      "to": "lama-hotel",
+      "via": ["langtang-village", "ghodatabela"],
+      "sleep": 2470,
+      "hours": [6, 7],
+      "km": 21,
+      "kind": "trek",
+      "note": "Back down the valley in one long, mostly downhill day. The thicker air is welcome; the pounding on your knees is not. Stop at Rimche if Lama Hotel is full."
+    },
+    {
+      "day": 7,
+      "title": "Lama Hotel to Thulo Syabru",
+      "from": "lama-hotel",
+      "to": "thulo-syabru",
+      "via": ["bamboo-langtang"],
+      "sleep": 2210,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "Follow the gorge down past Bamboo, then leave the Syabrubesi trail at the signed junction and cross a side valley to Thulo Syabru. The final climb to the village is steep and comes at the end of a long downhill morning. The slopes here slide in the monsoon; ask at Bamboo about the state of the path."
+    },
+    {
+      "day": 8,
+      "title": "Thulo Syabru to Chandanbari",
+      "from": "thulo-syabru",
+      "to": "chandanbari",
+      "sleep": 3330,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "A steady 1,100 m climb from the top of the village through oak, hemlock and rhododendron, past the teahouses at Dursagang and along the Foprang Danda ridge to Chandanbari. The gain is large, but you have already slept at 3,870 m, so it is hard work rather than an altitude risk."
+    },
+    {
+      "day": 9,
+      "title": "Chandanbari to Gosaikunda",
+      "from": "chandanbari",
+      "to": "gosaikunda",
+      "via": ["cholangpati", "laurebina"],
+      "sleep": 4380,
+      "hours": [5, 7],
+      "km": 9,
+      "kind": "trek",
+      "note": "Out of the forest at Cholangpati and up the open ridge to Laurebina, then a narrow traverse above Saraswati Kunda and Bhairav Kunda to the main lake. It is another 1,050 m of sleeping height. Most people manage it after Kyanjin Gompa; if you have any doubt, stop at Laurebina."
+    },
+    {
+      "day": 10,
+      "title": "Over the Laurebina La to Ghopte",
+      "from": "gosaikunda",
+      "to": "ghopte",
+      "via": ["laurebina-la", "phedi-gosaikunda"],
+      "sleep": 3430,
+      "high": 4610,
+      "hours": [6, 8],
+      "kind": "pass",
+      "note": "The hardest day. An hour and a half past small lakes to the 4,610 m pass, a long, rocky descent to the lodges at Phedi, then three tiring hours in and out of ravines to Ghopte. There is no shelter between the lake and Phedi. Start at first light, and do not cross in fresh snow or thick cloud."
+    },
+    {
+      "day": 11,
+      "title": "Ghopte to Kutumsang",
+      "from": "ghopte",
+      "to": "kutumsang",
+      "via": ["tharepati", "magin-goth"],
+      "sleep": 2470,
+      "high": 3690,
+      "hours": [6, 7],
+      "kind": "trek",
+      "note": "More ravines and a final climb bring you onto the ridge at Tharepati in about two hours, where you join the Helambu circuit. Ignore the branch that drops east to Melamchi Gaun and follow the ridge south, down through forest past Magin Goth to Kutumsang, where the park checkpost looks at permits."
+    },
+    {
+      "day": 12,
+      "title": "Kutumsang to Chisapani",
+      "from": "kutumsang",
+      "to": "chisapani",
+      "via": ["golphu-bhanjyang", "chipling", "pati-bhanjyang"],
+      "sleep": 2165,
+      "hours": [6, 7],
+      "kind": "trek",
+      "note": "Down the ridge through Tamang farmland: Golphu Bhanjyang, a forested shoulder, the stone steps below Chipling and the saddle at Pati Bhanjyang, then a final 400 m climb to Chisapani. Dirt roads cross the trail repeatedly, so keep asking for the footpath."
+    },
+    {
+      "day": 13,
+      "title": "Chisapani to Sundarijal, drive to Kathmandu",
+      "from": "chisapani",
+      "to": "sundarijal",
+      "via": ["borlang-bhanjyang", "mulkharka"],
+      "sleep": 1460,
+      "high": 2420,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "Watch the sunrise, then climb for an hour to the Borlang Bhanjyang saddle and descend through the Shivapuri forest and Mulkharka to the road at Sundarijal. A taxi or local bus has you in Thamel in under an hour."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "The Laurebina La in snow or cloud",
+      "text": "Between the lake and Phedi the path is marked only by cairns and worn rock, with steep ground below it. After snowfall or in cloud it is easy to lose. In the winter of 1991–92 an Australian trekker who strayed from the trail in snow near here was found alive only after 43 days. Wait a day at the lake rather than cross in bad conditions."
+    },
+    {
+      "title": "Altitude",
+      "text": "The fast first stages to Kyanjin Gompa and the two-day climb from Thulo Syabru to 4,380 m both exceed the usual guidelines. The second works only because of the first, so keep both nights at Kyanjin Gompa. Stop at Laurebina, or go down, if you have a headache with nausea or unusual tiredness."
+    },
+    {
+      "title": "Few lodges between the lake and Tharepati",
+      "text": "Phedi and Ghopte have only a handful of basic lodges, which can be full in October and shut in winter. Ask at Gosaikunda which are open before you cross, and carry food, water and warm clothing for the whole day."
+    },
+    {
+      "title": "Access after the 2026 flood",
+      "text": "The Bhote Koshi flood of 26 August 2026 destroyed bridges and road around Syabrubesi. The trails on this route lie on other rivers and were reported open again from late October 2026, with the start moved to Dhunche or Thulo Syabru. Confirm the current roadhead before you travel."
+    }
+  ],
+  "tips": [
+    "Keep a spare day in hand for the pass. Weather that closes the Laurebina La often clears within a day or two.",
+    "Carry microspikes from November to April for the traverse to the lake and the far side of the pass.",
+    "Bring cash for the whole trek from Kathmandu, including the Shivapuri Nagarjun National Park ticket you need on the last day.",
+    "Pack for both ends of the scale: nights below freezing at Kyanjin Gompa and the lake, and warm, humid afternoons on the final ridge.",
+    "Trekking poles are worth their weight here. The route has several descents of 1,000 m or more.",
+    "Lodges at Gosaikunda, Phedi and Ghopte are simpler than those in the Langtang valley; carry a proper sleeping bag."
+  ],
+  "variants": [
+    {
+      "name": "Start from Dhunche and Thulo Syabru",
+      "text": "The approach in use since the 2026 flood. Walk or ride from Dhunche to Thulo Syabru, drop to the Langtang Khola and join the valley trail below Bamboo. You return to Thulo Syabru on day seven, so spare kit can be left at a lodge there."
+    },
+    {
+      "name": "Extra night at Laurebina",
+      "text": "Split day nine at the Laurebina lodges, 3,910 m. It adds a day, shortens the approach to the lake, and is the sensible choice if anyone in the group was slow to adjust at Kyanjin Gompa."
+    },
+    {
+      "name": "Finish through the Hyolmo villages",
+      "text": "From Tharepati, descend east to Melamchi Gaun and continue through Tarkeghyang and Sermathang to the road at Melamchi Pul Bazaar instead of following the ridge to Sundarijal. It takes about the same time and swaps forest for villages and monasteries."
+    },
+    {
+      "name": "Gosaikunda and Helambu only",
+      "text": "Start at Dhunche, climb to the lake with a night at Laurebina, then cross the pass and walk out along the ridge. This takes eight or nine days, but you reach 4,380 m without the acclimatization that Kyanjin Gompa provides."
+    }
+  ],
+  "related": ["langtang-valley", "gosaikunda", "helambu", "tamang-heritage-trail"],
+  "confidence": "medium"
+}

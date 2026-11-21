@@ -1,0 +1,162 @@
+{
+  "slug": "gosaikunda",
+  "name": "Gosaikunda",
+  "aka": ["Gosainkunda", "Gosaikunda Lake Trek", "Gosaikunda Lakes"],
+  "region": "langtang",
+  "tagline": "A steep ridge climb from Dhunche to Shiva's lakes at 4,380 m",
+  "summary": "A short trek from Dhunche up a forested ridge to the sacred Gosaikunda lakes at 4,380 m. It gains 2,400 m in three days, so pacing matters far more than distance.",
+  "intro": [
+    "Gosaikunda is a cluster of high lakes on the ridge that divides the Langtang valley from Helambu, and one of the most important pilgrimage sites in Nepal. Hindus hold that Shiva made the main lake by driving his trident into the mountain; the Trishuli river that drains it takes its name from the story. The trail from Dhunche is short, direct and almost entirely uphill.",
+    "That directness is the problem. Dhunche is at 1,960 m and the lake lodges are at 4,380 m, and most itineraries cover the difference in two walking days. That is two to three times the rate of ascent usually advised above 3,000 m, and every year people are carried or flown down from the lake with altitude illness, pilgrims especially. The plan below adds a night at Laurebina to slow the climb. It costs one day and is worth it, above all if this is your first time over 4,000 m.",
+    "The ridge itself is a fine walk: oak and rhododendron forest to Chandanbari, then open hillside with a skyline that runs from the Annapurnas past Manaslu and Ganesh Himal to Langtang Lirung. Lodges are simple, and at their busiest around the Janai Purnima full moon in August, when thousands of pilgrims climb to bathe in the lake. From December to March the lake is frozen and the path above Laurebina holds snow and ice."
+  ],
+  "days": 6,
+  "daysRange": [5, 7],
+  "distanceKm": 40,
+  "maxAlt": { "m": 4380, "place": "gosaikunda" },
+  "difficulty": "moderate",
+  "difficultyNote": "Short days on a clear trail, but it reaches 4,380 m very quickly and the upper path is narrow, exposed and icy in winter.",
+  "style": ["teahouse"],
+  "start": "dhunche",
+  "end": "dhunche",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "Buses and jeeps run from Machhapokhari in Kathmandu to Dhunche on the Pasang Lhamu Highway, through Trishuli Bazaar. The Bhote Koshi flood of August 2026 damaged this road around Betrawati; it was reported open again to jeeps and light vehicles that autumn, and the trekking agencies' association listed Gosaikunda as accessible from 22 October 2026. Check whether buses have resumed.",
+    "options": [
+      { "mode": "bus", "from": "kathmandu", "to": "dhunche", "time": "6–8 h", "note": "Morning departures from Machhapokhari. Confirm that buses are running again after the 2026 flood." },
+      { "mode": "jeep", "from": "kathmandu", "to": "dhunche", "time": "5–6 h", "note": "Shared or private four-wheel drive; the more dependable choice while parts of the road are on temporary repairs." }
+    ]
+  },
+  "seasons": {
+    "best": [4, 5, 10, 11],
+    "good": [3, 9, 12],
+    "hard": [1, 2, 6, 7, 8],
+    "note": "October and November are clear and cold. April and May are warmer, with rhododendron on the ridge and hazier views. From December to March the lake freezes and the traverse above Laurebina holds snow and ice; go only with microspikes and a guide who knows the conditions. The monsoon is wet and cloudy, though the Janai Purnima full moon in August brings thousands of pilgrims regardless."
+  },
+  "permits": ["langtang-np", "tims"],
+  "guide": {
+    "rule": "required",
+    "note": "The Nepal Tourism Board has required foreign trekkers to hire a licensed guide since April 2023, though checks on the trail are inconsistent. On this route a guide's main job is to hold your pace down, spot altitude illness early and organize a descent in the dark if it comes to that. In winter they also judge whether the icy traverse above Laurebina is safe to cross."
+  },
+  "highlights": [
+    "Gosaikunda, Bhairav Kunda and Saraswati Kunda under bare rock ridges",
+    "The view from Laurebina, from the Annapurnas to Langtang Lirung",
+    "Oak and rhododendron forest that is red panda habitat",
+    "Yak cheese and the small monastery at Chandanbari",
+    "The Janai Purnima pilgrimage at the August full moon"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive from Kathmandu to Dhunche",
+      "from": "kathmandu",
+      "to": "dhunche",
+      "sleep": 1960,
+      "hours": [6, 8],
+      "kind": "transfer",
+      "mode": "drive",
+      "note": "The Pasang Lhamu Highway through Trishuli Bazaar, slow and rough in places and on temporary repairs since the August 2026 flood. Park permits are checked as you enter Dhunche. A night at 1,960 m is a useful first step up from Kathmandu."
+    },
+    {
+      "day": 2,
+      "title": "Dhunche to Chandanbari",
+      "from": "dhunche",
+      "to": "chandanbari",
+      "sleep": 3330,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "Cross the Trishuli Khola below town, then climb without a break through oak and rhododendron forest, past the teahouses at Deurali and Dimsa. You finish 1,370 m above Dhunche, far more than the usual daily guideline, so walk slowly, drink often and expect to feel the height in the evening."
+    },
+    {
+      "day": 3,
+      "title": "Chandanbari to Laurebina",
+      "from": "chandanbari",
+      "to": "laurebina",
+      "via": ["cholangpati"],
+      "sleep": 3910,
+      "hours": [3, 4],
+      "km": 5,
+      "kind": "trek",
+      "note": "A short day on purpose. The trail leaves the forest at Cholangpati and climbs open hillside to the lodges at Laurebina. Many itineraries go straight on to the lake; stopping here roughly halves the day's gain and is the best protection against altitude illness on this route."
+    },
+    {
+      "day": 4,
+      "title": "Laurebina to Gosaikunda",
+      "from": "laurebina",
+      "to": "gosaikunda",
+      "sleep": 4380,
+      "hours": [3, 4],
+      "km": 4,
+      "kind": "trek",
+      "note": "Climb to the chorten on the ridge, then follow a narrow path cut across a steep slope, with Saraswati Kunda and Bhairav Kunda below you, to the lodges above the main lake. Walk round the lake in the afternoon. In winter this traverse holds ice and is the most dangerous part of the trek."
+    },
+    {
+      "day": 5,
+      "title": "Gosaikunda to Dhunche",
+      "from": "gosaikunda",
+      "to": "dhunche",
+      "via": ["laurebina", "chandanbari"],
+      "sleep": 1960,
+      "hours": [6, 8],
+      "kind": "trek",
+      "note": "All the height comes off in one day: 2,400 m of descent on stone steps and forest path. Knees and toes take the punishment, so use poles and stop for a proper lunch at Chandanbari. Sleeping there and finishing next morning is a reasonable alternative."
+    },
+    {
+      "day": 6,
+      "title": "Drive back to Kathmandu",
+      "from": "dhunche",
+      "to": "kathmandu",
+      "sleep": 1400,
+      "hours": [6, 8],
+      "kind": "transfer",
+      "mode": "drive",
+      "note": "The same road back through Trishuli Bazaar. Delays for landslides and roadworks are routine, so keep the evening free."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Altitude illness",
+      "text": "The risk that defines this trek. Even with the extra night at Laurebina you sleep 2,400 m above Dhunche on the third night. A headache with nausea, unusual tiredness or breathlessness at rest means stop. If it is no better by morning, or gets worse, go down to Chandanbari. Avoid alcohol and sleeping tablets at the lake."
+    },
+    {
+      "title": "Ice and snow above Laurebina",
+      "text": "The path to the lake is cut across a steep slope with long drops below it. From December to March, and after any snowfall, it ices over and a slip can be fatal. Carry microspikes in winter and turn back if the traverse does not look safe."
+    },
+    {
+      "title": "Festival crowds",
+      "text": "For several days around Janai Purnima in August the trail and lodges are overwhelmed, many pilgrims climb too fast, and the weather is at its wettest. Unless you are going for the festival, avoid that week."
+    },
+    {
+      "title": "The road to Dhunche",
+      "text": "The highway crosses landslide-prone slopes and, since the August 2026 flood, temporary bridges. Travel by daylight, expect delays, and keep a spare day before any flight."
+    }
+  ],
+  "tips": [
+    "If you slept badly or have a headache at Chandanbari, spend a second night there before going higher. The lake will still be there.",
+    "Bring enough rupees from Kathmandu for the whole trek; there is no ATM on the trail.",
+    "Water is scarce on the ridge above Chandanbari. Fill your bottles at each lodge stop and treat it.",
+    "Nights at the lake drop well below freezing even in October. Bring a proper sleeping bag rather than relying on lodge blankets.",
+    "Start the descent day early. Tired legs on wet stone steps cause most of the falls.",
+    "The lake is a shrine: walk round it clockwise and leave offerings and prayer flags alone."
+  ],
+  "variants": [
+    {
+      "name": "Straight from Chandanbari to the lake",
+      "text": "The common five-day plan skips the night at Laurebina and climbs 1,050 m from Chandanbari to Gosaikunda in a single day. It suits people already acclimatized from Langtang or another recent trek. For anyone coming straight from Kathmandu it is where the trouble starts."
+    },
+    {
+      "name": "Over the Laurebina La to Helambu",
+      "text": "Continue past the lake over the 4,610 m pass to Phedi, Ghopte and Tharepati, then walk out along the Helambu ridge to Sundarijal in three or four more days. The far side is rough and remote, and often under snow from December to March."
+    },
+    {
+      "name": "From the Langtang valley",
+      "text": "Coming out of Langtang, climb from the gorge to Thulo Syabru and on to Chandanbari instead of starting at Dhunche. You arrive already acclimatized, which makes this the safest way to reach the lake."
+    },
+    {
+      "name": "From Sundarijal in reverse",
+      "text": "Walking in through Chisapani, Kutumsang and Tharepati takes about five days to the lake and spreads the ascent far better, at the price of crossing the Laurebina La on the way up."
+    }
+  ],
+  "related": ["langtang-gosaikunda-helambu", "langtang-valley", "helambu", "tamang-heritage-trail"],
+  "confidence": "high"
+}

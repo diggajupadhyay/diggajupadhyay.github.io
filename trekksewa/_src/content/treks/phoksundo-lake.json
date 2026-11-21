@@ -1,0 +1,184 @@
+{
+  "slug": "phoksundo-lake",
+  "name": "Phoksundo Lake",
+  "aka": ["Shey Phoksundo Lake", "Lower Dolpo short trek"],
+  "region": "western",
+  "tagline": "A week in Dolpo to Nepal's deepest lake and the Bon village of Ringmo",
+  "summary": "A short out-and-back trek from the Juphal airstrip up the Suligad gorge to Phoksundo Lake at 3,612 m, staying in simple lodges and needing a Lower Dolpo permit.",
+  "intro": [
+    "Phoksundo is the deepest lake in Nepal, about 145 m of blue-green water held behind an old landslide at 3,612 m in Shey Phoksundo National Park. The village of Ringmo, whose people follow the Bon religion, sits on the dam beside it. Reaching it takes three days' walking from the district town of Dunai, up a forested gorge where the Suligad river runs loud beside the trail.",
+    "This is the shortest way to see something of Dolpo. The trail is clear and never very high, and plain family-run lodges at Chhepka, Rechi, Chunuwar and Ringmo mean you do not need a camping crew. The effort goes into getting there: two flights, the second into a hillside airstrip that closes whenever wind or cloud builds, and a restricted-area permit that has to be arranged through a registered agency with a licensed guide.",
+    "Come for the lake, the waterfall below it and the quiet. Facilities are thin: no cash machines to rely on after Nepalgunj, patchy phone signal, and food limited to what mules and porters carry in. In May and June many villagers are away on the high pastures collecting yarsagumba, and some lodges are locked."
+  ],
+  "days": 8,
+  "daysRange": [7, 11],
+  "distanceKm": 105,
+  "maxAlt": { "m": 4040, "place": "phoksundo-lake-viewpoint" },
+  "difficulty": "moderate",
+  "difficultyNote": "Clear trails and modest altitude, but long stages in a gorge, simple lodges and a trailhead reached only by weather-dependent flights.",
+  "style": ["teahouse"],
+  "start": "juphal",
+  "end": "juphal",
+  "gateway": "nepalgunj",
+  "access": {
+    "summary": "Fly from Kathmandu to Nepalgunj on the plains near the Indian border, spend the night, and take the early flight to Juphal in Dolpa next morning. Juphal flights run only in calm, clear weather, so a delay of a day or more at either end is common. A rough road now links Dunai with the lowlands, but it is slow and often blocked.",
+    "options": [
+      { "mode": "flight", "from": "kathmandu", "to": "nepalgunj", "time": "about 1 hour", "note": "Several flights a day. Buses take ten to twelve hours." },
+      { "mode": "flight", "from": "nepalgunj", "to": "juphal", "time": "about 40 min", "note": "Small aircraft, early morning only, and frequently delayed or cancelled by wind and cloud." },
+      { "mode": "jeep", "from": "nepalgunj", "to": "dunai", "time": "about 2 days", "note": "The Bheri valley road through Jajarkot is rough, mostly a dry-season route and prone to landslides. A fallback rather than a plan." }
+    ]
+  },
+  "seasons": {
+    "best": [4, 5, 9, 10],
+    "good": [6, 7, 8, 11],
+    "hard": [1, 2, 3, 12],
+    "note": "Spring and autumn give the clearest days, and October is the pick. Summer is workable because Dolpo gets far less rain than the central hills, though the gorge is wetter than the country beyond the lake and flights are disrupted more often. November is cold but usually clear. From December to March lodges close, most of Ringmo moves down the valley and snow can block the upper trail."
+  },
+  "permits": ["shey-phoksundo-np", "rap-lower-dolpo"],
+  "guide": {
+    "rule": "required",
+    "note": "Lower Dolpo is a restricted area, so the permit comes only through a registered trekking agency and you must walk with a licensed guide, whether you are alone or in a group. On the ground, a guide who knows the lodge owners makes the difference between a bed and a meal and a locked door, especially in the yarsagumba season when many families are away."
+  },
+  "highlights": [
+    "Phoksundo Lake, Nepal's deepest, changing colour through the day",
+    "Ringmo village and the Bon monastery of Tshowa on the shore",
+    "The 167 m waterfall where the lake's outflow drops into the gorge",
+    "The cliff trail above the lake's western shore",
+    "Pine, cedar and birch forest in the Suligad gorge",
+    "A first look at Dolpo's Tibetan-influenced culture without a camping crew"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Fly to Juphal, walk to Dunai",
+      "from": "juphal",
+      "to": "dunai",
+      "sleep": 2140,
+      "hours": [2, 3],
+      "kind": "trek",
+      "note": "After the dawn flight from Nepalgunj, walk down through Juphal's terraces to the Thuli Bheri and follow the valley road upstream to the district town, where your permit is registered. Jeeps cover the same stretch if you would rather ride."
+    },
+    {
+      "day": 2,
+      "title": "Dunai to Chhepka",
+      "from": "dunai",
+      "to": "chhepka",
+      "via": ["suligad"],
+      "sleep": 2680,
+      "hours": [5, 7],
+      "kind": "trek",
+      "note": "Cross the river, walk downstream to the national park gate where the Suligad joins, and turn north into the gorge. The trail climbs and drops beside the water through walnut and pine past Kageni and Shyanta. Permits are checked at the gate."
+    },
+    {
+      "day": 3,
+      "title": "Chhepka to Chunuwar",
+      "from": "chhepka",
+      "to": "chunuwar",
+      "via": ["rechi"],
+      "sleep": 3110,
+      "hours": [5, 7],
+      "kind": "trek",
+      "note": "A long day of short, steep ups and downs beside the river, crossing it on log and suspension bridges. Above Rechi the valley divides at Sumduwa, where the park has its headquarters; the lodges at Chunuwar are a little beyond."
+    },
+    {
+      "day": 4,
+      "title": "Chunuwar to Ringmo and Phoksundo Lake",
+      "from": "chunuwar",
+      "to": "ringmo",
+      "via": ["phoksundo-waterfall-viewpoint"],
+      "sleep": 3641,
+      "high": 3800,
+      "hours": [3, 5],
+      "kind": "trek",
+      "note": "Climb steadily through Palam, the winter settlement of Ringmo's families, to a ridge with the first sight of the waterfall and, beyond it, the lake. An easy descent through birch brings you to Ringmo, a few minutes from the shore."
+    },
+    {
+      "day": 5,
+      "title": "Day at Ringmo and Phoksundo Lake",
+      "from": "ringmo",
+      "to": "ringmo",
+      "via": ["tshowa-gompa", "phoksundo-lake-viewpoint"],
+      "sleep": 3641,
+      "high": 4040,
+      "hours": [3, 5],
+      "kind": "rest",
+      "note": "Walk round the shore to Tshowa, the Bon monastery on a bluff above the water, then follow the Upper Dolpo trail up the western cliffs for the classic view down the lake. The path is narrow with a long drop; turn back where it stops feeling comfortable."
+    },
+    {
+      "day": 6,
+      "title": "Ringmo to Chhepka",
+      "from": "ringmo",
+      "to": "chhepka",
+      "via": ["phoksundo-waterfall-viewpoint", "chunuwar", "rechi"],
+      "sleep": 2680,
+      "high": 3800,
+      "hours": [6, 8],
+      "kind": "trek",
+      "note": "Two stages of the walk in combined into one mostly downhill day, after a short climb back to the waterfall ridge. Leave early; it is a long way and the gorge is dark by late afternoon."
+    },
+    {
+      "day": 7,
+      "title": "Chhepka to Juphal",
+      "from": "chhepka",
+      "to": "juphal",
+      "via": ["suligad"],
+      "sleep": 2475,
+      "hours": [6, 7],
+      "kind": "trek",
+      "note": "Down the last of the gorge to the park gate, then west along the Thuli Bheri and up the final 400 m to the airstrip village, the hottest climb of the trek. Reconfirm your seat as soon as you arrive."
+    },
+    {
+      "day": 8,
+      "title": "Fly from Juphal to Nepalgunj",
+      "from": "juphal",
+      "to": "nepalgunj",
+      "sleep": 150,
+      "hours": [1, 1],
+      "kind": "transfer",
+      "mode": "flight",
+      "note": "Flights leave soon after sunrise while the air is still. A same-day connection to Kathmandu is usually possible, but keep a spare day before any international flight."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Flight delays at Juphal",
+      "text": "The airstrip is short, sloping and exposed to wind, so flights are cancelled often and backlogs build. Carry extra cash for unplanned nights and keep at least two spare days in your overall schedule."
+    },
+    {
+      "title": "The gorge trail",
+      "text": "Sections between Chhepka and Chunuwar are narrow, cut into steep slopes and damaged by landslides most summers, and some bridges are temporary log crossings. Take care in rain, and stand on the uphill side when mule or yak trains pass."
+    },
+    {
+      "title": "Altitude at the lake",
+      "text": "You sleep at 3,641 m four days after leaving the plains. Most people notice no more than a mild headache, but drink well, climb slowly on the day from Chunuwar and do not ignore symptoms that get worse."
+    },
+    {
+      "title": "Thin services",
+      "text": "There is no hospital beyond Dunai, phone coverage is patchy and a helicopter needs good weather. A proper first-aid kit and evacuation insurance belong on the kit list here."
+    }
+  ],
+  "tips": [
+    "Take all your cash from Kathmandu or Nepalgunj. Do not count on finding a working cash machine in Dolpa.",
+    "Lodges are simple rooms around a kitchen fire. Bring a sleeping bag, and expect dal bhat, noodles, potatoes and Tibetan bread rather than a menu.",
+    "Nepalgunj is hot for most of the year; pack one set of light clothes for the night there.",
+    "Walk round Bon shrines and mani walls anticlockwise, the opposite of Buddhist custom, and ask before taking photographs inside Tshowa monastery.",
+    "Water in the gorge comes from the river and from side streams used by livestock. Treat all of it.",
+    "If you have a spare day, spend it at the lake rather than hurrying down. Early morning and evening light are the reason to come."
+  ],
+  "variants": [
+    {
+      "name": "Straight to Chhepka",
+      "text": "Skip the night in Dunai by walking or taking a jeep from Juphal to the park gate at Suligad and continuing up the gorge the same day. It saves a day if your agency has already dealt with the paperwork."
+    },
+    {
+      "name": "Lower Dolpo circuit",
+      "text": "A camping loop of about two weeks links Ringmo with Dho Tarap over the Baga La and Numa La, both above 5,000 m, using the Tarap gorge between Dho and Dunai."
+    },
+    {
+      "name": "On to Shey Gompa",
+      "text": "With the Upper Dolpo permit and a camping crew you can carry on along the lake and over the Kang La to Shey Gompa; see the Upper Dolpo route."
+    }
+  ],
+  "related": ["upper-dolpo", "rara-lake"],
+  "confidence": "medium"
+}

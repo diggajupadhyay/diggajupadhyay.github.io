@@ -1,0 +1,173 @@
+{
+  "slug": "everest-view-trek",
+  "name": "Everest View Trek",
+  "aka": ["Everest Panorama Trek", "Tengboche Trek", "Everest Short Trek"],
+  "region": "everest",
+  "tagline": "A week among Sherpa villages with Everest in view, never sleeping above 3,860 m",
+  "summary": "A seven-day trek from Lukla to Namche Bazaar, Tengboche monastery and Khumjung, with views of Everest, Lhotse and Ama Dablam and a highest point of 3,880 m.",
+  "intro": [
+    "This is the first third of the Everest Base Camp trail, walked for its own sake. You fly to Lukla, climb to Namche Bazaar, spend a day on the ridge above it where Everest first comes into full view, and go on to the monastery at Tengboche before turning round. The way back passes through Khumjung, the largest village in Khumbu.",
+    "It suits people who have a week, not a fortnight, families with older children, and anyone who wants to see the mountain without the cold nights and thin air above 4,000 m. The highest bed is at 3,860 m. That is still high enough to give you a headache if you rush, so the plan keeps the standard second night in Namche.",
+    "Do not mistake short for flat. The climb to Namche gains 600 m in one go, and the trail to Tengboche drops to the river and climbs another 600 m. In return the paths are wide, the lodges on this stretch are among the most comfortable on any trek in Nepal, and there is a hot shower and a bakery at almost every stop."
+  ],
+  "days": 7,
+  "daysRange": [5, 8],
+  "distanceKm": 62,
+  "maxAlt": { "m": 3880, "place": "everest-view-hotel" },
+  "difficulty": "moderate",
+  "difficultyNote": "Two sustained 600 m climbs and a top sleeping height of 3,860 m, on wide, well-built trails with short days.",
+  "style": ["teahouse"],
+  "start": "lukla",
+  "end": "lukla",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "Fly to Lukla and back. Flights leave soon after dawn from Kathmandu or, in the spring and autumn peaks, from Manthali in Ramechhap, and are cancelled when cloud covers the Lukla approach. On a one-week trip a lost day matters, so keep a spare one in hand.",
+    "options": [
+      { "mode": "flight", "from": "kathmandu", "to": "lukla", "time": "35 min", "note": "Common outside the peak weeks. Sit on the left going in for the mountain view." },
+      { "mode": "flight", "from": "manthali", "to": "lukla", "time": "20 min", "note": "Used for most flights in April, May, October and November. The airstrip is four to five hours by road from Kathmandu." },
+      { "mode": "jeep", "from": "kathmandu", "to": "lukla", "time": "1–2 days + 2 days' walk", "note": "Road to Salleri and Thamdanda, then on foot. It doubles the length of this trek, so it is only worth it when flights have stopped for days." }
+    ]
+  },
+  "seasons": {
+    "best": [3, 4, 5, 10, 11],
+    "good": [1, 2, 9, 12],
+    "hard": [6, 7, 8],
+    "note": "Because the trek stays below 3,900 m it works in winter too: December to February is cold and often very clear, with ice on shaded stretches in the morning. October and November have the steadiest views, March and April bring rhododendron bloom below Tengboche. In the monsoon the mountains are mostly hidden and flights are erratic."
+  },
+  "permits": ["sagarmatha-np", "khumbu-rm"],
+  "guide": {
+    "rule": "strongly-recommended",
+    "note": "Khumbu has not enforced the national guide requirement, and this is the busiest and best-marked trail in the country, so finding the way is not the issue. A licensed guide is still useful on a short first trek: they set a pace that suits the Namche hill, hold beds in peak season and deal with the airline when flights are delayed."
+  },
+  "highlights": [
+    "Everest, Lhotse and Ama Dablam from the ridge above Namche",
+    "Namche Bazaar, its lanes, bakeries and Saturday market",
+    "Tengboche monastery and its afternoon prayers",
+    "Khumjung, with the school Hillary founded and its old monastery",
+    "High suspension bridges over the Dudh Koshi"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Fly to Lukla, walk to Phakding",
+      "from": "lukla",
+      "to": "phakding",
+      "sleep": 2610,
+      "hours": [3, 4],
+      "km": 8,
+      "kind": "trek",
+      "note": "A morning flight and an easy three hours down the valley past mani walls and small farms. Phakding is lower than Lukla, which makes the first night easier on your body."
+    },
+    {
+      "day": 2,
+      "title": "Phakding to Namche Bazaar",
+      "from": "phakding",
+      "to": "namche-bazaar",
+      "via": ["monjo"],
+      "sleep": 3440,
+      "hours": [5, 6],
+      "km": 11,
+      "kind": "trek",
+      "note": "The trail stays near the river as far as Monjo, where permits are checked, then crosses the high bridge and climbs 600 m through pine forest to Namche. This is the hardest day of the trek. Go slowly, drink often and expect to feel the height when you arrive."
+    },
+    {
+      "day": 3,
+      "title": "Acclimatization day: Everest View Hotel",
+      "from": "namche-bazaar",
+      "to": "namche-bazaar",
+      "via": ["everest-view-hotel"],
+      "sleep": 3440,
+      "high": 3880,
+      "hours": [3, 4],
+      "kind": "acclimatization",
+      "note": "Climb past the national park visitor centre to the Syangboche shelf and along to the hotel terrace, about 440 m above town. Everest, Lhotse and Ama Dablam are in front of you by mid-morning. Have tea, walk back down and rest."
+    },
+    {
+      "day": 4,
+      "title": "Namche to Tengboche",
+      "from": "namche-bazaar",
+      "to": "tengboche",
+      "via": ["kyangjuma", "phunki-tenga"],
+      "sleep": 3860,
+      "hours": [5, 6],
+      "km": 10,
+      "kind": "trek",
+      "note": "The trail contours high above the Dudh Koshi with the mountains ahead all morning, drops through pine forest to the river at Phunki Tenga, then climbs 600 m in long zigzags to the monastery. Try to arrive in time for the afternoon prayers."
+    },
+    {
+      "day": 5,
+      "title": "Tengboche to Namche by way of Khumjung",
+      "from": "tengboche",
+      "to": "namche-bazaar",
+      "via": ["phunki-tenga", "khumjung"],
+      "sleep": 3440,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "Go back down to the river and up to the junction at Sanasa, then take the upper path to Khumjung to see the school and the monastery. Cross the shelf past the Syangboche airstrip and drop into Namche. If you are tired, the direct trail saves an hour."
+    },
+    {
+      "day": 6,
+      "title": "Namche to Lukla",
+      "from": "namche-bazaar",
+      "to": "lukla",
+      "via": ["monjo", "phakding"],
+      "sleep": 2860,
+      "hours": [6, 7],
+      "km": 19,
+      "kind": "trek",
+      "note": "The whole valley in one long, mostly downhill day, with a last hour uphill into Lukla. If your knees complain or your flight is a day later, break it with a night in Monjo or Phakding."
+    },
+    {
+      "day": 7,
+      "title": "Fly out from Lukla",
+      "from": "lukla",
+      "to": "kathmandu",
+      "sleep": 1400,
+      "hours": [1, 1],
+      "kind": "transfer",
+      "mode": "flight",
+      "note": "Morning flight to Kathmandu or Manthali, weather permitting. A cancelled flight means another night in Lukla, so do not plan to leave Nepal the same evening."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Altitude at Namche and Tengboche",
+      "text": "You fly to 2,860 m and sleep at 3,440 m the next night, a quick rise for anyone coming from sea level. Mild headaches and broken sleep at Namche are common. Do not go on to Tengboche with a headache that has not cleared; an extra night in Namche costs little on a trek this short."
+    },
+    {
+      "title": "Lukla flights",
+      "text": "Cloud closes the airstrip often, sometimes for several days. Keep at least one spare day between the trek and your international flight, and two if you are travelling near the monsoon."
+    },
+    {
+      "title": "Animals on the trail",
+      "text": "Yak, dzo and mule trains use the same path. Wait on the uphill side, never on the outer edge, and let them clear a bridge before you step onto it."
+    },
+    {
+      "title": "Ice in winter",
+      "text": "From December to February the shaded parts of the Namche hill and the forest climb to Tengboche can be icy until mid-morning. Start a little later, use poles and carry light traction spikes."
+    }
+  ],
+  "tips": [
+    "Even in spring, pack a down jacket and a warm sleeping bag. Tengboche nights are at or below freezing for most of the trekking year.",
+    "Namche has cash machines, but they are often empty or offline. Bring enough rupees from Kathmandu for the whole week.",
+    "Walk the Namche hill slowly enough to hold a conversation. Arriving an hour later costs nothing; arriving exhausted costs you the next day.",
+    "With children or older walkers, add a night at Monjo on the way up to split the climb to Namche.",
+    "Treat all drinking water. Lodges along the whole route sell boiled or filtered water for refills."
+  ],
+  "variants": [
+    {
+      "name": "Namche only, five days",
+      "text": "Leave out Tengboche: fly in, walk to Namche in two days, spend a day on the ridge with a loop through Khumjung, and walk back to Lukla in a day or two. The highest bed is then 3,440 m."
+    },
+    {
+      "name": "A night in Khumjung",
+      "text": "Stay in Khumjung on day 5 instead of dropping back to Namche. It is quieter and colder than Namche, with Ama Dablam in view to the east, and adds only an hour to the next day."
+    },
+    {
+      "name": "On to Ama Dablam Base Camp",
+      "text": "With two more days, continue from Tengboche to Pangboche and walk up to the base camp at 4,570 m and back before turning for home."
+    }
+  ],
+  "related": ["everest-base-camp", "ama-dablam-base-camp", "gokyo-lakes", "pikey-peak"],
+  "confidence": "high"
+}
