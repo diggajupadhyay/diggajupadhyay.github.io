@@ -98,14 +98,43 @@ There are no analytics, ads or third-party scripts.
 
 ## Honest limits of the content
 
-- Coordinates are approximate for most places (`coordQuality: "approx"`). Trek maps join stops
-  with a dashed straight line and say so. Verifying coordinates against OpenStreetMap is the most
-  valuable next data task.
+- Place positions are a planning aid, not survey data. See "Checking place positions" below for
+  how each one was tested. Trek maps join stops with a dashed straight line and say so.
 - Daily rates, rental prices and food costs in `content/facts.json` marked `"verified": false`
   are typical figures that have not been confirmed for the current season. The site labels them.
 - Each trek carries a `confidence` field that is shown to readers.
 - Emergency phone numbers were checked against official pages in November 2026. Re-check them
   each season: Kathmandu landlines have changed format before.
+
+## Checking place positions
+
+Every place started as an estimate. `scripts/verify-coordinates.mjs` tests those estimates and
+records the outcome in each place's `coordQuality` and `coordSource`:
+
+| `coordSource` | `coordQuality` | Meaning | On the site |
+|---|---|---|---|
+| `osm` | `good` | Matched in OpenStreetMap by name, and a height (mapped, or from the terrain model) agrees | Pin |
+| `osm` | `approx` | Matched in OpenStreetMap by name and position only | Pin, labelled approximate |
+| `estimate` | `approx` | No clear match, but our estimate sits on ground at the right height | Pin, labelled approximate |
+| any | `uncertain` | No match, and the estimate does not fit the terrain | No pin; the place page says so |
+
+```bash
+node scripts/verify-coordinates.mjs lookup    # ask OpenStreetMap (Nominatim) for each place, one request a second
+node scripts/verify-coordinates.mjs heights   # terrain height at each estimate and candidate (Open-Meteo)
+node scripts/verify-coordinates.mjs decide    # weigh the evidence; writes scripts/.cache/coordinate-report.json
+node scripts/verify-coordinates.mjs apply     # write the result into content/places/
+npm run check
+```
+
+Each step caches its answers in `scripts/.cache/` (not committed) and can be re-run. Both
+services ration requests per address and per day, so a step may stop early and ask to be run
+again later. Read the report before `apply`: it gives the reason for every decision. After
+adding places, or to settle the ones still marked `uncertain`, run the four steps again; the
+quickest fix for a single place is to look it up on openstreetmap.org and type the coordinates
+in by hand with `"coordQuality": "good", "coordSource": "osm"`.
+
+Coordinates that come from OpenStreetMap are © OpenStreetMap contributors and stay under the
+Open Database Licence (ODbL). The credits page says so; keep that notice.
 
 ## Regenerating icons
 

@@ -55,6 +55,24 @@ export const describe = (code, isDay = true) => {
 };
 
 const TTL = 60 * 60 * 1000;
+
+/** Fetch JSON from the forecast service, marking rate-limit refusals so the page can say so. */
+async function request(params) {
+  const res = await fetch(`https://api.open-meteo.com/v1/forecast?${params}`);
+  if (!res.ok) {
+    const err = new Error(`HTTP ${res.status}`);
+    err.limited = res.status === 429;
+    throw err;
+  }
+  return res.json();
+}
+
+/** What to tell the visitor when no forecast, fresh or saved, can be shown. */
+export function failureText(e) {
+  if (e && e.limited) return 'The forecast service is busy right now. Try again in a little while.';
+  if (typeof navigator !== 'undefined' && navigator.onLine === false) return 'You are offline. The forecast will load when you have a connection.';
+  return 'The forecast is not available right now. Try again in a little while.';
+}
 const keyFor = (lat, lon) => `wx:${lat.toFixed(3)},${lon.toFixed(3)}`;
 
 export function iconEl(name, size = 24) {
@@ -84,9 +102,7 @@ export async function getForecast({ lat, lon, alt, days = 6 }) {
   });
   if (typeof alt === 'number') params.set('elevation', String(alt));
   try {
-    const res = await fetch(`https://api.open-meteo.com/v1/forecast?${params}`);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const data = await res.json();
+    const data = await request(params);
     if (!data.daily || !data.current) throw new Error('unexpected response');
     const entry = { data, fetchedAt: Date.now() };
     store.set(key, entry);
@@ -115,9 +131,7 @@ export async function getForecasts(points, { days = 3 } = {}) {
     wind_speed_unit: 'kmh',
   });
   try {
-    const res = await fetch(`https://api.open-meteo.com/v1/forecast?${params}`);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const json = await res.json();
+    const json = await request(params);
     const list = Array.isArray(json) ? json : [json];
     if (list.length !== points.length || !list.every((x) => x && x.daily)) throw new Error('unexpected response');
     const entry = { list, fetchedAt: Date.now() };
@@ -149,7 +163,9 @@ export function toDays(data) {
     code: d.weather_code[i],
     max: d.temperature_2m_max[i],
     min: d.temperature_2m_min[i],
-    rain: d.precipitation_sum?.[i] ?? 0,
+    // precipitation_sum counts melted snow too (7 cm of snow is about 10 mm of water),
+    // so take the snow out to leave what actually falls as rain
+    rain: Math.max(0, Math.round(((d.precipitation_sum?.[i] ?? 0) - (d.snowfall_sum?.[i] ?? 0) / 0.7) * 10) / 10),
     snow: d.snowfall_sum?.[i] ?? 0,
     gust: d.wind_gusts_10m_max?.[i] ?? 0,
     prob: d.precipitation_probability_max?.[i] ?? null,
@@ -225,8 +241,8 @@ export async function renderWeather(el) {
     );
     el.replaceChildren(...[head, alertBox, strip, foot].filter(Boolean));
     el.dataset.state = stale ? 'stale' : 'ok';
-  } catch {
-    el.replaceChildren(h('p', { class: 'muted' }, 'The forecast is not available right now. It needs a connection the first time you open this page.'));
+  } catch (e) {
+    el.replaceChildren(h('p', { class: 'muted' }, failureText(e)));
     el.dataset.state = 'error';
   }
 }

@@ -39,6 +39,8 @@ const FOOTER = [
       ['safety/altitude-check/', 'Altitude sickness check'],
       ['safety/acclimatization/', 'Acclimatization checker'],
       ['safety/emergency/', 'Emergency & SOS'],
+      ['safety/insurance/', 'Insurance check'],
+      ['tools/compare/', 'Compare treks'],
       ['tools/gpx/', 'GPX viewer'],
       ['tools/planner/', 'Trek planner'],
       ['tools/packing/', 'Packing list'],

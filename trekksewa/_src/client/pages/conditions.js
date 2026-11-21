@@ -2,7 +2,7 @@
 
 import { $, $$, h } from '../lib/dom.js';
 import { url } from '../lib/site.js';
-import { getForecasts, toDays, describe, dayAlerts, iconEl, deg, dayName } from '../lib/weather.js';
+import { getForecasts, toDays, describe, dayAlerts, iconEl, deg, dayName, failureText } from '../lib/weather.js';
 import { MONTHS } from '../../lib/format.mjs';
 
 // ---------- month by month ----------
@@ -66,8 +66,8 @@ if (cards.length) {
       const grid = $('[data-watch]');
       [...cards].sort((a, b) => order[a.dataset.level] - order[b.dataset.level]).forEach((c) => grid.append(c));
     })
-    .catch(() => {
-      status.textContent = 'The forecast is not available right now.';
-      for (const card of cards) $('[data-watch-body]', card).replaceChildren(h('p', { class: 'small muted' }, 'No forecast: it needs a connection the first time.'));
+    .catch((e) => {
+      status.textContent = failureText(e);
+      for (const card of cards) $('[data-watch-body]', card).replaceChildren(h('p', { class: 'small muted' }, 'No forecast to show yet.'));
     });
 }

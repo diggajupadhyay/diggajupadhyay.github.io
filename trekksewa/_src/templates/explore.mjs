@@ -3,7 +3,7 @@
 import { html, raw, jsonScript } from '../lib/html.mjs';
 import { icon } from '../lib/icons.mjs';
 import { ridgeStrip } from '../lib/landscape.mjs';
-import { PLACE_TYPE_LABEL, FACILITY_LABEL, metres, feet, num, monthRanges, daysRange } from '../lib/format.mjs';
+import { PLACE_TYPE_LABEL, FACILITY_LABEL, metres, feet, num, monthRanges, daysRange, numberWord } from '../lib/format.mjs';
 import { boilingPointC } from '../lib/altitude.mjs';
 import { formatCoord } from '../lib/geo.mjs';
 import { trekCard, hueClass, regionTag, note, permitCard, grade, noticesBlock, noticesFor } from './partials.mjs';
@@ -23,6 +23,14 @@ const mapBlock = (data, text = 'The map loads when you scroll here.') => html`<d
   <script type="application/json" data-map-data>${jsonScript(data)}</script>`;
 
 const placePoint = (p) => ({ s: p.slug, n: p.name, a: p.alt, lat: p.lat, lon: p.lon, t: PLACE_TYPE_LABEL[p.type] });
+const capital = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+/** How far to trust a marker, in a few plain words. */
+const positionNote = (p) =>
+  p.coordSource === 'osm'
+    ? p.coordQuality === 'good'
+      ? 'position from OpenStreetMap'
+      : 'position from OpenStreetMap, but the match is less certain, so treat it as approximate'
+    : 'our own estimate; the marker may be a kilometre or more from the lodges';
 
 // ------------------------------------------------------------------ regions
 
@@ -115,8 +123,8 @@ ${r.places.length
   ? html`<section class="section-tight" aria-labelledby="r-map">
       <div class="wrap">
         <div class="section-head"><h2 id="r-map">Places in ${r.name}</h2></div>
-        ${mapBlock({ center: r.center, zoom: r.zoom, points: r.places.map(placePoint), fit: true })}
-        <p class="map-note">${icon('info', { size: 14 })} Marker positions come from our own gazetteer and can be a few hundred metres out.</p>
+        ${mapBlock({ center: r.center, zoom: r.zoom, points: r.places.filter((p) => p.located).map(placePoint), fit: true })}
+        <p class="map-note">${icon('info', { size: 14 })} Marker positions come from OpenStreetMap where we could match a place, and from our own estimates elsewhere. Treat them as a guide, not as survey points.${r.places.some((p) => !p.located) ? ` ${capital(numberWord(r.places.filter((p) => !p.located).length))} ${r.places.filter((p) => !p.located).length === 1 ? 'place whose position we could not confirm is' : 'places whose position we could not confirm are'} listed below but not drawn.` : ''}</p>
         <div class="table-wrap">
           <table class="place-table">
             <thead><tr><th>Place</th><th>Type</th><th class="num">Altitude</th><th>On treks</th></tr></thead>
@@ -279,8 +287,10 @@ export function placePage(ctx, p) {
 
     <section class="place-section" aria-labelledby="pm-title">
       <h2 id="pm-title">Map</h2>
-      ${mapBlock({ center: [p.lat, p.lon], zoom: 13, focus: p.slug, points: [placePoint(p), ...nearby.map(placePoint)] })}
-      <p class="map-note">${icon('info', { size: 14 })} ${formatCoord(p.lat, p.lon)}${p.coordQuality === 'approx' ? ' — approximate; the marker may be a kilometre or more from the lodges' : ' — good to within a few hundred metres'}.</p>
+      ${p.located
+        ? html`${mapBlock({ center: [p.lat, p.lon], zoom: 13, focus: p.slug, points: [placePoint(p), ...nearby.map(placePoint)] })}
+            <p class="map-note">${icon('info', { size: 14 })} ${formatCoord(p.lat, p.lon)} — ${positionNote(p)}.</p>`
+        : note('plain', html`<p><strong>Not on our maps yet.</strong> We have not been able to confirm the position of ${p.name}, so we do not draw a marker for it rather than show one in the wrong place. The altitude and the forecast for the surrounding area are unaffected.</p>`, { iconName: 'map-pin-off' })}
     </section>
   </div>
 
@@ -318,7 +328,7 @@ export function placePage(ctx, p) {
         ...(p.ne ? { alternateName: p.ne } : {}),
         description: p.blurb,
         url: `${config.siteUrl}/places/${p.slug}/`,
-        geo: { '@type': 'GeoCoordinates', latitude: p.lat, longitude: p.lon, elevation: p.alt },
+        geo: p.located ? { '@type': 'GeoCoordinates', latitude: p.lat, longitude: p.lon, elevation: p.alt } : { '@type': 'GeoCoordinates', elevation: p.alt },
         containedInPlace: { '@type': 'Country', name: 'Nepal' },
       },
     ],

@@ -80,6 +80,9 @@ if (root) {
       line('Contingency', buffer, `${val('buffer')}%`),
       h('tr', { class: 'budget-sum' }, h('td', {}, 'Total for the group'), h('td', { class: 'num' }, usd(total))),
     );
+    // what has to be in your pocket on the trail: lodges and tips are paid in rupees, in cash
+    const cashEach = ((food + tips) / people) * (1 + val('buffer') / 100) * rate;
+    $('[data-budget-cash]', root).textContent = `Cash to carry on the trail: about NPR ${num(Math.round(cashEach / 1000) * 1000)} each for food, beds, tips and the contingency. Cash machines are rare and unreliable beyond the gateway town.`;
     store.set('budget-form', Object.fromEntries(new FormData(form).entries()));
   }
 

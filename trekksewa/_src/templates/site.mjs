@@ -3,7 +3,7 @@
 import { html, raw } from '../lib/html.mjs';
 import { icon } from '../lib/icons.mjs';
 import { ridgeStrip } from '../lib/landscape.mjs';
-import { longDate } from '../lib/format.mjs';
+import { longDate, num } from '../lib/format.mjs';
 import { note, arrowLink } from './partials.mjs';
 
 const head = (ctx, { crumbs, title, lead, seed, eyebrow }) => html`<header class="page-head">
@@ -55,7 +55,7 @@ ${head(ctx, { crumbs: [[null, 'About']], title: html`About ${config.name} <span 
 // ------------------------------------------------------------------ support / FAQ
 
 export function supportPage(ctx) {
-  const { u, config } = ctx;
+  const { u, config, content } = ctx;
   const groups = [
     [
       'Using the site',
@@ -79,7 +79,7 @@ export function supportPage(ctx) {
       'Accuracy',
       [
         ['How accurate are the route guides?', 'They are written from long familiarity with these routes and checked against published sources, but lodges close, trails move and rules change. Each trek states how well established its details are. Treat distances and times as approximate and confirm anything important locally.'],
-        ['How accurate are the map markers?', 'Markers come from our own gazetteer and can be a few hundred metres out, more where a place is marked approximate. The dashed line on a trek map simply joins the stops in order. Follow the trail on the map and on the ground, not the line.'],
+        ['How accurate are the map markers?', (content.positions.osm * 2 > content.positions.total ? 'Most' : 'Many') + ' markers take their position from OpenStreetMap; the rest are our own estimates and are labelled approximate. Places we could not confirm are not drawn at all. The dashed line on a trek map simply joins the stops in order. Follow the trail on the map and on the ground, not the line.'],
         ['Are permit fees current?', `They were last reviewed in ${longDate(config.contentReviewed)}, and each permit shows whether we could confirm it. Fees change, sometimes mid-season, so check with the Nepal Tourism Board or your agency before you pay.`],
         ['Is the altitude sickness check a diagnosis?', 'No. It is an educational aid based on a standard scoring system. It cannot examine you. If someone is getting worse at altitude, descend.'],
       ],
@@ -189,11 +189,20 @@ export function creditsPage(ctx) {
   const ext = (href, label) => html`<a href="${href}" rel="noopener" target="_blank">${label}</a>`;
   const permitSources = content.permits.permits.flatMap((p) => p.sources || []);
   const uniq = [...new Map([...permitSources, ...(content.emergency?.sources || [])].map((s) => [s.url, s])).values()];
+  const pos = content.positions;
   const body = html`
 ${head(ctx, { crumbs: [[null, 'Data and credits']], title: 'Data and credits', lead: 'Where the information comes from, the open projects the site is built on, and the medical references behind the safety tools.', seed: 89 })}
 <div class="wrap wrap-narrow section-tight"><div class="prose">
   <h2>Our own content</h2>
-  <p>Route guides, place descriptions, hazard notes and articles are written for ${config.name}. Altitudes, stage plans and coordinates are compiled from general knowledge of the routes and cross-checked against published sources where we could. Coordinates are approximate unless marked otherwise.</p>
+  <p>Route guides, place descriptions, hazard notes and articles are written for ${config.name}. Altitudes, stage plans and coordinates are compiled from general knowledge of the routes and cross-checked against published sources where we could.</p>
+  <h2 id="positions">Place positions</h2>
+  <p>The gazetteer holds ${num(pos.total)} places. Each started as our own estimate, which we then tested two ways: against OpenStreetMap, by looking the place up by name in the area around the estimate, and against a terrain elevation model (Copernicus DEM, through the Open-Meteo elevation service), where the ground height at the marker has to agree with the altitude we state.</p>
+  <ul>
+    <li><strong>${num(pos.osm)}</strong> take their position from OpenStreetMap. A match had to carry the right name and be the right kind of feature, and its height had to agree with ours wherever a height was mapped.</li>
+    <li><strong>${num(pos.own)}</strong> keep our own estimate. OpenStreetMap gave no clear match, but the estimate sits on ground at the right height. These are labelled approximate.</li>
+    <li><strong>${num(pos.hidden)}</strong> we could not confirm either way. They are listed with their altitude but are not drawn on any map, because a marker in the wrong place is worse than none.</li>
+  </ul>
+  <p>Positions are a planning aid and not survey data. Coordinates taken from OpenStreetMap are © ${ext('https://www.openstreetmap.org/copyright', 'OpenStreetMap contributors')} and remain under the Open Database Licence.</p>
   <h2>Maps</h2>
   <ul>
     <li>Map data © ${ext('https://www.openstreetmap.org/copyright', 'OpenStreetMap contributors')}, available under the Open Database Licence.</li>

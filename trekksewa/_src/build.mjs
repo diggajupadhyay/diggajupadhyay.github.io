@@ -224,8 +224,8 @@ emit(
 
 // ---------------------------------------------------------------- service worker
 // Precache the shell and the safety tools so they open with no connection at all.
-const precachePages = ['', 'offline/', 'safety/', 'safety/emergency/', 'safety/altitude-check/', 'safety/acclimatization/', 'saved/'].filter((p) => pages.some((x) => x.path === p));
-const pageScripts = new Set(['main', 'home', 'emergency', 'ams', 'acclimatization', 'saved']);
+const precachePages = ['', 'offline/', 'safety/', 'safety/emergency/', 'safety/altitude-check/', 'safety/acclimatization/', 'safety/insurance/', 'saved/'].filter((p) => pages.some((x) => x.path === p));
+const pageScripts = new Set(['main', 'home', 'safety', 'emergency', 'ams', 'acclimatization', 'insurance', 'saved']);
 const precacheAssets = assets.all.filter((f) => {
   if (f === assets.css || f === assets.icons || f.endsWith('.woff2')) return true;
   if (f.includes('/chunks/')) return !/leaflet|map/.test(f);

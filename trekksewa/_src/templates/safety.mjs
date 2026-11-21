@@ -36,12 +36,13 @@ ${head(ctx, {
   seed: 31,
 })}
 <div class="wrap section-tight">
-  <div class="grid grid-3">
+  <div class="grid grid-4">
     <a class="card card-pad card-link feature" href="${u('safety/altitude-check/')}"><span class="feature-icon">${icon('heart-pulse', { size: 22 })}</span><h2 class="h3">Altitude sickness check</h2><p>Score your symptoms on the Lake Louise scale and get a clear next step. Keeps a history so you can see the trend.</p></a>
     <a class="card card-pad card-link feature" href="${u('safety/acclimatization/')}"><span class="feature-icon">${icon('trending-up', { size: 22 })}</span><h2 class="h3">Acclimatization checker</h2><p>Test any itinerary against ascent guidelines before you book it, and see where an extra night matters.</p></a>
     <a class="card card-pad card-link feature feature-sos" href="${u('safety/emergency/')}"><span class="feature-icon">${icon('siren', { size: 22 })}</span><h2 class="h3">Emergency &amp; SOS</h2><p>Rescue numbers, a one-tap location message, a whistle and a light signal, and how evacuation works.</p></a>
+    <a class="card card-pad card-link feature" href="${u('safety/insurance/')}"><span class="feature-icon">${icon('shield-check', { size: 22 })}</span><h2 class="h3">Insurance check</h2><p>What your policy has to cover for the trek you have chosen, as a list to go through with the small print.</p></a>
   </div>
-  <p class="small muted" style="margin-top:1rem">${icon('wifi-off', { size: 15 })} All three work offline once you have opened them.</p>
+  <p class="small muted" style="margin-top:1rem">${icon('wifi-off', { size: 15 })} All of these work offline once you have opened them.</p>
 </div>
 
 <section class="section-tight band" aria-labelledby="rules-title">
@@ -53,6 +54,31 @@ ${head(ctx, {
       <li><span>2</span><h3>Never go higher with symptoms</h3><p>Stay where you are until they clear. A day lost to rest is cheaper than a helicopter.</p></li>
       <li><span>3</span><h3>If you are getting worse, go down now</h3><p>Not after breakfast, not when the group is ready. Descending 500 to 1,000 m is the treatment, and it works.</p></li>
     </ol>
+  </div>
+</section>
+
+<section class="section-tight" aria-labelledby="o2-title" data-o2>
+  <div class="wrap o2">
+    <div>
+      <h2 id="o2-title">How thin is the air?</h2>
+      <p class="muted">The air is the same mix all the way up; there is simply less of it in each breath. Slide to a height to see what your body has to work with.</p>
+      <div class="field o2-field">
+        <label for="o2-alt">Altitude: <output data-o2-alt for="o2-alt">3,440 m</output></label>
+        <input type="range" id="o2-alt" min="0" max="6000" step="20" value="3440" data-o2-range>
+        <div class="chips o2-presets">
+          <button type="button" class="chip" data-o2-set="1400">Kathmandu</button>
+          <button type="button" class="chip" data-o2-set="3440">Namche</button>
+          <button type="button" class="chip" data-o2-set="4130">Annapurna BC</button>
+          <button type="button" class="chip" data-o2-set="5364">Everest BC</button>
+          <button type="button" class="chip" data-o2-set="5416">Thorong La</button>
+        </div>
+      </div>
+    </div>
+    <dl class="stats">
+      <div><dt>Oxygen per breath</dt><dd><span data-o2-pct>65%</span><small>of sea level, roughly</small></dd></div>
+      <div><dt>Altitude zone</dt><dd class="stat-text"><span data-o2-zone>High altitude</span></dd></div>
+      <div><dt>Water boils at</dt><dd><span data-o2-boil>88.5 °C</span><small>food takes longer to cook</small></dd></div>
+    </dl>
   </div>
 </section>
 
@@ -118,6 +144,7 @@ ${head(ctx, {
     title: 'Trekking Safety in Nepal: Altitude, Acclimatization & Rescue',
     description: 'How to stay safe on a Nepal trek: the three rules of altitude, AMS, HACE and HAPE, sensible ascent rates, and free offline tools for symptom checks and emergencies.',
     section: 'safety',
+    scripts: ['safety'],
     crumbs: [[null, 'Safety']],
     body,
   };
@@ -413,5 +440,74 @@ export function emergencyPage(ctx) {
     crumbs: [['safety/', 'Safety'], [null, 'Emergency']],
     body,
     jsonLd: [],
+  };
+}
+
+// ------------------------------------------------------------------ insurance check
+
+const INSURANCE_CHECKS = [
+  ['altitude', 'Trekking is covered as an activity up to at least <span data-ins-tier>the highest point of your route</span>.', 'The limit applies to the highest point you reach, not to where you sleep. Many standard and credit-card policies stop at 3,000 or 4,000 m.'],
+  ['heli', 'Helicopter evacuation and search and rescue are named in the policy.', 'Look for a low sub-limit hidden in the schedule. A single flight can cost several thousand dollars.'],
+  ['medical', 'Emergency medical treatment in Nepal and repatriation home are covered.', ''],
+  ['assist', 'There is a 24-hour assistance number, and I have it on paper as well as on my phone.', 'Add it to your emergency card on this site.'],
+  ['approval', 'I know whether the insurer must approve a helicopter before it flies.', 'Most must. A flight they did not authorise may not be reimbursed, so the first call in an emergency is to them.'],
+  ['dates', 'The policy covers the whole trip, including spare days for delayed flights.', ''],
+  ['declared', 'Pre-existing conditions and any altitude medicine I have been prescribed are declared.', ''],
+  ['delay', 'Trip delay, missed connections and cancellation are included, or I have chosen to go without.', 'Mountain flights are cancelled often.'],
+  ['technical', 'If my route crosses a glacier or needs crampons or a rope, that is not excluded.', 'This matters on the Cho La, the Dhaulagiri Circuit and other high passes.', 'technical'],
+  ['shared', 'My guide or agency has a copy of the policy number and the assistance phone.', ''],
+];
+
+export function insurancePage(ctx) {
+  const { u, content } = ctx;
+  const cost = content.facts?.helicopterRescueCost;
+  const body = html`
+${head(ctx, {
+  crumbs: [['safety/', 'Safety'], [null, 'Insurance check']],
+  title: 'Insurance check',
+  lead: 'Most travel policies do not cover what a Nepal trek actually involves. Pick your trek and go through this list with the policy wording in front of you.',
+  seed: 37,
+})}
+<div class="wrap section-tight ins-layout" data-insurance>
+  <div>
+    <div class="card card-pad">
+      <div class="field" style="max-width:28rem">
+        <label for="ins-trek">Your trek</label>
+        <select class="select" id="ins-trek" data-ins-trek>
+          <option value="">Choose a trek…</option>
+          ${content.regions.filter((r) => r.treks.length).map((r) => html`<optgroup label="${r.long}">${r.treks.map((t) => html`<option value="${t.slug}" data-max="${t.maxAlt.m}" data-place="${t.maxPlace.name}" data-sleep="${t.analysis.maxSleep?.alt || ''}" data-grade="${t.difficulty}" data-style="${t.style.join(' ')}">${t.name}</option>`)}</optgroup>`)}
+        </select>
+      </div>
+      <div class="ins-result" data-ins-result hidden></div>
+    </div>
+    <h2 class="ins-h">Go through it line by line</h2>
+    <ul class="ins-list" data-ins-list>
+      ${INSURANCE_CHECKS.map(
+        ([id, text, why, flag]) => html`<li${flag ? raw(` data-ins-flag="${flag}"`) : ''}>
+          <label class="check"><input type="checkbox" value="${id}"><span><span class="ins-text">${raw(text)}</span>${why ? html`<small>${why}</small>` : ''}</span></label>
+        </li>`,
+      )}
+    </ul>
+    <p class="ins-count" data-ins-count aria-live="polite"></p>
+    <div class="cluster no-print" style="--gap:.5rem">
+      <button type="button" class="btn btn-secondary btn-sm" data-print>${icon('printer', { size: 16 })}Print</button>
+      <button type="button" class="btn btn-ghost btn-sm" data-ins-reset>Untick all</button>
+      <a class="btn btn-ghost btn-sm" href="${u('safety/emergency/')}">Fill in my emergency card</a>
+    </div>
+  </div>
+  <aside class="stack">
+    ${cost ? html`<div class="fact"><p class="fact-label">What a rescue costs</p><p class="fact-value">${cost.value}</p><p class="small muted">${cost.detail}</p></div>` : ''}
+    ${note('plain', html`<p>We do not sell or recommend insurance, and this list is not advice on any particular policy. Read the wording, and ask the insurer in writing if anything is unclear.</p>`)}
+    <a class="link-arrow small" href="${u('safety/emergency/#rescue')}">How rescue works in Nepal${icon('arrow-right', { size: 16 })}</a>
+  </aside>
+  <noscript>${note('warn', html`<p>The altitude for your trek needs JavaScript. The list above applies to every route.</p>`)}</noscript>
+</div>`;
+  return {
+    title: 'Travel Insurance Check for Trekking in Nepal',
+    description: 'What travel insurance must cover for a Nepal trek: the altitude limit for your route, helicopter evacuation, approval rules and the small print to check.',
+    section: 'safety',
+    scripts: ['insurance'],
+    crumbs: [['safety/', 'Safety'], [null, 'Insurance check']],
+    body,
   };
 }

@@ -30,6 +30,7 @@ const needsJs = () => html`<noscript>${note('warn', html`<p>This tool needs Java
 export function toolsHubPage(ctx) {
   const { u } = ctx;
   const tools = [
+    ['tools/compare/', 'scale', 'Compare treks', 'Two or three routes side by side: length, altitude, difficulty, season and permits.'],
     ['tools/planner/', 'calendar-days', 'Trek planner', 'Put dates on any itinerary, see where each night falls and export it to your calendar.'],
     ['tools/packing/', 'list-checks', 'Packing list', 'A checklist built for your trek, month and altitude, with what to rent in Nepal marked.'],
     ['tools/budget/', 'calculator', 'Budget estimator', 'Permits, guide, porter, food, lodging and transport added up, with every assumption editable.'],
@@ -37,6 +38,7 @@ export function toolsHubPage(ctx) {
     ['safety/acclimatization/', 'trending-up', 'Acclimatization checker', 'Test an itinerary against altitude guidelines and see where to add a night.'],
     ['safety/altitude-check/', 'heart-pulse', 'Altitude sickness check', 'Score your symptoms and get a clear next step.'],
     ['permits/', 'ticket', 'Permit finder', 'Which permits a trek needs, what they cost and where to get them.'],
+    ['safety/insurance/', 'shield-check', 'Insurance check', 'What your policy has to cover for the trek you have chosen.'],
     ['safety/emergency/', 'siren', 'Emergency & SOS', 'Rescue numbers, location sharing, whistle and light signal.'],
   ];
   const body = html`
@@ -123,6 +125,42 @@ ${head(ctx, {
     scripts: ['gpx'],
     styles: ['map'],
     crumbs: [['tools/', 'Tools'], [null, 'GPX viewer']],
+    body,
+  };
+}
+
+// ------------------------------------------------------------------ compare
+
+export function comparePage(ctx) {
+  const { u, content } = ctx;
+  const pick = (n, def) => html`<div class="field">
+    <label for="cmp-${n}">Trek ${n}</label>
+    <select class="select" id="cmp-${n}" data-compare-select>
+      <option value="">${n === 3 ? 'None' : 'Choose a trek…'}</option>
+      ${content.regions.filter((r) => r.treks.length).map((r) => html`<optgroup label="${r.long}">${r.treks.map((t) => html`<option value="${t.slug}"${t.slug === def ? raw(' selected') : ''}>${t.name}</option>`)}</optgroup>`)}
+    </select>
+  </div>`;
+  const [a, b] = content.treks;
+  const body = html`
+${head(ctx, {
+  crumbs: [['tools/', 'Tools'], [null, 'Compare treks']],
+  title: 'Compare treks',
+  lead: 'Put two or three routes side by side: how long, how high, how hard, when to go and what paperwork each needs.',
+  seed: 74,
+})}
+<div class="wrap section-tight compare" data-compare>
+  <div class="card card-pad"><div class="form-grid">${pick(1, a?.slug)}${pick(2, b?.slug)}${pick(3, '')}</div></div>
+  <div class="compare-out" data-compare-out aria-live="polite"></div>
+  <p class="small muted">Profiles share one height scale, from sea level to 6,000 m, so their shapes can be compared directly. Each step along a profile is one night.</p>
+  <script type="application/json" id="compare-data">${jsonScript({ permits: Object.fromEntries(content.permits.permits.map((p) => [p.id, p.short])), hues: Object.fromEntries(content.regions.map((r) => [r.slug, r.hue])) })}</script>
+  ${needsJs()}
+</div>`;
+  return {
+    title: 'Compare Nepal Treks Side by Side',
+    description: 'Compare two or three Nepal treks side by side: days, distance, highest point, sleeping altitudes, difficulty, best months, permits and guide rules.',
+    section: 'tools',
+    scripts: ['compare'],
+    crumbs: [['tools/', 'Tools'], [null, 'Compare treks']],
     body,
   };
 }
@@ -269,6 +307,7 @@ ${head(ctx, {
       <p class="budget-total" data-budget-total>—</p>
       <p class="small muted" data-budget-per></p>
       <table class="budget-lines"><tbody data-budget-lines></tbody></table>
+      <p class="budget-cash" data-budget-cash></p>
       <p class="xsmall muted">Not included: international flights, visa, insurance, hotels and meals in Kathmandu or Pokhara. Staff costs are shared across the group.</p>
       <button type="button" class="btn btn-secondary btn-sm btn-block no-print" data-print>${icon('printer', { size: 16 })}Print</button>
     </aside>

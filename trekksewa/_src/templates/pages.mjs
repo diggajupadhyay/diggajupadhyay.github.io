@@ -2,9 +2,9 @@
 
 import { homePage } from './home.mjs';
 import { trekPage, treksIndexPage } from './trek.mjs';
-import { safetyHubPage, amsPage, acclimatizationPage, emergencyPage } from './safety.mjs';
+import { safetyHubPage, amsPage, acclimatizationPage, emergencyPage, insurancePage } from './safety.mjs';
 import { conditionsPage } from './conditions.mjs';
-import { toolsHubPage, gpxPage, plannerPage, packingPage, budgetPage } from './tools.mjs';
+import { toolsHubPage, gpxPage, plannerPage, packingPage, budgetPage, comparePage } from './tools.mjs';
 import { aboutPage, supportPage, privacyPage, termsPage, creditsPage, savedPage, offlinePage, notFoundPage, journalIndexPage, articlePage } from './site.mjs';
 import { servicesHubPage, guidesPage, portersPage, agenciesPage, gearPage, partnersPage } from './services.mjs';
 import { regionsIndexPage, regionPage, placesIndexPage, placePage, permitsPage } from './explore.mjs';
@@ -33,6 +33,8 @@ export function allPages(shared) {
   add('safety/altitude-check/', amsPage);
   add('safety/acclimatization/', acclimatizationPage);
   add('safety/emergency/', emergencyPage);
+  add('safety/insurance/', insurancePage);
+  add('tools/compare/', comparePage);
   add('tools/', toolsHubPage);
   add('tools/gpx/', gpxPage);
   add('tools/planner/', plannerPage);

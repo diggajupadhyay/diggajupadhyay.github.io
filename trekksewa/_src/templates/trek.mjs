@@ -42,6 +42,7 @@ export function trekPage(ctx, t) {
   }));
 
   const flagged = t.itinerary.filter((d) => d.level !== 'ok');
+  const atms = t.routePlaces.filter((p) => p.slug !== t.gateway && (p.facilities || []).includes('atm'));
   const placeLink = (p) => html`<a href="${u(`places/${p.slug}/`)}">${p.name}</a>`;
   const routeLine = (d) => {
     const stops = [d.fromPlace, ...d.viaPlaces, d.toPlace].filter((p, i, arr) => i === 0 || p.slug !== arr[i - 1].slug);
@@ -193,14 +194,13 @@ export function trekPage(ctx, t) {
         <script type="application/json" data-map-data>${jsonScript({
           line: t.line,
           bounds: t.bounds,
-          points: t.routePlaces
-            .filter((p) => p.slug !== t.gateway || p.slug === t.start)
+          points: t.mapPlaces
             .map((p) => {
               const nights = t.itinerary.filter((d) => d.to === p.slug).map((d) => d.day);
               return { s: p.slug, n: p.name, a: p.alt, lat: p.lat, lon: p.lon, d: nights, k: p.slug === t.maxAlt.place ? 'high' : nights.length ? 'night' : p.slug === t.start ? 'start' : 'via', q: p.coordQuality };
             }),
         })}</script>
-        <p class="map-note">${icon('info', { size: 14 })} Markers are placed from our own gazetteer and can be a few hundred metres out. The dashed line simply joins the stops in order; follow the trail on the map and on the ground, not the line.</p>
+        <p class="map-note">${icon('info', { size: 14 })} Marker positions come from OpenStreetMap where we could match a place, and from our own estimates elsewhere. The dashed line simply joins the stops in order; follow the trail on the map and on the ground, not the line.${t.unmapped.length ? html` Not shown because we could not confirm ${t.unmapped.length === 1 ? 'its position' : 'their positions'}: ${t.unmapped.map((p) => p.name).join(', ')}.` : ''}</p>
         <div class="chips route-places">${t.routePlaces.map((p) => html`<a class="chip" href="${u(`places/${p.slug}/`)}">${p.name}<span class="muted xsmall">${num(p.alt)} m</span></a>`)}</div>
       </section>
 
@@ -248,6 +248,9 @@ export function trekPage(ctx, t) {
         </div>
         <h3>Practical tips</h3>
         <ul class="ticks">${t.tips.map((x) => html`<li>${x}</li>`)}</ul>
+        <p class="small cash-note">${icon('banknote', { size: 16 })} ${atms.length
+          ? html`<strong>Cash machines on the route:</strong> ${atms.map((p, i) => html`${i ? ', ' : ''}<a href="${u(`places/${p.slug}/`)}">${p.name}</a>`)}. They run out of cash and go offline, so carry what you need from ${t.gatewayPlace.name}.`
+          : html`<strong>We know of no cash machines on this route.</strong> Carry all the rupees you need from ${t.gatewayPlace.name}.`} <a href="${u(`tools/budget/?trek=${t.slug}`)}">Work out how much</a>.</p>
         <div class="cluster" style="--gap:.6rem;margin-top:1.25rem">
           <a class="btn btn-secondary btn-sm" href="${u('safety/altitude-check/')}">${icon('heart-pulse', { size: 16 })}Altitude sickness check</a>
           <a class="btn btn-secondary btn-sm" href="${u('safety/emergency/')}">${icon('siren', { size: 16 })}Emergency numbers</a>
@@ -270,6 +273,8 @@ export function trekPage(ctx, t) {
           <a class="card card-pad card-link feature" href="${u(`tools/packing/?trek=${t.slug}`)}"><span class="feature-icon">${icon('list-checks', { size: 22 })}</span><h3>Packing list</h3><p>Built for ${num(t.maxAlt.m)} m and ${STYLE_LABEL[t.style[0]].toLowerCase()}.</p></a>
           <a class="card card-pad card-link feature" href="${u(`tools/budget/?trek=${t.slug}`)}"><span class="feature-icon">${icon('calculator', { size: 22 })}</span><h3>Budget</h3><p>Permits, guide, porter, food and lodging for ${t.days} days.</p></a>
           <a class="card card-pad card-link feature" href="${u(`safety/acclimatization/?trek=${t.slug}`)}"><span class="feature-icon">${icon('trending-up', { size: 22 })}</span><h3>Acclimatization</h3><p>Adjust the nights and see how the risk changes.</p></a>
+          <a class="card card-pad card-link feature" href="${u(`safety/insurance/?trek=${t.slug}`)}"><span class="feature-icon">${icon('shield-check', { size: 22 })}</span><h3>Insurance</h3><p>What your policy must cover up to ${num(t.maxAlt.m)} m.</p></a>
+          <a class="card card-pad card-link feature" href="${u(`tools/compare/?t=${t.slug}${t.relatedTreks[0] ? ',' + t.relatedTreks[0].slug : ''}`)}"><span class="feature-icon">${icon('scale', { size: 22 })}</span><h3>Compare</h3><p>Set this route beside another one.</p></a>
         </div>
       </section>
 

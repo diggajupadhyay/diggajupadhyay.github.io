@@ -92,8 +92,13 @@ export function loadContent(dir, { strict = false, featured = [] } = {}) {
 
   const places = [...placeMap.values()].sort((a, b) => a.name.localeCompare(b.name));
   for (const p of places) {
+    p.located = p.coordQuality !== 'uncertain'; // uncertain places are never drawn on a map
+    if (!p.located) {
+      p.nearby = [];
+      continue;
+    }
     p.nearby = places
-      .filter((q) => q.slug !== p.slug)
+      .filter((q) => q.slug !== p.slug && q.coordQuality !== 'uncertain')
       .map((q) => ({ slug: q.slug, name: q.name, alt: q.alt, km: haversineKm(p, q) }))
       .filter((q) => q.km <= 12)
       .sort((a, b) => a.km - b.km)
@@ -104,7 +109,11 @@ export function loadContent(dir, { strict = false, featured = [] } = {}) {
     r.places = places.filter((p) => p.region === r.slug);
   }
 
-  return { regions, regionMap, places, placeMap, treks, trekMap, permits: permitsDoc, permitMap, emergency, facts, warnings };
+  // where the map positions come from; the credits page and the map notes quote these
+  const positions = { total: places.length, osm: 0, own: 0, hidden: 0 };
+  for (const p of places) positions[!p.located ? 'hidden' : p.coordSource === 'osm' ? 'osm' : 'own']++;
+
+  return { regions, regionMap, places, placeMap, treks, trekMap, permits: permitsDoc, permitMap, emergency, facts, positions, warnings };
 }
 
 function trekProblem(t, placeMap, regionMap) {
@@ -194,6 +203,7 @@ function deriveTrek(t, placeMap, regionMap, permitMap) {
 
   const region = regionMap.get(t.region);
   const maxPlace = P(t.maxAlt.place);
+  const mapPlaces = routePlaces.filter((p) => p.coordQuality !== 'uncertain' && (p.slug !== t.gateway || p.slug === t.start));
   return {
     ...t,
     itinerary,
@@ -209,9 +219,11 @@ function deriveTrek(t, placeMap, regionMap, permitMap) {
     walkingDays: walkDays.filter((d) => d.from !== d.to || d.kind !== 'rest').length,
     restDays: itinerary.filter((d) => d.kind === 'acclimatization' || d.kind === 'rest').length,
     routePlaces,
-    // ordered walking line for the map (vehicle legs are not drawn)
-    line: walked.map((s) => [P(s).lat, P(s).lon]),
-    bounds: bounds(routePlaces.filter((p) => p.slug !== t.gateway || p.slug === t.start)),
+    // ordered walking line for the map (vehicle legs and places without a reliable position are left out)
+    line: walked.filter((s) => P(s).coordQuality !== 'uncertain').map((s) => [P(s).lat, P(s).lon]),
+    bounds: bounds(mapPlaces.length > 1 ? mapPlaces : routePlaces),
+    mapPlaces,
+    unmapped: routePlaces.filter((p) => p.coordQuality === 'uncertain' && (p.slug !== t.gateway || p.slug === t.start)),
     permitObjs: (t.permits || []).map((id) => permitMap.get(id)).filter(Boolean),
     restricted: (t.permits || []).some((id) => id.startsWith('rap-')),
     loop: t.start === t.end,

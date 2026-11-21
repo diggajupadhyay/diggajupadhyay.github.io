@@ -95,7 +95,8 @@ for (const name of readdirSync(placesDir).filter((f) => f.endsWith('.json')).sor
     if (!isInt(p.alt) || p.alt < 50 || p.alt > 8849) e(`alt must be an integer between 50 and 8849 (got ${p.alt})`);
     if (!isNum(p.lat) || !isNum(p.lon)) e('lat and lon must be numbers');
     else if (p.lat < BBOX.latMin || p.lat > BBOX.latMax || p.lon < BBOX.lonMin || p.lon > BBOX.lonMax) e(`coordinates ${p.lat}, ${p.lon} are outside Nepal (lat/lon swapped?)`);
-    if (!['good', 'approx'].includes(p.coordQuality)) e('coordQuality must be "good" or "approx"');
+    if (!['good', 'approx', 'uncertain'].includes(p.coordQuality)) e('coordQuality must be "good", "approx" or "uncertain"');
+    if (p.coordSource !== undefined && !['osm', 'estimate', 'terrain-fit'].includes(p.coordSource)) e('coordSource must be "osm", "estimate" or "terrain-fit"');
     if (!isStr(p.blurb)) e('missing blurb');
     else if (p.blurb.length < 60 || p.blurb.length > 260) e(`blurb must be 60–260 characters (is ${p.blurb.length})`);
     if (p.facilities !== undefined) {
@@ -103,7 +104,7 @@ for (const name of readdirSync(placesDir).filter((f) => f.endsWith('.json')).sor
       else for (const x of p.facilities) if (!FACILITIES.includes(x)) e(`unknown facility "${x}"`);
     }
     if (p.tip !== undefined && !isStr(p.tip)) e('tip must be a non-empty string');
-    const known = ['slug', 'name', 'ne', 'aka', 'region', 'type', 'alt', 'lat', 'lon', 'coordQuality', 'blurb', 'facilities', 'tip'];
+    const known = ['slug', 'name', 'ne', 'aka', 'region', 'type', 'alt', 'lat', 'lon', 'coordQuality', 'coordSource', 'blurb', 'facilities', 'tip'];
     for (const k of Object.keys(p)) if (!known.includes(k)) w(`unknown field "${k}"`);
     places.set(p.slug, { ...p, _file: f });
   }
@@ -238,8 +239,8 @@ for (const name of trekFiles) {
       const pts = [from, ...via, to];
       let straight = 0;
       for (let k = 1; k < pts.length; k++) straight += haversineKm(pts[k - 1], pts[k]);
-      const approx = pts.some((p) => p.coordQuality === 'approx');
-      const slack = approx ? 3 : 1.2;
+      const approx = pts.some((p) => p.coordQuality !== 'good');
+      const slack = pts.some((p) => p.coordQuality === 'uncertain') ? 6 : approx ? 3 : 1.2;
       if (d.km !== undefined && straight > d.km * 1.08 + slack) e(`${tag}: straight-line distance through the listed points is ${straight.toFixed(1)} km but km says ${d.km} — check coordinates or km`);
       if (d.km === undefined && straight > 32) e(`${tag}: ${straight.toFixed(1)} km in a straight line is too far for one walking day — check coordinates`);
       if (d.km !== undefined && d.from !== d.to && straight > 0.5 && d.km > straight * 4.5 + 6) w(`${tag}: km (${d.km}) is much longer than the straight-line distance (${straight.toFixed(1)} km)`);
