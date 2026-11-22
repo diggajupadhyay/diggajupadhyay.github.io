@@ -7,10 +7,10 @@
     <copyright author="OpenStreetMap contributors"><license>https://opendatacommons.org/licenses/odbl/</license></copyright>
   </metadata>
   <wpt lat="28.20954" lon="83.99140"><ele>822</ele><name>Pokhara</name><desc>822 m</desc></wpt>
-  <wpt lat="28.20110" lon="83.94470"><ele>1100</ele><name>World Peace Pagoda</name><desc>1100 m</desc></wpt>
+  <wpt lat="28.20100" lon="83.94470"><ele>1100</ele><name>World Peace Pagoda</name><desc>1100 m</desc></wpt>
   <wpt lat="28.21010" lon="83.88710"><ele>1520</ele><name>Bhumdi</name><desc>1520 m</desc></wpt>
   <wpt lat="28.21859" lon="83.81149"><ele>2050</ele><name>Panchase Bhanjyang</name><desc>2050 m</desc></wpt>
-  <wpt lat="28.22910" lon="83.79860"><ele>2517</ele><name>Panchase Peak</name><desc>2517 m</desc></wpt>
+  <wpt lat="28.23000" lon="83.79510"><ele>2517</ele><name>Panchase Peak</name><desc>2517 m</desc></wpt>
   <wpt lat="28.26448" lon="83.82052"><ele>1650</ele><name>Bhadaure</name><desc>1650 m</desc></wpt>
   <wpt lat="28.29265" lon="83.82330"><ele>1770</ele><name>Kande</name><desc>1770 m</desc></wpt>
   <trk>
@@ -78,7 +78,8 @@
       <trkpt lat="28.20085" lon="83.94966"/>
       <trkpt lat="28.20068" lon="83.94805"/>
       <trkpt lat="28.20015" lon="83.94736"/>
-      <trkpt lat="28.20113" lon="83.94473"/>
+      <trkpt lat="28.20065" lon="83.94623"/>
+      <trkpt lat="28.20095" lon="83.94469"/>
     </trkseg>
     <trkseg>
       <trkpt lat="28.20126" lon="83.94424"/>
@@ -285,14 +286,17 @@
       <trkpt lat="28.22483" lon="83.80313"/>
       <trkpt lat="28.22547" lon="83.80220"/>
       <trkpt lat="28.22642" lon="83.80139"/>
-      <trkpt lat="28.22653" lon="83.80092"/>
+      <trkpt lat="28.22692" lon="83.80037"/>
       <trkpt lat="28.22773" lon="83.79970"/>
-      <trkpt lat="28.22859" lon="83.79823"/>
+      <trkpt lat="28.22829" lon="83.79891"/>
       <trkpt lat="28.22872" lon="83.79811"/>
-      <trkpt lat="28.22880" lon="83.79854"/>
+      <trkpt lat="28.22864" lon="83.79753"/>
+      <trkpt lat="28.23004" lon="83.79516"/>
     </trkseg>
     <trkseg>
-      <trkpt lat="28.22945" lon="83.79877"/>
+      <trkpt lat="28.23004" lon="83.79516"/>
+      <trkpt lat="28.22864" lon="83.79753"/>
+      <trkpt lat="28.22876" lon="83.79829"/>
       <trkpt lat="28.22997" lon="83.79939"/>
       <trkpt lat="28.23103" lon="83.80009"/>
       <trkpt lat="28.23130" lon="83.80008"/>
@@ -314,11 +318,10 @@
       <trkpt lat="28.24146" lon="83.81186"/>
       <trkpt lat="28.24267" lon="83.81294"/>
       <trkpt lat="28.24440" lon="83.81403"/>
-      <trkpt lat="28.24461" lon="83.81435"/>
       <trkpt lat="28.24471" lon="83.81466"/>
       <trkpt lat="28.24457" lon="83.81586"/>
       <trkpt lat="28.24481" lon="83.81648"/>
-      <trkpt lat="28.24531" lon="83.81705"/>
+      <trkpt lat="28.24620" lon="83.81776"/>
       <trkpt lat="28.24722" lon="83.81837"/>
       <trkpt lat="28.24817" lon="83.81959"/>
       <trkpt lat="28.24912" lon="83.82028"/>
