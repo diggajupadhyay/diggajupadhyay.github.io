@@ -38,6 +38,12 @@
     "phoksundo-lake": { "text": "Flights from Kathmandu to Nepalgunj and on to Juphal, and the same back", "options": [[["kathmandu-nepalgunj-flight", 2], ["nepalgunj-juphal-flight", 2]]] },
     "upper-dolpo": { "text": "Flights from Kathmandu to Nepalgunj and on to Juphal, and the same back", "options": [[["kathmandu-nepalgunj-flight", 2], ["nepalgunj-juphal-flight", 2]]] },
     "rara-lake": { "text": "Flights from Kathmandu to Nepalgunj and on to Jumla, and the same back", "options": [[["kathmandu-nepalgunj-flight", 2], ["nepalgunj-jumla-flight", 2]]] },
-    "khaptad": { "text": "Flights between Kathmandu and Dhangadhi both ways", "extra": "jeeps between Dhangadhi and the trailheads", "options": [[["kathmandu-dhangadhi-flight", 2]]] }
+    "khaptad": { "text": "Flights between Kathmandu and Dhangadhi both ways", "extra": "jeeps between Dhangadhi and the trailheads", "options": [[["kathmandu-dhangadhi-flight", 2]]] },
+    "panchase": { "text": "Tourist bus between Kathmandu and Pokhara both ways, and a taxi back from Kande shared by two", "extra": "the boat across Phewa Lake at the start", "options": [[["kathmandu-pokhara-tourist-bus", 2], ["pokhara-kande-taxi", 1, 2]]] },
+    "ghandruk-loop": { "text": "Tourist bus between Kathmandu and Pokhara both ways, a jeep seat to Kimche, and a taxi back from Phedi shared by two", "options": [[["kathmandu-pokhara-tourist-bus", 2], ["pokhara-ghandruk-shared-jeep", 1], ["pokhara-dhampus-taxi", 1, 2]]] },
+    "royal-trek": { "text": "Tourist bus between Kathmandu and Pokhara both ways", "extra": "the taxi to Bijayapur and the bus back from Begnas Lake", "options": [[["kathmandu-pokhara-tourist-bus", 2]]] },
+    "sikles": { "text": "Tourist bus between Kathmandu and Pokhara both ways", "extra": "the jeep or bus from Pokhara to Sikles and the jeep back from below Ghalekharka", "options": [[["kathmandu-pokhara-tourist-bus", 2]]] },
+    "khumai-danda": { "text": "Tourist bus between Kathmandu and Pokhara both ways", "extra": "the taxi or jeep between Pokhara and Ghachowk, each way", "options": [[["kathmandu-pokhara-tourist-bus", 2]]] },
+    "ruby-valley": { "text": "Bus or a jeep seat from Kathmandu to Syabrubesi", "extra": "the jeep from Borang to Dhading Besi and the bus on to Kathmandu", "options": [[["kathmandu-syabrubesi-local-bus", 1]], [["kathmandu-syabrubesi-shared-jeep", 1]]] }
   }
 }

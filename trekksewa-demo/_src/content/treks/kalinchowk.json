@@ -1,0 +1,128 @@
+{
+  "slug": "kalinchowk",
+  "name": "Kalinchowk",
+  "aka": ["Kalinchok", "Kalinchowk Bhagwati", "Kalinchowk Trek", "Kuri Village Trek"],
+  "region": "gaurishankar",
+  "tagline": "A short, steep climb from Charikot to a hilltop shrine at about 3,800 m",
+  "summary": "Three days from Kathmandu: by road to Charikot, on foot or by jeep to the lodge village of Kuri, then up a stone path or a cable car to the Kalinchowk Bhagwati shrine.",
+  "intro": [
+    "Kalinchowk is a rocky hilltop in Dolakha district with a small shrine to the goddess Bhagwati, ringed with bells and iron tridents, and a skyline that runs from Ganesh Himal and Langtang in the west to Gaurishankar and the Rolwaling peaks close at hand. Its height is usually given as 3,842 m. For Nepalis it is a place of pilgrimage first and the nearest place to Kathmandu for a day in the snow second, so in winter the lodge village of Kuri, below the top, fills with families and groups of friends.",
+    "As a walk it is short. From Charikot, the district town, a footpath and a rough road climb past the hamlet of Deurali and up through rhododendron forest to Kuri: five to seven hours and about 1,400 m of ascent. Jeeps cover the same ground in an hour or two, and many visitors ride. From Kuri the shrine is an hour to an hour and a half up a stone path that ends in steep steps, or five minutes in the cable car.",
+    "What needs respect is the height, not the distance. Kuri lies at about 3,370 m, and most people sleep there one day after leaving Kathmandu at 1,400 m. That is far faster than the usual advice for gaining altitude, and headaches and bad nights are common. The plan below breaks the journey in Charikot and takes you back down on the day you visit the top. It is also cold: snow can lie from December to March, and at times it shuts the last stretch of road."
+  ],
+  "days": 3,
+  "daysRange": [2, 4],
+  "distanceKm": 20,
+  "maxAlt": { "m": 3842, "place": "kalinchok" },
+  "difficulty": "moderate",
+  "difficultyNote": "Short, with lodges and a road all the way, but the walk from Charikot climbs about 1,400 m in a day and you sleep above 3,300 m with no time to adjust.",
+  "style": ["teahouse"],
+  "start": "charikot",
+  "end": "kuri",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "Charikot is about 130 km from Kathmandu by the Araniko Highway and the Jiri road, five to six hours by bus. From Charikot a steep, unsealed road of about 17 km climbs to Kuri; shared and hired jeeps take one to two hours. Snow can close the upper part for days in winter, and landslides do the same in the monsoon, so ask in Charikot before you set out.",
+    "options": [
+      { "mode": "bus", "from": "kathmandu", "to": "charikot", "time": "5–6 h", "note": "Regular buses from the old bus park at Ratna Park; buses for Jiri also stop here. A hired car or jeep is a little quicker." },
+      { "mode": "jeep", "from": "charikot", "to": "kuri", "time": "1–2 h", "note": "Shared jeeps leave the bazaar when full, and a whole vehicle can be hired. In snow they may stop short of the village." },
+      { "mode": "jeep", "from": "kathmandu", "to": "kuri", "time": "7–8 h", "note": "A hired jeep can go straight through in a day. It saves a night but lifts you from 1,400 m to about 3,370 m in one go, which is how most altitude trouble here begins." },
+      { "mode": "jeep", "from": "kuri", "to": "charikot", "time": "1–2 h", "note": "The way down. Ask your lodge the evening before to hold seats for the morning." }
+    ]
+  },
+  "seasons": {
+    "best": [3, 4, 10, 11],
+    "good": [1, 2, 5, 9, 12],
+    "hard": [6, 7, 8],
+    "note": "October and November give the clearest views, and in March and April the rhododendrons below Kuri are in flower. December to February is the snow season that draws Nepali visitors: nights are well below freezing, the path to the shrine can be iced and the road may shut after a heavy fall, yet in some winters little snow comes at all. From June to August the road is muddy and prone to landslides, and cloud covers the top."
+  },
+  "permits": ["gaurishankar-ca"],
+  "guide": {
+    "rule": "required",
+    "note": "Kalinchowk lies inside the Gaurishankar Conservation Area, and the Nepal Tourism Board has required foreign trekkers to hire a licensed guide since April 2023. Checks on the trail are inconsistent, and it is not clear that permits or guides are looked at in Kuri at all. A guide earns the fee on the walk from Charikot, where the footpath keeps leaving and rejoining the jeep road without signs, and as the person who will notice altitude sickness and get you down."
+  },
+  "highlights": [
+    "The hilltop shrine of Kalinchowk Bhagwati, one of Dolakha's main pilgrimage sites",
+    "A skyline from Ganesh Himal and Langtang to Gaurishankar",
+    "Rhododendron forest between Deurali and Kuri, in flower in March and April",
+    "Snow at Kuri in midwinter, a day's journey from Kathmandu",
+    "A cable car that puts the top within reach of people who cannot manage the climb"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive from Kathmandu to Charikot",
+      "from": "kathmandu",
+      "to": "charikot",
+      "sleep": 1970,
+      "hours": [5, 6],
+      "kind": "transfer",
+      "mode": "bus",
+      "note": "East on the Araniko Highway to Khadichaur, then up the Jiri road, over the high ridge beyond Mude and down to Charikot. A night here at 1,970 m, instead of driving straight on to Kuri, gives your body a first step up. Draw cash and buy snacks in the bazaar this evening."
+    },
+    {
+      "day": 2,
+      "title": "Charikot to Kuri",
+      "from": "charikot",
+      "to": "kuri",
+      "via": ["deurali-kalinchowk"],
+      "sleep": 3370,
+      "hours": [5, 7],
+      "kind": "trek",
+      "note": "An easy first hour along the road to Deurali, then uphill for the rest of the day through rhododendron forest, cutting across the bends of the jeep road, with a tea stop at the pasture of Gairi and little else. You gain about 1,400 m. Walk slowly, drink often and expect to feel the height by evening."
+    },
+    {
+      "day": 3,
+      "title": "Kalinchowk shrine, back to Kuri, drive to Kathmandu",
+      "from": "kuri",
+      "to": "kuri",
+      "via": ["kalinchok"],
+      "sleep": 3370,
+      "high": 3842,
+      "hours": [2, 3],
+      "kind": "summit",
+      "note": "Set out before dawn for the hour to hour and a half up the stone path and the final steps to the shrine, or take the cable car once it opens. Be back in Kuri for breakfast, then ride a jeep down to Charikot and go on to Kathmandu by bus or car: six to eight hours of road, so leave Kuri by mid-morning."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Fast height gain",
+      "text": "Kuri is at about 3,370 m and the shrine near 3,800 m, reached a day or two after leaving Kathmandu at 1,400 m. Headache, nausea and poor sleep are common, and worse for anyone who drove straight up. Do not climb to the shrine with symptoms. If they are bad or getting worse at Kuri, take a jeep down to Charikot at once, whatever the hour."
+    },
+    {
+      "title": "Cold, snow and ice",
+      "text": "From December to March nights at Kuri are well below freezing and lodge rooms are unheated. The stone path ices over, and the last steps below the shrine are steep and exposed. Bring a down jacket, hat, gloves and shoes with real grip. In snow, add microspikes or use the cable car."
+    },
+    {
+      "title": "The road to Kuri",
+      "text": "The 17 km from Charikot are steep, narrow and unsealed. Snow, ice and monsoon landslides close the upper part without warning, and jeeps run overloaded on busy weekends. Travel in daylight, and keep a spare day in hand if snow is forecast."
+    },
+    {
+      "title": "Do not depend on the cable car",
+      "text": "The cable car stops in strong wind and has been shut at times, including after it was damaged in September 2025. On winter weekends the queue can be long. Plan as if you will walk both ways, and treat a ride as a bonus."
+    }
+  ],
+  "tips": [
+    "Buy the Gaurishankar Conservation Area permit online or in Kathmandu before you leave. A permit issued at a checkpost costs double, and we could not confirm that one can be bought in Kuri.",
+    "Go midweek if you can. Kuri's lodges fill on Fridays and Saturdays from December to February.",
+    "Bring a sleeping bag or ask for extra quilts. The only warm place in a Kuri lodge is beside the stove in the dining room.",
+    "Eat lightly, drink plenty of water and keep alcohol for Charikot. Drinking at this height is a common cause of a bad night.",
+    "Cable car tickets are sold only at the Kuri station; the operator listed NPR 1,300 return for foreigners when we checked. Ask on arrival whether it is running.",
+    "Draw cash in Charikot. Kuri has no cash machine."
+  ],
+  "variants": [
+    {
+      "name": "Two days by jeep",
+      "text": "Most Nepali visitors drive from Kathmandu to Kuri in a day, go up to the shrine at dawn and drive home. It leaves out all acclimatization. If you do it, keep the first evening quiet, and go down at once if you feel ill."
+    },
+    {
+      "name": "Four days, the gentler plan",
+      "text": "After the shrine, walk or ride down to Charikot and sleep there, then see the Bhimsen shrine in Dolakha Bazaar before the bus back next day. This suits older walkers and anyone who slept badly at Kuri."
+    },
+    {
+      "name": "Jeep up, walk down",
+      "text": "Ride to Kuri on day two and walk down to Charikot after visiting the shrine, four to five hours, almost all downhill. You keep the forest walk without the 1,400 m climb, and sleep the third night in Charikot."
+    }
+  ],
+  "related": ["tsho-rolpa", "pikey-peak", "nagarkot-dhulikhel-namobuddha"],
+  "confidence": "medium"
+}

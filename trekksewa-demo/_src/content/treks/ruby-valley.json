@@ -1,0 +1,192 @@
+{
+  "slug": "ruby-valley",
+  "name": "Ruby Valley",
+  "aka": ["Ruby Valley Trek", "Ganesh Himal Ruby Valley Trek", "Pangsang Pass Trek"],
+  "region": "langtang",
+  "tagline": "Over the Pangsang pass from Gatlang to the homestay villages of Dhading",
+  "summary": "Eight days from Syabrubesi through Gatlang and over the 3,842 m Pangsang La to Tipling, Shertung and Chalish below Ganesh Himal, sleeping in family homes, then out by jeep to Dhading Besi.",
+  "intro": [
+    "Ruby Valley is the name given to the upper Ankhu Khola in northern Dhading, under the south side of Ganesh Himal. The name is said to come from rubies and rock crystal once dug from these slopes; an abandoned lead and zinc mine still stands near Somdang, and no stones are for sale on the trail. What brings trekkers is the villages. In Tipling, Shertung and Chalish, Tamang, Gurung, Ghale and Kami families farm steep terraces and take guests into their own houses. Only a few hundred foreign trekkers come in a year.",
+    "The route joins the Tamang country of Rasuwa to the Dhading hills. From Gatlang it climbs past the small lake of Parvati Kunda and over the Khurpu Bhanjyang, at about 3,720 m, to the old mining camp of Somdang. Next day it crosses the Pangsang La at 3,842 m, a broad grassy saddle with Ganesh Himal close to the north and Manaslu and the Langtang peaks on either hand, and drops all the way to Tipling. Three easy days through the villages lead to the jeep road. The two pass days are long, six to eight hours each, and the first raises your sleeping height by 1,000 m.",
+    "Know what you are getting. Rooms are in homestays and very simple lodges, the food is what the family eats, and a rough road now reaches Tipling and the pass from the Dhading side, so parts of the old trail are dusty track. The Bhote Koshi flood of 26 August 2026 also damaged both road ends of the trek: Syabrubesi, and the highway bridge that serves Dhading Besi. The trail itself was reported open again on 25 October 2026, over a temporary footbridge at Syabrubesi. Confirm how you will reach the start and leave the finish before you fix your dates."
+  ],
+  "days": 8,
+  "daysRange": [7, 9],
+  "distanceKm": 55,
+  "maxAlt": { "m": 3842, "place": "pangsang-la" },
+  "difficulty": "moderate",
+  "difficultyNote": "Two long days over passes of about 3,700 and 3,850 m, with a basic night between them, then easy walking from village to village; nothing technical, but the lodging is simple throughout.",
+  "style": ["homestay", "teahouse"],
+  "start": "syabrubesi",
+  "end": "borang",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "The classic start is Syabrubesi, seven to nine hours from Kathmandu by bus. The finish is Dhading Besi, three to five hours from Kathmandu, reached by a long jeep ride from the roadhead below Borang. Both were hit by the flood of 26 August 2026: the road was cut short of Syabrubesi, with vehicles stopping at Dhunche, and the Trishuli bridge near Malekhu that links Dhading Besi to the Prithvi Highway was swept away, leaving a detour on back roads. We found no report by November 2026 that either had been fully restored. Ask your agency what is open at both ends in the week you travel.",
+    "options": [
+      { "mode": "bus", "from": "kathmandu", "to": "syabrubesi", "time": "7–9 h", "note": "The usual approach, from Machhapokhari in Kathmandu. Reported closed short of Syabrubesi since the August 2026 flood; check whether it has reopened." },
+      { "mode": "jeep", "from": "kathmandu", "to": "dhunche", "time": "5–7 h", "note": "The roadhead in use after the flood, for light vehicles only. Syabrubesi is about 15 km further on a damaged road; ask what can be driven and what must be walked." },
+      { "mode": "jeep", "from": "borang", "to": "dhading-besi", "time": "5–7 h", "note": "Local jeeps on a rough hill road down the Ankhu Khola valley. They leave early and fill up, so have your host book seats. Landslides close the road in and after the monsoon." },
+      { "mode": "bus", "from": "dhading-besi", "to": "kathmandu", "time": "3–5 h", "note": "In normal times, frequent buses by way of Malekhu and the Prithvi Highway. Since the flood they have used a longer detour; ask in Dhading Besi which way they are going." }
+    ]
+  },
+  "seasons": {
+    "best": [3, 4, 10, 11],
+    "good": [5, 9, 12],
+    "hard": [1, 2, 6, 7, 8],
+    "note": "October and November are the clearest months, and March and April bring rhododendron on the way up to both passes. December is cold but usually open. In January and February snow can block the Khurpu Bhanjyang and the Pangsang La, and the Somdang lodges may be shut. May is hot and hazy in the villages. In the monsoon the forest is full of leeches and both access roads are at their worst."
+  },
+  "permits": ["langtang-np", "tims"],
+  "guide": {
+    "rule": "required",
+    "note": "You enter through Langtang National Park, where the permit is checked at Dhunche, and the Nepal Tourism Board has required foreign trekkers to hire a licensed guide since April 2023, though checks on the trail are inconsistent. The Dhading villages lie outside any park. Take a guide in any case: homestays have no signboards and need a phone call ahead, few people on the route speak English, and since the 2026 flood only someone in touch with the villages knows which roads and bridges are open."
+  },
+  "highlights": [
+    "Homestay nights in Tipling, Shertung and Chalish",
+    "Ganesh Himal, Manaslu and the Langtang peaks from the Pangsang La",
+    "Gatlang's stone houses and the sacred lake of Parvati Kunda",
+    "Tamang, Gurung and Ghale villages that keep their own dances and shaman rituals",
+    "Rhododendron forest on the climb to the Khurpu Bhanjyang",
+    "Only a few hundred foreign trekkers a year"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive from Kathmandu to Syabrubesi",
+      "from": "kathmandu",
+      "to": "syabrubesi",
+      "sleep": 1460,
+      "hours": [7, 9],
+      "kind": "transfer",
+      "mode": "drive",
+      "note": "The same long road day as for Langtang, through Trishuli Bazaar and Dhunche, where the park permit is checked. Since the August 2026 flood vehicles have been stopping short of Syabrubesi, so you may finish on foot or sleep in Dhunche. Fix the plan with your agency before you leave Kathmandu."
+    },
+    {
+      "day": 2,
+      "title": "Syabrubesi to Gatlang",
+      "from": "syabrubesi",
+      "to": "gatlang",
+      "via": ["rongga-bhanjyang", "goljung"],
+      "sleep": 2238,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "A steep two-hour climb west to the Rongga Bhanjyang saddle, then a gentler traverse above the terraces of Goljung to Gatlang, partly on a dirt road. The lodges and homestays here are the most comfortable beds of the trek. If you arrive early, walk through the old houses to the gompa."
+    },
+    {
+      "day": 3,
+      "title": "Gatlang to Somdang over the Khurpu Bhanjyang",
+      "from": "gatlang",
+      "to": "somdang",
+      "via": ["parvati-kunda", "khurpu-bhanjyang"],
+      "sleep": 3271,
+      "high": 3720,
+      "hours": [6, 8],
+      "kind": "pass",
+      "note": "An hour up to Parvati Kunda, then a long climb through pine and rhododendron forest to the herders' huts at Yuri Kharka, the usual lunch stop, and on to the pass at about 3,720 m. An hour or more downhill brings you to the simple lodges at Somdang. You sleep 1,000 m higher than last night, so expect a mild headache."
+    },
+    {
+      "day": 4,
+      "title": "Somdang to Tipling over the Pangsang La",
+      "from": "somdang",
+      "to": "tipling",
+      "via": ["pangsang-la"],
+      "sleep": 2078,
+      "high": 3842,
+      "hours": [6, 8],
+      "kind": "pass",
+      "note": "Two to three hours up, on trail and stretches of rough road, to the open saddle of the Pangsang La, where a simple lodge stands and the view takes in Ganesh Himal and Manaslu. Then the knees take over: about 1,750 m of descent through forest and pasture to the terraces of Tipling. Start early and carry lunch."
+    },
+    {
+      "day": 5,
+      "title": "Tipling to Chalish by way of Shertung",
+      "from": "tipling",
+      "to": "chalish",
+      "via": ["shertung"],
+      "sleep": 1674,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "A short day. Drop to the bridge over the Adha Khola, climb to Shertung, a large Tamang village on the facing hillside, and walk on down to Chalish, where Gurung, Ghale and Kami families run the homestays. Give the afternoon to the village, and ask your host whether a dance evening can be arranged."
+    },
+    {
+      "day": 6,
+      "title": "Chalish to Borang",
+      "from": "chalish",
+      "to": "borang",
+      "sleep": 1650,
+      "hours": [3, 5],
+      "kind": "trek",
+      "note": "An easy walk through forest and terraced fields to Borang, which some itineraries time at two hours and others at five. With time in hand, spend the morning in Chalish and set out after lunch. Have your host or guide book jeep seats for tomorrow as soon as you arrive."
+    },
+    {
+      "day": 7,
+      "title": "Borang to Dhading Besi by jeep",
+      "from": "borang",
+      "to": "dhading-besi",
+      "sleep": 600,
+      "hours": [6, 8],
+      "kind": "transfer",
+      "mode": "jeep",
+      "note": "Walk down to wherever the jeeps are starting that season, often by the Lishne Khola below the village, then ride five to seven hours on a rough hill road to the district town. It is a slow, dusty journey and the worst road of the trip. Dhading Besi has ordinary hotels, hot water and cash machines."
+    },
+    {
+      "day": 8,
+      "title": "Drive from Dhading Besi to Kathmandu",
+      "from": "dhading-besi",
+      "to": "kathmandu",
+      "sleep": 1400,
+      "hours": [3, 5],
+      "kind": "transfer",
+      "mode": "bus",
+      "note": "In normal times a sealed road runs down to Malekhu on the Prithvi Highway and east to Kathmandu. The bridge over the Trishuli there was lost in the August 2026 flood and traffic has been using a longer detour, so ask about the route in Dhading Besi and allow most of the day."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Flood damage at both road ends",
+      "text": "The flood of 26 August 2026 wrecked much of Syabrubesi, cut the road to it and swept away the Trishuli bridge that links Dhading Besi to the highway. The villages and passes of the trek stand far above the river and were not flooded. Do not set out without current word on where vehicles stop, which footbridges are in use and how you will get out."
+    },
+    {
+      "title": "A fast climb to Somdang",
+      "text": "Gatlang to Somdang takes you over 3,700 m and raises your sleeping height by about 1,000 m in a day. A headache and a poor night at Somdang are not unusual. If you are properly ill in the morning, go back down to Gatlang; do not carry on over a second, higher pass."
+    },
+    {
+      "title": "Snow and cloud on the passes",
+      "text": "The Khurpu Bhanjyang and the Pangsang La hold snow in winter and after spring storms, and cloud often sits on them by midday. Shelter is scarce on both pass days. Cross early, keep the group together, and wait a day if the passes are white."
+    },
+    {
+      "title": "Long, steep descents",
+      "text": "The drop from the Pangsang La to Tipling is about 1,750 m in one afternoon, on forest path, stone steps and loose road. It is slippery when wet. Use poles and keep something in reserve for the last hour."
+    },
+    {
+      "title": "Slow evacuation",
+      "text": "Between Gatlang and the Dhading roadhead there is no hospital, and phone signal comes and goes. The nearest hospitals are in Dhunche and Dhading Besi, each a long drive on a damaged road. Carry a proper first-aid kit and insurance that covers helicopter rescue."
+    }
+  ],
+  "tips": [
+    "Carry all your cash from Kathmandu, in small notes. There is no cash machine on the trek until Dhading Besi.",
+    "Bring a sleeping bag. Homestay bedding is thin, and Somdang is cold at 3,271 m.",
+    "You eat with the family, at their hours and from their pot. Agree the price for bed and meals when you arrive.",
+    "Carry lunch and at least two litres of water on both pass days. Tea shops are few and may be shut.",
+    "Dress modestly in the villages, and ask before photographing people, shrines or a shaman at work.",
+    "Keep a spare day or two at the end. The jeep road out of the valley closes after rain, and the detour to Kathmandu is slow."
+  ],
+  "variants": [
+    {
+      "name": "Seven days",
+      "text": "Walk from Chalish through Borang to the roadhead and ride to Dhading Besi the same day: about three hours on foot and five or more in the jeep. It is a tiring day, but it saves a night."
+    },
+    {
+      "name": "Walk out to Darkha",
+      "text": "The older ending carries on down the valley on foot, a day's walk from Borang to the village of Darkha, and reaches the jeep stand at Darkha Phedi the next morning. It makes nine days, with much of the way now beside the dirt road."
+    },
+    {
+      "name": "From the Dhading side",
+      "text": "The trek can be walked in reverse, starting with the jeep from Dhading Besi, and agencies turned to this after the flood, when Syabrubesi could not be reached. The climb from Tipling to the Pangsang La is then about 1,750 m in a day, and Somdang is a further two hours down the far side."
+    },
+    {
+      "name": "Ride to Gatlang",
+      "text": "A dirt road links Syabrubesi with Gatlang, and when it is open a jeep saves the first walking day. It was reported damaged after the 2026 flood, so ask before you count on it."
+    }
+  ],
+  "related": ["tamang-heritage-trail", "langtang-valley", "tsum-valley", "panch-pokhari"],
+  "confidence": "low"
+}

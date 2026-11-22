@@ -83,8 +83,9 @@ export function rate(t, a = {}) {
   if (a.level) {
     const fit = LEVEL_FIT[a.level]?.[t.g];
     if (fit === undefined) return null;
-    // "gentle" stretches to a moderate trek only when it stays low and the days stay short
-    if (a.level === 'gentle' && t.g === 'moderate' && (t.hi >= 3700 || stats.longest > 7)) return null;
+    // "gentle" stretches to a moderate trek only when it stays low, the days stay short, and
+    // no night climbs faster than the height check allows (t.up counts the nights it flags)
+    if (a.level === 'gentle' && t.g === 'moderate' && (t.hi >= 3700 || stats.longest > 7 || t.up)) return null;
     score += fit;
     if (a.level === 'gentle') score += t.hi < 3000 ? 1 : t.hi < 3600 ? 0.5 : 0;
   } else score += 2;
@@ -117,6 +118,8 @@ export function rate(t, a = {}) {
   else if (t.hi >= 4000) care.push(`You sleep as high as ${num(t.hi)} m. Most people feel the altitude, so the plan climbs slowly.`);
   else if (t.hi >= 3000) why.push(`The highest night is at ${num(t.hi)} m: you will notice the altitude, but it is rarely a problem if you go slowly.`);
   else why.push(`You never sleep above ${num(t.hi)} m, so altitude is not a worry.`);
+  // a long climb to a first high night, on a trek that is otherwise low enough not to mention
+  if (t.up && t.hi < 4000) care.push('One day climbs a long way to a high night. The plan marks it, so you can take it slowly.');
 
   // --- paperwork and access
   if (t.ra) care.push('It is a restricted area: a registered trekking agency must arrange your permit.');

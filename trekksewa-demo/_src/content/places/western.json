@@ -648,7 +648,7 @@
     "alt": 3020,
     "lat": 29.38794,
     "lon": 81.14485,
-    "coordQuality": "approx",
+    "coordQuality": "good",
     "coordSource": "osm",
     "blurb": "The park headquarters on the Khaptad plateau at about 3,020 m: offices, an army post and a few basic lodges at the edge of a wide meadow. Khaptad Baba's ashram and the Tribeni temple are a short walk away.",
     "facilities": ["lodges", "camping", "permit-check", "viewpoint"]

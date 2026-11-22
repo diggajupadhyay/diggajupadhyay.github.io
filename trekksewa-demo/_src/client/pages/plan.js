@@ -371,7 +371,7 @@ function init() {
         `Arrive in Kathmandu by ${longFmt.format(arrive)}; fly home on ${longFmt.format(flyHome)} or later`,
         `Help wanted: ${helpChoice.label.toLowerCase()}`,
         '',
-        ...detail.days.map((d, i) => `Day ${i + 1}, ${dayFmt.format(addDays(start, i))}: ${d.t}${d.a ? ` (sleep at ${num(d.a)} m)` : ''}`),
+        ...detail.days.map((d, i) => `Day ${i + 1}, ${dayFmt.format(addDays(start, i))}: ${d.t}${d.back ? ` (night in ${detail.gateway})` : d.a ? ` (sleep at ${num(d.a)} m)` : ''}`),
         ...Array.from({ length: state.spare }, (_, i) => `Day ${trekDays + i + 1}, ${dayFmt.format(addDays(start, trekDays + i))}: spare day`),
         '',
         `Rough cost per person: ${range(cost.total[0], cost.total[1])}`,
@@ -391,7 +391,7 @@ function init() {
       const stamp = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d+/, '');
       const events = [...detail.days, ...Array.from({ length: state.spare }, () => ({ t: 'Spare day', to: '', a: 0, h: null }))].map((d, i) => {
         const day = addDays(start, i);
-        const desc = [d.to ? `Sleep at ${d.to}${d.a ? ` (${d.a} m)` : ''}` : '', d.h ? `About ${hrs(d.h)}` : '', planUrl].filter(Boolean).join('\n');
+        const desc = [d.back ? `Night in ${detail.gateway}` : d.to ? `Sleep at ${d.to}${d.a ? ` (${d.a} m)` : ''}` : '', d.h ? `About ${hrs(d.h)}` : '', planUrl].filter(Boolean).join('\n');
         return ['BEGIN:VEVENT', `UID:${t.s}-${i + 1}-${d8(day)}@trekksewa`, `DTSTAMP:${stamp}`, `DTSTART;VALUE=DATE:${d8(day)}`, `DTEND;VALUE=DATE:${d8(addDays(day, 1))}`, `SUMMARY:${esc(`${t.n} day ${i + 1}: ${d.t}`)}`, `DESCRIPTION:${esc(desc)}`, 'END:VEVENT'].join('\r\n');
       });
       download(`${t.s}.ics`, ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//TrekkSewa//Plan my trek//EN', 'CALSCALE:GREGORIAN', ...events, 'END:VCALENDAR'].join('\r\n'), 'text/calendar');
@@ -435,7 +435,8 @@ function init() {
       const facts = [];
       if (d.h) facts.push(d.m ? `${hrs(d.h)} by ${d.m === 'flight' ? 'air' : d.m}` : `${hrs(d.h)} of walking`);
       if (d.km && !d.m) facts.push(`about ${d.km} km`);
-      if (d.a) facts.push(`sleep at ${num(d.a)} m`);
+      if (d.back) facts.push(`tonight in ${detail.gateway}`);
+      else if (d.a) facts.push(`sleep at ${num(d.a)} m`);
       return h(
         'li',
         { class: `pday pday-${d.k}${d.lvl && d.lvl !== 'ok' ? ' pday-flag' : ''}`, id: `day-${i + 1}` },

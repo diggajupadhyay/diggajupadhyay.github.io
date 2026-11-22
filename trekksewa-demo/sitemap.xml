@@ -20,19 +20,28 @@
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/dhaulagiri-circuit/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/everest-base-camp-via-gokyo/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/everest-view-trek/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/ghandruk-loop/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/helambu/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/jiri-to-everest-base-camp/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/jomsom-muktinath/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/kalinchowk/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/kanchenjunga-base-camp/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/khaptad/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/khopra-ridge/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/khumai-danda/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/langtang-gosaikunda-helambu/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/makalu-base-camp/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/mohare-danda/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/nagarkot-dhulikhel-namobuddha/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/nar-phu-valley/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/panch-pokhari/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/panchase/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/phoksundo-lake/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/pikey-peak/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/rara-lake/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/royal-trek/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/ruby-valley/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/sikles/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/tamang-heritage-trail/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/tsho-rolpa/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/treks/tsum-valley/</loc><priority>0.6</priority></url>
@@ -55,23 +64,30 @@
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/arughat/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/australian-camp/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/badal-danda/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/balthali/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/bamboo-annapurna/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/bamboo-langtang/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/banskharka/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/banthanti/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/bayeli/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/beding/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/begnas-lake/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/beni/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/besisahar/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/bhadaure/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/bhadrapur/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/bhandar/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/bhimtang/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/bhotang/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/bhratang/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/bhulbhule/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/bhumdi/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/bichpani/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/bijayapur/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/birendra-tal/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/birethanti/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/boghara/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/borang/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/borlang-bhanjyang/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/braga/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/briddim/</loc><priority>0.6</priority></url>
@@ -79,26 +95,31 @@
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/bumra/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/bupsa/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chalachaur/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chalish/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chame/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/champadevi/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chandanbari/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chandragiri/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/changu-narayan/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/charikot/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chautara/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chele/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/cheram/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chere-chaur/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chetchet/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chhepka/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chheplung/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chhimti/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chhokang-paro/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chhomrong/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chhoser/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chhukung/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chhukung-ri/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chhusang/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chichemle/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chilime/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chipling/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chisapani-kaski/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chisapani/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chistibang/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/chitre/</loc><priority>0.6</priority></url>
@@ -113,16 +134,20 @@
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/danda-kharka/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/danphe-lagna/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/darbang/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/darkha/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/deboche/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/deng/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/deurali-annapurna/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/deurali-kalinchowk/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/deurali-bhandar/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/dhading-besi/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/dhakmar/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/dhampus/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/dhampus-pass/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/dhampus-peak/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/dhangadhi/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/dhap/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/dhap-sindhupalchok/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/dharamsala/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/dharapani-myagdi/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/dharapani/</loc><priority>0.6</priority></url>
@@ -130,6 +155,7 @@
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/dhikur-pokhari/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/dho-tarap/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/dhulikhel/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/dhulikhel-kali-temple/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/dhumba-lake/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/dhunche/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/dingboche/</loc><priority>0.6</priority></url>
@@ -153,6 +179,8 @@
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/gangapurna-lake/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/ganja-la/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/gatlang/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/ghachowk/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/ghalekharka/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/ghami/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/ghandruk/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/ghap/</loc><priority>0.6</priority></url>
@@ -180,6 +208,8 @@
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/gyabla/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/gyu-la/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/hidden-valley/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/hile-kharka/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/hille-bhanjyang/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/himalaya-hotel/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/humde/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/ice-lake/</loc><priority>0.6</priority></url>
@@ -206,9 +236,11 @@
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/kagbeni/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/kakani/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/kala-patthar/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/kalikasthan/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/kalinchok/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/kalopani/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/kambachen/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/kami-kharka/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/kande/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/kang-la/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/kang-la-dolpo/</loc><priority>0.6</priority></url>
@@ -216,6 +248,7 @@
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/kang-la-phedi/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/kathmandu/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/kattike/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/kavre-bhanjyang/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/keke-la/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/khandbari/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/khangsar/</loc><priority>0.6</priority></url>
@@ -225,14 +258,18 @@
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/khongma-danda/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/khopra-danda/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/khorlabesi/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/khumai-danda/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/khumjung/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/khunde/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/khurpu-bhanjyang/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/kimche/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/kinja/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/komrong/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/kongma-la/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/kora-la/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/korchon/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/koto/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/kuri/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/kutumsang/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/kyang/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/kyangjuma/</loc><priority>0.6</priority></url>
@@ -295,6 +332,7 @@
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/murma-top/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/na-gaon/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/nagarkot/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/nagarkot-view-tower/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/nagthali/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/namche-bazaar/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/namgung/</loc><priority>0.6</priority></url>
@@ -305,6 +343,7 @@
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/nangkartshang-peak/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/nar/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/nar-phedi/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/nasim-pati/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/nayapul/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/nepalgunj/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/ngawal/</loc><priority>0.6</priority></url>
@@ -316,12 +355,19 @@
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/olangchung-gola/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/paiya/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/panauti/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/panch-pokhari/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/panchase-bhanjyang/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/panchase-peak/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/pangboche/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/pangpema/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/pangsang-la/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/parvati-kunda/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/pati-bhanjyang/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/pauwa-bas/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/phakding/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/phale/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/phaplu/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/dhampus-phedi/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/phedi-gosaikunda/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/pheriche/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/philim/</loc><priority>0.6</priority></url>
@@ -351,6 +397,7 @@
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/rimche/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/ringmo/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/rongga-bhanjyang/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/rupa-lake/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/saldang/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/saldang-la/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/sallaghari/</loc><priority>0.6</priority></url>
@@ -358,13 +405,17 @@
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/sama-gaun/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/samar/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/samdo/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/sankhu-kavre/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/sano-okhareni/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/seduwa/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/sekathum/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/sele-la/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/sermathang/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/sete/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/shaklung/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/sherpagaon/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/shershong/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/shertung/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/shey-gompa/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/shikha/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/shipton-la/</loc><priority>0.6</priority></url>
@@ -374,6 +425,7 @@
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/shyala/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/sibu/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/siding/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/sikles/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/silgadhi/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/simigaon/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/sinelapche-la/</loc><priority>0.6</priority></url>
@@ -381,9 +433,11 @@
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/sinion-la/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/sinja/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/sinuwa/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/somdang/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/soti-khola/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/suketar/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/suligad/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/sundari-danda/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/sundarijal/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/surke/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/surkhet/</loc><priority>0.6</priority></url>
@@ -391,6 +445,7 @@
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/syabrubesi/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/syangboche/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/syangboche-mustang/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/syauli-bazaar/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/tadapani/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/taksindu-la/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/tal/</loc><priority>0.6</priority></url>
@@ -398,6 +453,7 @@
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/tangbe/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/tangge/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/taplejung/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/tara-hill-top/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/tarakot/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/tarap-khola-camp/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/tarkeghyang/</loc><priority>0.6</priority></url>
@@ -430,8 +486,10 @@
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/timang/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/timbu/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/timure/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/tipling/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/tiplyang/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/tokyu/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/tolka/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/tortong/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/tsarang/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/tsarang-la/</loc><priority>0.6</priority></url>
@@ -440,8 +498,10 @@
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/tshowa-gompa/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/tukuche/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/tumlingtar/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/tupi-danda/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/ulleri/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/upper-pisang/</loc><priority>0.6</priority></url>
+  <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/world-peace-pagoda/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/yak-kharka-manang/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/yak-kharka-dhaulagiri/</loc><priority>0.6</priority></url>
   <url><loc>https://diggajupadhyay.github.io/trekksewa-demo/places/yamda-la/</loc><priority>0.6</priority></url>

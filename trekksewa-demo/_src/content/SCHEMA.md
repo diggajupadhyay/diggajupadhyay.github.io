@@ -33,6 +33,7 @@ village, lodge cluster, pass, lake, viewpoint or base camp.
 | `lat`, `lon` | yes | decimal degrees, 4 or 5 decimal places |
 | `coordQuality` | yes | `good` (within roughly 500 m), `approx` (could be a kilometre or more out) or `uncertain` (not drawn on maps) |
 | `coordSource` | no | set by `scripts/verify-coordinates.mjs`: `osm` (matched in OpenStreetMap), `terrain-fit` (moved onto ground at the right altitude) or `estimate` |
+| `coordPinned` | no | `true` when someone corrected the position by hand: the checking script then leaves it alone |
 | `blurb` | yes | 1–2 original sentences, 60–260 characters |
 | `facilities` | no | array from: `lodges` `camping` `homestays` `shops` `atm` `bank` `health-post` `hospital` `pharmacy` `rescue-post` `wifi` `charging` `hot-shower` `bakery` `gear-shops` `permit-check` `police` `airstrip` `helipad` `bus` `jeep` `monastery` `viewpoint` |
 | `tip` | no | one practical sentence |

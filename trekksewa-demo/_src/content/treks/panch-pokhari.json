@@ -1,0 +1,194 @@
+{
+  "slug": "panch-pokhari",
+  "name": "Panch Pokhari",
+  "aka": ["Panch Pokhari Trek", "Paanch Pokhari", "Panch Pokhari (Sindhupalchok)", "Five Lakes Trek"],
+  "region": "langtang",
+  "tagline": "A long forested ridge from Chautara to five sacred lakes at 4,100 m",
+  "summary": "Nine days from Kathmandu: north along the ridge above Chautara by forest camps and herders' pastures to the five lakes of Panch Pokhari at about 4,100 m, then down to the road at Chhimti.",
+  "intro": [
+    "Panch Pokhari means five ponds: a cluster of small lakes in a grassy bowl at about 4,100 m, in the Sindhupalchok corner of Langtang National Park. They are sacred to Shiva, and at the Janai Purnima full moon in August thousands of pilgrims climb through the rain to bathe here. For the rest of the year the place is very quiet. From the rim above the water the Jugal peaks, with Dorje Lakpa at their western end, fill the skyline to the north.",
+    "This guide follows the old approach from Chautara, the district town. For six days you walk north along a single ridge, from terraced farms through oak and rhododendron forest to yak pastures and open ground. Height comes slowly, never more than about 400 m of sleeping altitude a day above Kami Kharka, which makes this long way round kinder to the body than the short route from Bhotang, where people reach the lakes on the third day. The price is a ridge with almost no villages, few other trekkers and water points that are far apart.",
+    "Be clear about lodging. Chautara has hotels, and simple teahouses open in the trekking seasons at Nasim Pati and Tupi Danda on the Bhotang side. On the ridge between Sano Okhareni and Hille Bhanjyang there is nothing you can count on, and agencies run that section as a camping trek with tents, a cook and porters. Some agency pages now mention basic lodges or shelters at the old campsites while others still pitch tents there. Published heights and walking times for the ridge stages differ as well, so treat the figures below as a guide."
+  ],
+  "days": 9,
+  "daysRange": [8, 10],
+  "distanceKm": 60,
+  "maxAlt": { "m": 4100, "place": "panch-pokhari" },
+  "difficulty": "challenging",
+  "difficultyNote": "Not technical and never very high, but five nights on a ridge with no villages, a camping crew to organize and an 1,800 m descent in one day make it harder than the altitude suggests.",
+  "style": ["camping", "teahouse"],
+  "start": "chautara",
+  "end": "chhimti",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "Chautara is about 95 km from Kathmandu by the Araniko Highway and a side road from Dolalghat, four to six hours by bus or hired vehicle. A dirt road carries on along the ridge through Syaule to Sano Okhareni, and some groups ride that far. The trek ends at Chhimti, above Bhotang, where the bus to Kathmandu starts; the road down the Indrawati valley to Melamchi is rough and can close in the monsoon.",
+    "options": [
+      { "mode": "bus", "from": "kathmandu", "to": "chautara", "time": "4–6 h", "note": "Public buses run through the day; ask your hotel the day before which bus park they leave from. A hired jeep is quicker and can carry the camping gear." },
+      { "mode": "jeep", "from": "kathmandu", "to": "sano-okhareni", "time": "5–6 h", "note": "A hired four-wheel drive can continue along the ridge road beyond Syaule, which saves the first walking day. The public bus is reported to take seven to eight hours." },
+      { "mode": "bus", "from": "chhimti", "to": "kathmandu", "time": "5–7 h", "note": "Down the valley through Melamchi to Jorpati on the edge of Kathmandu. Reports describe an early-morning departure in each direction, so ask at your lodge the night before, or book a jeep." }
+    ]
+  },
+  "seasons": {
+    "best": [4, 5, 10, 11],
+    "good": [3, 9],
+    "hard": [1, 2, 6, 7, 8, 12],
+    "note": "April, May, October and November are the dependable months, with rhododendron in flower on the ridge in April. In March snow often still lies above Hille Bhanjyang, and in September the forest is wet and full of leeches. From December to February the upper ridge is under snow and the Nasim Pati teahouses are shut. The monsoon brings cloud, leeches and landslides on the roads, though it is also when the Janai Purnima pilgrims go up."
+  },
+  "permits": ["langtang-np", "tims"],
+  "guide": {
+    "rule": "required",
+    "note": "The lakes and the upper ridge are inside Langtang National Park, and the Nepal Tourism Board has required foreign trekkers to hire a licensed guide since April 2023. Checks on the trail are inconsistent, and we know of no checkpost on this ridge. Here a guide is a practical need in any case: the trail is unmarked and faint across the pastures, mist is common, only people who have walked it know where the water is, and the camping crew has to be arranged through an agency."
+  },
+  "highlights": [
+    "Five small lakes at about 4,100 m, sacred to Shiva",
+    "Dawn on Dorje Lakpa and the Jugal peaks from the rim above the lakes",
+    "Six days on one ridge, from terraced farms to open pasture",
+    "Rhododendron forest in flower in April",
+    "A gradual climb that gives your body time to adjust",
+    "Very few other trekkers outside the August pilgrimage"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive from Kathmandu to Chautara",
+      "from": "kathmandu",
+      "to": "chautara",
+      "sleep": 1450,
+      "hours": [4, 6],
+      "kind": "transfer",
+      "mode": "drive",
+      "note": "Out along the Araniko Highway to Dolalghat, then up a side road to the ridge-top bazaar of Chautara, the district headquarters of Sindhupalchok. Buy your last supplies here: beyond the town there is no bank and hardly a shop until the trek is over."
+    },
+    {
+      "day": 2,
+      "title": "Chautara to Sano Okhareni",
+      "from": "chautara",
+      "to": "sano-okhareni",
+      "sleep": 1965,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "North along the ridge on a dirt road and the footpaths that cut its bends, through farm hamlets and the small bazaar of Syaule, with the Indrawati valley on your left and the Balephi on your right. It is a warm, dusty day with vehicles for company, which is why some groups ride it."
+    },
+    {
+      "day": 3,
+      "title": "Sano Okhareni to Kami Kharka",
+      "from": "sano-okhareni",
+      "to": "kami-kharka",
+      "sleep": 2810,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "An hour's climb to the houses of Thulo Okhareni, then about four hours of steady ascent through oak and rhododendron forest to the clearing of Kami Kharka. You gain close to 850 m. Fill every bottle before you leave the village."
+    },
+    {
+      "day": 4,
+      "title": "Kami Kharka to Pauwa Bas",
+      "from": "kami-kharka",
+      "to": "pauwa-bas",
+      "sleep": 3000,
+      "hours": [4, 6],
+      "kind": "trek",
+      "note": "A shorter day along the forested crest, up and down over wooded knolls, to a pilgrims' rest place at about 3,000 m. Published times for this stage run from four to six hours and heights from 3,000 to 3,250 m, which shows how seldom it is measured."
+    },
+    {
+      "day": 5,
+      "title": "Pauwa Bas to Hille Bhanjyang",
+      "from": "pauwa-bas",
+      "to": "hille-bhanjyang",
+      "sleep": 3400,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "The forest thins to rhododendron and grass as the ridge climbs. The trail keeps close to the crest, dropping into small saddles and climbing out again, to a camp in a notch at about 3,400 m. Nights are noticeably colder from here on."
+    },
+    {
+      "day": 6,
+      "title": "Hille Bhanjyang to Nasim Pati",
+      "from": "hille-bhanjyang",
+      "to": "nasim-pati",
+      "sleep": 3700,
+      "hours": [4, 6],
+      "kind": "trek",
+      "note": "A day of ridge walking over several tops, rocky in places, to the pilgrim shelters and seasonal teahouses of Nasim Pati. The trail from Bhotang comes up here, so you may meet other trekkers for the first time. If you have a headache tonight, stay a second night before going higher."
+    },
+    {
+      "day": 7,
+      "title": "Nasim Pati to Panch Pokhari",
+      "from": "nasim-pati",
+      "to": "panch-pokhari",
+      "sleep": 4100,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "A steady climb of about 400 m over open, rocky ground to the bowl that holds the lakes. Arrive by lunch, walk round the shore to the Shiva shrine and keep the rim above the camp for sunrise. There is a pilgrims' shelter, and in season a hut may sell meals, but do not count on a bed."
+    },
+    {
+      "day": 8,
+      "title": "Panch Pokhari to Tupi Danda",
+      "from": "panch-pokhari",
+      "to": "tupi-danda",
+      "via": ["nasim-pati"],
+      "sleep": 2320,
+      "hours": [6, 7],
+      "kind": "trek",
+      "note": "Up before dawn for the view from the rim, then back to Nasim Pati and down the pilgrims' trail on the Bhotang side, steeply through forest, losing about 1,800 m in the day. It is very hard on the knees. Tupi Danda has simple lodges and the first phone signal for a week."
+    },
+    {
+      "day": 9,
+      "title": "Tupi Danda to Chhimti, drive to Kathmandu",
+      "from": "tupi-danda",
+      "to": "chhimti",
+      "sleep": 1830,
+      "hours": [2, 3],
+      "kind": "trek",
+      "note": "About two hours of steep descent to the road at Chhimti, then five to seven hours in a hired jeep down the Indrawati valley through Melamchi to Kathmandu, the first of them on rough road. If you are using the public bus, which leaves early, sleep at Chhimti and travel the next morning."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Remoteness on the ridge",
+      "text": "Between Sano Okhareni and Nasim Pati there are no villages, no shops and little or no phone signal for four days. Help means a helicopter in clear weather or being carried down to the road. Carry a full first-aid kit, leave your plan with your agency and check that your insurance covers helicopter rescue."
+    },
+    {
+      "title": "Altitude at the lakes",
+      "text": "You sleep at about 3,700 m and then 4,100 m. The ridge route gains height gently, but people still fall ill, most often those who come up fast from Bhotang. Do not leave Nasim Pati with a headache that has not cleared, and take the Bhotang trail down at once if anyone gets worse."
+    },
+    {
+      "title": "Mist and a faint trail",
+      "text": "Cloud builds on the ridge most afternoons and can fill the pastures within minutes. Above Pauwa Bas the path is faint, splits into herders' tracks and is not marked. Keep the group together, start early and stop if you cannot see the way."
+    },
+    {
+      "title": "Snow out of season",
+      "text": "Snow can fall above Hille Bhanjyang in any month from October to May and lies deep from December to March. It hides the trail and turns the rocky ground below the lakes into a slow, slippery climb. Turn back if fresh snow covers the route."
+    },
+    {
+      "title": "The long descent",
+      "text": "The drop from the lakes to Tupi Danda is about 1,800 m in one day and steep for most of it. Use two poles and take it slowly. If your knees are doubtful, split it with a second night at Nasim Pati."
+    }
+  ],
+  "tips": [
+    "Buy the Langtang National Park permit and the TIMS card in Kathmandu before you leave. We know of no counter on this side of the park.",
+    "Agree with your agency in writing what the crew will carry: tents, a kitchen, fuel and food for at least five days on the ridge.",
+    "Carry at least two litres of water each from every camp and treat all of it. Ask your guide each morning where the next source is.",
+    "Bring a four-season sleeping bag. Nights at Nasim Pati and the lakes are below freezing even in April and October.",
+    "Avoid the week of Janai Purnima in August unless you are going as a pilgrim. The shelters overflow and the trail is deep mud.",
+    "Draw all your cash in Kathmandu, and carry small notes for the teahouses at Nasim Pati and Tupi Danda."
+  ],
+  "variants": [
+    {
+      "name": "The short way from Bhotang",
+      "text": "Most people now reach the lakes from the Bhotang side: bus to Chhimti, up to Tupi Danda and Nasim Pati, and on to the lakes on the third day, four or five days in all, with teahouse beds in season. It needs no tents, but it climbs from about 1,800 m to 4,100 m in three days, which is too fast for many people."
+    },
+    {
+      "name": "Walk out to Melamchi",
+      "text": "The classic ending carries on down the valley on foot, from Tupi Danda to the Tamang village of Dhap and then to Melamchi Pul Bazaar for the bus. It makes ten days, and most of the extra walking is now on the valley road."
+    },
+    {
+      "name": "Ride to Sano Okhareni",
+      "text": "A hired jeep along the ridge road from Chautara saves the first walking day and brings the trek down to eight days."
+    },
+    {
+      "name": "A spare day at the lakes",
+      "text": "A second night at Panch Pokhari gives two chances of a clear dawn and time to walk the rim. Take it only if everyone slept well on the first night."
+    }
+  ],
+  "related": ["gosaikunda", "helambu", "ama-yangri", "ruby-valley"],
+  "confidence": "low"
+}

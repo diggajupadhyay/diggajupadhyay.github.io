@@ -1,0 +1,134 @@
+{
+  "slug": "khumai-danda",
+  "name": "Khumai Danda",
+  "aka": ["Khumai Dada", "Khumai Hill", "Khumai Korchon Trek"],
+  "region": "annapurna",
+  "tagline": "A steep ridge trail to a grassy 3,245 m shoulder facing Machhapuchhre",
+  "summary": "Four days north of Pokhara: a steep climb from Ghachowk through forest to Hile Kharka and the open ridge of Khumai Danda at 3,245 m, with basic lodges and Machhapuchhre close by.",
+  "intro": [
+    "Khumai Danda is a grassy ridge at 3,245 m on the east side of the Seti gorge, to the south-east of Machhapuchhre. The trail was developed by the local municipality in recent years, as part of what it calls the Great Machhapuchhre Trail, and has become a favourite short trip for walkers from Pokhara, while few foreign trekkers have heard of it. It starts about an hour's drive from the city at Ghachowk, climbs one long spur through fields, forest and pasture, and comes back down the same way.",
+    "From the top you look straight across the gorge at Machhapuchhre, with Mardi Himal and Annapurna South to its left and Annapurna IV, Annapurna II and Lamjung Himal to the right. Pokhara and its lake lie far below to the south. A further two to three hours up the ridge is Korchon, a shoulder at 3,682 m with a wider view. It is an optional extra, and best left alone in cloud, wind or snow.",
+    "Do not mistake short for easy. The path gains about 2,000 m in two days and is steep nearly all the way, through fields low down and over roots and grass higher up. You sleep at 3,245 m on the second night, which is high enough for a headache. Lodges at Hile Kharka, Chichemle and Khumai Danda are basic: a few shared rooms with thin mattresses, a wood-fired kitchen, an outside toilet and not much water. No jeep track follows the ridge, so the only way down is on foot."
+  ],
+  "days": 4,
+  "daysRange": [3, 5],
+  "distanceKm": 28,
+  "maxAlt": { "m": 3245, "place": "khumai-danda" },
+  "difficulty": "moderate",
+  "difficultyNote": "Short, but steep throughout: about 2,000 m of climbing in two days to a night at 3,245 m, on a rough path with basic lodges and no road to fall back on.",
+  "style": ["teahouse"],
+  "start": "ghachowk",
+  "end": "ghachowk",
+  "gateway": "pokhara",
+  "access": {
+    "summary": "Ghachowk is an hour to an hour and a half north of Pokhara by taxi or jeep, on a road through Hemja, and a little longer by local bus. The trek returns to the same village. Above the Seti Khola there is no road, so once you start climbing there is no riding out part-way.",
+    "options": [
+      { "mode": "jeep", "from": "pokhara", "to": "ghachowk", "time": "1–1.5 hr", "note": "Taxi or hired jeep. Local buses also run from Pokhara and take up to two hours; ask at your hotel for the stand." },
+      { "mode": "jeep", "from": "ghachowk", "to": "pokhara", "time": "1–1.5 hr", "note": "Fix a time with the driver before you set out, or take an afternoon bus. Phone signal on the ridge is patchy." }
+    ]
+  },
+  "seasons": {
+    "best": [3, 4, 10, 11],
+    "good": [5, 9, 12],
+    "hard": [1, 2, 6, 7, 8],
+    "note": "October and November are the clearest months, and in late March and April the rhododendron forest is in flower. Cloud usually covers the ridge by late morning in any season. From late December to February snow often lies above Chichemle and some lodges shut. In the monsoon the path is slippery, the forest is full of leeches and the mountains stay hidden."
+  },
+  "permits": ["acap", "tims"],
+  "guide": {
+    "rule": "required",
+    "note": "Since April 2023 the Nepal Tourism Board has required foreign trekkers in conservation areas to walk with a licensed guide, though checks on the trail are inconsistent. On this ridge a guide matters for two plain reasons: the lodges have only a few beds and need a phone call ahead, and the path above Chichemle is narrow, grassy and easy to lose in cloud or snow."
+  },
+  "highlights": [
+    "Machhapuchhre straight across the Seti gorge from the ridge",
+    "Sunrise on the Annapurnas and Lamjung Himal from 3,245 m",
+    "Rhododendron forest in flower in late March and April",
+    "Far fewer foreign trekkers than on Mardi Himal",
+    "An optional dawn climb to Korchon at 3,682 m"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive to Ghachowk, walk to Hile Kharka",
+      "from": "ghachowk",
+      "to": "hile-kharka",
+      "sleep": 2160,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "An hour or so by road, then across the Seti Khola by footbridge and straight into the climb: about 900 m up through terraced fields and the hamlet of Tubu, then forest. It is steep for most of the way, with little shade low down. Hile Kharka is a clearing with a few plain lodges. Be walking by ten."
+    },
+    {
+      "day": 2,
+      "title": "Hile Kharka to Khumai Danda",
+      "from": "hile-kharka",
+      "to": "khumai-danda",
+      "via": ["chichemle"],
+      "sleep": 3245,
+      "hours": [4, 6],
+      "kind": "trek",
+      "note": "Up the spur through rhododendron forest to the lodge at Chichemle, then on steeper, narrower ground until the trees thin to scrub and grass below the top. You gain about 1,100 m and sleep at 3,245 m, so go slowly and drink often. Cloud usually comes in by midday; the view is for the evening and the dawn."
+    },
+    {
+      "day": 3,
+      "title": "Dawn on the ridge, down to Hile Kharka",
+      "from": "khumai-danda",
+      "to": "hile-kharka",
+      "via": ["chichemle"],
+      "sleep": 2160,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "Watch the sun come up on Machhapuchhre from the ridge above the lodges. Strong walkers leave two hours before dawn for Korchon, the 3,682 m shoulder further up, and are back for a late breakfast; that adds four to five hours and is not needed for the view. Then go down the way you came."
+    },
+    {
+      "day": 4,
+      "title": "Hile Kharka to Ghachowk, drive to Pokhara",
+      "from": "hile-kharka",
+      "to": "ghachowk",
+      "sleep": 1250,
+      "hours": [3, 4],
+      "kind": "trek",
+      "note": "A steep 900 m descent through forest and terraces to the bridge over the Seti Khola, hard on the knees and slippery after rain. Have lunch in Ghachowk, then take a jeep, a taxi or the local bus back to Pokhara, an hour to an hour and a half away."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "A big jump in sleeping height",
+      "text": "The second day takes you from about 2,160 m to 3,245 m. Headache, poor sleep and loss of appetite are common at the top. Climb slowly and drink plenty. If symptoms get worse in the night, go down to Chichemle or Hile Kharka at first light, and do not go on to Korchon unless you feel well."
+    },
+    {
+      "title": "Steep ground, wet or dry",
+      "text": "The trail is steep from the river to the ridge, on worn earth, roots and grass. After rain or frost it is slippery, and the two days of descent are where knees and ankles suffer. Two poles and boots with a deep tread make a real difference."
+    },
+    {
+      "title": "Cloud, cold and snow on the open ridge",
+      "text": "Above Chichemle the path is narrow and open to the wind. Cloud can cut visibility to a few metres, and from December to March snow hides the trail and some lodges close. Do not go above the lodges, or on to Korchon, in cloud, strong wind or fresh snow."
+    },
+    {
+      "title": "Few beds and little water",
+      "text": "Each stop has only a handful of rooms. On Saturdays and Nepali public holidays they fill with groups from Pokhara, and late arrivals may end up on the dining room floor. Water is short on the ridge, so expect none for washing and treat what you drink."
+    }
+  ],
+  "tips": [
+    "Go midweek. At weekends and on public holidays the few rooms on the ridge are taken by walkers from Pokhara.",
+    "Have your guide phone each lodge the day before. Outside the main seasons some close without notice.",
+    "Bring a warm sleeping bag, a head torch and a power bank. Rooms are unheated, blankets are few and there may be nowhere to charge a phone.",
+    "Carry two litres of water from Hile Kharka, and tablets or a filter for more.",
+    "Take the descent over two days, as planned here. Going from the top to the road in one day is a drop of 2,000 m.",
+    "Heights printed for Hile Kharka and Chichemle differ by 200 m or more between itineraries. The figures here are the ones most often given."
+  ],
+  "variants": [
+    {
+      "name": "Three days",
+      "text": "The usual plan for fit walkers: Korchon at dawn on day three, then all the way down to Ghachowk and back to Pokhara the same evening. That is eight to ten hours on your feet and well over 2,000 m of descent."
+    },
+    {
+      "name": "Five days, for a slower climb",
+      "text": "Stop at Chichemle on the second night and go up to Khumai Danda on the third morning. Sleeping heights of about 2,160, 2,640 and 3,245 m are much kinder, and the short days leave time to rest. We would choose this for a first trek at altitude."
+    },
+    {
+      "name": "Korchon",
+      "text": "From Khumai Danda the ridge path climbs another 440 m to Korchon at 3,682 m in two to three hours. Start with a head torch to be there for sunrise, take a guide who knows the way and turn round if cloud comes in. There is no shelter and no water."
+    }
+  ],
+  "related": ["mardi-himal", "sikles", "ghorepani-poon-hill", "mohare-danda"],
+  "confidence": "medium"
+}

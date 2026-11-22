@@ -1,0 +1,136 @@
+{
+  "slug": "nagarkot-dhulikhel-namobuddha",
+  "name": "Nagarkot to Namobuddha",
+  "aka": ["Nagarkot Dhulikhel Namobuddha Trek", "Nagarkot Dhulikhel Trek", "Kathmandu Valley East Rim"],
+  "region": "kathmandu",
+  "tagline": "Hotel to hotel along the east rim, ending at a Buddhist pilgrimage hill",
+  "summary": "Three easy days east of Kathmandu: sunrise at Nagarkot, a ridge and village walk to Dhulikhel, then on to the stupa and monastery at Namobuddha and down to the old town of Panauti.",
+  "intro": [
+    "This walk joins three places that most visitors reach by car. You are driven up to Nagarkot for the sunrise, walk south along the valley rim to the old Newar town of Dhulikhel, and go on the next day to Namobuddha, one of the main Buddhist pilgrimage sites near Kathmandu, before dropping to Panauti for the bus home. The highest ground is the Nagarkot view-tower hill at about 2,175 m, and every night is spent in a hotel.",
+    "It is country walking, not mountain trekking. The way follows dirt roads, village paths and stretches of pine forest through Tamang and Newar farmland, with the Banepa valley below you. From October to March a line of snow peaks fills the northern horizon: Ganesh Himal, Langtang Lirung, Dorje Lakpa and Gaurishankar, and from Nagarkot on the clearest mornings a far-off Everest. From April haze usually hides them, and the walk becomes one of villages, forest and temples.",
+    "The two walking days are not equal. Nagarkot to Dhulikhel takes five to seven hours and the route is unsigned, so allow time for wrong turns. The last day has two parts: three to four hours to Namobuddha, with a stiff climb up stone steps at the start, then two and a half to three hours down to Panauti. If that sounds long, stop at Namobuddha and leave by road, or sleep at the monastery guest house and walk down next morning. No permit is needed, and you are never far from a road."
+  ],
+  "days": 3,
+  "daysRange": [2, 4],
+  "distanceKm": 36,
+  "maxAlt": { "m": 2175, "place": "nagarkot-view-tower" },
+  "difficulty": "easy",
+  "difficultyNote": "Low altitude, a hotel bed each night and a road never far away; the only demands are two fairly long walking days and some route-finding on the first of them.",
+  "style": ["teahouse"],
+  "start": "nagarkot",
+  "end": "panauti",
+  "gateway": "kathmandu",
+  "access": {
+    "summary": "Both ends are a short ride from Kathmandu. Nagarkot is about 32 km east of the city: an hour and a half to two hours by taxi, or up to three hours by local bus with a change in Bhaktapur. From Panauti, frequent buses run to Kathmandu by way of Banepa in about an hour and a half. Dhulikhel is on the Araniko Highway, with buses all day if you need to cut the walk short. Namobuddha has only a few buses, so most walkers who stop there book a car.",
+    "options": [
+      { "mode": "bus", "from": "kathmandu", "to": "nagarkot", "time": "2.5–3 h", "note": "Bus from the Ratna Park side of town to Bhaktapur, then the local bus up the hill from the Kamal Binayak stand." },
+      { "mode": "drive", "from": "kathmandu", "to": "nagarkot", "time": "1.5–2 h", "note": "Taxi or hired car from Thamel. Agree the fare before you set off." },
+      { "mode": "bus", "from": "panauti", "to": "kathmandu", "time": "1.5–2 h", "note": "Frequent buses from the Panauti bus park through Banepa to Ratna Park." },
+      { "mode": "drive", "from": "namobuddha", "to": "kathmandu", "time": "about 2 h", "note": "For those who skip the walk to Panauti. Book a car through your Dhulikhel hotel, or ask at the stupa when the next local bus leaves for Banepa." },
+      { "mode": "bus", "from": "dhulikhel", "to": "kathmandu", "time": "1.5 h", "note": "Frequent buses along the Araniko Highway, if you stop after the first walking day." }
+    ]
+  },
+  "seasons": {
+    "best": [1, 2, 3, 10, 11, 12],
+    "good": [4, 5, 9],
+    "hard": [6, 7, 8],
+    "note": "Come between October and March for the mountains. November to February has the sharpest dawns, with frost on the Nagarkot ridge. April and May are warm, hazy and hot on the open farmland by late morning. From June to September the dirt roads turn to mud, leeches are out in the forest sections, and cloud usually takes the place of the view."
+  },
+  "permits": [],
+  "guide": {
+    "rule": "optional",
+    "note": "This walk lies outside the national parks and conservation areas. There is no permit and no checkpost, and nobody asks for a guide. One is still worth hiring for the Nagarkot to Dhulikhel day, where new dirt roads fork every few hundred metres and nothing is signed, and for anyone who would otherwise walk the quiet forest sections alone."
+  },
+  "highlights": [
+    "Sunrise over the Himalaya from the Nagarkot ridge",
+    "A day of ridge paths, pine forest and farm villages between Nagarkot and Dhulikhel",
+    "Dhulikhel's old Newar quarter and the long flight of steps to its Kali temple",
+    "The stupa at Namobuddha and the Thrangu Tashi Yangtse monastery above it",
+    "Panauti's riverside temples at the end of the walk",
+    "A hotel bed every night and no permit to arrange"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive to Nagarkot",
+      "from": "kathmandu",
+      "to": "nagarkot",
+      "sleep": 2175,
+      "hours": [2, 3],
+      "kind": "transfer",
+      "mode": "drive",
+      "note": "Leave Kathmandu after lunch and you reach Nagarkot in time for the sunset. Most hotels sit well below the 2,175 m usually quoted for the village, which is the height of the view-tower hill to the south. Eat early and set an alarm: the dawn is why you are here."
+    },
+    {
+      "day": 2,
+      "title": "Nagarkot to Dhulikhel",
+      "from": "nagarkot",
+      "to": "dhulikhel",
+      "via": ["nagarkot-view-tower"],
+      "sleep": 1550,
+      "hours": [5, 7],
+      "km": 16,
+      "kind": "trek",
+      "note": "After sunrise, follow the ridge road south to the view tower and take the forest path down to the saddle of Rohini Bhanjyang. From there dirt roads and village paths lead through Kankre, Tanchok and Opi to the Araniko Highway just short of Dhulikhel. Ask the way in every village."
+    },
+    {
+      "day": 3,
+      "title": "Dhulikhel to Namobuddha and Panauti, drive to Kathmandu",
+      "from": "dhulikhel",
+      "to": "panauti",
+      "via": ["dhulikhel-kali-temple", "kavre-bhanjyang", "namobuddha", "sankhu-kavre"],
+      "sleep": 1440,
+      "high": 1750,
+      "hours": [6, 7],
+      "km": 20,
+      "kind": "trek",
+      "note": "Climb the long flight of steps to the Kali temple, drop to the highway at Kavre Bhanjyang and follow a dirt road through Phulbari to Namobuddha, three to four hours in all. After the stupa and the monastery, walk down through Sankhu and Sunthan to Panauti in under three hours and take the bus to Kathmandu."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Losing the way to Dhulikhel",
+      "text": "Between the Nagarkot tower and Dhulikhel the route uses a web of dirt roads and footpaths that fork often and carry no signs, and new tracks are cut every year. A wrong turn can add an hour or two. Carry an offline map, keep working south and ask at every village."
+    },
+    {
+      "title": "Vehicles and dust",
+      "text": "Much of the way is on dirt roads shared with buses, trucks and motorbikes, and the last stretch into Dhulikhel follows the Araniko Highway. Step off the road when a vehicle passes, walk facing the traffic on the highway, and carry a scarf or mask for the dust in the dry months."
+    },
+    {
+      "title": "Walking alone",
+      "text": "The pine forest below the Nagarkot tower and the woods around Namobuddha are quiet, and robberies of lone hikers have been reported on the valley rim in past years. Incidents are rare. Walk with a companion or a guide, and be off the trail before dusk."
+    },
+    {
+      "title": "Heat and monsoon mud",
+      "text": "From April the open farmland is hot by late morning, so start early and carry two litres of water. In the monsoon the clay roads are slick, the stone steps at Dhulikhel are slippery and leeches wait in the forest."
+    }
+  ],
+  "tips": [
+    "Nagarkot and Dhulikhel fill with weekenders from Kathmandu. Walk midweek, or book both hotels ahead for a Friday or Saturday night.",
+    "Ask your Nagarkot hotel for a packed lunch. Tea shops between the tower and Dhulikhel are few and keep irregular hours.",
+    "Leave your main bag in Kathmandu. With a hotel every night you need only a day pack with a warm layer and a head torch for the dawn.",
+    "At Namobuddha, walk clockwise round the stupa, dress modestly in the monastery and ask before photographing monks or shrine rooms.",
+    "Dhulikhel and Panauti have cash machines. Carry small notes for tea shops, buses and temple donations.",
+    "December and January dawns at Nagarkot are near freezing, and many hotel rooms are unheated. Bring a warm jacket, hat and gloves."
+  ],
+  "variants": [
+    {
+      "name": "End at Namobuddha",
+      "text": "Stop at the stupa after three to four hours and return to Kathmandu by booked car, or by local bus to Banepa and a second bus from there. This halves the last day and suits anyone who found the day before long."
+    },
+    {
+      "name": "A night at Namobuddha",
+      "text": "Stay in the monastery guest house or one of the small lodges near the stupa, hear the monks' morning prayers, and walk down to Panauti after breakfast. The trek becomes four days and the last two are both short."
+    },
+    {
+      "name": "By way of Balthali",
+      "text": "From Namobuddha a path drops south-west to the farming village of Balthali in two to three hours. Sleep there in a small resort or homestay and walk out through Khopasi to Panauti the next morning."
+    },
+    {
+      "name": "Walk up to Nagarkot",
+      "text": "Instead of driving, start on foot: about four hours uphill from the temple village of Changu Narayan, or two days along the rim from Sundarijal by way of Chisapani, which makes a four-day walk round the valley's northern and eastern edge."
+    }
+  ],
+  "related": ["chisapani-nagarkot", "ama-yangri", "kalinchowk"],
+  "confidence": "medium"
+}

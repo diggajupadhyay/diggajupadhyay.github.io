@@ -251,7 +251,8 @@ services ration requests per address and per day, so a step may stop early and a
 again later. Read the report before `apply`: it gives the reason for every decision. After
 adding places, or to settle the ones still marked `uncertain`, run the steps again; the
 quickest fix for a single place is to look it up on openstreetmap.org and type the coordinates
-in by hand with `"coordQuality": "good", "coordSource": "osm"`.
+in by hand with `"coordQuality": "good", "coordSource": "osm", "coordPinned": true`. The pin
+keeps later runs of the script from moving the place back.
 
 Coordinates that come from OpenStreetMap are © OpenStreetMap contributors and stay under the
 Open Database Licence (ODbL). The credits page says so; keep that notice.

@@ -1,0 +1,158 @@
+{
+  "slug": "sikles",
+  "name": "Sikles",
+  "aka": ["Siklis", "Sikles Trek", "Sikles and Tara Hill Top", "Sikles Eco Trek"],
+  "region": "annapurna",
+  "tagline": "A big Gurung village above the Madi Khola, and the forest ridge behind it",
+  "summary": "Five days north-east of Pokhara: a rough ride to the Gurung village of Sikles, a day among its stone houses, then two forest days over Tara Hill Top at about 3,000 m to Ghalekharka.",
+  "intro": [
+    "Sikles stands at 1,980 m on a spur above the Madi Khola, north-east of Pokhara, with Lamjung Himal and Annapurna II at the head of its valley. It is one of the largest Gurung villages in Nepal: several hundred stone houses packed along the ridge, terraced fields below, and families who take guests into their own homes. A rough road now reaches it, so the old two-day walk up the valley has become a jeep ride of three to four hours, and the village itself is within reach of almost anyone.",
+    "The trekking is on the way home. Behind the village a forested ridge rises to a clearing called Tara Hill Top, at about 3,000 m, and a trail that the conservation area project promoted as an eco-trek crosses it to Ghalekharka, on the Pokhara side. That is two days through oak and rhododendron forest with no villages: a climb of 1,000 m, then a descent of 1,300 m. From the top, at dawn, you look at Annapurna II, Lamjung Himal and Machhapuchhre with very few people about.",
+    "Be honest with yourself about that second half. Shelter on the ridge is one very basic teahouse that is not always open, and many groups carry tents and food. The path is unsigned, slippery when wet and full of leeches in the rains. Printed heights, times and even stopping places differ from one itinerary to the next, so treat the stages below as a guide and not a timetable. If you want an easy trip, stay two nights in Sikles, walk up towards the ridge and back, and ride home. That is a good trek in itself."
+  ],
+  "days": 5,
+  "daysRange": [4, 7],
+  "distanceKm": 22,
+  "maxAlt": { "m": 3000, "place": "tara-hill-top" },
+  "difficulty": "moderate",
+  "difficultyNote": "The village is easy to reach, but the way back is two long forest days, 1,000 m up and 1,300 m down, with no villages and only the plainest shelter.",
+  "style": ["homestay", "teahouse", "camping"],
+  "start": "sikles",
+  "end": "ghalekharka",
+  "gateway": "pokhara",
+  "access": {
+    "summary": "Sikles is at the end of a rough road up the Madi Khola valley, three to four hours from Pokhara by jeep and longer by the local bus. The crossing comes out at Ghalekharka, two to three hours' walk above the nearest road, from where a jeep takes an hour or two to reach Pokhara. If you decide against the crossing, you simply ride back from Sikles.",
+    "options": [
+      { "mode": "jeep", "from": "pokhara", "to": "sikles", "time": "3–4 hr", "note": "Shared jeeps and a local bus leave Pokhara in the morning; ask your hotel or agency for the current stand and departure time. A hired jeep can stop where you like on the way." },
+      { "mode": "jeep", "from": "sikles", "to": "pokhara", "time": "3–4 hr", "note": "The way back for anyone who decides against the crossing. Vehicles leave early, so book a seat the evening before." },
+      { "mode": "jeep", "from": "ghalekharka", "to": "pokhara", "time": "3–5 hr", "note": "Two to three hours on foot down to the roadhead, then one to two hours by jeep. There is no regular service, so arrange the jeep before you leave Sikles." }
+    ]
+  },
+  "seasons": {
+    "best": [3, 4, 10, 11],
+    "good": [2, 5, 9, 12],
+    "hard": [1, 6, 7, 8],
+    "note": "October and November give the clearest views, and in March and April the forest below Tara Hill Top is in flower with rhododendron. The village can be visited all winter, but from late December to early February snow can lie on the ridge, and the crossing is then best left out. In the monsoon the forest path is mud and leeches, and landslides close the road for days at a time."
+  },
+  "permits": ["acap", "tims"],
+  "guide": {
+    "rule": "required",
+    "note": "Since April 2023 the Nepal Tourism Board has required foreign trekkers in conservation areas to walk with a licensed guide, though checks on the trail are inconsistent. Here you need one in any case: the path over Tara Hill Top is unsigned, crosses forest with no settlements and may mean carrying food and a tent. Add someone from Sikles who has walked it this season."
+  },
+  "highlights": [
+    "Sikles: several hundred stone houses on a spur above the Madi Khola",
+    "Lamjung Himal and Annapurna II at the head of the valley",
+    "Nights in Gurung family homestays",
+    "Dawn from the forest clearing at Tara Hill Top",
+    "Rhododendron in flower on the ridge in March and April",
+    "Two days of forest with hardly anyone else on the trail"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive from Pokhara to Sikles",
+      "from": "pokhara",
+      "to": "sikles",
+      "sleep": 1980,
+      "hours": [3, 4],
+      "kind": "transfer",
+      "mode": "jeep",
+      "note": "A rough road up the Madi Khola valley, dusty in the dry months and muddy after rain, with a steep last climb to the village. Jeeps take three to four hours and the local bus longer. Find your homestay, then walk up through the stone lanes before dark. At 1,980 m the evenings are cool even in spring."
+    },
+    {
+      "day": 2,
+      "title": "A day in Sikles",
+      "from": "sikles",
+      "to": "sikles",
+      "sleep": 1980,
+      "hours": [2, 3],
+      "kind": "rest",
+      "note": "Spend the day on foot in the village: the stone lanes and courtyards, the conservation area office and the fields above the top houses, which look up the valley to Lamjung Himal and Annapurna II. Ask your hosts whether the teahouse on Tara Hill Top is open, and arrange a local guide or porter for the crossing."
+    },
+    {
+      "day": 3,
+      "title": "Sikles to Tara Hill Top",
+      "from": "sikles",
+      "to": "tara-hill-top",
+      "sleep": 3000,
+      "hours": [4, 6],
+      "kind": "trek",
+      "note": "A climb of about 1,000 m on a narrow forest path through oak and rhododendron, with no village or tea shop on the way and no water you can count on. Carry lunch and two litres each. The top is a clearing on the ridge with one very basic teahouse; if it is shut, you camp. Be up at first light for the view."
+    },
+    {
+      "day": 4,
+      "title": "Tara Hill Top to Ghalekharka",
+      "from": "tara-hill-top",
+      "to": "ghalekharka",
+      "sleep": 1680,
+      "hours": [4, 6],
+      "kind": "trek",
+      "note": "Down the far side of the ridge: about 1,300 m of descent through forest and the cattle pasture of Nyauli Kharka, steep and slippery in places and hard on the knees. Side trails lead to herders' camps and nothing is signed, which is the main reason to take a local guide. Ghalekharka has homestay rooms and a campsite."
+    },
+    {
+      "day": 5,
+      "title": "Walk out to the road, drive to Pokhara",
+      "from": "ghalekharka",
+      "to": "pokhara",
+      "sleep": 822,
+      "hours": [3, 5],
+      "kind": "transfer",
+      "mode": "jeep",
+      "note": "Walk down to the nearest roadhead, two to three hours on village paths, and meet a jeep booked the day before for the ride of an hour or two to Pokhara. The roadhead moves as the track is extended, so let your guide or host fix the meeting point. The old trail carries on down to the Bhurjung Khola instead."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "A lonely, unsigned forest crossing",
+      "text": "Between Sikles and Ghalekharka there are no villages, no signposts and few people. Paths made by herders and woodcutters branch off the main trail, and in cloud the forest looks the same in every direction. Do not attempt the crossing alone, or without someone who has walked it recently."
+    },
+    {
+      "title": "Little or no shelter on the ridge",
+      "text": "The teahouse on Tara Hill Top is small and bare, and may be closed outside the main seasons or when its keeper is away. Nights at 3,000 m are below freezing from November to March. Carry a warm sleeping bag, and a tent and food as well unless you have confirmed in Sikles that the teahouse is open."
+    },
+    {
+      "title": "Leeches and slippery ground",
+      "text": "From June to September, and after any heavy rain, the forest path is mud, wet roots and leeches. The 1,300 m descent to Ghalekharka is where people fall. Use two poles and allow extra time."
+    },
+    {
+      "title": "The road in",
+      "text": "The Sikles road is cut into steep, loose hillsides. Landslides close it in the monsoon and sometimes after winter rain, and vehicles do not keep to a timetable. Leave a spare day before any onward flight."
+    },
+    {
+      "title": "A fast gain in sleeping height",
+      "text": "Going from 1,980 m to about 3,000 m in a day is enough to give some people a headache and a poor night. Drink plenty and climb slowly. If you feel unwell in the night, go back down to Sikles in the morning, where there is a road."
+    }
+  ],
+  "tips": [
+    "Confirm in Sikles, not in Pokhara, whether the Tara Hill Top teahouse is open and stocked. Your homestay host will know.",
+    "Hire a local guide or porter in the village for the two forest days, even if you already have a guide from Pokhara.",
+    "Carry a sleeping bag, a head torch, water treatment and snacks for two days.",
+    "Bring cash from Pokhara. There is no cash machine in the valley.",
+    "Ask before you photograph people, and dress modestly. Sikles is a working village, and you are a guest in someone's house.",
+    "Heights printed for Tara Hill Top run from 2,800 to 3,056 m, and for Ghalekharka from 1,520 to 1,800 m. Treat every figure on the far side of the ridge as approximate."
+  ],
+  "variants": [
+    {
+      "name": "Village stay and Tara Hill Top, without the crossing",
+      "text": "Climb to the top from Sikles with a light pack, sleep there, walk back down to the village next morning and return to Pokhara by road. It avoids the long descent to Ghalekharka and the uncertain walk out, and it is the version we would suggest to older walkers."
+    },
+    {
+      "name": "The loop the other way",
+      "text": "Many agencies begin on the Pokhara side: a short drive, a day's walk up to Ghalekharka, then over Tara Hill Top to reach Sikles on the third afternoon, and a jeep home. It makes the village the goal of the trek, but it starts with the 1,300 m climb."
+    },
+    {
+      "name": "A forest camp instead of the top",
+      "text": "Older itineraries break the crossing at a forest camp near Nyauli Kharka, lower down on the Ghalekharka side, in place of a night on the top. There is no lodge there, so it is a night in a tent."
+    },
+    {
+      "name": "The old walk in",
+      "text": "Before the road was built the trek began near Pokhara and took two days up the Madi Khola, by Kalikasthan and Lamakhet. Most of that trail is now the jeep track, and few people walk it."
+    },
+    {
+      "name": "Kapuche Lake",
+      "text": "From Sikles a rougher trail runs north up the Madi Khola to the herders' huts at Hugu Goth and a glacial lake at about 2,500 m, two days there and back with very simple shelter. It is narrower and wilder than anything on the village trek. Ask in Sikles about the state of the path."
+    }
+  ],
+  "related": ["khumai-danda", "royal-trek", "ghandruk-loop", "mardi-himal"],
+  "confidence": "low"
+}

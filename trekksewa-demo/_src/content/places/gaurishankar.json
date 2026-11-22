@@ -38,10 +38,11 @@
     "region": "gaurishankar",
     "type": "viewpoint",
     "alt": 3842,
-    "lat": 27.75939,
-    "lon": 86.04755,
-    "coordQuality": "approx",
+    "lat": 27.75754,
+    "lon": 86.03414,
+    "coordQuality": "good",
     "coordSource": "osm",
+    "coordPinned": true,
     "blurb": "A hilltop shrine to Kalinchok Bhagwati above the lodge village of Kuri, north of Charikot. A cable car and a stone staircase lead to the top, which draws Nepali visitors for winter snow and a long mountain skyline.",
     "facilities": ["lodges", "viewpoint", "jeep"]
   },
@@ -163,5 +164,36 @@
     "coordQuality": "approx",
     "coordSource": "estimate",
     "blurb": "The glaciated pass at the head of the Rolwaling valley that leads over to Thame in Khumbu. It involves glacier travel, slopes exposed to rockfall and at least two high camps, and is a mountaineering route, not a trek."
+  },
+  {
+    "slug": "deurali-kalinchowk",
+    "name": "Deurali",
+    "ne": "देउराली",
+    "aka": ["Deurali Bhanjyang", "Suspa Deurali", "Deurali (Charikot)"],
+    "region": "gaurishankar",
+    "type": "village",
+    "alt": 2330,
+    "lat": 27.6868,
+    "lon": 86.0245,
+    "coordQuality": "approx",
+    "coordSource": "estimate",
+    "blurb": "A hamlet with a few small hotels in a saddle on the Kalinchowk road, at about 2,330 m and an hour or so on foot from Charikot. The long climb to Kuri begins here, with next to no shelter on the way up.",
+    "facilities": ["lodges", "shops", "jeep"]
+  },
+  {
+    "slug": "kuri",
+    "name": "Kuri",
+    "ne": "कुरी",
+    "aka": ["Kuri Village", "Kuri Bazaar"],
+    "region": "gaurishankar",
+    "type": "village",
+    "alt": 3370,
+    "lat": 27.74747,
+    "lon": 86.03171,
+    "coordQuality": "good",
+    "coordSource": "osm",
+    "blurb": "The lodge village below the Kalinchowk shrine, at the end of the rough road from Charikot and beside the lower station of the cable car. Its height is published as anything from 3,200 to 3,450 m; the ground itself is at about 3,370 m.",
+    "facilities": ["lodges", "shops", "jeep"],
+    "tip": "Rooms are unheated, and it freezes on most nights from November to March. Ask for extra quilts as soon as you arrive."
   }
 ]

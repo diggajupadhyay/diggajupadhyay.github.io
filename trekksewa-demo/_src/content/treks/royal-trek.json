@@ -1,0 +1,134 @@
+{
+  "slug": "royal-trek",
+  "name": "Royal Trek",
+  "aka": ["The Royal Trek", "Annapurna Royal Trek", "Annapurna Skyline Trek"],
+  "region": "annapurna",
+  "tagline": "Four easy days through hill villages east of Pokhara to Begnas Lake",
+  "summary": "A low, quiet village walk east of Pokhara: three hilltop nights at Kalikasthan, Shaklung and Chisapani, never above about 1,400 m, ending on the shore of Begnas Lake.",
+  "intro": [
+    "The Royal Trek takes its name from Prince Charles, now King Charles III, who walked it with a large party in the early 1980s. It follows a line of low ridges east of Pokhara through Brahmin, Chhetri and Gurung farming villages, and comes down to Begnas Lake four days later. On a clear morning the whole range stands to the north, from Annapurna South and Machhapuchhre round to Lamjung Himal and Manaslu. You see it from a distance, though: this is a walk through farmland, not into the mountains.",
+    "It is about as low and gentle as trekking in Nepal gets. The hills top out at about 1,400 m, so altitude plays no part, and it can be walked in the middle of winter. What it does ask for is steady legs for four to six hours a day on village paths, stone steps and stretches of dirt road, with one sharp descent and climb on the third day. You are unlikely to meet another trekking group.",
+    "Be clear about two things before you book. First, this used to be a camping trek, and the places you sleep now are family homestays and a few simple lodges, with shared toilets and whatever the house is cooking. Someone has to phone ahead. Second, most printed itineraries still carry old altitudes, 1,730 m for Shaklung and 1,550 m for Chisapani, which terrain maps do not bear out; the heights given here are read from the map. Dirt roads now reach most of the villages, which takes away some of the quiet and makes it easy to cut a day short. Brochures give Shaklung as 1,730 m and Chisapani as about 1,550 m. The villages as mapped sit near 1,380 m and 1,300 m: the heights used here."
+  ],
+  "days": 4,
+  "daysRange": [3, 5],
+  "distanceKm": 36,
+  "maxAlt": { "m": 1380, "place": "shaklung" },
+  "difficulty": "easy",
+  "difficultyNote": "Low hills, no altitude to think about and a road usually within reach; the days are still four to six hours long, and day three drops 600 m and climbs most of it back.",
+  "style": ["homestay", "teahouse"],
+  "start": "bijayapur",
+  "end": "begnas-lake",
+  "gateway": "pokhara",
+  "access": {
+    "summary": "Both ends are close to Pokhara. The walk starts where the Prithvi Highway crosses the Bijayapur Khola, twenty to thirty minutes east of Lakeside by taxi, and ends at the bus stand below the dam at Begnas Lake, 30 to 45 minutes from the city. Kalikasthan and most of the other villages are on dirt roads, so a jeep can bring you in or out part-way.",
+    "options": [
+      { "mode": "drive", "from": "pokhara", "to": "bijayapur", "time": "20–30 min", "note": "Taxi from Lakeside. City buses towards Begnas and Talchowk also pass the bridge." },
+      { "mode": "bus", "from": "begnas-lake", "to": "pokhara", "time": "45 min–1 hr", "note": "Local buses leave the stand below the dam all day for the centre of Pokhara. A taxi takes about half an hour." },
+      { "mode": "jeep", "from": "pokhara", "to": "kalikasthan", "time": "about 1 hr", "note": "For a three-day version: ride up the ridge road and begin with the walk to Shaklung." }
+    ]
+  },
+  "seasons": {
+    "best": [1, 2, 3, 10, 11, 12],
+    "good": [4, 5, 9],
+    "hard": [6, 7, 8],
+    "note": "The clear, cool months from October to March are the time to go, and this is one of the few treks that is at its best in December and January. From April it is hot and hazy at this height and the mountains fade. In the monsoon the paths are slick clay, leeches are out and the range is hidden for days at a time."
+  },
+  "permits": [],
+  "guide": {
+    "rule": "optional",
+    "note": "The Royal Trek runs through farmland along the southern edge of the Annapurna Conservation Area, outside it as far as we can tell, and no permit post on the route checks for a guide. A guide is worth having all the same: the route is a web of village paths and farm roads with no signs for trekkers, and the homestays need a phone call in Nepali before you turn up."
+  },
+  "highlights": [
+    "The Annapurna range, Machhapuchhre and Manaslu from three hilltop villages",
+    "Brahmin, Chhetri and Gurung farming country with hardly another trekker",
+    "Begnas and Rupa lakes from the ridge above, then from the shore",
+    "Warm enough to walk in December and January",
+    "Starts and ends within an hour of Pokhara"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive to Bijayapur, walk to Kalikasthan",
+      "from": "bijayapur",
+      "to": "kalikasthan",
+      "sleep": 1230,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "A short taxi ride east of Pokhara. The path crosses flat rice fields beside the Bijayapur Khola, then climbs about 450 m through terraces and farm villages to a ridge, which it follows eastwards to Kalikasthan. It is hot work after ten in the morning, so start early."
+    },
+    {
+      "day": 2,
+      "title": "Kalikasthan to Shaklung",
+      "from": "kalikasthan",
+      "to": "shaklung",
+      "sleep": 1380,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "The longest day, mostly easy ridge walking with the mountains on your left: through forest to the hilltop of Thulakot, on past the tea shops at Mati Thana and the villages of Naudanda and Lipini, then a steep last climb through trees to Shaklung. Parts of the way now follow a dirt road."
+    },
+    {
+      "day": 3,
+      "title": "Shaklung to Chisapani",
+      "from": "shaklung",
+      "to": "chisapani-kaski",
+      "sleep": 1300,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "The roughest day. A steep descent of about 600 m on steps and worn clay leads south to a saddle with a big shade tree and a few tea shops, where trails cross. From there the path climbs nearly as far again, round the back of the hill, to Chisapani. The temple on the knoll above the village looks down on the lakes."
+    },
+    {
+      "day": 4,
+      "title": "Chisapani to Begnas Lake, drive to Pokhara",
+      "from": "chisapani-kaski",
+      "to": "begnas-lake",
+      "via": ["rupa-lake", "sundari-danda"],
+      "sleep": 650,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "Follow the ridge west for an hour or so, then go down a long flight of stone steps to the stream that feeds Rupa Lake. Cross the rice fields and climb 200 m on a wide path to Sundari Danda, the ridge between the two lakes. Begnas Bazaar is fifteen minutes below, with buses and taxis to Pokhara."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Losing the way",
+      "text": "Village paths, farm tracks and new dirt roads cross each other all along these ridges, and nothing is signed for trekkers. Old descriptions no longer match the ground. Without a guide, ask the way at every village and carry an offline map with the four overnight places marked."
+    },
+    {
+      "title": "Heat and sun",
+      "text": "At 800 to 1,400 m the ridges are warm even in winter and hot from March on, with long stretches without shade. Walk early, wear a hat and carry at least two litres of water each."
+    },
+    {
+      "title": "Steep, slippery descents",
+      "text": "The drop from Shaklung on day three and the stone steps down to Rupa Lake on day four are steep, and the red clay is like soap after rain. Use two poles and do not hurry."
+    },
+    {
+      "title": "Very simple lodging",
+      "text": "Rooms are in family houses: a hard bed, a squat toilet outside, a bucket wash and the food the family eats. If your stomach is easily upset, keep to freshly cooked dal bhat and treat all drinking water."
+    }
+  ],
+  "tips": [
+    "Have your guide or agency phone each homestay a day ahead. Outside the busy months the family may be in the fields or away in Pokhara.",
+    "Start walking by eight. The ridges have little shade, and the mountains are sharpest before the haze builds.",
+    "Carry water and something for lunch each day; tea shops are few between the villages.",
+    "Agencies routinely add an ACAP permit and a TIMS card to this trek. As far as we can map it, the route stays in the outer wards of Pokhara and in Rupa Rural Municipality, south of the conservation area, and it has no checkpost. We found no official ruling either way, so ask what the charge is for.",
+    "Bring a sleeping bag liner, a torch and small notes. Nobody on the route can change a large one.",
+    "Keep an afternoon for Begnas Lake at the end. Boats can be hired by the dam, and it is far quieter than Lakeside."
+  ],
+  "variants": [
+    {
+      "name": "Three days",
+      "text": "Ride to Kalikasthan by jeep and begin with the walk to Shaklung, or walk the first three days and take a jeep down from Chisapani."
+    },
+    {
+      "name": "A night by the lake",
+      "text": "Stay at Sundari Danda or beside Begnas Lake on the last night instead of driving straight back to Pokhara. Both have guesthouses, and the lake is at its best early in the morning."
+    },
+    {
+      "name": "In the other direction",
+      "text": "Starting at Begnas Lake puts the steepest climbing into the first two days and finishes with the easy ridge down to Bijayapur. The views are the same either way."
+    }
+  ],
+  "related": ["panchase", "ghandruk-loop", "sikles", "chisapani-nagarkot"],
+  "confidence": "medium"
+}

@@ -40,6 +40,8 @@ export const RULES = {
   restEvery: 1000, // add a night without gain for roughly every 1,000 m
   jumpTo: 2800, // arriving to sleep above this from low altitude in one day is a risk factor
   jumpFrom: 1500,
+  climbTo: 2800, // a single day that climbs this much ...
+  climbGain: 1000, // ... to sleep above climbTo is worth a warning, wherever it started
 };
 
 /**
@@ -103,6 +105,11 @@ export function analyseNights(nights, startAlt) {
     if (n.alt >= RULES.jumpTo && prev < RULES.jumpFrom) {
       bump(n.alt >= 3500 ? 'high' : 'watch');
       reasons.push(`A jump from ${prev} m to sleep at ${n.alt} m in a single day.`);
+    } else if (n.alt >= RULES.climbTo && gain >= RULES.climbGain && !reasons.length) {
+      // a long climb from the middle hills to a first high night: the 500 m rule above 3,000 m
+      // does not see it, but a body that slept at 2,000 m last night is not ready for 3,300 m
+      bump('watch');
+      reasons.push(`A climb of ${gain} m in one day, to sleep at ${n.alt} m. Go slowly, drink plenty, and say so if you get a headache.`);
     }
     if (gain <= 0 || n.alt <= RULES.startAlt) sinceRest = 0; // a night at the same height or lower resets the count
 

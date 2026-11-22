@@ -55,8 +55,12 @@ export function trekPage(ctx, t) {
         : topSleep >= 4000
           ? `You sleep as high as ${num(topSleep)} m. Most people feel the altitude at this height. The plan includes the rest days you need: do not shorten it.`
           : topSleep >= 3000
-            ? `The highest night is at ${num(topSleep)} m. You will notice the thinner air, but going slowly is usually enough.`
-            : `You never sleep above ${num(topSleep)} m, so altitude is not a worry on this trek.`,
+            ? t.itinerary.some((d) => d.level !== 'ok')
+              ? `The highest night is at ${num(topSleep)} m, and the plan gains height quickly on the way. Many people feel it. The day-by-day plan marks where: take that day slowly, or split it.`
+              : `The highest night is at ${num(topSleep)} m. You will notice the thinner air, but going slowly is usually enough.`
+            : t.itinerary.some((d) => d.level !== 'ok')
+              ? `You never sleep above ${num(topSleep)} m. One day does climb a long way to get there, and the day-by-day plan marks it.`
+              : `You never sleep above ${num(topSleep)} m, so altitude is not a worry on this trek.`,
     sleep: campingOnly
       ? 'In tents. A crew carries the camp and cooks; there are no lodges on much of this route.'
       : t.style.includes('teahouse')
@@ -253,7 +257,7 @@ export function trekPage(ctx, t) {
                 ${d.level !== 'ok' ? html`<p class="xsmall muted day-reason">${d.reasons.join(' ')}</p>` : d.notes.length ? html`<p class="xsmall muted day-reason">${icon('info', { size: 13 })} ${d.notes.join(' ')}</p>` : ''}
               </div>
               <dl class="day-stats">
-                <div><dt>Sleep at</dt><dd>${metres(d.sleep)}</dd></div>
+                <div><dt>${d.day === t.days && d.to !== t.gateway ? 'Walk ends at' : 'Sleep at'}</dt><dd>${metres(d.sleep)}</dd></div>
                 <div><dt>Change</dt><dd class="${d.net > 0 ? 'up' : d.net < 0 ? 'down' : ''}">${signed(d.net)} m</dd></div>
                 ${d.high ? html`<div><dt>High point</dt><dd>${metres(d.high)}</dd></div>` : ''}
                 <div><dt>${d.mode === 'walk' ? 'Walking' : MODE_LABEL[d.mode]}</dt><dd>${hours(d.hours)}</dd></div>

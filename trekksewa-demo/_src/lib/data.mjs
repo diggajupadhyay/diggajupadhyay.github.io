@@ -86,6 +86,7 @@ export function buildData({ content, config }, pages) {
     tag: t.tagline,
     hi: t.analysis.maxSleep ? t.analysis.maxSleep.alt : Math.max(...t.itinerary.map((d) => d.sleep)),
     ...(t.itinerary.some((d) => d.mode === 'flight') ? { fl: 1 } : {}),
+    ...(t.itinerary.some((d) => d.level && d.level !== 'ok') ? { up: t.itinerary.filter((d) => d.level && d.level !== 'ok').length } : {}),
     ...(t.style.includes('camping') && !t.style.includes('teahouse') ? { cg: 1 } : {}),
     ...(featuredRank.has(t.slug) ? { f: featuredRank.get(t.slug) } : {}),
     ...(t.photo ? { ph: { f: t.photo.small, o: t.photo.focus, a: t.photo.alt } } : {}),
@@ -131,7 +132,11 @@ export function buildData({ content, config }, pages) {
         transportExtra: t.transport ? t.transport.extra : '',
         cash: t.routePlaces.filter((p) => p.slug !== t.gateway && (p.facilities || []).includes('atm')).map((p) => p.name),
         tips: (t.tips || []).slice(0, 5),
-        days: t.itinerary.map((d) => ({
+        days: t.itinerary.map((d, i, all) => {
+          // every itinerary ends with the ride back to the gateway city, so on the last day
+          // the night is spent there, not at the roadhead the walk comes out at
+          const back = i === all.length - 1 && d.to !== t.gateway;
+          return {
           d: d.day,
           t: d.title,
           f: d.fromPlace.name,
@@ -145,9 +150,11 @@ export function buildData({ content, config }, pages) {
           note: d.note || '',
           lvl: d.level,
           why: d.reasons || [],
-          stay: stayAt(d.toPlace),
-          ...(d.toPlace.services?.health?.length ? { med: d.toPlace.services.health.filter((x) => x.n).slice(0, 2).map((x) => x.n) } : {}),
-        })),
+          stay: back ? { city: 1 } : stayAt(d.toPlace),
+          ...(back ? { back: 1 } : {}),
+          ...(!back && d.toPlace.services?.health?.length ? { med: d.toPlace.services.health.filter((x) => x.n).slice(0, 2).map((x) => x.n) } : {}),
+          };
+        }),
       },
     ]),
   );

@@ -1,0 +1,145 @@
+{
+  "slug": "panchase",
+  "name": "Panchase",
+  "aka": ["Panchase Hill", "Panchase Trek", "Panchase Peak"],
+  "region": "annapurna",
+  "tagline": "A ridge walk round Phewa Lake to a quiet forested hilltop at 2,517 m",
+  "summary": "Three or four days on foot from the Pokhara lakeside: along the ridge to Bhumdi and Panchase Bhanjyang, up stone steps to the top at 2,517 m, and out by Bhadaure to Kande.",
+  "intro": [
+    "Panchase is the forested hill at the far end of Phewa Lake, the highest point on the skyline when you look up the lake from Pokhara. The trek walks the horseshoe of ridges around the lake: along the southern rim from the World Peace Pagoda to Bhumdi and Panchase Bhanjyang, up to the top at 2,517 m, then north to Bhadaure and the Baglung highway at Kande. You never sleep higher than about 2,050 m, so altitude is not something to worry about.",
+    "This is a village and forest walk, not a mountain trek. The first day passes farms and small hotels on the ridge above the lake. Beyond Bhumdi the ridge runs into a protected forest of oak and rhododendron, where more than a hundred kinds of orchid have been recorded. What you come for is the dawn from the top: Dhaulagiri, the Annapurnas, Machhapuchhre and, on a sharp morning, Manaslu, with the lake and the city far below. You will meet few other trekkers.",
+    "Expect stone steps. The climb from the lake to the pagoda, the last hour to the summit and long stretches of the way down are staircases, and they are slippery when wet. The days are short, four to six hours, and a dirt road is never far off: Bhumdi, the Bhanjyang and Bhadaure can all be reached by jeep in dry weather, so a tired walker can ride out. Lodges are small family places with plain rooms, shared toilets and a short menu."
+  ],
+  "days": 4,
+  "daysRange": [2, 5],
+  "distanceKm": 35,
+  "maxAlt": { "m": 2517, "place": "panchase-peak" },
+  "difficulty": "easy",
+  "difficultyNote": "Low altitude, short days and a road close by; the effort is in the stone staircases, above all the 450 m climb to the top and the long way down the other side.",
+  "style": ["teahouse", "homestay"],
+  "start": "pokhara",
+  "end": "kande",
+  "gateway": "pokhara",
+  "access": {
+    "summary": "The walk starts from the Pokhara lakeside itself: a rowing boat across Phewa Lake to the foot of the pagoda hill, or a taxi to the car park just below the stupa. It ends on the Baglung highway at Kande, about an hour from Pokhara by bus or taxi. A dirt road also reaches Bhadaure, where local buses and jeeps leave for the city.",
+    "options": [
+      { "mode": "drive", "from": "pokhara", "to": "world-peace-pagoda", "time": "20–30 min", "note": "Taxi from Lakeside to the car park, then ten to fifteen minutes on foot. It saves the first 300 m of stone steps. The boat across the lake takes about twenty minutes." },
+      { "mode": "bus", "from": "kande", "to": "pokhara", "time": "1–1.5 hr", "note": "Buses coming from Baglung and Nayapul stop at the bazaar all day. A taxi takes about an hour." },
+      { "mode": "jeep", "from": "bhadaure", "to": "pokhara", "time": "1.5–2 hr", "note": "For anyone who skips the last morning's walk. Ask your lodge the evening before when the local bus or a jeep leaves." }
+    ]
+  },
+  "seasons": {
+    "best": [3, 4, 10, 11, 12],
+    "good": [1, 2, 5, 9],
+    "hard": [6, 7, 8],
+    "note": "October to December gives the clearest dawns. March and April are warmer, with rhododendron and orchids in flower but more haze over the mountains. January and February are cold at the Bhanjyang, with frost and now and then a dusting of snow on top. From June to September the forest is very wet, the steps are slick and Panchase is known for its leeches."
+  },
+  "permits": [],
+  "guide": {
+    "rule": "optional",
+    "note": "Panchase lies in a protected forest outside the Annapurna Conservation Area, and no permit post on this route checks for a guide. One is still worth having on a first trek: the forest between Bhumdi and the Bhanjyang has unmarked forks and few people to ask, and it is not a place to walk alone. A guide also knows which family lodges are open."
+  },
+  "highlights": [
+    "Dawn from the top of Panchase, from Dhaulagiri round to Manaslu",
+    "A trek that begins with a boat across Phewa Lake",
+    "Protected forest with rhododendron and more than a hundred orchids",
+    "Ridge villages and family lodges with very few other trekkers",
+    "No permit, no long drive, and a road close by if you need it"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Pokhara to Bhumdi by the World Peace Pagoda",
+      "from": "pokhara",
+      "to": "bhumdi",
+      "via": ["world-peace-pagoda"],
+      "sleep": 1520,
+      "hours": [4, 5],
+      "km": 10,
+      "kind": "trek",
+      "note": "Cross Phewa Lake by boat and climb about 300 m on stone steps through forest to the pagoda, 45 minutes to an hour. From there the way follows the ridge west past the tall Shiva statue at Pumdikot, partly on a quiet road, with the lake below on your right, to the lodges at Bhumdi."
+    },
+    {
+      "day": 2,
+      "title": "Bhumdi to Panchase Bhanjyang",
+      "from": "bhumdi",
+      "to": "panchase-bhanjyang",
+      "sleep": 2050,
+      "hours": [5, 6],
+      "kind": "trek",
+      "note": "A steady day along the ridge that ends about 500 m higher, with ups and downs on the way: first past scattered farms, then through thick forest. Much of it follows a rough jeep track with footpath shortcuts. Tea shops are few, so carry lunch and water. Published distances run from 7 to 14 km."
+    },
+    {
+      "day": 3,
+      "title": "Panchase Peak at sunrise, down to Bhadaure",
+      "from": "panchase-bhanjyang",
+      "to": "bhadaure",
+      "via": ["panchase-peak"],
+      "sleep": 1650,
+      "high": 2517,
+      "hours": [4, 6],
+      "kind": "summit",
+      "note": "Start an hour and a half before sunrise with a head torch: about 450 m of stone steps through mossy forest to the temple and viewpoint. Go back to the lodge for breakfast, or carry your bag over the top. Either way the path then drops along the forested north ridge to Bhadaure, steeply in places."
+    },
+    {
+      "day": 4,
+      "title": "Bhadaure to Kande, drive to Pokhara",
+      "from": "bhadaure",
+      "to": "kande",
+      "sleep": 1770,
+      "hours": [2, 3],
+      "kind": "trek",
+      "note": "A short last morning along the ridge, on the dirt road and the paths beside it, with Annapurna South and Machhapuchhre ahead of you. Kande is on the highway, an hour from Pokhara by bus or taxi. If you would sooner not walk, the local bus or a jeep leaves from Bhadaure itself."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Stone steps, wet or dry",
+      "text": "The staircases to the pagoda and the summit, and the long descent to Bhadaure, are hard on the knees and slippery with rain, dew or frost. Use two poles, wear shoes with a real tread and take the downhill slowly."
+    },
+    {
+      "title": "Leeches in the wet months",
+      "text": "Panchase forest is one of the wettest places near Pokhara. From June to September, and after heavy rain in May or October, leeches are thick on the path. Wear long socks, carry salt or repellent and check your ankles at every stop."
+    },
+    {
+      "title": "Unmarked forks on day two",
+      "text": "Between Bhumdi and the Bhanjyang the jeep track and the footpath keep splitting and rejoining, and few junctions are signed. A wrong turn takes you off the ridge and costs an hour of climbing back. Ask at houses and carry an offline map."
+    },
+    {
+      "title": "Walking alone in the forest",
+      "text": "In past years lone walkers were robbed on the forest paths below the World Peace Pagoda. Reports are rare now, but do not walk the first day or the forest stretches by yourself, and keep valuables out of sight."
+    }
+  ],
+  "tips": [
+    "Cross the lake by eight on the first morning, so that the day's walking is over by early afternoon.",
+    "A taxi to the pagoda car park cuts out the first 300 m of steps. It is a sensible choice if stairs are your weak point.",
+    "Carry a head torch and a warm jacket for the summit morning; from November to February it is close to freezing on top at dawn.",
+    "We found no permit or entry fee for this route, which stays south of the conservation area. Some agencies add an ACAP permit all the same; you need one only if you go on north of the highway, where permits are checked at Pothana.",
+    "Bring cash from Pokhara. There is no cash machine on the route, and lodges cannot change large notes.",
+    "Phone coverage is usually good on the ridges, so a lodge can call a jeep if someone in your party has had enough."
+  ],
+  "variants": [
+    {
+      "name": "Three days",
+      "text": "Walk from the top straight on through Bhadaure to Kande on day three, six to seven hours in all, or take the bus from Bhadaure that afternoon."
+    },
+    {
+      "name": "Two days from Kande",
+      "text": "Drive to Kande or Bhadaure, walk up to the Bhanjyang for the night, climb the peak at dawn and go back the same way. It is the shortest way to see the sunrise, and the gentlest."
+    },
+    {
+      "name": "Up from Ghatichhina",
+      "text": "Local buses run from Pokhara round the north shore of the lake to Ghatichhina, at the head of the valley. A steep path climbs from there to the Bhanjyang in about four hours. Coming down this way, be at the road by mid-afternoon for the last bus."
+    },
+    {
+      "name": "Finish at Naudanda",
+      "text": "From Bhadaure a ridge path leads north-east to the highway at Naudanda instead of Kande, two to three hours, with a wider view over the Pokhara valley."
+    },
+    {
+      "name": "Add Australian Camp",
+      "text": "Cross the highway at Kande and climb an hour of steps to the lodges at Australian Camp for one more night of mountain views. You are then inside the conservation area, where the rules on permits and guides apply."
+    }
+  ],
+  "related": ["royal-trek", "ghandruk-loop", "ghorepani-poon-hill", "mardi-himal", "chisapani-nagarkot"],
+  "confidence": "medium"
+}

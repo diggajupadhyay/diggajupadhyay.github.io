@@ -1,0 +1,146 @@
+{
+  "slug": "ghandruk-loop",
+  "name": "Ghandruk Loop",
+  "aka": ["Ghandruk Trek", "Ghandruk Landruk Dhampus", "Ghandruk Village Trek"],
+  "region": "annapurna",
+  "tagline": "A short circuit of Gurung villages on both sides of the Modi Khola",
+  "summary": "Three or four easy days below Annapurna South: up to Ghandruk, across the Modi Khola to Landruk and Tolka, over a forested saddle to Dhampus and down the stone steps to Phedi.",
+  "intro": [
+    "This is the short village circuit closest to the big mountains. It links Ghandruk, the best-known Gurung village in the country, with Landruk and Tolka on the opposite side of the Modi Khola, then crosses a forested saddle at 2,100 m to Pothana and Dhampus. For most of the way Annapurna South and Hiunchuli fill the head of the valley and Machhapuchhre stands to the right of them. You sleep below 2,000 m every night, so altitude is not a concern.",
+    "The walking days are short, between one and five hours, on old stone-paved trails. The catch is the steps. Ghandruk and Landruk face each other across a deep valley, and the only way between them on foot is down about 650 m of stone staircase to a suspension bridge and up the other side. The last morning drops another 500 m from Dhampus to the highway. Fit knees and two poles matter more here than strong lungs.",
+    "Lodges on this loop are among the most comfortable in the hills, with attached bathrooms in many, hot showers and long menus, because every stop is on a main trekking route. Roads are close too. Jeep tracks reach Ghandruk, Landruk, Tolka and Dhampus, so any day can be shortened or dropped, and a walker who has had enough can be back in Pokhara the same afternoon. The plan below rides to Kimche and keeps the rest on foot."
+  ],
+  "days": 4,
+  "daysRange": [3, 5],
+  "distanceKm": 24,
+  "maxAlt": { "m": 2100, "place": "pitam-deurali" },
+  "difficulty": "easy",
+  "difficultyNote": "Low altitude, short days and good lodges; what tests you is stone steps, above all the 650 m drop from Ghandruk to the Modi Khola and the climb back out.",
+  "style": ["teahouse"],
+  "start": "kimche",
+  "end": "dhampus-phedi",
+  "gateway": "pokhara",
+  "access": {
+    "summary": "Jeeps and buses from Pokhara reach Kimche in about three hours by way of Nayapul, and most jeeps carry on to the stand below Ghandruk. The walk ends at Phedi on the Baglung highway, half an hour from Pokhara by taxi or local bus. Dhampus, Landruk and Tolka are on jeep tracks as well, so there is a way out by road from every night's stop.",
+    "options": [
+      { "mode": "jeep", "from": "pokhara", "to": "kimche", "time": "2.5–3 hr", "note": "Shared jeeps leave from Hari Chowk and local buses from the Baglung bus park; the bus is slower. Most jeeps go on to the stand below Ghandruk." },
+      { "mode": "drive", "from": "pokhara", "to": "nayapul", "time": "1.5–2 hr", "note": "For those who want to walk in the old way, through Birethanti and Syauli Bazaar." },
+      { "mode": "drive", "from": "dhampus-phedi", "to": "pokhara", "time": "30–45 min", "note": "Taxis wait at the foot of the steps in season, and buses from Baglung and Nayapul pass on the highway." },
+      { "mode": "jeep", "from": "dhampus", "to": "pokhara", "time": "1–1.5 hr", "note": "A rough road reaches the village, for anyone who would sooner not walk down the last staircase." }
+    ]
+  },
+  "seasons": {
+    "best": [3, 4, 10, 11, 12],
+    "good": [1, 2, 5, 9],
+    "hard": [6, 7, 8],
+    "note": "October to December has the clearest mornings. March and April are warm, with rhododendron in flower in the forest above Tolka but more haze. January and February are cold at night and quiet, and the trail stays open. In the monsoon the steps run with water, leeches are out in the forest and the mountains show for an hour at dawn, if at all."
+  },
+  "permits": ["acap", "tims"],
+  "guide": {
+    "rule": "required",
+    "note": "Since April 2023 the Nepal Tourism Board has required foreign trekkers in conservation areas to walk with a licensed guide, though checks on the trail are inconsistent. The paths on this loop are wide and well signed, so a guide is not there to find the way. He or she earns the fee on the long staircases, by setting a slow, steady pace and lending a hand where the steps are high, and by booking rooms and a jeep when plans change."
+  },
+  "highlights": [
+    "Ghandruk's slate-roofed houses and Gurung museum",
+    "Annapurna South, Hiunchuli and Machhapuchhre at the head of the valley",
+    "The suspension bridge over the Modi Khola between Ghandruk and Landruk",
+    "Oak and rhododendron forest over the saddle at Pitam Deurali",
+    "Sunrise on the Annapurna range from Dhampus",
+    "A road within reach on every day"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Drive to Kimche, walk up to Ghandruk",
+      "from": "kimche",
+      "to": "ghandruk",
+      "sleep": 1940,
+      "hours": [1, 2],
+      "kind": "trek",
+      "note": "About three hours by jeep or bus through Nayapul and Birethanti, where permits are checked. From Kimche an hour of stone steps climbs 300 m between terraces to the village. Jeeps also go on to the stand at the foot of Ghandruk, a short walk below the lodges. Keep the afternoon for the old upper village and the museum."
+    },
+    {
+      "day": 2,
+      "title": "Ghandruk to Tolka by Landruk",
+      "from": "ghandruk",
+      "to": "tolka",
+      "via": ["landruk"],
+      "sleep": 1700,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "The day of steps. Go down about 650 m of stone staircase to the suspension bridge over the Modi Khola, an hour to an hour and a half, then climb 270 m to Landruk for lunch. Tolka is another hour along the hillside, partly on the jeep track. Leave early so that the climb out of the valley is done before midday."
+    },
+    {
+      "day": 3,
+      "title": "Tolka to Dhampus over Pitam Deurali",
+      "from": "tolka",
+      "to": "dhampus",
+      "via": ["pitam-deurali", "pothana"],
+      "sleep": 1650,
+      "high": 2100,
+      "hours": [4, 5],
+      "kind": "trek",
+      "note": "A steady climb of 400 m through oak and rhododendron forest to the saddle at Pitam Deurali, an hour and a half to two hours. From there it is downhill: forty minutes to Pothana, where permits are checked, and an hour or more on a wide path through forest and fields to Dhampus."
+    },
+    {
+      "day": 4,
+      "title": "Dhampus to Phedi, drive to Pokhara",
+      "from": "dhampus",
+      "to": "dhampus-phedi",
+      "sleep": 1130,
+      "hours": [1, 2],
+      "kind": "trek",
+      "note": "Get up for the sunrise on the range, then walk down through the terraces and a last 500 m of stone steps to the highway at Phedi. Allow an hour and a half if your knees are tired. Taxis and buses reach Pokhara in half an hour or a little more."
+    }
+  ],
+  "hazards": [
+    {
+      "title": "Long stone staircases",
+      "text": "The descent from Ghandruk to the river is about 650 m of uneven stone steps, and the last morning drops another 500 m to Phedi. Wet or frosty steps are slippery. Use two poles, go down slowly and rest often; if a knee is already sore, ride out by jeep instead."
+    },
+    {
+      "title": "Heat in the valley bottom",
+      "text": "The bridge over the Modi Khola is at about 1,300 m, and the climb from there to Landruk faces the afternoon sun. From March to May it is hot by eleven. Start early and carry more water than you think you need."
+    },
+    {
+      "title": "Jeeps on the tracks",
+      "text": "Around Kimche and Ghandruk, and between Landruk and Tolka, the path shares the way with jeeps. Step well clear when one passes, and expect dust in dry weather and deep mud after rain."
+    },
+    {
+      "title": "Monsoon rain and landslides",
+      "text": "From June to September the forest over Pitam Deurali is full of leeches, and the steep slopes on both sides of the Modi Khola slide after heavy rain. Roads and trails can be blocked for a day or more. Ask locally before you set out each morning."
+    }
+  ],
+  "tips": [
+    "Carry two trekking poles. They take real weight off the knees on the staircases.",
+    "Leave Ghandruk by eight, so that you are up the far side of the valley and in Landruk before the midday heat.",
+    "Keep your ACAP permit and TIMS card to hand. They are looked at in Birethanti on the drive in and again at Pothana.",
+    "Book rooms ahead in October, November, March and April, and for Friday and Saturday nights in Ghandruk and Dhampus, when visitors from Pokhara fill the lodges.",
+    "There is no cash machine on the loop. Bring rupees from Pokhara, with small notes for tea shops.",
+    "The mountains are clearest at dawn and often in cloud by late morning, so look out before breakfast in Ghandruk, Tolka and Dhampus."
+  ],
+  "variants": [
+    {
+      "name": "Walk in from Nayapul",
+      "text": "The old first day: from the bridge at Birethanti follow the Modi Khola to Syauli Bazaar, then climb stone steps past Kimche to Ghandruk. It takes five to six hours with about 900 m of ascent, and much of the lower part is now on the jeep track."
+    },
+    {
+      "name": "Three days",
+      "text": "Walk from Tolka right through to Phedi on the third day, six to seven hours ending with the long staircase, or stop at Dhampus and ride down from there."
+    },
+    {
+      "name": "A night in Landruk or Pothana",
+      "text": "Landruk has more lodges than Tolka and shortens day two to about three hours; day three then takes six. Pothana, in the forest an hour above Dhampus, is cooler and quieter than either."
+    },
+    {
+      "name": "Finish by Australian Camp and Kande",
+      "text": "From Pothana a forest path climbs gently to the lawns of Australian Camp in about half an hour, and stone steps drop from there to the highway at Kande in under an hour. It is the shortest way out and has a wider view than Dhampus."
+    },
+    {
+      "name": "The loop the other way",
+      "text": "Starting at Phedi puts the 500 m staircase on the first morning, when legs are fresh, and ends with a ride out from Ghandruk. Many agencies run it in this direction."
+    }
+  ],
+  "related": ["ghorepani-poon-hill", "annapurna-base-camp", "mardi-himal", "panchase", "royal-trek"],
+  "confidence": "high"
+}

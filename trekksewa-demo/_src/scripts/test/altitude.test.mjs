@@ -37,6 +37,17 @@ test('flying or driving straight to altitude is flagged', () => {
   assert.equal(levels([2610], 1400)[0], 'ok');
 });
 
+test('a long climb to a first high night is flagged even from the middle hills', () => {
+  // Charikot to Kuri: only 370 m of the gain is above 3,000 m, which the 500 m rule passes
+  const r = analyseNights([{ alt: 1970 }, { alt: 3370 }, { alt: 3370 }], 1400);
+  assert.equal(r.nights[1].level, 'watch');
+  assert.match(r.nights[1].reasons.join(' '), /climb of 1400 m in one day/);
+  // Phakding to Namche gains less than 1,000 m and stays as it was
+  assert.equal(analyseNights([{ alt: 2610 }, { alt: 3440 }], 1400).nights[1].level, 'ok');
+  // and a long climb that stays below 2,800 m is no concern
+  assert.equal(analyseNights([{ alt: 1200 }, { alt: 2500 }], 800).nights[1].level, 'ok');
+});
+
 test('low treks are never flagged', () => {
   assert.ok(levels([1900, 2500, 2850, 2000, 1100], 820).every((l) => l === 'ok'));
 });

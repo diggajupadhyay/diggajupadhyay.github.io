@@ -104,7 +104,8 @@ for (const name of readdirSync(placesDir).filter((f) => f.endsWith('.json')).sor
       else for (const x of p.facilities) if (!FACILITIES.includes(x)) e(`unknown facility "${x}"`);
     }
     if (p.tip !== undefined && !isStr(p.tip)) e('tip must be a non-empty string');
-    const known = ['slug', 'name', 'ne', 'aka', 'region', 'type', 'alt', 'lat', 'lon', 'coordQuality', 'coordSource', 'blurb', 'facilities', 'tip'];
+    if (p.coordPinned !== undefined && p.coordPinned !== true) e('coordPinned can only be true (leave it out otherwise)');
+    const known = ['slug', 'name', 'ne', 'aka', 'region', 'type', 'alt', 'lat', 'lon', 'coordQuality', 'coordSource', 'coordPinned', 'blurb', 'facilities', 'tip'];
     for (const k of Object.keys(p)) if (!known.includes(k)) w(`unknown field "${k}"`);
     places.set(p.slug, { ...p, _file: f });
   }

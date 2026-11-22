@@ -27,6 +27,7 @@
 //      exact match anywhere near.
 // A place with no acceptable match keeps our estimate, marked "approx". If the estimate also
 // disagrees with the terrain, the place is marked "uncertain" and the site draws no pin for it.
+// A place with "coordPinned": true was corrected by hand and is left exactly as it is.
 //
 // Coordinates taken from OpenStreetMap are © OpenStreetMap contributors (ODbL).
 
@@ -493,7 +494,7 @@ function decide() {
 
 // ------------------------------------------------------------------ apply
 
-const ORDER = ['slug', 'name', 'ne', 'aka', 'region', 'type', 'alt', 'lat', 'lon', 'coordQuality', 'coordSource', 'blurb', 'facilities', 'tip'];
+const ORDER = ['slug', 'name', 'ne', 'aka', 'region', 'type', 'alt', 'lat', 'lon', 'coordQuality', 'coordSource', 'coordPinned', 'blurb', 'facilities', 'tip'];
 function formatPlaces(list) {
   const lines = list.map((p) => {
     const keys = [...ORDER.filter((k) => k in p), ...Object.keys(p).filter((k) => !ORDER.includes(k))];
@@ -511,7 +512,8 @@ function apply() {
     const list = JSON.parse(readFileSync(join(PLACES, file), 'utf8'));
     for (const p of list) {
       const r = report.get(p.slug);
-      if (!r || r.action === 'unchecked') {
+      // a position somebody corrected by hand ("coordPinned": true) is never moved or relabelled
+      if (!r || r.action === 'unchecked' || p.coordPinned === true) {
         tally.untouched++;
         continue;
       }
