@@ -1,12 +1,15 @@
 // Services: guides, porters, agencies, gear, and the partner application.
-// TrekkSewa has not launched its directory yet, so these pages explain how each service
-// works in Nepal, show clearly labelled sample profiles, and invite partners to apply.
+// Each page explains how the service works in Nepal, then gives the trekker something to do
+// today: ask for help with a plan (worded for wherever requests really go, see channelOf),
+// and check papers against the official lists. Partners that have been approved in the
+// database are listed by client/pages/directory.js; until there are some, no list is shown.
 // Nothing here presents an invented business as real.
 
 import { html, raw, jsonScript } from '../lib/html.mjs';
 import { icon } from '../lib/icons.mjs';
 import { ridgeStrip } from '../lib/landscape.mjs';
-import { note, comingSoon, hueClass } from './partials.mjs';
+import { longDate } from '../lib/format.mjs';
+import { note, channelOf } from './partials.mjs';
 
 const head = (ctx, { crumbs, title, lead, seed, extra }) => html`<header class="page-head">
   <div class="wrap">
@@ -62,22 +65,49 @@ const joinBand = (ctx, { role, title, text, ne }) => html`<section class="sectio
   </div>
 </section>`;
 
-const sampleCard = ({ name, role, lines, tags, iconName }) => html`<article class="card card-pad profile-sample" aria-label="Sample profile">
-  <span class="sample-ribbon" aria-hidden="true">Sample</span>
-  <div class="profile-top">
-    <span class="avatar" aria-hidden="true">${icon(iconName, { size: 26 })}</span>
-    <div><h3>${name}</h3><p class="small muted">${role}</p></div>
+/**
+ * How a trekker gets this kind of help today. The first card is the way through the planner,
+ * worded for wherever a request really goes; the second is how to check papers.
+ */
+function getHelp(ctx, { id, title, lead, tick, sendTo, compare, enrolling, checks }) {
+  const open = channelOf(ctx.config) !== '';
+  return html`<section class="section-tight section-alt" id="${id}" aria-labelledby="${id}-h">
+  <div class="wrap">
+    <div class="section-head"><div><h2 id="${id}-h">${title}</h2><p>${lead}</p></div></div>
+    <div class="grid grid-2 get-help">
+      <article class="card card-pad get-card">
+        <span class="feature-icon">${icon('send', { size: 24 })}</span>
+        <h3>${open ? 'Ask us, with your plan' : 'Ask with your plan'}</h3>
+        <ol class="get-steps">
+          <li><strong>Make your plan.</strong> A few simple questions set out your dates, your route and how many you are.</li>
+          ${open
+            ? html`<li><strong>Press “Get help arranging it”</strong> on the plan and tick <em>${tick}</em>.</li>
+          <li><strong>We answer you.</strong> Your request comes to the ${ctx.config.name} team and we reply by email or WhatsApp. Asking is free.</li>`
+            : html`<li><strong>Send it.</strong> Press Share or Print on the plan and send it to ${sendTo}.</li>
+          <li><strong>Compare the answers.</strong> ${compare}</li>`}
+        </ol>
+        <a class="btn btn-lg" href="${ctx.u('plan/')}">${icon('calendar-check')}Plan my trek</a>
+        ${open ? '' : html`<p class="small muted get-foot">${ctx.config.name}’s own booking desk is not open yet. ${enrolling}</p>`}
+      </article>
+      <article class="card card-pad get-card">
+        <span class="feature-icon">${icon('badge-check', { size: 24 })}</span>
+        <h3>Check before you pay</h3>
+        <ul class="ticks">${checks.map((c) => html`<li>${c}</li>`)}</ul>
+      </article>
+    </div>
   </div>
-  <dl class="kv small">${lines.map(([k, v]) => html`<dt>${k}</dt><dd>${v}</dd>`)}</dl>
-  <div class="chips">${tags.map((t) => html`<span class="tag tag-plain">${t}</span>`)}</div>
-  <p class="xsmall muted">This is an example of the layout, not a real person or business.</p>
-</article>`;
+</section>`;
+}
 
-const directoryEmpty = (ctx, what, role) => html`<div class="empty directory-empty" data-directory="${role}">
-  <h3>${what} will be listed here</h3>
-  <p>We publish a profile only after checking the details behind it. Applications from founding partners are open now.</p>
-  <a class="btn btn-secondary" href="${ctx.u(`partners/?role=${role}`)}">Apply to be listed</a>
-</div>`;
+/** Approved partners, filled in by client/pages/directory.js. Stays hidden while there are none. */
+const directory = (role, title, lead) => html`<section class="section-tight" data-directory="${role}" aria-labelledby="dir-${role}" hidden>
+  <div class="wrap">
+    <div class="section-head"><div><h2 id="dir-${role}">${title}</h2><p>${lead}</p></div></div>
+    <div class="grid grid-3 directory" data-directory-list></div>
+  </div>
+</section>`;
+
+const TAAN_LIST = 'https://www.taan.org.np/members';
 
 // ------------------------------------------------------------------ hub
 
@@ -149,7 +179,7 @@ ${head(ctx, {
 </section>
 
 <div class="wrap section-tight">
-  <div class="section-head"><div><h2>Read more</h2></div>${comingSoon()}</div>
+  <div class="section-head"><div><h2>Read more</h2></div></div>
   <div class="grid grid-4">
     ${cards.map(([href, ic, title, text]) => html`<a class="card card-pad card-link feature" href="${u(href)}"><span class="feature-icon">${icon(ic, { size: 22 })}</span><h3>${title}</h3><p>${text}</p></a>`)}
   </div>
@@ -177,7 +207,7 @@ ${joinBand(ctx, {
 })}`;
   return {
     title: 'Trekking Services in Nepal: Guides, Porters, Agencies & Gear',
-    description: 'How to hire a trekking guide, porter or agency in Nepal and rent gear, with the standards TrekkSewa partners agree to. Partner applications are open.',
+    description: 'Who can help you on a trek in Nepal: trekking companies, guides and porters. What each one does, what they cost, how to ask for a price and what to check before you pay.',
     section: 'services',
     crumbs: [[null, 'Services']],
     body,
@@ -194,7 +224,6 @@ ${head(ctx, {
   title: 'Trekking guides',
   lead: 'A good guide does far more than show the way. They pace the group, book the beds, read the weather, notice when you are not right and know who to call.',
   seed: 53,
-  extra: html`<p style="margin-top:1rem">${comingSoon()}</p>`,
 })}
 <div class="wrap section-tight service-layout">
   <div class="prose">
@@ -220,26 +249,28 @@ ${head(ctx, {
   </aside>
 </div>
 
-<section class="section-tight section-alt" aria-labelledby="gdir">
-  <div class="wrap">
-    <div class="section-head"><div><h2 id="gdir">Find a guide</h2><p>What a profile will tell you.</p></div></div>
-    <div class="grid grid-2 directory">
-      ${sampleCard({
-        name: 'Guide name',
-        role: 'Licensed trekking guide · Solukhumbu',
-        iconName: 'signpost',
-        lines: [['Licence', 'Number shown, checked by us'], ['Experience', '12 seasons'], ['Languages', 'Nepali, English, Sherpa'], ['First aid', 'Wilderness first aid, renewed 2026'], ['Daily rate', 'Shown with what it includes']],
-        tags: ['Everest Base Camp', 'Gokyo Lakes', 'Three Passes'],
-      })}
-      ${directoryEmpty(ctx, 'Guides', 'guide')}
-    </div>
-  </div>
-</section>
+${directory('guide', 'Guides you can contact', 'Each one has shown us a licence, and has agreed to the fair-trek standards.')}
+${getHelp(ctx, {
+  id: 'get-guide',
+  title: 'How to get a guide',
+  lead: 'Most trekkers find their guide through a trekking company. Here is the simplest way to ask, and what to check.',
+  tick: 'A licensed guide',
+  sendTo: 'two or three trekking companies, or to a guide someone you trust has walked with',
+  compare: 'Look at the daily rate, what it covers, and who exactly will walk with you.',
+  enrolling: 'We are enrolling licensed guides now.',
+  checks: [
+    html`<strong>See the licence card.</strong> It carries the guide's photo, a number and an expiry date.`,
+    html`<strong>Look the company up.</strong> If the guide comes through a company, find it in the <a href="${TAAN_LIST}" rel="noopener">trekking agencies' association member list</a>.`,
+    html`<strong>Ask about insurance.</strong> Who insures the guide, and up to what height?`,
+    html`<strong>Agree it in writing.</strong> The days, the daily rate and what it includes. A message on your phone is enough.`,
+  ],
+})}
 ${joinBand(ctx, { role: 'guide', title: 'Are you a licensed guide?', text: 'Tell us your licence number, your routes and your languages. We check the details and publish your profile with direct contact, so trekkers reach you without a middleman.', ne: 'तपाईं लाइसेन्स प्राप्त ट्रेकिङ गाइड हुनुहुन्छ? आजै आवेदन दिनुहोस्।' })}`;
   return {
     title: 'Hiring a Trekking Guide in Nepal: Licences & Rates',
     description: 'How to hire a licensed trekking guide in Nepal: what the licence is, typical daily rates, what to agree before you start, and how to check credentials.',
     section: 'services',
+    scripts: ['directory'],
     crumbs: [['services/', 'Services'], [null, 'Guides']],
     body,
   };
@@ -255,7 +286,6 @@ ${head(ctx, {
   title: 'Porters',
   lead: 'Porters make trekking in Nepal possible, and they are the people most often short-changed by it. Hiring one fairly costs little and changes a great deal.',
   seed: 55,
-  extra: html`<p style="margin-top:1rem">${comingSoon()}</p>`,
 })}
 <div class="wrap section-tight service-layout">
   <div class="prose">
@@ -279,27 +309,29 @@ ${head(ctx, {
   </aside>
 </div>
 
-<section class="section-tight section-alt" aria-labelledby="pdir">
-  <div class="wrap">
-    <div class="section-head"><div><h2 id="pdir">Find a porter</h2><p>What a profile will tell you.</p></div></div>
-    <div class="grid grid-2 directory">
-      ${sampleCard({
-        name: 'Porter name',
-        role: 'Porter · based in Lukla in season',
-        iconName: 'backpack',
-        lines: [['Experience', '6 seasons'], ['Load', 'Up to 25 kg'], ['Languages', 'Nepali, basic English'], ['Insurance', 'Covered through partner agency'], ['Daily rate', 'Shown with what it includes']],
-        tags: ['Everest', 'Gokyo', 'Has own cold-weather kit'],
-      })}
-      ${directoryEmpty(ctx, 'Porters', 'porter')}
-    </div>
-  </div>
-</section>
+${directory('porter', 'Porters you can contact', 'Each one works within the fair-trek standards: a fair load, proper kit, insurance and full pay.')}
+${getHelp(ctx, {
+  id: 'get-porter',
+  title: 'How to get a porter',
+  lead: 'A porter hired through a registered company or a lodge you trust is insured and has someone responsible for them. Here is the simplest way to ask.',
+  tick: 'A porter',
+  sendTo: 'two or three trekking companies, and ask each for a price with a porter',
+  compare: 'Look at the daily rate, what it covers, the load they allow and how the porter is insured.',
+  enrolling: 'We are enrolling porters and the companies that employ them now.',
+  checks: [
+    html`<strong>Ask to see the insurance.</strong> It should cover the porter for accident and rescue on your route.`,
+    html`<strong>Agree the load.</strong> 20 to 25 kg at the very most, so about 10 to 12 kg from each of two trekkers.`,
+    html`<strong>Agree the pay.</strong> The daily rate, whether it covers the porter's food and bed, and that it is paid in full.`,
+    html`<strong>Look at the kit on day one.</strong> Boots, a warm jacket, gloves and sunglasses for the highest night.`,
+  ],
+})}
 ${standardsBlock('porter-standards')}
 ${joinBand(ctx, { role: 'porter', title: 'Are you a porter or porter-guide?', text: 'Register with a phone number and the regions you work in. A friend, family member or agency can fill in the form for you.', ne: 'तपाईं पोर्टर वा पोर्टर-गाइड हुनुहुन्छ? फोन नम्बर र काम गर्ने क्षेत्र राखेर दर्ता गर्नुहोस्। तपाईंको तर्फबाट साथी वा परिवारले पनि फारम भर्न सक्छन्।' })}`;
   return {
     title: 'Hiring a Porter in Nepal Fairly: Loads, Pay & Welfare',
     description: 'How to hire a trekking porter in Nepal responsibly: load limits, typical wages, insurance, clothing and the porter-welfare standards TrekkSewa partners accept.',
     section: 'services',
+    scripts: ['directory'],
     crumbs: [['services/', 'Services'], [null, 'Porters']],
     body,
   };
@@ -315,7 +347,6 @@ ${head(ctx, {
   title: 'Trekking agencies',
   lead: 'For restricted areas an agency is the law. Everywhere else a good one saves you days of logistics, and a bad one is the most expensive mistake you can make.',
   seed: 57,
-  extra: html`<p style="margin-top:1rem">${comingSoon()}</p>`,
 })}
 <div class="wrap section-tight service-layout">
   <div class="prose">
@@ -348,26 +379,28 @@ ${head(ctx, {
   </aside>
 </div>
 
-<section class="section-tight section-alt" aria-labelledby="adir">
-  <div class="wrap">
-    <div class="section-head"><div><h2 id="adir">Find an agency</h2><p>What a profile will tell you.</p></div></div>
-    <div class="grid grid-2 directory">
-      ${sampleCard({
-        name: 'Agency name',
-        role: 'Registered trekking agency · Kathmandu',
-        iconName: 'building-2',
-        lines: [['Registration', 'Company, tourism licence and PAN numbers shown'], ['Operating since', 'Year shown'], ['Staff', 'Insured to the highest point of every route'], ['Porter load', '25 kg maximum'], ['Specialities', 'Restricted-area permits, camping treks']],
-        tags: ['Manaslu', 'Upper Mustang', 'Kanchenjunga'],
-      })}
-      ${directoryEmpty(ctx, 'Agencies', 'agency')}
-    </div>
-  </div>
-</section>
+${directory('agency', 'Companies you can contact', 'Each one has shown us its registration and tourism licence, and has agreed to the fair-trek standards.')}
+${getHelp(ctx, {
+  id: 'get-agency',
+  title: 'How to get a price from a trekking company',
+  lead: 'Ask two or three companies for the same trek on the same dates, so the prices can be compared.',
+  tick: 'A full package from a trekking company',
+  sendTo: 'two or three registered trekking companies',
+  compare: 'Look at what each price includes, line by line, and who will guide you.',
+  enrolling: 'We are enrolling registered companies now.',
+  checks: [
+    html`<strong>Look the company up.</strong> Find it in the <a href="${TAAN_LIST}" rel="noopener">trekking agencies' association member list</a>.`,
+    html`<strong>Ask for its numbers.</strong> Company registration, tourism licence and tax (PAN) number. The names should match.`,
+    html`<strong>Get a written quote.</strong> What is included, what is not, and what happens to your money if a flight is cancelled.`,
+    html`<strong>Ask who will guide you.</strong> A good company lets you speak to your guide before you pay.`,
+  ],
+})}
 ${joinBand(ctx, { role: 'agency', title: 'Do you run a registered agency?', text: 'List your company with its registration details, the routes you operate and your staff standards. We verify the papers before anything is published.', ne: 'दर्ता भएको ट्रेकिङ एजेन्सी चलाउनुहुन्छ? आफ्नो कम्पनी सूचीकृत गर्न आवेदन दिनुहोस्।' })}`;
   return {
     title: 'Choosing a Trekking Agency in Nepal: What to Check',
     description: 'When you need a registered trekking agency in Nepal, what papers a legal company holds, the questions to ask and the warning signs to walk away from.',
     section: 'services',
+    scripts: ['directory'],
     crumbs: [['services/', 'Services'], [null, 'Agencies']],
     body,
   };
@@ -379,14 +412,35 @@ export function gearPage(ctx) {
   const { u, content } = ctx;
   const g = content.gear;
   const MODE = { rent: ['Rent in Nepal', 'badge-ok'], buy: ['Buy in Nepal', 'badge-info'], bring: ['Bring from home', 'badge-watch'], either: ['Rent or borrow', 'badge-ok'] };
-  const catName = (id) => g.categories.find((c) => c.id === id)?.name || '';
+  const hubs = content.hubs || {};
+  const hubsAsOf = content.sources?.hubs;
+  const plural = (n, one, many) => `${n} ${n === 1 ? one : many}`;
+  const hubCards = [
+    hubs.thamel && {
+      ...hubs.thamel,
+      count: hubs.thamel.outdoor,
+      countLabel: 'outdoor shops within a kilometre',
+      text: `The biggest choice in the country, with ${plural(hubs.thamel.atm, 'cash machine', 'cash machines')} and ${plural(hubs.thamel.exchange, 'money changer', 'money changers')} close by. Rent and buy here if your trek starts from Kathmandu.`,
+    },
+    hubs.lakeside && {
+      ...hubs.lakeside,
+      count: hubs.lakeside.outdoor,
+      countLabel: 'outdoor shops along the lake',
+      text: `The place to shop for the Annapurna treks, with ${plural(hubs.lakeside.atm, 'cash machine', 'cash machines')} nearby. A smaller choice than Kathmandu, at much the same prices.`,
+    },
+    hubs.namche && {
+      ...hubs.namche,
+      count: 0,
+      countLabel: '',
+      text: `The last shops on the Everest trail, with ${plural(hubs.namche.atm, 'cash machine', 'cash machines')} and ${plural(hubs.namche.pharmacy, 'pharmacy', 'pharmacies')} mapped. Buy what you forgot here, but do not plan to equip yourself here: everything is carried up, and the prices show it.`,
+    },
+  ].filter(Boolean);
   const body = html`
 ${head(ctx, {
   crumbs: [[null, 'Gear']],
   title: 'Trekking gear in Nepal',
   lead: g.intro,
   seed: 59,
-  extra: html`<p style="margin-top:1rem">${comingSoon('Shops enrolling now')}</p>`,
 })}
 <div class="wrap section-tight">
   <div class="section-head"><div><h2>What to bring, rent and buy</h2></div><a class="link-arrow" href="${u('tools/packing/')}">Build a packing list${icon('arrow-right', { size: 18 })}</a></div>
@@ -413,39 +467,35 @@ ${head(ctx, {
   </div>
 </section>
 
-<section class="section-tight" aria-labelledby="market-title">
+<section class="section-tight" aria-labelledby="where-title">
   <div class="wrap">
     <div class="section-head"><div>
-      <h2 id="market-title">The marketplace</h2>
-      <p>Gear shops in Kathmandu, Pokhara and on the trail will list what they rent and sell here, with prices, so you can compare before you arrive.</p>
-    </div>${comingSoon('Opening soon')}</div>
-    <div class="listing-grid">
-      ${g.samples.map(
-        (s) => html`<article class="card listing" aria-label="Sample listing">
-          <span class="sample-ribbon" aria-hidden="true">Sample</span>
-          <div class="listing-art">${icon(g.categories.find((c) => c.id === s.category)?.icon || 'package', { size: 34 })}</div>
-          <div class="listing-body">
-            <span class="badge ${s.mode === 'rent' ? 'badge-ok' : 'badge-info'}">${s.mode === 'rent' ? 'For rent' : 'For sale'}</span>
-            <h3>${s.title}</h3>
-            <p class="listing-price"><strong>${s.price}</strong> ${s.unit}</p>
-            <p class="small muted">${catName(s.category)} · ${s.place}</p>
-            <p class="xsmall muted">${s.seller}. An example of the layout, not a real offer.</p>
-          </div>
+      <h2 id="where-title">Where to rent and buy</h2>
+      <p>Most of the trekking shops in Nepal are in three places. ${hubsAsOf ? html`The counts are what OpenStreetMap showed on ${longDate(hubsAsOf)}.` : ''}</p>
+    </div></div>
+    <div class="grid grid-3 hub-grid">
+      ${hubCards.map(
+        (h) => html`<article class="card card-pad hub">
+          <h3>${h.name}<span>${h.city}</span></h3>
+          ${h.count ? html`<p class="hub-count"><strong>${h.count}</strong> ${h.countLabel}</p>` : ''}
+          <p>${h.text}</p>
+          <a class="link-arrow" href="https://www.openstreetmap.org/#map=17/${h.lat}/${h.lon}" rel="noopener">See ${h.name} on the map${icon('arrow-right', { size: 18 })}</a>
         </article>`,
       )}
     </div>
-    <div class="empty" style="margin-top:1.5rem" data-directory="gear">
-      <h3>Real listings appear as shops join</h3>
-      <p>We list a shop only after confirming where it is and who runs it.</p>
-      <a class="btn btn-secondary" href="${u('partners/?role=gear')}">List your shop</a>
+    <div class="grid grid-2 hub-notes">
+      ${note('info', html`<p><strong>Ask your trekking company first.</strong> Many lend a sleeping bag and a down jacket for the trek, so you may not need to rent either.</p>`)}
+      ${note('plain', html`<p><strong>Famous labels at low prices are usually local copies.</strong> They often do for one trek. Check the zips, the seams and the warmth yourself, and buy boots only if you have time to wear them in.</p>`)}
     </div>
   </div>
 </section>
+${directory('gear', 'Shops you can contact', 'Each one has confirmed where it is, what it rents and sells, and its prices.')}
 ${joinBand(ctx, { role: 'gear', title: 'Do you rent or sell trekking gear?', text: 'Put your shop, your stock and your prices in front of trekkers while they are still planning.', ne: 'ट्रेकिङका सामान भाडामा दिनुहुन्छ वा बेच्नुहुन्छ? आफ्नो पसल सूचीकृत गर्नुहोस्।' })}`;
   return {
     title: 'Trekking Gear in Nepal: What to Rent, Buy and Bring',
     description: 'What trekking gear to bring from home and what to rent or buy in Kathmandu and Pokhara, with typical rental prices and a checklist for renting.',
     section: 'services',
+    scripts: ['directory'],
     crumbs: [[null, 'Gear']],
     body,
   };
@@ -479,7 +529,9 @@ export function partnersPage(ctx) {
   ];
   const regionNames = content.regions.map((r) => r.name);
   const gearCats = content.gear.categories.map((c) => c.name);
-  const backendOn = config.backend.provider === 'supabase' && config.backend.supabaseUrl && config.backend.supabaseAnonKey;
+  // where an application really goes decides what the page promises and what the button says
+  const channel = channelOf(config);
+  const SEND = { database: 'Send application', whatsapp: 'Send on WhatsApp', email: 'Send by email', '': 'Try the application' };
 
   const body = html`
 ${head(ctx, {
@@ -490,7 +542,7 @@ ${head(ctx, {
 })}
 <div class="wrap section-tight partner-layout">
   <div>
-    ${backendOn
+    ${channel
       ? ''
       : html`<div data-preview-note>${note('warn', html`<p><strong>Preview.</strong> Online applications are not switched on yet. You can fill in the form to see how it works; your answers are kept on this device only and are not sent to TrekkSewa.</p>`)}</div>`}
     <form class="partner-form card card-pad" data-partner-form novalidate>
@@ -593,8 +645,8 @@ ${head(ctx, {
       </div>
       <p class="form-error" data-form-error role="alert" hidden></p>
       <div class="cluster" style="--gap:.75rem">
-        <button class="btn btn-lg" type="submit" data-submit>${icon('handshake')}<span>${backendOn ? 'Send application' : 'Try the application'}</span></button>
-        <span class="small muted" lang="ne">${backendOn ? 'आवेदन पठाउनुहोस्' : ''}</span>
+        <button class="btn btn-lg" type="submit" data-submit>${icon('handshake')}<span>${SEND[channel]}</span></button>
+        <span class="small muted" lang="ne">${channel ? 'आवेदन पठाउनुहोस्' : ''}</span>
       </div>
       <p class="xsmall muted">Fields marked * are needed. We use what you send only to review and publish your listing. See the <a href="${u('privacy/')}">privacy page</a>.</p>
     </form>
@@ -610,6 +662,16 @@ ${head(ctx, {
         <li>We contact you on your mobile number to confirm the details.</li>
         <li>Your profile is published only when you have seen and approved it.</li>
       </ol>
+    </div>
+    <div class="card card-pad">
+      <h2 class="mini-h">What your profile shows</h2>
+      <ul class="ticks small">
+        <li>Your name, where you work from and the routes you know</li>
+        <li>Your licence or registration number, and the day we checked it</li>
+        <li>Your languages, experience and first-aid training</li>
+        <li>Your daily rate and what it includes, if you want to show it</li>
+        <li>A way to reach you directly: WhatsApp, phone or email</li>
+      </ul>
     </div>
     <div class="card card-pad">
       <h2 class="mini-h">What we ask of partners</h2>

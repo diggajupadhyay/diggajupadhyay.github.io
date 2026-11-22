@@ -4,8 +4,8 @@ import { profileHtml } from '../lib/profile.mjs';
 import { ridgeStrip } from '../lib/landscape.mjs';
 import { DIFFICULTY, STYLE_LABEL, MONTHS, metres, feet, km, hours, daysRange, signed, num, monthRanges } from '../lib/format.mjs';
 import { RULES } from '../lib/altitude.mjs';
-import { walkStats } from '../lib/plan.mjs';
-import { trekCard, hueClass, grade, monthStrip, monthKey, note, permitCard, regionTag, comingSoon, noticesBlock, noticesFor } from './partials.mjs';
+import { walkStats, helpOptions } from '../lib/plan.mjs';
+import { trekCard, hueClass, grade, monthStrip, monthKey, note, permitCard, regionTag, channelOf, noticesBlock, noticesFor } from './partials.mjs';
 
 const MODE_ICON = { flight: 'plane', bus: 'bus', jeep: 'car', drive: 'car', walk: 'footprints' };
 const MODE_LABEL = { flight: 'Flight', bus: 'Bus', jeep: 'Jeep', drive: 'Drive', walk: 'Walk' };
@@ -70,6 +70,31 @@ export function trekPage(ctx, t) {
           : 'A guide is optional here. Many people still take one for company, local knowledge and peace of mind.',
     cost: t.package ? `A guided trip with a trekking company usually costs USD ${num(t.package.low)} to ${num(t.package.high)} a person, going by the prices ${t.package.sampled || 'several'} companies published for ${content.sources.market ? content.sources.market.slice(0, 4) : 'this year'}.` : '',
   };
+  // who may help on this route, with what each usually costs
+  const dayRate = (key) => (content.facts?.[key]?.value || '').match(/USD\s*[\d,]+\s*[–-]\s*[\d,]+/)?.[0]?.replace(/[–-]/, ' to ').replace(/\s+/g, ' ') || '';
+  const guideRate = dayRate('guideDailyRate');
+  const porterRate = dayRate('porterDailyRate');
+  const HELP_NAME = { agency: 'A trekking company that arranges everything', 'guide-porter': 'A guide, and a porter to carry your bag', guide: 'A guide', porter: 'A porter to carry your bag', self: 'On your own' };
+  const helpRows = helpOptions({ ra: t.restricted ? 1 : 0, gr: t.guide.rule, cg: campingOnly ? 1 : 0 }).map((o) => ({
+    label: HELP_NAME[o.id],
+    blocked: o.blocked,
+    cost: o.blocked
+      ? ''
+      : o.id === 'agency'
+        ? t.package
+          ? `Usually USD ${num(t.package.low)} to ${num(t.package.high)} a person for everything on the trek.`
+          : 'One price for everything on the trek. Ask two or three companies.'
+        : o.id === 'guide-porter'
+          ? guideRate && porterRate
+            ? `About ${guideRate} a day for the guide and ${porterRate} for the porter.`
+            : ''
+          : o.id === 'guide'
+            ? guideRate && `About ${guideRate} a day.`
+            : o.id === 'porter'
+              ? porterRate && `About ${porterRate} a day.`
+              : 'No daily cost, and nobody to turn to if something goes wrong.',
+  }));
+  const asking = channelOf(config) !== '';
   const stayLine = (d) => {
     const s = d.toPlace.services;
     if (!s || !s.stayCount || d.toPlace.type === 'city') return '';
@@ -323,18 +348,16 @@ export function trekPage(ctx, t) {
         </div>
       </section>
 
-      <section id="plan" class="trek-section no-print" data-plan="${t.slug}" data-plan-name="${t.name}">
-        <h2>Put dates on it</h2>
-        <p class="muted">Choose the day you leave ${t.gatewayPlace.name} and every stage above gets a date. Nothing leaves your device.</p>
-        <div class="plan-form card card-pad">
-          <div class="field"><label for="plan-start">First day of the trek</label><input class="input" type="date" id="plan-start" data-plan-start></div>
-          <div class="cluster" style="--gap:.6rem">
-            <button type="button" class="btn btn-sm" data-plan-ics disabled>${icon('calendar-days', { size: 16 })}Add to calendar</button>
-            <button type="button" class="btn btn-secondary btn-sm" data-print>${icon('printer', { size: 16 })}Print</button>
-            <button type="button" class="btn btn-ghost btn-sm" data-plan-clear hidden>Clear dates</button>
+      <section id="plan" class="trek-section no-print" data-plan="${t.slug}">
+        <div class="plan-cta card card-pad">
+          <div>
+            <h2>Plan this trek</h2>
+            <p>Choose your dates and see the whole trip on one page: where you sleep each night, who can help you, what it may cost and the papers you need. Then ask for a price.</p>
+            <p class="plan-cta-saved" data-plan-saved hidden></p>
           </div>
-          <p class="small" data-plan-summary hidden></p>
+          <a class="btn btn-lg" href="${u(`plan/?trek=${t.slug}`)}" data-plan-open>${icon('calendar-check')}<span>Plan this trek</span></a>
         </div>
+        <h3 class="plan-tools-h">More tools for this trek</h3>
         <div class="grid grid-3" style="margin-top:1rem">
           <a class="card card-pad card-link feature" href="${u(`tools/packing/?trek=${t.slug}`)}"><span class="feature-icon">${icon('list-checks', { size: 22 })}</span><h3>Packing list</h3><p>Built for ${num(t.maxAlt.m)} m and ${STYLE_LABEL[t.style[0]].toLowerCase()}.</p></a>
           <a class="card card-pad card-link feature" href="${u(`tools/budget/?trek=${t.slug}`)}"><span class="feature-icon">${icon('calculator', { size: 22 })}</span><h3>Budget</h3><p>Permits, guide, porter, food and lodging for ${t.days} days.</p></a>
@@ -344,17 +367,22 @@ export function trekPage(ctx, t) {
         </div>
       </section>
 
-      <section id="people" class="trek-section sewa-box card card-pad">
-        <div class="cluster" style="justify-content:space-between;--gap:.75rem">
-          <h2>People for this trek</h2>
-          ${comingSoon()}
+      <section id="people" class="trek-section">
+        <h2>Who can help you on this trek</h2>
+        <p>${forMe.help}</p>
+        <ul class="help-rows">
+          ${helpRows.map(
+            (r) => html`<li class="${r.blocked ? 'is-off' : ''}">
+              ${icon(r.blocked ? 'x' : 'check', { size: 20 })}
+              <div><strong>${r.label}</strong>${r.cost ? html`<span>${r.cost}</span>` : ''}${r.blocked ? html`<span>${r.blocked}</span>` : ''}</div>
+            </li>`,
+          )}
+        </ul>
+        <div class="cluster" style="--gap:.75rem;margin-top:1.25rem">
+          <a class="btn" href="${u(`plan/?trek=${t.slug}`)}">${icon('send', { size: 18 })}${asking ? 'Plan this trek and ask us for help' : 'Plan this trek and ask for a price'}</a>
+          <a class="btn btn-secondary" href="${u('services/')}">What each of them does</a>
         </div>
-        <p>${t.restricted ? 'This route is in a restricted area, so it has to be booked through a registered trekking agency with a licensed guide. ' : ''}We are enrolling licensed guides, porters and registered agencies who work on the ${t.name} route, so that you can soon contact them directly from this page.</p>
-        <div class="cluster" style="--gap:.6rem">
-          <a class="btn btn-secondary btn-sm" href="${u('services/guides/')}">${icon('signpost', { size: 16 })}How guides are vetted</a>
-          <a class="btn btn-secondary btn-sm" href="${u('services/porters/')}">${icon('backpack', { size: 16 })}Our porter standards</a>
-          <a class="btn btn-gold btn-sm" href="${u(`partners/?trek=${t.slug}`)}">${icon('handshake', { size: 16 })}I work on this route</a>
-        </div>
+        <p class="small muted" style="margin-top:1rem">Do you work on the ${t.name} route as a guide, porter or company? <a href="${u(`partners/?trek=${t.slug}`)}">Join ${config.name}</a>.</p>
       </section>
 
       <section id="faq" class="trek-section">

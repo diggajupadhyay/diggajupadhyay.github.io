@@ -262,11 +262,12 @@ function init() {
       picked = input.value;
       paint();
     });
-    const ideas = startIdeas(t);
+    const ideas = startIdeas(t, new Date(), 4, state.month);
     for (const idea of ideas) {
+      const quality = idea.best ? 'One of the best months' : idea.good ? 'A good month' : 'A hard month for this trek';
       const b = choice({
         label: idea.label,
-        sub: idea.best ? 'One of the best months' : 'A good month',
+        sub: idea.chosen ? `The month you chose. ${quality}.` : quality,
         badge: idea.best ? 'Best' : '',
         onpick: () => {
           picked = idea.date;

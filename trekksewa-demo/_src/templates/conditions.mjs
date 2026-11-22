@@ -6,7 +6,7 @@ import { html, raw, jsonScript } from '../lib/html.mjs';
 import { icon } from '../lib/icons.mjs';
 import { ridgeStrip } from '../lib/landscape.mjs';
 import { MONTHS, MONTHS_SHORT, num, monthRanges } from '../lib/format.mjs';
-import { hueClass, note, comingSoon, noticesBlock } from './partials.mjs';
+import { hueClass, note, noticesBlock } from './partials.mjs';
 
 const KIND_ICON = { flight: 'plane', road: 'bus', pass: 'mountain', river: 'waves' };
 
@@ -144,10 +144,10 @@ ${passes.length
       </ul>
     </div>
     <div class="card card-pad reports-soon">
-      <div class="cluster" style="justify-content:space-between;--gap:.5rem"><h2 class="h3">Reports from the trail</h2>${comingSoon('Coming with the partner network')}</div>
-      <p>The people who know whether a bridge is out or a pass has been broken through are the guides and lodge owners walking it this week. As they join TrekkSewa, their dated reports will appear here beside the forecasts.</p>
-      ${note('plain', html`<p>Until then we do not publish any trail status, because a stale report is worse than none.</p>`)}
-      <a class="btn btn-gold btn-sm" href="${u('partners/')}">${icon('handshake', { size: 16 })}Guide or lodge owner? Join us</a>
+      <h2 class="h3">Where our notices come from</h2>
+      <p>The notices at the top of this page come from news reports and official statements. Each one shows the day it was reported and the day we last looked for something newer.</p>
+      <p>The people who know whether a bridge is out this week are the guides and lodge owners walking the trail. Ask yours the evening before, and believe them over any website, this one included.</p>
+      <a class="btn btn-secondary btn-sm" href="${u('partners/')}">${icon('handshake', { size: 16 })}Guide or lodge owner? Send us your reports</a>
     </div>
   </div>
 </section>`;

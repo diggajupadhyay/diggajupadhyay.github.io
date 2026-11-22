@@ -34,6 +34,7 @@ export function loadContent(dir, { strict = false, featured = [] } = {}) {
   // data taken from open sources by the scripts in scripts/osm/, and from research
   const osmServices = readJson(join(dir, 'osm-services.json'), { places: {} });
   const osmTrails = readJson(join(dir, 'osm-trails.json'), { treks: {} });
+  const osmHubs = readJson(join(dir, 'osm-hubs.json'), { hubs: {} });
   const photosDoc = readJson(join(dir, 'photos.json'), { photos: {}, regions: {}, home: [] });
   const market = readJson(join(dir, 'market.json'), { packages: [], fares: [] });
   const photoOf = (key) => (key && photosDoc.photos[key] ? { key, ...photosDoc.photos[key] } : null);
@@ -157,9 +158,9 @@ export function loadContent(dir, { strict = false, featured = [] } = {}) {
   const positions = { total: places.length, osm: 0, own: 0, hidden: 0 };
   for (const p of places) positions[!p.located ? 'hidden' : p.coordSource === 'osm' ? 'osm' : 'own']++;
 
-  const sources = { services: osmServices.asOf || null, trails: osmTrails.asOf || null, photos: photosDoc.checked || null, market: market.checked || null };
+  const sources = { services: osmServices.asOf || null, trails: osmTrails.asOf || null, hubs: osmHubs.asOf || null, photos: photosDoc.checked || null, market: market.checked || null };
   const photos = { all: Object.entries(photosDoc.photos || {}).map(([key, v]) => ({ key, ...v })), home: (photosDoc.home || []).map(photoOf).filter(Boolean) };
-  return { regions, regionMap, places, placeMap, treks, trekMap, permits: permitsDoc, permitMap, emergency, facts, positions, market, photos, sources, warnings };
+  return { regions, regionMap, places, placeMap, treks, trekMap, permits: permitsDoc, permitMap, emergency, facts, positions, market, photos, hubs: osmHubs.hubs || {}, sources, warnings };
 }
 
 function trekProblem(t, placeMap, regionMap) {

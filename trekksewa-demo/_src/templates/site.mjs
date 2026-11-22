@@ -4,7 +4,7 @@ import { html, raw } from '../lib/html.mjs';
 import { icon } from '../lib/icons.mjs';
 import { ridgeStrip } from '../lib/landscape.mjs';
 import { longDate, num } from '../lib/format.mjs';
-import { note, arrowLink } from './partials.mjs';
+import { note, arrowLink, channelOf } from './partials.mjs';
 
 const head = (ctx, { crumbs, title, lead, seed, eyebrow }) => html`<header class="page-head">
   <div class="wrap">
@@ -56,6 +56,7 @@ ${head(ctx, { crumbs: [[null, 'About']], title: html`About ${config.name} <span 
 
 export function supportPage(ctx) {
   const { u, config, content } = ctx;
+  const asking = channelOf(config) !== '';
   // plain meanings for the words a first-time trekker meets on these pages
   const words = [
     ['Trek', 'A walk of several days from village to village, sleeping somewhere new each night. No climbing skill is needed.'],
@@ -81,7 +82,12 @@ export function supportPage(ctx) {
         ['I have never trekked before. Where do I start?', `Open Plan my trek. It asks three simple questions (how many days, how much walking, which month), suggests treks that suit you, and then lays out a plan day by day.`],
         ['How fit do I need to be?', 'For a gentle trek you should be comfortable walking four hours a day for several days in a row, with some hills. Plenty of people trek in their sixties and seventies. Walk regularly for a few months beforehand, and choose a route that stays below about 3,500 m for your first time.'],
         ['I am over sixty. Is trekking in Nepal sensible?', 'Yes, with the right route and enough time. Talk to your doctor first, especially about your heart, lungs and any medicines. Take a guide, hire a porter, add rest days, and buy insurance that covers trekking to the height you will reach and rescue by helicopter.'],
-        ['Can I book a guide, porter or lodge here?', `Not yet. We are enrolling guides, porters and trekking companies now. Until then the planner gives you a complete plan that you can send to any registered company or guide to ask for a price.`],
+        [
+          'Can I book a guide, a porter or a trekking company here?',
+          asking
+            ? html`Yes, you can ask. <a href="${u('plan/')}">Make a plan</a>, press <strong>Get help arranging it</strong> and tick what you would like. Your request comes to our team, and we reply by email or WhatsApp. Asking is free.`
+            : html`You can do everything except the booking itself. <a href="${u('plan/')}">Make a plan</a>, then press <strong>Share</strong> or <strong>Print</strong> and send it to two or three trekking companies or guides to ask for a price. Our own booking desk is not open yet; <a href="${u('services/agencies/')}">here is how to check that a company is registered</a>.`,
+        ],
         ['Where will I sleep?', 'On most treks, in lodges (also called teahouses) in the villages along the trail. The planner and each place page list the lodges that are mapped at every stop.'],
         ['What will it cost?', 'The planner gives a range for your trek, your group and the help you choose. As a rough guide, a week on a popular lodge trek with a guide and a porter costs about USD 500 to 900 a person, not counting flights to Nepal.'],
       ],
@@ -117,7 +123,6 @@ export function supportPage(ctx) {
     [
       'Guides, porters, agencies and gear',
       [
-        ['Can I book a guide or porter through the site?', 'Not yet. We are enrolling partners now and will open the directory once there are enough verified profiles to be useful.'],
         ['How do I get listed?', 'Fill in the application on the partners page. It takes about five minutes and can be completed in English or Nepali.'],
         ['Does it cost anything to apply?', 'No.'],
       ],
@@ -163,7 +168,7 @@ ${head(ctx, { crumbs: [[null, 'Help']], title: 'Help and common questions', lead
     section: 'about',
     crumbs: [[null, 'Help']],
     body,
-    jsonLd: [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: groups.flatMap(([, items]) => items).map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }],
+    jsonLd: [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: groups.flatMap(([, items]) => items).map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: String(a).replace(/<[^>]+>/g, '') } })) }],
   };
 }
 
@@ -211,7 +216,7 @@ ${head(ctx, { crumbs: [[null, 'Terms']], title: 'Terms of use', lead: 'Plain ter
   <h2>Accuracy</h2>
   <p>We work to keep the content correct and say where we are unsure, but we give no guarantee that any information is accurate, complete or current.</p>
   <h2>Services and partners</h2>
-  <p>When the partner directory opens, guides, porters, agencies and shops listed on ${config.name} will be independent of us. Any agreement you make is between you and them. We check the credentials partners give us, but a listing is not a guarantee of their conduct or of the outcome of your trek.</p>
+  <p>Guides, porters, agencies and shops that ${config.name} lists, or puts you in touch with after you ask for help with a plan, are independent of us. Any agreement you make is between you and them. We check the credentials partners give us, but a listing or an introduction is not a guarantee of their conduct or of the outcome of your trek.</p>
   <h2>Acceptable use</h2>
   <p>Do not misuse the site: no automated bulk copying of the content, no false partner applications, and no attempts to interfere with how it works.</p>
   <h2>Content and licence</h2>
@@ -253,6 +258,7 @@ ${head(ctx, { crumbs: [[null, 'Data and credits']], title: 'Data and credits', l
   <h2 id="trails">Trails and places to stay</h2>
   <p>The footpath drawn on each trek map, the route file you can download, and the lists of lodges, health posts, cash machines and water points all come from OpenStreetMap, read from the Protomaps daily build of ${longDate(content.sources.trails || content.sources.services || '')}. ${num(legs.mapped)} of the walking sections in our itineraries follow a mapped path. The remaining ${num(legs.total - legs.mapped)} that we can place are drawn as dashes that simply join two stops, and a section is left off the map altogether where we could not confirm where a stop is. Lodges are listed for ${num(stays.places)} places, ${num(stays.count)} in all.</p>
   <p>This data is © ${ext('https://www.openstreetmap.org/copyright', 'OpenStreetMap contributors')} and is available under the Open Database Licence. It is made by volunteers: a lodge may have closed, a new one may be missing, and a path may have moved since it was mapped. If you spot a mistake, the best fix is to ${ext('https://www.openstreetmap.org/fixthemap', 'correct it in OpenStreetMap')}, where everyone benefits.</p>
+  ${content.sources.hubs ? html`<p>The counts of outdoor shops, cash machines and pharmacies on the <a href="${ctx.u('gear/')}">gear page</a> are counts of what was mapped around Thamel, Lakeside and Namche Bazaar on ${longDate(content.sources.hubs)}. A shop counts as an outdoor shop when it is mapped as one, or when it is mapped as a clothes, sports, shoe or bag shop with a name that says trekking or mountain gear.</p>` : ''}
   <h2 id="prices">Prices</h2>
   <p>The package price ranges and transport fares used by the planner are list prices that trekking companies, booking sites and operators showed online${content.sources.market ? html`, gathered on ${longDate(content.sources.market)}` : ''}. Nothing was confirmed with a company, airline or ticket counter. They are there to help you budget and to recognise a fair offer, not as a quote.</p>
   <h2>Maps</h2>
@@ -284,7 +290,7 @@ ${head(ctx, { crumbs: [[null, 'Data and credits']], title: 'Data and credits', l
   <ul>
     <li>Typefaces: ${ext('https://fonts.google.com/specimen/Fraunces', 'Fraunces')} and ${ext('https://fonts.google.com/specimen/Figtree', 'Figtree')}, both under the SIL Open Font Licence.</li>
     <li>Icons: ${ext('https://lucide.dev/', 'Lucide')} (ISC licence).</li>
-    <li>The mountain artwork is drawn by our own code. No photographs or third-party illustrations are used.</li>
+    <li>The mountain artwork and the height profiles are drawn by our own code.${photos.length ? ' The photographs are credited above.' : ' No photographs or third-party illustrations are used.'}</li>
   </ul>
 </div></div>`;
   return { title: 'Data and Credits', description: `Sources, licences and medical references behind ${config.name}.`, section: 'about', crumbs: [[null, 'Data and credits']], body };
@@ -295,34 +301,41 @@ ${head(ctx, { crumbs: [[null, 'Data and credits']], title: 'Data and credits', l
 export function savedPage(ctx) {
   const { u } = ctx;
   const body = html`
-${head(ctx, { crumbs: [[null, 'Saved']], title: 'Saved on this device', lead: 'Your saved treks and plans. They live in this browser only and are available offline.', seed: 91 })}
-<div class="wrap section-tight" data-saved>
-  <section>
-    <div class="section-head"><h2>Saved treks</h2><a class="link-arrow" href="${u('treks/')}">Browse treks${icon('arrow-right', { size: 18 })}</a></div>
+${head(ctx, { crumbs: [[null, 'My trips']], title: 'My trips', lead: 'Your trek plans and the treks you saved. They are kept on this phone or computer only, and you can open them without a connection.', seed: 91 })}
+<div class="wrap section-tight trips" data-saved>
+  <section aria-labelledby="trips-plans">
+    <h2 id="trips-plans">My trek plans</h2>
+    <div data-trips-draft hidden></div>
+    <ul class="trip-list" data-saved-plans></ul>
+    <div class="empty" data-plans-empty>
+      <h3>You have not saved a plan yet</h3>
+      <p>Answer a few simple questions and we lay out your trek day by day: where you walk, where you sleep, who can help you and what it may cost. Press <strong>Save</strong> on the plan and it will wait for you here.</p>
+      <a class="btn btn-lg" href="${u('plan/')}">${icon('route', { size: 22 })}Plan my trek</a>
+    </div>
+    <p class="trips-more" data-plans-more hidden><a class="btn btn-secondary" href="${u('plan/')}">${icon('plus', { size: 20 })}Plan another trek</a></p>
+  </section>
+  <section aria-labelledby="trips-treks">
+    <h2 id="trips-treks">Treks I saved</h2>
     <div class="trek-grid" data-saved-treks></div>
     <div class="empty" data-saved-empty>
-      <h3>Nothing saved yet</h3>
-      <p>Tap <strong>Save</strong> on any trek to keep it here and make it available offline.</p>
-      <a class="btn btn-secondary" href="${u('treks/')}">Find a trek</a>
+      <h3>No treks saved yet</h3>
+      <p>Press <strong>Save</strong> on any trek page to keep it here. A saved trek can be read without a connection.</p>
+      <a class="btn btn-secondary" href="${u('treks/')}">See all ${ctx.content.treks.length} treks</a>
     </div>
   </section>
-  <section style="margin-top:2.5rem" data-saved-plans-box hidden>
-    <div class="section-head"><h2>My trek plans</h2><a class="link-arrow" href="${u('plan/')}">Plan another trek${icon('arrow-right', { size: 18 })}</a></div>
-    <ul class="plan-list" data-saved-plans></ul>
+  <section aria-labelledby="trips-also">
+    <h2 id="trips-also">Also kept on this device</h2>
+    <ul class="trips-also">
+      <li><a href="${u('safety/emergency/')}">${icon('siren', { size: 22 })}<span><strong>My emergency card</strong><span>Numbers to call and your own details</span></span></a></li>
+      <li><a href="${u('tools/packing/')}">${icon('backpack', { size: 22 })}<span><strong>My packing list</strong><span>What you have ticked off so far</span></span></a></li>
+      <li><a href="${u('safety/altitude-check/')}">${icon('heart-pulse', { size: 22 })}<span><strong>My altitude checks</strong><span>How you felt, day by day</span></span></a></li>
+    </ul>
+    <p class="small muted">Nothing on this page is sent to us. If you clear this site's data in your browser settings, everything here is removed.</p>
   </section>
-  <section style="margin-top:2.5rem">
-    <h2 class="h3">Also kept on this device</h2>
-    <div class="cluster" style="--gap:.5rem">
-      <a class="chip" href="${u('safety/emergency/')}">Emergency card</a>
-      <a class="chip" href="${u('safety/altitude-check/')}">Altitude check history</a>
-      <a class="chip" href="${u('tools/packing/')}">Packing list</a>
-      <a class="chip" href="${u('tools/gpx/')}">GPX track</a>
-    </div>
-    <p class="small muted" style="margin-top:1rem">Clearing this site's data in your browser settings removes everything on this page.</p>
-  </section>
-  <noscript>${note('warn', html`<p>Saved treks need JavaScript.</p>`)}</noscript>
+  <template data-trips-icons>${['arrow-right', 'calendar-days', 'users', 'trash-2', 'undo-2', 'mountain', 'route'].map((n) => html`<span data-i="${n}">${icon(n, { size: 22 })}</span>`)}</template>
+  <noscript>${note('warn', html`<p>Your saved plans and treks need JavaScript to show.</p>`)}</noscript>
 </div>`;
-  return { title: 'Saved Treks', description: 'Your saved treks and plans, stored on this device and available offline.', section: 'saved', scripts: ['saved'], noindex: true, crumbs: [[null, 'Saved']], body };
+  return { title: 'My Trips', description: 'Your trek plans and saved treks, kept on this device and available offline.', section: 'saved', scripts: ['saved'], noindex: true, crumbs: [[null, 'My trips']], body };
 }
 
 export function offlinePage(ctx) {

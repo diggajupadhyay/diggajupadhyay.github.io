@@ -1,0 +1,45 @@
+{
+  "source": "OpenStreetMap contributors, Open Database Licence, through the Protomaps daily build",
+  "asOf": "2026-11-21",
+  "hubs": {
+    "thamel": {
+      "name": "Thamel",
+      "city": "Kathmandu",
+      "lat": 27.7154,
+      "lon": 85.3123,
+      "radiusM": 900,
+      "outdoor": 137,
+      "agencies": 300,
+      "stay": 465,
+      "atm": 68,
+      "exchange": 56,
+      "pharmacy": 40
+    },
+    "lakeside": {
+      "name": "Lakeside",
+      "city": "Pokhara",
+      "lat": 28.2096,
+      "lon": 83.9595,
+      "radiusM": 1500,
+      "outdoor": 32,
+      "agencies": 165,
+      "stay": 513,
+      "atm": 45,
+      "exchange": 28,
+      "pharmacy": 23
+    },
+    "namche": {
+      "name": "Namche Bazaar",
+      "city": "Everest region",
+      "lat": 27.8056,
+      "lon": 86.714,
+      "radiusM": 700,
+      "outdoor": 1,
+      "agencies": 0,
+      "stay": 53,
+      "atm": 4,
+      "exchange": 2,
+      "pharmacy": 2
+    }
+  }
+}

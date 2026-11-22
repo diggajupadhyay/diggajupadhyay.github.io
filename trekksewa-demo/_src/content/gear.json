@@ -20,11 +20,5 @@
     "Count the days carefully. Rental is charged for every day the item is out, including rest and travel days.",
     "Get a written slip with the items, the daily rate and the deposit.",
     "Wash or air a rented sleeping bag and use a liner."
-  ],
-  "samples": [
-    { "title": "Down sleeping bag, rated to −20 °C", "category": "sleep", "mode": "rent", "price": "NPR 200", "unit": "per day", "place": "Thamel, Kathmandu", "seller": "Example Trek Gear" },
-    { "title": "Expedition down jacket", "category": "down", "mode": "rent", "price": "NPR 150", "unit": "per day", "place": "Lakeside, Pokhara", "seller": "Example Outdoor Shop" },
-    { "title": "Microspikes, sizes M and L", "category": "traction", "mode": "rent", "price": "NPR 150", "unit": "per day", "place": "Thamel, Kathmandu", "seller": "Example Trek Gear" },
-    { "title": "Aluminium trekking poles, pair", "category": "poles", "mode": "buy", "price": "NPR 2,500", "unit": "", "place": "Namche Bazaar", "seller": "Example Mountain Store" }
   ]
 }

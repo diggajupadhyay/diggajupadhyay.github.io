@@ -1,9 +1,9 @@
-// Trek detail page: chart hover, lazy map, sharing, offline save, dated itinerary.
+// Trek detail page: chart hover, lazy map, sharing, offline save, dates from a saved plan.
 
 import { $, $$, on } from '../lib/dom.js';
 import { url } from '../lib/site.js';
 import * as store from '../lib/store.js';
-import { toast, share, download } from '../lib/ui.js';
+import { toast, share } from '../lib/ui.js';
 import { initProfiles } from '../lib/profile-hover.js';
 import { createMap, pin, whenVisible, mapError } from '../lib/map.js';
 import { num } from '../../lib/format.mjs';
@@ -96,79 +96,51 @@ if (tabs.length && 'IntersectionObserver' in window) {
   }
 }
 
-// ---------- dated itinerary ----------
+// ---------- a plan saved for this trek ----------
+// Plans are made on the Plan my trek page. When one is saved for this trek, its dates are
+// shown beside each day here and the button opens that plan again.
 const plan = $('[data-plan]');
 if (plan) {
   const slug = plan.dataset.plan;
-  const input = $('[data-plan-start]', plan);
-  const icsBtn = $('[data-plan-ics]', plan);
-  const clearBtn = $('[data-plan-clear]', plan);
-  const summary = $('[data-plan-summary]', plan);
   const days = $$('.days .day');
+  const savedNote = $('[data-plan-saved]', plan);
+  const open = $('[data-plan-open]', plan);
+  const freshHref = open.href;
   const fmt = new Intl.DateTimeFormat('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+  const longFmt = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
   const iso = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
   const parse = (s) => {
     const [y, m, d] = s.split('-').map(Number);
     return new Date(y, m - 1, d);
   };
   const addDays = (d, n) => new Date(d.getFullYear(), d.getMonth(), d.getDate() + n);
-  input.min = iso(new Date());
 
-  function apply(startStr, save = true) {
-    const valid = /^\d{4}-\d{2}-\d{2}$/.test(startStr || '');
+  const paint = () => {
+    const saved = store.get('plans', {})[slug];
+    const valid = Boolean(saved) && /^\d{4}-\d{2}-\d{2}$/.test(saved.start || '');
     days.forEach((li, i) => {
       const t = li.querySelector('[data-plan-date]');
       if (!t) return;
-      if (!valid) {
-        t.hidden = true;
-        return;
-      }
-      const d = addDays(parse(startStr), i);
+      t.hidden = !valid;
+      if (!valid) return;
+      const d = addDays(parse(saved.start), i);
       t.dateTime = iso(d);
       t.textContent = fmt.format(d);
-      t.hidden = false;
     });
-    icsBtn.disabled = !valid;
-    clearBtn.hidden = !valid;
-    summary.hidden = !valid;
-    if (valid) {
-      const start = parse(startStr);
-      const end = addDays(start, days.length - 1);
-      summary.textContent = `${fmt.format(start)} to ${fmt.format(end)} ${end.getFullYear()}. Dates are shown beside each day above.`;
+    savedNote.hidden = !valid;
+    if (!valid) {
+      open.href = freshHref;
+      open.querySelector('span').textContent = 'Plan this trek';
+      return;
     }
-    if (save) {
-      const plans = store.get('plans', {});
-      if (valid) plans[slug] = { start: startStr, name: plan.dataset.planName, days: days.length };
-      else delete plans[slug];
-      store.set('plans', plans);
-    }
-  }
-
-  const saved = store.get('plans', {})[slug];
-  if (saved?.start) {
-    input.value = saved.start;
-    apply(saved.start, false);
-  }
-  input.addEventListener('change', () => apply(input.value));
-  clearBtn.addEventListener('click', () => {
-    input.value = '';
-    apply('');
-  });
-  icsBtn.addEventListener('click', () => {
-    if (!input.value) return;
-    const start = parse(input.value);
-    const stamp = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d+/, '');
-    const d8 = (d) => iso(d).replace(/-/g, '');
-    const esc = (s) => String(s).replace(/\\/g, '\\\\').replace(/\n/g, '\\n').replace(/([,;])/g, '\\$1');
-    const events = days.map((li, i) => {
-      const day = addDays(start, i);
-      const title = li.querySelector('h3')?.textContent.trim() || `Day ${i + 1}`;
-      const noteText = li.querySelector('.day-body > p:not(.day-route)')?.textContent.trim() || '';
-      const sleep = li.querySelector('.day-stats dd')?.textContent.trim() || '';
-      return ['BEGIN:VEVENT', `UID:${slug}-${i + 1}-${d8(day)}@trekksewa`, `DTSTAMP:${stamp}`, `DTSTART;VALUE=DATE:${d8(day)}`, `DTEND;VALUE=DATE:${d8(addDays(day, 1))}`, `SUMMARY:${esc(`Day ${i + 1}: ${title}`)}`, `DESCRIPTION:${esc(`${noteText}${sleep ? `\nSleep at ${sleep}.` : ''}\n${location.href.split('#')[0]}`)}`, 'TRANSP:TRANSPARENT', 'END:VEVENT'].join('\r\n');
-    });
-    const ics = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//TrekkSewa//Trek planner//EN', 'CALSCALE:GREGORIAN', `X-WR-CALNAME:${esc(plan.dataset.planName)}`, ...events, 'END:VCALENDAR'].join('\r\n');
-    download(`${slug}.ics`, ics, 'text/calendar');
-    toast('Calendar file downloaded');
-  });
+    savedNote.textContent = `You have a plan for this trek, starting on ${longFmt.format(parse(saved.start))}. The dates are shown beside each day above.`;
+    const q = new URLSearchParams({ trek: slug, start: saved.start });
+    if (saved.people) q.set('people', saved.people);
+    if (saved.help) q.set('help', saved.help);
+    if (saved.spare !== undefined && saved.spare !== 1) q.set('spare', saved.spare);
+    open.href = url(`plan/?${q}`);
+    open.querySelector('span').textContent = 'Open my plan';
+  };
+  paint();
+  window.addEventListener('ts:store', paint);
 }

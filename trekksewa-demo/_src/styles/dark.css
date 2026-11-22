@@ -91,7 +91,6 @@
 :root[data-theme='dark'] .ls-stars {
   opacity: 0.9;
 }
-:root[data-theme='dark'] .pledge,
-:root[data-theme='dark'] .sewa-box {
+:root[data-theme='dark'] .pledge {
   background: linear-gradient(100deg, var(--gold-100), var(--surface) 75%);
 }

@@ -119,4 +119,15 @@ export function permitCard(p) {
   </article>`;
 }
 
-export const comingSoon = (label = 'Enrolling founding partners') => html`<span class="badge badge-soon">${icon('sparkles', { size: 14 })}${label}</span>`;
+/**
+ * Where a visitor's request reaches TrekkSewa, decided from site.config.json: 'database',
+ * 'whatsapp', 'email' or '' (nowhere yet). The build-time twin of requestChannel() in
+ * client/lib/backend.js, so the words on a page match what its form will really do.
+ */
+export function channelOf(config) {
+  const b = config.backend || {};
+  if (b.provider === 'supabase' && b.supabaseUrl && b.supabaseAnonKey) return 'database';
+  if (String(config.contact?.whatsapp || '').replace(/\D/g, '').length >= 8) return 'whatsapp';
+  if (/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(config.contact?.email || '')) return 'email';
+  return '';
+}

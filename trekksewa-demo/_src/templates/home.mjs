@@ -3,7 +3,7 @@ import { icon } from '../lib/icons.mjs';
 import { heroLandscape } from '../lib/landscape.mjs';
 import { numberWord } from '../lib/format.mjs';
 import { DAY_CHOICES } from '../lib/plan.mjs';
-import { trekCard, sectionHead, arrowLink, hueClass, comingSoon } from './partials.mjs';
+import { trekCard, sectionHead, arrowLink, hueClass } from './partials.mjs';
 
 export function homePage(ctx) {
   const { u, content, config } = ctx;
@@ -151,16 +151,16 @@ export function homePage(ctx) {
       <div>
         <p class="eyebrow"><span lang="ne">सेवा</span> · Service</p>
         <h2 id="sewa-title">The people who make a trek</h2>
-        <p>A route guide gets you to the trailhead. People get you over the pass. We are building one place to find the ones you can trust, and to make sure they are treated fairly.</p>
+        <p>A route guide gets you to the trailhead. People get you over the pass. Here is who can help you, what each of them costs, and how to ask.</p>
       </div>
-      ${comingSoon()}
+      <a class="link-arrow" href="${u('services/')}">Which help do I need?${icon('arrow-right', { size: 18 })}</a>
     </div>
     <div class="grid grid-4">
       ${[
-        ['services/guides/', 'signpost', 'Guides', 'Licensed trekking guides, listed with their licence number, languages, first-aid training and the routes they know best.'],
-        ['services/porters/', 'backpack', 'Porters', 'Experienced porters with fair daily wages, insurance, proper clothing and loads kept within recognised limits.'],
-        ['services/agencies/', 'building-2', 'Agencies', 'Government-registered trekking companies for restricted-area permits, logistics and full-service trips.'],
-        ['gear/', 'store', 'Gear', 'Sleeping bags, down jackets, boots and safety gear to rent or buy from shops in Kathmandu and Pokhara.'],
+        ['services/agencies/', 'building-2', 'Trekking companies', 'They arrange everything: guide, porter, permits, transport and beds. The easy way for a first trek, and the law in restricted areas.'],
+        ['services/guides/', 'signpost', 'Guides', 'A licensed guide finds the way, books the beds and watches how you cope with the height. What they cost and what to check.'],
+        ['services/porters/', 'backpack', 'Porters', 'A porter carries your main bag, so you walk with a small one. How to hire one fairly, with a proper load, kit and insurance.'],
+        ['gear/', 'store', 'Gear', 'What to bring from home, and what to rent or buy for a few dollars a day in Kathmandu and Pokhara.'],
       ].map(
         ([href, ic, title, text]) => html`<a class="card card-pad card-link feature" href="${u(href)}">
           <span class="feature-icon">${icon(ic, { size: 22 })}</span>

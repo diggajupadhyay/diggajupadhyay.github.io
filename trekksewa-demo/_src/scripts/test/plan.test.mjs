@@ -112,6 +112,18 @@ test('start ideas fall in good months and leave time to prepare', () => {
   assert.ok(ideas[0].best);
 });
 
+test('a month the visitor named comes first, even a hard one', () => {
+  const today = new Date(2026, 10, 22);
+  const october = startIdeas(abc, today, 4, 10);
+  assert.equal(october.length, 4);
+  assert.deepEqual([october[0].date, october[0].chosen, october[0].best], ['2027-10-10', true, true]);
+  assert.equal(new Set(october.map((i) => i.date)).size, 4); // the chosen month is not offered twice
+  const july = startIdeas(abc, today, 4, 7)[0];
+  assert.deepEqual([july.date, july.chosen, july.best, july.good], ['2027-07-10', true, false, false]);
+  // this month is too close to arrange: the next one of the same name is offered
+  assert.equal(startIdeas(abc, today, 4, 11)[0].date, '2027-11-10');
+});
+
 test('insurance band is the first one at or above the highest point', () => {
   assert.equal(insuranceTier(3210), 4000);
   assert.equal(insuranceTier(4130), 4500);

@@ -7,6 +7,10 @@
 //   NODE_USE_ENV_PROXY=1 node scripts/osm/extract.mjs services
 //       lodges, health posts, cash machines, water and the rest around every place,
 //       written to content/osm-services.json for the site to show
+//   NODE_USE_ENV_PROXY=1 node scripts/osm/extract.mjs hubs
+//       how many outdoor shops, travel offices, cash machines and so on are mapped in the
+//       three places trekkers shop and book (Thamel, Lakeside, Namche), written to
+//       content/osm-hubs.json
 //
 // Source: the Protomaps daily build of OpenStreetMap (see tiles.mjs). © OpenStreetMap
 // contributors, Open Database Licence.
@@ -155,9 +159,50 @@ async function services() {
   console.log(`written: ${file}`);
 }
 
-const STEPS = { candidates, services };
+// ------------------------------------------------------------------ hubs
+
+// The places where trekkers shop and book before they walk. Counted, not listed: the numbers
+// say where the choice is without recommending any business nobody here has visited.
+// tilesAround() takes its radius in kilometres.
+const HUBS = [
+  { id: 'thamel', name: 'Thamel', city: 'Kathmandu', lat: 27.7154, lon: 85.3123, radius: 0.9 },
+  { id: 'lakeside', name: 'Lakeside', city: 'Pokhara', lat: 28.2096, lon: 83.9595, radius: 1.5 },
+  { id: 'namche', name: 'Namche Bazaar', city: 'Everest region', lat: 27.8056, lon: 86.714, radius: 0.7 },
+];
+// a shop mapped as clothes, sports, shoes or bags still counts when its name says trekking
+const GEAR_NAME = /trek|outdoor|mountain|climb|expedition|gear|equipment/i;
+const GEAR_MAYBE = new Set(['clothes', 'sports', 'shoes', 'bag']);
+
+async function hubs() {
+  const { points, build } = await collect(HUBS, ['pois']);
+  const out = {};
+  for (const hub of HUBS) {
+    const near = points.filter((pt) => haversineKm(hub, pt) <= hub.radius);
+    const count = (test) => near.filter(test).length;
+    out[hub.id] = {
+      name: hub.name,
+      city: hub.city,
+      lat: hub.lat,
+      lon: hub.lon,
+      radiusM: Math.round(hub.radius * 1000),
+      outdoor: count((pt) => pt.kind === 'outdoor' || (GEAR_MAYBE.has(pt.kind) && pt.names.some((n) => GEAR_NAME.test(n)))),
+      agencies: count((pt) => pt.kind === 'travel_agency'),
+      stay: count((pt) => GROUPS.stay.has(pt.kind)),
+      atm: count((pt) => pt.kind === 'atm'),
+      exchange: count((pt) => pt.kind === 'bureau_de_change'),
+      pharmacy: count((pt) => pt.kind === 'pharmacy'),
+    };
+    console.log(`${hub.name}: ${JSON.stringify(out[hub.id])}`);
+  }
+  const date = `${build.slice(0, 4)}-${build.slice(4, 6)}-${build.slice(6, 8)}`;
+  const file = join(SRC, 'content', 'osm-hubs.json');
+  writeFileSync(file, `${JSON.stringify({ source: 'OpenStreetMap contributors, Open Database Licence, through the Protomaps daily build', asOf: date, hubs: out }, null, 2)}\n`);
+  console.log(`written: ${file}`);
+}
+
+const STEPS = { candidates, services, hubs };
 if (!STEPS[mode]) {
-  console.log('usage: NODE_USE_ENV_PROXY=1 node scripts/osm/extract.mjs candidates | services');
+  console.log('usage: NODE_USE_ENV_PROXY=1 node scripts/osm/extract.mjs candidates | services | hubs');
   process.exit(1);
 }
 await STEPS[mode]();

@@ -52,16 +52,9 @@
   margin-top: 0.5rem !important;
 }
 
-/* ---------- sample profiles ---------- */
+/* ---------- partner profiles ---------- */
 .directory {
   align-items: stretch;
-}
-.profile-sample {
-  position: relative;
-  overflow: hidden;
-  display: grid;
-  gap: 0.9rem;
-  align-content: start;
 }
 .profile-top {
   display: flex;
@@ -74,21 +67,6 @@
 }
 .profile-top p {
   margin: 0;
-}
-.avatar {
-  display: grid;
-  place-items: center;
-  width: 3.4rem;
-  height: 3.4rem;
-  border-radius: 50%;
-  background: var(--teal-100);
-  color: var(--teal-700);
-}
-.directory-empty {
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  gap: 0.25rem;
 }
 
 /* ---------- gear ---------- */
@@ -110,44 +88,6 @@
 .gear-cat p {
   margin: 0;
   color: var(--ink-2);
-}
-.listing-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15.5rem), 1fr));
-}
-.listing {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-.listing-art {
-  display: grid;
-  place-items: center;
-  height: 7rem;
-  background: var(--paper-2);
-  color: var(--teal-600);
-}
-.listing-body {
-  display: grid;
-  gap: 0.3rem;
-  justify-items: start;
-  padding: 1rem;
-}
-.listing-body h3 {
-  font-size: 1.05rem;
-  font-family: var(--font-body);
-  font-weight: 650;
-  letter-spacing: 0;
-  line-height: 1.3;
-  margin: 0.2rem 0 0;
-}
-.listing-body p {
-  margin: 0;
-}
-.listing-price strong {
-  font-size: 1.2rem;
 }
 
 /* ---------- partner application ---------- */
@@ -286,6 +226,11 @@
 .done-preview {
   border-color: var(--amber-600);
   background: var(--amber-100);
+}
+.done-whatsapp,
+.done-email {
+  border-color: var(--blue-600);
+  background: var(--blue-100);
 }
 .done-error {
   border-color: var(--red-600);

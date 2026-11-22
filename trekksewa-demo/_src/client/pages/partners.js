@@ -4,7 +4,7 @@ import { $, $$, h } from '../lib/dom.js';
 import { url } from '../lib/site.js';
 import * as store from '../lib/store.js';
 import { toast, download } from '../lib/ui.js';
-import { backendReady, submitApplication } from '../lib/backend.js';
+import { submitApplication } from '../lib/backend.js';
 
 const form = $('[data-partner-form]');
 const done = $('[data-partner-done]');
@@ -105,23 +105,23 @@ if (form) {
     return lines.join('\n');
   }
 
+  /** kind: 'sent' (stored), 'whatsapp' | 'email' (handed to that app to send), 'preview', 'error' */
   function showDone(kind, app, message) {
     const text = summaryText(app);
     const actions = [h('button', { type: 'button', class: 'btn btn-secondary btn-sm', onclick: () => download('trekksewa-application.txt', text) }, 'Download a copy')];
+    const waLink = contact.whatsapp ? `https://wa.me/${String(contact.whatsapp).replace(/\D/g, '')}?text=${encodeURIComponent(text)}` : '';
+    const mailLink = contact.email ? `mailto:${contact.email}?subject=${encodeURIComponent('TrekkSewa partner application')}&body=${encodeURIComponent(text)}` : '';
     if (kind !== 'sent') {
-      if (contact.whatsapp) actions.unshift(h('a', { class: 'btn btn-sm', href: `https://wa.me/${String(contact.whatsapp).replace(/\D/g, '')}?text=${encodeURIComponent(text)}`, target: '_blank', rel: 'noopener' }, 'Send by WhatsApp'));
-      if (contact.email) actions.unshift(h('a', { class: 'btn btn-sm', href: `mailto:${contact.email}?subject=${encodeURIComponent('TrekkSewa partner application')}&body=${encodeURIComponent(text)}` }, 'Send by email'));
+      if (waLink) actions.unshift(h('a', { class: 'btn btn-sm', href: waLink, target: '_blank', rel: 'noopener' }, kind === 'whatsapp' ? 'Open WhatsApp again' : 'Send by WhatsApp'));
+      if (mailLink) actions.unshift(h('a', { class: 'btn btn-sm', href: mailLink }, kind === 'email' ? 'Open email again' : 'Send by email'));
       actions.push(h('button', { type: 'button', class: 'btn btn-ghost btn-sm', onclick: backToForm }, 'Back to the form'));
     }
+    const after = 'We will contact you on the mobile number you gave before anything is published.';
     const copy = {
-      sent: ['Application received', 'Thank you. We will contact you on the mobile number you gave before anything is published.', 'धन्यवाद। तपाईंको आवेदन प्राप्त भयो।'],
-      preview: [
-        'This is how applying will work',
-        contact.email || contact.whatsapp
-          ? 'Online applications are not switched on yet, so nothing has been sent. You can send your answers to us directly with the buttons below.'
-          : 'Online applications are not switched on yet, so nothing has been sent to TrekkSewa. Your answers are saved on this device and will be here when applications open.',
-        '',
-      ],
+      sent: ['Application received', `Thank you. ${after}`, 'धन्यवाद। तपाईंको आवेदन प्राप्त भयो।'],
+      whatsapp: ['One more step: press send in WhatsApp', `WhatsApp has opened with your application written out. Press send there and it reaches us. ${after}`, 'ह्वाट्सएपमा "पठाउनुहोस्" थिच्नुहोस्।'],
+      email: ['One more step: press send in your email', `Your email program has opened with your application written out. Press send there and it reaches us. ${after}`, 'इमेलमा "पठाउनुहोस्" थिच्नुहोस्।'],
+      preview: ['This is how applying will work', 'Online applications are not switched on yet, so nothing has been sent to TrekkSewa. Your answers are saved on this device and will be here when applications open.', ''],
       error: ['Your application was not sent', message || 'Something went wrong. Your answers are saved on this device; please try again.', ''],
     }[kind];
     done.className = `partner-done card card-pad done-${kind}`;
@@ -167,15 +167,15 @@ if (form) {
     }
     const button = $('[data-submit]', form);
     button.disabled = true;
-    const result = await submitApplication(app);
+    const result = await submitApplication(app, summaryText(app));
     button.disabled = false;
-    if (result.ok) {
+    if (result.ok && result.via === 'database') {
       store.remove('partner-draft');
       showDone('sent', app);
       toast('Application sent');
-    } else if (result.mode === 'preview') showDone('preview', app);
+    } else if (result.ok)
+      showDone(result.via, app); // the draft stays until they have really pressed send
+    else if (result.mode === 'preview') showDone('preview', app);
     else showDone('error', app, result.message);
   });
-
-  if (backendReady) $('[data-preview-note]')?.remove();
 }

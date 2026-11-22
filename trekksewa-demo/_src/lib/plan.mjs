@@ -242,20 +242,24 @@ export const parseDate = (s) => {
 export const addDays = (d, n) => new Date(d.getFullYear(), d.getMonth(), d.getDate() + n);
 
 /**
- * Good moments to start a trek, soonest first: early, middle and late in each of the next
- * best (then good) months, from `today` on. Returns [{ date, label, best }].
+ * Good moments to start a trek: the 10th of each of the next best (then good) months, from
+ * `today` on. A month the visitor already named (`wanted`, 1 to 12) always comes first, even
+ * when it is a hard month for this trek, so the answer they gave is never lost.
+ * Returns [{ date, label, best, good, chosen? }].
  */
-export function startIdeas(t, today = new Date(), count = 4) {
+export function startIdeas(t, today = new Date(), count = 4, wanted = 0) {
+  const soonest = addDays(today, 10); // any sooner is too soon to arrange anything
   const out = [];
-  for (let i = 0; i < 18 && out.length < count; i++) {
-    const first = new Date(today.getFullYear(), today.getMonth() + i, 1);
-    const m = first.getMonth() + 1;
-    const best = t.best.includes(m);
-    if (!best && !t.good.includes(m)) continue;
-    const day = new Date(first.getFullYear(), first.getMonth(), 10);
-    if (day < addDays(today, 10)) continue; // too soon to arrange anything
-    out.push({ date: isoDate(day), label: `${MONTHS[m - 1]} ${day.getFullYear()}`, best });
+  let chosen = null;
+  for (let i = 0; i < 18; i++) {
+    const day = new Date(today.getFullYear(), today.getMonth() + i, 10);
+    if (day < soonest) continue;
+    const m = day.getMonth() + 1;
+    const idea = { date: isoDate(day), label: `${MONTHS[m - 1]} ${day.getFullYear()}`, best: t.best.includes(m), good: t.good.includes(m) };
+    if (m === wanted && !chosen) chosen = { ...idea, chosen: true };
+    else if ((idea.best || idea.good) && out.length < count) out.push(idea);
   }
-  // lead with the best months when there are any
-  return out.sort((a, b) => Number(b.best) - Number(a.best) || a.date.localeCompare(b.date)).slice(0, count);
+  // the nearest few months, leading with the best ones when there are any
+  out.sort((a, b) => Number(b.best) - Number(a.best) || a.date.localeCompare(b.date));
+  return [...(chosen ? [chosen] : []), ...out].slice(0, count);
 }
