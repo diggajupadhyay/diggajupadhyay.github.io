@@ -7,7 +7,7 @@ import { MONTHS, num } from './format.mjs';
 // Checked against content/facts.json (teahouseDailyCost) whenever that changes.
 // 2026 agency estimates: Annapurna and Langtang USD 25-50, Everest USD 35-65. The estimate
 // spreads 15% below and 20% above these, which covers those ranges.
-export const FOOD_PER_DAY = { everest: 48, annapurna: 36, mustang: 42, langtang: 36, manaslu: 40, dhaulagiri: 38, eastern: 38, western: 40, gaurishankar: 34, 'kathmandu-rim': 30 };
+export const FOOD_PER_DAY = { everest: 48, annapurna: 36, mustang: 42, langtang: 36, manaslu: 40, dhaulagiri: 38, eastern: 38, western: 40, gaurishankar: 34, kathmandu: 30 };
 // Rupees to the US dollar. Nepal Rastra Bank's rate on 11 November 2026 was 151.89 buying and
 // 152.49 selling. The rupee is pegged to the Indian rupee, so it drifts rather than jumps:
 // look again every few months (nrb.org.np/forex).

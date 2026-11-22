@@ -412,7 +412,15 @@ function init() {
       h('p', { class: 'plan-progress' }, 'Your trek plan'),
       h('h1', { tabindex: '-1' }, t.n),
       h('div', { class: 'plan-when' }, h('strong', {}, `${longFmt.format(start)} to ${longFmt.format(end)}`), h('div', { class: 'plan-when-meta' }, h('span', {}, `${total} days · ${state.people} ${state.people === 1 ? 'person' : 'people'}`), edit('Change dates or people', 'date'))),
-      detail.photo ? h('figure', { class: 'plan-photo' }, h('img', { src: url(`photos/${detail.photo.f}`), alt: detail.photo.a || '', width: '1600', height: '900', style: `object-position:${detail.photo.o || '50% 50%'}` }), h('figcaption', {}, `${detail.photo.c || ''} Photo: ${detail.photo.by}, ${detail.photo.l}.`)) : null,
+      detail.photo
+        ? h(
+            'figure',
+            { class: 'plan-photo' },
+            h('img', { src: url(`photos/${detail.photo.f}`), srcset: `${url(`photos/${detail.photo.sm}`)} 720w, ${url(`photos/${detail.photo.f}`)} ${detail.photo.w}w`, sizes: '(max-width: 760px) 100vw, 56rem', alt: detail.photo.a || '', width: String(detail.photo.w), height: String(detail.photo.h), style: `object-position:${detail.photo.o || '50% 50%'}` }),
+            // the credit the licence asks for: who made it, where it came from, under which terms
+            h('figcaption', {}, `${detail.photo.c || ''} `, h('span', { class: 'photo-credit' }, 'Photo: ', h('a', { href: detail.photo.src, rel: 'noopener' }, detail.photo.by), ', ', h('a', { href: detail.photo.lu, rel: 'noopener license' }, detail.photo.l))),
+          )
+        : null,
       h('p', { class: 'lead' }, detail.sum),
       actions,
       h('nav', { class: 'plan-jump no-print', 'aria-label': 'Parts of this plan' }, ...[['days', 'Day by day'], ['help', 'Who helps you'], ['cost', 'What it costs'], ['papers', 'Permits and papers'], ['ready', 'Before you go'], ['send', 'Get help']].map(([id, label]) => h('a', { href: `#${id}` }, label))),

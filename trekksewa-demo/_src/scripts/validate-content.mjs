@@ -277,6 +277,35 @@ for (const t of treks) {
 }
 for (const r of regions) for (const g of r.gateways || []) if (!places.has(g)) warn('regions.json', `${r.slug}: gateway "${g}" is not defined in places/ (yet)`);
 
+// ---------- photographs ----------
+// A photograph is only used when its licence allows it and the credit is complete, so every
+// gap here is an error, not a warning.
+const photosFile = join(root, 'photos.json');
+if (existsSync(photosFile)) {
+  const doc = readJson(photosFile) || {};
+  const photoDir = join(root, '..', 'static', 'photos');
+  const FREE = /^(CC0|CC BY(-SA)? [1-4]\.\d|Public domain)/i;
+  const entries = Object.entries(doc.photos || {});
+  for (const [key, p] of entries) {
+    const e = (m) => err('photos.json', `${key}: ${m}`);
+    if (!p || typeof p !== 'object') { e('entry is not an object'); continue; }
+    for (const f of ['file', 'small', 'alt', 'caption', 'author', 'licence', 'licenceUrl', 'source']) if (!isStr(p[f])) e(`missing "${f}"`);
+    for (const f of ['file', 'small']) if (isStr(p[f]) && !existsSync(join(photoDir, p[f]))) e(`static/photos/${p[f]} does not exist`);
+    if (!isInt(p.width) || !isInt(p.height) || p.width < 600 || p.height < 300) e('needs "width" and "height" in pixels');
+    if (isStr(p.licence) && !FREE.test(p.licence)) e(`licence "${p.licence}" is not one that allows reuse with credit (CC0, CC BY, CC BY-SA or public domain)`);
+    for (const f of ['licenceUrl', 'source']) if (isStr(p[f]) && !/^https:\/\//.test(p[f])) e(`"${f}" must be an https address`);
+    if (isStr(p.focus) && !/^\d{1,3}% \d{1,3}%$/.test(p.focus)) e(`"focus" should look like "50% 40%"`);
+    const isRegion = key.startsWith('region-') && regionSlugs.has(key.slice(7));
+    if (!trekSlugs.has(key) && !isRegion && !(doc.home || []).includes(key) && !Object.values(doc.regions || {}).includes(key)) warn('photos.json', `${key}: is not a trek, a region or a home picture, so nothing shows it`);
+  }
+  for (const [slug, key] of Object.entries(doc.regions || {})) {
+    if (!regionSlugs.has(slug)) err('photos.json', `regions: "${slug}" is not a region`);
+    if (!(doc.photos || {})[key]) err('photos.json', `regions.${slug}: no photo called "${key}"`);
+  }
+  for (const key of doc.home || []) if (!(doc.photos || {})[key]) err('photos.json', `home: no photo called "${key}"`);
+  if (entries.length && !/^\d{4}-\d{2}-\d{2}$/.test(doc.checked || '')) err('photos.json', 'needs "checked": the day the licences were read, as YYYY-MM-DD');
+}
+
 // ---------- report ----------
 const shown = problems.filter((p) => !only || p.file.includes(only));
 const errors = shown.filter((p) => p.level === 'error');

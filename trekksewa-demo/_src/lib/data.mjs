@@ -123,7 +123,7 @@ export function buildData({ content, config }, pages) {
         food: FOOD_PER_DAY[t.region] ?? 34,
         guide: t.guide,
         access: t.access.summary,
-        photo: t.photo ? { f: t.photo.file, sm: t.photo.small, o: t.photo.focus, a: t.photo.alt, c: t.photo.caption, by: t.photo.author, l: t.photo.licence } : null,
+        photo: t.photo ? { f: t.photo.file, sm: t.photo.small, w: t.photo.width, h: t.photo.height, o: t.photo.focus, a: t.photo.alt, c: t.photo.caption, by: t.photo.author, l: t.photo.licence, lu: t.photo.licenceUrl, src: t.photo.source } : null,
         pkg: t.package ? { low: t.package.low, high: t.package.high, days: t.package.days, includes: t.package.includes || [], sampled: t.package.sampled || 0 } : null,
         permits: t.permitObjs.map((p) => ({ id: p.id, name: p.name, short: p.short, fee: permitFee(p), fees: p.fees, where: p.where, verified: p.verified !== false })),
         transport: t.transport ? t.transport.usd : null,

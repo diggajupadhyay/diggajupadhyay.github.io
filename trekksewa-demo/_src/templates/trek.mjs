@@ -169,7 +169,7 @@ export function trekPage(ctx, t) {
       ${noticesBlock(noticesFor(content, { trek: t.slug }))}
       ${t.photo
         ? html`<figure class="trek-photo-fig">
-            <img src="${u(`photos/${t.photo.file}`)}" alt="${t.photo.alt}" width="${t.photo.width}" height="${t.photo.height}" style="object-position:${t.photo.focus || '50% 50%'}" fetchpriority="high">
+            <img src="${u(`photos/${t.photo.file}`)}" srcset="${u(`photos/${t.photo.small}`)} 720w, ${u(`photos/${t.photo.file}`)} ${t.photo.width}w" sizes="(max-width: 760px) 100vw, 52rem" alt="${t.photo.alt}" width="${t.photo.width}" height="${t.photo.height}" style="object-position:${t.photo.focus || '50% 50%'}" fetchpriority="high">
             <figcaption>${t.photo.caption} <span class="photo-credit">Photo: <a href="${t.photo.source}" rel="noopener">${t.photo.author}</a>, <a href="${t.photo.licenceUrl}" rel="noopener license">${t.photo.licence}</a></span></figcaption>
           </figure>`
         : ''}
