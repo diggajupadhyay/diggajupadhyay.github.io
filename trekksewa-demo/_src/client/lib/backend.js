@@ -1,4 +1,4 @@
-/* global __BACKEND__ */
+/* global __BACKEND__, __CONTACT__ */
 // The one place that talks to a server. The site is static, so until a backend is configured
 // in site.config.json nothing is sent anywhere and callers get { mode: 'preview' } back.
 //
@@ -55,4 +55,63 @@ export async function listPartners({ role, region, limit = 60 } = {}) {
   } catch {
     return [];
   }
+}
+
+// ------------------------------------------------------------------ requests from trekkers
+
+const contact = typeof __CONTACT__ === 'object' && __CONTACT__ ? __CONTACT__ : {};
+
+/**
+ * Where a trekker's request for help with a plan goes. In order: the database when one is
+ * configured, else TrekkSewa's WhatsApp number, else its email address, else nowhere yet
+ * ({ kind: '' }), in which case the page offers to share the plan with someone of the
+ * trekker's own choosing instead.
+ */
+export function requestChannel() {
+  if (backendReady) return { kind: 'database' };
+  const digits = String(contact.whatsapp || '').replace(/\D/g, '');
+  if (digits.length >= 8) return { kind: 'whatsapp', to: digits };
+  if (/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(contact.email || '')) return { kind: 'email', to: contact.email };
+  return { kind: '' };
+}
+
+const requestText = (r) =>
+  [
+    'Request from TrekkSewa',
+    `Name: ${r.name}`,
+    r.email ? `Email: ${r.email}` : '',
+    r.whatsapp ? `WhatsApp/phone: ${r.whatsapp}` : '',
+    r.country ? `Travelling from: ${r.country}` : '',
+    r.wants.length ? `Please arrange: ${r.wants.join(', ')}` : '',
+    r.message ? `Note: ${r.message}` : '',
+    '',
+    r.plan_text,
+  ]
+    .filter((line, i, all) => line !== '' || (i > 0 && all[i - 1] !== ''))
+    .join('\n');
+
+/**
+ * Send a request for help with a trek plan.
+ * Returns { ok: true, via: 'database' | 'whatsapp' | 'email' } | { ok: false, mode, message }.
+ */
+export async function submitTripRequest(request) {
+  const channel = requestChannel();
+  if (channel.kind === 'database') {
+    try {
+      const res = await fetch(endpoint('trip_requests'), { method: 'POST', headers: headers({ Prefer: 'return=minimal' }), body: JSON.stringify(request) });
+      if (res.ok) return { ok: true, via: 'database' };
+      return { ok: false, mode: 'error', message: `The server answered ${res.status}. Please try again in a moment.` };
+    } catch {
+      return { ok: false, mode: 'error', message: 'No connection. Please try again when you have signal.' };
+    }
+  }
+  if (channel.kind === 'whatsapp') {
+    window.open(`https://wa.me/${channel.to}?text=${encodeURIComponent(requestText(request))}`, '_blank', 'noopener');
+    return { ok: true, via: 'whatsapp' };
+  }
+  if (channel.kind === 'email') {
+    location.href = `mailto:${channel.to}?subject=${encodeURIComponent(`Trek request: ${request.trek_name}, ${request.start_date}`)}&body=${encodeURIComponent(requestText(request))}`;
+    return { ok: true, via: 'email' };
+  }
+  return { ok: false, mode: 'preview', message: 'Requests are not switched on yet.' };
 }

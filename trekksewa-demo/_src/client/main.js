@@ -20,6 +20,30 @@ on(document, 'click', '[data-theme-toggle]', () => {
   }
 });
 
+// ---------- text size ----------
+// Three sizes, remembered on this device. The whole page scales, because every measurement in
+// the stylesheet is relative to the root size.
+const SIZES = ['', 'l', 'xl'];
+const SIZE_NAME = { '': 'normal', l: 'large', xl: 'largest' };
+function setTextSize(size, announce = true) {
+  if (size) doc.dataset.text = size;
+  else doc.removeAttribute('data-text');
+  try {
+    localStorage.setItem('ts-text', size);
+  } catch {
+    /* private mode: the choice lasts for this page only */
+  }
+  for (const b of $$('[data-text-set]')) {
+    const active = (b.dataset.textSet || '') === size;
+    b.classList.toggle('is-on', active);
+    b.setAttribute('aria-pressed', String(active));
+  }
+  if (announce) toast(`Text size: ${SIZE_NAME[size]}`);
+}
+on(document, 'click', '[data-text-size]', () => setTextSize(SIZES[(SIZES.indexOf(doc.dataset.text || '') + 1) % SIZES.length]));
+on(document, 'click', '[data-text-set]', (e, el) => setTextSize(el.dataset.textSet || ''));
+setTextSize(doc.dataset.text || '', false);
+
 // ---------- header dropdown ----------
 const menuBtn = $('[data-menu]');
 if (menuBtn) {

@@ -37,7 +37,7 @@
   /* ink */
   --ink: #16232b;
   --ink-2: #3b4a53;
-  --ink-3: #5d6a73;
+  --ink-3: #4a5760; /* 7:1 on paper: older eyes need more than the 4.5:1 minimum */
 
   /* brand */
   --teal-900: #073b3d;
@@ -103,8 +103,9 @@
   --s-8: 4rem;
   --s-9: 6rem;
 
-  --fs-0: 0.8125rem;
-  --fs-1: 0.875rem;
+  /* The root is 17px (see base.css), so nothing here is smaller than about 15px on screen. */
+  --fs-0: 0.875rem;
+  --fs-1: 0.9375rem;
   --fs-2: 1rem;
   --fs-3: 1.125rem;
   --fs-4: clamp(1.2rem, 1.1rem + 0.5vw, 1.4rem);

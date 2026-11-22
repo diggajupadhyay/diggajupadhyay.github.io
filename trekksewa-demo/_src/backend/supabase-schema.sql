@@ -47,6 +47,48 @@ create policy "public can apply" on public.partner_applications
 
 create index if not exists partner_applications_status_idx on public.partner_applications (status, created_at desc);
 
+-- ------------------------------------------------------------------ trip requests (private)
+
+-- A trekker's request for help with a plan made on the site ("Plan my trek").
+create table if not exists public.trip_requests (
+  id            uuid primary key default gen_random_uuid(),
+  created_at    timestamptz not null default now(),
+  trek          text not null check (char_length(trek) between 2 and 80),
+  trek_name     text not null check (char_length(trek_name) between 2 and 120),
+  start_date    date not null,
+  end_date      date,
+  days          integer not null check (days between 1 and 90),
+  people        integer not null check (people between 1 and 40),
+  help          text not null check (help in ('agency', 'guide-porter', 'guide', 'porter', 'self')),
+  wants         text[] not null default '{}' check (cardinality(wants) <= 12),
+  name          text not null check (char_length(name) between 1 and 120),
+  email         text check (email is null or email = '' or (char_length(email) <= 160 and email like '%_@_%')),
+  whatsapp      text check (whatsapp is null or char_length(whatsapp) <= 40),
+  country       text check (country is null or char_length(country) <= 80),
+  message       text check (message is null or char_length(message) <= 2000),
+  estimate_usd  text check (estimate_usd is null or char_length(estimate_usd) <= 40),
+  plan_url      text check (plan_url is null or char_length(plan_url) <= 600),
+  plan_text     text check (plan_text is null or char_length(plan_text) <= 8000),
+  -- set by admins only
+  status        text not null default 'new' check (status in ('new', 'replied', 'matched', 'booked', 'closed')),
+  admin_notes   text,
+  -- someone has to be reachable
+  constraint trip_requests_reachable check (coalesce(email, '') <> '' or coalesce(whatsapp, '') <> '')
+);
+
+comment on table public.trip_requests is 'Requests for help from the Plan my trek page. Holds personal contact details: never readable with the anon key.';
+
+alter table public.trip_requests enable row level security;
+
+drop policy if exists "public can ask for help" on public.trip_requests;
+create policy "public can ask for help" on public.trip_requests
+  for insert to anon, authenticated
+  with check (status = 'new' and admin_notes is null);
+
+-- No select, update or delete policy: the anon key can write a new row and nothing else.
+
+create index if not exists trip_requests_status_idx on public.trip_requests (status, created_at desc);
+
 -- ------------------------------------------------------------------ partners (published profiles)
 
 create table if not exists public.partners (

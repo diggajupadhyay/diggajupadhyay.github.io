@@ -1,6 +1,7 @@
 // JSON files the browser loads on demand (search index, trek list for filters and tools).
 
 import { PLACE_TYPE_LABEL, num, daysRange } from './format.mjs';
+import { FOOD_PER_DAY, NPR_PER_USD, insuranceTier } from './plan.mjs';
 
 const TOOLS = [
   ['safety/altitude-check/', 'Altitude sickness check', 'Lake Louise AMS self-check', 'ams acute mountain sickness headache symptoms hace hape'],
@@ -9,7 +10,7 @@ const TOOLS = [
   ['tools/gpx/', 'GPX viewer', 'Load a track, see the profile, get off-track alerts', 'gps map track route import'],
   ['tools/compare/', 'Compare treks', 'Two or three routes side by side', 'versus vs difference which trek choose'],
   ['safety/insurance/', 'Insurance check', 'What your policy must cover for your trek', 'travel insurance helicopter evacuation cover altitude limit'],
-  ['tools/planner/', 'Trek planner', 'Put dates on an itinerary and export a calendar', 'dates calendar schedule plan'],
+  ['plan/', 'Plan my trek', 'Step by step: choose a trek, set dates, see where you sleep and what it costs', 'planner plan dates calendar schedule itinerary book guide porter agency lodge hotel help choose which trek'],
   ['tools/packing/', 'Packing list', 'A checklist built for your trek, season and altitude', 'gear kit equipment checklist what to pack'],
   ['tools/budget/', 'Budget estimator', 'What a trek really costs, item by item', 'cost price money permits guide porter'],
   ['permits/', 'Permits & fees', 'Every trekking permit in Nepal, with current fees', 'tims acap national park restricted area permit cost'],
@@ -21,7 +22,25 @@ const TOOLS = [
   ['partners/', 'Join as a partner', 'List your services on TrekkSewa', 'register enroll apply guide porter agency shop'],
 ];
 
-export function buildData({ content }, pages) {
+/** "About USD 25–40 a day" -> [25, 40]; falls back when the wording has no dollar range. */
+function usdRange(fact, fallback) {
+  const m = String(fact?.value || '').match(/USD\s*(\d+)\s*[–-]\s*(\d+)/);
+  return m ? [Number(m[1]), Number(m[2])] : fallback;
+}
+
+/** Where you can sleep at a stop, in a form small enough to ship for every night of a trek. */
+function stayAt(place) {
+  const s = place.services;
+  const fac = place.facilities || [];
+  if (s && s.stayCount) return { c: s.stayCount, n: s.stay.slice(0, 6).map((x) => x.n) };
+  if (place.type === 'city') return { city: 1 };
+  if (fac.includes('lodges') || fac.includes('homestays')) return { some: fac.includes('lodges') ? 'lodges' : 'homestays' };
+  if (fac.includes('camping')) return { camp: 1 };
+  return null;
+}
+
+export function buildData({ content, config }, pages) {
+  const featuredRank = new Map((config?.featuredTreks || []).map((s, i) => [s, i + 1]));
   const featured = new Set(content.treks.slice(0, 8).map((t) => t.slug));
   const search = [
     ...content.treks.map((t) => ({
@@ -63,7 +82,78 @@ export function buildData({ content }, pages) {
     gr: t.guide.rule,
     gw: t.gatewayPlace.alt,
     it: t.itinerary.map((d) => ({ t: d.title, to: d.toPlace.name, a: d.sleep, h: d.hours, k: d.kind, m: d.mode === 'walk' ? undefined : d.mode })),
+    // for the step-by-step planner
+    tag: t.tagline,
+    hi: t.analysis.maxSleep ? t.analysis.maxSleep.alt : Math.max(...t.itinerary.map((d) => d.sleep)),
+    ...(t.itinerary.some((d) => d.mode === 'flight') ? { fl: 1 } : {}),
+    ...(t.style.includes('camping') && !t.style.includes('teahouse') ? { cg: 1 } : {}),
+    ...(featuredRank.has(t.slug) ? { f: featuredRank.get(t.slug) } : {}),
+    ...(t.photo ? { ph: { f: t.photo.small, o: t.photo.focus, a: t.photo.alt } } : {}),
+    ...(t.package ? { pk: [t.package.low, t.package.high] } : {}),
   }));
+
+  // one file per trek with everything the plan summary shows: loaded only for the chosen trek
+  const permitFee = (p) => {
+    const fee = p.fees.find((f) => /foreign/i.test(f.who)) || p.fees[0];
+    return fee ? `${fee.amount}${fee.per ? ` per ${fee.per.replace(/^per\s+/i, '')}` : ''}` : '';
+  };
+  const detail = Object.fromEntries(
+    content.treks.map((t) => [
+      `data/trek/${t.slug}.json`,
+      {
+        s: t.slug,
+        n: t.name,
+        rn: t.regionObj.name,
+        sum: t.summary,
+        gateway: t.gatewayPlace.name,
+        start: t.startPlace.name,
+        end: t.endPlace.name,
+        max: { m: t.maxAlt.m, name: t.maxPlace.name },
+        maxSleep: t.analysis.maxSleep ? { m: t.analysis.maxSleep.alt, name: t.analysis.maxSleep.label } : null,
+        insure: insuranceTier(t.maxAlt.m),
+        food: FOOD_PER_DAY[t.region] ?? 34,
+        guide: t.guide,
+        access: t.access.summary,
+        photo: t.photo ? { f: t.photo.file, sm: t.photo.small, o: t.photo.focus, a: t.photo.alt, c: t.photo.caption, by: t.photo.author, l: t.photo.licence } : null,
+        pkg: t.package ? { low: t.package.low, high: t.package.high, days: t.package.days, includes: t.package.includes || [], sampled: t.package.sampled || 0 } : null,
+        permits: t.permitObjs.map((p) => ({ id: p.id, name: p.name, short: p.short, fee: permitFee(p), fees: p.fees, where: p.where, verified: p.verified !== false })),
+        transport: t.transport ? t.transport.usd : null,
+        transportText: t.transport ? t.transport.text : '',
+        transportExtra: t.transport ? t.transport.extra : '',
+        cash: t.routePlaces.filter((p) => p.slug !== t.gateway && (p.facilities || []).includes('atm')).map((p) => p.name),
+        tips: (t.tips || []).slice(0, 5),
+        days: t.itinerary.map((d) => ({
+          d: d.day,
+          t: d.title,
+          f: d.fromPlace.name,
+          to: d.toPlace.name,
+          ts: d.to,
+          a: d.sleep,
+          h: d.hours,
+          k: d.kind,
+          ...(d.mode !== 'walk' ? { m: d.mode } : {}),
+          ...(d.km ? { km: d.km } : {}),
+          note: d.note || '',
+          lvl: d.level,
+          why: d.reasons || [],
+          stay: stayAt(d.toPlace),
+          ...(d.toPlace.services?.health?.length ? { med: d.toPlace.services.health.filter((x) => x.n).slice(0, 2).map((x) => x.n) } : {}),
+        })),
+      },
+    ]),
+  );
+
+  // figures every plan needs: daily rates, visa, who to call, where requests go
+  const plan = {
+    npr: NPR_PER_USD,
+    rates: { guide: usdRange(content.facts.guideDailyRate, [25, 40]), porter: usdRange(content.facts.porterDailyRate, [18, 25]) },
+    ratesVerified: content.facts.guideDailyRate?.verified === true && content.facts.porterDailyRate?.verified === true,
+    visa: content.facts.touristVisa?.value || '',
+    rescue: content.facts.helicopterRescueCost?.value || '',
+    emergency: (content.emergency?.national || []).slice(0, 3).map((n) => ({ name: n.name, number: n.number })),
+    contact: { email: config?.contact?.email || '', whatsapp: config?.contact?.whatsapp || '' },
+    asOf: { market: content.sources.market, lodges: content.sources.services },
+  };
 
   // positions we could not confirm are not published; src says where a position comes from
   // ("osm" = OpenStreetMap, under the Open Database Licence; "own" = our estimate)
@@ -73,5 +163,7 @@ export function buildData({ content }, pages) {
     'data/search.json': search,
     'data/treks.json': treks,
     'data/places.json': places,
+    'data/plan.json': plan,
+    ...detail,
   };
 }

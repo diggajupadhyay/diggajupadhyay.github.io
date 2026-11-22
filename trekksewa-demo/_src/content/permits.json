@@ -9,9 +9,21 @@
       "kind": "national-park",
       "authority": "Department of National Parks and Wildlife Conservation",
       "fees": [
-        { "who": "Foreign nationals", "amount": "NPR 3,000", "per": "person, single entry" },
-        { "who": "SAARC nationals", "amount": "NPR 1,500", "per": "person, single entry" },
-        { "who": "Nepali citizens", "amount": "NPR 100", "per": "person" }
+        {
+          "who": "Foreign nationals",
+          "amount": "NPR 3,000",
+          "per": "person, single entry"
+        },
+        {
+          "who": "SAARC nationals",
+          "amount": "NPR 1,500",
+          "per": "person, single entry"
+        },
+        {
+          "who": "Nepali citizens",
+          "amount": "NPR 100",
+          "per": "person"
+        }
       ],
       "where": "At the park gate in Monjo, or in advance at the park counter in the Tourist Service Centre, Bhrikutimandap, Kathmandu.",
       "notes": "Children under 10 enter free. Nepali press reports from 2024 to 2026 give the same NPR 3,000, 1,500 and 100. Whether 13% VAT is added for foreigners is disputed: an independent guide says tax has been folded into park fees since 2019, while several agency sites still quote NPR 3,390. We found no official statement, so carry the difference in cash. Keep the permit handy; it is checked at the gate.",
@@ -19,10 +31,22 @@
       "verified": true,
       "confidence": "high",
       "sources": [
-        { "title": "Onlinekhabar: Sagarmatha National Park revenue report with entry fees, January 2024 (in Nepali)", "url": "https://www.onlinekhabar.com/2024/01/1425508" },
-        { "title": "DC Nepal: Sagarmatha National Park visitor report, October 2026 (in Nepali)", "url": "https://www.dcnepal.com/2026/10/809932/" },
-        { "title": "Nagarik Sewa: 9,000 tourists in Sagarmatha in one month, with entry fees, November 2024 (in Nepali)", "url": "http://nagariksewa.com/news/77F6rOWr-2024-11-06" },
-        { "title": "The Longest Way Home: Trekking entry fees in Nepal, 2026 guide (VAT note)", "url": "https://www.thelongestwayhome.com/travel-guides/nepal/permit-entry-fees-national-parks.html" }
+        {
+          "title": "Onlinekhabar: Sagarmatha National Park revenue report with entry fees, January 2024 (in Nepali)",
+          "url": "https://www.onlinekhabar.com/2024/01/1425508"
+        },
+        {
+          "title": "DC Nepal: Sagarmatha National Park visitor report, October 2026 (in Nepali)",
+          "url": "https://www.dcnepal.com/2026/10/809932/"
+        },
+        {
+          "title": "Nagarik Sewa: 9,000 tourists in Sagarmatha in one month, with entry fees, November 2024 (in Nepali)",
+          "url": "http://nagariksewa.com/news/77F6rOWr-2024-11-06"
+        },
+        {
+          "title": "The Longest Way Home: Trekking entry fees in Nepal, 2026 guide (VAT note)",
+          "url": "https://www.thelongestwayhome.com/travel-guides/nepal/permit-entry-fees-national-parks.html"
+        }
       ]
     },
     {
@@ -32,8 +56,16 @@
       "kind": "local",
       "authority": "Khumbu Pasang Lhamu Rural Municipality",
       "fees": [
-        { "who": "Foreign nationals", "amount": "NPR 3,000", "per": "person" },
-        { "who": "SAARC and Chinese nationals", "amount": "NPR 2,000", "per": "person" }
+        {
+          "who": "Foreign nationals",
+          "amount": "NPR 3,000",
+          "per": "person"
+        },
+        {
+          "who": "SAARC and Chinese nationals",
+          "amount": "NPR 2,000",
+          "per": "person"
+        }
       ],
       "where": "At the municipality's tourist information centre in Lukla when you land, or at the Monjo checkpoint if you walk in from the road. It cannot be bought in Kathmandu.",
       "notes": "The municipality calls it a Trek Card: staff take your passport details and a photo, which takes about 15 minutes. It has stood in for the TIMS card in Khumbu since October 2017, when the fee was NPR 2,000. The municipality's own page now lists NPR 3,000, with NPR 2,000 for SAARC and Chinese passport holders, and its 2024–25 visitor and revenue figures fit that split. A few agency pages say every foreigner pays NPR 3,000. Bring rupees in cash.",
@@ -41,9 +73,18 @@
       "verified": true,
       "confidence": "high",
       "sources": [
-        { "title": "Khumbu Pasang Lhamu Rural Municipality: Trek-Card (official fee and where it is issued)", "url": "https://khumbupasanglhamumun.gov.np/content/trek-card" },
-        { "title": "Kantipur: Khumbu Pasanglhamu Rural Municipality collected 150 million in tourism fees, May 2025", "url": "https://ekantipur.com/koshi-pradesh/2025/05/26/en/khumbu-pasanglhamu-rural-municipality-collected-150-million-revenue-as-tourism-fee-47-26.html" },
-        { "title": "The Kathmandu Post: Rural municipality starts collecting tourism fee in Everest region, October 2017", "url": "https://kathmandupost.com/money/2017/10/05/rural-municipality-starts-collecting-tourism-fee-in-everest-region" }
+        {
+          "title": "Khumbu Pasang Lhamu Rural Municipality: Trek-Card (official fee and where it is issued)",
+          "url": "https://khumbupasanglhamumun.gov.np/content/trek-card"
+        },
+        {
+          "title": "Kantipur: Khumbu Pasanglhamu Rural Municipality collected 150 million in tourism fees, May 2025",
+          "url": "https://ekantipur.com/koshi-pradesh/2025/05/26/en/khumbu-pasanglhamu-rural-municipality-collected-150-million-revenue-as-tourism-fee-47-26.html"
+        },
+        {
+          "title": "The Kathmandu Post: Rural municipality starts collecting tourism fee in Everest region, October 2017",
+          "url": "https://kathmandupost.com/money/2017/10/05/rural-municipality-starts-collecting-tourism-fee-in-everest-region"
+        }
       ]
     },
     {
@@ -53,8 +94,16 @@
       "kind": "conservation-area",
       "authority": "National Trust for Nature Conservation",
       "fees": [
-        { "who": "Foreign nationals", "amount": "NPR 3,000", "per": "person, single entry" },
-        { "who": "SAARC nationals", "amount": "NPR 1,000", "per": "person, single entry" }
+        {
+          "who": "Foreign nationals",
+          "amount": "NPR 3,000",
+          "per": "person, single entry"
+        },
+        {
+          "who": "SAARC nationals",
+          "amount": "NPR 1,000",
+          "per": "person, single entry"
+        }
       ],
       "where": "Online at NTNC's e-permit site, or in person at the Tourist Service Centre in Bhrikutimandap, Kathmandu, and the Nepal Tourism Board office in Pokhara. A permit issued at a trail checkpost costs double.",
       "notes": "The fee includes tax and children under 10 do not need a permit. Paying online by card adds a 2.9% gateway charge. Covers every trek in the Annapurna range and Lower Mustang; Upper Mustang and Nar Phu need a restricted-area permit as well.",
@@ -62,8 +111,14 @@
       "verified": true,
       "confidence": "high",
       "sources": [
-        { "title": "NTNC online entry permit portal (fees, tax, checkpost surcharge)", "url": "https://epermit.ntnc.org.np/" },
-        { "title": "NTNC: Annapurna Conservation Area Project", "url": "https://ntnc.org.np/project/annapurna-conservation-area-project-acap" }
+        {
+          "title": "NTNC online entry permit portal (fees, tax, checkpost surcharge)",
+          "url": "https://epermit.ntnc.org.np/"
+        },
+        {
+          "title": "NTNC: Annapurna Conservation Area Project",
+          "url": "https://ntnc.org.np/project/annapurna-conservation-area-project-acap"
+        }
       ]
     },
     {
@@ -73,8 +128,16 @@
       "kind": "conservation-area",
       "authority": "National Trust for Nature Conservation",
       "fees": [
-        { "who": "Foreign nationals", "amount": "NPR 3,000", "per": "person, single entry" },
-        { "who": "SAARC nationals", "amount": "NPR 1,000", "per": "person, single entry" }
+        {
+          "who": "Foreign nationals",
+          "amount": "NPR 3,000",
+          "per": "person, single entry"
+        },
+        {
+          "who": "SAARC nationals",
+          "amount": "NPR 1,000",
+          "per": "person, single entry"
+        }
       ],
       "where": "Online at NTNC's e-permit site or at the Tourist Service Centre in Bhrikutimandap, Kathmandu. In practice your agency arranges it with the restricted-area permit.",
       "notes": "The fee includes tax and children under 10 do not need a permit. The Manaslu circuit finishes inside the Annapurna Conservation Area, so you need an ACAP as well.",
@@ -82,7 +145,10 @@
       "verified": true,
       "confidence": "high",
       "sources": [
-        { "title": "NTNC online entry permit portal (ACAP, MCAP and GCAP fees)", "url": "https://epermit.ntnc.org.np/" }
+        {
+          "title": "NTNC online entry permit portal (ACAP, MCAP and GCAP fees)",
+          "url": "https://epermit.ntnc.org.np/"
+        }
       ]
     },
     {
@@ -92,9 +158,21 @@
       "kind": "national-park",
       "authority": "Department of National Parks and Wildlife Conservation",
       "fees": [
-        { "who": "Foreign nationals", "amount": "NPR 3,000", "per": "person, single entry" },
-        { "who": "SAARC nationals", "amount": "NPR 1,500", "per": "person, single entry" },
-        { "who": "Nepali citizens", "amount": "NPR 100", "per": "person" }
+        {
+          "who": "Foreign nationals",
+          "amount": "NPR 3,000",
+          "per": "person, single entry"
+        },
+        {
+          "who": "SAARC nationals",
+          "amount": "NPR 1,500",
+          "per": "person, single entry"
+        },
+        {
+          "who": "Nepali citizens",
+          "amount": "NPR 100",
+          "per": "person"
+        }
       ],
       "where": "At the park checkpoint in Dhunche on the drive to Syabrubesi, or in advance at the Tourist Service Centre in Bhrikutimandap, Kathmandu.",
       "notes": "The Nepal Tourism Board and current guides agree on NPR 3,000 and NPR 1,500. Some agencies add 13% VAT to the foreigner fee (NPR 3,390); we could not confirm that it is charged, so carry the difference. NPR 100 for Nepali citizens is the standard mountain-park rate; the tourism board's page still shows an older figure.",
@@ -102,9 +180,18 @@
       "verified": true,
       "confidence": "high",
       "sources": [
-        { "title": "Nepal Tourism Board: Langtang National Park", "url": "https://ntb.gov.np/en/langtang" },
-        { "title": "Magical Nepal: Permits required for a Langtang trek, 2026", "url": "https://www.magicalnepal.com/travel-guide/langtang/permits-required-for-a-langtang-trek/" },
-        { "title": "The Longest Way Home: Trekking entry fees in Nepal, 2026 guide", "url": "https://www.thelongestwayhome.com/travel-guides/nepal/permit-entry-fees-national-parks.html" }
+        {
+          "title": "Nepal Tourism Board: Langtang National Park",
+          "url": "https://ntb.gov.np/en/langtang"
+        },
+        {
+          "title": "Magical Nepal: Permits required for a Langtang trek, 2026",
+          "url": "https://www.magicalnepal.com/travel-guide/langtang/permits-required-for-a-langtang-trek/"
+        },
+        {
+          "title": "The Longest Way Home: Trekking entry fees in Nepal, 2026 guide",
+          "url": "https://www.thelongestwayhome.com/travel-guides/nepal/permit-entry-fees-national-parks.html"
+        }
       ]
     },
     {
@@ -114,9 +201,21 @@
       "kind": "national-park",
       "authority": "Department of National Parks and Wildlife Conservation",
       "fees": [
-        { "who": "Foreign nationals", "amount": "NPR 1,000", "per": "person, per day and entry" },
-        { "who": "SAARC nationals", "amount": "NPR 600", "per": "person, per day and entry" },
-        { "who": "Nepali citizens", "amount": "NPR 100", "per": "person, per day and entry" }
+        {
+          "who": "Foreign nationals",
+          "amount": "NPR 1,000",
+          "per": "person, per day and entry"
+        },
+        {
+          "who": "SAARC nationals",
+          "amount": "NPR 600",
+          "per": "person, per day and entry"
+        },
+        {
+          "who": "Nepali citizens",
+          "amount": "NPR 100",
+          "per": "person, per day and entry"
+        }
       ],
       "where": "At the park gate, for example at Sundarijal.",
       "notes": "The park's own fee table charges per day and says SAARC and other foreign visitors must go in with a nature guide. We could not confirm how that is applied to trekkers walking through from Sundarijal to Chisapani. Bicycles and vehicles pay extra.",
@@ -124,7 +223,10 @@
       "verified": true,
       "confidence": "high",
       "sources": [
-        { "title": "Shivapuri Nagarjun National Park: entry fees (official, in Nepali)", "url": "https://www.snnp.gov.np/pages/fees/" }
+        {
+          "title": "Shivapuri Nagarjun National Park: entry fees (official, in Nepali)",
+          "url": "https://www.snnp.gov.np/pages/fees/"
+        }
       ]
     },
     {
@@ -134,8 +236,16 @@
       "kind": "conservation-area",
       "authority": "National Trust for Nature Conservation",
       "fees": [
-        { "who": "Foreign nationals", "amount": "NPR 3,000", "per": "person, single entry" },
-        { "who": "SAARC nationals", "amount": "NPR 1,000", "per": "person, single entry" }
+        {
+          "who": "Foreign nationals",
+          "amount": "NPR 3,000",
+          "per": "person, single entry"
+        },
+        {
+          "who": "SAARC nationals",
+          "amount": "NPR 1,000",
+          "per": "person, single entry"
+        }
       ],
       "where": "Online at NTNC's e-permit site or at the Tourist Service Centre in Bhrikutimandap, Kathmandu. A permit issued at a trail checkpost costs double.",
       "notes": "The fee includes tax and children under 10 do not need a permit. NTNC lists Rolwaling and Tsho Rolpa, Kalinchowk and the Shivalaya walk-in towards Everest under this permit. Upper Rolwaling needs the Dolakha restricted-area permit too.",
@@ -143,8 +253,14 @@
       "verified": true,
       "confidence": "high",
       "sources": [
-        { "title": "NTNC online entry permit portal (ACAP, MCAP and GCAP fees)", "url": "https://epermit.ntnc.org.np/" },
-        { "title": "NTNC: Gaurishankar Conservation Area Project", "url": "https://ntnc.org.np/project/gaurishankar-conservation-area-project-gcap" }
+        {
+          "title": "NTNC online entry permit portal (ACAP, MCAP and GCAP fees)",
+          "url": "https://epermit.ntnc.org.np/"
+        },
+        {
+          "title": "NTNC: Gaurishankar Conservation Area Project",
+          "url": "https://ntnc.org.np/project/gaurishankar-conservation-area-project-gcap"
+        }
       ]
     },
     {
@@ -154,18 +270,40 @@
       "kind": "national-park",
       "authority": "Department of National Parks and Wildlife Conservation",
       "fees": [
-        { "who": "Foreign nationals", "amount": "NPR 3,000", "per": "person, single entry" },
-        { "who": "SAARC nationals", "amount": "NPR 1,500", "per": "person, single entry" },
-        { "who": "Nepali citizens", "amount": "NPR 100", "per": "person (unconfirmed)" }
+        {
+          "who": "Foreign nationals",
+          "amount": "NPR 3,000",
+          "per": "person, single entry"
+        },
+        {
+          "who": "SAARC nationals",
+          "amount": "NPR 1,500",
+          "per": "person, single entry"
+        },
+        {
+          "who": "Nepali citizens",
+          "amount": "NPR 100",
+          "per": "person"
+        }
       ],
       "where": "Tourist Service Centre in Bhrikutimandap, Kathmandu, or the park entry posts at Num and Seduwa on the trail.",
-      "notes": "Children under 10 are exempt. Foreigner and SAARC rates match the Nepal Tourism Board page; whether VAT is added on top is unconfirmed. Nepali citizens are quoted NPR 100 by a current agency guide, while the board's page still shows NPR 25. Agencies also describe a separate charge or permit for Makalu Rural Municipality but quote it inconsistently, from NPR 2,000 to USD 20 a week, so ask your agency what applies on your route.",
+      "notes": "Children under 10 are exempt. All three rates match the Nepal Tourism Board's current fee table; whether VAT is added on top is unconfirmed. Agencies also describe a separate charge or permit for Makalu Rural Municipality but quote it inconsistently, from NPR 2,000 to USD 20 a week, so ask your agency what applies on your route.",
       "needsAgency": false,
       "verified": true,
       "confidence": "medium",
       "sources": [
-        { "title": "Nepal Tourism Board: Makalu Barun National Park", "url": "https://ntb.gov.np/en/makalu-barun-national-park" },
-        { "title": "Himalayan360: Makalu Base Camp trek permit", "url": "https://himalayan360.com/permit-for-makalu-base-camp-trek/" }
+        {
+          "title": "Nepal Tourism Board: Park Entry Fees (fee table, read 22 November 2026)",
+          "url": "https://ntb.gov.np/en/plan-your-trip/before-you-come/park-entry-fees"
+        },
+        {
+          "title": "Nepal Tourism Board: Makalu Barun National Park",
+          "url": "https://ntb.gov.np/en/makalu-barun-national-park"
+        },
+        {
+          "title": "Himalayan360: Makalu Base Camp trek permit",
+          "url": "https://himalayan360.com/permit-for-makalu-base-camp-trek/"
+        }
       ]
     },
     {
@@ -175,18 +313,44 @@
       "kind": "conservation-area",
       "authority": "Kanchenjunga Conservation Area Management Council",
       "fees": [
-        { "who": "Foreign nationals", "amount": "NPR 2,000", "per": "person, single entry" },
-        { "who": "SAARC nationals", "amount": "NPR 500", "per": "person, single entry (unconfirmed)" }
+        {
+          "who": "Foreign nationals",
+          "amount": "NPR 2,000",
+          "per": "person, single entry"
+        },
+        {
+          "who": "SAARC nationals",
+          "amount": "NPR 500",
+          "per": "person, single entry"
+        },
+        {
+          "who": "Nepali citizens",
+          "amount": "NPR 100",
+          "per": "person"
+        }
       ],
       "where": "Tourist Service Centre in Bhrikutimandap, Kathmandu, normally arranged by your agency with the restricted-area permit. Foreign trekkers are also registered at check posts on the trail, for example at Ghunsa.",
-      "notes": "NPR 2,000 for foreigners is consistent across the Nepal Tourism Board and most agencies. The SAARC rate is less certain: most agencies say NPR 500, the tourism board's page says NPR 200. A few agency pages list NPR 3,000, which is the NTNC rate and does not apply here, because this area is run by a local council under the Department of National Parks.",
+      "notes": "NPR 2,000 for foreigners, NPR 500 for SAARC nationals and NPR 100 for Nepali citizens are the figures in the Nepal Tourism Board's current fee table; children under 10 are free. A few agency pages list NPR 3,000, which is the NTNC rate and does not apply here, because this area is run by a local council under the Department of National Parks.",
       "needsAgency": false,
       "verified": true,
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        { "title": "Nepal Tourism Board: Kanchenjunga Conservation Area", "url": "https://ntb.gov.np/en/kanchenjunga-conservation-area-" },
-        { "title": "Xtrekka: Nepal trekking permits 2026, costs and rules by trek", "url": "https://www.xtrekka.com/blogs/nepal-trekking-permits" },
-        { "title": "Places Nepal: Kanchenjunga trek permits, 2026 rules", "url": "https://www.placesnepal.com/blog/kanchenjunga-circuit-trek-permits" }
+        {
+          "title": "Nepal Tourism Board: Park Entry Fees (fee table, read 22 November 2026)",
+          "url": "https://ntb.gov.np/en/plan-your-trip/before-you-come/park-entry-fees"
+        },
+        {
+          "title": "Nepal Tourism Board: Kanchenjunga Conservation Area",
+          "url": "https://ntb.gov.np/en/kanchenjunga-conservation-area-"
+        },
+        {
+          "title": "Xtrekka: Nepal trekking permits 2026, costs and rules by trek",
+          "url": "https://www.xtrekka.com/blogs/nepal-trekking-permits"
+        },
+        {
+          "title": "Places Nepal: Kanchenjunga trek permits, 2026 rules",
+          "url": "https://www.placesnepal.com/blog/kanchenjunga-circuit-trek-permits"
+        }
       ]
     },
     {
@@ -196,8 +360,16 @@
       "kind": "national-park",
       "authority": "Department of National Parks and Wildlife Conservation",
       "fees": [
-        { "who": "Foreign nationals", "amount": "NPR 3,000", "per": "person, single entry" },
-        { "who": "SAARC nationals", "amount": "NPR 1,500", "per": "person, single entry" }
+        {
+          "who": "Foreign nationals",
+          "amount": "NPR 3,000",
+          "per": "person, single entry"
+        },
+        {
+          "who": "SAARC nationals",
+          "amount": "NPR 1,500",
+          "per": "person, single entry"
+        }
       ],
       "where": "Tourist Service Centre in Bhrikutimandap, Kathmandu, or the park entry post on the trail in from Juphal.",
       "notes": "The Nepal Tourism Board page gives NPR 3,000 and NPR 1,500 per entry; whether VAT is added on top is unconfirmed, as for the other national parks. Park headquarters are at Sumduwa. The Dolpo restricted-area permits are separate.",
@@ -205,8 +377,14 @@
       "verified": true,
       "confidence": "medium",
       "sources": [
-        { "title": "Nepal Tourism Board: Shey-Phoksundo National Park", "url": "https://ntb.gov.np/en/shey-phoksundo-national-park" },
-        { "title": "The Longest Way Home: Trekking entry fees in Nepal, 2026 guide", "url": "https://www.thelongestwayhome.com/travel-guides/nepal/permit-entry-fees-national-parks.html" }
+        {
+          "title": "Nepal Tourism Board: Shey-Phoksundo National Park",
+          "url": "https://ntb.gov.np/en/shey-phoksundo-national-park"
+        },
+        {
+          "title": "The Longest Way Home: Trekking entry fees in Nepal, 2026 guide",
+          "url": "https://www.thelongestwayhome.com/travel-guides/nepal/permit-entry-fees-national-parks.html"
+        }
       ]
     },
     {
@@ -216,19 +394,44 @@
       "kind": "national-park",
       "authority": "Department of National Parks and Wildlife Conservation",
       "fees": [
-        { "who": "Foreign nationals", "amount": "NPR 3,000", "per": "person, single entry" },
-        { "who": "SAARC nationals", "amount": "NPR 1,500", "per": "person, single entry" },
-        { "who": "Nepali citizens", "amount": "NPR 100", "per": "person (unconfirmed)" }
+        {
+          "who": "Foreign nationals",
+          "amount": "NPR 3,000",
+          "per": "person, single entry"
+        },
+        {
+          "who": "SAARC nationals",
+          "amount": "NPR 1,500",
+          "per": "person, single entry"
+        },
+        {
+          "who": "Nepali citizens",
+          "amount": "NPR 100",
+          "per": "person"
+        }
       ],
       "where": "At the park entry posts on the way to the lake, or in advance at the Tourist Service Centre in Bhrikutimandap, Kathmandu.",
-      "notes": "Foreigner and SAARC rates match the Nepal Tourism Board page. Nepali citizens are most often quoted NPR 100, though the board's page still shows NPR 25. Whether VAT is added to the foreigner fee is unconfirmed. Rara Lake itself needs no restricted-area permit.",
+      "notes": "All three rates match the Nepal Tourism Board's current fee table; children under 10 are free. Whether VAT is added to the foreigner fee is unconfirmed. Rara Lake itself needs no restricted-area permit.",
       "needsAgency": false,
       "verified": true,
       "confidence": "medium",
       "sources": [
-        { "title": "Nepal Tourism Board: Rara National Park", "url": "https://ntb.gov.np/en/rara-national-park" },
-        { "title": "Magical Nepal: Rara Lake trek permit 2026", "url": "https://www.magicalnepal.com/travel-guide/rara-lake/rara-lake-trek-permit/" },
-        { "title": "Tiger Encounter: Rara National Park rules and regulation", "url": "https://tigerencounter.com/blog/rara-national-park-rules-and-regulation/" }
+        {
+          "title": "Nepal Tourism Board: Park Entry Fees (fee table, read 22 November 2026)",
+          "url": "https://ntb.gov.np/en/plan-your-trip/before-you-come/park-entry-fees"
+        },
+        {
+          "title": "Nepal Tourism Board: Rara National Park",
+          "url": "https://ntb.gov.np/en/rara-national-park"
+        },
+        {
+          "title": "Magical Nepal: Rara Lake trek permit 2026",
+          "url": "https://www.magicalnepal.com/travel-guide/rara-lake/rara-lake-trek-permit/"
+        },
+        {
+          "title": "Tiger Encounter: Rara National Park rules and regulation",
+          "url": "https://tigerencounter.com/blog/rara-national-park-rules-and-regulation/"
+        }
       ]
     },
     {
@@ -238,18 +441,44 @@
       "kind": "national-park",
       "authority": "Department of National Parks and Wildlife Conservation",
       "fees": [
-        { "who": "Foreign nationals", "amount": "NPR 1,500 (unconfirmed)", "per": "person, single entry" },
-        { "who": "SAARC nationals", "amount": "NPR 500 (unconfirmed)", "per": "person, single entry" }
+        {
+          "who": "Foreign nationals",
+          "amount": "NPR 3,000",
+          "per": "person, single entry"
+        },
+        {
+          "who": "SAARC nationals",
+          "amount": "NPR 1,500",
+          "per": "person, single entry"
+        },
+        {
+          "who": "Nepali citizens",
+          "amount": "NPR 100",
+          "per": "person"
+        }
       ],
-      "where": "At the park entrance.",
-      "notes": "We could not confirm the current fee. Published figures for foreigners run from NPR 1,000 (the Nepal Tourism Board page, which looks dated) through NPR 1,500 to NPR 3,000 (some 2026 agency lists). NPR 1,500, with NPR 500 for SAARC nationals, is our best reading. Carry NPR 3,000 a head plus a margin for tax, and confirm at the park office.",
+      "where": "At the park entry post on the way in, or in advance at the national parks counter in the Tourist Service Centre, Bhrikutimandap, Kathmandu.",
+      "notes": "NPR 3,000 for foreigners, NPR 1,500 for SAARC nationals and NPR 100 for Nepali citizens are the figures in the Nepal Tourism Board's current fee table, which it says follows the parks department; children under 10 are free. Older pages still show less (NPR 1,000 or NPR 1,500 for foreigners), and some agencies repeat them. Budget for the higher, current figure, carry a margin for tax, and ask at the park office if you are charged differently.",
       "needsAgency": false,
-      "verified": false,
-      "confidence": "low",
+      "verified": true,
+      "confidence": "medium",
       "sources": [
-        { "title": "Nepal Tourism Board: Khaptad National Park (lists NPR 1,000)", "url": "https://ntb.gov.np/khaptad-national-park-nepal" },
-        { "title": "Nepal Trek Adventures: Khaptad National Park (lists NPR 1,500)", "url": "https://www.nepaltrekadventures.com/blog/khaptad-national-park" },
-        { "title": "Wilderness Excursion: Nepal trekking permit and fees 2026/27 (lists NPR 3,000)", "url": "https://wildernessexcursion.com/nepal-trekking-permit-and-fees" }
+        {
+          "title": "Nepal Tourism Board: Park Entry Fees (fee table, read 22 November 2026)",
+          "url": "https://ntb.gov.np/en/plan-your-trip/before-you-come/park-entry-fees"
+        },
+        {
+          "title": "Nepal Tourism Board: Khaptad National Park (older page, lists NPR 1,000)",
+          "url": "https://ntb.gov.np/khaptad-national-park-nepal"
+        },
+        {
+          "title": "Nepal Trek Adventures: Khaptad National Park (lists NPR 1,500)",
+          "url": "https://www.nepaltrekadventures.com/blog/khaptad-national-park"
+        },
+        {
+          "title": "Wilderness Excursion: Nepal trekking permit and fees 2026/27 (lists NPR 3,000)",
+          "url": "https://wildernessexcursion.com/nepal-trekking-permit-and-fees"
+        }
       ]
     },
     {
@@ -259,18 +488,44 @@
       "kind": "conservation-area",
       "authority": "Department of National Parks and Wildlife Conservation",
       "fees": [
-        { "who": "Foreign nationals", "amount": "NPR 2,000", "per": "person, single entry" },
-        { "who": "SAARC nationals", "amount": "NPR 500", "per": "person, single entry" }
+        {
+          "who": "Foreign nationals",
+          "amount": "NPR 2,000",
+          "per": "person, single entry"
+        },
+        {
+          "who": "SAARC nationals",
+          "amount": "NPR 500",
+          "per": "person, single entry"
+        },
+        {
+          "who": "Nepali citizens",
+          "amount": "NPR 100",
+          "per": "person"
+        }
       ],
-      "where": "At the conservation area office in Darchula, or arranged by your agency in Kathmandu.",
-      "notes": "Most 2025–26 agency lists quote NPR 2,000 for foreigners and NPR 500 for SAARC nationals, with children under 10 free. Older pages show NPR 1,000 or NPR 3,000 plus VAT, and we found no official schedule online, so treat the figure as likely but unconfirmed. The Byas valley towards the border needs the Darchula restricted-area permit as well.",
+      "where": "At the conservation area office in Darchula, or in advance at the Tourist Service Centre in Bhrikutimandap, Kathmandu, where your agency can arrange it.",
+      "notes": "The Nepal Tourism Board's current park fee table, which it says follows the parks department, lists NPR 2,000 for foreigners, NPR 500 for SAARC nationals and NPR 100 for Nepali citizens, with children under 10 free. Most 2025–26 agency lists give the same foreigner and SAARC rates. Older pages that show NPR 1,000 or NPR 3,000 plus VAT do not match it. The department's own website carried no fee table when we checked on 22 November 2026, and whether VAT is added is unconfirmed, so carry a small margin. The Byas valley towards the border needs the Darchula restricted-area permit as well.",
       "needsAgency": false,
-      "verified": false,
+      "verified": true,
       "confidence": "medium",
       "sources": [
-        { "title": "Travel Himalaya Nepal: Api Nampa Conservation Area permits, 2026", "url": "https://travelhimalayanepal.com/api-nampa-conservation-area-permits" },
-        { "title": "Data Home Nepal: Api Nampa Conservation Area visitor data", "url": "https://www.datahomenepal.org/blog/tourism-8/api-nampa-conservation-area-visitor-data-growth-trends-sustainable-strategies-56" },
-        { "title": "Vivaan Adventure: Api Nampa Conservation Area (older, lists NPR 3,000 plus VAT)", "url": "https://www.vivaanadventure.com/api-nampa-conservation-area/" }
+        {
+          "title": "Nepal Tourism Board: Park Entry Fees (Api Nampa Conservation Area row)",
+          "url": "https://ntb.gov.np/en/plan-your-trip/before-you-come/park-entry-fees"
+        },
+        {
+          "title": "Travel Himalaya Nepal: Api Nampa Conservation Area permits, 2026",
+          "url": "https://travelhimalayanepal.com/api-nampa-conservation-area-permits"
+        },
+        {
+          "title": "Department of National Parks and Wildlife Conservation: Api Nampa Conservation Area Office (no fee table; in Nepali)",
+          "url": "https://dnpwc.gov.np/pages/api-nampa-conservation-area-office-55/"
+        },
+        {
+          "title": "Vivaan Adventure: Api Nampa Conservation Area (older, lists NPR 3,000 plus VAT)",
+          "url": "https://www.vivaanadventure.com/api-nampa-conservation-area/"
+        }
       ]
     },
     {
@@ -280,8 +535,16 @@
       "kind": "registration",
       "authority": "Nepal Tourism Board and the Trekking Agencies' Association of Nepal",
       "fees": [
-        { "who": "Foreign nationals", "amount": "NPR 2,000", "per": "person, per trek" },
-        { "who": "SAARC nationals", "amount": "NPR 1,000", "per": "person, per trek" }
+        {
+          "who": "Foreign nationals",
+          "amount": "NPR 2,000",
+          "per": "person, per trek"
+        },
+        {
+          "who": "SAARC nationals",
+          "amount": "NPR 1,000",
+          "per": "person, per trek"
+        }
       ],
       "where": "Only through a registered trekking agency, which applies in the Nepal Tourism Board's online system with your route and your guide's details. Individual trekkers can no longer buy one over the counter.",
       "notes": "Since the revised rules of 31 March 2023 the card is tied to trekking with a licensed guide on the tourism board's listed routes. It is not used in Khumbu, where the municipality's Trek Card took its place in 2017. For restricted areas the published rules pull both ways: TAAN's pages say TIMS applies in every trekking area, restricted ones included, yet also list visitors holding Department of Immigration permits among those who do not need one, and agencies disagree. Your agency, which is compulsory there anyway, will know what the checkposts on your route ask for. Reports from 2025–26 describe patchy checks of the card, especially in Annapurna.",
@@ -289,10 +552,22 @@
       "verified": true,
       "confidence": "medium",
       "sources": [
-        { "title": "Nepal Tourism Board: TIMS Card (fees and revised provision of 31 March 2023)", "url": "https://ntb.gov.np/plan-your-trip/before-you-come/tims-card" },
-        { "title": "TAAN: About TIMS", "url": "https://www.taan.org.np/page/about-tims" },
-        { "title": "Khumbu Pasang Lhamu Rural Municipality: Trek-Card", "url": "https://khumbupasanglhamumun.gov.np/content/trek-card" },
-        { "title": "The Longest Way Home: Latest information on the mandatory trekking guide rule", "url": "https://www.thelongestwayhome.com/blog/nepal/latest-information-on-the-mandatory-trekking-guide-rule-in-nepal/" }
+        {
+          "title": "Nepal Tourism Board: TIMS Card (fees and revised provision of 31 March 2023)",
+          "url": "https://ntb.gov.np/plan-your-trip/before-you-come/tims-card"
+        },
+        {
+          "title": "TAAN: About TIMS",
+          "url": "https://www.taan.org.np/page/about-tims"
+        },
+        {
+          "title": "Khumbu Pasang Lhamu Rural Municipality: Trek-Card",
+          "url": "https://khumbupasanglhamumun.gov.np/content/trek-card"
+        },
+        {
+          "title": "The Longest Way Home: Latest information on the mandatory trekking guide rule",
+          "url": "https://www.thelongestwayhome.com/blog/nepal/latest-information-on-the-mandatory-trekking-guide-rule-in-nepal/"
+        }
       ]
     },
     {
@@ -302,8 +577,16 @@
       "kind": "restricted-area",
       "authority": "Department of Immigration",
       "fees": [
-        { "who": "September to November", "amount": "USD 100", "per": "person for the first 7 days, then USD 15 a day" },
-        { "who": "December to August", "amount": "USD 75", "per": "person for the first 7 days, then USD 10 a day" }
+        {
+          "who": "September to November",
+          "amount": "USD 100",
+          "per": "person for the first 7 days, then USD 15 a day"
+        },
+        {
+          "who": "December to August",
+          "amount": "USD 75",
+          "per": "person for the first 7 days, then USD 10 a day"
+        }
       ],
       "where": "Department of Immigration in Kathmandu (the Pokhara immigration office also issues them), through a registered trekking agency only.",
       "notes": "Since 22 March 2026 the permit can be issued to a single trekker; before that the minimum was two. You still have to book through a registered agency and walk with a licensed guide, with at most seven trekkers per guide. The restricted area is Chumnubri Rural Municipality: it starts at Jagat and continues over the Larkya La. You need the MCAP and the ACAP as well.",
@@ -311,9 +594,18 @@
       "verified": true,
       "confidence": "high",
       "sources": [
-        { "title": "Department of Immigration: Trekking Route and Permit Fee", "url": "https://immigration.gov.np/trekking-route-and-permit-fee" },
-        { "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026", "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas" },
-        { "title": "Department of Immigration: Notice regarding trekking permits for restricted areas, 23 March 2026", "url": "https://www.immigration.gov.np/en/post/notice-regarding-trekking-permits-for-restricted-areas" }
+        {
+          "title": "Department of Immigration: Trekking Route and Permit Fee",
+          "url": "https://immigration.gov.np/trekking-route-and-permit-fee"
+        },
+        {
+          "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026",
+          "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas"
+        },
+        {
+          "title": "Department of Immigration: Notice regarding trekking permits for restricted areas, 23 March 2026",
+          "url": "https://www.immigration.gov.np/en/post/notice-regarding-trekking-permits-for-restricted-areas"
+        }
       ]
     },
     {
@@ -323,8 +615,16 @@
       "kind": "restricted-area",
       "authority": "Department of Immigration",
       "fees": [
-        { "who": "September to November", "amount": "USD 40", "per": "person for the first 7 days, then USD 7 a day" },
-        { "who": "December to August", "amount": "USD 30", "per": "person for the first 7 days, then USD 7 a day" }
+        {
+          "who": "September to November",
+          "amount": "USD 40",
+          "per": "person for the first 7 days, then USD 7 a day"
+        },
+        {
+          "who": "December to August",
+          "amount": "USD 30",
+          "per": "person for the first 7 days, then USD 7 a day"
+        }
       ],
       "where": "Department of Immigration in Kathmandu (the Pokhara immigration office also issues them), through a registered trekking agency only.",
       "notes": "Since 22 March 2026 the permit can be issued to a single trekker; before that the minimum was two. You still have to book through a registered agency and walk with a licensed guide, with at most seven trekkers per guide. Covers the Tsum wards of Chumnubri Rural Municipality (3, 6 and 7). If you carry on round the Manaslu circuit you need the Manaslu permit too.",
@@ -332,8 +632,14 @@
       "verified": true,
       "confidence": "high",
       "sources": [
-        { "title": "Department of Immigration: Trekking Route and Permit Fee", "url": "https://immigration.gov.np/trekking-route-and-permit-fee" },
-        { "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026", "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas" }
+        {
+          "title": "Department of Immigration: Trekking Route and Permit Fee",
+          "url": "https://immigration.gov.np/trekking-route-and-permit-fee"
+        },
+        {
+          "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026",
+          "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas"
+        }
       ]
     },
     {
@@ -343,7 +649,11 @@
       "kind": "restricted-area",
       "authority": "Department of Immigration",
       "fees": [
-        { "who": "All foreign nationals", "amount": "USD 50", "per": "person per day" }
+        {
+          "who": "All foreign nationals",
+          "amount": "USD 50",
+          "per": "person per day"
+        }
       ],
       "where": "Department of Immigration in Kathmandu (the Pokhara immigration office also issues them), through a registered trekking agency only.",
       "notes": "The old flat fee of USD 500 for ten days was scrapped by a cabinet decision in November 2025. The Department of Immigration's fee table now shows USD 50 a day with no minimum stay, so a ten-day trip costs the same and a shorter one costs less. Since 22 March 2026 the permit can be issued to a single trekker, but you still need a registered agency and a licensed guide (at most seven trekkers per guide). The permit is checked at Kagbeni, and you need an ACAP as well.",
@@ -351,10 +661,22 @@
       "verified": true,
       "confidence": "high",
       "sources": [
-        { "title": "Department of Immigration: Trekking Route and Permit Fee", "url": "https://immigration.gov.np/trekking-route-and-permit-fee" },
-        { "title": "The Kathmandu Post: Nepal scraps $500 upper Mustang trekking fee for foreigners, sets $50 daily, 20 November 2025", "url": "https://kathmandupost.com/money/2025/11/20/nepal-scraps-500-upper-mustang-trekking-fee-for-foreigners-sets-50-daily" },
-        { "title": "The Rising Nepal: Foreigners allowed for solo trekking in Upper Mustang", "url": "https://risingnepaldaily.com/news/77601" },
-        { "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026", "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas" }
+        {
+          "title": "Department of Immigration: Trekking Route and Permit Fee",
+          "url": "https://immigration.gov.np/trekking-route-and-permit-fee"
+        },
+        {
+          "title": "The Kathmandu Post: Nepal scraps $500 upper Mustang trekking fee for foreigners, sets $50 daily, 20 November 2025",
+          "url": "https://kathmandupost.com/money/2025/11/20/nepal-scraps-500-upper-mustang-trekking-fee-for-foreigners-sets-50-daily"
+        },
+        {
+          "title": "The Rising Nepal: Foreigners allowed for solo trekking in Upper Mustang",
+          "url": "https://risingnepaldaily.com/news/77601"
+        },
+        {
+          "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026",
+          "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas"
+        }
       ]
     },
     {
@@ -364,8 +686,16 @@
       "kind": "restricted-area",
       "authority": "Department of Immigration",
       "fees": [
-        { "who": "September to November", "amount": "USD 100", "per": "person for the first 7 days, then USD 15 a day" },
-        { "who": "December to August", "amount": "USD 75", "per": "person for the first 7 days, then USD 15 a day" }
+        {
+          "who": "September to November",
+          "amount": "USD 100",
+          "per": "person for the first 7 days, then USD 15 a day"
+        },
+        {
+          "who": "December to August",
+          "amount": "USD 75",
+          "per": "person for the first 7 days, then USD 15 a day"
+        }
       ],
       "where": "Department of Immigration in Kathmandu (the Pokhara immigration office also issues them), through a registered trekking agency only.",
       "notes": "Since 22 March 2026 the permit can be issued to a single trekker; before that the minimum was two. You still have to book through a registered agency and walk with a licensed guide, with at most seven trekkers per guide. Checked at Koto. You need an ACAP as well.",
@@ -373,8 +703,14 @@
       "verified": true,
       "confidence": "high",
       "sources": [
-        { "title": "Department of Immigration: Trekking Route and Permit Fee (Manang row)", "url": "https://immigration.gov.np/trekking-route-and-permit-fee" },
-        { "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026", "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas" }
+        {
+          "title": "Department of Immigration: Trekking Route and Permit Fee (Manang row)",
+          "url": "https://immigration.gov.np/trekking-route-and-permit-fee"
+        },
+        {
+          "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026",
+          "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas"
+        }
       ]
     },
     {
@@ -384,17 +720,34 @@
       "kind": "restricted-area",
       "authority": "Department of Immigration",
       "fees": [
-        { "who": "All foreign nationals", "amount": "USD 500", "per": "person for the first 10 days, then USD 50 a day" }
+        {
+          "who": "All foreign nationals",
+          "amount": "USD 50",
+          "per": "person per day"
+        }
       ],
       "where": "Department of Immigration in Kathmandu, through a registered trekking agency only.",
-      "notes": "Unlike Upper Mustang, Upper Dolpo is still listed at USD 500 for the first ten days in the Department of Immigration's fee table. Several 2026 agency pages claim it has also moved to USD 50 a day; the official table does not show that, so confirm with your agency before you budget. Since 22 March 2026 the permit can be issued to a single trekker, but you still need a registered agency and a licensed guide (at most seven trekkers per guide). The Shey Phoksundo park permit and the Lower Dolpo permit for the approach are extra.",
+      "notes": "The Nepal Tourism Board's permit fee table now lists Upper Dolpo at USD 50 a person a day, the same as Upper Mustang, in place of the old USD 500 for the first ten days. For a stay of ten days the cost is unchanged; a shorter crossing costs less and a longer one costs USD 50 for every extra day. Since 22 March 2026 the permit can be issued to a single trekker, but you still need a registered agency and a licensed guide (at most seven trekkers per guide). The Shey Phoksundo park permit and the Lower Dolpo permit for the approach are extra. Ask your agency to count the days you will spend inside the restricted area.",
       "needsAgency": true,
       "verified": true,
-      "confidence": "medium",
+      "confidence": "high",
       "sources": [
-        { "title": "Department of Immigration: Trekking Route and Permit Fee", "url": "https://immigration.gov.np/trekking-route-and-permit-fee" },
-        { "title": "Follow Alice: Nepal trekking permits and fees 2026 (reports USD 50 a day)", "url": "https://followalice.com/knowledge/nepal-trekking-permits-and-fees" },
-        { "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026", "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas" }
+        {
+          "title": "Nepal Tourism Board: Trekking Permit (fee table, read 22 November 2026)",
+          "url": "https://ntb.gov.np/en/plan-your-trip/before-you-come/trekking-permit"
+        },
+        {
+          "title": "Department of Immigration: Trekking Route and Permit Fee",
+          "url": "https://immigration.gov.np/trekking-route-and-permit-fee"
+        },
+        {
+          "title": "Follow Alice: Nepal trekking permits and fees 2026 (reports USD 50 a day)",
+          "url": "https://followalice.com/knowledge/nepal-trekking-permits-and-fees"
+        },
+        {
+          "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026",
+          "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas"
+        }
       ]
     },
     {
@@ -404,7 +757,11 @@
       "kind": "restricted-area",
       "authority": "Department of Immigration",
       "fees": [
-        { "who": "All foreign nationals", "amount": "USD 20", "per": "person per week, then USD 5 a day" }
+        {
+          "who": "All foreign nationals",
+          "amount": "USD 20",
+          "per": "person per week, then USD 5 a day"
+        }
       ],
       "where": "Department of Immigration in Kathmandu, through a registered trekking agency only.",
       "notes": "Since 22 March 2026 the permit can be issued to a single trekker; before that the minimum was two. You still have to book through a registered agency and walk with a licensed guide, with at most seven trekkers per guide. The Shey Phoksundo park permit is extra.",
@@ -412,8 +769,14 @@
       "verified": true,
       "confidence": "high",
       "sources": [
-        { "title": "Department of Immigration: Trekking Route and Permit Fee", "url": "https://immigration.gov.np/trekking-route-and-permit-fee" },
-        { "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026", "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas" }
+        {
+          "title": "Department of Immigration: Trekking Route and Permit Fee",
+          "url": "https://immigration.gov.np/trekking-route-and-permit-fee"
+        },
+        {
+          "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026",
+          "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas"
+        }
       ]
     },
     {
@@ -423,7 +786,11 @@
       "kind": "restricted-area",
       "authority": "Department of Immigration",
       "fees": [
-        { "who": "All foreign nationals", "amount": "USD 20", "per": "person per week for the first four weeks, then USD 25 a week" }
+        {
+          "who": "All foreign nationals",
+          "amount": "USD 20",
+          "per": "person per week for the first four weeks, then USD 25 a week"
+        }
       ],
       "where": "Department of Immigration in Kathmandu, through a registered trekking agency only.",
       "notes": "Since 22 March 2026 the permit can be issued to a single trekker; before that the minimum was two. You still have to book through a registered agency and walk with a licensed guide, with at most seven trekkers per guide. Covers Phaktanglung, Mikwakhola and Sirijunga rural municipalities in Taplejung. The conservation area permit is extra.",
@@ -431,8 +798,14 @@
       "verified": true,
       "confidence": "high",
       "sources": [
-        { "title": "Department of Immigration: Trekking Route and Permit Fee (Taplejung row)", "url": "https://immigration.gov.np/trekking-route-and-permit-fee" },
-        { "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026", "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas" }
+        {
+          "title": "Department of Immigration: Trekking Route and Permit Fee (Taplejung row)",
+          "url": "https://immigration.gov.np/trekking-route-and-permit-fee"
+        },
+        {
+          "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026",
+          "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas"
+        }
       ]
     },
     {
@@ -442,7 +815,11 @@
       "kind": "restricted-area",
       "authority": "Department of Immigration",
       "fees": [
-        { "who": "All foreign nationals", "amount": "USD 20", "per": "person per week" }
+        {
+          "who": "All foreign nationals",
+          "amount": "USD 20",
+          "per": "person per week"
+        }
       ],
       "where": "Department of Immigration in Kathmandu, through a registered trekking agency only.",
       "notes": "Since 22 March 2026 the permit can be issued to a single trekker; before that the minimum was two. You still have to book through a registered agency and walk with a licensed guide, with at most seven trekkers per guide. The fee table defines the area as Gaurishankar Rural Municipality ward 9 and Bigu ward 1. The Gaurishankar conservation area permit is extra.",
@@ -450,8 +827,14 @@
       "verified": true,
       "confidence": "high",
       "sources": [
-        { "title": "Department of Immigration: Trekking Route and Permit Fee (Dolakha row)", "url": "https://immigration.gov.np/trekking-route-and-permit-fee" },
-        { "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026", "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas" }
+        {
+          "title": "Department of Immigration: Trekking Route and Permit Fee (Dolakha row)",
+          "url": "https://immigration.gov.np/trekking-route-and-permit-fee"
+        },
+        {
+          "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026",
+          "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas"
+        }
       ]
     },
     {
@@ -461,7 +844,11 @@
       "kind": "restricted-area",
       "authority": "Department of Immigration",
       "fees": [
-        { "who": "All foreign nationals", "amount": "USD 20", "per": "person per week" }
+        {
+          "who": "All foreign nationals",
+          "amount": "USD 20",
+          "per": "person per week"
+        }
       ],
       "where": "Department of Immigration in Kathmandu, through a registered trekking agency only.",
       "notes": "Applies to the border area north of Syabrubesi, which the fee table defines as Gosaikunda Rural Municipality ward 1 and part of ward 2. The main Langtang valley, Gosaikunda and Helambu trails do not need it. Since 22 March 2026 the permit can be issued to a single trekker, through a registered agency and with a licensed guide.",
@@ -469,8 +856,14 @@
       "verified": true,
       "confidence": "high",
       "sources": [
-        { "title": "Department of Immigration: Trekking Route and Permit Fee (Rasuwa row)", "url": "https://immigration.gov.np/trekking-route-and-permit-fee" },
-        { "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026", "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas" }
+        {
+          "title": "Department of Immigration: Trekking Route and Permit Fee (Rasuwa row)",
+          "url": "https://immigration.gov.np/trekking-route-and-permit-fee"
+        },
+        {
+          "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026",
+          "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas"
+        }
       ]
     },
     {
@@ -480,7 +873,11 @@
       "kind": "restricted-area",
       "authority": "Department of Immigration",
       "fees": [
-        { "who": "All foreign nationals", "amount": "USD 50", "per": "person for the first 7 days, then USD 10 a day" }
+        {
+          "who": "All foreign nationals",
+          "amount": "USD 50",
+          "per": "person for the first 7 days, then USD 10 a day"
+        }
       ],
       "where": "Department of Immigration in Kathmandu, through a registered trekking agency only.",
       "notes": "Since 22 March 2026 the permit can be issued to a single trekker; before that the minimum was two. You still have to book through a registered agency and walk with a licensed guide, with at most seven trekkers per guide. The fee table lists parts of Simikot, Namkha and Changkheli rural municipalities.",
@@ -488,8 +885,14 @@
       "verified": true,
       "confidence": "high",
       "sources": [
-        { "title": "Department of Immigration: Trekking Route and Permit Fee (Humla row)", "url": "https://immigration.gov.np/trekking-route-and-permit-fee" },
-        { "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026", "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas" }
+        {
+          "title": "Department of Immigration: Trekking Route and Permit Fee (Humla row)",
+          "url": "https://immigration.gov.np/trekking-route-and-permit-fee"
+        },
+        {
+          "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026",
+          "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas"
+        }
       ]
     },
     {
@@ -499,7 +902,11 @@
       "kind": "restricted-area",
       "authority": "Department of Immigration",
       "fees": [
-        { "who": "All foreign nationals", "amount": "USD 90", "per": "person for the first 7 days, then USD 15 a day" }
+        {
+          "who": "All foreign nationals",
+          "amount": "USD 90",
+          "per": "person for the first 7 days, then USD 15 a day"
+        }
       ],
       "where": "Department of Immigration in Kathmandu, through a registered trekking agency only.",
       "notes": "Since 22 March 2026 the permit can be issued to a single trekker; before that the minimum was two. You still have to book through a registered agency and walk with a licensed guide, with at most seven trekkers per guide. The fee table defines the area as Byas (Vyas) Rural Municipality ward 1. The Api Nampa conservation area permit is extra.",
@@ -507,8 +914,14 @@
       "verified": true,
       "confidence": "high",
       "sources": [
-        { "title": "Department of Immigration: Trekking Route and Permit Fee (Darchula row)", "url": "https://immigration.gov.np/trekking-route-and-permit-fee" },
-        { "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026", "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas" }
+        {
+          "title": "Department of Immigration: Trekking Route and Permit Fee (Darchula row)",
+          "url": "https://immigration.gov.np/trekking-route-and-permit-fee"
+        },
+        {
+          "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026",
+          "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas"
+        }
       ]
     },
     {
@@ -518,7 +931,11 @@
       "kind": "restricted-area",
       "authority": "Department of Immigration",
       "fees": [
-        { "who": "All foreign nationals", "amount": "USD 100", "per": "person for the first 7 days, then USD 15 a day" }
+        {
+          "who": "All foreign nationals",
+          "amount": "USD 100",
+          "per": "person for the first 7 days, then USD 15 a day"
+        }
       ],
       "where": "Department of Immigration in Kathmandu, through a registered trekking agency only.",
       "notes": "Applies to the restricted northern part of Mugu district, which matters on traverses between Rara and Upper Dolpo. Rara Lake itself is outside it. Since 22 March 2026 the permit can be issued to a single trekker, through a registered agency and with a licensed guide. We took the fee from the Department of Immigration's table but did not see its exact list of wards, so check the route with your agency.",
@@ -526,8 +943,14 @@
       "verified": true,
       "confidence": "medium",
       "sources": [
-        { "title": "Department of Immigration: Trekking Route and Permit Fee (Mugu row)", "url": "https://immigration.gov.np/trekking-route-and-permit-fee" },
-        { "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026", "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas" }
+        {
+          "title": "Department of Immigration: Trekking Route and Permit Fee (Mugu row)",
+          "url": "https://immigration.gov.np/trekking-route-and-permit-fee"
+        },
+        {
+          "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026",
+          "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas"
+        }
       ]
     },
     {
@@ -537,7 +960,11 @@
       "kind": "restricted-area",
       "authority": "Department of Immigration",
       "fees": [
-        { "who": "All foreign nationals", "amount": "USD 90", "per": "person for the first 7 days, then USD 15 a day" }
+        {
+          "who": "All foreign nationals",
+          "amount": "USD 90",
+          "per": "person for the first 7 days, then USD 15 a day"
+        }
       ],
       "where": "Department of Immigration in Kathmandu, through a registered trekking agency only.",
       "notes": "Applies to the restricted northern part of Bajhang district on the approach to Saipal. Since 22 March 2026 the permit can be issued to a single trekker, through a registered agency and with a licensed guide. We took the fee from the Department of Immigration's table but did not see its exact list of wards, so check the route with your agency.",
@@ -545,8 +972,14 @@
       "verified": true,
       "confidence": "medium",
       "sources": [
-        { "title": "Department of Immigration: Trekking Route and Permit Fee (Bajhang row)", "url": "https://immigration.gov.np/trekking-route-and-permit-fee" },
-        { "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026", "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas" }
+        {
+          "title": "Department of Immigration: Trekking Route and Permit Fee (Bajhang row)",
+          "url": "https://immigration.gov.np/trekking-route-and-permit-fee"
+        },
+        {
+          "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026",
+          "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas"
+        }
       ]
     },
     {
@@ -556,7 +989,11 @@
       "kind": "restricted-area",
       "authority": "Department of Immigration",
       "fees": [
-        { "who": "All foreign nationals", "amount": "USD 20", "per": "person per week for the first four weeks, then USD 25 a week" }
+        {
+          "who": "All foreign nationals",
+          "amount": "USD 20",
+          "per": "person per week for the first four weeks, then USD 25 a week"
+        }
       ],
       "where": "Department of Immigration in Kathmandu, through a registered trekking agency only.",
       "notes": "Applies to the restricted northern wards of Sankhuwasabha district near the Tibet border. Agencies disagree on whether the standard Makalu Base Camp trail needs it: some quote this fee for the route, others mention only a local municipality charge. Ask your agency before you budget. Since 22 March 2026 the permit can be issued to a single trekker, through a registered agency and with a licensed guide.",
@@ -564,9 +1001,18 @@
       "verified": true,
       "confidence": "medium",
       "sources": [
-        { "title": "Department of Immigration: Trekking Route and Permit Fee (Sankhuwasabha row)", "url": "https://immigration.gov.np/trekking-route-and-permit-fee" },
-        { "title": "Himalayan360: Makalu Base Camp trek permit", "url": "https://himalayan360.com/permit-for-makalu-base-camp-trek/" },
-        { "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026", "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas" }
+        {
+          "title": "Department of Immigration: Trekking Route and Permit Fee (Sankhuwasabha row)",
+          "url": "https://immigration.gov.np/trekking-route-and-permit-fee"
+        },
+        {
+          "title": "Himalayan360: Makalu Base Camp trek permit",
+          "url": "https://himalayan360.com/permit-for-makalu-base-camp-trek/"
+        },
+        {
+          "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026",
+          "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas"
+        }
       ]
     },
     {
@@ -576,7 +1022,11 @@
       "kind": "restricted-area",
       "authority": "Department of Immigration",
       "fees": [
-        { "who": "All foreign nationals", "amount": "USD 20", "per": "person per week for the first four weeks, then USD 25 a week" }
+        {
+          "who": "All foreign nationals",
+          "amount": "USD 20",
+          "per": "person per week for the first four weeks, then USD 25 a week"
+        }
       ],
       "where": "Department of Immigration in Kathmandu, through a registered trekking agency only.",
       "notes": "Applies to a small restricted border area of Solukhumbu towards the Nangpa La. The Everest Base Camp, Gokyo and Three Passes trails are walked without it. Since 22 March 2026 the permit can be issued to a single trekker, through a registered agency and with a licensed guide. We took the fee from the Department of Immigration's table but did not see its exact list of wards.",
@@ -584,8 +1034,14 @@
       "verified": true,
       "confidence": "medium",
       "sources": [
-        { "title": "Department of Immigration: Trekking Route and Permit Fee (Solukhumbu row)", "url": "https://immigration.gov.np/trekking-route-and-permit-fee" },
-        { "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026", "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas" }
+        {
+          "title": "Department of Immigration: Trekking Route and Permit Fee (Solukhumbu row)",
+          "url": "https://immigration.gov.np/trekking-route-and-permit-fee"
+        },
+        {
+          "title": "The Kathmandu Post: Immigration eases rules for solo trekkers in restricted areas, 22 March 2026",
+          "url": "https://kathmandupost.com/national/2026/03/22/immigration-eases-rules-for-solo-trekkers-in-restricted-areas"
+        }
       ]
     }
   ]

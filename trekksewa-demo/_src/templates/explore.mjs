@@ -3,7 +3,7 @@
 import { html, raw, jsonScript } from '../lib/html.mjs';
 import { icon } from '../lib/icons.mjs';
 import { ridgeStrip } from '../lib/landscape.mjs';
-import { PLACE_TYPE_LABEL, FACILITY_LABEL, metres, feet, num, monthRanges, daysRange, numberWord } from '../lib/format.mjs';
+import { PLACE_TYPE_LABEL, FACILITY_LABEL, metres, feet, num, monthRanges, daysRange, numberWord, longDate } from '../lib/format.mjs';
 import { boilingPointC } from '../lib/altitude.mjs';
 import { formatCoord } from '../lib/geo.mjs';
 import { trekCard, hueClass, regionTag, note, permitCard, grade, noticesBlock, noticesFor } from './partials.mjs';
@@ -218,6 +218,39 @@ export function placesIndexPage(ctx) {
   };
 }
 
+/** Lodges and services mapped around a place (OpenStreetMap, see scripts/osm/extract.mjs). */
+function staySection(ctx, p) {
+  const s = p.services;
+  if (!s) return '';
+  const { content, u } = ctx;
+  const plural = (n, one, many) => `${n} ${n === 1 ? one : many}`;
+  const here = [
+    s.eat ? ['utensils', plural(s.eat, 'place to eat', 'places to eat')] : null,
+    ...s.health.filter((x) => x.n).map((x) => ['stethoscope', x.n]),
+    s.health.some((x) => !x.n) && !s.health.some((x) => x.n) ? ['stethoscope', 'A health post or pharmacy'] : null,
+    s.cash.atm ? ['banknote', plural(s.cash.atm, 'cash machine', 'cash machines')] : null,
+    s.cash.bank ? ['landmark', plural(s.cash.bank, 'bank', 'banks')] : null,
+    s.water ? ['droplets', plural(s.water, 'drinking-water point', 'drinking-water points')] : null,
+    s.toilets ? ['door-open', plural(s.toilets, 'public toilet', 'public toilets')] : null,
+    s.police ? ['shield', plural(s.police, 'police post', 'police posts')] : null,
+    s.shop ? ['store', plural(s.shop, 'shop', 'shops')] : null,
+  ].filter(Boolean);
+  if (!s.stayCount && !here.length) return '';
+  const unnamed = s.stayCount - s.stay.length;
+  return html`<section class="place-section" id="stay" aria-labelledby="stay-title">
+    <h2 id="stay-title">${s.stayCount ? 'Where to stay' : `What is at ${p.name}`}</h2>
+    ${s.stayCount
+      ? html`<p><strong>${plural(s.stayCount, 'place to stay is', 'places to stay are')} mapped</strong> within a short walk of ${p.name}${unnamed > 0 && s.stay.length ? `; ${s.stay.length} have a name on the map` : ''}.</p>
+          ${s.stay.length ? html`<ul class="stay-list">${s.stay.map((x) => html`<li><strong>${x.n}</strong><span>${x.k}</span></li>`)}</ul>` : ''}`
+      : ''}
+    ${here.length ? html`<h3 class="h4">Also here</h3><ul class="facilities">${here.map(([ic, text]) => html`<li>${icon(ic, { size: 18 })}${text}</li>`)}</ul>` : ''}
+    ${note(
+      'plain',
+      html`<p>This list comes from OpenStreetMap as it stood on ${longDate(content.sources.services)}. A name here is not a recommendation, and a lodge that is missing may simply not be mapped yet. Lodges also close for the winter higher up. You cannot book a bed through us yet: in October, November, March and April ask your guide or trekking company to phone ahead. <a href="${u('plan/')}">Plan a trek</a> to see the stops night by night.</p>`,
+    )}
+  </section>`;
+}
+
 export function placePage(ctx, p) {
   const { u, content, config } = ctx;
   const r = content.regionMap.get(p.region);
@@ -261,6 +294,8 @@ export function placePage(ctx, p) {
         <p class="muted wx-loading">${icon('cloud-sun', { size: 18 })} The forecast loads when you are online.</p>
       </div>
     </section>
+
+    ${staySection(ctx, p)}
 
     ${p.facilities && p.facilities.length
       ? html`<section class="place-section" aria-labelledby="fac-title">

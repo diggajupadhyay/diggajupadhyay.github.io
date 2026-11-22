@@ -40,6 +40,7 @@ const SRC = join(dirname(fileURLToPath(import.meta.url)), '..');
 const PLACES = join(SRC, 'content', 'places');
 const CACHE_DIR = join(SRC, 'scripts', '.cache');
 const LOOKUPS = join(CACHE_DIR, 'osm-lookups.json');
+const TILE_LOOKUPS = join(CACHE_DIR, 'osm-tile-lookups.json'); // written by scripts/osm/extract.mjs candidates
 const HEIGHTS = join(CACHE_DIR, 'terrain-base.json');
 const SAMPLES = join(CACHE_DIR, 'terrain-samples.json');
 const REPORT = join(CACHE_DIR, 'coordinate-report.json');
@@ -51,6 +52,18 @@ const saveJson = (file, value) => {
   mkdirSync(CACHE_DIR, { recursive: true });
   writeFileSync(file, JSON.stringify(value));
 };
+
+/**
+ * Everything OpenStreetMap offered for each place, from both routes: the name search
+ * (Nominatim) and the named features read straight from map tiles around the estimate.
+ */
+function allLookups() {
+  const byName = readJson(LOOKUPS, {});
+  const byTile = readJson(TILE_LOOKUPS, {});
+  const out = {};
+  for (const slug of new Set([...Object.keys(byName), ...Object.keys(byTile)])) out[slug] = [...(byName[slug] || []), ...(byTile[slug] || [])];
+  return out;
+}
 
 const HIGH = new Set(['pass', 'peak', 'viewpoint']); // the terrain model smooths ridges and summits
 const limitFor = (type) => (HIGH.has(type) ? 400 : 220);
@@ -78,11 +91,15 @@ const plain = (s) =>
     .replace(/[\u0300-\u036f]/g, '')
     .replace(/\(?\b\d[\d,.]*\s*m?\b\)?/g, ' '); // heights written into a name: "Deurali (3200)", "Tiplyang 1,040m"
 const squash = (s) => s.replace(/[^a-z0-9]/g, '');
-const norm = (s) => {
-  const base = plain(s);
-  const core = squash(base.replace(/\b(village|gaun|gaon|bazaar|bazar|pass|viewpoint|view point|hotel|lake|tal|base camp|camp|danda|peak)\b/g, ' '));
-  return core || squash(base); // a village really is called Tal
-};
+/** The whole name, letters only: "Yak Kharka" -> "yakkharka". */
+const full = (s) => squash(plain(s));
+// words that say what kind of thing a place is, not which one
+const GENERIC = /\b(village|gaun|gaon|bazaar|bazar|pass|viewpoint|view point|hotel|lodge|guest ?house|lake|tal|base camp|camp|danda|peak|kharka|phedi|bhanjyang|gompa|gumba|monastery)\b/g;
+// kind-words that mean the same thing
+const FAMILY = { village: 'settle', gaun: 'settle', gaon: 'settle', bazaar: 'settle', bazar: 'settle', gompa: 'monastery', gumba: 'monastery', hotel: 'lodge', guesthouse: 'lodge', 'guest house': 'lodge', tal: 'lake', 'view point': 'viewpoint' };
+const kindWords = (s) => new Set((plain(s).match(GENERIC) || []).map((w) => FAMILY[w] || w));
+/** The distinctive part of a name: "Namche Bazaar" -> "namche". Empty when nothing distinctive is left. */
+const core = (s) => squash(plain(s).replace(GENERIC, ' '));
 function lev(a, b) {
   if (Math.abs(a.length - b.length) > 2) return 9;
   const d = Array.from({ length: a.length + 1 }, (_, i) => [i, ...Array(b.length).fill(0)]);
@@ -90,20 +107,41 @@ function lev(a, b) {
   for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++) d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
   return d[a.length][b.length];
 }
-/** 0..1: how well any of an OpenStreetMap object's names matches one of the names we use. */
+const ourNames = (place) => [place.name, ...(place.aka || [])];
+/** Does a map feature carry exactly one of our names, kind-word and all? */
+function sameFullName(place, osmNames) {
+  const mine = new Set(ourNames(place).map(full).filter(Boolean));
+  return osmNames.some((n) => (place.ne && n.trim() === place.ne.trim()) || mine.has(full(n)));
+}
+/**
+ * 0..1: how well any of a map feature's names matches one of ours.
+ * Whole names are compared first. The distinctive parts are compared only when both are at
+ * least five letters long, so "Danda Kharka" never matches "Thule Kharka" on "kharka" alone
+ * and "Yak Kharka" never matches "Yak Hotel" on "yak".
+ */
 function similarity(place, osmNames) {
+  if (sameFullName(place, osmNames)) return 1;
   let best = 0;
   for (const raw of osmNames) {
-    if (place.ne && raw.trim() === place.ne.trim()) return 1; // the Nepali spelling is the same
-    const b = norm(raw);
-    if (!b) continue;
-    for (const n of [place.name, ...(place.aka || [])]) {
-      const a = norm(n);
-      if (!a) continue;
-      if (a === b) best = Math.max(best, 1);
-      else if (a.length >= 5 && b.length >= 5 && (a.includes(b) || b.includes(a)) && Math.min(a.length, b.length) * 2 >= Math.max(a.length, b.length)) best = Math.max(best, 0.85);
-      else if (a.length >= 5 && lev(a, b) <= 1) best = Math.max(best, 0.8);
-      else if (a.length >= 7 && lev(a, b) <= 2) best = Math.max(best, 0.7);
+    const bf = full(raw);
+    const bc = core(raw);
+    for (const n of ourNames(place)) {
+      const af = full(n);
+      const ac = core(n);
+      if (!af || !bf) continue;
+      if (ac && ac === bc) {
+        // a short shared core counts only with the same kind-word ("Luri Gompa" and "Luri Gompa
+        // Monastery"), or when the only extra word is village or bazaar ("Yara" and "Yara Gaon")
+        const ka = kindWords(n);
+        const kb = kindWords(raw);
+        if (ac.length >= 5 || [...ka].some((k) => kb.has(k)) || [...ka, ...kb].every((k) => k === 'settle')) best = 1;
+      } else if (ac.length >= 5 && bc.length >= 5) {
+        if ((ac.includes(bc) || bc.includes(ac)) && Math.min(ac.length, bc.length) * 2 >= Math.max(ac.length, bc.length)) best = Math.max(best, 0.85);
+        else if (lev(ac, bc) <= 1) best = Math.max(best, 0.8);
+        else if (ac.length >= 7 && lev(ac, bc) <= 2) best = Math.max(best, 0.7);
+      }
+      if (af.length >= 5 && bf.length >= 4 && lev(af, bf) <= 1) best = Math.max(best, 0.8);
+      else if (af.length >= 7 && lev(af, bf) <= 2) best = Math.max(best, 0.7);
     }
   }
   return best;
@@ -172,6 +210,11 @@ function candidatesFor(place, lookups) {
     c.sim = similarity(place, raw.names);
     c.km = haversineKm(place, c);
     if (c.sim < 0.7 || c.km > 25 || !allowed.includes(c.kind)) continue;
+    if (c.type === 'peak' && c.sim < 1) continue; // "Phoksundo Ri" is not the Phoksundo viewpoint
+    if (c.kind === 'landmark' && allowed[0] !== 'settlement' && c.sim < 1) continue; // nor is a hotel with "view point" in its name
+    // a village may stand for a viewpoint, pass, lake or monastery only when it carries the very same name
+    // (the locality "Poon Hill" yes; the village of Ringmo for "Ringmo viewpoint" no)
+    if (c.kind === 'settlement' && allowed[0] !== 'settlement' && allowed[0] !== 'camp' && !sameFullName(place, raw.names)) continue;
     if (c.kind === 'admin' && c.km > 3) continue; // a municipality's label sits on the town; a district's centre does not
     const key = `${c.lat.toFixed(3)},${c.lon.toFixed(3)}`; // one feature mapped twice (node and outline) counts once
     const had = seen.get(key);
@@ -283,7 +326,7 @@ async function elevations(coords) {
 
 async function heights() {
   const places = loadPlaces();
-  const lookups = readJson(LOOKUPS, {});
+  const lookups = allLookups();
   const known = readJson(HEIGHTS, {});
   const want = new Map();
   for (const p of places) {
@@ -310,7 +353,7 @@ async function heights() {
 
 function decide() {
   const places = loadPlaces();
-  const lookups = readJson(LOOKUPS, {});
+  const lookups = allLookups();
   const known = readJson(HEIGHTS, {});
   const report = [];
   for (const p of places) {
@@ -325,27 +368,47 @@ function decide() {
       const height = terrain ?? c.ele;
       return { ...c, height: height ?? null, basis: terrain != null ? 'terrain' : c.ele != null ? 'osm-height' : 'name', gap: height == null ? null : Math.round(Math.abs(p.alt - height)) };
     });
-    const rank = (a, b) => b.sim - a.sim || (a.gap ?? 0) - (b.gap ?? 0) || a.km - b.km;
-    const proven = cands.filter((c) => c.gap != null && c.gap <= limit).sort(rank);
-    // strongest kind first, then nearest: a mapped village beats a lodge named after it
+    // strongest kind first: a mapped village beats a lodge named after it
     const order = ALLOWED[p.type] || ['settlement'];
-    const unproven = cands.filter((c) => c.gap == null && c.sim >= 0.8).sort((a, b) => WEAK.has(a.kind) - WEAK.has(b.kind) || a.km - b.km || order.indexOf(a.kind) - order.indexOf(b.kind));
+    const kindRank = (c) => order.indexOf(c.kind);
     const apart = (a, b) => haversineKm(a, b) > 2;
+    const proven = cands.filter((c) => c.gap != null && c.gap <= limit);
+    // a 90 m terrain model is rough on steep ground: an exact name whose height is only a little out is still evidence
+    const nearlyProven = cands.filter((c) => c.gap != null && c.gap > limit && c.gap <= limit + 150 && c.sim === 1 && !WEAK.has(c.kind));
+    const unproven = cands.filter((c) => c.gap == null && c.sim >= 0.8).sort((a, b) => WEAK.has(a.kind) - WEAK.has(b.kind) || a.km - b.km || kindRank(a) - kindRank(b));
+
+    /** The best-named, strongest-kind group among some candidates, best height first. */
+    const lead = (list) => {
+      if (!list.length) return [];
+      const sim = Math.max(...list.map((c) => c.sim));
+      const top = list.filter((c) => c.sim === sim);
+      const kind = Math.min(...top.map(kindRank));
+      return top.filter((c) => kindRank(c) === kind).sort((a, b) => a.gap - b.gap || a.km - b.km);
+    };
 
     let pick = null;
     let why = '';
-    if (proven.length) {
-      const top = proven.filter((c) => c.sim === proven[0].sim);
+    let soft = false;
+    const top = lead(proven);
+    if (top.length) {
       const rivals = top.filter((c) => apart(c, top[0]));
       const near = top.filter((c) => c.km <= 6).sort((a, b) => a.km - b.km);
       if (!rivals.length && (top[0].km <= 6 || (!fits && top[0].sim === 1))) {
         pick = top[0];
         why = 'the name and the height agree';
-      } else if (rivals.length && fits && near.length && near[0].km <= 3 && top.every((c) => c === near[0] || !apart(c, near[0]) || c.km >= near[0].km * 2)) {
+      } else if (rivals.length && near.length && near[0].km <= 3 && top.every((c) => c === near[0] || !apart(c, near[0]) || c.km >= near[0].km * 2)) {
         pick = near[0];
         why = 'several places share the name; this one is beside our estimate and its height agrees';
       } else {
         why = rivals.length ? 'several places with this name fit the height' : 'the only match with the right height is far from our estimate';
+      }
+    }
+    if (!pick) {
+      const nearly = lead(nearlyProven);
+      if (nearly.length && !nearly.some((c) => apart(c, nearly[0])) && nearly[0].km <= (fits ? 3 : 12)) {
+        pick = nearly[0];
+        soft = true;
+        why = 'the exact name, with a height that nearly agrees';
       }
     }
     if (!pick && unproven.length) {
@@ -357,7 +420,7 @@ function decide() {
       //    (a monastery must not jump to the town that shares its name).
       const exact = strong
         .filter((c) => c.sim === 1 && c.km <= (fits ? 6 : 12) && (!fits || c.kind === order[0]))
-        .sort((a, b) => order.indexOf(a.kind) - order.indexOf(b.kind) || a.km - b.km);
+        .sort((a, b) => kindRank(a) - kindRank(b) || a.km - b.km);
       if (close.length && !strong.some((c) => c !== close[0] && apart(c, close[0]) && c.km < close[0].km * 2)) {
         pick = close[0];
         why = WEAK.has(pick.kind) ? 'a lodge, teahouse or stop named after the place, close to our estimate' : fits ? 'the same name beside an estimate that fits the terrain' : 'the same name close to our estimate';
@@ -374,7 +437,7 @@ function decide() {
     if (pick) {
       action = 'move';
       if (pick.basis === 'name') quality = fits && pick.km <= 1.5 && pick.sim >= 0.85 && !WEAK.has(pick.kind) ? 'good' : 'approx';
-      else quality = pick.gap <= 150 ? 'good' : 'approx';
+      else quality = !soft && pick.gap <= 150 && !WEAK.has(pick.kind) ? 'good' : !soft && pick.gap <= 150 && pick.km <= 1.5 ? 'good' : 'approx';
     } else if (gapHere == null) {
       action = 'unchecked';
     } else if (fits) {

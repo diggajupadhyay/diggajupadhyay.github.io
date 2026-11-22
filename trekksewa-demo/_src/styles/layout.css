@@ -69,6 +69,19 @@
   color: var(--teal-700);
   background: var(--teal-50);
 }
+/* the one action the header pushes: start planning */
+.primary-nav > a.nav-plan,
+.primary-nav > a.nav-plan[aria-current='true'] {
+  margin-right: 0.4rem;
+  padding: 0.55rem 1rem;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-weight: 700;
+}
+.primary-nav > a.nav-plan:hover {
+  background: var(--accent-strong);
+  color: var(--on-accent);
+}
 
 .menu {
   position: relative;
@@ -119,8 +132,9 @@
 .icon-btn {
   display: inline-grid;
   place-items: center;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  cursor: pointer;
   border: 0;
   border-radius: 50%;
   background: none;
@@ -155,7 +169,9 @@
   background: #a81f32;
 }
 
-@media (min-width: 1020px) {
+/* The full navigation appears when there is room for it. Larger text needs more room, so
+   the switch-over point moves with the text size (rules for that follow the tab bar). */
+@media (min-width: 1100px) {
   .primary-nav {
     display: flex;
   }
@@ -164,6 +180,21 @@
   }
   .header-actions {
     margin-left: auto;
+  }
+}
+/* narrow screens: light or dark moves into the menu, and with larger text the logo stands alone */
+@media (max-width: 479.98px) {
+  .site-header .theme-toggle {
+    display: none;
+  }
+  .header-actions {
+    gap: 0;
+  }
+  .site-header .bar {
+    gap: 0.5rem;
+  }
+  html[data-text] .brand span {
+    display: none;
   }
 }
 
@@ -189,11 +220,36 @@
   border: 0;
   background: none;
   border-radius: var(--r-2);
-  color: var(--ink-3);
-  font-size: 0.6875rem;
-  font-weight: 600;
+  color: var(--ink-2);
+  font-size: 0.8125rem;
+  font-weight: 650;
   text-decoration: none;
   line-height: 1.2;
+  cursor: pointer;
+}
+/* the planner sits in the middle and stands out */
+.tabbar a.tab-plan {
+  margin: -0.15rem 0.2rem 0;
+  background: var(--accent);
+  color: var(--on-accent);
+  border-radius: var(--r-3);
+  box-shadow: var(--shadow-1);
+}
+.tabbar a.tab-plan[aria-current='true'] {
+  color: var(--on-accent);
+}
+.sheet .btn-block {
+  margin: 0.25rem 0 1rem;
+}
+.sheet-size {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  font-weight: 650;
 }
 .tabbar a[aria-current='true'],
 .tabbar a[aria-current='page'] {
@@ -203,17 +259,52 @@
 .tabbar a[aria-current='page'] .icon {
   stroke-width: 2.4;
 }
-@media (max-width: 1019.98px) {
+@media (max-width: 1099.98px) {
   :root {
-    --tabbar-h: calc(3.5rem + env(safe-area-inset-bottom, 0px));
+    --tabbar-h: calc(4rem + env(safe-area-inset-bottom, 0px));
   }
   body {
     padding-bottom: var(--tabbar-h);
   }
 }
-@media (min-width: 1020px) {
+@media (min-width: 1100px) {
   .tabbar {
     display: none;
+  }
+}
+/* with larger text the full navigation no longer fits a small laptop: keep the tab bar longer */
+@media (min-width: 1100px) and (max-width: 1259.98px) {
+  html[data-text='l'] {
+    --tabbar-h: calc(4rem + env(safe-area-inset-bottom, 0px));
+  }
+  html[data-text='l'] body {
+    padding-bottom: var(--tabbar-h);
+  }
+  html[data-text='l'] .primary-nav {
+    display: none;
+  }
+  html[data-text='l'] .brand {
+    margin-right: auto;
+  }
+  html[data-text='l'] .tabbar {
+    display: grid;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1439.98px) {
+  html[data-text='xl'] {
+    --tabbar-h: calc(4rem + env(safe-area-inset-bottom, 0px));
+  }
+  html[data-text='xl'] body {
+    padding-bottom: var(--tabbar-h);
+  }
+  html[data-text='xl'] .primary-nav {
+    display: none;
+  }
+  html[data-text='xl'] .brand {
+    margin-right: auto;
+  }
+  html[data-text='xl'] .tabbar {
+    display: grid;
   }
 }
 
@@ -541,4 +632,40 @@ dialog::backdrop {
   font-size: var(--fs-1);
   font-weight: 550;
   box-shadow: var(--shadow-2);
+}
+
+/* ---------- nothing may push a page wider than the screen ----------
+   Grid and flex children refuse to shrink below their longest word unless told they may.
+   With large text on a narrow phone that is enough to widen the whole page. */
+.trek-layout > *,
+.grid > *,
+.permit-wrap > *,
+.section-head > * {
+  min-width: 0;
+}
+.permit-sources a,
+.prose a {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 479.98px) {
+  /* largest text on a phone: statistics stack in one column */
+  html[data-text] .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  html[data-text='xl'] .stats {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  html[data-text] .stats dd,
+  html[data-text] .stats dt {
+    overflow-wrap: anywhere;
+  }
+}
+.months {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+@media (max-width: 479.98px) {
+  /* twelve named months do not fit one row at larger text: two rows of six */
+  html[data-text] .months-lg {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
 }

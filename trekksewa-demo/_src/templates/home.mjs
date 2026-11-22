@@ -1,7 +1,8 @@
 import { html, raw, jsonScript } from '../lib/html.mjs';
 import { icon } from '../lib/icons.mjs';
 import { heroLandscape } from '../lib/landscape.mjs';
-import { MONTHS, numberWord } from '../lib/format.mjs';
+import { numberWord } from '../lib/format.mjs';
+import { DAY_CHOICES } from '../lib/plan.mjs';
 import { trekCard, sectionHead, arrowLink, hueClass, comingSoon } from './partials.mjs';
 
 export function homePage(ctx) {
@@ -15,48 +16,40 @@ export function homePage(ctx) {
     <div class="hero-copy">
       <p class="eyebrow"><span lang="ne">नमस्ते</span> · Trekking in Nepal</p>
       <h1>Trek Nepal, <em>well looked after</em></h1>
-      <p class="lead">Honest route guides, altitude and emergency tools that work without signal, and a growing network of licensed guides, fairly paid porters and registered agencies.</p>
+      <p class="lead">Tell us how long you have and how far you like to walk. We suggest a trek, plan it day by day, show where you sleep each night and who can help you.</p>
       <div class="cluster hero-cta">
-        <a class="btn btn-lg" href="${u('treks/')}">${icon('mountain-snow')}Find a trek</a>
-        <a class="btn btn-lg btn-secondary" href="${u('safety/altitude-check/')}">${icon('heart-pulse')}Check altitude symptoms</a>
+        <a class="btn btn-lg" href="${u('plan/')}">${icon('calendar-check')}Plan my trek</a>
+        <a class="btn btn-lg btn-secondary" href="${u('treks/')}">${icon('mountain-snow')}See all ${content.treks.length} treks</a>
       </div>
       <ul class="hero-points">
-        <li>${icon('check', { size: 16 })}${content.treks.length} routes, day by day</li>
-        <li>${icon('check', { size: 16 })}${content.places.length} places with altitude and weather</li>
-        <li>${icon('check', { size: 16 })}Free, and usable offline</li>
+        <li>${icon('check', { size: 18 })}Every trek planned day by day</li>
+        <li>${icon('check', { size: 18 })}Places to stay at every stop</li>
+        <li>${icon('check', { size: 18 })}Free. No account needed.</li>
       </ul>
     </div>
-    <form class="finder card" action="${u('treks/')}" method="get" aria-labelledby="finder-title">
-      <h2 id="finder-title">Find a trek that fits</h2>
-      <fieldset>
-        <legend>How long do you have?</legend>
-        <div class="chips">
-          <label class="chip"><input type="radio" name="days" value="short">Up to 5 days</label>
-          <label class="chip"><input type="radio" name="days" value="week">6–10 days</label>
-          <label class="chip"><input type="radio" name="days" value="fortnight">11–15 days</label>
-          <label class="chip"><input type="radio" name="days" value="long">16 days or more</label>
-        </div>
-      </fieldset>
-      <fieldset>
-        <legend>How hard?</legend>
-        <div class="chips">
-          <label class="chip"><input type="radio" name="grade" value="easy">Easy</label>
-          <label class="chip"><input type="radio" name="grade" value="moderate">Moderate</label>
-          <label class="chip"><input type="radio" name="grade" value="challenging">Challenging</label>
-          <label class="chip"><input type="radio" name="grade" value="strenuous">Strenuous</label>
-        </div>
-      </fieldset>
-      <div class="field">
-        <label for="finder-month">When are you going?</label>
-        <select class="select" id="finder-month" name="month">
-          <option value="">Any time</option>
-          ${MONTHS.map((m, i) => html`<option value="${i + 1}">${m}</option>`)}
-        </select>
+    <nav class="starter card" aria-labelledby="starter-title">
+      <p class="starter-step">Start here</p>
+      <h2 id="starter-title">How many days would you like to walk?</h2>
+      <div class="starter-choices">
+        ${DAY_CHOICES.map(
+          (c) => html`<a class="choice" href="${u(`plan/?step=level&days=${c.id}`)}"><span class="choice-text"><strong>${c.label}</strong><span>${c.sub}</span></span>${icon('chevron-right', { size: 24 })}</a>`,
+        )}
       </div>
-      <button class="btn btn-block" type="submit">Show matching treks${icon('arrow-right', { size: 18 })}</button>
-    </form>
+    </nav>
   </div>
   <div class="hero-art">${raw(heroLandscape({ seed: 11 }))}</div>
+</section>
+
+<section class="section how" aria-labelledby="how-title">
+  <div class="wrap">
+    ${sectionHead({ eyebrow: 'How it works', title: html`<span id="how-title">Three steps from "I would like to" to "I am going"</span>` })}
+    <ol class="how-steps">
+      <li>${icon('message-circle-question', { size: 30 })}<h3><span class="how-n">1</span>Answer three questions</h3><p>How many days, how much walking, and which month. That is all we need to suggest treks that suit you.</p></li>
+      <li>${icon('map', { size: 30 })}<h3><span class="how-n">2</span>Get your plan</h3><p>Each day set out in plain words: where you walk, how long it takes, where you sleep, and what it is likely to cost.</p></li>
+      <li>${icon('handshake', { size: 30 })}<h3><span class="how-n">3</span>Go with good people</h3><p>Send the plan to arrange a guide, a porter or a whole trip. Print it, save it, or share it with your family.</p></li>
+    </ol>
+    <a class="btn btn-lg" href="${u('plan/')}">${icon('calendar-check')}Start planning</a>
+  </div>
 </section>
 
 <section class="band section-tight safety-band" aria-labelledby="safety-title">
@@ -182,23 +175,6 @@ export function homePage(ctx) {
         <p>We are enrolling our founding partners now. Applying is free and takes about five minutes, in English or Nepali.</p>
       </div>
       <a class="btn btn-gold" href="${u('partners/')}">${icon('handshake')}Join TrekkSewa</a>
-    </div>
-  </div>
-</section>
-
-<section class="section" aria-labelledby="how-title">
-  <div class="wrap">
-    ${sectionHead({ eyebrow: 'Plan in an afternoon', title: html`<span id="how-title">From idea to itinerary</span>` })}
-    <ol class="steps">
-      <li><span class="step-n">1</span><h3>Pick a route that fits</h3><p>Filter by days, difficulty, altitude and month. Compare the altitude profiles side by side.</p></li>
-      <li><span class="step-n">2</span><h3>Check the climb</h3><p>Every itinerary is tested against altitude guidelines, with risky nights flagged before you book.</p></li>
-      <li><span class="step-n">3</span><h3>Sort the paperwork</h3><p>See exactly which permits your trek needs, what they cost and where to get them.</p></li>
-      <li><span class="step-n">4</span><h3>Pack and budget</h3><p>Build a packing list for your season and altitude, and estimate what the trip will really cost.</p></li>
-    </ol>
-    <div class="cluster" style="--gap:.75rem;margin-top:1.75rem">
-      <a class="btn btn-secondary" href="${u('tools/planner/')}">${icon('calendar-days')}Trek planner</a>
-      <a class="btn btn-secondary" href="${u('tools/packing/')}">${icon('list-checks')}Packing list</a>
-      <a class="btn btn-secondary" href="${u('tools/budget/')}">${icon('calculator')}Budget estimator</a>
     </div>
   </div>
 </section>

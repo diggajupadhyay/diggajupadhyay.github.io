@@ -114,3 +114,15 @@ export function toGpx(track, { name = 'TrekkSewa track', creator = 'TrekkSewa' }
     .join('\n');
   return `<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="${xmlEsc(creator)}" xmlns="http://www.topografix.com/GPX/1/1">\n  <trk>\n    <name>${xmlEsc(name)}</name>\n    <trkseg>\n${pts}\n    </trkseg>\n  </trk>\n</gpx>\n`;
 }
+
+/**
+ * A route file for a whole trek: named waypoints for the stops and one track segment per
+ * section of mapped path. `segments` are arrays of [lat, lon].
+ */
+export function routeGpx({ name, desc = '', link = '', waypoints = [], segments = [] }) {
+  const wpts = waypoints
+    .map((w) => `  <wpt lat="${w.lat.toFixed(5)}" lon="${w.lon.toFixed(5)}">${w.ele ? `<ele>${Math.round(w.ele)}</ele>` : ''}<name>${xmlEsc(w.name)}</name>${w.desc ? `<desc>${xmlEsc(w.desc)}</desc>` : ''}</wpt>`)
+    .join('\n');
+  const segs = segments.map((seg) => `    <trkseg>\n${seg.map(([lat, lon]) => `      <trkpt lat="${lat.toFixed(5)}" lon="${lon.toFixed(5)}"/>`).join('\n')}\n    </trkseg>`).join('\n');
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="TrekkSewa" xmlns="http://www.topografix.com/GPX/1/1">\n  <metadata>\n    <name>${xmlEsc(name)}</name>\n    <desc>${xmlEsc(desc)}</desc>${link ? `\n    <link href="${xmlEsc(link)}"><text>${xmlEsc(name)}</text></link>` : ''}\n    <copyright author="OpenStreetMap contributors"><license>https://opendatacommons.org/licenses/odbl/</license></copyright>\n  </metadata>\n${wpts}\n  <trk>\n    <name>${xmlEsc(name)}</name>\n${segs}\n  </trk>\n</gpx>\n`;
+}

@@ -36,8 +36,10 @@ export const monthKey = () => html`<ul class="months-key" aria-hidden="true">
 export function trekCard(ctx, t, { heading = 'h3' } = {}) {
   const H = raw(heading);
   return html`<article class="trek-card ${hueClass(t.regionObj)}" data-trek="${t.slug}">
-    <div class="trek-art">
-      ${raw(profileMini(t.profile))}
+    <div class="trek-art${t.photo ? ' has-photo' : ''}">
+      ${t.photo
+        ? html`<img class="trek-photo" src="${ctx.u(`photos/${t.photo.small}`)}" alt="" loading="lazy" width="720" height="${Math.round((720 * t.photo.height) / t.photo.width)}" style="object-position:${t.photo.focus || '50% 50%'}">`
+        : raw(profileMini(t.profile))}
       <span class="tag">${t.regionObj.name}</span>
     </div>
     <div class="trek-body">
@@ -83,7 +85,7 @@ export function noticesBlock(list) {
           <p><strong>${n.title}</strong></p>
           <p>${n.text}</p>
           ${n.action ? html`<p><strong>What to do:</strong> ${n.action}</p>` : ''}
-          <p class="xsmall muted notice-meta">Reported ${longDate(n.reported)}. We have not re-checked it since. <span data-notice-age></span></p>
+          <p class="xsmall muted notice-meta">Latest report we found: ${longDate(n.reported)}.${n.checked && n.checked !== n.reported ? ` We looked again on ${longDate(n.checked)} and found nothing newer.` : ' We have not re-checked it since.'} <span data-notice-age></span></p>
         </div>
       </aside>`,
     )}

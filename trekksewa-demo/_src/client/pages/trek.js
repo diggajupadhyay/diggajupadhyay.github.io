@@ -18,7 +18,13 @@ if (mapEl && mapDataEl) {
     try {
       const data = JSON.parse(mapDataEl.textContent);
       const { L, map } = await createMap(mapEl, { bounds: data.bounds });
-      if (data.line.length > 1) L.polyline(data.line, { color: '#0b5d5e', weight: 3, opacity: 0.85, dashArray: '2 8', lineCap: 'round' }).addTo(map);
+      if (data.trail && data.trail.length) {
+        // the mapped footpath, with a pale casing so it reads on any map style
+        L.polyline(data.trail, { color: '#ffffff', weight: 7, opacity: 0.85, lineCap: 'round', lineJoin: 'round', interactive: false }).addTo(map);
+        L.polyline(data.trail, { color: '#0b5d5e', weight: 3.5, opacity: 0.95, lineCap: 'round', lineJoin: 'round', interactive: false }).addTo(map);
+        // sections with no mapped path: dashes that simply join two stops
+        if (data.gaps.length) L.polyline(data.gaps, { color: '#0b5d5e', weight: 3, opacity: 0.85, dashArray: '2 8', lineCap: 'round', interactive: false }).addTo(map);
+      } else if (data.line.length > 1) L.polyline(data.line, { color: '#0b5d5e', weight: 3, opacity: 0.85, dashArray: '2 8', lineCap: 'round' }).addTo(map);
       for (const p of data.points) {
         const text = p.k === 'night' ? String(p.d[0]) : p.k === 'high' ? '▲' : p.k === 'start' ? '●' : '';
         const marker = L.marker([p.lat, p.lon], { icon: pin(L, { kind: p.k, text }), title: p.n, keyboard: true, zIndexOffset: p.k === 'via' ? 0 : 500 }).addTo(map);

@@ -4,6 +4,7 @@ import { html, raw, jsonScript } from '../lib/html.mjs';
 import { icon } from '../lib/icons.mjs';
 import { ridgeStrip } from '../lib/landscape.mjs';
 import { MONTHS } from '../lib/format.mjs';
+import { FOOD_PER_DAY, NPR_PER_USD } from '../lib/plan.mjs';
 import { note } from './partials.mjs';
 
 const head = (ctx, { crumbs, title, lead, seed }) => html`<header class="page-head">
@@ -31,7 +32,7 @@ export function toolsHubPage(ctx) {
   const { u } = ctx;
   const tools = [
     ['tools/compare/', 'scale', 'Compare treks', 'Two or three routes side by side: length, altitude, difficulty, season and permits.'],
-    ['tools/planner/', 'calendar-days', 'Trek planner', 'Put dates on any itinerary, see where each night falls and export it to your calendar.'],
+    ['plan/', 'calendar-days', 'Plan my trek', 'Step by step: pick a trek, set your dates, see where you sleep each night, what it costs and who can help.'],
     ['tools/packing/', 'list-checks', 'Packing list', 'A checklist built for your trek, month and altitude, with what to rent in Nepal marked.'],
     ['tools/budget/', 'calculator', 'Budget estimator', 'Permits, guide, porter, food, lodging and transport added up, with every assumption editable.'],
     ['tools/gpx/', 'route', 'GPX viewer', 'Load a track to see its distance, climb and profile, follow it on a map and get off-track alerts.'],
@@ -165,53 +166,6 @@ ${head(ctx, {
   };
 }
 
-// ------------------------------------------------------------------ planner
-
-export function plannerPage(ctx) {
-  const { u, content } = ctx;
-  const body = html`
-${head(ctx, {
-  crumbs: [['tools/', 'Tools'], [null, 'Trek planner']],
-  title: 'Trek planner',
-  lead: 'Pick a trek and the day you leave. You get every stage with its date, sleeping altitude and walking time, ready to print or add to your calendar.',
-  seed: 75,
-})}
-<div class="wrap section-tight planner" data-planner>
-  <div class="card card-pad">
-    <div class="form-grid">
-      ${trekSelect(content, { id: 'plan-trek', label: 'Trek', attr: 'data-planner-trek' })}
-      <div class="field"><label for="plan-date">First day</label><input class="input" type="date" id="plan-date" data-planner-date></div>
-      <div class="field"><label for="plan-extra">Spare days at the end</label><select class="select" id="plan-extra" data-planner-extra><option value="0">None</option><option value="1" selected>1 day</option><option value="2">2 days</option><option value="3">3 days</option></select><span class="hint">For cancelled flights, blocked roads and bad weather.</span></div>
-    </div>
-  </div>
-  <section class="planner-out" data-planner-out hidden>
-    <div class="section-head">
-      <div><h2 data-planner-title></h2><p data-planner-sub></p></div>
-      <div class="cluster no-print" style="--gap:.5rem">
-        <button type="button" class="btn btn-sm" data-planner-save>${icon('bookmark', { size: 16 })}Save plan</button>
-        <button type="button" class="btn btn-secondary btn-sm" data-planner-ics>${icon('calendar-days', { size: 16 })}Add to calendar</button>
-        <button type="button" class="btn btn-secondary btn-sm" data-print>${icon('printer', { size: 16 })}Print</button>
-      </div>
-    </div>
-    <div class="table-wrap"><table class="plan-table"><thead><tr><th>Day</th><th>Date</th><th>Stage</th><th class="num">Sleep at</th><th class="num">Walking</th></tr></thead><tbody data-planner-rows></tbody></table></div>
-    <div class="planner-links no-print" data-planner-links></div>
-  </section>
-  <section class="saved-plans" data-saved-plans hidden>
-    <h2>Saved plans</h2>
-    <ul class="plan-list" data-plan-list></ul>
-  </section>
-  ${needsJs()}
-</div>`;
-  return {
-    title: 'Trek Planner: Put Dates on a Nepal Trekking Itinerary',
-    description: 'Choose a Nepal trek and a start date to get a dated day-by-day plan with sleeping altitudes and walking times. Export to your calendar or print it.',
-    section: 'tools',
-    scripts: ['planner'],
-    crumbs: [['tools/', 'Tools'], [null, 'Trek planner']],
-    body,
-  };
-}
-
 // ------------------------------------------------------------------ packing list
 
 export function packingPage(ctx) {
@@ -299,7 +253,7 @@ ${head(ctx, {
         <div class="field"><label for="bg-transport">Transport to and from the trail <span class="muted">(USD)</span></label><input class="input" type="number" id="bg-transport" name="transport" min="0" max="5000" step="1" value="60" inputmode="decimal"><span class="hint">Bus or shared jeep is cheap; a return Lukla flight is roughly USD 360–440.</span></div>
         <div class="field"><label for="bg-gear">Gear rental and purchases <span class="muted">(USD)</span></label><input class="input" type="number" id="bg-gear" name="gear" min="0" max="5000" step="1" value="40" inputmode="decimal"></div>
         <div class="field"><label for="bg-buffer">Contingency <span class="muted">(%)</span></label><input class="input" type="number" id="bg-buffer" name="buffer" min="0" max="50" step="1" value="10" inputmode="numeric"><span class="hint">Extra nights, hot showers, charging, a bad-weather day.</span></div>
-        <div class="field"><label for="bg-rate">Exchange rate <span class="muted">(NPR per USD)</span></label><input class="input" type="number" id="bg-rate" name="rate" min="50" max="400" step="0.5" value="138" inputmode="decimal"><span class="hint">Check today's rate.</span></div>
+        <div class="field"><label for="bg-rate">Exchange rate <span class="muted">(NPR per USD)</span></label><input class="input" type="number" id="bg-rate" name="rate" min="50" max="400" step="0.5" value="${NPR_PER_USD}" inputmode="decimal"><span class="hint">Check today's rate.</span></div>
       </div>
     </form>
     <aside class="budget-result card card-pad" data-budget-result aria-live="polite">
@@ -312,7 +266,7 @@ ${head(ctx, {
       <button type="button" class="btn btn-secondary btn-sm btn-block no-print" data-print>${icon('printer', { size: 16 })}Print</button>
     </aside>
   </div>
-  <script type="application/json" id="budget-data">${jsonScript({ permits, foodByRegion: { everest: 40, annapurna: 32, mustang: 38, langtang: 32, manaslu: 38, eastern: 34, western: 36, gaurishankar: 32, kathmandu: 30 } })}</script>
+  <script type="application/json" id="budget-data">${jsonScript({ permits, foodByRegion: FOOD_PER_DAY })}</script>
   ${needsJs()}
 </div>`;
   return {

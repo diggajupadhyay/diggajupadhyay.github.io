@@ -4,13 +4,23 @@ import { html, raw, jsonScript } from '../lib/html.mjs';
 import { icon } from '../lib/icons.mjs';
 import { logoMark, ridgeStrip } from '../lib/landscape.mjs';
 
+// The header carries one clear action and four places. Everything else lives under "More".
 export const NAV = [
   { href: 'treks/', label: 'Treks', section: 'treks', icon: 'mountain-snow' },
-  { href: 'regions/', label: 'Regions', section: 'regions', icon: 'map' },
-  { href: 'places/', label: 'Places', section: 'places', icon: 'map-pin' },
-  { href: 'conditions/', label: 'Conditions', section: 'conditions', icon: 'cloud-sun' },
+  { href: 'services/', label: 'Guides & porters', section: 'services', icon: 'handshake' },
   { href: 'safety/', label: 'Safety', section: 'safety', icon: 'heart-pulse' },
-  { href: 'tools/', label: 'Tools', section: 'tools', icon: 'compass' },
+  { href: 'support/', label: 'Help', section: 'about', icon: 'life-buoy' },
+];
+
+export const MORE = [
+  { href: 'saved/', label: 'My trips', desc: 'Plans and treks you have saved', icon: 'bookmark' },
+  { href: 'regions/', label: 'Regions', desc: 'The mountain regions compared', icon: 'map' },
+  { href: 'places/', label: 'Places to stay', desc: 'Villages, lodges and altitudes', icon: 'map-pin' },
+  { href: 'conditions/', label: 'Trail conditions', desc: 'Weather and notices this week', icon: 'cloud-sun' },
+  { href: 'permits/', label: 'Permits and fees', desc: 'What you need and what it costs', icon: 'ticket' },
+  { href: 'tools/', label: 'Planning tools', desc: 'Packing list, budget, compare', icon: 'compass' },
+  { href: 'gear/', label: 'Gear', desc: 'What to rent or buy in Nepal', icon: 'store' },
+  { href: 'journal/', label: 'Journal', desc: 'Plain advice for first trekkers', icon: 'book-open' },
 ];
 
 export const SERVICES = [
@@ -25,6 +35,7 @@ const FOOTER = [
   {
     title: 'Explore',
     links: [
+      ['plan/', 'Plan my trek'],
       ['treks/', 'All treks'],
       ['regions/', 'Regions'],
       ['places/', 'Places & altitudes'],
@@ -42,7 +53,6 @@ const FOOTER = [
       ['safety/insurance/', 'Insurance check'],
       ['tools/compare/', 'Compare treks'],
       ['tools/gpx/', 'GPX viewer'],
-      ['tools/planner/', 'Trek planner'],
       ['tools/packing/', 'Packing list'],
       ['tools/budget/', 'Budget estimator'],
     ],
@@ -62,7 +72,7 @@ const FOOTER = [
     links: [
       ['about/', 'About'],
       ['support/', 'Help & FAQ'],
-      ['saved/', 'Saved treks'],
+      ['saved/', 'My trips'],
       ['privacy/', 'Privacy'],
       ['terms/', 'Terms'],
       ['credits/', 'Data & credits'],
@@ -146,7 +156,7 @@ ${page.noindex ? raw('<meta name="robots" content="noindex">') : ''}
 ${assets.fonts.map((f) => html`<link rel="preload" href="${u(f)}" as="font" type="font/woff2" crossorigin>`)}
 <link rel="stylesheet" href="${u(assets.css)}">
 ${(page.styles || []).map((s) => html`<link rel="stylesheet" href="${u(assets.styles[s])}">`)}
-<script>(function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('ts-theme');if(t==='dark'||t==='light')d.dataset.theme=t}catch(e){}})();</script>
+<script>(function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('ts-theme');if(t==='dark'||t==='light')d.dataset.theme=t;var z=localStorage.getItem('ts-text');if(z==='l'||z==='xl')d.dataset.text=z}catch(e){}})();</script>
 ${page.head || ''}
 ${ld.map((o) => html`<script type="application/ld+json">${jsonScript(o)}</script>`)}
 </head>
@@ -156,17 +166,19 @@ ${ld.map((o) => html`<script type="application/ld+json">${jsonScript(o)}</script
   <div class="wrap bar">
     <a class="brand" href="${u()}" aria-label="${config.name} home">${raw(logoMark({ size: 30 }))}<span>Trekk<b>Sewa</b></span></a>
     <nav class="primary-nav" aria-label="Main">
+      <a class="nav-plan" href="${u('plan/')}"${cur('plan')}>${icon('calendar-check', { size: 18 })}Plan my trek</a>
       ${NAV.map((n) => html`<a href="${u(n.href)}"${cur(n.section)}>${n.label}</a>`)}
       <div class="menu">
-        <button type="button" aria-expanded="false" aria-controls="services-menu" data-menu>Services ${icon('chevron-down', { size: 16 })}</button>
-        <div class="menu-panel" id="services-menu" hidden>
-          ${SERVICES.map((s) => html`<a href="${u(s.href)}">${icon(s.icon, { size: 20 })}<strong>${s.label}</strong><span>${s.desc}</span></a>`)}
+        <button type="button" aria-expanded="false" aria-controls="more-menu" data-menu>More ${icon('chevron-down', { size: 16 })}</button>
+        <div class="menu-panel" id="more-menu" hidden>
+          ${MORE.map((m) => html`<a href="${u(m.href)}">${icon(m.icon, { size: 20 })}<strong>${m.label}</strong><span>${m.desc}</span></a>`)}
         </div>
       </div>
     </nav>
     <div class="header-actions">
-      <button type="button" class="icon-btn" data-search-open aria-label="Search treks and places" title="Search ( / )">${icon('search')}</button>
-      <button type="button" class="icon-btn theme-toggle" data-theme-toggle aria-label="Switch between light and dark theme">${icon('sun', { cls: 'icon-sun' })}${icon('moon', { cls: 'icon-moon' })}</button>
+      <button type="button" class="icon-btn" data-search-open aria-label="Search treks and places" title="Search">${icon('search')}</button>
+      <button type="button" class="icon-btn text-size" data-text-size aria-label="Change the text size" title="Text size">${icon('a-large-small')}</button>
+      <button type="button" class="icon-btn theme-toggle" data-theme-toggle aria-label="Switch between light and dark" title="Light or dark">${icon('sun', { cls: 'icon-sun' })}${icon('moon', { cls: 'icon-moon' })}</button>
       <a class="btn-sos" href="${u('safety/emergency/')}">${icon('siren', { size: 16 })}SOS</a>
     </div>
   </div>
@@ -204,31 +216,43 @@ ${page.body}
   </div>
 </footer>
 <nav class="tabbar" aria-label="Quick navigation">
-  <a href="${u('treks/')}"${cur('treks')}>${icon('mountain-snow', { size: 22 })}Treks</a>
-  <a href="${u('safety/')}"${cur('safety')}>${icon('heart-pulse', { size: 22 })}Safety</a>
-  <a href="${u('conditions/')}"${cur('conditions')}>${icon('cloud-sun', { size: 22 })}Conditions</a>
-  <a href="${u('services/')}"${cur('services')}>${icon('handshake', { size: 22 })}Services</a>
-  <button type="button" data-sheet-open aria-haspopup="dialog">${icon('menu', { size: 22 })}More</button>
+  <a href="${u()}"${cur('home')}>${icon('house', { size: 24 })}Home</a>
+  <a href="${u('treks/')}"${cur('treks')}>${icon('mountain-snow', { size: 24 })}Treks</a>
+  <a class="tab-plan" href="${u('plan/')}"${cur('plan')}>${icon('calendar-check', { size: 24 })}Plan</a>
+  <a href="${u('safety/')}"${cur('safety')}>${icon('heart-pulse', { size: 24 })}Safety</a>
+  <button type="button" data-sheet-open aria-haspopup="dialog">${icon('menu', { size: 24 })}More</button>
 </nav>
 <dialog class="sheet" id="menu-sheet" aria-label="Menu">
   <div class="sheet-inner">
     <div class="sheet-head"><strong>Menu</strong><button type="button" class="icon-btn" data-close aria-label="Close menu">${icon('x')}</button></div>
-    <h3>Explore</h3>
+    <a class="btn btn-lg btn-block" href="${u('plan/')}">${icon('calendar-check')}Plan my trek</a>
+    <h3>Find your way</h3>
     <div class="sheet-nav">
-      ${NAV.map((n) => html`<a href="${u(n.href)}">${icon(n.icon)}${n.label}</a>`)}
-      <a href="${u('permits/')}">${icon('ticket')}Permits</a>
-      <a href="${u('journal/')}">${icon('book-open')}Journal</a>
-      <a href="${u('saved/')}">${icon('bookmark')}Saved</a>
+      <a href="${u('treks/')}">${icon('mountain-snow')}Treks</a>
+      ${MORE.map((m) => html`<a href="${u(m.href)}">${icon(m.icon)}${m.label}</a>`)}
     </div>
-    <h3>Services</h3>
+    <h3>People who help you</h3>
     <div class="sheet-nav">
-      ${SERVICES.map((s) => html`<a href="${u(s.href)}">${icon(s.icon)}${s.label}</a>`)}
+      ${SERVICES.map((x) => html`<a href="${u(x.href)}">${icon(x.icon)}${x.label}</a>`)}
     </div>
-    <h3>TrekkSewa</h3>
+    <h3>Help and safety</h3>
     <div class="sheet-nav">
-      <a href="${u('about/')}">${icon('info')}About</a>
       <a href="${u('support/')}">${icon('life-buoy')}Help</a>
+      <a href="${u('safety/')}">${icon('heart-pulse')}Safety</a>
       <a href="${u('safety/emergency/')}">${icon('siren')}Emergency</a>
+      <a href="${u('about/')}">${icon('info')}About</a>
+    </div>
+    <div class="sheet-size">
+      <span id="sheet-size-label">Text size</span>
+      <div class="segs" role="group" aria-labelledby="sheet-size-label">
+        <button type="button" class="seg" data-text-set="">Normal</button>
+        <button type="button" class="seg" data-text-set="l">Large</button>
+        <button type="button" class="seg" data-text-set="xl">Largest</button>
+      </div>
+    </div>
+    <div class="sheet-size">
+      <span>Light or dark</span>
+      <button type="button" class="seg" data-theme-toggle>${icon('sun', { size: 18, cls: 'icon-sun' })}${icon('moon', { size: 18, cls: 'icon-moon' })} Switch</button>
     </div>
   </div>
 </dialog>

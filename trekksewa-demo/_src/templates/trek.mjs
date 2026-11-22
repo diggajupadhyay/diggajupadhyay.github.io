@@ -4,6 +4,7 @@ import { profileHtml } from '../lib/profile.mjs';
 import { ridgeStrip } from '../lib/landscape.mjs';
 import { DIFFICULTY, STYLE_LABEL, MONTHS, metres, feet, km, hours, daysRange, signed, num, monthRanges } from '../lib/format.mjs';
 import { RULES } from '../lib/altitude.mjs';
+import { walkStats } from '../lib/plan.mjs';
 import { trekCard, hueClass, grade, monthStrip, monthKey, note, permitCard, regionTag, comingSoon, noticesBlock, noticesFor } from './partials.mjs';
 
 const MODE_ICON = { flight: 'plane', bus: 'bus', jeep: 'car', drive: 'car', walk: 'footprints' };
@@ -40,6 +41,41 @@ export function trekPage(ctx, t) {
     y: p.y,
     l: p.kind === 'night' ? `Day ${p.day} · sleep at ${p.name}` : p.kind === 'start' ? `Start · ${p.name}` : `Day ${p.day} · ${p.name}`,
   }));
+
+  // --- "Is this trek right for me?", in plain words
+  const walk = walkStats(t.itinerary.map((d) => ({ h: d.hours, k: d.kind, m: d.mode !== 'walk' ? d.mode : undefined })));
+  const topSleep = a.maxSleep ? a.maxSleep.alt : Math.max(...t.itinerary.map((d) => d.sleep));
+  const campingOnly = t.style.includes('camping') && !t.style.includes('teahouse');
+  const forMe = {
+    walking: `${t.days} days in all. Most walking days are ${walk.typical[0] === walk.typical[1] ? `about ${walk.typical[0]}` : `${walk.typical[0]} to ${walk.typical[1]}`} hours on foot, and the longest is about ${walk.longest} hours. ${DIFFICULTY[t.difficulty].blurb}`,
+    height:
+      topSleep >= 5000
+        ? `You sleep as high as ${num(topSleep)} m. That is very high. Only go if you have time for every rest day in the plan, and talk to your doctor first.`
+        : topSleep >= 4000
+          ? `You sleep as high as ${num(topSleep)} m. Most people feel the altitude at this height. The plan includes the rest days you need: do not shorten it.`
+          : topSleep >= 3000
+            ? `The highest night is at ${num(topSleep)} m. You will notice the thinner air, but going slowly is usually enough.`
+            : `You never sleep above ${num(topSleep)} m, so altitude is not a worry on this trek.`,
+    sleep: campingOnly
+      ? 'In tents. A crew carries the camp and cooks; there are no lodges on much of this route.'
+      : t.style.includes('teahouse')
+        ? `In lodges${t.style.includes('camping') ? ' on most nights, and in tents on a few' : ' every night'}: a simple twin room, a shared bathroom and hot meals in a warm dining room.`
+        : 'In family homes in the villages, with simple rooms and home-cooked meals.',
+    help: t.restricted
+      ? 'This is a restricted area. A registered trekking company must arrange your permit, and a licensed guide walks with you.'
+      : t.guide.rule === 'required'
+        ? 'The rules require a licensed guide on this route. A porter to carry your bag is your choice.'
+        : t.guide.rule === 'strongly-recommended'
+          ? 'You may walk without a guide here, but we strongly recommend one, and a porter if you would rather not carry a full pack.'
+          : 'A guide is optional here. Many people still take one for company, local knowledge and peace of mind.',
+    cost: t.package ? `A guided trip with a trekking company usually costs USD ${num(t.package.low)} to ${num(t.package.high)} a person, going by the prices ${t.package.sampled || 'several'} companies published for ${content.sources.market ? content.sources.market.slice(0, 4) : 'this year'}.` : '',
+  };
+  const stayLine = (d) => {
+    const s = d.toPlace.services;
+    if (!s || !s.stayCount || d.toPlace.type === 'city') return '';
+    const names = s.stay.slice(0, 3).map((x) => x.n);
+    return html`<p class="day-stay">${icon('bed-double', { size: 16 })}<span><strong>${s.stayCount} ${s.stayCount === 1 ? 'place' : 'places'} to stay</strong> in ${d.toPlace.name}${names.length ? `, such as ${names.length > 1 ? `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}` : names[0]}` : ''}. <a href="${u(`places/${d.toPlace.slug}/#stay`)}">See them</a></span></p>`;
+  };
 
   const flagged = t.itinerary.filter((d) => d.level !== 'ok');
   const atms = t.routePlaces.filter((p) => p.slug !== t.gateway && (p.facilities || []).includes('atm'));
@@ -89,7 +125,8 @@ export function trekPage(ctx, t) {
       <h1>${t.name}</h1>
       <p class="lead">${t.summary}</p>
       <div class="cluster trek-actions no-print">
-        <a class="btn" href="#itinerary">${icon('list', { size: 18 })}See the itinerary</a>
+        <a class="btn btn-lg" href="${u(`plan/?trek=${t.slug}`)}">${icon('calendar-check', { size: 20 })}Plan this trek</a>
+        <a class="btn btn-secondary" href="#itinerary">${icon('list', { size: 18 })}Day by day</a>
         <button type="button" class="btn btn-secondary" data-save="${t.slug}" aria-pressed="false">${icon('bookmark', { size: 18 })}<span data-save-label>Save</span></button>
         <button type="button" class="btn btn-secondary" data-share data-share-title="${t.name} trek · ${config.name}" data-share-text="${t.tagline}">${icon('share-2', { size: 18 })}Share</button>
         <button type="button" class="btn btn-secondary" data-offline hidden>${icon('download', { size: 18 })}Keep offline</button>
@@ -105,6 +142,12 @@ export function trekPage(ctx, t) {
   <div class="wrap trek-layout">
     <div class="trek-main">
       ${noticesBlock(noticesFor(content, { trek: t.slug }))}
+      ${t.photo
+        ? html`<figure class="trek-photo-fig">
+            <img src="${u(`photos/${t.photo.file}`)}" alt="${t.photo.alt}" width="${t.photo.width}" height="${t.photo.height}" style="object-position:${t.photo.focus || '50% 50%'}" fetchpriority="high">
+            <figcaption>${t.photo.caption} <span class="photo-credit">Photo: <a href="${t.photo.source}" rel="noopener">${t.photo.author}</a>, <a href="${t.photo.licenceUrl}" rel="noopener license">${t.photo.licence}</a></span></figcaption>
+          </figure>`
+        : ''}
       <dl class="stats trek-stats">
         <div><dt>Duration</dt><dd>${daysRange(t.daysRange)}</dd></div>
         <div><dt>Distance</dt><dd>${km(t.distanceKm)}<small>approximate</small></dd></div>
@@ -113,6 +156,21 @@ export function trekPage(ctx, t) {
         <div><dt>Difficulty</dt><dd>${DIFFICULTY[t.difficulty].label}<small>${t.style.map((s) => STYLE_LABEL[s]).join(' · ')}</small></dd></div>
         <div><dt>Best months</dt><dd>${monthRanges(t.seasons.best)}</dd></div>
       </dl>
+
+      <section class="forme card card-pad" aria-labelledby="forme-title">
+        <h2 id="forme-title">Is this trek right for me?</h2>
+        <ul class="forme-list">
+          <li>${icon('footprints', { size: 26 })}<div><h3>The walking</h3><p>${forMe.walking}</p></div></li>
+          <li>${icon('mountain', { size: 26 })}<div><h3>The height</h3><p>${forMe.height}</p></div></li>
+          <li>${icon('bed-double', { size: 26 })}<div><h3>Where you sleep</h3><p>${forMe.sleep}</p></div></li>
+          <li>${icon('signpost', { size: 26 })}<div><h3>The help you need</h3><p>${forMe.help}</p></div></li>
+          ${forMe.cost ? html`<li>${icon('wallet', { size: 26 })}<div><h3>What it costs</h3><p>${forMe.cost}</p></div></li>` : ''}
+        </ul>
+        <div class="cluster no-print" style="--gap:.75rem">
+          <a class="btn btn-lg" href="${u(`plan/?trek=${t.slug}`)}">${icon('calendar-check', { size: 20 })}Plan this trek</a>
+          <a class="btn btn-lg btn-secondary" href="${u('plan/')}">Help me choose a different one</a>
+        </div>
+      </section>
 
       <section id="overview" class="trek-section">
         <h2>Overview</h2>
@@ -161,6 +219,7 @@ export function trekPage(ctx, t) {
                 <h3>${d.title}</h3>
                 <p class="day-route">${d.mode !== 'walk' ? html`${icon(MODE_ICON[d.mode], { size: 15, label: MODE_LABEL[d.mode] })} ` : ''}${routeLine(d)}</p>
                 <p>${d.note}</p>
+                ${stayLine(d)}
                 <div class="cluster" style="--gap:.4rem">
                   ${KIND_LABEL[d.kind] ? html`<span class="badge badge-info">${KIND_LABEL[d.kind]}</span>` : ''}
                   ${d.level !== 'ok' ? html`<span class="badge badge-${d.level}">${icon('triangle-alert', { size: 14 })}${d.level === 'high' ? 'Fast gain' : 'Watch this gain'}</span>` : ''}
@@ -193,6 +252,8 @@ export function trekPage(ctx, t) {
         </div>
         <script type="application/json" data-map-data>${jsonScript({
           line: t.line,
+          trail: t.trail,
+          gaps: t.gaps,
           bounds: t.bounds,
           points: t.mapPlaces
             .map((p) => {
@@ -200,7 +261,12 @@ export function trekPage(ctx, t) {
               return { s: p.slug, n: p.name, a: p.alt, lat: p.lat, lon: p.lon, d: nights, k: p.slug === t.maxAlt.place ? 'high' : nights.length ? 'night' : p.slug === t.start ? 'start' : 'via', q: p.coordQuality };
             }),
         })}</script>
-        <p class="map-note">${icon('info', { size: 14 })} Marker positions come from OpenStreetMap where we could match a place, and from our own estimates elsewhere. The dashed line simply joins the stops in order; follow the trail on the map and on the ground, not the line.${t.unmapped.length ? html` Not shown because we could not confirm ${t.unmapped.length === 1 ? 'its position' : 'their positions'}: ${t.unmapped.map((p) => p.name).join(', ')}.` : ''}</p>
+        <p class="map-note">${icon('info', { size: 14 })} ${t.trail.length
+            ? html`The solid line follows footpaths mapped in OpenStreetMap${t.gaps.length ? '; dashed sections simply join two stops where no path is mapped' : ''}. It is a guide to where the route goes, not a navigation track: trails are rerouted after landslides, so follow the signs and people on the ground.`
+            : 'The dashed line simply joins the stops in order; follow the trail on the map and on the ground, not the line.'} Marker positions come from OpenStreetMap where we could match a place, and from our own estimates elsewhere.${t.unmapped.length ? html` Not shown because we could not confirm ${t.unmapped.length === 1 ? 'its position' : 'their positions'}: ${t.unmapped.map((p) => p.name).join(', ')}.` : ''}</p>
+        ${t.trail.length
+          ? html`<p class="trail-file no-print"><a class="btn btn-secondary" href="${u(`treks/${t.slug}/${t.slug}.gpx`)}" download>${icon('download', { size: 18 })}Download the trail for a map app</a> <span class="small muted">A GPX file with ${num(t.trailKm)} km of mapped path and every stop${t.gaps.length ? '; sections with no mapped path are left out' : ''}. It opens in free apps such as Organic Maps.</span></p>`
+          : ''}
         <div class="chips route-places">${t.routePlaces.map((p) => html`<a class="chip" href="${u(`places/${p.slug}/`)}">${p.name}<span class="muted xsmall">${num(p.alt)} m</span></a>`)}</div>
       </section>
 

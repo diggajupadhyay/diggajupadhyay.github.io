@@ -13,6 +13,7 @@ import { loadContent } from './lib/content.mjs';
 import { layout, makeCtx } from './templates/layout.mjs';
 import { allPages } from './templates/pages.mjs';
 import { buildData } from './lib/data.mjs';
+import { routeGpx } from './lib/gpx.mjs';
 import { spriteSvg, SPRITE_TOKEN } from './lib/icons.mjs';
 
 const SRC = dirname(fileURLToPath(import.meta.url));
@@ -123,7 +124,11 @@ const jsResult = await esbuild({
   loader: { '.png': 'file', '.svg': 'text' },
   assetNames: '../media/[name]-[hash]',
   // only the public backend settings reach the browser; never put a service-role key in the config
-  define: { __BACKEND__: JSON.stringify({ provider: config.backend?.provider || 'none', supabaseUrl: config.backend?.supabaseUrl || '', supabaseAnonKey: config.backend?.supabaseAnonKey || '' }) },
+  define: {
+    __BACKEND__: JSON.stringify({ provider: config.backend?.provider || 'none', supabaseUrl: config.backend?.supabaseUrl || '', supabaseAnonKey: config.backend?.supabaseAnonKey || '' }),
+    // where a trekker's request for help goes when there is no database: WhatsApp first, then email
+    __CONTACT__: JSON.stringify({ email: config.contact?.email || '', whatsapp: config.contact?.whatsapp || '' }),
+  },
 });
 
 const assets = { css: '', styles: {}, js: {}, fonts: [], all: [] };
@@ -184,6 +189,21 @@ for (const r of rendered) emit(r.file, r.html.replaceAll(SPRITE_TOKEN, r.root + 
 // ---------------------------------------------------------------- data, sitemap, manifest
 for (const [file, data] of Object.entries(buildData(shared, pages))) emit(file, JSON.stringify(data));
 
+// A route file for each trek whose path is mapped: stops as waypoints, the footpath as a track.
+for (const t of content.treks) {
+  if (!t.trail.length) continue;
+  emit(
+    `treks/${t.slug}/${t.slug}.gpx`,
+    routeGpx({
+      name: `${t.name} (${config.name})`,
+      desc: `Footpath geometry from OpenStreetMap contributors (Open Database Licence), ${content.sources.trails || ''}. A guide to where the route goes, not a survey: trails are rerouted after landslides. ${t.gaps.length ? 'Sections with no mapped path are left out.' : ''}`.trim(),
+      link: `${config.siteUrl}/treks/${t.slug}/`,
+      waypoints: t.mapPlaces.map((p) => ({ lat: p.lat, lon: p.lon, ele: p.alt, name: p.name, desc: `${p.alt} m` })),
+      segments: t.trail,
+    }),
+  );
+}
+
 emit(
   'sitemap.xml',
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemap
@@ -212,6 +232,7 @@ emit(
         { src: assets.iconMaskable, sizes: '512x512', type: 'image/png', purpose: 'maskable' },
       ],
       shortcuts: [
+        { name: 'Plan my trek', short_name: 'Plan', url: './plan/' },
         { name: 'Emergency & SOS', short_name: 'SOS', url: './safety/emergency/' },
         { name: 'Altitude sickness check', short_name: 'AMS check', url: './safety/altitude-check/' },
         { name: 'Find a trek', short_name: 'Treks', url: './treks/' },
@@ -224,15 +245,16 @@ emit(
 
 // ---------------------------------------------------------------- service worker
 // Precache the shell and the safety tools so they open with no connection at all.
-const precachePages = ['', 'offline/', 'safety/', 'safety/emergency/', 'safety/altitude-check/', 'safety/acclimatization/', 'safety/insurance/', 'saved/'].filter((p) => pages.some((x) => x.path === p));
-const pageScripts = new Set(['main', 'home', 'safety', 'emergency', 'ams', 'acclimatization', 'insurance', 'saved']);
+const precachePages = ['', 'offline/', 'plan/', 'safety/', 'safety/emergency/', 'safety/altitude-check/', 'safety/acclimatization/', 'safety/insurance/', 'saved/'].filter((p) => pages.some((x) => x.path === p));
+const pageScripts = new Set(['main', 'home', 'plan', 'safety', 'emergency', 'ams', 'acclimatization', 'insurance', 'saved']);
 const precacheAssets = assets.all.filter((f) => {
   if (f === assets.css || f === assets.icons || f.endsWith('.woff2')) return true;
   if (f.includes('/chunks/')) return !/leaflet|map/.test(f);
   const name = Object.entries(assets.js).find(([, v]) => v === f)?.[0];
   return name ? pageScripts.has(name) : false;
 });
-const precache = [...precachePages.map((p) => `./${p}`), ...precacheAssets.map((a) => `./${a}`), `./${assets.favicon}`, `./${assets.icon192}`, './manifest.webmanifest'];
+// the planner's questions and suggestions work with no signal; a chosen trek's details are kept once opened
+const precache = [...precachePages.map((p) => `./${p}`), ...precacheAssets.map((a) => `./${a}`), `./${assets.favicon}`, `./${assets.icon192}`, './manifest.webmanifest', './data/treks.json', './data/plan.json'];
 const version = sha([...written.entries()].sort().map(([k, v]) => `${k}:${v}`).join('\n')).slice(0, 10);
 const sw = await esbuild({
   ...common,

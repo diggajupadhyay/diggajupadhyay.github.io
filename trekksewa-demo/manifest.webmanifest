@@ -34,6 +34,11 @@
   ],
   "shortcuts": [
     {
+      "name": "Plan my trek",
+      "short_name": "Plan",
+      "url": "./plan/"
+    },
+    {
       "name": "Emergency & SOS",
       "short_name": "SOS",
       "url": "./safety/emergency/"

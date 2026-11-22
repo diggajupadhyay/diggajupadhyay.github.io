@@ -89,28 +89,80 @@ export function servicesHubPage(ctx) {
     ['services/agencies/', 'building-2', 'Agencies', 'Registered companies that arrange permits, staff, transport and full trips, and are required for restricted areas.'],
     ['gear/', 'store', 'Gear', 'Shops in Kathmandu, Pokhara and on the trail that rent and sell what you need.'],
   ];
+  const facts = ctx.content.facts || {};
+  const who = [
+    {
+      icon: 'building-2',
+      title: 'A trekking company',
+      best: 'Best for a first trek, a short holiday, or anywhere a permit needs an agency.',
+      does: 'Arranges everything: guide, porter, permits, transport and beds. One price, one person to call if something goes wrong.',
+      cost: 'Usually a single price for the whole trek. Each trek page shows the range companies publish.',
+      href: 'services/agencies/',
+    },
+    {
+      icon: 'signpost',
+      title: 'A guide',
+      best: 'Best if you are happy to organise your own travel and permits but want someone who knows the way.',
+      does: 'Walks with you, sets a safe pace, books the lodges, watches how you cope with the height and deals with any problem.',
+      cost: facts.guideDailyRate?.value || '',
+      href: 'services/guides/',
+    },
+    {
+      icon: 'backpack',
+      title: 'A porter',
+      best: 'Best if you want to walk with only a small day bag. It makes every day easier, at any age.',
+      does: 'Carries your main bag between lodges, up to about 20 to 25 kg, usually for two trekkers.',
+      cost: facts.porterDailyRate?.value || '',
+      href: 'services/porters/',
+    },
+  ];
   const body = html`
 ${head(ctx, {
-  crumbs: [[null, 'Services']],
-  title: 'Trekking services in Nepal',
-  lead: 'A trek runs on people: the guide who sets the pace, the porter who carries your bag, the agency that gets the permit, the shop that rents you a sleeping bag. We are building one place to find the good ones.',
+  crumbs: [[null, 'Guides and porters']],
+  title: 'Guides, porters and trekking companies',
+  lead: 'You do not have to do this alone. Here is who can help you on a trek in Nepal, what each of them does, and what they cost.',
   seed: 51,
-  extra: html`<p style="margin-top:1rem">${comingSoon()}</p>`,
 })}
+<section class="section-tight" aria-labelledby="who-title">
+  <div class="wrap">
+    <div class="section-head"><div><h2 id="who-title">Which help do I need?</h2><p>Many people take a company for their first trek, and a guide and porter after that.</p></div></div>
+    <div class="who-grid">
+      ${who.map(
+        (w) => html`<article class="card card-pad who">
+          <span class="feature-icon">${icon(w.icon, { size: 24 })}</span>
+          <h3>${w.title}</h3>
+          <p class="who-best">${w.best}</p>
+          <p>${w.does}</p>
+          ${w.cost ? html`<p class="who-cost">${icon('wallet', { size: 18 })}<span>${w.cost}</span></p>` : ''}
+          <a class="link-arrow" href="${u(w.href)}">More about this${icon('arrow-right', { size: 18 })}</a>
+        </article>`,
+      )}
+    </div>
+    <div class="who-cta card card-pad">
+      <div>
+        <h3>Not sure? Plan your trek first.</h3>
+        <p>The planner shows which kinds of help are allowed on your route and what each would cost, then lets you send your plan to ask for a price.</p>
+      </div>
+      <a class="btn btn-lg" href="${u('plan/')}">${icon('calendar-check')}Plan my trek</a>
+    </div>
+  </div>
+</section>
+
 <div class="wrap section-tight">
+  <div class="section-head"><div><h2>Read more</h2></div>${comingSoon()}</div>
   <div class="grid grid-4">
-    ${cards.map(([href, ic, title, text]) => html`<a class="card card-pad card-link feature" href="${u(href)}"><span class="feature-icon">${icon(ic, { size: 22 })}</span><h2 class="h3">${title}</h2><p>${text}</p></a>`)}
+    ${cards.map(([href, ic, title, text]) => html`<a class="card card-pad card-link feature" href="${u(href)}"><span class="feature-icon">${icon(ic, { size: 22 })}</span><h3>${title}</h3><p>${text}</p></a>`)}
   </div>
 </div>
 
 <section class="section-tight" aria-labelledby="how-title">
   <div class="wrap">
-    <div class="section-head"><div><h2 id="how-title">How it will work</h2><p>No middleman between you and the person you hire.</p></div></div>
+    <div class="section-head"><div><h2 id="how-title">How to arrange help, step by step</h2><p>Whoever you choose, the same four steps keep you safe.</p></div></div>
     <ol class="steps">
-      <li><span class="step-n">1</span><h3>Find</h3><p>Search by route, region, language and dates from any trek page.</p></li>
-      <li><span class="step-n">2</span><h3>Check</h3><p>See the licence or registration number, experience and what the rate includes.</p></li>
-      <li><span class="step-n">3</span><h3>Contact directly</h3><p>Message or call the guide, agency or shop yourself and agree the details in writing.</p></li>
-      <li><span class="step-n">4</span><h3>Report back</h3><p>After the trek, tell us how it went. Reviews come only from completed trips.</p></li>
+      <li><span class="step-n">1</span><h3>Make your plan</h3><p>Dates, route, how many of you and the help you want. <a href="${u('plan/')}">The planner</a> puts it on one page.</p></li>
+      <li><span class="step-n">2</span><h3>Ask for a price</h3><p>Send the plan to two or three registered companies or guides and compare what each price includes.</p></li>
+      <li><span class="step-n">3</span><h3>Check their papers</h3><p>A guide shows a licence card. A company shows its registration. Both should show staff insurance.</p></li>
+      <li><span class="step-n">4</span><h3>Agree it in writing</h3><p>Dates, daily rate, what is included, the porter's load and what happens if you turn back early.</p></li>
     </ol>
   </div>
 </section>

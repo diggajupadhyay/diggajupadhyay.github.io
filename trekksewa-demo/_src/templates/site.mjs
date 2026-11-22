@@ -56,10 +56,40 @@ ${head(ctx, { crumbs: [[null, 'About']], title: html`About ${config.name} <span 
 
 export function supportPage(ctx) {
   const { u, config, content } = ctx;
+  // plain meanings for the words a first-time trekker meets on these pages
+  const words = [
+    ['Trek', 'A walk of several days from village to village, sleeping somewhere new each night. No climbing skill is needed.'],
+    ['Teahouse or lodge', 'A simple family-run guesthouse on the trail. You get a small twin room, a shared bathroom, and meals in a dining room with a stove.'],
+    ['Guide', 'A licensed person who walks with you, knows the way, books the beds and looks after your safety.'],
+    ['Porter', 'A person who carries your main bag from lodge to lodge, so that you walk with only a small day bag.'],
+    ['Trekking company or agency', 'A registered business that arranges the whole trip for you: guide, porter, permits, transport and beds.'],
+    ['Permit', 'A paper you pay for that allows you into a national park, a conservation area or a restricted area. It is checked on the trail.'],
+    ['TIMS card', 'A registration card for trekkers, arranged through a trekking company. It records who is on which trail.'],
+    ['Restricted area', 'A border region where foreigners may only trek with a registered company and a licensed guide, on a special permit.'],
+    ['Altitude sickness', 'Feeling ill because the air is thin: headache, nausea, tiredness, poor sleep. It is common above 2,500 m and passes if you stop climbing. If it gets worse, you must go down.'],
+    ['Acclimatization', 'Giving your body time to get used to the height, by climbing slowly and taking rest days. It is the single best protection against altitude sickness.'],
+    ['Rest day', 'A day when you sleep at the same height for a second night. You usually take a short walk higher and come back down.'],
+    ['Pass, or "La"', 'The low point of a ridge where the trail crosses from one valley to the next. Often the highest point of a trek.'],
+    ['Base camp', 'The place at the foot of a big mountain where climbers start. On a trek it is a viewpoint, not a climb.'],
+    ['Dal bhat', 'Rice with lentil soup and vegetables: the everyday meal of Nepal, filling, freshly cooked and refilled for free.'],
+    ['Namaste', 'The greeting you will hear all day, said with palms together. It means "I greet you".'],
+  ];
   const groups = [
+    [
+      'Planning a trek',
+      [
+        ['I have never trekked before. Where do I start?', `Open Plan my trek. It asks three simple questions (how many days, how much walking, which month), suggests treks that suit you, and then lays out a plan day by day.`],
+        ['How fit do I need to be?', 'For a gentle trek you should be comfortable walking four hours a day for several days in a row, with some hills. Plenty of people trek in their sixties and seventies. Walk regularly for a few months beforehand, and choose a route that stays below about 3,500 m for your first time.'],
+        ['I am over sixty. Is trekking in Nepal sensible?', 'Yes, with the right route and enough time. Talk to your doctor first, especially about your heart, lungs and any medicines. Take a guide, hire a porter, add rest days, and buy insurance that covers trekking to the height you will reach and rescue by helicopter.'],
+        ['Can I book a guide, porter or lodge here?', `Not yet. We are enrolling guides, porters and trekking companies now. Until then the planner gives you a complete plan that you can send to any registered company or guide to ask for a price.`],
+        ['Where will I sleep?', 'On most treks, in lodges (also called teahouses) in the villages along the trail. The planner and each place page list the lodges that are mapped at every stop.'],
+        ['What will it cost?', 'The planner gives a range for your trek, your group and the help you choose. As a rough guide, a week on a popular lodge trek with a guide and a porter costs about USD 500 to 900 a person, not counting flights to Nepal.'],
+      ],
+    ],
     [
       'Using the site',
       [
+        ['How do I make the text bigger?', 'Press the "Aa" button at the top of any page. Each press makes everything larger, and the third press returns to normal. Your choice is remembered. On a phone you will also find it under More.'],
         ['Is it free?', `Yes. Reading the guides and using every tool is free and needs no account.`],
         ['Do I need to sign up?', 'No. Saved treks, plans, packing lists and your emergency card are stored in your browser on your own device. Nothing is sent to us.'],
         ['Will my saved things appear on my other phone or laptop?', 'No. Because they live in your browser, each device has its own. Clearing your browser data for this site removes them.'],
@@ -94,8 +124,21 @@ export function supportPage(ctx) {
     ],
   ];
   const body = html`
-${head(ctx, { crumbs: [[null, 'Help']], title: 'Help and common questions', lead: 'How the site works, what it can and cannot do offline, and how far to trust it.', seed: 83 })}
+${head(ctx, { crumbs: [[null, 'Help']], title: 'Help and common questions', lead: 'How to plan a trek with this site, what the words mean, and how far to trust what you read here.', seed: 83 })}
 <div class="wrap wrap-narrow section-tight">
+  <div class="who-cta card card-pad help-start">
+    <div>
+      <h2 class="h3">New to trekking?</h2>
+      <p>Start with the planner. It asks three simple questions and builds your trek day by day.</p>
+    </div>
+    <a class="btn btn-lg" href="${u('plan/')}">${icon('calendar-check')}Plan my trek</a>
+  </div>
+  <section class="faq-group" id="words">
+    <h2>Trekking words explained</h2>
+    <dl class="words">
+      ${words.map(([term, meaning]) => html`<div><dt>${term}</dt><dd>${meaning}</dd></div>`)}
+    </dl>
+  </section>
   ${groups.map(
     ([title, items]) => html`<section class="faq-group" id="${title.toLowerCase().replace(/[^a-z]+/g, '-').replace(/-$/, '')}">
       <h2>${title}</h2>
@@ -190,6 +233,10 @@ export function creditsPage(ctx) {
   const permitSources = content.permits.permits.flatMap((p) => p.sources || []);
   const uniq = [...new Map([...permitSources, ...(content.emergency?.sources || [])].map((s) => [s.url, s])).values()];
   const pos = content.positions;
+  const legs = content.treks.reduce((s, t) => ({ mapped: s.mapped + t.trail.length, total: s.total + t.trail.length + t.gaps.length }), { mapped: 0, total: 0 });
+  const withStay = content.places.filter((p) => p.services && p.services.stayCount);
+  const stays = { places: withStay.length, count: withStay.reduce((s, p) => s + p.services.stayCount, 0) };
+  const photos = content.photos.all;
   const body = html`
 ${head(ctx, { crumbs: [[null, 'Data and credits']], title: 'Data and credits', lead: 'Where the information comes from, the open projects the site is built on, and the medical references behind the safety tools.', seed: 89 })}
 <div class="wrap wrap-narrow section-tight"><div class="prose">
@@ -203,6 +250,11 @@ ${head(ctx, { crumbs: [[null, 'Data and credits']], title: 'Data and credits', l
     <li><strong>${num(pos.hidden)}</strong> we could not confirm either way. They are listed with their altitude but are not drawn on any map, because a marker in the wrong place is worse than none.</li>
   </ul>
   <p>Positions are a planning aid and not survey data. Coordinates taken from OpenStreetMap are © ${ext('https://www.openstreetmap.org/copyright', 'OpenStreetMap contributors')} and remain under the Open Database Licence.</p>
+  <h2 id="trails">Trails and places to stay</h2>
+  <p>The footpath drawn on each trek map, the route file you can download, and the lists of lodges, health posts, cash machines and water points all come from OpenStreetMap, read from the Protomaps daily build of ${longDate(content.sources.trails || content.sources.services || '')}. ${num(legs.mapped)} of the walking sections in our itineraries follow a mapped path. The remaining ${num(legs.total - legs.mapped)} that we can place are drawn as dashes that simply join two stops, and a section is left off the map altogether where we could not confirm where a stop is. Lodges are listed for ${num(stays.places)} places, ${num(stays.count)} in all.</p>
+  <p>This data is © ${ext('https://www.openstreetmap.org/copyright', 'OpenStreetMap contributors')} and is available under the Open Database Licence. It is made by volunteers: a lodge may have closed, a new one may be missing, and a path may have moved since it was mapped. If you spot a mistake, the best fix is to ${ext('https://www.openstreetmap.org/fixthemap', 'correct it in OpenStreetMap')}, where everyone benefits.</p>
+  <h2 id="prices">Prices</h2>
+  <p>The package price ranges and transport fares used by the planner are list prices that trekking companies, booking sites and operators showed online${content.sources.market ? html`, gathered on ${longDate(content.sources.market)}` : ''}. Nothing was confirmed with a company, airline or ticket counter. They are there to help you budget and to recognise a fair offer, not as a quote.</p>
   <h2>Maps</h2>
   <ul>
     <li>Map data © ${ext('https://www.openstreetmap.org/copyright', 'OpenStreetMap contributors')}, available under the Open Database Licence.</li>
@@ -211,6 +263,13 @@ ${head(ctx, { crumbs: [[null, 'Data and credits']], title: 'Data and credits', l
   </ul>
   <h2>Weather</h2>
   <p>Forecasts by ${ext('https://open-meteo.com/', 'Open-Meteo')}, licensed under CC BY 4.0, from national weather service models. Open-Meteo's free service is for non-commercial use.</p>
+  ${photos.length
+    ? html`<h2 id="photos">Photographs</h2>
+        <p>The photographs come from Wikimedia Commons and are used under the licences shown beside each one. We resized them and changed nothing else; our resized copies are offered under the same licences.</p>
+        <ul class="photo-credits">
+          ${photos.map((p) => html`<li><a href="${p.source}" rel="noopener">${p.caption || p.title}</a>, by ${p.author}. <a href="${p.licenceUrl}" rel="noopener license">${p.licence}</a>.</li>`)}
+        </ul>`
+    : ''}
   <h2 id="medical">Medical references</h2>
   <ul>
     <li>Roach RC, Hackett PH, Oelz O, et al. <em>The 2018 Lake Louise Acute Mountain Sickness Score.</em> High Altitude Medicine &amp; Biology, 2018. The scoring used in the altitude sickness check.</li>
@@ -248,7 +307,7 @@ ${head(ctx, { crumbs: [[null, 'Saved']], title: 'Saved on this device', lead: 'Y
     </div>
   </section>
   <section style="margin-top:2.5rem" data-saved-plans-box hidden>
-    <div class="section-head"><h2>Planned dates</h2><a class="link-arrow" href="${u('tools/planner/')}">Trek planner${icon('arrow-right', { size: 18 })}</a></div>
+    <div class="section-head"><h2>My trek plans</h2><a class="link-arrow" href="${u('plan/')}">Plan another trek${icon('arrow-right', { size: 18 })}</a></div>
     <ul class="plan-list" data-saved-plans></ul>
   </section>
   <section style="margin-top:2.5rem">

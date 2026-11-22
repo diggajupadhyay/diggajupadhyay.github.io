@@ -46,7 +46,7 @@ if (root) {
           'li',
           {},
           h('div', {}, h('strong', {}, p.name || slug), h('span', { class: 'muted small' }, `${fmt.format(new Date(y, m - 1, d))} · ${p.days} days`)),
-          h('a', { class: 'btn btn-secondary btn-sm', href: url(`tools/planner/?trek=${slug}&start=${p.start}`) }, 'Open plan'),
+          h('a', { class: 'btn btn-secondary btn-sm', href: url(`plan/?trek=${slug}&start=${p.start}${p.people ? `&people=${p.people}` : ''}${p.help ? `&help=${p.help}` : ''}${p.spare !== undefined && p.spare !== 1 ? `&spare=${p.spare}` : ''}`) }, 'Open plan'),
         );
       }),
     );

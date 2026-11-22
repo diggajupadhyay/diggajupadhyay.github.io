@@ -1,22 +1,36 @@
 [
   {
     "id": "langtang-flood-2026",
-    "reported": "2026-11-15",
+    "reported": "2026-11-04",
+    "checked": "2026-11-22",
     "level": "warn",
-    "regions": ["langtang"],
-    "treks": ["langtang-valley", "gosaikunda", "tamang-heritage-trail", "langtang-gosaikunda-helambu"],
-    "title": "Langtang: road to Syabrubesi cut by the August 2026 flood",
-    "text": "The Bhote Koshi flood of 26 August 2026 badly damaged Syabrubesi and the road to it. Reports in mid-November 2026 said vehicles were stopping at Dhunche or Thulo Syabru, with the Langtang valley and Gosaikunda trails open again from there. The Tamang Heritage Trail runs through the worst-hit area and its status was unclear.",
-    "action": "Confirm the current roadhead and which bridges are in use with your agency or a lodge owner before you book transport."
+    "regions": [
+      "langtang"
+    ],
+    "treks": [
+      "langtang-valley",
+      "gosaikunda",
+      "tamang-heritage-trail",
+      "langtang-gosaikunda-helambu"
+    ],
+    "title": "Langtang: trails reopened, road to Syabrubesi cut by the August 2026 flood",
+    "text": "The Bhote Koshi flood of 26 August 2026 badly damaged Syabrubesi and swept away the road bridge on the Dhunche side. The road from Kathmandu reopened as far as Dhunche on 11 October over a temporary bridge at Betrawati; agencies say only jeeps and other light vehicles use it. Langtang, Kyanjin and Gosaikunda are open, reached on foot from Dhunche or Thulo Syabru by an alternative trail to Bamboo and Lama Hotel that opened at the end of October. The Tamang Heritage Trail reopened around 25 October over a temporary footbridge at Syabrubesi, but a second footbridge towards Briddim was still being built. A vehicle bridge at Syabrubesi was due before Tihar in early November, and we found no report that it has opened. A news briefing on 4 November still listed the Langtang and Gosaikunda routes as open.",
+    "action": "Plan to start walking from Dhunche or Thulo Syabru and allow an extra day. Before you book transport, ask your agency or a lodge owner where vehicles stop this week, what kind of vehicle gets through and which footbridges are in use. For the Tamang Heritage Trail, also ask how to reach Syabrubesi and whether the Briddim side is open."
   },
   {
     "id": "manaslu-flood-2026",
-    "reported": "2026-11-15",
+    "reported": "2026-11-04",
+    "checked": "2026-11-22",
     "level": "warn",
-    "regions": ["manaslu"],
-    "treks": ["manaslu-circuit", "tsum-valley"],
-    "title": "Manaslu and Tsum: flood damage in the Budhi Gandaki gorge",
-    "text": "A flood on 11 October 2026 destroyed bridges and stretches of trail between Machha Khola and Philim and in lower Tsum. Temporary bypasses were reported on the Manaslu Circuit in the weeks that followed; access to Tsum was still uncertain when we last checked.",
-    "action": "Ask your agency for the state of the gorge trail and the Tsum junction this week, and do not set out in or just after heavy rain."
+    "regions": [
+      "manaslu"
+    ],
+    "treks": [
+      "manaslu-circuit",
+      "tsum-valley"
+    ],
+    "title": "Manaslu and Tsum: reopened on temporary bridges after the October 2026 flood",
+    "text": "A flood on 11 October 2026 destroyed bridges and stretches of trail in the Budhi Gandaki gorge and in lower Tsum. The Manaslu Circuit reopened around 22 October: vehicles reach Machha Khola, and trekkers have been getting through Khorlabesi, Jagat and Philim, with a short bypass path at Yaru Bagar. The way into Tsum reopened on 25 October over four temporary wooden bridges, after the cantilever bridge at Sardibhir was lost. The municipality chair has said those bridges will not survive the next rains. A news briefing on 4 November also reported a rockfall blocking the side trail to Serang Gompa, which we could not confirm.",
+    "action": "Ask your agency for the state of the gorge trail, the Yaru Bagar bypass and the Tsum bridges in the week you go. Expect slow, rough going on temporary paths and bridges, keep a spare day, and do not set out in or just after heavy rain."
   }
 ]

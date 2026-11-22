@@ -5,67 +5,202 @@
     "confidence": "medium",
     "verified": true,
     "sources": [
-      { "title": "Nepal Tourism Board: TIMS Card (revised provision effective 31 March 2023, route list)", "url": "https://ntb.gov.np/plan-your-trip/before-you-come/tims-card" },
-      { "title": "U.S. Embassy in Nepal: New requirements for use of trekking guides/porters effective 1 April 2023", "url": "https://np.usembassy.gov/alert-new-requirements-for-use-of-trekking-guides-porters-effective-april-1-2023/" },
-      { "title": "The Kathmandu Post: Everest region, Nepal Tourism Board dispute over solo trek ban heats up, April 2023", "url": "https://kathmandupost.com/money/2023/04/03/everest-region-nepal-tourism-board-dispute-over-solo-trek-ban-heats-up" },
-      { "title": "The Himalayan Times: Solo travellers allowed to trek without a guide in Everest region", "url": "https://thehimalayantimes.com/business/solo-travellers-allowed-to-trek-without-a-guide-in-everest-region" },
-      { "title": "ExplorersWeb: Solo trekker flouts Khumbu rules, evacuated after cliff fall (2026, notes the rule is not strictly enforced in Khumbu)", "url": "https://explorersweb.com/solo-trekker-flouts-khumbu-rules-evacuated-after-cliff-fall/" },
-      { "title": "The Longest Way Home: Latest information on the mandatory trekking guide rule in Nepal", "url": "https://www.thelongestwayhome.com/blog/nepal/latest-information-on-the-mandatory-trekking-guide-rule-in-nepal/" },
-      { "title": "GOV.UK foreign travel advice, Nepal: Safety and security", "url": "https://www.gov.uk/foreign-travel-advice/nepal/safety-and-security" }
+      {
+        "title": "Nepal Tourism Board: TIMS Card (revised provision effective 31 March 2023, route list)",
+        "url": "https://ntb.gov.np/plan-your-trip/before-you-come/tims-card"
+      },
+      {
+        "title": "U.S. Embassy in Nepal: New requirements for use of trekking guides/porters effective 1 April 2023",
+        "url": "https://np.usembassy.gov/alert-new-requirements-for-use-of-trekking-guides-porters-effective-april-1-2023/"
+      },
+      {
+        "title": "The Kathmandu Post: Everest region, Nepal Tourism Board dispute over solo trek ban heats up, April 2023",
+        "url": "https://kathmandupost.com/money/2023/04/03/everest-region-nepal-tourism-board-dispute-over-solo-trek-ban-heats-up"
+      },
+      {
+        "title": "The Himalayan Times: Solo travellers allowed to trek without a guide in Everest region",
+        "url": "https://thehimalayantimes.com/business/solo-travellers-allowed-to-trek-without-a-guide-in-everest-region"
+      },
+      {
+        "title": "ExplorersWeb: Solo trekker flouts Khumbu rules, evacuated after cliff fall (2026, notes the rule is not strictly enforced in Khumbu)",
+        "url": "https://explorersweb.com/solo-trekker-flouts-khumbu-rules-evacuated-after-cliff-fall/"
+      },
+      {
+        "title": "The Longest Way Home: Latest information on the mandatory trekking guide rule in Nepal",
+        "url": "https://www.thelongestwayhome.com/blog/nepal/latest-information-on-the-mandatory-trekking-guide-rule-in-nepal/"
+      },
+      {
+        "title": "GOV.UK foreign travel advice, Nepal: Safety and security",
+        "url": "https://www.gov.uk/foreign-travel-advice/nepal/safety-and-security"
+      }
     ]
   },
   "guideDailyRate": {
-    "value": "About USD 25–40 a day (roughly NPR 3,500–5,500)",
-    "detail": "Typical agency rates for a licensed, English-speaking trekking guide in the 2025–26 seasons, with the top of the range for Everest, high passes and very experienced guides. The rate normally covers the guide's wage, meals, lodging and insurance; their transport to the trailhead, including a Lukla flight, and your tip are extra.",
-    "confidence": "low",
-    "verified": false,
-    "sources": []
+    "value": "About USD 25–40 a day (roughly NPR 3,800–6,100); a few agencies quote up to USD 50",
+    "detail": "These are 2026 agency prices for a licensed, English-speaking trekking guide. Most quotes are USD 25–30, rising to USD 35–40 or more for senior guides, harder routes and restricted areas. As a floor, the trekking agencies' association set a minimum guide wage of NPR 3,100 a day from 17 July 2023; we found no later revision. The price normally covers the guide's own food, lodging and insurance, but agencies word this differently, so ask. Ask too whether their transport, such as a Lukla flight, is included. Your tip is extra.",
+    "confidence": "medium",
+    "verified": true,
+    "checked": "2026-11-22",
+    "sources": [
+      {
+        "title": "Himalayan Partner: Guide and porter price in Nepal",
+        "url": "https://himalayanpartner.com/blog/guide-and-porter-price-in-nepal"
+      },
+      {
+        "title": "Namaste Nepal Trekking: Guide and porters in Nepal cost",
+        "url": "https://namastenepaltrekking.com/guide-and-porters-in-nepal-cost/"
+      },
+      {
+        "title": "The Himalayan Times: Wages of trekking workers increase (TAAN minimum daily wages, June 2023)",
+        "url": "https://thehimalayantimes.com/business/wages-of-trekking-workers-increase"
+      },
+      {
+        "title": "Onlinekhabar: New wages of tourism workers (guide NPR 3,100, porter NPR 2,400 a day)",
+        "url": "https://english.onlinekhabar.com/wages-of-tourism-workers-new.html"
+      }
+    ]
   },
   "porterDailyRate": {
-    "value": "About USD 18–25 a day (roughly NPR 2,500–3,500)",
-    "detail": "Typical 2025–26 agency rates for a porter carrying 20–25 kg, usually the bags of two trekkers. The rate normally includes the porter's wage, food, lodging and insurance; ask the agency to confirm the insurance and proper clothing, and budget separately for a tip and any transport to the trailhead.",
-    "confidence": "low",
-    "verified": false,
-    "sources": []
+    "value": "About USD 18–25 a day (roughly NPR 2,700–3,800); some agencies quote up to USD 30",
+    "detail": "These are 2026 agency prices for a porter who carries 20–25 kg, usually the bags of two trekkers. As a floor, the trekking agencies' association set a minimum porter wage of NPR 2,400 a day from 17 July 2023; we found no later revision. The price normally covers the porter's own food and lodging, but agencies differ, so ask what is included and ask to see the insurance. Your tip is extra.",
+    "confidence": "medium",
+    "verified": true,
+    "checked": "2026-11-22",
+    "sources": [
+      {
+        "title": "Himalayan Partner: Guide and porter price in Nepal",
+        "url": "https://himalayanpartner.com/blog/guide-and-porter-price-in-nepal"
+      },
+      {
+        "title": "Namaste Nepal Trekking: Guide and porters in Nepal cost",
+        "url": "https://namastenepaltrekking.com/guide-and-porters-in-nepal-cost/"
+      },
+      {
+        "title": "The Himalayan Times: Wages of trekking workers increase (TAAN minimum daily wages, June 2023)",
+        "url": "https://thehimalayantimes.com/business/wages-of-trekking-workers-increase"
+      },
+      {
+        "title": "Onlinekhabar: New wages of tourism workers (guide NPR 3,100, porter NPR 2,400 a day)",
+        "url": "https://english.onlinekhabar.com/wages-of-tourism-workers-new.html"
+      }
+    ]
   },
   "porterGuideDailyRate": {
-    "value": "About USD 22–30 a day (roughly NPR 3,000–4,200)",
-    "detail": "A porter-guide carries a lighter load, usually one trekker's bag of 10–15 kg, and speaks basic English. It is a job description rather than a licence category, so ask whether yours holds a trekking guide licence if your route requires one; the rate normally includes food, lodging and insurance.",
+    "value": "About USD 20–35 a day (roughly NPR 3,000–5,300), between a porter's rate and a guide's",
+    "detail": "A porter-guide carries a lighter load than a porter and guides in basic English. We found only two 2026 price sources and they differ: one gives USD 20–28 and the other USD 25–35. The trekking agencies' association treats porter-guide as its own wage grade, with a minimum of NPR 2,500 a day from 17 July 2023, and runs porter-guide training. We found no separate government licence for the role, so if your route requires a licensed guide, ask whether yours holds a trekking guide licence.",
     "confidence": "low",
     "verified": false,
-    "sources": []
+    "checked": "2026-11-22",
+    "sources": [
+      {
+        "title": "Himalayan Partner: Guide and porter price in Nepal",
+        "url": "https://himalayanpartner.com/blog/guide-and-porter-price-in-nepal"
+      },
+      {
+        "title": "Namaste Nepal Trekking: Guide and porters in Nepal cost",
+        "url": "https://namastenepaltrekking.com/guide-and-porters-in-nepal-cost/"
+      },
+      {
+        "title": "Onlinekhabar: New wages of tourism workers (porter guide NPR 2,500 a day)",
+        "url": "https://english.onlinekhabar.com/wages-of-tourism-workers-new.html"
+      },
+      {
+        "title": "TAAN: Downloads (wage schedule and porter-guide training form)",
+        "url": "https://www.taan.org.np/page/downloads"
+      }
+    ]
   },
   "porterLoadLimit": {
-    "value": "30 kg at most in Nepal, including the porter's own kit; responsible agencies load 20–25 kg",
-    "detail": "The International Porter Protection Group gives 30 kg as the ceiling for Nepal and says it should come down for altitude, trail and weather; Nepali rules are generally quoted as allowing the same 30 kg up to base-camp height, with lower limits above. Agreements between TAAN and the porters' unions, and most agency policies, are usually described as working on about 25 kg, which is why two trekkers sharing a porter are asked to keep their bags near 10–12 kg each.",
-    "confidence": "low",
-    "verified": false,
+    "value": "30 kg is the International Porter Protection Group's ceiling for Nepal; agencies normally load 20–25 kg, usually the bags of two trekkers",
+    "detail": "The International Porter Protection Group says no porter should carry more than they safely can, with 30 kg as the most in Nepal, and that the limit should come down for altitude, trail and weather. Agencies in 2026 describe 20–25 kg a porter, which is why two trekkers sharing one are asked to keep their bags to about 10–12 kg each. We found no current Nepali rule that fixes a load for trekking porters, and the trekking agencies' association's published wage agreements do not mention one. The guideline, as the bodies we checked quote it, does not say whether the porter's own kit counts, so assume it does and pack lighter.",
+    "confidence": "medium",
+    "verified": true,
+    "checked": "2026-11-22",
     "sources": [
-      { "title": "Where to confirm: International Porter Protection Group, guidelines (not re-read for this review)", "url": "https://www.ippg.net/" }
+      {
+        "title": "Rural 21: Everest porters, the backbone of trekking, burdened by unfair wages and risks (quotes the IPPG load limits)",
+        "url": "https://www.rural21.com/english/archive/2020/01/detail/article/everest-porters-the-backbone-of-trekking-burdened-by-unfair-wages-and-risks.html"
+      },
+      {
+        "title": "British Mountaineering Council: Porter care in the mountains",
+        "url": "https://services.thebmc.co.uk/porter-care-in-the-mountains"
+      },
+      {
+        "title": "Himalayan Partner: Guide and porter price in Nepal",
+        "url": "https://himalayanpartner.com/blog/guide-and-porter-price-in-nepal"
+      },
+      {
+        "title": "TAAN: Downloads (agreement with the workers' unions and wage schedule; neither sets a load)",
+        "url": "https://www.taan.org.np/page/downloads"
+      }
     ]
   },
   "porterWelfare": {
     "value": "Five IPPG guidelines: proper clothing, shelter and food, insurance and equal medical care, no sick porter sent down alone, and a load within the porter's ability",
-    "detail": "The International Porter Protection Group asks that porters get clothing and footwear fit for the season and altitude, a dedicated place to sleep with bedding plus food and hot drinks above the tree line, and life insurance with the same medical care you would expect yourself. A sick or injured porter must never be paid off and sent down alone: someone who speaks their language goes with them, with money for treatment, and nobody should carry more than they safely can (30 kg at most in Nepal), with no child porters.",
+    "detail": "The International Porter Protection Group asks that porters get clothing and footwear fit for the season and altitude, adequate shelter, food and drink, and life insurance with the same medical care you would expect yourself. A sick or injured porter must not be paid off and sent down alone: the trek leader has to be told, and someone who speaks the porter's language goes down with them. Nobody should carry more than they safely can, 30 kg at most in Nepal. Nepal's own rules for trekking agencies, as amended in 2018, also require the staff who go with you to have accident insurance of at least NPR 1,000,000 for the whole trip, so ask the agency to show you the policy.",
     "confidence": "medium",
-    "verified": false,
+    "verified": true,
+    "checked": "2026-11-22",
     "sources": [
-      { "title": "Where to confirm: International Porter Protection Group, guidelines (not re-read for this review)", "url": "https://www.ippg.net/" }
+      {
+        "title": "British Mountaineering Council: Porter care in the mountains",
+        "url": "https://services.thebmc.co.uk/porter-care-in-the-mountains"
+      },
+      {
+        "title": "Medical Expeditions (MEDEX): Porters",
+        "url": "https://www.medex.org.uk/chapters/porters/"
+      },
+      {
+        "title": "Rural 21: Everest porters, the backbone of trekking, burdened by unfair wages and risks",
+        "url": "https://www.rural21.com/english/archive/2020/01/detail/article/everest-porters-the-backbone-of-trekking-burdened-by-unfair-wages-and-risks.html"
+      },
+      {
+        "title": "Nepal Gazette, 29 January 2018: Travel and Trekking Agency (Sixth Amendment) Rules, 2074 (staff insurance; in Nepali, copy hosted by TAAN)",
+        "url": "https://www.taan.org.np/public/files/download/download_Trekking-Niyamawali1.pdf"
+      }
     ]
   },
   "teahouseDailyCost": {
-    "value": "Roughly USD 30–50 a day in Everest, USD 25–40 in Annapurna and Langtang, and USD 30–45 on the Manaslu circuit",
-    "detail": "That covers a twin room and three meals with tea in the 2025–26 seasons; the room is the cheap part, often NPR 500–1,000 if you eat where you sleep, and prices climb with altitude. Hot showers, charging, Wi-Fi, bottled or boiled water, snacks and alcohol are extra and can add USD 5–15 a day high up.",
+    "value": "Roughly USD 25–50 a day for a bed and three meals in Annapurna and Langtang and USD 35–65 in the Everest region; we found no reliable separate figure for Manaslu",
+    "detail": "These are 2026 agency estimates and they vary a lot. One puts Langtang at USD 30–45, the lower Annapurna treks at USD 25–40, Annapurna Base Camp and Mardi Himal at USD 30–50 and Everest at USD 35–65. A general guide says USD 25–55 depending on altitude and season. The room is the cheap part, often USD 2–10 a night, and some lodges discount it if you eat all your meals there. Prices climb with altitude, and hot showers, charging, Wi-Fi, boiled water, snacks and alcohol cost extra. For the Manaslu circuit, budget towards the top of the range.",
     "confidence": "low",
     "verified": false,
-    "sources": []
+    "checked": "2026-11-22",
+    "sources": [
+      {
+        "title": "Nepal Hiking Team: Nepal trekking cost, budget and price breakdown",
+        "url": "https://www.nepalhikingteam.com/nepal-trekking-costs"
+      },
+      {
+        "title": "Tours Guide: Trekking cost guide in Nepal, updated 2026",
+        "url": "https://toursguide.github.io/trekking-cost-guide-in-nepal"
+      },
+      {
+        "title": "Best Heritage Tour: Teahouse trekking in Nepal, 2025–2026 guide",
+        "url": "https://www.bestheritagetour.com/blog/teahouse-trekking-in-nepal-2025-2026-guide"
+      }
+    ]
   },
   "gearRental": {
-    "value": "About NPR 100–300 (USD 1–2.50) per item per day in Thamel and at Lakeside in Pokhara",
-    "detail": "Typical shop rates are NPR 100–250 a day for a down jacket, NPR 100–300 for a four-season sleeping bag, NPR 50–150 for a pair of trekking poles, NPR 100–250 for crampons or microspikes and NPR 50–150 for a duffel. Shops charge for every day the gear is out and hold a cash deposit or a passport copy, and many agencies lend a duffel, sleeping bag and down jacket to their clients free.",
+    "value": "About USD 1–2 (NPR 150–300) per item per day for a down jacket or a sleeping bag in Thamel and at Lakeside in Pokhara; trekking poles cost less",
+    "detail": "Two 2026 guides give about USD 1–2 a day for a down jacket or a sleeping bag, USD 0.50–1 for a pair of trekking poles and about USD 1, or NPR 200–300, for microspikes or crampons. A third quotes far more, USD 5–15 a day for a jacket or bag, so prices clearly vary with the shop and the quality. You pay for every day the gear is out, and shops hold a cash deposit, put at USD 50–200 by the one guide that gives a figure. We found no shop price list to confirm any of this. Check zips, seams and warmth before you leave the shop, because copies of well-known brands are common in Thamel.",
     "confidence": "low",
     "verified": false,
-    "sources": []
+    "checked": "2026-11-22",
+    "sources": [
+      {
+        "title": "Nepal trekking gear rental guide 2026 (thn-frontend.pages.dev)",
+        "url": "https://thn-frontend.pages.dev/blog/nepal-trekking-gear-rental-guide-2026"
+      },
+      {
+        "title": "Himalayan Adventure International: Gear rental services",
+        "url": "https://www.himalayanadventureintl.com/activity/gear-rental-services"
+      },
+      {
+        "title": "Best Heritage Tour: Buy or rent trekking gear in Nepal (the higher quote)",
+        "url": "https://www.bestheritagetour.com/blog/buy-or-rent-trekking-gear-in-nepal"
+      }
+    ]
   },
   "helicopterRescueCost": {
     "value": "About USD 3,000–6,000 from the upper Khumbu, USD 2,500–4,000 from Annapurna Base Camp to Pokhara and USD 2,500–5,500 from Langtang to Kathmandu; insure for helicopter evacuation up to 6,000 m",
@@ -73,68 +208,172 @@
     "confidence": "medium",
     "verified": true,
     "sources": [
-      { "title": "GOV.UK foreign travel advice, Nepal (helicopter evacuation cost per flying hour, insurance)", "url": "https://www.gov.uk/foreign-travel-advice/nepal" },
-      { "title": "Travel Himalaya Nepal: Helicopter rescue in Nepal 2026, costs and process", "url": "https://travelhimalayanepal.com/blog/helicopter-rescue-nepal-costs-2026" },
-      { "title": "Nepal Helicopters: Annapurna and Everest Base Camp helicopter rescue cost", "url": "https://www.nepalhelicopters.com/blog/annapurna-and-everest-base-camp-helicopter-rescue-cost-in-usd/" },
-      { "title": "Himalaya Trekking Nepal: Everest Base Camp emergency evacuation cost, 2025 and 2026", "url": "https://himalayatrekkingnepal.com/blog/everest-base-camp-emergency-evacuation-cost" },
-      { "title": "World Nomads: Is helicopter evacuation covered during trekking in Nepal?", "url": "https://www.worldnomads.com/usa/help/insurance/buying-travel-insurance/trekking-in-nepal-and-helicopter-evacuation" }
+      {
+        "title": "GOV.UK foreign travel advice, Nepal (helicopter evacuation cost per flying hour, insurance)",
+        "url": "https://www.gov.uk/foreign-travel-advice/nepal"
+      },
+      {
+        "title": "Travel Himalaya Nepal: Helicopter rescue in Nepal 2026, costs and process",
+        "url": "https://travelhimalayanepal.com/blog/helicopter-rescue-nepal-costs-2026"
+      },
+      {
+        "title": "Nepal Helicopters: Annapurna and Everest Base Camp helicopter rescue cost",
+        "url": "https://www.nepalhelicopters.com/blog/annapurna-and-everest-base-camp-helicopter-rescue-cost-in-usd/"
+      },
+      {
+        "title": "Himalaya Trekking Nepal: Everest Base Camp emergency evacuation cost, 2025 and 2026",
+        "url": "https://himalayatrekkingnepal.com/blog/everest-base-camp-emergency-evacuation-cost"
+      },
+      {
+        "title": "World Nomads: Is helicopter evacuation covered during trekking in Nepal?",
+        "url": "https://www.worldnomads.com/usa/help/insurance/buying-travel-insurance/trekking-in-nepal-and-helicopter-evacuation"
+      }
     ]
   },
   "touristVisa": {
     "value": "USD 30 for 15 days, USD 50 for 30 days, USD 125 for 90 days",
-    "detail": "These on-arrival tourist visa fees have applied at Tribhuvan International Airport and the land borders since July 2019 and are paid in US dollars or another major currency; extensions cost USD 3 a day (USD 45 minimum) at the immigration offices in Kathmandu and Pokhara. Indian citizens do not need a visa, and the Department of Immigration's website now also carries online-application and ETA pages, so check the current process for your passport before you fly.",
-    "confidence": "medium",
-    "verified": false,
+    "detail": "The Nepal Tourism Board lists these fees for a multiple-entry tourist visa. They are paid in US dollars or another convertible currency; the board says cards are accepted too, but carry cash in case the machines are down. Visas are issued on arrival at the Kathmandu, Pokhara and Gautam Buddha (Lumbini) international airports and at the land border posts. An extension costs USD 45 for the first 15 days and USD 3 a day after that, at the immigration offices in Kathmandu and Pokhara. Indian citizens do not need a visa, children under 10 get one free (US citizens excepted), and citizens of a short list of countries must get a visa before they travel. An online e-visa with card payment was due to go fully live on 17 August 2026. We could not open the Department of Immigration's own pages to see how it works now, so check before you fly.",
+    "confidence": "high",
+    "verified": true,
+    "checked": "2026-11-22",
     "sources": [
-      { "title": "Where to confirm: Department of Immigration, online visa application process (fees not re-read for this review)", "url": "https://immigration.gov.np/online-visa-application-process" },
-      { "title": "Where to confirm: Department of Immigration, ETA visa for Nepal", "url": "https://immigration.gov.np/eta-visa-nepal" }
+      {
+        "title": "Nepal Tourism Board: Tourist Visa (fees, extension, where issued)",
+        "url": "https://ntb.gov.np/en/plan-your-trip/before-you-come/tourist-visa"
+      },
+      {
+        "title": "Visas News: Nepal to fully roll out its e-visa system on 17 August 2026",
+        "url": "https://visasnews.com/en/nepal-to-fully-roll-out-its-e-visa-system-on-august-17-2026/"
+      },
+      {
+        "title": "ShareSansar: Nepal enables international card payments for e-visa and revenue collection, September 2025",
+        "url": "https://www.sharesansar.com/newsdetail/nepal-enables-international-card-payments-for-e-visa-and-revenue-collection-2025-09-21"
+      }
     ]
   },
   "luklaFlights": {
-    "value": "From Manthali (Ramechhap) in the peak months, roughly April–May and October–November, and from Kathmandu the rest of the year; one-way foreigner fares are about USD 175–180 from Manthali and USD 215–220 from Kathmandu",
-    "detail": "The switch is ordered each season to ease congestion at Kathmandu airport and the dates move; in some years it has started in late March and late September. Manthali is a four to five hour drive from Kathmandu, usually leaving between midnight and 2 am, so confirm the airport, the dates and the fare with the airline or your agency before you book anything else.",
-    "confidence": "low",
+    "value": "From Manthali (Ramechhap) in peak season, roughly April–May and October–November, and from Kathmandu otherwise; in 2026 agents quote foreigners about USD 180–230 one way from Manthali and USD 235–290 from Kathmandu",
+    "detail": "In autumn 2026 the flights again ran from Manthali, with extra flights from 29 September. The switch is made each peak season to ease congestion at Kathmandu airport, and the dates move from year to year. Manthali is a four to five hour drive from Kathmandu, and transfers for the early flights leave in the middle of the night. Airlines raised fares on 1 March 2026, and domestic airfares rose again in April when fuel costs spiked. The fares above come from booking agents, not the airlines: for Manthali one lists USD 198 and another USD 180–230, and for Kathmandu two agree on about USD 237. We could not check the Civil Aviation Authority's notices, so confirm the airport, the dates and the fare with the airline or your agency before you book anything else. Fare pages disagree after these changes: those quoting the airline fare list in force since August 2026 give about USD 254 from Kathmandu and USD 209 from Manthali.",
+    "confidence": "medium",
     "verified": false,
+    "checked": "2026-11-22",
     "sources": [
-      { "title": "Where to confirm: Civil Aviation Authority of Nepal, seasonal flight notices (not checked for this review)", "url": "https://caanepal.gov.np/" }
+      {
+        "title": "Kantipur: More Manthali–Lukla flights added, preparations for Kathmandu–Ramechhap flights, 4 October 2026",
+        "url": "https://ekantipur.com/bagmati-pradesh/2026/10/04/en/manthali-lukla-flights-added-kathmandu-ramechhap-flights-prepared-08-24.html"
+      },
+      {
+        "title": "Kantipur: Domestic airfares see biggest ever hike, 1 April 2026",
+        "url": "https://ekantipur.com/business/2026/04/01/en/airfares-increased-03-15.html"
+      },
+      {
+        "title": "Nepal Hiking: Kathmandu to Lukla flights (fare from 1 March 2026)",
+        "url": "https://www.nepalhiking.com/kathmandu-to-lukla-flights/"
+      },
+      {
+        "title": "Nepal Cheap Flights: Lukla flight booking guide 2026 (fares on both routes)",
+        "url": "https://www.nepalcheapflights.com/flight-and-route-information/lukla-flight-booking-guide-2026-airfare-booking-process-trade-best-practices"
+      }
     ]
   },
   "mobileCoverage": {
-    "value": "Ncell and Nepal Telecom (NTC) both work in the lower valleys; higher up coverage is patchy, and paid lodge Wi-Fi often works better than either SIM",
-    "detail": "As a rule Ncell is the stronger network on the main Everest trail to Namche and in patches as far as Gorak Shep, while NTC reaches more of the Annapurna Circuit, the Langtang valley and the larger Manaslu villages. The Gokyo valley, the Budhi Gandaki gorge and the high passes have long stretches with no signal, so carry both SIMs if you can and expect to rely on prepaid lodge Wi-Fi above Namche.",
-    "confidence": "medium",
+    "value": "Carry a Nepal Telecom (NTC) SIM, an Ncell SIM or both: 2026 guides favour NTC in Annapurna and disagree about the Everest trail, and high up paid lodge Wi-Fi often works when neither SIM does",
+    "detail": "Most 2026 guides favour NTC on the Annapurna Circuit and for wider coverage on remote routes; they describe its signal as patchy above Manang and on the Thorong La. For the Everest trail they split, some saying Ncell is faster with good signal and others that NTC reaches further. In Khumbu the paid Everest Link Wi-Fi service runs as far as Gorak Shep, slowly. We found little route-by-route information for Langtang and Manaslu, where one guide prefers NTC, and we did not check either operator's coverage map. Expect long stretches with no signal on any high or remote route, and tell people at home before you go quiet.",
+    "confidence": "low",
     "verified": false,
-    "sources": []
+    "checked": "2026-11-22",
+    "sources": [
+      {
+        "title": "Himalayan Recreation: Communication and internet on Nepal treks",
+        "url": "https://www.himalayanrecreation.com/blog/communication-and-internet-on-nepal-treks"
+      },
+      {
+        "title": "Nepal Traveller: SIM cards in Nepal for tourists, 2026 guide",
+        "url": "https://nepaltraveller.com/sidetrack/3398"
+      },
+      {
+        "title": "Best Heritage Tour: What SIM card should tourists buy in Nepal",
+        "url": "https://www.bestheritagetour.com/blog/what-sim-card-should-tourists-buy-in-nepal"
+      },
+      {
+        "title": "The Longest Way Home: Mobile internet and Wi-Fi in Nepal",
+        "url": "https://www.thelongestwayhome.com/travel-guides/nepal/mobile-internet-wifi-in-nepal.html"
+      }
+    ]
   },
   "drinkingWater": {
-    "value": "Treat all water yourself or buy boiled or filtered refills, and carry a refillable bottle: bottled water is banned above Chhomrong on the Annapurna Base Camp trail and discouraged in Khumbu",
-    "detail": "Tap and stream water is unsafe untreated everywhere on the trails, so use a filter, purification tablets or a UV pen; lodges sell boiled water, and safe drinking water stations set up with ACAP refill bottles cheaply in several Annapurna Circuit villages, though not all are always open. Plastic-bottled water may not be sold above Chhomrong, and Khumbu's municipality banned thin single-use plastic and plastic-bottled soft drinks from January 2020; bottled water was left out of that ban and is still sold, at prices that rise steeply with height.",
+    "value": "Treat all water yourself or buy boiled or filtered refills, and carry a refillable bottle: plastic bottles are banned on the Annapurna Base Camp and Mardi Himal trails, and bottled soft drinks in Khumbu",
+    "detail": "Tap and stream water is not safe untreated anywhere on the trails, so use a filter, purification tablets or a UV pen, or pay a lodge for boiled water. The Annapurna conservation project's waste rules, as reported by the national news agency, ban carrying plastic and glass bottles to Annapurna Base Camp, Mardi Himal and Tara Hill Top. Travel guides say the ban is loosely enforced, and that safe drinking water stations and most lodges refill bottles along the Annapurna trails. Khumbu's municipality banned thin single-use plastic and drinks in plastic bottles from January 2020; reports at the time said bottled water was left out. We found no official 2025–26 statement on either rule, and no current list of refill stations or prices.",
     "confidence": "medium",
     "verified": false,
+    "checked": "2026-11-22",
     "sources": [
-      { "title": "Where to confirm: NTNC, Annapurna Conservation Area Project (not re-read for this review)", "url": "https://ntnc.org.np/project/annapurna-conservation-area-project-acap" },
-      { "title": "Where to confirm: Khumbu Pasang Lhamu Rural Municipality (not re-read for this review)", "url": "https://khumbupasanglhamumun.gov.np/" }
+      {
+        "title": "Tourism Info Nepal (RSS report): Annapurna Base Camp bans loud sound devices; bottles banned on the base camp, Mardi Himal and Tara Hill Top trails",
+        "url": "https://tourisminfonepal.com/?p=9135"
+      },
+      {
+        "title": "Responsible Travel: Responsible tourism in the Annapurna Circuit (bottled water, refill stations)",
+        "url": "https://www.responsibletravel.com/holidays/annapurna-circuit/travel-guide/responsible-tourism"
+      },
+      {
+        "title": "Outside Business Journal: Nepal bans single-use plastic on Everest",
+        "url": "https://www.outsideonline.com/business-journal/issues/nepal-bans-single-use-plastic-on-everest"
+      },
+      {
+        "title": "TravelPulse: Nepal bans single-use plastics around Mount Everest",
+        "url": "https://www.travelpulse.com/news/destinations/nepal-bans-single-use-plastics-around-mount-everest"
+      }
     ]
   },
   "agencyLicensing": {
-    "value": "A registered company with a Department of Tourism trekking agency licence, PAN/VAT tax registration and a Nepal Rastra Bank licence to accept foreign currency; almost all are also TAAN members",
-    "detail": "Ask for the company registration number, the Department of Tourism licence number and the PAN/VAT number, which a legitimate agency prints on its website and invoices, and look the company up in TAAN's member directory. Only a registered agency can obtain a TIMS card or a restricted-area permit for you, so a company that cannot show its papers cannot legally arrange either.",
-    "confidence": "medium",
-    "verified": false,
+    "value": "A registered company with a Department of Tourism trekking licence, PAN/VAT registration and a Nepal Rastra Bank licence to handle foreign currency; you can look it up in TAAN's member list",
+    "detail": "TAAN, the trekking agencies' association, asks a company for these papers before it can join: its company registration, the Department of Tourism's licence to run a trekking business, a PAN/VAT certificate and Nepal Rastra Bank's foreign exchange licence. Ask the agency for the numbers and look it up in TAAN's general members list, which showed 2,344 agencies on 22 November 2026. Nepal Rastra Bank also publishes the businesses it has licensed for foreign exchange. Only a registered agency can buy a TIMS card or apply for a restricted-area permit, so a company that cannot show its papers cannot legally arrange either.",
+    "confidence": "high",
+    "verified": true,
+    "checked": "2026-11-22",
     "sources": [
-      { "title": "Department of Immigration: Trekking permit (restricted-area permits are issued only through registered trekking agencies; in Nepali)", "url": "https://immigration.gov.np/trekking-permit" },
-      { "title": "Nepal Tourism Board: TIMS Card (agencies register and apply for the card)", "url": "https://ntb.gov.np/plan-your-trip/before-you-come/tims-card" },
-      { "title": "Where to confirm: Trekking Agencies' Association of Nepal (member directory not checked for this review)", "url": "https://www.taan.org.np/" }
+      {
+        "title": "TAAN: To become a member (documents a trekking agency must hold)",
+        "url": "https://www.taan.org.np/page/to-become-a-member"
+      },
+      {
+        "title": "TAAN: General members (searchable list)",
+        "url": "https://www.taan.org.np/members"
+      },
+      {
+        "title": "Nepal Rastra Bank: Entities licensed for foreign exchange transactions, mid-July 2026",
+        "url": "https://www.nrb.org.np/fxm/licensed-entities-by-nrb-for-fx-transactions-as-on-asar-end-2083-july-16-2026/"
+      },
+      {
+        "title": "Nepal Tourism Board: TIMS Card (only agencies can buy the card)",
+        "url": "https://ntb.gov.np/plan-your-trip/before-you-come/tims-card"
+      }
     ]
   },
   "guideLicensing": {
-    "value": "Guides qualify through the government trekking guide course run by the Nepal Academy of Tourism and Hotel Management (NATHM) and carry a photo licence card from the tourism authorities, which has to be renewed",
-    "detail": "The licence is issued under the Department of Tourism's system, and provincial tourism offices also police it: in August 2026 the Bagmati office ordered tourism businesses to use only licensed guides. Ask to see the original card and check the photo, licence number and validity date; your agency also has to enter the guide's details when it applies for your TIMS card or restricted-area permit.",
+    "value": "Guides qualify through a five-week trekking guide course at the Nepal Academy of Tourism and Hotel Management (NATHM) and carry a licence that has to be renewed",
+    "detail": "NATHM's 2026 notices describe a five-week trekking guide course with 300–500 places, open to applicants who have passed class 12, or class 10 with two years at a registered trekking agency. A 2012 agreement between the trekking agencies' association and the workers' unions shows that the licence has to be renewed, at that time through the tourism ministry. We could not confirm from an official page which office issues and renews it today, and the sources we found disagree, so we do not name one. Ask to see the original licence and check the name, the licence number and the expiry date. Your agency also enters the guide's details when it applies for your TIMS card.",
     "confidence": "medium",
     "verified": false,
+    "checked": "2026-11-22",
     "sources": [
-      { "title": "Nepal News: Bagmati Tourism Office orders tourism services to use only licensed guides, August 2026", "url": "https://english.nepalnews.com/s/travel-tourism/bagmati-tourism-office-orders-tourism-services-to-use-only-licensed-guides/" },
-      { "title": "Nepal Tourism Board: TIMS Card (agency submits trekker, guide and route details)", "url": "https://ntb.gov.np/plan-your-trip/before-you-come/tims-card" }
+      {
+        "title": "Collegenp: NATHM trekking guide training application notice 2026",
+        "url": "https://www.collegenp.com/event/nathm-trekking-guide-training-application-notice-2026"
+      },
+      {
+        "title": "Edusanjal: Applications open for training programmes at NATHM",
+        "url": "https://edusanjal.com/admission/admissions-opens-various-training-programs-nathm/"
+      },
+      {
+        "title": "TAAN: Downloads (2012 agreement with the workers' unions, on licence renewal and NATHM training; in Nepali)",
+        "url": "https://www.taan.org.np/page/downloads"
+      },
+      {
+        "title": "Nepal Tourism Board: TIMS Card (agency submits trekker, guide and route details)",
+        "url": "https://ntb.gov.np/plan-your-trip/before-you-come/tims-card"
+      }
     ]
   }
 }

@@ -7,9 +7,20 @@
 }
 
 html {
+  /* A little larger than the browser's default: this site is read by people of every age,
+     often outdoors on a phone. Everything else is sized from this, so the "Text size"
+     control only has to change this one number. Percentages respect the reader's own
+     browser setting. */
+  font-size: 106.25%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   scroll-padding-top: calc(var(--header-h) + 1rem);
+}
+html[data-text='l'] {
+  font-size: 118.75%;
+}
+html[data-text='xl'] {
+  font-size: 131.25%;
 }
 
 @media (prefers-reduced-motion: no-preference) {

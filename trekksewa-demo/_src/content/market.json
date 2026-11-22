@@ -1,0 +1,1384 @@
+{
+  "checked": "2026-11-22",
+  "note": "These are list prices and fares that Nepal-based trekking agencies, booking sites and transport operators showed in web search results on 22 November 2026; nothing was confirmed with an agency, airline or ticket counter, the pages often disagree and some are months old, and the cheapest package figures usually apply only to large groups or leave out meals and porters.",
+  "packages": [
+    {
+      "trek": "everest-base-camp",
+      "days": "12–14",
+      "low": 1250,
+      "high": 1700,
+      "currency": "USD",
+      "basis": "per person for two to four people on a standard guided lodge trek, Kathmandu to Kathmandu; solo trekkers pay roughly 100–400 more, and the luxury versions seen were 10–11 days long",
+      "includes": ["licensed guide", "porter in most packages (the cheapest tiers leave one out)", "Sagarmatha park and Khumbu municipality permits", "lodge beds and three meals a day on the trek", "Lukla flights", "airport transfers; Kathmandu hotel nights in some packages"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 1090,
+      "luxuryHigh": 4890,
+      "sampled": 11,
+      "sources": [
+        { "title": "Nepal Gateway Trekking: Everest Base Camp Trek Cost: 2026/27 Price & Budget Guide", "url": "https://nepalgatewaytrekking.com/blog/everest-base-camp-trek-cost" },
+        { "title": "Nepal Himalayas Trekking: Everest Base Camp Trek Cost & Package Guide 2026/2027", "url": "https://www.nepalhimalayastrekking.com/blog/everest-base-camp-trek-package-whats-included-and-cost" },
+        { "title": "Excellent Himalaya Trek & Expedition: Everest Base Camp Trek Cost 2026/2027", "url": "https://excellenttrek.com/everest-base-camp-trek-package/" },
+        { "title": "Nepal Trek Adventures: Everest Base Camp Trek 14 Days", "url": "https://www.nepaltrekadventures.com/everest-base-camp-trek" }
+      ]
+    },
+    {
+      "trek": "annapurna-base-camp",
+      "days": "9–12",
+      "low": 700,
+      "high": 1100,
+      "currency": "USD",
+      "basis": "per person for two to four people on a standard guided lodge trek of 9–12 days counted from Kathmandu; 5–7 day versions that start in Pokhara are listed at about 400–600",
+      "includes": ["licensed guide", "porter in most packages (the cheapest tiers leave one out)", "ACAP permit and TIMS card", "lodge beds and three meals a day on the trek", "bus or jeep between Pokhara and the trailhead; the Kathmandu–Pokhara bus and city hotel nights in some packages only"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu and Pokhara", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 380,
+      "luxuryHigh": 2065,
+      "sampled": 8,
+      "sources": [
+        { "title": "Overland Trek Nepal: 10-Day Annapurna Base Camp Trek Cost 2026/27", "url": "https://overlandtreknepal.com/blog/10-day-annapurna-base-camp-trek-costs" },
+        { "title": "Adventure Altitude Treks: Annapurna Base Camp Trek Price 2026", "url": "https://adventurealtitudetreks.com/annapurna-base-camp-trek" },
+        { "title": "Annapurna Trekking: Annapurna Base Camp Cost 2026: Full Price Breakdown", "url": "https://annapurnatrekking.com/blog/annapurna-base-camp-cost" },
+        { "title": "The Everest Holiday: Annapurna Base Camp Trek Itinerary 2027: 9 Days Day by Day, Cost and Best Time", "url": "https://theeverestholiday.com/blog/annapurna-base-camp-trek-9-days-itinerary-2027" }
+      ]
+    },
+    {
+      "trek": "annapurna-circuit",
+      "days": "10–15",
+      "low": 800,
+      "high": 1250,
+      "currency": "USD",
+      "basis": "per person for two to four people on a standard guided lodge trek of 10–15 days over Thorong La; longer itineraries that walk more of the old route cost more",
+      "includes": ["licensed guide", "porter in most packages (the cheapest tiers leave one out)", "ACAP permit and TIMS card", "lodge beds and three meals a day on the trek", "bus and shared jeep at both ends of the trek"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "the Jomsom–Pokhara flight and private jeeps (usually extras)", "meals in Kathmandu and Pokhara", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 550,
+      "sampled": 9,
+      "sources": [
+        { "title": "Places Nepal: Annapurna Circuit Trek Cost 2026/2027: Complete Price Guide", "url": "https://www.placesnepal.com/blog/annapurna-circuit-trek-cost" },
+        { "title": "Nepal Gateway Trekking: Annapurna Circuit Trek 2026/27", "url": "https://nepalgatewaytrekking.com/trip/annapurna-circuit-trek" },
+        { "title": "Annapurna Trekking: Annapurna Circuit Trek 2026", "url": "https://annapurnatrekking.com/treks/annapurna-circuit-trek" },
+        { "title": "Base Camp Hike: Annapurna Circuit Trek package in 2026", "url": "https://www.basecamphike.com/annapurna-circuit-trek/" }
+      ]
+    },
+    {
+      "trek": "manaslu-circuit",
+      "days": "12–15",
+      "low": 900,
+      "high": 1300,
+      "currency": "USD",
+      "basis": "per person for two to four people on a standard guided lodge trek from Kathmandu; a registered agency and a licensed guide are compulsory on this route",
+      "includes": ["licensed guide (compulsory on this route)", "porter in most packages (the cheapest tiers leave one out)", "Manaslu restricted-area permit, MCAP and ACAP", "lodge beds and three meals a day on the trek", "bus or shared jeep to the trailhead and back from Besisahar"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "private jeep (usually an extra)", "meals in Kathmandu", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 755,
+      "luxuryHigh": 2500,
+      "sampled": 10,
+      "sources": [
+        { "title": "NEST Adventure: Manaslu Trek Cost: Complete Budget Breakdown (2026/2027)", "url": "https://www.nestadventure.com/blog/manaslu-trek-cost/" },
+        { "title": "Excellent Himalaya Trek & Expedition: Manaslu Circuit Trek Cost 2026/2027", "url": "https://excellenttrek.com/manaslu-circuit-trek-14-days-cost/" },
+        { "title": "Manaslu Guide: Manaslu Circuit Trek Cost: Full Budget Breakdown for 2026/27", "url": "https://manasluguide.com/pricing/cost-manaslu-circuit-trek/" },
+        { "title": "Beyond the Limits Treks: Manaslu Circuit Trek Cost 2026: Budget, Permits & Prices", "url": "https://www.beyondthelimitstreks.com/blog/manaslu-circuit-trek-cost" }
+      ]
+    },
+    {
+      "trek": "langtang-valley",
+      "days": "8–10",
+      "low": 500,
+      "high": 800,
+      "currency": "USD",
+      "basis": "per person for two to four people on a standard guided lodge trek of 8–10 days from Kathmandu; solo trekkers pay roughly 100–220 more",
+      "includes": ["licensed guide", "porter in most packages (the cheapest tiers leave one out)", "Langtang National Park permit and TIMS card", "lodge beds and three meals a day on the trek", "bus or shared jeep from Kathmandu and back"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "private jeep (usually an extra)", "meals in Kathmandu", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 250,
+      "sampled": 10,
+      "sources": [
+        { "title": "Excellent Himalaya Trek & Expedition: Langtang Trek Cost 2026/2027", "url": "https://excellenttrek.com/langtang-trek-package-in-nepal/" },
+        { "title": "Nature Excursion: How much does Langtang Valley Trek cost in 2026/27?", "url": "https://natureexcursion.com/blog/langtang-valley-trek-cost" },
+        { "title": "Best Heritage Tour: Langtang Valley Trek 8 Days", "url": "https://bestheritagetour.com/langtang-valley-trek" },
+        { "title": "The Everest Holiday: Langtang Trek Cost 2026/2027", "url": "https://theeverestholiday.com/blog/langtang-valley-trek-cost-the-most-affordable-multi-day-trek-in-nepal-broken-dow" }
+      ]
+    },
+    {
+      "trek": "ghorepani-poon-hill",
+      "days": "4–9",
+      "low": 300,
+      "high": 600,
+      "currency": "USD",
+      "basis": "per person for two to four people on a guided lodge trek; 4–5 day versions that start and end in Pokhara sit at the low end, 7–9 day versions counted from Kathmandu at the top",
+      "includes": ["licensed guide", "porter in most packages (the cheapest tiers leave one out)", "ACAP permit and TIMS card", "lodge beds and three meals a day on the trek", "transport between Pokhara and the trailhead"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu and Pokhara", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 250,
+      "sampled": 9,
+      "sources": [
+        { "title": "Places Nepal: Ghorepani Poon Hill Trek Cost (2026/2027): Complete Price Guide", "url": "https://www.placesnepal.com/blog/ghorepani-poon-hill-trek-cost" },
+        { "title": "Alliance Treks & Expedition: Ghorepani Poon Hill Trek Cost 2026: Full Breakdown", "url": "https://www.alliancetreks.com/ghorepani-poon-hill-trek-cost-guide/" },
+        { "title": "Himalaya Trip: 4 Days Ghorepani Poon Hill Trek", "url": "https://himalayatrip.com/ghorepani-poonhill-trek/" },
+        { "title": "Next Trip Nepal: Ghorepani Poon Hill Trek 2026, 7 Days", "url": "https://nexttripnepal.com/trip/ghorepani-poon-hill-trek/" }
+      ]
+    },
+    {
+      "trek": "mardi-himal",
+      "days": "5–8",
+      "low": 400,
+      "high": 700,
+      "currency": "USD",
+      "basis": "per person for two to four people on a guided lodge trek; 5-day versions from Pokhara sit at the low end, 7–8 day versions counted from Kathmandu at the top",
+      "includes": ["licensed guide", "porter in most packages (the cheapest tiers leave one out)", "ACAP permit and TIMS card", "lodge beds and three meals a day on the trek", "taxi or jeep between Pokhara and the trailheads (not in every package)"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu and Pokhara", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 290,
+      "sampled": 9,
+      "sources": [
+        { "title": "Magical Himalayan Nepal: Mardi Himal Trek Cost 2026/27", "url": "https://www.magicalhimalayannepal.com/mardi-himal-trek-cost-2026-27-complete-honest-breakdown/" },
+        { "title": "Best Heritage Tour: Mardi Himal Trek 7 Days Cost & Itinerary", "url": "https://www.bestheritagetour.com/mardi-himal-trek" },
+        { "title": "North Nepal Trek: Mardi Himal Trek 7 Days", "url": "https://northnepaltrek.com/mardi-himal-trek" },
+        { "title": "Himalaya Guide Nepal: 8 Days Mardi Himal Trek Cost & Itinerary", "url": "https://himalayaguidenepal.com/mardi-himal-trek/" }
+      ]
+    },
+    {
+      "trek": "gokyo-lakes",
+      "days": "11–14",
+      "low": 1200,
+      "high": 1500,
+      "currency": "USD",
+      "basis": "per person for two to four people on a standard guided lodge trek to Gokyo and Gokyo Ri, Kathmandu to Kathmandu",
+      "includes": ["licensed guide", "porter in most packages (the cheapest tiers leave one out)", "Sagarmatha park and Khumbu municipality permits", "lodge beds and three meals a day on the trek", "Lukla flights", "airport transfers; Kathmandu hotel nights in some packages"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 835,
+      "luxuryHigh": 4330,
+      "sampled": 8,
+      "sources": [
+        { "title": "Mount Glory Treks: Gokyo Lake Trek 12 Days Itinerary & Cost for 2026 & 2027", "url": "https://mountgloryadventures.com/gokyo-lake-trek" },
+        { "title": "High Camp Adventure: Gokyo Lake Trek Package 2026/27", "url": "https://highcampadventure.com/trip/gokyo-lake-trek" },
+        { "title": "The Everest Holiday: How Much Does the Gokyo Lakes Trek Cost in 2026?", "url": "https://theeverestholiday.com/blog/gokyo-lakes-trek-cost-2026" },
+        { "title": "The Everest Holiday: Gokyo Lakes Trek 2027: 10-Day Itinerary, Cost and Best Time", "url": "https://theeverestholiday.com/blog/gokyo-lakes-trek-10-days-itinerary-2027" }
+      ]
+    },
+    {
+      "trek": "upper-mustang",
+      "days": "14–17",
+      "low": 1500,
+      "high": 2250,
+      "currency": "USD",
+      "basis": "per person for two to four people on a guided lodge trek to Lo Manthang; agencies differ on whether the Jomsom flights and the restricted-area permit (USD 50 a day under the current rule, USD 500 for ten days on older pages) are inside the price, and one agency's range runs to 3,500 with flights from Kathmandu included",
+      "includes": ["licensed guide (compulsory on this route)", "porter in most packages (the cheapest tiers leave one out)", "ACAP permit; the restricted-area permit in most packages (confirm)", "lodge beds and three meals a day on the trek", "transport between Pokhara and Jomsom (flight or jeep; confirm which)"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu and Pokhara", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 1399,
+      "sampled": 10,
+      "sources": [
+        { "title": "Destination Himalaya Treks: Upper Mustang Trek Cost: Budget and Cost for 2026/2027", "url": "https://destinationhimalayatreks.com/blog/upper-mustang-trek-cost" },
+        { "title": "Himalayan Local Guide: Upper Mustang trek, 15 Days Cost & Itinerary 2026/2027", "url": "https://www.himalayanlocalguide.com/upper-mustang-trek" },
+        { "title": "Annapurna Trekking: Upper Mustang Trek", "url": "https://annapurnatrekking.com/treks/upper-mustang-trek" },
+        { "title": "Himalayan Adventure Treks: Upper Mustang Trek 2026/2027 Cost Itinerary and Map", "url": "https://himalayanadventuretreks.com/a-comprehensive-guide-to-upper-mustang-trek/" }
+      ]
+    },
+    {
+      "trek": "gosaikunda",
+      "days": "5–8",
+      "low": 350,
+      "high": 500,
+      "currency": "USD",
+      "basis": "per person for two to four people on a guided lodge trek of 5–8 days from Kathmandu via Dhunche",
+      "includes": ["licensed guide", "porter with some agencies only (often about USD 20 a day extra)", "Langtang National Park permit and TIMS card", "lodge beds and three meals a day on the trek", "bus from Kathmandu and back"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "private jeep (usually an extra)", "meals in Kathmandu", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 219,
+      "luxuryHigh": 999,
+      "sampled": 10,
+      "sources": [
+        { "title": "Wilderness Excursion: Gosaikunda Trek: Gosaikunda Lake Trekking, Itinerary and Cost", "url": "https://wildernessexcursion.com/trip/gosaikunda-trek" },
+        { "title": "Destination Himalaya Treks: Gosaikunda Lake Trek, 5 Days Itinerary & Cost 2026", "url": "https://destinationhimalayatreks.com/trip/gosaikunda-lake-trek" },
+        { "title": "Gokyo Treks Nepal: Gosaikunda Trek", "url": "https://www.gokyotreksnepal.com/gosaikunda-trek/" },
+        { "title": "The Everest Holiday: Gosaikunda Trek 5 Days 2026/27", "url": "https://theeverestholiday.com/gosaikunda-trek" }
+      ]
+    },
+    {
+      "trek": "everest-three-passes",
+      "days": "17–20",
+      "low": 1500,
+      "high": 1900,
+      "currency": "USD",
+      "basis": "per person for two to four people on a guided lodge trek over Kongma La, Cho La and Renjo La, Kathmandu to Kathmandu",
+      "includes": ["licensed guide", "porter in most packages (the cheapest tiers leave one out)", "Sagarmatha park and Khumbu municipality permits", "lodge beds and three meals a day on the trek", "Lukla flights", "airport transfers; Kathmandu hotel nights in some packages"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 1150,
+      "luxuryHigh": 4719,
+      "sampled": 9,
+      "sources": [
+        { "title": "Places Nepal: Everest Three Passes Trek Cost (2026/27): Full Budget Guide", "url": "https://www.placesnepal.com/blog/everest-three-passes-trek-cost" },
+        { "title": "Everest Thrills: Everest Three Passes Trek 2027", "url": "https://everestthrills.com/trip/everest-three-high-passes-trek" },
+        { "title": "Best Heritage Tour: Everest Three Pass Trek 17 Days", "url": "https://bestheritagetour.com/everest-three-pass-trek" },
+        { "title": "The Everest Holiday: Everest Three Passes Trek 17 Days 2026/27", "url": "https://theeverestholiday.com/everest-three-passes-trek-17-days" }
+      ]
+    },
+    {
+      "trek": "tilicho-lake",
+      "days": "13–17",
+      "low": 950,
+      "high": 1500,
+      "currency": "USD",
+      "basis": "per person for two to four people on a guided lodge trek to Tilicho Lake that goes on over Thorong La; shorter trips that turn back at the lake are listed at about 700–850",
+      "includes": ["licensed guide", "porter in most packages (the cheapest tiers leave one out)", "ACAP permit and TIMS card", "lodge beds and three meals a day on the trek", "bus and shared jeep at both ends of the trek"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "the Jomsom–Pokhara flight (usually an extra)", "meals in Kathmandu and Pokhara", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 635,
+      "sampled": 9,
+      "sources": [
+        { "title": "Sublime Trails: Tilicho Lake Trek: 13 Days with Thorong La Pass", "url": "https://sublimetrails.com/trip/tilicho-lake-trek" },
+        { "title": "My Everest Trip: 15 Days Tilicho Lake Trek via Thorong La Pass", "url": "https://myeveresttrip.com/trip/tilicho-lake-trekking/" },
+        { "title": "Nepal Guide Treks: Tilicho Lake Thorong La Pass Trek", "url": "https://nepalguidetreks.com/package/tilicho-lake-thorong-la-pass-trek/" },
+        { "title": "Magical Himalayan Nepal: Tilicho Lake Trek 11 Days: Itinerary, Cost & Complete Guide", "url": "https://www.magicalhimalayannepal.com/trip/tilicho-lake-trek-11-days/" }
+      ]
+    },
+    {
+      "trek": "everest-base-camp-via-gokyo",
+      "days": "16–18",
+      "low": 1500,
+      "high": 1900,
+      "currency": "USD",
+      "basis": "per person for two to four people on a guided lodge trek linking Gokyo and Everest Base Camp over Cho La, Kathmandu to Kathmandu; one long-established operator lists 3,590 for the same route",
+      "includes": ["licensed guide", "porter in most packages (the cheapest tiers leave one out)", "Sagarmatha park and Khumbu municipality permits", "lodge beds and three meals a day on the trek", "Lukla flights", "airport transfers; Kathmandu hotel nights in some packages"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 1350,
+      "sampled": 8,
+      "sources": [
+        { "title": "Everest Trekking Company: Everest Base Camp and Gokyo Lakes Trek", "url": "https://everesttrekkingcompany.com/trip/everest-base-camp-and-gokyo-lakes-trek/" },
+        { "title": "Mosaic Adventure: Everest Base Camp and Gokyo Lakes Trek", "url": "https://mosaicadventure.com/trip/everest-base-camp-and-gokyo-lakes-trek/" },
+        { "title": "Nepal Ascent Treks: EBC Trek via Gokyo Lakes & Chola Pass", "url": "https://nepalascenttreks.com/package/everest-base-camp-trek-via-gokyo-lakes-and-cho-la-pass" },
+        { "title": "Exciting Nepal: Everest Base Camp Cho La Pass Gokyo Trek, 17 Days Itinerary", "url": "https://excitingnepal.com/trip/everest-base-camp-cho-la-pass-gokyo-trek/" }
+      ]
+    },
+    {
+      "trek": "everest-view-trek",
+      "days": "5–7",
+      "low": 800,
+      "high": 1200,
+      "currency": "USD",
+      "basis": "per person for two to four people on a guided lodge trek to Namche and the Everest viewpoint, Kathmandu to Kathmandu; 7-day versions add a night at Tengboche",
+      "includes": ["licensed guide", "porter in most packages (the cheapest tiers leave one out)", "Sagarmatha park and Khumbu municipality permits", "lodge beds and three meals a day on the trek", "Lukla flights", "airport transfers; Kathmandu hotel nights in some packages"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 599,
+      "sampled": 7,
+      "sources": [
+        { "title": "Mountain Hike Nepal: Everest View Trek Cost (2026 Guide): The Full Breakdown", "url": "https://mountain-hike.com/everest-view-trek-cost/" },
+        { "title": "Alpine Ramble Treks: 5 Days Everest View Trek cost 2026/27", "url": "https://www.alpineramble.com/trip/everest-view-trek" },
+        { "title": "The Everest Holiday: Everest View Trek 7 Days 2026/27", "url": "https://theeverestholiday.com/everest-view-trek-7-days" },
+        { "title": "Access Nepal Tour and Trekking: Everest View Trek 7 Days Cost, Itinerary, Map 2026/2027", "url": "https://accessnepaltour.com/tour/everest-view-trek/" }
+      ]
+    },
+    {
+      "trek": "ama-dablam-base-camp",
+      "days": "8–12",
+      "low": 1050,
+      "high": 1450,
+      "currency": "USD",
+      "basis": "per person for two to four people on a guided lodge trek to Ama Dablam Base Camp, Kathmandu to Kathmandu; 8-day versions sit at the low end and 11–13 day versions at the top or above",
+      "includes": ["licensed guide", "porter in most packages (the cheapest tiers leave one out)", "Sagarmatha park and Khumbu municipality permits", "lodge beds and three meals a day on the trek", "Lukla flights", "airport transfers; Kathmandu hotel nights in some packages"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 897,
+      "luxuryHigh": 2999,
+      "sampled": 9,
+      "sources": [
+        { "title": "Hillary Step Trek: Ama Dablam Base Camp Trek", "url": "https://hillarysteptrek.com/trip/ama-dablam-base-camp-trek/" },
+        { "title": "Gokyo Treks Nepal: Ama Dablam Base Camp Trek", "url": "https://www.gokyotreksnepal.com/ama-dablam-base-camp-trek/" },
+        { "title": "Nepal Hiking Team: Ama Dablam Base Camp Trek Cost and Itinerary", "url": "https://www.nepalhikingteam.com/package/ama-dablam-base-camp-trek" },
+        { "title": "The Everest Holiday: Ama Dablam Base Camp Trek 8 Days 2026", "url": "https://theeverestholiday.com/ama-dablam-base-camp-trek" }
+      ]
+    },
+    {
+      "trek": "jiri-to-everest-base-camp",
+      "days": "18–22",
+      "low": 1500,
+      "high": 2000,
+      "currency": "USD",
+      "basis": "per person for two to four people on a guided lodge trek that drives to Jiri or beyond, walks to Everest Base Camp and flies out of Lukla",
+      "includes": ["licensed guide", "porter in most packages (the cheapest tiers leave one out)", "Gaurishankar, Sagarmatha park and Khumbu municipality permits", "lodge beds and three meals a day on the trek", "bus or jeep to the start and the Lukla flight back (confirm the flight is in the price)", "airport transfers; Kathmandu hotel nights in some packages"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 1199,
+      "luxuryHigh": 5199,
+      "sampled": 10,
+      "sources": [
+        { "title": "Wilderness Excursion: Jiri to Everest Base Camp Trek: Cost and 18 Days Itinerary", "url": "https://wildernessexcursion.com/trip/jiri-to-everest-base-camp-trek" },
+        { "title": "Outfitter Nepal: Classical Jiri to Everest Base Camp Trek: Cost for 2026", "url": "https://outfitternepal.com/trip/jiri-everest-base-camp-trek" },
+        { "title": "Skyline Treks and Expedition: Jiri to Everest Base Camp Trek: 18 Days Itinerary, Map & Cost", "url": "https://skylinetreks.com/package/jiri-to-everest-base-camp-trek/" },
+        { "title": "The Everest Holiday: Jiri to EBC Trek 18 Days 2026/27", "url": "https://theeverestholiday.com/jiri-to-everest-base-camp-trek" }
+      ]
+    },
+    {
+      "trek": "pikey-peak",
+      "days": "6–9",
+      "low": 450,
+      "high": 900,
+      "currency": "USD",
+      "basis": "per person for two people on a guided lodge trek from Kathmandu by jeep; 5–6 day versions sit at the low end and 8–9 day versions at the top",
+      "includes": ["licensed guide", "porter in most packages (the cheapest tiers leave one out)", "trekking card and local entry fees where charged", "lodge beds and three meals a day on the trek", "jeep or bus from Kathmandu and back"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 300,
+      "luxuryHigh": 1520,
+      "sampled": 10,
+      "sources": [
+        { "title": "Gokyo Treks Nepal: Pikey Peak Trek", "url": "https://www.gokyotreksnepal.com/pikey-peak-trek/" },
+        { "title": "Outfitter Himalaya: Pikey Peak Trek: 8 Days Itinerary and Cost 2026 and 2027", "url": "https://outfitterhimalaya.com/trip/pikey-peak-trek" },
+        { "title": "Base Camp Hike: Pikey Peak Trek Cost", "url": "https://www.basecamphike.com/pikey-peak-trek/" },
+        { "title": "Annapurna Encounter: Pikey Peak Trek: Difficulty, Cost & Everest's View Without the Crowds", "url": "https://www.annapurnaencounter.com/travel-guide/pikey-peak-trek-difficulty-cost-everests-view-without-the-crowds" }
+      ]
+    },
+    {
+      "trek": "khopra-ridge",
+      "days": "7–11",
+      "low": 500,
+      "high": 850,
+      "currency": "USD",
+      "basis": "per person for two to four people on a guided trek using community lodges; 7-day versions from Pokhara sit at the low end, 10–11 day versions counted from Kathmandu at the top, and two agencies list 1,050–1,350",
+      "includes": ["licensed guide", "porter in most packages (the cheapest tiers leave one out)", "ACAP permit and TIMS card", "community lodge beds and three meals a day on the trek", "jeep or bus between Pokhara and the trailheads"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu and Pokhara", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 290,
+      "sampled": 10,
+      "sources": [
+        { "title": "Base Camp Hike: Khopra Ridge Trek", "url": "https://www.basecamphike.com/khopra-ridge-trek/" },
+        { "title": "North Nepal Trek: Khopra Ridge Trek", "url": "https://northnepaltrek.com/khopra-trek-nepal" },
+        { "title": "Nepal Trek Hub: Khopra Ridge Trek 2026/2027: Itinerary, Cost & Map", "url": "https://www.nepaltrekhub.com/khopra-trek" },
+        { "title": "Mantra Adventure: Khopra Ridge Trek Nepal", "url": "https://mantraadventure.com/trip/khopra-hill-trek/" }
+      ]
+    },
+    {
+      "trek": "mohare-danda",
+      "days": "6–8",
+      "low": 400,
+      "high": 850,
+      "currency": "USD",
+      "basis": "per person for two to four people on a guided trek of 6–8 days using community lodges and homestays",
+      "includes": ["licensed guide", "porter in most packages (the cheapest tiers leave one out)", "ACAP permit and TIMS card", "community lodge or homestay beds and three meals a day on the trek", "bus or jeep between Pokhara and the trailheads"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu and Pokhara", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 340,
+      "luxuryHigh": 2299,
+      "sampled": 9,
+      "sources": [
+        { "title": "Mount Face Nepal: Mohare Danda Trek, 8 Days, Itinerary and Cost plan for 2026", "url": "https://mountfacenepal.com/trip/mohare-danda-trek" },
+        { "title": "Gokyo Treks Nepal: Mohare Danda Trek", "url": "https://www.gokyotreksnepal.com/mohare-danda-trek/" },
+        { "title": "Mountain Eco Trails: Mohare Danda Trek Cost, Group Price per person 2026, 2027", "url": "https://mountainecotrails.com/blog/mohare-danda-trek-cost" },
+        { "title": "The Everest Holiday: Mohare Danda Trek 8 Days 2027", "url": "https://theeverestholiday.com/mohare-danda-trek" }
+      ]
+    },
+    {
+      "trek": "jomsom-muktinath",
+      "days": "8–12",
+      "low": 650,
+      "high": 1000,
+      "currency": "USD",
+      "basis": "per person for two to four people on a guided lodge trek of 8–12 days; most listings do not say whether the Jomsom flight is in the price, so ask",
+      "includes": ["licensed guide", "porter in most packages (the cheapest tiers leave one out)", "ACAP permit and TIMS card", "lodge beds and three meals a day on the trek", "road transport to and from the trek"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "the Pokhara–Jomsom flight unless the quote names it", "meals in Kathmandu and Pokhara", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 500,
+      "sampled": 9,
+      "sources": [
+        { "title": "Himalayan Local Guide: Jomsom Muktinath trek, 12 Days Itinerary", "url": "https://www.himalayanlocalguide.com/jomsom-muktinath-trek" },
+        { "title": "Epic Trek Nepal: 11-Day Jomsom Muktinath Trek", "url": "https://epictreknepal.com/trip/jomsom-muktinath-trek/" },
+        { "title": "FET Nepal: Jomsom Muktinath Trek", "url": "https://fetnepal.com/trekking-in-nepal/jomsom-muktinath-trek" },
+        { "title": "Base Camp Hike: Jomsom Muktinath Trek, Cost, Itinerary", "url": "https://www.basecamphike.com/jomsom-muktinath-trek/" }
+      ]
+    },
+    {
+      "trek": "nar-phu-valley",
+      "days": "9–13",
+      "low": 800,
+      "high": 1250,
+      "currency": "USD",
+      "basis": "per person for two to four people on a guided lodge trek of 9–13 days over Kang La, driving in from Besisahar; a registered agency and a licensed guide are compulsory",
+      "includes": ["licensed guide (compulsory on this route)", "porter in most packages (the cheapest tiers leave one out)", "ACAP permit; the Nar Phu restricted-area permit in most packages (confirm)", "lodge beds and three meals a day on the trek", "bus and jeep from Kathmandu to Koto and back"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 520,
+      "sampled": 8,
+      "sources": [
+        { "title": "Himalaya Trip: 12 Days Nar Phu Valley Trek", "url": "https://himalayatrip.com/nar-phu-valley-trek/" },
+        { "title": "North Nepal Trek: Nar Phu Trek 10 Days: Kang La Pass & Tibetan Heritage 2026", "url": "https://northnepaltrek.com/nar-phu-valley-trek" },
+        { "title": "Base Camp Hike: Nar Phu Valley Trek", "url": "https://www.basecamphike.com/nar-phu-valley-trek/" },
+        { "title": "Best Heritage Tour: Nar Phu Valley Short Trek 9 Days", "url": "https://bestheritagetour.com/nar-phu-valley-short-trek" }
+      ]
+    },
+    {
+      "trek": "tsum-valley",
+      "days": "10–16",
+      "low": 750,
+      "high": 1000,
+      "currency": "USD",
+      "basis": "per person for two to four people on guided 10–11 day lodge and homestay treks; 14–16 day itineraries were listed at about 1,800–1,900, and a registered agency and a licensed guide are compulsory",
+      "includes": ["licensed guide (compulsory on this route)", "porter in most packages (the cheapest tiers leave one out)", "restricted-area and Manaslu conservation-area permits", "lodge or homestay beds and three meals a day on the trek", "bus or shared jeep from Kathmandu and back"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 590,
+      "luxuryHigh": 2499,
+      "sampled": 5,
+      "sources": [
+        { "title": "Best Heritage Tour: Tsum Valley Trek 10 Days", "url": "https://www.bestheritagetour.com/tsum-valley-trek" },
+        { "title": "Himalaya Trip: 11 Days Tsum Valley Trek", "url": "https://himalayatrip.com/tsum-valley-trek/" },
+        { "title": "Mountain Eco Trails: Tsum Valley Trek, 11-Day Itinerary, Cost, 2026, 2027", "url": "https://mountainecotrails.com/trip/tsum-valley-trek" },
+        { "title": "The Everest Holiday: Tsum Valley Trek Cost 2026/2027: Prices, Permits, Extras", "url": "https://theeverestholiday.com/blog/tsum-valley-trek-cost-2026-2027" }
+      ]
+    },
+    {
+      "trek": "langtang-gosaikunda-helambu",
+      "days": "13–16",
+      "low": 700,
+      "high": 1000,
+      "currency": "USD",
+      "basis": "per person for two to four people on a guided lodge trek of 13–16 days linking Langtang, the Gosaikunda lakes and Helambu; two agencies list about 1,300–1,600",
+      "includes": ["licensed guide", "porter with most agencies (an extra with some)", "Langtang and Shivapuri park permits and TIMS card", "lodge beds and three meals a day on the trek", "bus from Kathmandu and back"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "private jeep (usually an extra)", "meals in Kathmandu", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 550,
+      "sampled": 8,
+      "sources": [
+        { "title": "Gokyo Treks Nepal: Langtang Gosaikunda Helambu Trek", "url": "https://www.gokyotreksnepal.com/langtang-gosaikunda-helambu-trek/" },
+        { "title": "Adventure Great Himalaya: Langtang Gosaikunda Helambu Trek", "url": "https://www.adventuregreathimalaya.com/langtang-gosaikunda-helambu-trek/" },
+        { "title": "Nepal Hiking Team: Langtang Gosaikunda Helambu Trek", "url": "https://www.nepalhikingteam.com/package/langtang-gosaikunda-trek" },
+        { "title": "Best Heritage Tour: Langtang Gosaikunda Trek 13 Days", "url": "https://www.bestheritagetour.com/langtang-gosaikunda-trek" }
+      ]
+    },
+    {
+      "trek": "helambu",
+      "days": "5–8",
+      "low": 350,
+      "high": 650,
+      "currency": "USD",
+      "basis": "per person for two to four people on a guided lodge trek of 5–8 days from Kathmandu",
+      "includes": ["licensed guide", "porter in most packages (the cheapest tiers leave one out)", "Langtang and Shivapuri park permits and TIMS card", "lodge beds and three meals a day on the trek", "transport from Kathmandu and back"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 270,
+      "luxuryHigh": 1810,
+      "sampled": 9,
+      "sources": [
+        { "title": "Best Heritage Tour: Helambu Short Trek 5 Days Cost, Itinerary 2026 and 2027", "url": "https://bestheritagetour.com/helambu-trek" },
+        { "title": "Nepal Trek Adventures: Helambu Trek", "url": "https://www.nepaltrekadventures.com/helambu" },
+        { "title": "Nepal Mountain Guide Team: 8 Days Helambu Trek 2026/2027", "url": "https://nepalguideinfo.com/helambu-trekking-in-nepal/" },
+        { "title": "The Everest Holiday: Helambu Trek Cost 2027: Price by Tier and Group Size", "url": "https://theeverestholiday.com/blog/helambu-trek-cost-2027-what-6-days-really-costs-by-tier-and-group-size" }
+      ]
+    },
+    {
+      "trek": "tamang-heritage-trail",
+      "days": "7–12",
+      "low": 450,
+      "high": 850,
+      "currency": "USD",
+      "basis": "per person for two to four people on a guided trek using homestays and lodges; 7–8 day versions sit at the low end and 12-day versions at the top",
+      "includes": ["licensed guide", "porter in most packages (the cheapest tiers leave one out)", "Langtang National Park permit and TIMS card", "homestay or lodge beds and three meals a day on the trek", "bus or jeep from Kathmandu and back"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 399,
+      "luxuryHigh": 1999,
+      "sampled": 10,
+      "sources": [
+        { "title": "Mountain Hike Nepal: Tamang Heritage Trail Trek 2026, 7-Day Itinerary & Cost", "url": "https://mountain-hike.com/tour/tamang-heritage-trail/" },
+        { "title": "North Nepal Trek: Tamang Heritage Trail Trek 7 Days", "url": "https://northnepaltrek.com/tamang-heritage-trek" },
+        { "title": "Himalaya Trip: Tamang Heritage Trail Trek", "url": "https://himalayatrip.com/tamang-heritage-trek/" },
+        { "title": "The Everest Holiday: Tamang Heritage Trail 12 Days 2026/27", "url": "https://theeverestholiday.com/tamang-heritage-trail-trek" }
+      ]
+    },
+    {
+      "trek": "ama-yangri",
+      "days": "3–5",
+      "low": 250,
+      "high": 500,
+      "currency": "USD",
+      "basis": "per person for one to four people on a guided 3–5 day trip from Kathmandu via Tarkeghyang; two agencies also sell 2-day trips priced in rupees for Nepali walkers",
+      "includes": ["licensed guide", "Langtang National Park permit and TIMS card", "lodge beds", "meals on standard tiers (not on the cheapest)", "transport from Kathmandu and back"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 100,
+      "luxuryHigh": 699,
+      "sampled": 7,
+      "sources": [
+        { "title": "The Everest Holiday: Ama Yangri Trek 3 Days 2026/27", "url": "https://theeverestholiday.com/ama-yangri-trek" },
+        { "title": "Mount Face Nepal: Ama Yangri Trek Cost and Itinerary 2026", "url": "https://mountfacenepal.com/trip/ama-yangri-trek" },
+        { "title": "Overland Trek Nepal: Ama Yangri Trek, 5-Day Short Trek from Kathmandu with cost", "url": "https://overlandtreknepal.com/trip/ama-yangri-trek" },
+        { "title": "Glory Adventure: Ama Yangri Trek, 7 days", "url": "https://gloryadventure.com/trip/ama-yangri-trek-7-days/" }
+      ]
+    },
+    {
+      "trek": "chisapani-nagarkot",
+      "days": "2–3",
+      "low": 190,
+      "high": 250,
+      "currency": "USD",
+      "basis": "per person for two people on a guided 3-day walk from Sundarijal to Nagarkot with two lodge nights; 2-day versions are listed at about 100–130",
+      "includes": ["licensed guide", "Shivapuri park entry", "two lodge nights", "transport to Sundarijal and back from Nagarkot", "meals vary (some packages leave out lunch and dinner)"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 99,
+      "sampled": 10,
+      "sources": [
+        { "title": "Gokyo Treks Nepal: Chisapani Nagarkot Trek", "url": "https://www.gokyotreksnepal.com/chisapani-nagarkot-trek/" },
+        { "title": "Best Heritage Tour: Chisapani Nagarkot Trek 3 Days Cost for 2026 and 2027", "url": "https://bestheritagetour.com/chisapani-nagarkot-trek" },
+        { "title": "Mosaic Adventure: Nagarkot Chisapani Trek Price 2026", "url": "https://mosaicadventure.com/trip/nagarkot-chisapani-trek/" },
+        { "title": "Himalaya Trip: 2 Days Chisapani Nagarkot Trek", "url": "https://himalayatrip.com/chisapani-nagarkot-hiking/" }
+      ]
+    },
+    {
+      "trek": "dhaulagiri-circuit",
+      "days": "15–17",
+      "low": 2000,
+      "high": 3100,
+      "currency": "USD",
+      "basis": "per person for two to four people on a guided 15–17 day circuit with tents or basic shelters on the high stages; lodge-based quotes start near 2,000, full camping trips run to about 3,000, and two agencies list 4,050–4,180",
+      "includes": ["licensed guide", "porters", "tents, kitchen crew and all meals on the camping stages (full camping packages)", "lodge beds and meals lower down", "ACAP permit and TIMS card", "road transport from Pokhara and back"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "the Jomsom–Pokhara flight unless the quote names it", "meals in Kathmandu and Pokhara", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 1350,
+      "sampled": 10,
+      "sources": [
+        { "title": "Nepal Trekking Experts: Dhaulagiri Circuit Trek: Itinerary, Cost, Route Map, Difficulty, Best Season", "url": "https://nepaltrekkingexperts.com/dhaulagiri-circuit-trek" },
+        { "title": "Access Nepal Tour and Trekking: Dhaulagiri Circuit Trek", "url": "https://accessnepaltour.com/tour/dhaulagiri-circuit-trek/" },
+        { "title": "Annapurna Encounter: Dhaulagiri Circuit Trek", "url": "https://www.annapurnaencounter.com/trip/dhaulagiri-circuit-trek" },
+        { "title": "High Pass Adventure: Dhaulagiri Circuit Trek", "url": "https://www.highpassadventure.com/trip/dhaulagiri-circuit-trek" }
+      ]
+    },
+    {
+      "trek": "kanchenjunga-base-camp",
+      "days": "17–22",
+      "low": 1600,
+      "high": 2500,
+      "currency": "USD",
+      "basis": "per person for two to four people on a guided lodge trek of 17–22 days; the low end covers one base camp or leaves out meals, the top covers both the north and south base camps",
+      "includes": ["licensed guide (compulsory on this route)", "porter in most packages (confirm)", "restricted-area and conservation-area permits", "lodge beds; meals in most packages but not all", "flights to Bhadrapur and the jeep to Taplejung in some packages (confirm)"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 1220,
+      "luxuryHigh": 5515,
+      "sampled": 7,
+      "sources": [
+        { "title": "All Nepal Hiking: Kanchenjunga North and South Trek Cost 2026 and 2027", "url": "https://allnepalhiking.com/trip/kanchenjunga-base-camp-trek" },
+        { "title": "Peace Nepal Treks: Kanchenjunga Base Camp Trek 2026/27", "url": "https://www.peacenepaltreks.com/trip/kanchenjunga-base-camp-trek" },
+        { "title": "Mountain Rock Treks: Kanchenjunga base camp trek Cost for 2025 and 2026", "url": "https://mountainrocktreks.com/blog/kanchenjunga-base-camp-trek-cost" },
+        { "title": "The Everest Holiday: Kanchenjunga Base Camp Trek Itinerary 2027: 19 Days, Permits and Cost", "url": "https://theeverestholiday.com/blog/kanchenjunga-base-camp-trek-19-days-itinerary-2027" }
+      ]
+    },
+    {
+      "trek": "makalu-base-camp",
+      "days": "17–21",
+      "low": 1800,
+      "high": 2200,
+      "currency": "USD",
+      "basis": "per person for two to four people on a guided 17–21 day trek using basic lodges; four of the nine agencies say the Tumlingtar flights are in the price and the rest do not say",
+      "includes": ["licensed guide", "porter in most packages (confirm)", "Makalu Barun National Park permit and other trek permits", "basic lodge beds and three meals a day on the trek", "jeep between Tumlingtar and the trailhead", "Kathmandu–Tumlingtar flights in some packages (confirm)"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 1599,
+      "sampled": 9,
+      "sources": [
+        { "title": "Nepal Trekking Routes: Makalu Base Camp Trek in Nepal", "url": "https://nepaltrekkingroutes.com/trip/makalu-base-camp-trek" },
+        { "title": "High Camp Adventure: Makalu Base Camp Trek", "url": "https://highcampadventure.com/trip/makalu-base-camp-trek" },
+        { "title": "Access Nepal Tour and Trekking: Makalu Base Camp Trek", "url": "https://accessnepaltour.com/tour/makalu-base-camp-trek/" },
+        { "title": "Himalayan Recreation: Makalu Base Camp Trek 15 Days, Itinerary & Cost 2026/27", "url": "https://www.himalayanrecreation.com/tours/makalu-base-camp-trek" }
+      ]
+    },
+    {
+      "trek": "upper-dolpo",
+      "days": "22–26",
+      "low": 4000,
+      "high": 4600,
+      "currency": "USD",
+      "basis": "per person for two to four people on a guided camping trek of 22–26 days from Juphal; it is often unclear whether the Nepalgunj and Juphal flights are in the price, and private or higher-service trips are listed at 5,000–5,900",
+      "includes": ["licensed guide (compulsory on this route)", "porters or pack animals and a camp crew", "tents and all meals on the trek", "restricted-area and Shey Phoksundo park permits in most packages (the Upper Dolpo permit alone is USD 500 for ten days, then USD 50 a day; confirm)", "domestic flights in some packages (confirm)"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu and Nepalgunj", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 2600,
+      "sampled": 10,
+      "sources": [
+        { "title": "Green Valley Nepal Treks: Upper Dolpo Trek Cost, Itinerary, Map 2026 and 2027", "url": "https://www.greenvalleynepaltreks.com/upper-dolpo-trek" },
+        { "title": "Access Nepal Tour and Trekking: Upper Dolpo Trek 24 Days Cost & Itinerary (2026/2027)", "url": "https://accessnepaltour.com/tour/upper-dolpo-trek/" },
+        { "title": "Himalayan Trekking Path: Upper Dolpo Trek", "url": "https://www.himalayantrekkingpath.com/upper-dolpo-trekking" },
+        { "title": "Adventure Mountain Treks: Upper Dolpo Circuit Trekking, 2026, 2027 Cost", "url": "https://www.adventuremountaintreks.com/package/upper-dolpo-circuit-trekking" }
+      ]
+    },
+    {
+      "trek": "phoksundo-lake",
+      "days": "10–13",
+      "low": 1450,
+      "high": 2350,
+      "currency": "USD",
+      "basis": "per person for two to four people on a guided 10–13 day trip from Kathmandu through Nepalgunj and Juphal; quotes disagree widely, partly over whether the four flights are included",
+      "includes": ["licensed guide (compulsory on this route)", "porter in most packages (confirm)", "Shey Phoksundo park permit and Lower Dolpo permit", "lodge or tent nights and three meals a day on the trek", "domestic flights in some packages (confirm)"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu and Nepalgunj", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 950,
+      "sampled": 9,
+      "sources": [
+        { "title": "High Route Adventure: Shey Phoksundo Lake Trek", "url": "https://highrouteadventure.com/trip/shey-phoksundo-lake-trek/" },
+        { "title": "Gokyo Treks Nepal: Phoksundo Lake Trek", "url": "https://www.gokyotreksnepal.com/phoksundo-lake-trek/" },
+        { "title": "Info Nepal Tours and Treks: Phoksundo Lake Trek", "url": "https://intrekking.com/trip/phoksundo-lake-trek/" },
+        { "title": "Nepal Trek Adventures: Phoksundo Lake Trek", "url": "https://www.nepaltrekadventures.com/phoksundo-lake-trek" }
+      ]
+    },
+    {
+      "trek": "rara-lake",
+      "days": "8–16",
+      "low": 1200,
+      "high": 2850,
+      "currency": "USD",
+      "basis": "per person on a guided trip; quotes disagree widely because 7–8 day versions drive or fly close to the lake while 15–16 day versions walk in from Jumla and include four flights, and two agencies list 3,575–4,299",
+      "includes": ["licensed guide", "porter in most packages (confirm)", "Rara National Park permit and TIMS card", "lodge, homestay or tent nights and meals on the trek", "domestic flights in some packages, road transport in others (confirm)"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu and Nepalgunj", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 900,
+      "sampled": 7,
+      "sources": [
+        { "title": "Himalayan Trekking Path: Rara Lake Trek Cost, Season, Itinerary, Package", "url": "https://www.himalayantrekkingpath.com/rara-lake-trek" },
+        { "title": "Info Nepal Tours and Treks: Short Rara Lake Trek, 8 Days (Cost, Itinerary & Permits)", "url": "https://intrekking.com/trip/rara-lake-trek/" },
+        { "title": "World Alpine Treks: Rara Lake Trek", "url": "https://www.worldalpinetreks.com/packages/rara-lake-trek" },
+        { "title": "Swotah Travel: Rara Lake Trek Cost & Map", "url": "https://www.swotahtravel.com/7-days-rara-lake-trek" }
+      ]
+    },
+    {
+      "trek": "khaptad",
+      "days": "7–12",
+      "low": 1200,
+      "high": 1850,
+      "currency": "USD",
+      "basis": "per person for two to four people on a guided 7–12 day trek from Kathmandu via Dhangadhi; most of these prices include the Kathmandu–Dhangadhi flights, and the cheapest one does not mention them",
+      "includes": ["licensed guide", "porter in most packages (confirm)", "Khaptad National Park permit", "lodge, homestay or tent nights and meals on the trek", "Kathmandu–Dhangadhi flights and road transport in most packages (confirm)"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu and Dhangadhi", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 584,
+      "sampled": 8,
+      "sources": [
+        { "title": "Amigo Treks and Expedition: Khaptad National Park Trekking in Nepal", "url": "https://www.amigotrekking.com/khaptad-trek.html?country=us" },
+        { "title": "Nepal Alternative Treks: 9 Days Khaptad National Park Trek", "url": "https://nepalalternativetreks.com/trip/khaptad-national-park-trek/" },
+        { "title": "Hairy Yak Adventures: Khaptad National Park Trek", "url": "https://hairyyakadventures.com/tour/khaptad-national-park-trek/" },
+        { "title": "Mountain Tiger Nepal: Khaptad National Park Trek, 9 Days", "url": "https://www.mountaintigernepal.com/package/khaptad-national-park-trek-9-days" }
+      ]
+    },
+    {
+      "trek": "tsho-rolpa",
+      "days": "8–10",
+      "low": 600,
+      "high": 1000,
+      "currency": "USD",
+      "basis": "per person for two people on a guided lodge trek of 8–10 days in the Rolwaling valley, by bus or jeep from Kathmandu; one agency lists 1,950",
+      "includes": ["licensed guide (compulsory on this route)", "porter in most packages (the cheapest tiers leave one out)", "Gaurishankar conservation-area and restricted-area permits", "lodge beds and three meals a day on the trek", "bus or jeep from Kathmandu and back"],
+      "excludes": ["international flights", "Nepal visa", "travel insurance", "meals in Kathmandu", "drinks, hot showers, charging and Wi-Fi", "tips"],
+      "budgetLow": 470,
+      "sampled": 10,
+      "sources": [
+        { "title": "Gokyo Treks Nepal: Tsho Rolpa Lake Trek", "url": "https://www.gokyotreksnepal.com/tsho-rolpa-lake-trek/" },
+        { "title": "Breeze Adventure: Rolwaling Trek, Tsho Rolpa Lake Trek", "url": "https://www.breezeadventure.com/rolwaling-trek" },
+        { "title": "Epic Trek Nepal: Tsho Rolpa Trek, 8 Days", "url": "https://epictreknepal.com/trip/tsho-rolpa-trek/" },
+        { "title": "Base Camp Hike: Tsho Rolpa Lake Trek", "url": "https://www.basecamphike.com/tsho-rolpa-lake-trek/" }
+      ]
+    }
+  ],
+  "fares": [
+    {
+      "id": "kathmandu-pokhara-tourist-bus",
+      "from": "Kathmandu",
+      "to": "Pokhara",
+      "mode": "tourist bus",
+      "low": 1000,
+      "high": 2700,
+      "currency": "NPR",
+      "time": "7–9 hours",
+      "note": "Leaves from Sorhakhutte near Thamel; plain 2x2 buses sit at the low end and sofa-seat buses at the top, and one traveller reports a NPR 500 surcharge for foreigners.",
+      "sources": [
+        { "title": "The Longest Way Home: Kathmandu to Pokhara Bus 2026: How to Guide & Tips", "url": "https://www.thelongestwayhome.com/travel-guides/nepal/kathmandu/how-to-take-a-bus-from-kathmandu-to-pokhara.html" },
+        { "title": "Charlie on Travel: Kathmandu to Pokhara: Bus, Car, Jeep or Flight (2026)", "url": "https://charlieontravel.com/kathmandu-to-pokhara/" },
+        { "title": "Swotah Travel: Kathmandu to Pokhara (2026): Flight, Tourist Bus or Car, Times and Costs", "url": "https://www.swotahtravel.com/blogs/how-do-i-get-to-pokhara-from-kathmandu" }
+      ]
+    },
+    {
+      "id": "kathmandu-pokhara-flight",
+      "from": "Kathmandu",
+      "to": "Pokhara",
+      "mode": "flight",
+      "low": 100,
+      "high": 145,
+      "currency": "USD",
+      "time": "about 25 minutes",
+      "note": "Foreigners pay a dollar fare, about USD 124 on the airline fare list in force since August 2026; Buddha Air, Yeti and Shree all fly the route.",
+      "sources": [
+        { "title": "The Everest Holiday: Kathmandu to Lukla Flight Cost 2026 (domestic fare table, airline list valid from 3 August 2026)", "url": "https://theeverestholiday.com/blog/nepal-domestic-flights-trekkers-guide" },
+        { "title": "Pride Nepal Travel & Tours: Nepal Domestic Flight Cheapest Price Guide 2026", "url": "https://pridenepaltravel.com/nepal-domestic-flight-cheapest-price/" },
+        { "title": "Charlie on Travel: Kathmandu to Pokhara: Bus, Car, Jeep or Flight (2026)", "url": "https://charlieontravel.com/kathmandu-to-pokhara/" }
+      ]
+    },
+    {
+      "id": "kathmandu-lukla-flight",
+      "from": "Kathmandu",
+      "to": "Lukla",
+      "mode": "flight",
+      "low": 235,
+      "high": 290,
+      "currency": "USD",
+      "time": "about 35 minutes",
+      "note": "Sources disagree after several fare changes in 2026: pages citing the August fare list give about USD 254–257, others USD 230–245, and some agencies ask more; in the peak trekking months most Lukla flights leave from Manthali instead, so check which airport your ticket names.",
+      "sources": [
+        { "title": "The Everest Holiday: Kathmandu to Lukla Flight Cost 2026 (domestic fare table, airline list valid from 3 August 2026)", "url": "https://theeverestholiday.com/blog/nepal-domestic-flights-trekkers-guide" },
+        { "title": "Kathmandu Lukla Flight: Kathmandu to Lukla Flight Ticket Booking", "url": "https://www.kathmanduluklaflight.com/" },
+        { "title": "Everest Trekking Company: Lukla Flight Guide 2026/2027: Cost, Airlines, Ramechhap & Tips", "url": "https://everesttrekkingcompany.com/lukla-flight-guide/" }
+      ]
+    },
+    {
+      "id": "manthali-lukla-flight",
+      "from": "Manthali (Ramechhap)",
+      "to": "Lukla",
+      "mode": "flight",
+      "low": 195,
+      "high": 215,
+      "currency": "USD",
+      "time": "about 20 minutes",
+      "note": "Used for most Lukla flights in the peak months; Manthali is a 4–5 hour drive from Kathmandu, normally done overnight.",
+      "sources": [
+        { "title": "The Everest Holiday: Kathmandu to Lukla Flight Cost 2026 (domestic fare table, airline list valid from 3 August 2026)", "url": "https://theeverestholiday.com/blog/nepal-domestic-flights-trekkers-guide" },
+        { "title": "Haven Holidays Nepal: Lukla Flight Details: Cost from Manthali Vs. Kathmandu", "url": "https://www.havenholidaysnepal.com/blogs/lukla-flight-details" },
+        { "title": "Nepal Trekking in Himalaya: Manthali to Lukla Flight Cost", "url": "https://www.nepaltrekkinginhimalaya.com/pages/manthali-to-lukla-flight-cost" }
+      ]
+    },
+    {
+      "id": "kathmandu-manthali-shared-shuttle",
+      "from": "Kathmandu",
+      "to": "Manthali (Ramechhap)",
+      "mode": "shared van or jeep",
+      "low": 20,
+      "high": 35,
+      "currency": "USD",
+      "time": "4–5 hours",
+      "note": "Operators collect around Thamel between about 1 and 2 am to meet the morning flights; an ordinary bus is listed at USD 12–20 but has no hotel pick-up and may arrive too late.",
+      "sources": [
+        { "title": "Vehicle Hiring Nepal: Ramechhap Manthali Transportation Guide 2026/27/28", "url": "https://vehiclehiringnepal.com/ramechhap-manthali-transportation/" },
+        { "title": "Travel Away Trek: Kathmandu to Ramechhap Bus, Car and Jeep", "url": "https://travelawaytrek.com/kathmandu-to-ramechhap-manthali-transportation-and-manthali-to-lukla-airport/" },
+        { "title": "Transport Hire Nepal: Kathmandu to Ramechhap Bus & Hiace Ticket", "url": "https://www.transporthirenepal.com/bus-ticket/tourist-bus-ticket/kathmandu-to-ramechhap-bus-ticket/" }
+      ]
+    },
+    {
+      "id": "kathmandu-manthali-private-jeep",
+      "from": "Kathmandu",
+      "to": "Manthali (Ramechhap)",
+      "mode": "private jeep",
+      "low": 140,
+      "high": 220,
+      "currency": "USD",
+      "time": "4–5 hours",
+      "note": "Price for the whole vehicle one way, leaving when you choose; a car for up to three people is listed at USD 100–155.",
+      "sources": [
+        { "title": "Vehicle Hiring Nepal: Ramechhap Manthali Transportation Guide 2026/27/28", "url": "https://vehiclehiringnepal.com/ramechhap-manthali-transportation/" },
+        { "title": "Travel Away Trek: Kathmandu to Ramechhap Bus, Car and Jeep", "url": "https://travelawaytrek.com/kathmandu-to-ramechhap-manthali-transportation-and-manthali-to-lukla-airport/" },
+        { "title": "Info Nepal Tours and Treks: Kathmandu to Ramechhap Manthali Transport", "url": "https://intrekking.com/kathmandu-to-ramechhap-manthali-transportation/" }
+      ]
+    },
+    {
+      "id": "pokhara-jomsom-flight",
+      "from": "Pokhara",
+      "to": "Jomsom",
+      "mode": "flight",
+      "low": 160,
+      "high": 180,
+      "currency": "USD",
+      "time": "about 20 minutes",
+      "note": "Flown by Tara Air and Summit Air; 2026 fare lists show about USD 177–179, and the lower prices on older pages are out of date.",
+      "sources": [
+        { "title": "The Everest Holiday: Kathmandu to Lukla Flight Cost 2026 (domestic fare table, airline list valid from 3 August 2026)", "url": "https://theeverestholiday.com/blog/nepal-domestic-flights-trekkers-guide" },
+        { "title": "Beyond the Limits Treks: Nepal Flight Prices 2026/27: Latest Domestic Airfares for Tourists", "url": "https://www.beyondthelimitstreks.com/blog/nepal-domestic-flight-fares" },
+        { "title": "Mountain Kick: Pokhara to Jomsom Flight 2026: Price, Time and Jeep Option", "url": "https://mountainkick.com/pokhara-to-jomsom/" }
+      ]
+    },
+    {
+      "id": "pokhara-jomsom-bus",
+      "from": "Pokhara",
+      "to": "Jomsom",
+      "mode": "local bus",
+      "low": 700,
+      "high": 1200,
+      "currency": "NPR",
+      "time": "8–10 hours",
+      "note": "We found fares only for ordinary buses, not for a tourist service; one 2027 estimate puts a direct bus or shared jeep at NPR 1,800–3,000, so carry a margin.",
+      "sources": [
+        { "title": "Vehicle Hiring Nepal: Pokhara to Jomsom Jeep Rental 2026/27", "url": "https://vehiclehiringnepal.com/pokhara-to-jomsom-jeep-rental/" },
+        { "title": "Vehicle Hiring Nepal: Shared Jeep Routes for Trekkers in Nepal: Complete Guide", "url": "https://vehiclehiringnepal.com/shared-jeep-routes-for-trekkers-in-nepal/" },
+        { "title": "Mountain Kick: Pokhara to Jomsom Flight 2026: Price, Time and Jeep Option", "url": "https://mountainkick.com/pokhara-to-jomsom/" }
+      ]
+    },
+    {
+      "id": "pokhara-jomsom-shared-jeep",
+      "from": "Pokhara",
+      "to": "Jomsom",
+      "mode": "shared jeep",
+      "low": 1200,
+      "high": 2500,
+      "currency": "NPR",
+      "time": "7–9 hours",
+      "note": "A seat in a jeep that leaves between about 7 and 9 am, from Zero KM or Prithvi Chowk according to one operator; seats on jeeps that change at Beni are cheaper.",
+      "sources": [
+        { "title": "Vehicle Hiring Nepal: Pokhara to Jomsom Jeep Rental 2026/27", "url": "https://vehiclehiringnepal.com/pokhara-to-jomsom-jeep-rental/" },
+        { "title": "Vehicle Hiring Nepal: Shared Jeep Routes for Trekkers in Nepal: Complete Guide", "url": "https://vehiclehiringnepal.com/shared-jeep-routes-for-trekkers-in-nepal/" },
+        { "title": "Mountain Kick: Pokhara to Jomsom Flight 2026: Price, Time and Jeep Option", "url": "https://mountainkick.com/pokhara-to-jomsom/" }
+      ]
+    },
+    {
+      "id": "jomsom-muktinath-shared-jeep",
+      "from": "Jomsom",
+      "to": "Muktinath",
+      "mode": "shared jeep",
+      "low": 500,
+      "high": 1000,
+      "currency": "NPR",
+      "time": "1–1.5 hours",
+      "note": "Jeeps leave the Jomsom jeep stand when full, mostly between 7 and 9 am; a local bus is listed at NPR 200–300 and a whole jeep at NPR 3,000–6,000, and we found no separate rate for foreigners.",
+      "sources": [
+        { "title": "Vehicle Hiring Nepal: Jomsom Airport to Muktinath Jeep, Car, Hiace, Bus 2026/27", "url": "https://vehiclehiringnepal.com/jomsom-airport-to-muktinath-jeep-car-hiace-bus/" },
+        { "title": "Vehicle Hiring Nepal: Shared Jeep Routes for Trekkers in Nepal: Complete Guide", "url": "https://vehiclehiringnepal.com/shared-jeep-routes-for-trekkers-in-nepal/" },
+        { "title": "Vehicle Hiring Nepal: Jeep Rental for Muktinath Tour", "url": "https://vehiclehiringnepal.com/jeep-rental-for-muktinath-tour/" }
+      ]
+    },
+    {
+      "id": "kathmandu-syabrubesi-local-bus",
+      "from": "Kathmandu",
+      "to": "Syabrubesi",
+      "mode": "local bus",
+      "low": 700,
+      "high": 1000,
+      "currency": "NPR",
+      "time": "8–10 hours",
+      "note": "The usual fare from Machhapokhari near Balaju or Gongabu bus park, with Dhunche on the same road for about NPR 800; after the August 2026 flood the road was open only as far as Dhunche, and only to jeeps and light vehicles, when we last checked, so ask what is running.",
+      "sources": [
+        { "title": "Langtang Treks Nepal: Kathmandu To Syabrubesi Transport: Bus Vs Jeep Vs Private Vehicle", "url": "https://www.langtangtreks.com/blog/kathmandu-to-syabrubesi-transport/" },
+        { "title": "Eco Nepal Trekkers: Kathmandu to Syabrubesi and Dhunche by Bus, Private Jeep", "url": "https://econepaltrekkers.com/kathmandu-to-syabrubesi-by-bus-shared/" },
+        { "title": "Haven Holidays Nepal: Kathmandu to Syabrubesi by Bus or Jeep: Information", "url": "https://www.havenholidaysnepal.com/blogs/kathmandu-to-syabrubesi-by-bus-or-jeep" }
+      ]
+    },
+    {
+      "id": "kathmandu-syabrubesi-deluxe-bus",
+      "from": "Kathmandu",
+      "to": "Syabrubesi",
+      "mode": "deluxe or express bus",
+      "low": 1000,
+      "high": 2000,
+      "currency": "NPR",
+      "time": "8–9 hours",
+      "note": "Guides give NPR 950–1,500 for express buses and NPR 1,200–2,000 for deluxe ones; these are the usual fares, and buses may not be running while the road beyond Dhunche is cut.",
+      "sources": [
+        { "title": "Langtang Treks Nepal: Kathmandu To Syabrubesi Transport: Bus Vs Jeep Vs Private Vehicle", "url": "https://www.langtangtreks.com/blog/kathmandu-to-syabrubesi-transport/" },
+        { "title": "Namaste Nepal Trekking: Kathmandu to Syabrubesi Transport: Bus & Jeep", "url": "https://namastenepaltrekking.com/kathmandu-to-syabrubesi-transport/" },
+        { "title": "Info Nepal Tours and Treks: Kathmandu to Syabrubesi Bus: Cost and Time", "url": "https://intrekking.com/kathmandu-to-syabrubesi/" }
+      ]
+    },
+    {
+      "id": "kathmandu-syabrubesi-shared-jeep",
+      "from": "Kathmandu",
+      "to": "Syabrubesi",
+      "mode": "shared jeep",
+      "low": 1500,
+      "high": 2500,
+      "currency": "NPR",
+      "time": "6–7 hours",
+      "note": "A seat in a jeep carrying seven to nine people, leaving from Machhapokhari or Gongabu; in autumn 2026 jeeps were stopping at Dhunche because of flood damage beyond it.",
+      "sources": [
+        { "title": "Langtang Treks Nepal: Kathmandu To Syabrubesi Transport: Bus Vs Jeep Vs Private Vehicle", "url": "https://www.langtangtreks.com/blog/kathmandu-to-syabrubesi-transport/" },
+        { "title": "Eco Nepal Trekkers: Kathmandu to Syabrubesi and Dhunche by Bus, Private Jeep", "url": "https://econepaltrekkers.com/kathmandu-to-syabrubesi-by-bus-shared/" },
+        { "title": "High Route Adventure: Kathmandu to Syabrubesi Transportation: Complete Guide", "url": "https://highrouteadventure.com/kathmandu-syabrubesi/" }
+      ]
+    },
+    {
+      "id": "kathmandu-syabrubesi-private-jeep",
+      "from": "Kathmandu",
+      "to": "Syabrubesi",
+      "mode": "private jeep",
+      "low": 14000,
+      "high": 22000,
+      "currency": "NPR",
+      "time": "6–7 hours",
+      "note": "Whole vehicle one way for four to six people; quotes for the shorter run to Dhunche, where vehicles were stopping in autumn 2026, conflict, from about USD 130 to NPR 25,000.",
+      "sources": [
+        { "title": "Langtang Treks Nepal: Kathmandu To Syabrubesi Transport: Bus Vs Jeep Vs Private Vehicle", "url": "https://www.langtangtreks.com/blog/kathmandu-to-syabrubesi-transport/" },
+        { "title": "Base Camp Hike: How to go to Syabrubesi from Kathmandu", "url": "https://www.basecamphike.com/how-to-go-to-syabrubesi-and-dhunche-from-kathmandu/" },
+        { "title": "Mustang Trek Nepal: Jeep or bus for Kathmandu to Syabrubesi via Dhunche", "url": "https://www.mustangtreknepal.com/kathmandu-to-syabrubesi-distance" }
+      ]
+    },
+    {
+      "id": "kathmandu-besisahar-local-bus",
+      "from": "Kathmandu",
+      "to": "Besisahar",
+      "mode": "local bus",
+      "low": 700,
+      "high": 1500,
+      "currency": "NPR",
+      "time": "7–9 hours",
+      "note": "Ordinary buses from Gongabu bus park; the quicker microbuses and tourist buses are listed separately.",
+      "sources": [
+        { "title": "Mountain Kick: Kathmandu to Besisahar: Bus From NPR 700, Jeep Cost and Time", "url": "https://mountainkick.com/kathmandu-to-besisahar/" },
+        { "title": "Info Nepal Tours and Treks: Kathmandu to Besisahar Lamjung Bus", "url": "https://intrekking.com/kathmandu-to-besisahar-lamjung/" },
+        { "title": "Eco Nepal Trekkers: Kathmandu To Besisahar/Chame", "url": "https://econepaltrekkers.com/kathmandu-to-besisahar-by-local-bus-jeep/" }
+      ]
+    },
+    {
+      "id": "kathmandu-besisahar-microbus",
+      "from": "Kathmandu",
+      "to": "Besisahar",
+      "mode": "microbus or tourist bus",
+      "low": 1200,
+      "high": 2000,
+      "currency": "NPR",
+      "time": "6–7 hours",
+      "note": "Some tourist buses only run as far as Dumre, so check where yours ends; one older page still lists microbuses at NPR 600–700.",
+      "sources": [
+        { "title": "Mountain Kick: Kathmandu to Besisahar: Bus From NPR 700, Jeep Cost and Time", "url": "https://mountainkick.com/kathmandu-to-besisahar/" },
+        { "title": "Eco Nepal Trekkers: Kathmandu To Besisahar/Chame", "url": "https://econepaltrekkers.com/kathmandu-to-besisahar-by-local-bus-jeep/" },
+        { "title": "Travel Away Trek: Kathmandu to Besisahar Bus", "url": "https://travelawaytrek.com/kathmandu-to-besisahar-bus/" }
+      ]
+    },
+    {
+      "id": "kathmandu-besisahar-private-jeep",
+      "from": "Kathmandu",
+      "to": "Besisahar",
+      "mode": "private jeep",
+      "low": 18000,
+      "high": 25000,
+      "currency": "NPR",
+      "time": "5–7 hours",
+      "note": "Whole vehicle one way; agencies that quote in dollars ask about USD 170–220.",
+      "sources": [
+        { "title": "Mountain Kick: Kathmandu to Besisahar: Bus From NPR 700, Jeep Cost and Time", "url": "https://mountainkick.com/kathmandu-to-besisahar/" },
+        { "title": "Nepal Guide Trekking: Kathmandu to Besisahar Jeep Cost & Transport Guide", "url": "https://nepalguidetrekking.com/blogs/kathmandu-besisahar-jeep-cost" }
+      ]
+    },
+    {
+      "id": "besisahar-chame-shared-jeep",
+      "from": "Besisahar",
+      "to": "Chame",
+      "mode": "shared jeep",
+      "low": 2500,
+      "high": 3000,
+      "currency": "NPR",
+      "time": "5–6 hours",
+      "note": "A seat from the Besisahar jeep stand; a whole jeep is listed at NPR 20,000–25,000, and one source reports a new public bus to Chame at NPR 740.",
+      "sources": [
+        { "title": "Magical Nepal: Besisahar: Where the Annapurna Circuit Begins", "url": "https://www.magicalnepal.com/blog/besisahar/" },
+        { "title": "Mountain Kick: Kathmandu to Besisahar: Bus From NPR 700, Jeep Cost and Time", "url": "https://mountainkick.com/kathmandu-to-besisahar/" },
+        { "title": "Eco Nepal Trekkers: Kathmandu To Besisahar/Chame", "url": "https://econepaltrekkers.com/kathmandu-to-besisahar-by-local-bus-jeep/" }
+      ]
+    },
+    {
+      "id": "besisahar-manang-shared-jeep",
+      "from": "Besisahar",
+      "to": "Manang",
+      "mode": "shared jeep",
+      "low": 4500,
+      "high": 5000,
+      "currency": "NPR",
+      "time": "8–10 hours",
+      "note": "A seat from the Besisahar jeep stand; one agency quotes USD 100, well above the local rate.",
+      "sources": [
+        { "title": "Magical Nepal: Besisahar: Where the Annapurna Circuit Begins", "url": "https://www.magicalnepal.com/blog/besisahar/" },
+        { "title": "Himalayan Ecological Trek: Annapurna Circuit Trek Cost: Complete Breakdown", "url": "https://himalayanecologicaltrek.com/blog/annapurna-circuit-trek-cost" },
+        { "title": "Eco Nepal Trekkers: Kathmandu To Besisahar/Chame", "url": "https://econepaltrekkers.com/kathmandu-to-besisahar-by-local-bus-jeep/" }
+      ]
+    },
+    {
+      "id": "kathmandu-machha-khola-bus",
+      "from": "Kathmandu",
+      "to": "Machha Khola",
+      "mode": "local bus",
+      "low": 8,
+      "high": 20,
+      "currency": "USD",
+      "time": "8–10 hours",
+      "note": "Agencies quote this in dollars; buses leave Gongabu and often end at Arughat, where you change to a local jeep for about USD 3–5.",
+      "sources": [
+        { "title": "Trek Pathways: Kathmandu to Trailhead Transport Guide for Every Major Nepal Trek (2026)", "url": "https://trekpathways.com/kathmandu-to-trailhead-transportation/" },
+        { "title": "Himalaya Discovery: Transportations for Manaslu Circuit Trek & Costs 2025", "url": "https://himalaya-discovery.com/transportation-manaslu-circuit-trek/" },
+        { "title": "Travel Away Trek: Transportation for Manaslu Trekking", "url": "https://travelawaytrek.com/transportation-for-manaslu-trekking/" }
+      ]
+    },
+    {
+      "id": "kathmandu-soti-khola-shared-jeep",
+      "from": "Kathmandu",
+      "to": "Soti Khola",
+      "mode": "shared jeep",
+      "low": 2500,
+      "high": 3500,
+      "currency": "NPR",
+      "time": "7–8 hours",
+      "note": "Only one source gave a seat price, and it was to Soti Khola, short of Machha Khola.",
+      "sources": [
+        { "title": "Vehicle Hiring Nepal: Kathmandu to Soti Khola by Jeep", "url": "https://vehiclehiringnepal.com/kathmandu-to-soti-khola-by-jeep/" },
+        { "title": "Trek Pathways: Kathmandu to Trailhead Transport Guide for Every Major Nepal Trek (2026)", "url": "https://trekpathways.com/kathmandu-to-trailhead-transportation/" }
+      ]
+    },
+    {
+      "id": "kathmandu-machha-khola-private-jeep",
+      "from": "Kathmandu",
+      "to": "Machha Khola",
+      "mode": "private jeep",
+      "low": 150,
+      "high": 250,
+      "currency": "USD",
+      "time": "8–10 hours",
+      "note": "Whole vehicle one way; one agency asks about USD 195 to Machha Khola and another USD 400, and going on from Soti Khola adds about USD 50.",
+      "sources": [
+        { "title": "Base Camp Hike: Kathmandu to Sotikhola and Machhakhola by Jeep", "url": "https://www.basecamphike.com/kathmandu-to-sotikhola-and-machhakhola-by-jeep/" },
+        { "title": "Nepal Trekking in Himalaya: Kathmandu to Soti Khola Jeep Rental", "url": "https://www.nepaltrekkinginhimalaya.com/pages/kathmandu-to-soti-khola-jeep-rental" },
+        { "title": "Vehicle Hiring Nepal: Jeep Hire Cost In Nepal", "url": "https://vehiclehiringnepal.com/jeep-hire-cost-in-nepal-private-4wd-scorpio-price/" }
+      ]
+    },
+    {
+      "id": "pokhara-nayapul-taxi",
+      "from": "Pokhara",
+      "to": "Nayapul",
+      "mode": "taxi",
+      "low": 3000,
+      "high": 6000,
+      "currency": "NPR",
+      "time": "1–2 hours",
+      "note": "Whole car from Lakeside; hire sites ask up to NPR 8,000–10,000 for a 4WD jeep, which is what you need to go on beyond Nayapul to Ghandruk or Kimche.",
+      "sources": [
+        { "title": "Vehicle Hiring Nepal: Pokhara to Nayapul Transport 2026", "url": "https://vehiclehiringnepal.com/pokhara-to-nayapul-transport/" },
+        { "title": "Annapurna Trek: Best Way to Reach Nayapul for Poon Hill Trek", "url": "https://annapurnatrek.net/best-way-to-reach-nayapul-for-poon-hill-trek/" },
+        { "title": "Nepal Online Trip: Pokhara to Nayapul Vehicle Rental", "url": "https://www.nepalonlinetrip.com/pokhara-to-nayapul-vehicle-rental.html" }
+      ]
+    },
+    {
+      "id": "pokhara-nayapul-shared-jeep",
+      "from": "Pokhara",
+      "to": "Nayapul",
+      "mode": "shared jeep",
+      "low": 500,
+      "high": 800,
+      "currency": "NPR",
+      "time": "1.5–2 hours",
+      "note": "Leaves from Baglung Bus Park; the local bus from the same park is listed at NPR 150–250 and takes 2.5–3 hours.",
+      "sources": [
+        { "title": "Vehicle Hiring Nepal: Pokhara to Nayapul Transport 2026", "url": "https://vehiclehiringnepal.com/pokhara-to-nayapul-transport/" },
+        { "title": "Annapurna Trek: Best Way to Reach Nayapul for Poon Hill Trek", "url": "https://annapurnatrek.net/best-way-to-reach-nayapul-for-poon-hill-trek/" },
+        { "title": "Vehicle Hiring Nepal: Pokhara to Nayapul Transportation", "url": "https://vehiclehiringnepal.com/pokhara-to-nayapul-transportation/" }
+      ]
+    },
+    {
+      "id": "pokhara-ghandruk-local-bus",
+      "from": "Pokhara",
+      "to": "Ghandruk",
+      "mode": "local bus",
+      "low": 450,
+      "high": 500,
+      "currency": "NPR",
+      "time": "3.5–5 hours",
+      "note": "From Baglung Bus Park, with the first bus at about 6:45 am and then roughly every hour and a half; some buses stop at Kimche or short of the village, leaving a walk of up to an hour and a half.",
+      "sources": [
+        { "title": "Travelling Mandala: How to Get From Pokhara to Ghandruk (By Jeep, Bus)", "url": "https://travellingmandala.com/pokhara-to-ghandruk/" },
+        { "title": "Khopra Ridge Trek: Pokhara to Ghandruk Transportation Guide", "url": "https://khopraridgetrek.com/planning/pokhara-to-ghandruk" },
+        { "title": "Action Nepal Treks: Pokhara to Ghandruk Travel Guide for 2026", "url": "https://actionnepaltreks.com/blog/pokhara-to-ghandruk/" }
+      ]
+    },
+    {
+      "id": "pokhara-ghandruk-shared-jeep",
+      "from": "Pokhara",
+      "to": "Ghandruk",
+      "mode": "shared jeep",
+      "low": 650,
+      "high": 1200,
+      "currency": "NPR",
+      "time": "2.5–3.5 hours",
+      "note": "A seat from the jeep counter at Hari Chowk; allow 30–60 minutes for the jeep to fill.",
+      "sources": [
+        { "title": "Travelling Mandala: How to Get From Pokhara to Ghandruk (By Jeep, Bus)", "url": "https://travellingmandala.com/pokhara-to-ghandruk/" },
+        { "title": "Khopra Ridge Trek: Pokhara to Ghandruk Transportation Guide", "url": "https://khopraridgetrek.com/planning/pokhara-to-ghandruk" },
+        { "title": "Action Nepal Treks: Pokhara to Ghandruk Travel Guide for 2026", "url": "https://actionnepaltreks.com/blog/pokhara-to-ghandruk/" }
+      ]
+    },
+    {
+      "id": "pokhara-ghandruk-private-jeep",
+      "from": "Pokhara",
+      "to": "Ghandruk",
+      "mode": "private jeep",
+      "low": 6000,
+      "high": 10000,
+      "currency": "NPR",
+      "time": "2.5–3.5 hours",
+      "note": "Whole jeep one way; a 2026 fare board at Hari Chowk showed NPR 6,000 from the counter and 7,000 from Lakeside, while one hire site asks up to NPR 15,000.",
+      "sources": [
+        { "title": "Khopra Ridge Trek: Pokhara to Ghandruk Transportation Guide", "url": "https://khopraridgetrek.com/planning/pokhara-to-ghandruk" },
+        { "title": "Action Nepal Treks: Pokhara to Ghandruk Travel Guide for 2026", "url": "https://actionnepaltreks.com/blog/pokhara-to-ghandruk/" },
+        { "title": "Vehicle Hiring Nepal: Pokhara to Ghandruk Vehicle Hire", "url": "https://vehiclehiringnepal.com/pokhara-to-ghandruk-vehicle-hire/" }
+      ]
+    },
+    {
+      "id": "pokhara-kande-taxi",
+      "from": "Pokhara",
+      "to": "Kande",
+      "mode": "taxi",
+      "low": 1500,
+      "high": 3500,
+      "currency": "NPR",
+      "time": "about 1 hour",
+      "note": "Whole taxi to the Mardi Himal trailhead; guides disagree, with one giving as little as NPR 1,000–2,000, so agree the fare before you set off.",
+      "sources": [
+        { "title": "Mardi Himal Trek: Mardi Himal Trek Cost 2026: Permits, Guide & Daily Budget", "url": "https://mardihimal.com/trek/permits-and-cost/" },
+        { "title": "Spade Himalaya: Mardi Himal Trek Cost 2026: Full Price Breakdown", "url": "https://www.spadehimalaya.com/blog/mardi-himal-trek-cost/" },
+        { "title": "Nepal Intrepid Treks: Mardi Himal Trek Cost 2026: Complete Budget Guide", "url": "https://www.nepalintrepidtreks.com/mardi-himal-trek-cost/" }
+      ]
+    },
+    {
+      "id": "pokhara-dhampus-taxi",
+      "from": "Pokhara",
+      "to": "Dhampus or Phedi",
+      "mode": "taxi",
+      "low": 15,
+      "high": 30,
+      "currency": "USD",
+      "time": "1–1.5 hours",
+      "note": "Agency guides price this in dollars, USD 15–25 to Dhampus and 15–30 to Phedi; a shared van to Dhampus is listed at NPR 400–500 a seat.",
+      "sources": [
+        { "title": "Travel Nepal Today: Mardi Himal Trek Budget Guide", "url": "https://travelnepaltoday.com/mardi-himal-trek-budget/" },
+        { "title": "Glory Adventure: Mardi Himal Trek Cost 2026-2027: Complete Budget Breakdown", "url": "https://gloryadventure.com/mardi-himal-trek-cost/" },
+        { "title": "Nepal Base Camp Treks: Mardi Himal Trek Cost: For Nepalese and Foreigners", "url": "https://nepalbasecamptreks.com/mardi-himal-trek-cost/" }
+      ]
+    },
+    {
+      "id": "siding-pokhara-shared-jeep",
+      "from": "Siding (Sidhing)",
+      "to": "Pokhara",
+      "mode": "shared jeep",
+      "low": 400,
+      "high": 2000,
+      "currency": "NPR",
+      "time": "2–2.5 hours",
+      "note": "Guides disagree widely: one gives NPR 400–600 a seat and another NPR 1,000–2,000, with a whole jeep quoted anywhere from NPR 1,500–2,500 to 7,000–10,000, so settle the price before you get in.",
+      "sources": [
+        { "title": "Mountain Hawk Trek: Mardi Himal Trek Cost 2026: Full Budget Breakdown", "url": "https://www.mountainhawktrek.com/blog/mardi-himal-trek-cost" },
+        { "title": "Adventure Life Nepal: Mardi Himal Trek Cost: Complete Budget Guide 2026", "url": "https://adventurelifenepal.com/blog/mardi-himal-trek-cost" },
+        { "title": "Magical Himalayan Nepal: Mardi Himal Trek Cost 2026/27", "url": "https://www.magicalhimalayannepal.com/mardi-himal-trek-cost-2026-27-complete-honest-breakdown/" }
+      ]
+    },
+    {
+      "id": "kathmandu-sundarijal-taxi",
+      "from": "Kathmandu",
+      "to": "Sundarijal",
+      "mode": "taxi",
+      "low": 1000,
+      "high": 3000,
+      "currency": "NPR",
+      "time": "about 75 minutes",
+      "note": "A fare estimator and a local guide put a one-way taxi at about NPR 1,000–1,300, while a 2026 car-hire tariff lists NPR 3,000 for a booked car, so agree the price first.",
+      "sources": [
+        { "title": "NLRF Nepal: How to Reach Sundarijal from Kathmandu", "url": "https://nlrfnepal.org/how-to-reach-sundarijal-from-kathmandu/" },
+        { "title": "TaxiAutoFare: Kathmandu Taxi Fare from Kathmandu to Sundarijal", "url": "https://www.taxiautofare.com/np/taxi-fare/Kathmandu-taxi-fare-from-Kathmandu,-Nepal-to-Sundarijal,-Nepal" },
+        { "title": "Nepal Explore Vehicle: Nepal Vehicle Rental Tariff 2026", "url": "https://nepalexplorevehicle.com/tariff" }
+      ]
+    },
+    {
+      "id": "kathmandu-sundarijal-local-bus",
+      "from": "Kathmandu",
+      "to": "Sundarijal",
+      "mode": "local bus",
+      "low": 50,
+      "high": 100,
+      "currency": "NPR",
+      "time": "about 1–1.5 hours",
+      "note": "There is no direct bus: ride from Ratna Park or the bus park to Jorpati, then change to a Sundarijal bus.",
+      "sources": [
+        { "title": "NLRF Nepal: How to Reach Sundarijal from Kathmandu", "url": "https://nlrfnepal.org/how-to-reach-sundarijal-from-kathmandu/" },
+        { "title": "Take Your Backpack: Sundarijal Guide (Nepal, 2026)", "url": "https://www.takeyourbackpack.com/backpacking-in-nepal/visit-sundarijal/" }
+      ]
+    },
+    {
+      "id": "kathmandu-jiri-bus",
+      "from": "Kathmandu",
+      "to": "Jiri",
+      "mode": "local bus",
+      "low": 700,
+      "high": 1000,
+      "currency": "NPR",
+      "time": "7–10 hours",
+      "note": "Ask the day before where it leaves from, because guides name the Old Bus Park, Jadibuti and Chabahil; a shared jeep seat is quoted at about NPR 3,500, online ticket sellers charge several times the counter fare, and one route planner puts the bus on to Shivalaya at USD 7–11.",
+      "sources": [
+        { "title": "Vehicle Hiring Nepal: Kathmandu to Jiri Road Trip Guide 2026", "url": "https://vehiclehiringnepal.com/kathmandu-to-jiri-road-trip-guide/" },
+        { "title": "Nepal by Bus: Kathmandu to Jiri: Bus", "url": "https://nepalbybus.com/en/travel/kathmandu/jiri/" },
+        { "title": "Rome2rio: Kathmandu to Shivalaya", "url": "https://www.rome2rio.com/s/Kathmandu/Shivalaya" }
+      ]
+    },
+    {
+      "id": "kathmandu-salleri-shared-jeep",
+      "from": "Kathmandu",
+      "to": "Salleri or Phaplu",
+      "mode": "shared jeep",
+      "low": 3000,
+      "high": 4000,
+      "currency": "NPR",
+      "time": "8–10 hours",
+      "note": "Leaves between about 4:30 and 5 am, from Gongabu or Chabahil depending on the operator.",
+      "sources": [
+        { "title": "Vehicle Hiring Nepal: Kathmandu to Salleri Jeep Guide 2026", "url": "https://vehiclehiringnepal.com/kathmandu-to-salleri-jeep/" },
+        { "title": "Annapurna Encounter: Kathmandu to Salleri Jeep hire cost, distance, price, sharing jeep", "url": "https://www.annapurnaencounter.com/trip/kathmandu-to-salleri-jeep-hire" },
+        { "title": "Himalayan Local Guide: Jeep From Kathmandu to Phaplu", "url": "https://www.himalayanlocalguide.com/jeep-from-kathmandu-to-phaplu" }
+      ]
+    },
+    {
+      "id": "kathmandu-salleri-private-jeep",
+      "from": "Kathmandu",
+      "to": "Salleri or Phaplu",
+      "mode": "private jeep",
+      "low": 20000,
+      "high": 45000,
+      "currency": "NPR",
+      "time": "8–10 hours",
+      "note": "Whole vehicle one way; operators disagree, with quotes of NPR 20,000–25,000, 25,000–35,000 and 40,000–45,000.",
+      "sources": [
+        { "title": "Vehicle Hiring Nepal: Kathmandu to Salleri Jeep Guide 2026", "url": "https://vehiclehiringnepal.com/kathmandu-to-salleri-jeep/" },
+        { "title": "Annapurna Encounter: Kathmandu to Salleri Jeep hire cost, distance, price, sharing jeep", "url": "https://www.annapurnaencounter.com/trip/kathmandu-to-salleri-jeep-hire" },
+        { "title": "Himalayan Local Guide: Jeep From Kathmandu to Phaplu", "url": "https://www.himalayanlocalguide.com/jeep-from-kathmandu-to-phaplu" }
+      ]
+    },
+    {
+      "id": "kathmandu-surke-shared-jeep",
+      "from": "Kathmandu",
+      "to": "Thamdanda or Surke (for Lukla)",
+      "mode": "shared jeep",
+      "low": 8500,
+      "high": 16000,
+      "currency": "NPR",
+      "time": "2 days (18–20 hours of driving)",
+      "note": "One operator sells a through seat by way of Salleri for NPR 8,500, or 9,000 when the BP Highway is shut and jeeps go round by Charikot; another's NPR 16,000 package adds a night in Salleri.",
+      "sources": [
+        { "title": "World Himalayan Destination: Kathmandu, Salleri, Surke Lukla jeep ticket", "url": "https://worldhimalayandestination.com/kathmandu-to-phaplu-jeep/" },
+        { "title": "Vehicle Hiring Nepal: Overland Everest Base Camp Transfer Kathmandu 2026-2027-2028", "url": "https://vehiclehiringnepal.com/overland-everest-base-camp-transfer/" },
+        { "title": "All Himalayan Treks: Kathmandu to Surke by Jeep vs. Flying to Lukla", "url": "https://allhimalayantrek.com/kathmandu-to-surke-by-jeep-vs-flying-to-lukla/" }
+      ]
+    },
+    {
+      "id": "kathmandu-phaplu-flight",
+      "from": "Kathmandu",
+      "to": "Phaplu",
+      "mode": "flight",
+      "low": 195,
+      "high": 200,
+      "currency": "USD",
+      "time": "about 30 minutes",
+      "note": "Two agency fare tables for 2026 both give about USD 197 one way.",
+      "sources": [
+        { "title": "The Everest Holiday: Kathmandu to Lukla Flight Cost 2026 (domestic fare table, airline list valid from 3 August 2026)", "url": "https://theeverestholiday.com/blog/nepal-domestic-flights-trekkers-guide" },
+        { "title": "Beyond the Limits Treks: Nepal Flight Prices 2026/27: Latest Domestic Airfares for Tourists", "url": "https://www.beyondthelimitstreks.com/blog/nepal-domestic-flight-fares" }
+      ]
+    },
+    {
+      "id": "kathmandu-bhadrapur-flight",
+      "from": "Kathmandu",
+      "to": "Bhadrapur",
+      "mode": "flight",
+      "low": 140,
+      "high": 200,
+      "currency": "USD",
+      "time": "about 45 minutes",
+      "note": "Buddha Air, Yeti and Shree fly daily; guides give USD 150–200, one flight search showed USD 155 and one agency starts at USD 125, and October and November seats are best booked six to eight weeks ahead.",
+      "sources": [
+        { "title": "Mountain Kick: Kathmandu to Taplejung: Flight, Road & Cost", "url": "https://mountainkick.com/kathmandu-to-taplejung/" },
+        { "title": "Graceful Adventure: Kathmandu Bhadrapur Flight Ticket: Cost, Time and Airline", "url": "https://www.gracefuladventure.com/kathmandu-bhadrapur-flight-ticket.html" },
+        { "title": "Ghale Group: Nepal Domestic Flight Booking (route fare ranges, undated)", "url": "https://ghalegroup.com/nepal-domestic-flights/" }
+      ]
+    },
+    {
+      "id": "bhadrapur-taplejung-shared-jeep",
+      "from": "Bhadrapur",
+      "to": "Taplejung",
+      "mode": "shared jeep",
+      "low": 20,
+      "high": 50,
+      "currency": "USD",
+      "time": "10–12 hours",
+      "note": "Guides quote this in dollars and disagree: one says USD 20–25 a seat, another USD 35–50.",
+      "sources": [
+        { "title": "Mountain Kick: Kathmandu to Taplejung: Flight, Road & Cost", "url": "https://mountainkick.com/kathmandu-to-taplejung/" },
+        { "title": "Magical Nepal: How to Reach Taplejung from Kathmandu", "url": "https://www.magicalnepal.com/travel-guide/kanchenjunga/how-to-reach-taplejung-from-kathmandu/" },
+        { "title": "Mount Everest GO: Taplejung Jeep Travel and Road Conditions", "url": "https://mounteverestgo.com/nepal-trekking-guide/taplejung-jeep-travel-road-conditions-pathibhara/" }
+      ]
+    },
+    {
+      "id": "bhadrapur-taplejung-private-jeep",
+      "from": "Bhadrapur",
+      "to": "Taplejung",
+      "mode": "private jeep",
+      "low": 200,
+      "high": 300,
+      "currency": "USD",
+      "time": "9–12 hours",
+      "note": "Whole vehicle for up to seven people; one guide advises reserving through a Taplejung agency a week ahead because few jeeps wait at Bhadrapur.",
+      "sources": [
+        { "title": "Mountain Kick: Kathmandu to Taplejung: Flight, Road & Cost", "url": "https://mountainkick.com/kathmandu-to-taplejung/" },
+        { "title": "Magical Nepal: How to Reach Taplejung from Kathmandu", "url": "https://www.magicalnepal.com/travel-guide/kanchenjunga/how-to-reach-taplejung-from-kathmandu/" },
+        { "title": "Mount Everest GO: Taplejung Jeep Travel and Road Conditions", "url": "https://mounteverestgo.com/nepal-trekking-guide/taplejung-jeep-travel-road-conditions-pathibhara/" }
+      ]
+    },
+    {
+      "id": "kathmandu-tumlingtar-flight",
+      "from": "Kathmandu",
+      "to": "Tumlingtar",
+      "mode": "flight",
+      "low": 145,
+      "high": 195,
+      "currency": "USD",
+      "time": "about 35 minutes",
+      "note": "Buddha Air and Yeti fly it; the August 2026 fare list gives about USD 191, while booking sites show USD 144–170.",
+      "sources": [
+        { "title": "The Everest Holiday: Kathmandu to Lukla Flight Cost 2026 (domestic fare table, airline list valid from 3 August 2026)", "url": "https://theeverestholiday.com/blog/nepal-domestic-flights-trekkers-guide" },
+        { "title": "Yatra Nepal: Flight Ticket To Tumlingtar", "url": "https://www.yatranepal.com/flight-ticket-to-tumlingtar" },
+        { "title": "Skyline Treks and Expedition: Kathmandu Tumlingtar Flight", "url": "https://skylinetreks.com/package/kathmandu-tumlingtar-flight/" }
+      ]
+    },
+    {
+      "id": "kathmandu-nepalgunj-flight",
+      "from": "Kathmandu",
+      "to": "Nepalgunj",
+      "mode": "flight",
+      "low": 150,
+      "high": 210,
+      "currency": "USD",
+      "time": "about 1 hour",
+      "note": "The first leg for Dolpo and Rara; 2026 fare lists give about USD 168–176.",
+      "sources": [
+        { "title": "The Everest Holiday: Kathmandu to Lukla Flight Cost 2026 (domestic fare table, airline list valid from 3 August 2026)", "url": "https://theeverestholiday.com/blog/nepal-domestic-flights-trekkers-guide" },
+        { "title": "Beyond the Limits Treks: Nepal Flight Prices 2026/27: Latest Domestic Airfares for Tourists", "url": "https://www.beyondthelimitstreks.com/blog/nepal-domestic-flight-fares" },
+        { "title": "Ghale Group: Nepal Domestic Flight Booking (route fare ranges, undated)", "url": "https://ghalegroup.com/nepal-domestic-flights/" }
+      ]
+    },
+    {
+      "id": "nepalgunj-juphal-flight",
+      "from": "Nepalgunj",
+      "to": "Juphal",
+      "mode": "flight",
+      "low": 195,
+      "high": 220,
+      "currency": "USD",
+      "time": "about 40 minutes",
+      "note": "Few departures, flown by Tara Air and Summit Air; 2026 fare lists give about USD 213–218 and one agency advertises USD 183–195.",
+      "sources": [
+        { "title": "The Everest Holiday: Kathmandu to Lukla Flight Cost 2026 (domestic fare table, airline list valid from 3 August 2026)", "url": "https://theeverestholiday.com/blog/nepal-domestic-flights-trekkers-guide" },
+        { "title": "Beyond the Limits Treks: Nepal Flight Prices 2026/27: Latest Domestic Airfares for Tourists", "url": "https://www.beyondthelimitstreks.com/blog/nepal-domestic-flight-fares" },
+        { "title": "Himal Reisen: Nepalgunj to Juphal (Dolpa) Flight", "url": "https://himalreisen.com/nepalgunj-to-juphal-dolpa" }
+      ]
+    },
+    {
+      "id": "nepalgunj-jumla-flight",
+      "from": "Nepalgunj",
+      "to": "Jumla",
+      "mode": "flight",
+      "low": 185,
+      "high": 205,
+      "currency": "USD",
+      "time": "about 35 minutes",
+      "note": "2026 fare lists give about USD 203–205 and an older table USD 186; one booking page notes the fare is not fixed year-round.",
+      "sources": [
+        { "title": "The Everest Holiday: Kathmandu to Lukla Flight Cost 2026 (domestic fare table, airline list valid from 3 August 2026)", "url": "https://theeverestholiday.com/blog/nepal-domestic-flights-trekkers-guide" },
+        { "title": "Beyond the Limits Treks: Nepal Flight Prices 2026/27: Latest Domestic Airfares for Tourists", "url": "https://www.beyondthelimitstreks.com/blog/nepal-domestic-flight-fares" },
+        { "title": "Nepal Cheap Flights: Nepalgunj to Jumla Flight Booking", "url": "https://www.nepalcheapflights.com/trip/nepalgunj-to-jumla-flight" }
+      ]
+    },
+    {
+      "id": "nepalgunj-talcha-flight",
+      "from": "Nepalgunj",
+      "to": "Talcha (Rara)",
+      "mode": "flight",
+      "low": 220,
+      "high": 245,
+      "currency": "USD",
+      "time": "about 45 minutes",
+      "note": "The airstrip nearest Rara Lake; 2026 fare lists give about USD 238–241 and an older table USD 221.",
+      "sources": [
+        { "title": "The Everest Holiday: Kathmandu to Lukla Flight Cost 2026 (domestic fare table, airline list valid from 3 August 2026)", "url": "https://theeverestholiday.com/blog/nepal-domestic-flights-trekkers-guide" },
+        { "title": "Beyond the Limits Treks: Nepal Flight Prices 2026/27: Latest Domestic Airfares for Tourists", "url": "https://www.beyondthelimitstreks.com/blog/nepal-domestic-flight-fares" },
+        { "title": "Mission Summit Treks: Lukla Flight fare for 2026 (domestic fare table)", "url": "https://www.missionsummittreks.com/blog/lukla-flight-fare/" }
+      ]
+    },
+    {
+      "id": "kathmandu-dhangadhi-flight",
+      "from": "Kathmandu",
+      "to": "Dhangadhi",
+      "mode": "flight",
+      "low": 180,
+      "high": 260,
+      "currency": "USD",
+      "time": "about 1 hour 15 minutes",
+      "note": "The usual way to reach Khaptad; only two sources priced it, one at USD 226 and one with a range of USD 180–260.",
+      "sources": [
+        { "title": "Beyond the Limits Treks: Nepal Flight Prices 2026/27: Latest Domestic Airfares for Tourists", "url": "https://www.beyondthelimitstreks.com/blog/nepal-domestic-flight-fares" },
+        { "title": "Ghale Group: Nepal Domestic Flight Booking (route fare ranges, undated)", "url": "https://ghalegroup.com/nepal-domestic-flights/" }
+      ]
+    }
+  ]
+}

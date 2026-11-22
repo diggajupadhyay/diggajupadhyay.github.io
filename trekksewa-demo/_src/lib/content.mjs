@@ -7,6 +7,7 @@ import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, basename } from 'node:path';
 import { haversineKm, bounds } from './geo.mjs';
 import { analyseNights, zoneFor, oxygenPercent } from './altitude.mjs';
+import { NPR_PER_USD } from './plan.mjs';
 
 export function loadContent(dir, { strict = false, featured = [] } = {}) {
   const warnings = [];
@@ -30,6 +31,44 @@ export function loadContent(dir, { strict = false, featured = [] } = {}) {
   const permitMap = new Map(permitsDoc.permits.map((p) => [p.id, p]));
   const emergency = readJson(join(dir, 'emergency.json'), null);
   const facts = readJson(join(dir, 'facts.json'), {});
+  // data taken from open sources by the scripts in scripts/osm/, and from research
+  const osmServices = readJson(join(dir, 'osm-services.json'), { places: {} });
+  const osmTrails = readJson(join(dir, 'osm-trails.json'), { treks: {} });
+  const photosDoc = readJson(join(dir, 'photos.json'), { photos: {}, regions: {}, home: [] });
+  const market = readJson(join(dir, 'market.json'), { packages: [], fares: [] });
+  const photoOf = (key) => (key && photosDoc.photos[key] ? { key, ...photosDoc.photos[key] } : null);
+  // what it costs one person to reach the trail and get back, added up from researched fares
+  const transportDoc = readJson(join(dir, 'transport.json'), { treks: {} });
+  const fares = new Map((market.fares || []).map((f) => [f.id, f]));
+  const transportFor = (slug) => {
+    const def = transportDoc.treks?.[slug];
+    if (!def) return null;
+    let lo = Infinity;
+    let hi = 0;
+    for (const option of def.options) {
+      let a = 0;
+      let b = 0;
+      let known = true;
+      for (const [id, times, share = 1] of option) {
+        const f = fares.get(id);
+        if (!f) {
+          known = false;
+          problem('transport.json: ' + slug + ' uses unknown fare "' + id + '"');
+          break;
+        }
+        const k = ((f.currency === 'NPR' ? 1 / NPR_PER_USD : 1) * times) / share;
+        a += f.low * k;
+        b += f.high * k;
+      }
+      if (!known) continue;
+      lo = Math.min(lo, a);
+      hi = Math.max(hi, b);
+    }
+    if (!hi) return null;
+    const r5 = (v) => Math.round(v / 5) * 5;
+    return { usd: [Math.max(5, r5(lo)), Math.max(10, r5(hi))], text: def.text, extra: def.extra || '' };
+  };
+  for (const r of regions) r.photo = photoOf(`region-${r.slug}`) || photoOf(photosDoc.regions?.[r.slug]);
 
   // ---- places
   const placeMap = new Map();
@@ -46,7 +85,7 @@ export function loadContent(dir, { strict = false, featured = [] } = {}) {
         problem(`places/${name}: "${p.slug}" is incomplete and was skipped`);
         continue;
       }
-      placeMap.set(p.slug, { ...p, treks: [], zone: zoneFor(p.alt), oxygen: oxygenPercent(p.alt) });
+      placeMap.set(p.slug, { ...p, treks: [], zone: zoneFor(p.alt), oxygen: oxygenPercent(p.alt), services: p.coordQuality === 'uncertain' ? null : osmServices.places[p.slug] || null });
     }
   }
 
@@ -61,7 +100,12 @@ export function loadContent(dir, { strict = false, featured = [] } = {}) {
       problem(`treks/${name}: skipped — ${reason}`);
       continue;
     }
-    treks.push(deriveTrek(t, placeMap, regionMap, permitMap));
+    treks.push({
+      ...deriveTrek(t, placeMap, regionMap, permitMap, osmTrails.treks[t.slug]),
+      photo: photoOf(t.slug),
+      package: (market.packages || []).find((x) => x.trek === t.slug) || null,
+      transport: transportFor(t.slug),
+    });
   }
 
   const order = new Map(featured.map((s, i) => [s, i]));
@@ -113,7 +157,9 @@ export function loadContent(dir, { strict = false, featured = [] } = {}) {
   const positions = { total: places.length, osm: 0, own: 0, hidden: 0 };
   for (const p of places) positions[!p.located ? 'hidden' : p.coordSource === 'osm' ? 'osm' : 'own']++;
 
-  return { regions, regionMap, places, placeMap, treks, trekMap, permits: permitsDoc, permitMap, emergency, facts, positions, warnings };
+  const sources = { services: osmServices.asOf || null, trails: osmTrails.asOf || null, photos: photosDoc.checked || null, market: market.checked || null };
+  const photos = { all: Object.entries(photosDoc.photos || {}).map(([key, v]) => ({ key, ...v })), home: (photosDoc.home || []).map(photoOf).filter(Boolean) };
+  return { regions, regionMap, places, placeMap, treks, trekMap, permits: permitsDoc, permitMap, emergency, facts, positions, market, photos, sources, warnings };
 }
 
 function trekProblem(t, placeMap, regionMap) {
@@ -130,9 +176,31 @@ function trekProblem(t, placeMap, regionMap) {
 
 const isWalk = (d) => !d.mode || d.mode === 'walk';
 
-function deriveTrek(t, placeMap, regionMap, permitMap) {
+function deriveTrek(t, placeMap, regionMap, permitMap, mapped) {
   const P = (s) => placeMap.get(s);
   const days = t.itinerary;
+
+  // --- the line on the map: mapped footpath where OpenStreetMap has one, a straight join elsewhere
+  const routed = new Map((mapped?.legs || []).map((l) => [`${l.day}:${l.from}:${l.to}`, l]));
+  const trail = [];
+  const gaps = [];
+  let trailKm = 0;
+  let legCount = 0;
+  for (const d of days) {
+    if (!isWalk(d)) continue;
+    const chain = [d.from, ...(d.via || []), d.to];
+    for (let i = 1; i < chain.length; i++) {
+      if (chain[i - 1] === chain[i]) continue;
+      legCount++;
+      const leg = routed.get(`${d.day}:${chain[i - 1]}:${chain[i]}`);
+      const a = P(chain[i - 1]);
+      const b = P(chain[i]);
+      if (leg) {
+        trail.push(leg.line);
+        trailKm += leg.km;
+      } else if (a.coordQuality !== 'uncertain' && b.coordQuality !== 'uncertain') gaps.push([[a.lat, a.lon], [b.lat, b.lon]]);
+    }
+  }
 
   // --- profile points: one x unit per day; vehicle days at either end are left off the chart
   let first = 0;
@@ -221,6 +289,10 @@ function deriveTrek(t, placeMap, regionMap, permitMap) {
     routePlaces,
     // ordered walking line for the map (vehicle legs and places without a reliable position are left out)
     line: walked.filter((s) => P(s).coordQuality !== 'uncertain').map((s) => [P(s).lat, P(s).lon]),
+    trail, // mapped footpath, one polyline per section
+    gaps, // sections with no mapped path: drawn as straight dashes
+    trailKm: Math.round(trailKm),
+    trailShare: legCount ? trail.length / legCount : 0,
     bounds: bounds(mapPlaces.length > 1 ? mapPlaces : routePlaces),
     mapPlaces,
     unmapped: routePlaces.filter((p) => p.coordQuality === 'uncertain' && (p.slug !== t.gateway || p.slug === t.start)),
