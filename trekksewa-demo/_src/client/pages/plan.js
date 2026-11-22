@@ -534,7 +534,7 @@ function init() {
             store.set('plan-checks', all);
             paintCount();
           });
-          return h('li', {}, box, h('label', { for: `todo-${id}` }, text), link ? h('a', { class: 'no-print', href: url(link) }, 'Open') : null);
+          return h('li', {}, box, h('label', { for: `todo-${id}` }, text), link ? h('a', { class: 'no-print', href: url(link), 'aria-label': `Open the page for: ${text}` }, 'Open') : null);
         }),
       ),
       countEl,

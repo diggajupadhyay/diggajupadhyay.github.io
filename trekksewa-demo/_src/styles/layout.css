@@ -20,6 +20,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
+  min-height: 2.75rem;
   color: var(--ink);
   text-decoration: none;
   font-family: var(--font-display);
@@ -153,8 +154,8 @@
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  height: 2.25rem;
-  padding: 0 0.85rem;
+  height: 2.75rem;
+  padding: 0 0.95rem;
   margin-left: 0.35rem;
   border-radius: var(--r-pill);
   background: #c2253a;
@@ -435,7 +436,7 @@ dialog::backdrop {
   font-size: var(--fs-0);
 }
 .search-results .kind {
-  font-size: 0.6875rem;
+  font-size: 0.8125rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -473,9 +474,9 @@ dialog::backdrop {
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem;
+  gap: 0 0.35rem;
   align-items: center;
-  margin: 0 0 1rem;
+  margin: -0.5rem 0 0.4rem -0.3rem;
   padding: 0;
   list-style: none;
   font-size: var(--fs-0);
@@ -492,11 +493,22 @@ dialog::backdrop {
   color: var(--line-strong);
 }
 .breadcrumb a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
   color: var(--ink-2);
   text-decoration: none;
 }
 .breadcrumb a:hover {
   text-decoration: underline;
+}
+/* on a phone the page title right below says where you are: keep the trail to one line */
+@media (max-width: 600px) {
+  .breadcrumb li[aria-current] {
+    display: none;
+  }
 }
 
 /* ---------- footer ---------- */

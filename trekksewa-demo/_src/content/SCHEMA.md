@@ -16,7 +16,7 @@ build will accept the file.
 - **Metric units.** Altitude in metres, distance in kilometres, time in hours.
 - Spell place names the way they appear on current Nepali maps and signboards.
 
-## Places — `places/<region>.json`
+## Places: `places/<region>.json`
 
 Each file is a JSON array of place objects. A place is anything a trekker can be at: a town,
 village, lodge cluster, pass, lake, viewpoint or base camp.
@@ -40,7 +40,7 @@ village, lodge cluster, pass, lake, viewpoint or base camp.
 `places/hubs.json` holds the cities and junction towns shared by several regions. Never redefine
 a slug that already exists there.
 
-## Treks — `treks/<slug>.json`
+## Treks: `treks/<slug>.json`
 
 One file per trek, named after its slug.
 
@@ -102,3 +102,95 @@ One file per trek, named after its slug.
 - `kind` is one of `trek` `acclimatization` `rest` `pass` `summit` `transfer` `buffer`.
 - `mode` is `walk` (default, may be omitted), `flight`, `drive`, `jeep` or `bus`.
 - `title` ≤ 70 characters. `note` 60–320 characters.
+
+## Notices: `notices.json`
+
+A JSON array. Each notice is shown on the treks and regions it names and on the conditions page.
+
+| field | required | notes |
+|---|---|---|
+| `id` | yes | kebab-case, unique |
+| `reported` | yes | `YYYY-MM-DD`: the date of the report the notice is based on |
+| `checked` | no | `YYYY-MM-DD`: the day someone last looked for anything newer. Shown to readers. |
+| `level` | yes | `warn` or `danger` |
+| `regions`, `treks` | yes | arrays of slugs the notice applies to (either may be empty) |
+| `title`, `text` | yes | what happened and what it means for a trekker, in plain words |
+| `action` | no | one sentence shown after "What to do:" |
+
+Remove a notice when it is no longer true. Do not leave it to age.
+
+## Prices and fares: `market.json`
+
+List prices read from the websites of trekking companies, booking sites and operators. They
+help a visitor budget; they are not quotes, and the site says so.
+
+- `checked`: `YYYY-MM-DD`, the day the figures were gathered.
+- `packages[]`: one per trek. `trek` (slug), `days` (as companies sell it), `low` and `high`
+  (USD per person for a standard guided lodge trek), `basis` (what that price assumes),
+  `includes`, `excludes`, `sampled` (how many companies were looked at), `sources`.
+  `budgetLow` and `luxuryHigh` are optional outer limits that are not used in sums.
+- `fares[]`: one per journey. `id`, `from`, `to`, `mode`, `low`, `high`, `currency` (`USD` or
+  `NPR`), `time`, `note`, `sources`.
+
+## Getting to the trail: `transport.json`
+
+`treks.<slug>` says which fares from `market.json` one person needs to reach the start and get
+back. `text` is the sentence shown beside the cost. `options` is a list of alternatives; each
+alternative is a list of `[fareId, howManyTimes]`. The planner shows the range from the
+cheapest alternative to the dearest. A trek that starts from the city has no entry.
+
+```json
+"everest-base-camp": {
+  "text": "Flights to Lukla and back, from Kathmandu or (in the busy months) from Manthali",
+  "options": [
+    [["kathmandu-lukla-flight", 2]],
+    [["manthali-lukla-flight", 2], ["kathmandu-manthali-shared-shuttle", 2]]
+  ]
+}
+```
+
+## Photographs: `photos.json`
+
+```json
+{
+  "checked": "2026-11-22",
+  "photos": {
+    "everest-base-camp": {
+      "file": "everest-base-camp.jpg",
+      "small": "everest-base-camp-720.jpg",
+      "width": 1600,
+      "height": 1067,
+      "focus": "50% 40%",
+      "alt": "What the picture shows, for someone who cannot see it",
+      "caption": "One short sentence that says where this is",
+      "title": "The file's title on the site it came from",
+      "author": "Name as the licence asks for it",
+      "licence": "CC BY-SA 4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:…"
+    }
+  },
+  "regions": { "everest": "everest-base-camp" },
+  "home": ["home-1", "home-2"]
+}
+```
+
+- The key is a trek slug, `region-<slug>`, or any name listed under `home`.
+- `file` and `small` are in `static/photos/`: about 1600 px and 720 px wide.
+- `focus` is the CSS `object-position` that keeps the subject in view when the picture is
+  cropped to a card.
+- Only photographs whose licence allows reuse with credit. `author`, `licence`, `licenceUrl`
+  and `source` are required: they are printed beside the picture and on the credits page.
+- The picture must show the place the trek goes to. A fine photograph of the wrong valley is
+  worse than the height profile that is shown when a trek has no photograph.
+
+## Generated from OpenStreetMap: `osm-*.json`
+
+Written by the scripts in `scripts/osm/` (see the README). **Do not edit them by hand**: the
+next run replaces them. Each carries `source` and `asOf`, which the pages quote.
+
+| file | made by | holds |
+|---|---|---|
+| `osm-trails.json` | `trails.mjs route` | per trek, the mapped footpath for each walking stage (`legs[]` with `day`, `from`, `to`, `km`, `line`) |
+| `osm-services.json` | `extract.mjs services` | per place: lodges by name, how many there are, health posts, cash machines, water points |
+| `osm-hubs.json` | `extract.mjs hubs` | how many outdoor shops, travel offices, cash machines and pharmacies are mapped in Thamel, Lakeside and Namche |

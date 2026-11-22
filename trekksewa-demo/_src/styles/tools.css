@@ -41,7 +41,7 @@
 .select-inline {
   display: inline-block;
   width: auto;
-  min-height: 2.25rem;
+  min-height: 2.75rem;
   padding: 0.2rem 0.6rem;
   margin-left: 0.3rem;
 }
@@ -203,8 +203,7 @@
   font-weight: 700;
 }
 .packing-bar .chip {
-  min-height: 2.1rem;
-  padding: 0.2rem 0.75rem;
+  padding: 0.2rem 0.8rem;
 }
 .packing-groups {
   columns: 22rem 2;
@@ -313,7 +312,7 @@
 .budget-lines small {
   display: block;
   color: var(--ink-3);
-  font-size: 0.6875rem;
+  font-size: 0.8125rem;
 }
 .budget-sum td {
   font-weight: 750;
@@ -499,11 +498,10 @@
 .o2-field input[type='range'] {
   width: 100%;
   accent-color: var(--teal-600);
-  height: 2rem;
+  height: 2.75rem;
 }
 .o2-presets .chip {
-  min-height: 2rem;
-  padding: 0.15rem 0.7rem;
+  padding: 0.15rem 0.8rem;
   font-size: var(--fs-0);
 }
 .o2 .stats {

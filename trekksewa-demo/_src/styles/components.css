@@ -97,6 +97,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
+  min-height: 2.75rem;
   font-weight: 650;
   text-decoration: none;
 }
@@ -124,6 +125,15 @@
   line-height: 1.5;
   white-space: nowrap;
   text-decoration: none;
+}
+a.tag {
+  position: relative;
+}
+/* a tag that is a link keeps its small look but can be pressed anywhere within 44 px */
+a.tag::after {
+  content: '';
+  position: absolute;
+  inset: -0.6rem -0.2rem;
 }
 a.tag:hover {
   filter: brightness(0.96);
@@ -201,8 +211,8 @@ a.tag:hover {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  min-height: 2.25rem;
-  padding: 0.3rem 0.85rem;
+  min-height: 2.75rem; /* 44 px and up: easy to press */
+  padding: 0.35rem 0.95rem;
   border: 1.5px solid var(--line-strong);
   border-radius: var(--r-pill);
   background: var(--surface);
@@ -359,15 +369,17 @@ a.card:hover,
   flex: 1;
   padding: 1rem 1.1rem 1.1rem;
 }
-.trek-body h3 {
+/* the card's heading is an h2 on the trek list and an h3 inside other pages */
+.trek-body :is(h2, h3) {
   font-size: 1.28rem;
   margin: 0;
 }
-.trek-body h3 a {
+.trek-body :is(h2, h3) a {
   color: inherit;
   text-decoration: none;
 }
-.trek-body h3 a::after {
+/* the whole card is the link */
+.trek-body :is(h2, h3) a::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -419,7 +431,7 @@ a.card:hover,
   place-items: center;
   height: 1.6rem;
   border-radius: 4px;
-  font-size: 0.6875rem;
+  font-size: 0.8125rem;
   font-weight: 700;
   background: var(--paper-3);
   color: var(--ink-2);
@@ -815,7 +827,7 @@ legend {
   position: relative;
   height: var(--pf-h);
   min-width: 2.6rem;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   color: var(--ink-3);
   font-variant-numeric: tabular-nums;
 }
@@ -857,7 +869,7 @@ legend {
   position: absolute;
   right: 0.25rem;
   margin-bottom: 0.2rem;
-  font-size: 0.6875rem;
+  font-size: 0.8125rem;
   font-weight: 600;
   color: var(--ink-3);
   line-height: 1;
@@ -896,7 +908,7 @@ legend {
   position: absolute;
   margin-bottom: 0.7rem;
   transform: translateX(-50%);
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 650;
   color: var(--ink);
   white-space: nowrap;
@@ -913,7 +925,7 @@ legend {
   grid-column: 2;
   position: relative;
   height: 2.6rem;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   color: var(--ink-3);
   font-variant-numeric: tabular-nums;
 }

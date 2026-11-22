@@ -682,7 +682,17 @@
   flex: none;
 }
 .ready label {
+  display: flex;
+  align-items: center;
+  min-height: 2.75rem;
   cursor: pointer;
+}
+.ready a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0 0.6rem;
+  font-weight: 650;
 }
 .ready input:checked + label {
   color: var(--ink-3);

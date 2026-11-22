@@ -349,7 +349,7 @@ export function offlinePage(ctx) {
     <a class="card card-pad card-link" href="${u('safety/emergency/')}"><strong>${icon('siren', { size: 18 })} Emergency &amp; SOS</strong><p class="small muted">Numbers, position, whistle and light.</p></a>
     <a class="card card-pad card-link" href="${u('safety/altitude-check/')}"><strong>${icon('heart-pulse', { size: 18 })} Altitude sickness check</strong><p class="small muted">Score your symptoms.</p></a>
     <a class="card card-pad card-link" href="${u('safety/acclimatization/')}"><strong>${icon('trending-up', { size: 18 })} Acclimatization checker</strong><p class="small muted">Test your itinerary.</p></a>
-    <a class="card card-pad card-link" href="${u('saved/')}"><strong>${icon('bookmark', { size: 18 })} Saved treks</strong><p class="small muted">Everything you kept for offline.</p></a>
+    <a class="card card-pad card-link" href="${u('saved/')}"><strong>${icon('bookmark', { size: 18 })} My trips</strong><p class="small muted">Your plans and the treks you saved.</p></a>
   </div>
   <p style="margin-top:1.5rem"><button type="button" class="btn btn-secondary" onclick="location.reload()">Try again</button></p>
 </div>`;

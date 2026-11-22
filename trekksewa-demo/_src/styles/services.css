@@ -272,8 +272,7 @@
   margin: 0;
 }
 .season-months .chip {
-  min-height: 2rem;
-  padding: 0.2rem 0.7rem;
+  padding: 0.2rem 0.8rem;
 }
 .season-treks h3 {
   font-family: var(--font-body);
@@ -285,8 +284,7 @@
   margin: 0.75rem 0 0.5rem;
 }
 .season-treks .chip {
-  min-height: 2rem;
-  padding: 0.2rem 0.75rem;
+  padding: 0.2rem 0.8rem;
   font-size: var(--fs-0);
 }
 .watch-grid {
