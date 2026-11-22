@@ -273,9 +273,9 @@ ${head(ctx, { crumbs: [[null, 'Data and credits']], title: 'Data and credits', l
   <p>Forecasts by ${ext('https://open-meteo.com/', 'Open-Meteo')}, licensed under CC BY 4.0, from national weather service models. Open-Meteo's free service is for non-commercial use.</p>
   ${photos.length
     ? html`<h2 id="photos">Photographs</h2>
-        <p>The photographs come from Wikimedia Commons and are used under the licences shown beside each one. We resized them and changed nothing else; our resized copies are offered under the same licences.</p>
+        <p>The photographs come from Wikimedia Commons and are used under the licences shown beside each one. Each was made smaller for the web, and a few were converted to the colour space screens expect; what was done is noted after each one. Nothing else was changed, and our copies are offered under the same licences.</p>
         <ul class="photo-credits">
-          ${photos.map((p) => html`<li><a href="${p.source}" rel="noopener">${p.caption || p.title}</a>, by ${p.author}. <a href="${p.licenceUrl}" rel="noopener license">${p.licence}</a>.</li>`)}
+          ${photos.map((p) => html`<li><a href="${p.source}" rel="noopener">${p.caption || p.title}</a>, by ${p.author}. <a href="${p.licenceUrl}" rel="noopener license">${p.licence}</a>. Changes: ${p.changes || 'resized'}.</li>`)}
         </ul>`
     : ''}
   <h2 id="medical">Medical references</h2>
