@@ -113,6 +113,41 @@ for (const el of $$('[data-notice-date]')) {
   } else if (days > 21) slot.textContent = `That was ${Math.round(days / 7)} weeks ago, so things may have changed.`;
 }
 
+// ---------- wide tables and tab strips: say so when part of one is out of sight ----------
+// A table that scrolls sideways on a narrow screen gets a line of words above it, a soft edge
+// where it runs on, and can be reached and scrolled from the keyboard.
+function markScrollable() {
+  for (const box of $$('.table-wrap, .tabs')) {
+    const hidden = box.scrollWidth - box.clientWidth > 8;
+    box.classList.toggle('can-scroll', hidden);
+    if (!box.classList.contains('table-wrap')) continue;
+    let hint = box.previousElementSibling?.classList.contains('scroll-hint') ? box.previousElementSibling : null;
+    if (hidden && !hint) {
+      hint = document.createElement('p');
+      hint.className = 'scroll-hint';
+      hint.textContent = 'This table is wider than your screen. Swipe it sideways to see the rest.';
+      box.before(hint);
+      box.tabIndex = 0;
+      box.setAttribute('role', 'region');
+      box.setAttribute('aria-label', box.querySelector('caption')?.textContent.trim() || 'Table');
+    }
+    if (hint) hint.hidden = !hidden;
+  }
+}
+markScrollable();
+// once per frame at most, however busy the page is
+let scrollCheck = 0;
+const checkSoon = () => {
+  if (scrollCheck) return;
+  scrollCheck = requestAnimationFrame(() => {
+    scrollCheck = 0;
+    markScrollable();
+  });
+};
+window.addEventListener('resize', checkSoon);
+// tables drawn after the page loads (the tools) are found too
+new MutationObserver(checkSoon).observe(document.querySelector('main') || document.body, { childList: true, subtree: true });
+
 // ---------- saved treks ----------
 function paintSave(btn) {
   const saved = isSaved(btn.dataset.save);

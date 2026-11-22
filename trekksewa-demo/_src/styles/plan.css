@@ -600,6 +600,20 @@
   width: 100%;
   border-collapse: collapse;
 }
+/* two columns always fit: the words wrap and the money stays on one line, in view */
+.table-wrap .cost-table {
+  min-width: 0;
+}
+@media (max-width: 560px) {
+  .cost-table th,
+  .cost-table td {
+    padding: 0.75rem 0.7rem;
+  }
+  .cost-table .num {
+    white-space: normal;
+    min-width: 6.5rem;
+  }
+}
 .cost-table th,
 .cost-table td {
   padding: 0.8rem 0.9rem;
@@ -1567,4 +1581,33 @@
 }
 .trip-line span {
   color: var(--ink-2);
+}
+
+/* ---------- wide tables and tab strips on a narrow screen ---------- */
+.scroll-hint {
+  margin: 1rem 0 -0.9rem;
+  font-size: var(--fs-1);
+  font-weight: 650;
+  color: var(--ink-2);
+}
+.table-wrap.can-scroll {
+  /* a soft edge on the right says there is more that way */
+  background:
+    linear-gradient(to left, var(--surface), var(--surface)) local,
+    linear-gradient(to left, rgb(40 30 10 / 0.16), transparent) scroll right / 1.25rem 100% no-repeat,
+    var(--surface);
+}
+.table-wrap.can-scroll th {
+  background: transparent;
+}
+.table-wrap.can-scroll thead {
+  background: var(--paper-2);
+}
+.tabs.can-scroll {
+  mask-image: linear-gradient(to right, #000 calc(100% - 2.5rem), transparent);
+}
+@media print {
+  .scroll-hint {
+    display: none;
+  }
 }
