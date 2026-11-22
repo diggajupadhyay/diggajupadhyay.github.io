@@ -98,6 +98,9 @@ export function buildData({ content, config }, pages) {
     const fee = p.fees.find((f) => /foreign/i.test(f.who)) || p.fees[0];
     return fee ? `${fee.amount}${fee.per ? ` per ${fee.per.replace(/^per\s+/i, '')}` : ''}` : '';
   };
+  // a clinic or pharmacy by its name when the map has one in Latin script, else by what it is
+  const HEALTH_KIND = { hospital: 'a hospital', clinic: 'a clinic', doctors: 'a doctor', pharmacy: 'a pharmacy', health_post: 'a health post' };
+  const healthName = (x) => (x.n && /[A-Za-z]/.test(x.n) ? x.n : HEALTH_KIND[x.k] || 'a health post');
   // how people get from Kathmandu to a trek's gateway city, in words, from the researched fares
   const hop = (city) => {
     const ways = (content.market.fares || []).filter((f) => f.from === 'Kathmandu' && f.to === city);
@@ -152,7 +155,7 @@ export function buildData({ content, config }, pages) {
           why: d.reasons || [],
           stay: back ? { city: 1 } : stayAt(d.toPlace),
           ...(back ? { back: 1 } : {}),
-          ...(!back && d.toPlace.services?.health?.length ? { med: d.toPlace.services.health.filter((x) => x.n).slice(0, 2).map((x) => x.n) } : {}),
+          ...(!back && d.toPlace.services?.health?.length ? { med: [...new Set(d.toPlace.services.health.slice(0, 3).map(healthName))].slice(0, 2) } : {}),
           };
         }),
       },

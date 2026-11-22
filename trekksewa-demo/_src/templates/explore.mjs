@@ -220,6 +220,8 @@ export function placesIndexPage(ctx) {
 }
 
 /** Lodges and services mapped around a place (OpenStreetMap, see scripts/osm/extract.mjs). */
+const HEALTH_KIND = { hospital: 'Hospital', clinic: 'Clinic', doctors: 'Doctor', pharmacy: 'Pharmacy', health_post: 'Health post' };
+
 function staySection(ctx, p) {
   const s = p.services;
   if (!s) return '';
@@ -227,7 +229,8 @@ function staySection(ctx, p) {
   const plural = (n, one, many) => `${n} ${n === 1 ? one : many}`;
   const here = [
     s.eat ? ['utensils', plural(s.eat, 'place to eat', 'places to eat')] : null,
-    ...s.health.filter((x) => x.n).map((x) => ['stethoscope', x.n]),
+    // a clinic mapped only in Nepali script is named by what it is, with its own name after it
+    ...s.health.filter((x) => x.n).map((x) => ['stethoscope', /[A-Za-z]/.test(x.n) ? x.n : html`${HEALTH_KIND[x.k] || 'Health post'} (<span lang="ne">${x.n}</span>)`]),
     s.health.some((x) => !x.n) && !s.health.some((x) => x.n) ? ['stethoscope', 'A health post or pharmacy'] : null,
     s.cash.atm ? ['banknote', plural(s.cash.atm, 'cash machine', 'cash machines')] : null,
     s.cash.bank ? ['landmark', plural(s.cash.bank, 'bank', 'banks')] : null,

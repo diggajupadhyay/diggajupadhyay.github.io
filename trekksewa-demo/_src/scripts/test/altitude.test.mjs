@@ -41,7 +41,7 @@ test('a long climb to a first high night is flagged even from the middle hills',
   // Charikot to Kuri: only 370 m of the gain is above 3,000 m, which the 500 m rule passes
   const r = analyseNights([{ alt: 1970 }, { alt: 3370 }, { alt: 3370 }], 1400);
   assert.equal(r.nights[1].level, 'watch');
-  assert.match(r.nights[1].reasons.join(' '), /climb of 1400 m in one day/);
+  assert.match(r.nights[1].reasons.join(' '), /climb of 1,400 m in one day, to sleep at 3,370 m/);
   // Phakding to Namche gains less than 1,000 m and stays as it was
   assert.equal(analyseNights([{ alt: 2610 }, { alt: 3440 }], 1400).nights[1].level, 'ok');
   // and a long climb that stays below 2,800 m is no concern

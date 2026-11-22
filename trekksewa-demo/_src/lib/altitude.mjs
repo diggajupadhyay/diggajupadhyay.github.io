@@ -5,6 +5,8 @@
 // altitude by no more than roughly 500 m a day and add a night without gain for every
 // 1,000 m or so. They are planning heuristics, not a medical assessment.
 
+import { num } from './format.mjs';
+
 export const ZONES = [
   { id: 'low', min: 0, max: 1500, label: 'Low altitude', note: 'No altitude effects for most people.' },
   { id: 'moderate', min: 1500, max: 2500, label: 'Moderate altitude', note: 'You may notice the climb, but altitude illness is unusual.' },
@@ -83,7 +85,7 @@ export function analyseNights(nights, startAlt) {
       const balanced = isRest(i - 1) || eases(i + 1);
       if (counted > RULES.bigGain) {
         bump('high');
-        reasons.push(`Sleeping altitude rises ${counted} m in one day, well over the ${RULES.dailyGain} m guideline. Split the climb if you can.`);
+        reasons.push(`Sleeping altitude rises ${num(counted)} m in one day, well over the ${RULES.dailyGain} m guideline. Split the climb if you can.`);
       } else if (counted > RULES.dailyGain) {
         if (balanced && counted <= RULES.balancedGain) {
           notes.push(`Sleeping altitude rises ${counted} m, a little over the ${RULES.dailyGain} m guideline, balanced by the rest night ${isRest(i - 1) ? 'before' : 'after'} it.`);
@@ -99,17 +101,17 @@ export function analyseNights(nights, startAlt) {
       sinceRest += counted;
       if (sinceRest > RULES.restEvery + 250) {
         bump(sinceRest > RULES.restEvery + 700 ? 'high' : 'watch');
-        reasons.push(`About ${Math.round(sinceRest / 50) * 50} m gained above ${RULES.startAlt} m without a rest night.`);
+        reasons.push(`About ${num(Math.round(sinceRest / 50) * 50)} m gained above ${num(RULES.startAlt)} m without a rest night.`);
       }
     }
     if (n.alt >= RULES.jumpTo && prev < RULES.jumpFrom) {
       bump(n.alt >= 3500 ? 'high' : 'watch');
-      reasons.push(`A jump from ${prev} m to sleep at ${n.alt} m in a single day.`);
+      reasons.push(`A jump from ${num(prev)} m to sleep at ${num(n.alt)} m in a single day.`);
     } else if (n.alt >= RULES.climbTo && gain >= RULES.climbGain && !reasons.length) {
       // a long climb from the middle hills to a first high night: the 500 m rule above 3,000 m
       // does not see it, but a body that slept at 2,000 m last night is not ready for 3,300 m
       bump('watch');
-      reasons.push(`A climb of ${gain} m in one day, to sleep at ${n.alt} m. Go slowly, drink plenty, and say so if you get a headache.`);
+      reasons.push(`A climb of ${num(gain)} m in one day, to sleep at ${num(n.alt)} m. Go slowly, drink plenty, and say so if you get a headache.`);
     }
     if (gain <= 0 || n.alt <= RULES.startAlt) sinceRest = 0; // a night at the same height or lower resets the count
 
