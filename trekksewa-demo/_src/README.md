@@ -254,6 +254,15 @@ quickest fix for a single place is to look it up on openstreetmap.org and type t
 in by hand with `"coordQuality": "good", "coordSource": "osm", "coordPinned": true`. The pin
 keeps later runs of the script from moving the place back.
 
+**An estimate that fits the terrain is not a confirmed position.** Places marked
+`estimate`/`approx` passed only one test: the ground there is at the right height. That can be
+true on the wrong ridge. It happened: four stops on the Khumai Danda route were drawn 9 km east
+of where they are, until the GPS tag on a photograph pointed to the right ridge, where
+OpenStreetMap had all four under slightly different spellings ("Khumai Dada"). When a new
+route's high stops keep their estimates and the trail script finds no path between them
+(`TRAIL_DEBUG=1` says "0 path points near the ends"), look at the map yourself before
+publishing.
+
 Coordinates that come from OpenStreetMap are © OpenStreetMap contributors and stay under the
 Open Database Licence (ODbL). The credits page says so; keep that notice.
 
