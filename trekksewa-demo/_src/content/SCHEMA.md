@@ -157,9 +157,9 @@ cheapest alternative to the dearest. A trek that starts from the city has no ent
   "photos": {
     "everest-base-camp": {
       "file": "everest-base-camp.jpg",
-      "small": "everest-base-camp-720.jpg",
+      "small": "everest-base-camp-sm.jpg",
       "width": 1600,
-      "height": 1067,
+      "height": 1130,
       "focus": "50% 40%",
       "alt": "What the picture shows, for someone who cannot see it",
       "caption": "One short sentence that says where this is",
@@ -167,7 +167,8 @@ cheapest alternative to the dearest. A trek that starts from the city has no ent
       "author": "Name as the licence asks for it",
       "licence": "CC BY-SA 4.0",
       "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "source": "https://commons.wikimedia.org/wiki/File:…"
+      "source": "https://commons.wikimedia.org/wiki/File:…",
+      "changes": "resized"
     }
   },
   "regions": { "everest": "everest-base-camp" },
@@ -176,7 +177,8 @@ cheapest alternative to the dearest. A trek that starts from the city has no ent
 ```
 
 - The key is a trek slug, `region-<slug>`, or any name listed under `home`.
-- `file` and `small` are in `static/photos/`: about 1600 px and 720 px wide.
+- `file` and `small` are in `static/photos/`: 1600 px and 720 px wide. `width` and `height`
+  describe `file`. `changes` records what was done to the original (the licences ask for it).
 - `focus` is the CSS `object-position` that keeps the subject in view when the picture is
   cropped to a card.
 - Only photographs whose licence allows reuse with credit. `author`, `licence`, `licenceUrl`

@@ -1522,11 +1522,11 @@
 @media (max-width: 640px) {
   .region-photo {
     width: calc(100% + 1.9rem);
-    height: 5.5rem;
+    height: 7.5rem;
     margin: 0 -0.8rem 0.5rem -1.1rem;
   }
   .region-card.has-photo .region-swatch {
-    top: 5.5rem;
+    top: 7.5rem;
   }
 }
 .region-photo-fig img {

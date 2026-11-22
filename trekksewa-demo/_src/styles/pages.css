@@ -145,17 +145,10 @@
     font-size: var(--fs-0);
   }
   .region-grid {
-    grid-template-columns: 1fr 1fr;
     gap: 0.75rem;
   }
   .region-card {
     padding: 0.9rem 0.8rem 0.9rem 1.1rem;
-  }
-  .region-card h3 {
-    font-size: 1.02rem;
-  }
-  .region-card p {
-    display: none;
   }
 }
 
