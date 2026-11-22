@@ -9,7 +9,8 @@ import { trekCard, hueClass, grade, monthStrip, monthKey, note, permitCard, regi
 
 const MODE_ICON = { flight: 'plane', bus: 'bus', jeep: 'car', drive: 'car', walk: 'footprints' };
 const MODE_LABEL = { flight: 'Flight', bus: 'Bus', jeep: 'Jeep', drive: 'Drive', walk: 'Walk' };
-const KIND_LABEL = { acclimatization: 'Acclimatization day', rest: 'Rest day', pass: 'Pass day', summit: 'High point day', transfer: 'Transfer', buffer: 'Spare day' };
+// plain words, the same ones the planner uses
+const KIND_LABEL = { acclimatization: 'Rest day to get used to the height', rest: 'Rest day', pass: 'Pass day', summit: 'High point day', transfer: 'Travel day', buffer: 'Spare day' };
 const CONFIDENCE = {
   high: 'The stages on this route are well established.',
   medium: 'Stage plans on this route vary between operators; treat distances and times as approximate.',

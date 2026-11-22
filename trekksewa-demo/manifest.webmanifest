@@ -1,7 +1,7 @@
 {
   "name": "TrekkSewa — Trek Nepal, well looked after",
   "short_name": "TrekkSewa",
-  "description": "Route guides, altitude tools and trail conditions for trekking in Nepal — and a growing network of licensed guides, fairly paid porters, registered agencies and gear shops.",
+  "description": "Plan a trek in Nepal step by step: where you walk, where you sleep each night, who can help you and what it may cost. With route guides, safety tools that work offline, and plain advice on guides, porters and trekking companies.",
   "lang": "en",
   "start_url": "./?source=pwa",
   "scope": "./",

@@ -29,27 +29,29 @@ ${head(ctx, { crumbs: [[null, 'About']], title: html`About ${config.name} <span 
     <p>${config.name} puts the basics in one place and says them plainly: how long a route really takes, how high you sleep each night, which permits you need, what tends to go wrong, and what to do when it does.</p>
     <h2>What is here today</h2>
     <ul>
-      <li><strong>${content.treks.length} route guides</strong> with day-by-day stages, altitude profiles and an automatic acclimatization check.</li>
-      <li><strong>${content.places.length} places</strong> with altitude, facilities and a live forecast.</li>
+      <li><strong><a href="${u('plan/')}">A step-by-step planner</a></strong>: a few plain questions, then your trek day by day, with where you sleep, who can help, what it may cost and the papers you need.</li>
+      <li><strong>${content.treks.length} route guides</strong> with day-by-day stages, the footpath on a map, places to stay at each stop and a check of how fast each plan gains height.</li>
+      <li><strong>${content.places.length} places</strong> with altitude, lodges, facilities and a live forecast.</li>
       <li><strong>Safety tools</strong> that work offline: an altitude sickness check, an acclimatization checker and an emergency toolkit.</li>
-      <li><strong>Planning tools</strong> for dates, packing and budget, and a GPX viewer.</li>
+      <li><strong>Plain guidance on guides, porters and trekking companies</strong>: what each does, what they cost, how to ask for a price and what to check before you pay.</li>
     </ul>
     <h2>What comes next</h2>
-    <p>The second half of the name is the harder half. We are enrolling licensed guides, porters, registered agencies and gear shops so that trekkers can find and contact them directly, with their credentials in view and a shared set of <a href="${u('services/#standards')}">fair-trek standards</a> behind every listing. If that is you, <a href="${u('partners/')}">applications are open</a>.</p>
+    <p>The second half of the name is the harder half. We are enrolling licensed guides, porters, registered agencies and gear shops so that trekkers can reach them directly, with their credentials in view and a shared set of <a href="${u('services/#standards')}">fair-trek standards</a> behind every listing. Nobody is listed until their papers have been checked. If that is you, <a href="${u('partners/')}">applications are open</a>.</p>
     <h2>How we handle information</h2>
     <ul>
       <li>Everything is written for ${config.name}. We do not copy other sites or guidebooks.</li>
       <li>Where a figure is uncertain we say so, and each trek shows how well established its details are.</li>
       <li>Fees and rules carry the date we last reviewed them. This content was last reviewed in ${longDate(config.contentReviewed)}.</li>
-      <li>We do not publish trail status we cannot stand behind. A stale report is worse than none.</li>
-      <li>We do not show invented businesses, reviews or statistics. Sample profiles are labelled as samples.</li>
+      <li>Trails, lodges and photographs come from open sources and are credited. Prices are what companies list online, and are labelled as estimates.</li>
+      <li>Notices about roads and trails show the day they were reported and the day we last checked. A stale report is worse than none.</li>
+      <li>We do not show invented businesses, reviews or statistics.</li>
     </ul>
     <h2>What this is not</h2>
     <p>${config.name} is a planning aid. It is not a guide, a rescue service, a medical service or a substitute for a map and your own judgement. Mountains change faster than websites.</p>
     <p><a href="${u('support/')}">Help and common questions</a> · <a href="${u('credits/')}">Data and credits</a> · <a href="${u('privacy/')}">Privacy</a></p>
   </div>
 </div>`;
-  return { title: `About ${config.name}`, description: `${config.name} is a trekking companion for Nepal: honest route guides, offline safety tools and a growing network of guides, porters, agencies and gear shops.`, section: 'about', crumbs: [[null, 'About']], body };
+  return { title: `About ${config.name}`, description: `${config.name} is a trekking companion for Nepal: a step-by-step trek planner, honest route guides, offline safety tools and plain advice on guides, porters and trekking companies.`, section: 'about', crumbs: [[null, 'About']], body };
 }
 
 // ------------------------------------------------------------------ support / FAQ
