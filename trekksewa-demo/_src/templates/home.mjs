@@ -3,7 +3,7 @@ import { icon } from '../lib/icons.mjs';
 import { heroLandscape } from '../lib/landscape.mjs';
 import { numberWord } from '../lib/format.mjs';
 import { DAY_CHOICES } from '../lib/plan.mjs';
-import { trekCard, sectionHead, arrowLink, hueClass } from './partials.mjs';
+import { trekCard, sectionHead, arrowLink, hueClass, photoFigure } from './partials.mjs';
 
 export function homePage(ctx) {
   const { u, content, config } = ctx;
@@ -51,6 +51,15 @@ export function homePage(ctx) {
     <a class="btn btn-lg" href="${u('plan/')}">${icon('calendar-check')}Start planning</a>
   </div>
 </section>
+
+${content.photos.home.length
+  ? html`<section class="section-tight looks" aria-labelledby="looks-title">
+  <div class="wrap">
+    ${sectionHead({ eyebrow: 'In pictures', title: html`<span id="looks-title">What a trek in Nepal is like</span>`, text: 'You walk from village to village on old footpaths with a small bag on your back, and sleep in a family-run lodge each night.' })}
+    <div class="looks-grid">${content.photos.home.slice(0, 3).map((p) => photoFigure(ctx, p, { cls: 'looks-fig', size: 'small' }))}</div>
+  </div>
+</section>`
+  : ''}
 
 <section class="band section-tight safety-band" aria-labelledby="safety-title">
   <div class="wrap">
@@ -109,7 +118,8 @@ export function homePage(ctx) {
     })}
     <div class="region-grid">
       ${content.regions.map(
-        (r) => html`<a class="region-card ${hueClass(r)}" href="${u(`regions/${r.slug}/`)}">
+        (r) => html`<a class="region-card ${hueClass(r)}${r.photo ? ' has-photo' : ''}" href="${u(`regions/${r.slug}/`)}">
+          ${r.photo ? html`<img class="region-photo" src="${u(`photos/${r.photo.small}`)}" alt="" loading="lazy" width="720" height="${Math.round((720 * r.photo.height) / r.photo.width)}" style="object-position:${r.photo.focus || '50% 50%'}">` : ''}
           <span class="region-swatch" aria-hidden="true"></span>
           <h3>${r.long}</h3>
           <p>${r.tagline}</p>

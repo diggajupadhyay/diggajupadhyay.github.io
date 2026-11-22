@@ -351,6 +351,11 @@ function init() {
     const end = addDays(start, total - 1);
     const month = start.getMonth() + 1;
     const helpChoice = HELP_CHOICES.find((c) => c.id === state.help);
+    // the trip around the trek: every itinerary starts and ends in its gateway city, and
+    // people from abroad land in Kathmandu
+    const fromKathmandu = detail.gateway === 'Kathmandu';
+    const arrive = addDays(start, fromKathmandu ? -2 : -3);
+    const flyHome = addDays(end, fromKathmandu ? 1 : 2);
     const permitMap = Object.fromEntries(detail.permits.map((p) => [p.id, p]));
     const permits = permitTotal(detail.permits.map((p) => p.id), trekDays, base.npr, permitMap);
     const cost = estimate({ days: trekDays, people: state.people, help: state.help, rates: { ...base.rates, food: detail.food, npr: base.npr }, permitsUsd: permits.total, transport: detail.transport || [0, 0], transportNote: detail.transportText ? `${detail.transportText}.` : '', pkg: detail.pkg });
@@ -363,6 +368,7 @@ function init() {
         `Trek plan: ${t.n} (Nepal)`,
         `Dates: ${longFmt.format(start)} to ${longFmt.format(end)} (${total} days${state.spare ? `, including ${state.spare} spare` : ''})`,
         `People: ${state.people}`,
+        `Arrive in Kathmandu by ${longFmt.format(arrive)}; fly home on ${longFmt.format(flyHome)} or later`,
         `Help wanted: ${helpChoice.label.toLowerCase()}`,
         '',
         ...detail.days.map((d, i) => `Day ${i + 1}, ${dayFmt.format(addDays(start, i))}: ${d.t}${d.a ? ` (sleep at ${num(d.a)} m)` : ''}`),
@@ -447,6 +453,15 @@ function init() {
       h('h2', { id: 'days-h' }, 'Day by day'),
       hardMonth ? note('warn', h('p', {}, h('strong', {}, `${MONTHS[month - 1]} is a hard month for this trek. `), h('a', { href: url(`treks/${t.s}/#season`) }, 'Read "When to go"'), ' before you book anything.')) : null,
       h('p', {}, `Where you walk and where you sleep each night. ${lodgeNights ? 'Places to stay come from OpenStreetMap; ' : ''}in the busy months, ask your guide or company to reserve beds ahead.`),
+      h(
+        'ol',
+        { class: 'trip-line', 'aria-label': 'Your whole trip, start to finish' },
+        h('li', {}, h('strong', {}, `Arrive in Kathmandu by ${dayFmt.format(arrive)}`), h('span', {}, fromKathmandu ? 'That leaves a full day to rest after the flight, change money and collect what you need.' : 'That leaves a full day to rest after the flight and change money before you travel on.')),
+        fromKathmandu ? null : h('li', {}, h('strong', {}, `Travel to ${detail.gateway} on ${dayFmt.format(addDays(start, -1))}`), h('span', {}, `The day before the trek. ${detail.reach || ''}`)),
+        h('li', {}, h('strong', {}, `Trek from ${dayFmt.format(start)} to ${dayFmt.format(addDays(start, trekDays - 1))}`), h('span', {}, `${trekDays} days, each one set out below. The last day brings you back to ${detail.gateway}.`)),
+        state.spare ? h('li', {}, h('strong', {}, state.spare === 1 ? `One spare day, ${dayFmt.format(end)}` : `${state.spare} spare days, to ${dayFmt.format(end)}`), h('span', {}, 'For a delayed flight, a blocked road or a slower pace.')) : null,
+        h('li', {}, h('strong', {}, `Fly home on ${dayFmt.format(flyHome)} or later`), h('span', {}, fromKathmandu ? 'Not on the day the trek ends: mountain flights and roads are often late.' : `That allows a day to get back from ${detail.gateway} to Kathmandu.`)),
+      ),
       h('ol', { class: 'pdays' }, ...detail.days.map(dayCard), ...Array.from({ length: state.spare }, (_, i) => spareCard(i))),
       h('div', { class: 'spare no-print' }, h('span', { id: 'spare-label' }, 'Spare days at the end'), h('div', { class: 'segs', role: 'group', 'aria-labelledby': 'spare-label' }, ...spareBtns), h('span', { class: 'hint' }, t.fl ? 'This trek begins with a mountain flight. Keep at least one, better two.' : 'One is sensible for any trek.')),
       h('p', { class: 'no-print' }, h('a', { class: 'btn btn-secondary', href: url(`treks/${t.s}/`) }, ic('map', 18), 'See the route on a map'), ' ', h('button', { type: 'button', class: 'btn btn-secondary', onclick: calendar }, ic('calendar-plus', 18), 'Add to my calendar')),
@@ -503,9 +518,8 @@ function init() {
 
     // --- checklist
     const ticks = new Set(store.get('plan-checks', {})[t.s] || []);
-    const leave = addDays(start, -2);
     const todo = [
-      ['flights', `Book flights to arrive in Kathmandu by ${dayFmt.format(leave)}`, null],
+      ['flights', `Book flights: arrive in Kathmandu by ${dayFmt.format(arrive)}, fly home on ${dayFmt.format(flyHome)} or later`, null],
       ['doctor', 'Talk to your doctor about walking at altitude and the vaccinations you need', null],
       ['insurance', `Buy insurance that covers trekking to ${num(detail.insure)} m and helicopter rescue`, `safety/insurance/?trek=${t.s}`],
       ['help', state.help === 'self' ? 'Decide where you will sleep each night' : `Arrange ${state.help === 'agency' ? 'your trekking company' : state.help === 'porter' ? 'your porter' : 'your guide'}`, null],

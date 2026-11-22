@@ -6,7 +6,7 @@ import { ridgeStrip } from '../lib/landscape.mjs';
 import { PLACE_TYPE_LABEL, FACILITY_LABEL, metres, feet, num, monthRanges, daysRange, numberWord, longDate } from '../lib/format.mjs';
 import { boilingPointC } from '../lib/altitude.mjs';
 import { formatCoord } from '../lib/geo.mjs';
-import { trekCard, hueClass, regionTag, note, permitCard, grade, noticesBlock, noticesFor } from './partials.mjs';
+import { trekCard, hueClass, regionTag, note, permitCard, grade, noticesBlock, noticesFor, photoFigure } from './partials.mjs';
 
 const seedOf = (s) => [...s].reduce((a, c) => (a * 31 + c.charCodeAt(0)) % 9973, 7);
 const TYPE_ICON = { city: 'building-2', town: 'building-2', village: 'house', settlement: 'bed', camp: 'tent', 'base-camp': 'tent', pass: 'mountain', peak: 'mountain-snow', viewpoint: 'binoculars', lake: 'waves', monastery: 'landmark', trailhead: 'signpost', airstrip: 'plane' };
@@ -95,6 +95,7 @@ export function regionPage(ctx, r) {
 </header>
 <div class="wrap section-tight">
   ${noticesBlock(noticesFor(content, { region: r.slug }))}
+  ${r.photo ? photoFigure(ctx, r.photo, { cls: 'trek-photo-fig region-photo-fig', eager: true }) : ''}
   <dl class="stats stats-4">
     <div><dt>Treks</dt><dd>${r.treks.length}</dd></div>
     <div><dt>Places</dt><dd>${r.places.length}</dd></div>

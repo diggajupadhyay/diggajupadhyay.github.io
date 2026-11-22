@@ -54,6 +54,12 @@ export function trekCard(ctx, t, { heading = 'h3' } = {}) {
   </article>`;
 }
 
+/** A photograph with its caption and the credit its licence asks for. `size` picks the file. */
+export const photoFigure = (ctx, p, { cls = 'trek-photo-fig', size = 'file', eager = false } = {}) => html`<figure class="${cls}">
+  <img src="${ctx.u(`photos/${p[size] || p.file}`)}" alt="${p.alt || ''}" width="${p.width}" height="${p.height}" style="object-position:${p.focus || '50% 50%'}"${raw(eager ? ' fetchpriority="high"' : ' loading="lazy"')}>
+  <figcaption>${p.caption || ''} <span class="photo-credit">Photo: <a href="${p.source}" rel="noopener">${p.author}</a>, <a href="${p.licenceUrl}" rel="noopener license">${p.licence}</a></span></figcaption>
+</figure>`;
+
 export const sectionHead = ({ eyebrow, title, text, action, level = 'h2' }) => html`<div class="section-head">
   <div>
     ${eyebrow ? html`<p class="eyebrow">${eyebrow}</p>` : ''}

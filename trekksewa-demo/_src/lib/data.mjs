@@ -97,6 +97,14 @@ export function buildData({ content, config }, pages) {
     const fee = p.fees.find((f) => /foreign/i.test(f.who)) || p.fees[0];
     return fee ? `${fee.amount}${fee.per ? ` per ${fee.per.replace(/^per\s+/i, '')}` : ''}` : '';
   };
+  // how people get from Kathmandu to a trek's gateway city, in words, from the researched fares
+  const hop = (city) => {
+    const ways = (content.market.fares || []).filter((f) => f.from === 'Kathmandu' && f.to === city);
+    if (!ways.length) return '';
+    const said = ways.map((f) => (f.mode === 'flight' ? `by air (${f.time})` : `by ${f.mode} (${f.time})`));
+    const text = said.length > 1 ? `${said.slice(0, -1).join(', ')} or ${said[said.length - 1]}` : said[0];
+    return `${text[0].toUpperCase()}${text.slice(1)}.`;
+  };
   const detail = Object.fromEntries(
     content.treks.map((t) => [
       `data/trek/${t.slug}.json`,
@@ -106,6 +114,7 @@ export function buildData({ content, config }, pages) {
         rn: t.regionObj.name,
         sum: t.summary,
         gateway: t.gatewayPlace.name,
+        reach: t.gatewayPlace.name === 'Kathmandu' ? '' : hop(t.gatewayPlace.name),
         start: t.startPlace.name,
         end: t.endPlace.name,
         max: { m: t.maxAlt.m, name: t.maxPlace.name },

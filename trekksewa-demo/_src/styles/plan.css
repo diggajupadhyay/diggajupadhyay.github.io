@@ -1464,3 +1464,107 @@
 .help-rows .is-off .icon {
   color: var(--ink-3);
 }
+
+/* ---------- photographs on the home and region pages ---------- */
+.looks-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+}
+.looks-fig {
+  margin: 0;
+}
+.looks-fig img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--r-3);
+  background: var(--paper-3);
+}
+.looks-fig figcaption {
+  margin-top: 0.6rem;
+  color: var(--ink-2);
+}
+.looks-fig .photo-credit {
+  display: block;
+  margin-top: 0.15rem;
+}
+.region-card.has-photo {
+  padding-top: 0;
+}
+.region-photo {
+  display: block;
+  width: calc(100% + 2.7rem);
+  max-width: none;
+  height: 8rem;
+  margin: 0 -1.2rem 0.6rem -1.5rem;
+  object-fit: cover;
+  background: var(--paper-3);
+}
+.region-card.has-photo .region-swatch {
+  top: 8rem;
+}
+@media (max-width: 640px) {
+  .region-photo {
+    width: calc(100% + 1.9rem);
+    height: 5.5rem;
+    margin: 0 -0.8rem 0.5rem -1.1rem;
+  }
+  .region-card.has-photo .region-swatch {
+    top: 5.5rem;
+  }
+}
+.region-photo-fig img {
+  aspect-ratio: 21 / 9;
+}
+@media (max-width: 640px) {
+  .region-photo-fig img {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* ---------- the plan: the whole trip in a few lines ---------- */
+.trip-line {
+  display: grid;
+  gap: 0;
+  margin: 1.25rem 0 1.75rem;
+  padding: 0.4rem 1.25rem;
+  list-style: none;
+  border: 2px solid var(--line-strong);
+  border-radius: var(--r-3);
+  background: var(--surface);
+  counter-reset: trip;
+}
+.trip-line li {
+  position: relative;
+  display: grid;
+  gap: 0.1rem;
+  margin: 0;
+  padding: 0.8rem 0 0.8rem 2.75rem;
+  counter-increment: trip;
+}
+.trip-line li + li {
+  border-top: 1px solid var(--line);
+}
+.trip-line li::before {
+  content: counter(trip);
+  position: absolute;
+  left: 0;
+  top: 0.8rem;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--link);
+  font-weight: 700;
+  font-size: var(--fs-1);
+}
+.trip-line strong {
+  font-size: var(--fs-3);
+}
+.trip-line span {
+  color: var(--ink-2);
+}
